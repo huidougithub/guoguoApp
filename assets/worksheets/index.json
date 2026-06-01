@@ -1,0 +1,12 @@
+{
+  "sets": [
+    {
+      "id": "math_daily_20_sample",
+      "title": "一年级上册数学计算每日一练小纸条",
+      "subject": "数学",
+      "grade": "一年级上",
+      "description": "20天计算小纸条，普通计算和括号填空可自动批改。",
+      "asset": "assets/worksheets/generated/math_daily_20_full.json"
+    }
+  ]
+}
