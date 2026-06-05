@@ -3,7 +3,7 @@
 更新时间：2026-06-05  
 当前 GitHub 仓库：`https://github.com/huidougithub/guoguoApp.git`  
 当前分支：`main`  
-当前最新提交：`3e9a377 补充换电脑开发交接说明`
+当前最新提交：以 GitHub `main` 分支和 `git log -1 --oneline` 为准
 
 ## 1. 换电脑第一步
 
