@@ -1,8 +1,16 @@
 {
   "sets": [
     {
+      "id": "chinese_review_21_days",
+      "title": "语文期末复习冲刺21天",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "21天 · 557道练习 · 手写练习",
+      "asset": "assets/worksheets/generated/chinese_review_21.json"
+    },
+    {
       "id": "math_daily_20_sample",
-      "title": "一年级上册数学计算每日一练小纸条",
+      "title": "一年级上册数学计算每日一练",
       "subject": "数学",
       "grade": "一年级上",
       "description": "20天计算小纸条，普通计算和括号填空可自动批改。",

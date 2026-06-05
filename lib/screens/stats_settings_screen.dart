@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../data/app_data.dart';
 import '../services/app_store.dart';
 import '../services/audio_service.dart';
-import '../widgets/parent_gate.dart';
 import '../widgets/ui_components.dart';
 
 class StatsSettingsScreen extends StatefulWidget {
@@ -132,42 +131,21 @@ class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
                           if (mounted) setState(() {});
                         },
                       ),
-                      ListTile(
-                        leading: const Icon(Icons.school),
-                        title: const Text('切换年级'),
-                        subtitle: Text(
-                          '当前 ${gradeName(progress.selectedGrade)}，切换会重置当前本地进度。',
+                      SwitchListTile(
+                        title: const Text('家长批改模式'),
+                        subtitle: const Text(
+                          '开启后，语文试卷练习会显示“对/错”按钮，方便家长给手写题做标记。',
                         ),
-                        trailing: const Icon(Icons.chevron_right),
-                        onTap: () async {
-                          if (!await showParentGate(context)) return;
-                          if (!context.mounted) return;
-                          final grade = await showDialog<int>(
-                            context: context,
-                            builder: (context) => AlertDialog(
-                              title: const Text('选择年级'),
-                              content: const Text('切换年级会清空当前进度并重新开始。'),
-                              actions: [
-                                TextButton(
-                                  onPressed: () => Navigator.of(context).pop(1),
-                                  child: const Text('一年级'),
-                                ),
-                                FilledButton(
-                                  onPressed: () => Navigator.of(context).pop(2),
-                                  child: const Text('二年级'),
-                                ),
-                              ],
-                            ),
+                        value: progress.settings['parentReview'] ?? false,
+                        onChanged: (value) async {
+                          await store.setSetting('parentReview', value);
+                          await AudioService.playSfx(
+                            AppSound.tap,
+                            enabled: store.progress.settings['sfx'] ?? true,
                           );
-                          if (grade == null) return;
-                          await store.resetForGrade(grade);
-                          if (!context.mounted) return;
-                          Navigator.of(
-                            context,
-                          ).popUntil((route) => route.isFirst);
+                          if (mounted) setState(() {});
                         },
                       ),
-                      const Divider(),
                       ListTile(
                         leading: const Icon(Icons.privacy_tip),
                         title: const Text('隐私模式'),

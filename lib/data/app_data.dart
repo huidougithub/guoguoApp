@@ -156,7 +156,7 @@ final mathChapterSpecs = [
   ChapterSpec(
     'M7',
     '平面图形与分类',
-    4,
+    3,
     '平面图形、拼组、分类整理',
     'plane_classify',
     'geometry',
@@ -173,16 +173,6 @@ final mathChapterSpecs = [
     1,
     1,
   ),
-  ChapterSpec(
-    'M9',
-    '百数森林',
-    5,
-    '100以内数的认识、数位、比较',
-    'hundred_number',
-    'number',
-    1,
-    1,
-  ),
   ChapterSpec('M10', '人民币小镇', 4, '元角分、换算、购物找零', 'money', 'money', 1, 1),
   ChapterSpec(
     'M11',
@@ -193,6 +183,18 @@ final mathChapterSpecs = [
     'calculation',
     1,
     1,
+  ),
+  ChapterSpec(
+    'M25',
+    '竖式计算工坊',
+    1,
+    '100以内加减竖式、进位退位、破百Boss',
+    'vertical_calc',
+    'calculation',
+    1,
+    1,
+    termMin: 2,
+    termMax: 2,
   ),
   ChapterSpec('M12', '规律花园', 4, '数字、图形、颜色、周期规律', 'pattern', 'pattern', 1, 1),
   ChapterSpec(
@@ -566,7 +568,25 @@ LevelDefinition? levelById(String id) {
   return null;
 }
 
-String gradeName(int? grade) => grade == 2 ? '二年级' : '一年级';
+String gradeName(int? grade) {
+  return switch (normalizeGradeCode(grade)) {
+    gradeOneDown => '一年级下册',
+    gradeTwoUp => '二年级上册',
+    gradeTwoDown => '二年级下册',
+    _ => '一年级上册',
+  };
+}
+
+String gradeShortName(int? grade) {
+  return switch (normalizeGradeCode(grade)) {
+    gradeOneDown => '一 下',
+    gradeTwoUp => '二 上',
+    gradeTwoDown => '二 下',
+    _ => '一 上',
+  };
+}
+
+const learningGradeCodes = [gradeOneUp, gradeOneDown, gradeTwoUp, gradeTwoDown];
 
 String islandName(Island island) {
   switch (island) {
@@ -585,10 +605,22 @@ String bossAssetForLevel(LevelDefinition level) {
   if (level.id == 'daily_challenge') {
     return dailyChallengeBossAsset();
   }
+  if (level.island == Island.math) {
+    return _rotatingMathBossAsset(level);
+  }
   final key = level.id.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]+'), '_');
   final mapped = _bossAssetReplacement(key);
   if (mapped != null) return mapped;
   return 'assets/bosses/boss_$key.png';
+}
+
+String _rotatingMathBossAsset(LevelDefinition level, [DateTime? now]) {
+  final time = now ?? DateTime.now();
+  final seed =
+      level.id.codeUnits.fold<int>(0, (sum, code) => sum + code * 31) +
+      time.microsecondsSinceEpoch;
+  final index = seed.abs() % 24 + 1;
+  return 'assets/bosses/boss_math_${index.toString().padLeft(2, '0')}.png';
 }
 
 String? _bossAssetReplacement(String key) {
@@ -714,6 +746,26 @@ List<LevelDefinition> levelsForIsland(Island island, int grade) {
   return levels.where((level) => level.supportsGrade(grade)).toList();
 }
 
+LevelDefinition chapterPracticeLevel(Island island, ChapterSpec spec) {
+  return LevelDefinition(
+    id: '${spec.id}-chapter',
+    island: island,
+    chapterId: spec.id,
+    chapterTitle: spec.title,
+    title: spec.title,
+    scene: spec.title,
+    knowledgePoint: spec.knowledgePoint,
+    levelIndex: 0,
+    generatorKind: spec.kind,
+    questionType: spec.questionType,
+    gradeMin: spec.gradeMin,
+    gradeMax: spec.gradeMax,
+    termMin: spec.resolvedTermMin,
+    termMax: spec.resolvedTermMax,
+    bossKind: _bossKindFor(island, spec.id),
+  );
+}
+
 int totalLevelsForIsland(Island island, int grade) {
   if (island == Island.sudoku) {
     return 3;
@@ -735,6 +787,8 @@ LevelDefinition _level(Island island, ChapterSpec spec, int index) {
     questionType: spec.questionType,
     gradeMin: spec.gradeMin,
     gradeMax: spec.gradeMax,
+    termMin: spec.resolvedTermMin,
+    termMax: spec.resolvedTermMax,
     bossKind: _bossKindFor(island, spec.id),
   );
 }
@@ -767,11 +821,11 @@ String _levelKnowledge(ChapterSpec spec, int index) {
     'M4': ['认识长方体和正方体', '认识圆柱和球', '立体图形分类'],
     'M5': ['整时', '半时', '接近几时'],
     'M6': ['9加几', '8、7、6加几', '5、4、3、2加几', '凑十应用', '进位综合'],
-    'M7': ['认识平面图形', '图形拼组', '按一个标准分类', '按不同标准分类'],
+    'M7': ['认识平面图形', '图形拼组', '分类整理'],
     'M8': ['十几减9', '十几减8、7、6', '十几减5、4、3、2', '退位应用', '退位综合'],
-    'M9': ['100以内数数', '数位与组成', '读写两位数', '大小比较', '多一些少一些'],
     'M10': ['元角分认识', '人民币换算', '购物付钱', '简单找零'],
     'M11': ['整十数加减', '两位数加一位数', '两位数减一位数', '两位数加整十数', '解决问题'],
+    'M25': ['竖式计算'],
     'M12': ['数字规律', '图形规律', '颜色周期', '规律综合'],
     'M13': ['认识厘米', '认识米', '线段长度', '角的初步认识', '观察物体'],
     'M14': ['两位数加两位数', '两位数减两位数', '进位加法', '退位减法', '连加连减', '估算与应用'],
@@ -916,8 +970,10 @@ class ChapterSpec {
     this.kind,
     this.questionType,
     this.gradeMin,
-    this.gradeMax,
-  );
+    this.gradeMax, {
+    this.termMin,
+    this.termMax,
+  });
 
   final String id;
   final String title;
@@ -927,6 +983,42 @@ class ChapterSpec {
   final String questionType;
   final int gradeMin;
   final int gradeMax;
+  final int? termMin;
+  final int? termMax;
 
-  bool supportsGrade(int grade) => grade >= gradeMin && grade <= gradeMax;
+  int get resolvedTermMin => termMin ?? _defaultTermForChapter(id);
+
+  int get resolvedTermMax => termMax ?? _defaultTermForChapter(id);
+
+  bool supportsGrade(int grade) => supportsLearningStage(
+    selectedGrade: grade,
+    gradeMin: gradeMin,
+    gradeMax: gradeMax,
+    termMin: resolvedTermMin,
+    termMax: resolvedTermMax,
+  );
+}
+
+int _defaultTermForChapter(String id) {
+  final prefix = id.isEmpty ? '' : id.substring(0, 1).toUpperCase();
+  final number = int.tryParse(id.length > 1 ? id.substring(1) : '') ?? 1;
+  if (prefix == 'M') {
+    if (number <= 6) return 1;
+    if (number <= 12) return 2;
+    if (number <= 18) return 1;
+    return 2;
+  }
+  if (prefix == 'Y') {
+    if (number <= 3) return 1;
+    if (number <= 5) return 2;
+    if (number <= 8) return 1;
+    return 2;
+  }
+  if (prefix == 'E') {
+    if (number <= 2) return 1;
+    if (number <= 4) return 2;
+    if (number <= 6) return 1;
+    return 2;
+  }
+  return 1;
 }

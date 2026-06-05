@@ -50,7 +50,7 @@ class WorksheetSet {
   final List<WorksheetDay> days;
 
   int get questionCount =>
-      days.fold(0, (total, day) => total + day.questions.length);
+      days.fold(0, (total, day) => total + day.practiceQuestionCount);
 
   int get autoQuestionCount =>
       days.fold(0, (total, day) => total + day.autoQuestionCount);
@@ -78,6 +78,9 @@ class WorksheetDay {
   final String title;
   final List<WorksheetQuestion> questions;
 
+  int get practiceQuestionCount =>
+      questions.where((question) => question.countsForProgress).length;
+
   int get autoQuestionCount =>
       questions.where((question) => question.canAutoCheck).length;
 
@@ -101,6 +104,8 @@ class WorksheetQuestion {
     required this.prompt,
     required this.answer,
     required this.answerSource,
+    this.sectionTitle = '',
+    this.displayPrompt = '',
     this.images = const [],
   });
 
@@ -109,10 +114,25 @@ class WorksheetQuestion {
   final String prompt;
   final String? answer;
   final String answerSource;
+  final String sectionTitle;
+  final String displayPrompt;
   final List<String> images;
 
-  bool get canAutoCheck => answer != null && answer!.isNotEmpty;
-  bool get needsManualAnswer => !canAutoCheck;
+  String get visiblePrompt =>
+      displayPrompt.trim().isEmpty ? prompt : displayPrompt.trim();
+
+  bool get isDisplayOnly {
+    final normalizedType = type.trim().toLowerCase();
+    final normalizedSource = answerSource.trim().toLowerCase();
+    return normalizedType == 'example' ||
+        normalizedType == 'display_only' ||
+        normalizedSource == 'display_only';
+  }
+
+  bool get countsForProgress => !isDisplayOnly;
+  bool get canAutoCheck =>
+      countsForProgress && answer != null && answer!.isNotEmpty;
+  bool get needsManualAnswer => countsForProgress && !canAutoCheck;
 
   factory WorksheetQuestion.fromJson(Map<String, dynamic> json) {
     return WorksheetQuestion(
@@ -121,6 +141,8 @@ class WorksheetQuestion {
       prompt: json['prompt'] as String? ?? '',
       answer: json['answer'] as String?,
       answerSource: json['answerSource'] as String? ?? 'manual_required',
+      sectionTitle: json['sectionTitle'] as String? ?? '',
+      displayPrompt: json['displayPrompt'] as String? ?? '',
       images: (json['images'] as List<dynamic>? ?? const [])
           .map((item) => item.toString())
           .toList(),
@@ -143,13 +165,21 @@ class WorksheetProgress {
 
   int correctCountFor(Iterable<WorksheetQuestion> questions) {
     return questions
-        .where((question) => correctQuestionIds.contains(question.id))
+        .where(
+          (question) =>
+              question.countsForProgress &&
+              correctQuestionIds.contains(question.id),
+        )
         .length;
   }
 
   int answeredCountFor(Iterable<WorksheetQuestion> questions) {
     return questions
-        .where((question) => (answers[question.id] ?? '').trim().isNotEmpty)
+        .where(
+          (question) =>
+              question.countsForProgress &&
+              (answers[question.id] ?? '').trim().isNotEmpty,
+        )
         .length;
   }
 

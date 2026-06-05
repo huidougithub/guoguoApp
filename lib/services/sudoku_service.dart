@@ -31,13 +31,6 @@ class SudokuBoardState {
     for (var r = 0; r < puzzle.size; r++) {
       if (r != row && values[r][col] == value) return true;
     }
-    final br = row ~/ puzzle.boxRows * puzzle.boxRows;
-    final bc = col ~/ puzzle.boxCols * puzzle.boxCols;
-    for (var r = br; r < br + puzzle.boxRows; r++) {
-      for (var c = bc; c < bc + puzzle.boxCols; c++) {
-        if ((r != row || c != col) && values[r][c] == value) return true;
-      }
-    }
     return false;
   }
 
@@ -99,20 +92,6 @@ class SudokuBoardState {
       final column = {for (var r = 0; r < puzzle.size; r++) values[r][c]};
       if (column.length != puzzle.size || !column.containsAll(expected)) {
         return false;
-      }
-    }
-
-    for (var br = 0; br < puzzle.size; br += puzzle.boxRows) {
-      for (var bc = 0; bc < puzzle.size; bc += puzzle.boxCols) {
-        final box = <int>{};
-        for (var r = br; r < br + puzzle.boxRows; r++) {
-          for (var c = bc; c < bc + puzzle.boxCols; c++) {
-            box.add(values[r][c]);
-          }
-        }
-        if (box.length != puzzle.size || !box.containsAll(expected)) {
-          return false;
-        }
       }
     }
     return true;

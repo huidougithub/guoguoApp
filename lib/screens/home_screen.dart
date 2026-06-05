@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final progress = widget.store.progress;
     final pet = petById(progress.selectedPet);
-    final grade = progress.selectedGrade ?? 1;
+    final grade = normalizeGradeCode(progress.selectedGrade);
     return ExplorerScaffold(
       title: '果果加油！',
       actions: [

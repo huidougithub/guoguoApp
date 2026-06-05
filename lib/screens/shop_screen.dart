@@ -261,12 +261,18 @@ class _CosmeticShopGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final sortedCosmetics = [...cosmetics]
+      ..sort((a, b) {
+        final levelOrder = a.requiredLevel.compareTo(b.requiredLevel);
+        if (levelOrder != 0) return levelOrder;
+        return cosmetics.indexOf(a).compareTo(cosmetics.indexOf(b));
+      });
     return GridView.count(
       crossAxisCount: 2,
       mainAxisSpacing: 10,
       crossAxisSpacing: 10,
       childAspectRatio: 3.2,
-      children: cosmetics.map((cosmetic) {
+      children: sortedCosmetics.map((cosmetic) {
         final owned = store.ownsCosmetic(cosmetic);
         final equipped = store.hasCosmeticEquipped(cosmetic.id);
         final canBuy = store.canPurchaseCosmetic(cosmetic);

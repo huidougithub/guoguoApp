@@ -64,6 +64,7 @@ flutter:
     - assets/pets/
     - assets/pets/cosmetics/
     - assets/bosses/
+    - assets/money/
     - assets/worksheets/index.json
     - assets/worksheets/generated/
 

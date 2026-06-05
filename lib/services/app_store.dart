@@ -22,6 +22,9 @@ class AppStore extends ChangeNotifier {
       progress = AppProgress.fromJson(
         (jsonDecode(raw) as Map<dynamic, dynamic>).cast<String, dynamic>(),
       );
+      if (progress.selectedGrade != null) {
+        progress.selectedGrade = normalizeGradeCode(progress.selectedGrade);
+      }
       _syncCosmetics();
       return;
     }
@@ -30,13 +33,16 @@ class AppStore extends ChangeNotifier {
   }
 
   Future<void> selectGrade(int grade) async {
-    progress.selectedGrade = grade;
+    progress.selectedGrade = normalizeGradeCode(grade);
     await _saveAndNotify();
   }
 
   Future<void> resetForGrade(int grade) async {
     final selectedPet = progress.selectedPet;
-    progress = AppProgress(selectedGrade: grade, selectedPet: selectedPet);
+    progress = AppProgress(
+      selectedGrade: normalizeGradeCode(grade),
+      selectedPet: selectedPet,
+    );
     await _saveAndNotify();
   }
 

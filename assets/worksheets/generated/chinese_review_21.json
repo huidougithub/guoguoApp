@@ -1,0 +1,5935 @@
+{
+  "id": "chinese_review_21_days",
+  "title": "语文期末复习冲刺21天",
+  "subject": "chinese",
+  "grade": "一年级下册",
+  "description": "从图片转 Word 的语文期末复习练习册，按 21 天大题整理；识别不清内容已尽量过滤，作为手动练习使用。",
+  "days": [
+    {
+      "day": 1,
+      "title": "?1?",
+      "questions": [
+        {
+          "id": "chinese_review_21_d01_pinyin_01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chūn tiān",
+          "prompt": "chūn tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dōng tiān",
+          "prompt": "dōng tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chuī fēng",
+          "prompt": "chuī fēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huǒ huā",
+          "prompt": "huǒ huā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēi rù",
+          "prompt": "fēi rù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shén me",
+          "prompt": "shén me",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tài yáng",
+          "prompt": "tài yáng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jǐng kǒu",
+          "prompt": "jǐng kǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhǔ rén",
+          "prompt": "zhǔ rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cháng jiāng",
+          "prompt": "cháng jiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhù shǒu",
+          "prompt": "zhù shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_pinyin_12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "guǎng gào",
+          "prompt": "guǎng gào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "入（    ）\n人（    ）",
+          "prompt": "入（    ）\n人（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "么（    ）\n公（    ）",
+          "prompt": "么（    ）\n公（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "太（    ）\n大（    ）",
+          "prompt": "太（    ）\n大（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "主（    ）\n住（    ）",
+          "prompt": "主（    ）\n住（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "乐（    ）\n东（    ）",
+          "prompt": "乐（    ）\n东（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_letters_01",
+          "type": "recitation",
+          "sectionTitle": "三、默写26个大小写字母",
+          "displayPrompt": "A-Z 和 a-z",
+          "prompt": "A-Z 和 a-z",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_sentence_example_01",
+          "type": "example",
+          "sectionTitle": "四、照样子，写一写",
+          "displayPrompt": "例：花儿 → 花儿（开放）。       花儿（在阳光下开放）。",
+          "prompt": "例：花儿 → 花儿（开放）。       花儿（在阳光下开放）。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_sentence_01",
+          "type": "sentence",
+          "sectionTitle": "四、照样子，写一写",
+          "displayPrompt": "我们 → 我们（    ）。\n我们（          ）。",
+          "prompt": "我们 → 我们（    ）。\n我们（          ）。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_text_01",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "你姓什么？我姓李。____李？____李。\n他姓什么？他姓张。____张？____张。\n____胡，____吴，____徐，言午许。",
+          "prompt": "你姓什么？我姓李。____李？____李。\n他姓什么？他姓张。____张？____张。\n____胡，____吴，____徐，言午许。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d01_text_02",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "____姓氏____很多，赵、钱、孙、李，周、吴、郑、____，\n诸葛、____、上官、欧阳……",
+          "prompt": "____姓氏____很多，赵、钱、孙、李，周、吴、郑、____，\n诸葛、____、上官、欧阳……",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "第2天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d02_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zǒu kāi",
+          "prompt": "zǒu kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hé shuǐ",
+          "prompt": "hé shuǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shuō míng",
+          "prompt": "shuō míng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "ràng kāi",
+          "prompt": "ràng kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zi jǐ",
+          "prompt": "zi jǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cóng lái",
+          "prompt": "cóng lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "sī xiāng",
+          "prompt": "sī xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chuáng qián",
+          "prompt": "chuáng qián",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "di shàng",
+          "prompt": "di shàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gù xiāng",
+          "prompt": "gù xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bái sè",
+          "prompt": "bái sè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bǎ shǒu",
+          "prompt": "bǎ shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "间（    ）\n问（    ）",
+          "prompt": "间（    ）\n问（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "地（    ）\n他（    ）",
+          "prompt": "地（    ）\n他（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "米（    ）\n来（    ）",
+          "prompt": "米（    ）\n来（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "千（    ）\n干（    ）",
+          "prompt": "千（    ）\n干（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "止（    ）\n正（    ）",
+          "prompt": "止（    ）\n正（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_example",
+          "type": "example",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "可选量词：①册 ②部 ③条 ④台 ⑤架 ⑥支 ⑦床 ⑧件",
+          "prompt": "可选量词：①册 ②部 ③条 ④台 ⑤架 ⑥支 ⑦床 ⑧件",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_01",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）铅笔",
+          "prompt": "一（____）铅笔",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_02",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）手机",
+          "prompt": "一（____）手机",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_03",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）裤子",
+          "prompt": "一（____）裤子",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_04",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）上衣",
+          "prompt": "一（____）上衣",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_05",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）书",
+          "prompt": "一（____）书",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_06",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）电视",
+          "prompt": "一（____）电视",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_07",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）飞机",
+          "prompt": "一（____）飞机",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_options_08",
+          "type": "word_usage",
+          "sectionTitle": "三、量词搭配",
+          "displayPrompt": "一（____）棉被",
+          "prompt": "一（____）棉被",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s04_q01",
+          "type": "stroke",
+          "sectionTitle": "四、易错笔顺",
+          "displayPrompt": "“物”的笔顺 ,第3笔是__",
+          "prompt": "“物”的笔顺 ,第3笔是__",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s04_q02",
+          "type": "stroke",
+          "sectionTitle": "四、易错笔顺",
+          "displayPrompt": "“运”的笔顺 ,第6笔是 。",
+          "prompt": "“运”的笔顺 ,第6笔是 。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s04_q03",
+          "type": "stroke",
+          "sectionTitle": "四、易错笔顺",
+          "displayPrompt": "“阳”的笔顺 ,第2笔是",
+          "prompt": "“阳”的笔顺 ,第2笔是",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "尊（____）爱（____） 其（____）融融 血浓于（____）",
+          "prompt": "尊（____）爱（____） 其（____）融融 血浓于（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "（____）（____）情深 同（____）协（____） 同甘（____）苦",
+          "prompt": "（____）（____）情深 同（____）协（____） 同甘（____）苦",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d02_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "（____）伦之（____） 欢聚（____）堂",
+          "prompt": "（____）伦之（____） 欢聚（____）堂",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "第3天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d03_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dòng wù",
+          "prompt": "dòng wù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dǎ zào",
+          "prompt": "dǎ zào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zǒu yùn",
+          "prompt": "zǒu yùn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huān lè",
+          "prompt": "huān lè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fáng zi",
+          "prompt": "fáng zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng wǎng",
+          "prompt": "shàng wǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shǒu xiān",
+          "prompt": "shǒu xiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xiǎo chí",
+          "prompt": "xiǎo chí",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cǎi huā",
+          "prompt": "cǎi huā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jian jiǎo",
+          "prompt": "jian jiǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zǎo shang",
+          "prompt": "zǎo shang",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wán xiào",
+          "prompt": "wán xiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "贝（    ）\n见（    ）",
+          "prompt": "贝（    ）\n见（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "运（    ）\n远（    ）",
+          "prompt": "运（    ）\n远（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "今（    ）\n令（    ）",
+          "prompt": "今（    ）\n令（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "近（    ）\n进（    ）",
+          "prompt": "近（    ）\n进（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "玉（    ）\n王（    ）",
+          "prompt": "玉（    ）\n王（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s03_q01",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "口令(lìn lìng)",
+          "prompt": "口令(lìn lìng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s03_q02",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "告诉(sù shù)",
+          "prompt": "告诉(sù shù)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s03_q03",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "跟从(gēn gēng)",
+          "prompt": "跟从(gēn gēng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s03_q04",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "举起(jǔ jǚ)",
+          "prompt": "举起(jǔ jǚ)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s03_q05",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "教育(jiāo jiào)",
+          "prompt": "教育(jiāo jiào)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s03_q06",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "露水(lòu lù)",
+          "prompt": "露水(lòu lù)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s04_q01",
+          "type": "sentence",
+          "sectionTitle": "四、照样子写句子",
+          "displayPrompt": "小鸭子飞快地游到小公鸡身边。",
+          "prompt": "小鸭子飞快地游到小公鸡身边。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s04_q02",
+          "type": "sentence",
+          "sectionTitle": "四、照样子写句子",
+          "displayPrompt": "树很孤单，喜鹊也很孤单。",
+          "prompt": "树很孤单，喜鹊也很孤单。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "春晓",
+          "prompt": "春晓",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "__眠__觉晓，_ 闻啼_",
+          "prompt": "__眠__觉晓，_ 闻啼_",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d03_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "声， 落",
+          "prompt": "声， 落",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "第4天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d04_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "máo bǐ",
+          "prompt": "máo bǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhī dào",
+          "prompt": "zhī dào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fàng xué",
+          "prompt": "fàng xué",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "píng ān",
+          "prompt": "píng ān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hóng dēng",
+          "prompt": "hóng dēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "che zhàn",
+          "prompt": "che zhàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tā men",
+          "prompt": "tā men",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tian kōng",
+          "prompt": "tian kōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hái shi",
+          "prompt": "hái shi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shù gàn",
+          "prompt": "shù gàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shēn shang",
+          "prompt": "shēn shang",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xīng xing",
+          "prompt": "xīng xing",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "怕（    ）\n拍（    ）",
+          "prompt": "怕（    ）\n拍（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "像（    ）\n象（    ）",
+          "prompt": "像（    ）\n象（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "他（    ）\n她（    ）",
+          "prompt": "他（    ）\n她（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "找（    ）\n我（    ）",
+          "prompt": "找（    ）\n我（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "课（    ）\n棵（    ）",
+          "prompt": "课（    ）\n棵（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q01",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "出一（____）",
+          "prompt": "出一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q02",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "来一（____）",
+          "prompt": "来一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q03",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "喜欢一（____）",
+          "prompt": "喜欢一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q04",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "远—（____）",
+          "prompt": "远—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q05",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "哭一（____）",
+          "prompt": "哭一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q06",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "从前一（____）",
+          "prompt": "从前一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q07",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "许多—（____）",
+          "prompt": "许多—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s03_q08",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "快乐—（____）",
+          "prompt": "快乐—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s04_q01",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "重要(yāo yào)",
+          "prompt": "重要(yāo yào)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s04_q02",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "高兴(xin xìng)",
+          "prompt": "高兴(xin xìng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s04_q03",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "掰开(bāi bān)",
+          "prompt": "掰开(bāi bān)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s04_q04",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "干活(gàn gān)",
+          "prompt": "干活(gàn gān)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s04_q05",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "转身(zhuǎn zhuàn)",
+          "prompt": "转身(zhuǎn zhuàn)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s04_q06",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "墙壁(bì pi)",
+          "prompt": "墙壁(bì pi)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "寻隐者不遇 赠汪伦",
+          "prompt": "寻隐者不遇 赠汪伦",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "松____童__, 乘舟将欲_",
+          "prompt": "松____童__, 乘舟将欲_",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "_师采药_。 忽闻岸 ____踏歌 _。",
+          "prompt": "_师采药_。 忽闻岸 ____踏歌 _。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s05_q04",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "潭水深",
+          "prompt": "潭水深",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d04_s05_q05",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "深 汪伦_ 0",
+          "prompt": "深 汪伦_ 0",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "第5天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d05_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gǔ rén",
+          "prompt": "gǔ rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hú zi",
+          "prompt": "hú zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shuāng shǒu",
+          "prompt": "shuāng shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yǔ yán",
+          "prompt": "yǔ yán",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qīng shān",
+          "prompt": "qīng shān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qīng shuǐ",
+          "prompt": "qīng shuǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hǎo de",
+          "prompt": "hǎo de",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kāi hui",
+          "prompt": "kāi hui",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "běi jīng",
+          "prompt": "běi jīng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shū xiě",
+          "prompt": "shū xiě",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "ren zi",
+          "prompt": "ren zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gòng chǎn",
+          "prompt": "gòng chǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s01_q13",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dǎng",
+          "prompt": "dǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "清（    ）\n晴（    ）",
+          "prompt": "清（    ）\n晴（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "古（    ）\n右（    ）",
+          "prompt": "古（    ）\n右（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "广（    ）\n厂（    ）",
+          "prompt": "广（    ）\n厂（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "方（    ）\n万（    ）",
+          "prompt": "方（    ）\n万（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "后（    ）\n石（    ）",
+          "prompt": "后（    ）\n石（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s03_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "三、照样子，变新字再组词",
+          "displayPrompt": "日 星(星星) _（____） （____）",
+          "prompt": "日 星(星星) _（____） （____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s03_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "三、照样子，变新字再组词",
+          "displayPrompt": "土 （____） _（____） （____）",
+          "prompt": "土 （____） _（____） （____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_example_01",
+          "type": "example",
+          "sectionTitle": "四、照样子写词语",
+          "displayPrompt": "例：安安静静(AABB式)",
+          "prompt": "例：安安静静(AABB式)",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_example_02",
+          "type": "example",
+          "sectionTitle": "四、照样子写词语",
+          "displayPrompt": "例：又大又圆(ABAC式)",
+          "prompt": "例：又大又圆(ABAC式)",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_example_03",
+          "type": "example",
+          "sectionTitle": "四、照样子写词语",
+          "displayPrompt": "例：红彤彤(ABB式)",
+          "prompt": "例：红彤彤(ABB式)",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_example_04",
+          "type": "example",
+          "sectionTitle": "四、照样子写词语",
+          "displayPrompt": "例：开心开心(ABAB式)",
+          "prompt": "例：开心开心(ABAB式)",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "芝麻 高。",
+          "prompt": "芝麻 高。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "_篮 空。",
+          "prompt": "_篮 空。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d05_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "吊桶",
+          "prompt": "吊桶",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "第6天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d06_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hǎo duō",
+          "prompt": "hǎo duō",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà jiào",
+          "prompt": "dà jiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huí lái",
+          "prompt": "huí lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kuài lè",
+          "prompt": "kuài lè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dāng xīn",
+          "prompt": "dāng xīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yi yuán",
+          "prompt": "yi yuán",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jiǎng tái",
+          "prompt": "jiǎng tái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zài jiàn",
+          "prompt": "zài jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yí yàng",
+          "prompt": "yí yàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà xiào",
+          "prompt": "dà xiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jié rì",
+          "prompt": "jié rì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà mǐ",
+          "prompt": "dà mǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "和（    ）\n合（    ）",
+          "prompt": "和（    ）\n合（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "米（    ）\n来（    ）",
+          "prompt": "米（    ）\n来（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "自（    ）\n白（    ）",
+          "prompt": "自（    ）\n白（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "门（    ）\n们（    ）",
+          "prompt": "门（    ）\n们（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "把（    ）\n巴（    ）",
+          "prompt": "把（    ）\n巴（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_example",
+          "type": "example",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "可选动词：①踢 ②丢 ③吹 ④搭 ⑤跳 ⑥吃 ⑦跑 ⑧拍",
+          "prompt": "可选动词：①踢 ②丢 ③吹 ④搭 ⑤跳 ⑥吃 ⑦跑 ⑧拍",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_01",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）皮球",
+          "prompt": "（____）皮球",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_02",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）泡泡",
+          "prompt": "（____）泡泡",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_03",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）积木",
+          "prompt": "（____）积木",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_04",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）绳",
+          "prompt": "（____）绳",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_05",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）毽子",
+          "prompt": "（____）毽子",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_06",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）沙包",
+          "prompt": "（____）沙包",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_07",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）西瓜",
+          "prompt": "（____）西瓜",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_options_08",
+          "type": "word_usage",
+          "sectionTitle": "三、动词搭配",
+          "displayPrompt": "（____）步",
+          "prompt": "（____）步",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s04_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "四、先把口诀补充完整(填序号),再完成表格",
+          "displayPrompt": "音序②字母 ③首个字母④音节 生字 大写字母 读音 组词",
+          "prompt": "音序②字母 ③首个字母④音节 生字 大写字母 读音 组词",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s04_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "四、先把口诀补充完整(填序号),再完成表格",
+          "displayPrompt": "查字要牢记，先把 找。 喊",
+          "prompt": "查字要牢记，先把 找。 喊",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s04_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "四、先把口诀补充完整(填序号),再完成表格",
+          "displayPrompt": "孤_下面找__,看看它在第几页。 千",
+          "prompt": "孤_下面找__,看看它在第几页。 千",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "朝霞 ,晚霞。",
+          "prompt": "朝霞 ,晚霞。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "___戴帽，______半山腰。",
+          "prompt": "___戴帽，______半山腰。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "早晨_当日 ,晚上 到",
+          "prompt": "早晨_当日 ,晚上 到",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d06_s05_q04",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "蚂蚁搬家蛇过道，___ _____要 。",
+          "prompt": "蚂蚁搬家蛇过道，___ _____要 。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "第7天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d07_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "duì bǐ",
+          "prompt": "duì bǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jīn tiān",
+          "prompt": "jīn tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bīng xuě",
+          "prompt": "bīng xuě",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xi xīn",
+          "prompt": "xi xīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xī yáng",
+          "prompt": "xī yáng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yǔ wén",
+          "prompt": "yǔ wén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yǎn lèi",
+          "prompt": "yǎn lèi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tā men",
+          "prompt": "tā men",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bǎo bèi",
+          "prompt": "bǎo bèi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà qi",
+          "prompt": "dà qi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yǔ sǎn",
+          "prompt": "yǔ sǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēi jī",
+          "prompt": "fēi jī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "平（    ）\n干（    ）",
+          "prompt": "平（    ）\n干（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "坐（    ）\n座（    ）",
+          "prompt": "坐（    ）\n座（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "白（    ）\n百（    ）",
+          "prompt": "白（    ）\n百（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "着（    ）\n看（    ）",
+          "prompt": "着（    ）\n看（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "瓜（    ）\n爪（    ）",
+          "prompt": "瓜（    ）\n爪（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s03_q01",
+          "type": "word_usage",
+          "sectionTitle": "三、给句子加上标点符号",
+          "displayPrompt": "小鸟飞得真低呀（____）",
+          "prompt": "小鸟飞得真低呀（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s03_q02",
+          "type": "word_usage",
+          "sectionTitle": "三、给句子加上标点符号",
+          "displayPrompt": "你写作业了吗（____）",
+          "prompt": "你写作业了吗（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s03_q03",
+          "type": "word_usage",
+          "sectionTitle": "三、给句子加上标点符号",
+          "displayPrompt": "天安门前的人非常多（____）",
+          "prompt": "天安门前的人非常多（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s03_q04",
+          "type": "word_usage",
+          "sectionTitle": "三、给句子加上标点符号",
+          "displayPrompt": "爸爸看见我来了（____）开心的笑了（____）",
+          "prompt": "爸爸看见我来了（____）开心的笑了（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_example_01",
+          "type": "example",
+          "sectionTitle": "四、照样子，写句子",
+          "displayPrompt": "例：小羊吃草。 小鱼游泳。",
+          "prompt": "例：小羊吃草。 小鱼游泳。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s04_q02",
+          "type": "sentence",
+          "sectionTitle": "四、照样子，写句子",
+          "displayPrompt": "小羊(在山坡上)吃草。 小鱼（____）游泳。",
+          "prompt": "小羊(在山坡上)吃草。 小鱼（____）游泳。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s04_q03",
+          "type": "sentence",
+          "sectionTitle": "四、照样子，写句子",
+          "displayPrompt": "小羊(低着头)(在山坡上)吃草。 小鱼（____）（____）游泳。",
+          "prompt": "小羊(低着头)(在山坡上)吃草。 小鱼（____）（____）游泳。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "___则__,不能则学。——《荀子》",
+          "prompt": "___则__,不能则学。——《荀子》",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "______,百事荒芜。 ——陈寿",
+          "prompt": "______,百事荒芜。 ——陈寿",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d07_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "读卷__, _。 ——董其昌",
+          "prompt": "读卷__, _。 ——董其昌",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "title": "第8天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d08_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng kè",
+          "prompt": "shàng kè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zuò chē",
+          "prompt": "zuò chē",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "lǎo shī",
+          "prompt": "lǎo shī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wáng guó",
+          "prompt": "wáng guó",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dōu yǒu",
+          "prompt": "dōu yǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yì bǎi",
+          "prompt": "yì bǎi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bù jiǔ",
+          "prompt": "bù jiǔ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xià rén",
+          "prompt": "xià rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wèi le",
+          "prompt": "wèi le",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kě pà",
+          "prompt": "kě pà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà jiā",
+          "prompt": "dà jiā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà xiàng",
+          "prompt": "dà xiàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_shape_01",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "夕（    ）\n多（    ）",
+          "prompt": "夕（    ）\n多（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_shape_02",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "块（    ）\n快（    ）",
+          "prompt": "块（    ）\n快（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_shape_03",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "羽（    ）\n习（    ）",
+          "prompt": "羽（    ）\n习（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_shape_04",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "左（    ）\n在（    ）",
+          "prompt": "左（    ）\n在（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_shape_05",
+          "type": "word_group",
+          "sectionTitle": "二、形近字组词",
+          "displayPrompt": "红（    ）\n江（    ）",
+          "prompt": "红（    ）\n江（    ）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q01",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "姓氏(shi si)",
+          "prompt": "姓氏(shi si)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q02",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "眼睛(jīng jing)",
+          "prompt": "眼睛(jīng jing)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q03",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "城市(chéng chén)",
+          "prompt": "城市(chéng chén)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q04",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "乡亲(qīng qīn)",
+          "prompt": "乡亲(qīng qīn)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q05",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "邻居(líng lín)",
+          "prompt": "邻居(líng lín)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q06",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "得亏(de děi)",
+          "prompt": "得亏(de děi)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q07",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "窗外(chuāng chuān)",
+          "prompt": "窗外(chuāng chuān)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q08",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "睡觉(shui sui)",
+          "prompt": "睡觉(shui sui)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s03_q09",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "端午(duān dān)",
+          "prompt": "端午(duān dān)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s04_q01",
+          "type": "sentence",
+          "sectionTitle": "四、按要求，写句子",
+          "displayPrompt": "例：小公鸡跟在小鸭子后面，也下了水。(偷偷地) 小公鸡(偷偷地)跟在小鸭子后面，也下了水。 (1)小鸭子游到小公鸡身边。(飞快地) (2)同学们在操场上做游戏。(开心地)",
+          "prompt": "例：小公鸡跟在小鸭子后面，也下了水。(偷偷地) 小公鸡(偷偷地)跟在小鸭子后面，也下了水。 (1)小鸭子游到小公鸡身边。(飞快地) (2)同学们在操场上做游戏。(开心地)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d08_s04_q02",
+          "type": "sentence",
+          "sectionTitle": "四、按要求，写句子",
+          "displayPrompt": "爷爷 ②浇花 ③阳台 ④正在(连词成句，写序号)",
+          "prompt": "爷爷 ②浇花 ③阳台 ④正在(连词成句，写序号)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "title": "第9天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d09_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qíng tiān",
+          "prompt": "qíng tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hé miáo",
+          "prompt": "hé miáo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qǐng wèn",
+          "prompt": "qǐng wèn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shēng zi",
+          "prompt": "shēng zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hóng huā",
+          "prompt": "hóng huā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dòng shǒu",
+          "prompt": "dòng shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shū huà",
+          "prompt": "shū huà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bái máo",
+          "prompt": "bái máo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhōng zhǐ",
+          "prompt": "zhōng zhǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qiān jīn",
+          "prompt": "qiān jīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yí cùn",
+          "prompt": "yí cùn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "rén dīng",
+          "prompt": "rén dīng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s02_q01",
+          "type": "polyphone",
+          "sectionTitle": "二、多音字组词",
+          "displayPrompt": "乐",
+          "prompt": "乐",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s02_q02",
+          "type": "polyphone",
+          "sectionTitle": "二、多音字组词",
+          "displayPrompt": "得",
+          "prompt": "得",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_example",
+          "type": "example",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "可选动词：①吃 ②打 ③掰 ④开 ⑤追 ⑥伸 ⑦摘 ⑧抱",
+          "prompt": "可选动词：①吃 ②打 ③掰 ④开 ⑤追 ⑥伸 ⑦摘 ⑧抱",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_01",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）哈欠",
+          "prompt": "（____）哈欠",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_02",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）早饭",
+          "prompt": "（____）早饭",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_03",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）大会",
+          "prompt": "（____）大会",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_04",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）玉米",
+          "prompt": "（____）玉米",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_05",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）桃子",
+          "prompt": "（____）桃子",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_06",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）西瓜",
+          "prompt": "（____）西瓜",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_07",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）舌头",
+          "prompt": "（____）舌头",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_options_08",
+          "type": "word_usage",
+          "sectionTitle": "三、词语搭配",
+          "displayPrompt": "（____）小兔",
+          "prompt": "（____）小兔",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_example_01",
+          "type": "example",
+          "sectionTitle": "四、仿写句子",
+          "displayPrompt": "例：外婆包的粽子十分好吃。",
+          "prompt": "例：外婆包的粽子十分好吃。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_example_02",
+          "type": "example",
+          "sectionTitle": "四、仿写句子",
+          "displayPrompt": "例：我一看窗外心就乱跳。",
+          "prompt": "例：我一看窗外心就乱跳。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "画鸡",
+          "prompt": "画鸡",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "红冠 裁，满身 将来。",
+          "prompt": "红冠 裁，满身 将来。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d09_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、日积月累",
+          "displayPrompt": "不敢轻_ __,_",
+          "prompt": "不敢轻_ __,_",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "title": "第10天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d10_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhōng jiān",
+          "prompt": "zhōng jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēn kāi",
+          "prompt": "fēn kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chī ròu",
+          "prompt": "chī ròu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cè zi",
+          "prompt": "cè zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhī chū",
+          "prompt": "zhī chū",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "diàn tái",
+          "prompt": "diàn tái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dǎ gōng",
+          "prompt": "dǎ gōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "pí máo",
+          "prompt": "pí máo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēi pǎo",
+          "prompt": "fēi pǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zú qiú",
+          "prompt": "zú qiú",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shā bāo",
+          "prompt": "shā bāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yuǎn jìn",
+          "prompt": "yuǎn jìn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s02_q01",
+          "type": "polyphone",
+          "sectionTitle": "二、多音字组词",
+          "displayPrompt": "空",
+          "prompt": "空",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s02_q02",
+          "type": "polyphone",
+          "sectionTitle": "二、多音字组词",
+          "displayPrompt": "哪",
+          "prompt": "哪",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s02_q03",
+          "type": "polyphone",
+          "sectionTitle": "二、多音字组词",
+          "displayPrompt": "背",
+          "prompt": "背",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s02_q04",
+          "type": "polyphone",
+          "sectionTitle": "二、多音字组词",
+          "displayPrompt": "结",
+          "prompt": "结",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q01",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "古一（____）",
+          "prompt": "古一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q02",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "圆—（____）",
+          "prompt": "圆—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q03",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "朝—（____）",
+          "prompt": "朝—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q04",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "幼一（____）",
+          "prompt": "幼一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q05",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "前一（____）",
+          "prompt": "前一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q06",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "忙—（____）",
+          "prompt": "忙—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q07",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "暖—（____）",
+          "prompt": "暖—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q08",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "里—（____）",
+          "prompt": "里—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q09",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "粗—（____）",
+          "prompt": "粗—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q10",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "严寒—（____）",
+          "prompt": "严寒—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s03_q11",
+          "type": "word_usage",
+          "sectionTitle": "三、反义词",
+          "displayPrompt": "热闹—（____）",
+          "prompt": "热闹—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s04_q01",
+          "type": "sentence",
+          "sectionTitle": "四、仿写句子",
+          "displayPrompt": "要是早一分钟，就能赶上绿灯了。",
+          "prompt": "要是早一分钟，就能赶上绿灯了。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_example_01",
+          "type": "example",
+          "sectionTitle": "四、仿写句子",
+          "displayPrompt": "例：狗熊连忙去问老虎。",
+          "prompt": "例：狗熊连忙去问老虎。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "夏 落 霜降 飘",
+          "prompt": "夏 落 霜降 飘",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d10_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "池草_ 鱼 鸟_",
+          "prompt": "池草_ 鱼 鸟_",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "title": "第11天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d11_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng tái",
+          "prompt": "shàng tái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hé chàng",
+          "prompt": "hé chàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huā duǒ",
+          "prompt": "huā duǒ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "měi hǎo",
+          "prompt": "měi hǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qīng cǎo",
+          "prompt": "qīng cǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhè biān",
+          "prompt": "zhè biān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xiǎo yú",
+          "prompt": "xiǎo yú",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng miàn",
+          "prompt": "shàng miàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qǐng wèn",
+          "prompt": "qǐng wèn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jiā gōng",
+          "prompt": "jiā gōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tǔ dòu",
+          "prompt": "tǔ dòu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "běi dǒu",
+          "prompt": "běi dǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s02_q01",
+          "type": "word_usage",
+          "sectionTitle": "二、近义词",
+          "displayPrompt": "从前一（____）",
+          "prompt": "从前一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s02_q02",
+          "type": "word_usage",
+          "sectionTitle": "二、近义词",
+          "displayPrompt": "孤单—（____）",
+          "prompt": "孤单—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s02_q03",
+          "type": "word_usage",
+          "sectionTitle": "二、近义词",
+          "displayPrompt": "举头—（____）",
+          "prompt": "举头—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s02_q04",
+          "type": "word_usage",
+          "sectionTitle": "二、近义词",
+          "displayPrompt": "细雨—（____）",
+          "prompt": "细雨—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s02_q05",
+          "type": "word_usage",
+          "sectionTitle": "二、近义词",
+          "displayPrompt": "严寒一（____）",
+          "prompt": "严寒一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s02_q06",
+          "type": "word_usage",
+          "sectionTitle": "二、近义词",
+          "displayPrompt": "淘气一（____）",
+          "prompt": "淘气一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s03_q01",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "新娘(niáng liáng)",
+          "prompt": "新娘(niáng liáng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s03_q02",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "您好(ní nín)",
+          "prompt": "您好(ní nín)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s03_q03",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "拨水(pō bō)",
+          "prompt": "拨水(pō bō)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s03_q04",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "闹钟(zhōng zōng)",
+          "prompt": "闹钟(zhōng zōng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s03_q05",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "扛着(gáng káng)",
+          "prompt": "扛着(gáng káng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s03_q06",
+          "type": "pronunciation",
+          "sectionTitle": "三、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "闷热(men mēng)",
+          "prompt": "闷热(men mēng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_example_01",
+          "type": "example",
+          "sectionTitle": "四、仿写句子",
+          "displayPrompt": "例：我多想去北京看看人民大会堂。",
+          "prompt": "例：我多想去北京看看人民大会堂。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_example_02",
+          "type": "example",
+          "sectionTitle": "四、仿写句子",
+          "displayPrompt": "例：你姓什么?我姓李。什么李?木子李。",
+          "prompt": "例：你姓什么?我姓李。什么李?木子李。",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "__对__,圆对___。严寒对酷暑，___暖对秋凉。",
+          "prompt": "__对__,圆对___。严寒对酷暑，___暖对秋凉。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "晨对暮，__对霜。___对_____,朝霞对____。",
+          "prompt": "晨对暮，__对霜。___对_____,朝霞对____。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d11_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "桃对__,柳对杨。莺歌对燕舞，____对___香。",
+          "prompt": "桃对__,柳对杨。莺歌对燕舞，____对___香。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "title": "第12天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d12_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tīng zhe",
+          "prompt": "tīng zhe",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shí jian",
+          "prompt": "shí jian",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yǔ diǎn",
+          "prompt": "yǔ diǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "sēn lín",
+          "prompt": "sēn lín",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gāo xìng",
+          "prompt": "gāo xìng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wǎng lái",
+          "prompt": "wǎng lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xī guā",
+          "prompt": "xī guā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tù zi",
+          "prompt": "tù zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jìn rù",
+          "prompt": "jìn rù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "máo jīn",
+          "prompt": "máo jīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xǐ shǒu",
+          "prompt": "xǐ shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tīng jiàn",
+          "prompt": "tīng jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s02_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "二、写出下面小写字母对应的大写字母",
+          "displayPrompt": "e r g f p q mb a d h I",
+          "prompt": "e r g f p q mb a d h I",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s03_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "洁白的 新疆 壮观的 天空",
+          "prompt": "洁白的 新疆 壮观的 天空",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s03_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "遥远的 雪莲 美丽的 升旗仪式",
+          "prompt": "遥远的 雪莲 美丽的 升旗仪式",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s03_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "雄伟的 小路 蓝蓝的 公路",
+          "prompt": "雄伟的 小路 蓝蓝的 公路",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s03_q04",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "弯弯的 天安门 宽宽的 天山",
+          "prompt": "弯弯的 天安门 宽宽的 天山",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s04_q01",
+          "type": "word_usage",
+          "sectionTitle": "四、读句子，选字填空",
+          "displayPrompt": "清 青 晴 请 今天是个大（____）天，花儿香，草儿（____）,小河流水甜又（____）,我在这 里邀（____）大家一起来感受大自然的美丽。",
+          "prompt": "清 青 晴 请 今天是个大（____）天，花儿香，草儿（____）,小河流水甜又（____）,我在这 里邀（____）大家一起来感受大自然的美丽。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "之初，性 善，性相 ,相 。苟 教，性乃迁，",
+          "prompt": "之初，性 善，性相 ,相 。苟 教，性乃迁，",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "教之道，贵以专。",
+          "prompt": "教之道，贵以专。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s05_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": ",非所宜，幼___,老何为? 琢， 成器，",
+          "prompt": ",非所宜，幼___,老何为? 琢， 成器，",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d12_s05_q04",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": ",知",
+          "prompt": ",知",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "title": "第13天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d13_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "méi yǒu",
+          "prompt": "méi yǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fāng xiàng",
+          "prompt": "fāng xiàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng biān",
+          "prompt": "shàng biān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xíng rén",
+          "prompt": "xíng rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cǎo dì",
+          "prompt": "cǎo dì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gǎn lù",
+          "prompt": "gǎn lù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "guò lái",
+          "prompt": "guò lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhǎo dào",
+          "prompt": "zhǎo dào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shū yè",
+          "prompt": "shū yè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hù kǒu",
+          "prompt": "hù kǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng jiāo",
+          "prompt": "shàng jiāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fù zǐ",
+          "prompt": "fù zǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s02_q01",
+          "type": "word_usage",
+          "sectionTitle": "二、加一加，减一减",
+          "displayPrompt": "（____）+（____）=吵 （____）+（____）=现 （____）+（____）=顶",
+          "prompt": "（____）+（____）=吵 （____）+（____）=现 （____）+（____）=顶",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s02_q02",
+          "type": "word_usage",
+          "sectionTitle": "二、加一加，减一减",
+          "displayPrompt": "飘-（____）=票 爸-（____）=巴 校-（____）=（____）房-（____）=方",
+          "prompt": "飘-（____）=票 爸-（____）=巴 校-（____）=（____）房-（____）=方",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s03_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "美丽的 空气 小水珠 停机坪",
+          "prompt": "美丽的 空气 小水珠 停机坪",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s03_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "潮湿的 翅膀 小蜻蜓 歌台",
+          "prompt": "潮湿的 翅膀 小蜻蜓 歌台",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s03_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "雪白的 夏夜 小青蛙 凉伞",
+          "prompt": "雪白的 夏夜 小青蛙 凉伞",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s03_q04",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "透明的 贝壳 小鱼儿 摇篮",
+          "prompt": "透明的 贝壳 小鱼儿 摇篮",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s04_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "四、用“/”划去不是同一类的词语",
+          "displayPrompt": "水杯 牙膏 铅笔袋 洗手液",
+          "prompt": "水杯 牙膏 铅笔袋 洗手液",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s04_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "四、用“/”划去不是同一类的词语",
+          "displayPrompt": "橡皮 直尺 蚕丝被 水彩笔",
+          "prompt": "橡皮 直尺 蚕丝被 水彩笔",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s04_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "四、用“/”划去不是同一类的词语",
+          "displayPrompt": "外套 衬衫 洗衣机 运动鞋",
+          "prompt": "外套 衬衫 洗衣机 运动鞋",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "池上 小池",
+          "prompt": "池上 小池",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "撑艇，偷____。 泉____惜细流，树阴照___柔。",
+          "prompt": "撑艇，偷____。 泉____惜细流，树阴照___柔。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d13_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "解藏踪迹，浮萍___道。 露 蜻蜓",
+          "prompt": "解藏踪迹，浮萍___道。 露 蜻蜓",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "title": "第14天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d14_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chūn jié",
+          "prompt": "chūn jié",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gù xiāng",
+          "prompt": "gù xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kuài lè",
+          "prompt": "kuài lè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huí jiā",
+          "prompt": "huí jiā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "píng píng",
+          "prompt": "píng píng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "ān an",
+          "prompt": "ān an",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gāo xìng",
+          "prompt": "gāo xìng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "lǎo shī",
+          "prompt": "lǎo shī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "che zhàn",
+          "prompt": "che zhàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hóng dòu",
+          "prompt": "hóng dòu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qíng kōng",
+          "prompt": "qíng kōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wàn lǐ",
+          "prompt": "wàn lǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s02_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "二、照样子，分一分，写一写",
+          "displayPrompt": "an 万",
+          "prompt": "an 万",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s02_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "二、照样子，分一分，写一写",
+          "displayPrompt": "ang 方",
+          "prompt": "ang 方",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s03_q01",
+          "type": "sentence",
+          "sectionTitle": "三、照样子，用加点的字词造句",
+          "displayPrompt": "妹妹一边唱歌，一边跳舞。 (1)妈妈一边，一边 ○ (2)____一边__ ,一边",
+          "prompt": "妹妹一边唱歌，一边跳舞。 (1)妈妈一边，一边 ○ (2)____一边__ ,一边",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_example_01",
+          "type": "example",
+          "sectionTitle": "三、照样子，用加点的字词造句",
+          "displayPrompt": "例：小壁虎的尾巴已经长出来啦! 已经",
+          "prompt": "例：小壁虎的尾巴已经长出来啦! 已经",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_example_02",
+          "type": "example",
+          "sectionTitle": "三、照样子，用加点的字词造句",
+          "displayPrompt": "例：小鸭子飞快地游到小公鸡身边。 飞快地",
+          "prompt": "例：小鸭子飞快地游到小公鸡身边。 飞快地",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s04_q01",
+          "type": "recitation",
+          "sectionTitle": "四、按课文内容填空",
+          "displayPrompt": "蛙 :“荷 歌 蛙蹲 荷 ,呱呱 地 歌唱。",
+          "prompt": "蛙 :“荷 歌 蛙蹲 荷 ,呱呱 地 歌唱。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d14_s04_q02",
+          "type": "recitation",
+          "sectionTitle": "四、按课文内容填空",
+          "displayPrompt": "小鱼儿说：“荷叶 伞。” 在荷叶__ 嘻嘻地 游游 ,捧起",
+          "prompt": "小鱼儿说：“荷叶 伞。” 在荷叶__ 嘻嘻地 游游 ,捧起",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 15,
+      "title": "第15天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d15_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "lì chūn",
+          "prompt": "lì chūn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shuō míng",
+          "prompt": "shuō míng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shé tou",
+          "prompt": "shé tou",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tīng jiàn",
+          "prompt": "tīng jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qīng shān",
+          "prompt": "qīng shān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qīng míng",
+          "prompt": "qīng míng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xīn qíng",
+          "prompt": "xīn qíng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhǔ rén",
+          "prompt": "zhǔ rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shí guāng",
+          "prompt": "shí guāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shēng dòng",
+          "prompt": "shēng dòng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "miàn tiáo",
+          "prompt": "miàn tiáo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qiū qiān",
+          "prompt": "qiū qiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s02_q01",
+          "type": "word_usage",
+          "sectionTitle": "二、给下面的句子加上合适的标点",
+          "displayPrompt": "我们明天去公园划船好吗（____）",
+          "prompt": "我们明天去公园划船好吗（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s02_q02",
+          "type": "word_usage",
+          "sectionTitle": "二、给下面的句子加上合适的标点",
+          "displayPrompt": "这个桃子真甜呀（____）",
+          "prompt": "这个桃子真甜呀（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s02_q03",
+          "type": "word_usage",
+          "sectionTitle": "二、给下面的句子加上合适的标点",
+          "displayPrompt": "你来看（____）这棵大树上开了很多花（____）",
+          "prompt": "你来看（____）这棵大树上开了很多花（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s03_q01",
+          "type": "word_usage",
+          "sectionTitle": "三、按要求给下面夏天代表性事物归类",
+          "displayPrompt": "用品类：____",
+          "prompt": "用品类：____",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s03_q02",
+          "type": "word_usage",
+          "sectionTitle": "三、按要求给下面夏天代表性事物归类",
+          "displayPrompt": "动物类：",
+          "prompt": "动物类：",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s03_q03",
+          "type": "word_usage",
+          "sectionTitle": "三、按要求给下面夏天代表性事物归类",
+          "displayPrompt": "食品类： ⑤雷阵雨⑥绿豆汤 ⑦蒲扇 ⑧凉席 ⑨萤火虫",
+          "prompt": "食品类： ⑤雷阵雨⑥绿豆汤 ⑦蒲扇 ⑧凉席 ⑨萤火虫",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s03_q04",
+          "type": "word_usage",
+          "sectionTitle": "三、按要求给下面夏天代表性事物归类",
+          "displayPrompt": "天气类：",
+          "prompt": "天气类：",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s04_q01",
+          "type": "recitation",
+          "sectionTitle": "四、按课文内容填空",
+          "displayPrompt": "__珠_:“____",
+          "prompt": "__珠_:“____",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d15_s04_q02",
+          "type": "recitation",
+          "sectionTitle": "四、按课文内容填空",
+          "displayPrompt": "小蜻蜓___:“荷 摇篮。” 停机坪。”小蜻蜓 荷 ___珠躺在荷_____,眨着_ 展开透明的翅膀。",
+          "prompt": "小蜻蜓___:“荷 摇篮。” 停机坪。”小蜻蜓 荷 ___珠躺在荷_____,眨着_ 展开透明的翅膀。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 16,
+      "title": "第16天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d16_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhù fáng",
+          "prompt": "zhù fáng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "běi fēng",
+          "prompt": "běi fēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "guǎng dōng",
+          "prompt": "guǎng dōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xué xiào",
+          "prompt": "xué xiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chūn huí",
+          "prompt": "chūn huí",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dà di",
+          "prompt": "dà di",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tài kōng",
+          "prompt": "tài kōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēng chē",
+          "prompt": "fēng chē",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhe shí",
+          "prompt": "zhe shí",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tā xiāng",
+          "prompt": "tā xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wàn lǐ",
+          "prompt": "wàn lǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wú yún",
+          "prompt": "wú yún",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s02_q01",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "翅膀(cì chi)",
+          "prompt": "翅膀(cì chi)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s02_q02",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "泉水(quán qián)",
+          "prompt": "泉水(quán qián)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s02_q03",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "浮萍(pín píng)",
+          "prompt": "浮萍(pín píng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s02_q04",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "风扇(sàn shàn)",
+          "prompt": "风扇(sàn shàn)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s02_q05",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "弯腰(yāo yào)",
+          "prompt": "弯腰(yāo yào)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s02_q06",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "阴沉(chén chéng)",
+          "prompt": "阴沉(chén chéng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_example_01",
+          "type": "example",
+          "sectionTitle": "三、照样子，写句子",
+          "displayPrompt": "例：荷叶(圆圆的),(绿绿的)。 西瓜 _'_",
+          "prompt": "例：荷叶(圆圆的),(绿绿的)。 西瓜 _'_",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s03_q02",
+          "type": "sentence",
+          "sectionTitle": "三、照样子，写句子",
+          "displayPrompt": "小白兔割草。 小鸟唱歌。 小白兔(在山坡上)割草。 小鸟（____）唱歌。 小白兔(弯着腰)(在山坡上)割草。小鸟（____）（____）唱歌。",
+          "prompt": "小白兔割草。 小鸟唱歌。 小白兔(在山坡上)割草。 小鸟（____）唱歌。 小白兔(弯着腰)(在山坡上)割草。小鸟（____）（____）唱歌。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s04_q01",
+          "type": "stroke",
+          "sectionTitle": "四、易错笔顺",
+          "displayPrompt": "“朵”的笔顺 ,第2笔是__。",
+          "prompt": "“朵”的笔顺 ,第2笔是__。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s04_q02",
+          "type": "stroke",
+          "sectionTitle": "四、易错笔顺",
+          "displayPrompt": "“为”的笔顺 ,第2笔是___。",
+          "prompt": "“为”的笔顺 ,第2笔是___。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s04_q03",
+          "type": "stroke",
+          "sectionTitle": "四、易错笔顺",
+          "displayPrompt": "“瓜”的笔顺 ,第3笔是_",
+          "prompt": "“瓜”的笔顺 ,第3笔是_",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s05_q01",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "静夜思 【唐】李白",
+          "prompt": "静夜思 【唐】李白",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s05_q02",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": ",疑______霜。",
+          "prompt": ",疑______霜。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d16_s05_q03",
+          "type": "recitation",
+          "sectionTitle": "五、按课文内容填空",
+          "displayPrompt": "望 _,",
+          "prompt": "望 _,",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 17,
+      "title": "第17天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d17_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kōng qi",
+          "prompt": "kōng qi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēi xíng",
+          "prompt": "fēi xíng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qián hòu",
+          "prompt": "qián hòu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yáng guāng",
+          "prompt": "yáng guāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gāo dī",
+          "prompt": "gāo dī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jīn tian",
+          "prompt": "jīn tian",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zǎo wǎn",
+          "prompt": "zǎo wǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xiào shēng",
+          "prompt": "xiào shēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "bà ba",
+          "prompt": "bà ba",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gē ge",
+          "prompt": "gē ge",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xià wǔ",
+          "prompt": "xià wǔ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kàn jiàn",
+          "prompt": "kàn jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s02_q01",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“__”画出每组词语中加点字读音有误的一项",
+          "displayPrompt": "棉花(mián) 掉落(diào) 拦路(nán)",
+          "prompt": "棉花(mián) 掉落(diào) 拦路(nán)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s02_q02",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“__”画出每组词语中加点字读音有误的一项",
+          "displayPrompt": "墙壁(bi) 难过(nàn) 咬住(yǎo)",
+          "prompt": "墙壁(bi) 难过(nàn) 咬住(yǎo)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_example_01",
+          "type": "example",
+          "sectionTitle": "三、照样子，写一写",
+          "displayPrompt": "例：雪白 雪白雪白 雪白雪白的云朵",
+          "prompt": "例：雪白 雪白雪白 雪白雪白的云朵",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s03_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "三、照样子，写一写",
+          "displayPrompt": "火红",
+          "prompt": "火红",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_options_example",
+          "type": "example",
+          "sectionTitle": "四、词语搭配",
+          "displayPrompt": "可选词语：①火红火红 ②金黄金黄 ③碧绿碧绿 ④瓦蓝瓦蓝",
+          "prompt": "可选词语：①火红火红 ②金黄金黄 ③碧绿碧绿 ④瓦蓝瓦蓝",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_options_01",
+          "type": "word_usage",
+          "sectionTitle": "四、词语搭配",
+          "displayPrompt": "（____）的天空",
+          "prompt": "（____）的天空",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_options_02",
+          "type": "word_usage",
+          "sectionTitle": "四、词语搭配",
+          "displayPrompt": "（____）的枫叶",
+          "prompt": "（____）的枫叶",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_options_03",
+          "type": "word_usage",
+          "sectionTitle": "四、词语搭配",
+          "displayPrompt": "（____）的草地",
+          "prompt": "（____）的草地",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_options_04",
+          "type": "word_usage",
+          "sectionTitle": "四、词语搭配",
+          "displayPrompt": "（____）的稻谷",
+          "prompt": "（____）的稻谷",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s05_q01",
+          "type": "sentence",
+          "sectionTitle": "五、读句子，填上合适的语气词",
+          "displayPrompt": "这朵花真香____!",
+          "prompt": "这朵花真香____!",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s05_q02",
+          "type": "sentence",
+          "sectionTitle": "五、读句子，填上合适的语气词",
+          "displayPrompt": "我正忙着捉虫子_____!",
+          "prompt": "我正忙着捉虫子_____!",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s05_q03",
+          "type": "sentence",
+          "sectionTitle": "五、读句子，填上合适的语气词",
+          "displayPrompt": "你可以把直尺借给我用一下______?",
+          "prompt": "你可以把直尺借给我用一下______?",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s05_q04",
+          "type": "sentence",
+          "sectionTitle": "五、读句子，填上合适的语气词",
+          "displayPrompt": "要下雨了，你还是赶快回家__!",
+          "prompt": "要下雨了，你还是赶快回家__!",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "title": "第18天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d18_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēn mǐ",
+          "prompt": "fēn mǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gēn zhe",
+          "prompt": "gēn zhe",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yīn jié",
+          "prompt": "yīn jié",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "nà me",
+          "prompt": "nà me",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "lái dào",
+          "prompt": "lái dào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "chéng yǔ",
+          "prompt": "chéng yǔ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fáng jiān",
+          "prompt": "fáng jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "dǎ zào",
+          "prompt": "dǎ zào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kě pà",
+          "prompt": "kě pà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhǎo dào",
+          "prompt": "zhǎo dào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jiǔ yuǎn",
+          "prompt": "jiǔ yuǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "máo bǐ",
+          "prompt": "máo bǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q01",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 中（____）",
+          "prompt": "午 牛 刀 力 人 入 玉 主 中（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q02",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 （____）气",
+          "prompt": "午 牛 刀 力 人 入 玉 主 （____）气",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q03",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 （____）们",
+          "prompt": "午 牛 刀 力 人 入 玉 主 （____）们",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q04",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 （____）食",
+          "prompt": "午 牛 刀 力 人 入 玉 主 （____）食",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q05",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 水（____）",
+          "prompt": "午 牛 刀 力 人 入 玉 主 水（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q06",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 剪（____）",
+          "prompt": "午 牛 刀 力 人 入 玉 主 剪（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q07",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 出（____）",
+          "prompt": "午 牛 刀 力 人 入 玉 主 出（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s02_q08",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "午 牛 刀 力 人 入 玉 主 （____）米",
+          "prompt": "午 牛 刀 力 人 入 玉 主 （____）米",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s03_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "三、根据题意，填一填",
+          "displayPrompt": "我发现“猫、猴、狮”等字的部首都是 ,含有这个部首 的字多与__有关，含有这个部首的字还有：__, ○",
+          "prompt": "我发现“猫、猴、狮”等字的部首都是 ,含有这个部首 的字多与__有关，含有这个部首的字还有：__, ○",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s03_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "三、根据题意，填一填",
+          "displayPrompt": "我发现“蝴、蝶、蜻”等字的部首都是___,含有这个部首的字 多与 有关，含有这个部首的字还有：",
+          "prompt": "我发现“蝴、蝶、蜻”等字的部首都是___,含有这个部首的字 多与 有关，含有这个部首的字还有：",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_example_01",
+          "type": "example",
+          "sectionTitle": "四、照样子，填一填",
+          "displayPrompt": "例：碧绿碧绿的叶子",
+          "prompt": "例：碧绿碧绿的叶子",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s04_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "四、照样子，填一填",
+          "displayPrompt": "雪白雪白的 金黄金黄的 乌黑乌黑的_____",
+          "prompt": "雪白雪白的 金黄金黄的 乌黑乌黑的_____",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_example_02",
+          "type": "example",
+          "sectionTitle": "四、照样子，填一填",
+          "displayPrompt": "例：又大有红",
+          "prompt": "例：又大有红",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s04_q04",
+          "type": "chinese_manual",
+          "sectionTitle": "四、照样子，填一填",
+          "displayPrompt": "又___又_ 又 又 又_又",
+          "prompt": "又___又_ 又 又 又_又",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_example_03",
+          "type": "example",
+          "sectionTitle": "四、照样子，填一填",
+          "displayPrompt": "例：叽喳叽叽喳喳",
+          "prompt": "例：叽喳叽叽喳喳",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d18_s04_q06",
+          "type": "chinese_manual",
+          "sectionTitle": "四、照样子，填一填",
+          "displayPrompt": "平安 许多 红火",
+          "prompt": "平安 许多 红火",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "title": "第19天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d19_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shū bāo",
+          "prompt": "shū bāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gǔ jīn",
+          "prompt": "gǔ jīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "wú bian",
+          "prompt": "wú bian",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "quán tǐ",
+          "prompt": "quán tǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fēi jī",
+          "prompt": "fēi jī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "míng tiān",
+          "prompt": "míng tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jīn yú",
+          "prompt": "jīn yú",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhǐ zhù",
+          "prompt": "zhǐ zhù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "gōng jīn",
+          "prompt": "gōng jīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tǔ dì",
+          "prompt": "tǔ dì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xiǎo chī",
+          "prompt": "xiǎo chī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "niú ròu",
+          "prompt": "niú ròu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s02_q01",
+          "type": "word_usage",
+          "sectionTitle": "二、反义词",
+          "displayPrompt": "（____）一后",
+          "prompt": "（____）一后",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s02_q02",
+          "type": "word_usage",
+          "sectionTitle": "二、反义词",
+          "displayPrompt": "（____）一出",
+          "prompt": "（____）一出",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s02_q03",
+          "type": "word_usage",
+          "sectionTitle": "二、反义词",
+          "displayPrompt": "哭—（____）",
+          "prompt": "哭—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s02_q04",
+          "type": "word_usage",
+          "sectionTitle": "二、反义词",
+          "displayPrompt": "低—（____）",
+          "prompt": "低—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s03_q01",
+          "type": "word_usage",
+          "sectionTitle": "三、近义词",
+          "displayPrompt": "（____）一入",
+          "prompt": "（____）一入",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s03_q02",
+          "type": "word_usage",
+          "sectionTitle": "三、近义词",
+          "displayPrompt": "（____）—降",
+          "prompt": "（____）—降",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s03_q03",
+          "type": "word_usage",
+          "sectionTitle": "三、近义词",
+          "displayPrompt": "洁白一（____）",
+          "prompt": "洁白一（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s03_q04",
+          "type": "word_usage",
+          "sectionTitle": "三、近义词",
+          "displayPrompt": "想念—（____）",
+          "prompt": "想念—（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_example",
+          "type": "example",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "可选量词：①块 ②棵 ③双 ④片 ⑤只 ⑥个",
+          "prompt": "可选量词：①块 ②棵 ③双 ④片 ⑤只 ⑥个",
+          "answer": null,
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_01",
+          "type": "word_usage",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "一（____）大眼睛",
+          "prompt": "一（____）大眼睛",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_02",
+          "type": "word_usage",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "一（____）玉米地",
+          "prompt": "一（____）玉米地",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_03",
+          "type": "word_usage",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "一（____）桃树",
+          "prompt": "一（____）桃树",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_04",
+          "type": "word_usage",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "一（____）瓜地",
+          "prompt": "一（____）瓜地",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_05",
+          "type": "word_usage",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "一（____）西瓜",
+          "prompt": "一（____）西瓜",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_options_06",
+          "type": "word_usage",
+          "sectionTitle": "四、量词搭配",
+          "displayPrompt": "一（____）小兔子",
+          "prompt": "一（____）小兔子",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s05_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "五、读一读，用“√”选择正确的生字",
+          "displayPrompt": "妈妈夸我最(进近)有了很大的(进近)步。",
+          "prompt": "妈妈夸我最(进近)有了很大的(进近)步。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s05_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "五、读一读，用“√”选择正确的生字",
+          "displayPrompt": "我(在再)游乐场(在再)一次见到了同学林立。",
+          "prompt": "我(在再)游乐场(在再)一次见到了同学林立。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s05_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "五、读一读，用“√”选择正确的生字",
+          "displayPrompt": "(清青)的山，(清青)的水，家乡的景色真迷人!",
+          "prompt": "(清青)的山，(清青)的水，家乡的景色真迷人!",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d19_s05_q04",
+          "type": "chinese_manual",
+          "sectionTitle": "五、读一读，用“√”选择正确的生字",
+          "displayPrompt": "过年了，妈妈给奶奶(跑泡)茶，爸爸放鞭(饱 炮)。",
+          "prompt": "过年了，妈妈给奶奶(跑泡)茶，爸爸放鞭(饱 炮)。",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "title": "第20天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d20_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cāo di",
+          "prompt": "cāo di",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "tóng bàn",
+          "prompt": "tóng bàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huā cāo",
+          "prompt": "huā cāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jiā xiāng",
+          "prompt": "jiā xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yí gōng",
+          "prompt": "yí gōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "qiū tiān",
+          "prompt": "qiū tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "féng yǔ",
+          "prompt": "féng yǔ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xuě huá",
+          "prompt": "xuě huá",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huǒ bàn",
+          "prompt": "huǒ bàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zuō yóu",
+          "prompt": "zuō yóu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "yuǎn jin",
+          "prompt": "yuǎn jin",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huān kuái",
+          "prompt": "huān kuái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q01",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 （____）近",
+          "prompt": "运远 地池 饱抱 干千 （____）近",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q02",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 （____）塘",
+          "prompt": "运远 地池 饱抱 干千 （____）塘",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q03",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 怀（____）",
+          "prompt": "运远 地池 饱抱 干千 怀（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q04",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 （____）万",
+          "prompt": "运远 地池 饱抱 干千 （____）万",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q05",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 （____）送",
+          "prompt": "运远 地池 饱抱 干千 （____）送",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q06",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 土（____）",
+          "prompt": "运远 地池 饱抱 干千 土（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q07",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 吃（____）",
+          "prompt": "运远 地池 饱抱 干千 吃（____）",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s02_q08",
+          "type": "word_usage",
+          "sectionTitle": "二、选字填空",
+          "displayPrompt": "运远 地池 饱抱 干千 （____）活",
+          "prompt": "运远 地池 饱抱 干千 （____）活",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s03_q01",
+          "type": "word_usage",
+          "sectionTitle": "三、查字典，填一填",
+          "displayPrompt": "要查的字 大写字母 音节 组词",
+          "prompt": "要查的字 大写字母 音节 组词",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s03_q02",
+          "type": "word_usage",
+          "sectionTitle": "三、查字典，填一填",
+          "displayPrompt": "房",
+          "prompt": "房",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s03_q03",
+          "type": "word_usage",
+          "sectionTitle": "三、查字典，填一填",
+          "displayPrompt": "怀",
+          "prompt": "怀",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s03_q04",
+          "type": "word_usage",
+          "sectionTitle": "三、查字典，填一填",
+          "displayPrompt": "舌",
+          "prompt": "舌",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s04_q01",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "捉住(zhuō zuō)",
+          "prompt": "捉住(zhuō zuō)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s04_q02",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "喝茶(chá cá)",
+          "prompt": "喝茶(chá cá)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s04_q03",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "专心(zuān zhuān)",
+          "prompt": "专心(zuān zhuān)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s04_q04",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "相反(xiàng xiāng)",
+          "prompt": "相反(xiàng xiāng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s04_q05",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "做操(cāo chāo)",
+          "prompt": "做操(cāo chāo)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s04_q06",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "初级(chū cū)",
+          "prompt": "初级(chū cū)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s05_q01",
+          "type": "word_usage",
+          "sectionTitle": "五、词语搭配",
+          "displayPrompt": "(白白)的糯米",
+          "prompt": "(白白)的糯米",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s05_q02",
+          "type": "word_usage",
+          "sectionTitle": "五、词语搭配",
+          "displayPrompt": "（____）的枣",
+          "prompt": "（____）的枣",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s05_q03",
+          "type": "word_usage",
+          "sectionTitle": "五、词语搭配",
+          "displayPrompt": "（____）的箬竹叶",
+          "prompt": "（____）的箬竹叶",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s05_q04",
+          "type": "word_usage",
+          "sectionTitle": "五、词语搭配",
+          "displayPrompt": "(美滋滋)地吃",
+          "prompt": "(美滋滋)地吃",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s05_q05",
+          "type": "word_usage",
+          "sectionTitle": "五、词语搭配",
+          "displayPrompt": "（____）地跑",
+          "prompt": "（____）地跑",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d20_s05_q06",
+          "type": "word_usage",
+          "sectionTitle": "五、词语搭配",
+          "displayPrompt": "（____）地散步",
+          "prompt": "（____）地散步",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "title": "第21天",
+      "questions": [
+        {
+          "id": "chinese_review_21_d21_s01_q01",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "kāi dēng",
+          "prompt": "kāi dēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q02",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "huǒ chē",
+          "prompt": "huǒ chē",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q03",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "ke wén",
+          "prompt": "ke wén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q04",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "zhōng guó",
+          "prompt": "zhōng guó",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q05",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "xià rén",
+          "prompt": "xià rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q06",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "méi rén",
+          "prompt": "méi rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q07",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "fāng xiàng",
+          "prompt": "fāng xiàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q08",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "cǎo dì",
+          "prompt": "cǎo dì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q09",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shū yè",
+          "prompt": "shū yè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q10",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "hù kǒu",
+          "prompt": "hù kǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q11",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "shàng jiāo",
+          "prompt": "shàng jiāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s01_q12",
+          "type": "pinyin_write",
+          "sectionTitle": "一、看拼音写词语",
+          "displayPrompt": "jiān jiào",
+          "prompt": "jiān jiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s02_q01",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“___”画出每组词语中不是轻声的一项",
+          "displayPrompt": "胆子 眼睛 洒水 喜欢",
+          "prompt": "胆子 眼睛 洒水 喜欢",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s02_q02",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“___”画出每组词语中不是轻声的一项",
+          "displayPrompt": "爸爸 故事 粽子 画画",
+          "prompt": "爸爸 故事 粽子 画画",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s02_q03",
+          "type": "pronunciation",
+          "sectionTitle": "二、用“___”画出每组词语中不是轻声的一项",
+          "displayPrompt": "样子 妈妈 哥哥 房间",
+          "prompt": "样子 妈妈 哥哥 房间",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s03_q01",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "一台 书 燕子 跑 包 足球",
+          "prompt": "一台 书 燕子 跑 包 足球",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s03_q02",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "一册 手机 壁虎 飞 踢 迷藏",
+          "prompt": "一册 手机 壁虎 飞 踢 迷藏",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s03_q03",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "一部 电视 小鹿 游 捉 鞭炮",
+          "prompt": "一部 电视 小鹿 游 捉 鞭炮",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s03_q04",
+          "type": "chinese_manual",
+          "sectionTitle": "三、读一读，连一连",
+          "displayPrompt": "一支 铅笔 鱼儿 爬 放 粽子",
+          "prompt": "一支 铅笔 鱼儿 爬 放 粽子",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s04_q01",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "一直(zhí zí)",
+          "prompt": "一直(zhí zí)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s04_q02",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "邻居(lín líng)",
+          "prompt": "邻居(lín líng)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s04_q03",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "尺寸(cùn chùn)",
+          "prompt": "尺寸(cùn chùn)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s04_q04",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "听见(tīng tīn)",
+          "prompt": "听见(tīng tīn)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s04_q05",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "静止(zhǐ zǐ)",
+          "prompt": "静止(zhǐ zǐ)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s04_q06",
+          "type": "pronunciation",
+          "sectionTitle": "四、用“√”给下列加点字选择正确读音",
+          "displayPrompt": "喊叫(hǎn hàn)",
+          "prompt": "喊叫(hǎn hàn)",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s05_q01",
+          "type": "sentence",
+          "sectionTitle": "五、连词成句",
+          "displayPrompt": "跳绳 ②和③我 ④一起⑤大家",
+          "prompt": "跳绳 ②和③我 ④一起⑤大家",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d21_s05_q02",
+          "type": "sentence",
+          "sectionTitle": "五、连词成句",
+          "displayPrompt": "森林广场②参加③动物们④大会⑤来到",
+          "prompt": "森林广场②参加③动物们④大会⑤来到",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

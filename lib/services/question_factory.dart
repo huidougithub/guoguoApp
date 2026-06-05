@@ -8,21 +8,30 @@ class QuestionFactory {
 
   final Random random;
 
-  List<Question> buildForLevel(LevelDefinition level, {int count = 10}) {
-    if (count <= 0) return const [];
+  List<Question> buildForLevel(LevelDefinition level, {int? count}) {
+    final targetCount = count ?? (_isMathChapterPractice(level) ? 30 : 10);
+    if (_isMathChapterPractice(level)) {
+      return _buildMathChapterPractice(level, count: targetCount);
+    }
+
+    if (_usesPrimaryMathPool(level)) {
+      return _buildFromPrimaryMathPool(level, count: targetCount);
+    }
+
+    if (targetCount <= 0) return const [];
 
     final questions = <Question>[];
     final seen = <String>{};
-    final maxAttempts = max(80, count * 24);
+    final maxAttempts = max(80, targetCount * 24);
 
     for (
       var attempt = 0;
-      questions.length < count && attempt < maxAttempts;
+      questions.length < targetCount && attempt < maxAttempts;
       attempt++
     ) {
-      final candidateIndex = attempt < count
+      final candidateIndex = attempt < targetCount
           ? attempt
-          : count + attempt * 3 + random.nextInt(count * 5 + 7);
+          : targetCount + attempt * 3 + random.nextInt(targetCount * 5 + 7);
       final candidate = _build(level, candidateIndex, isBoss: false);
       if (seen.add(_questionKey(candidate))) {
         questions.add(candidate);
@@ -31,6 +40,67 @@ class QuestionFactory {
 
     if (questions.isEmpty) {
       questions.add(_build(level, 0, isBoss: false));
+    }
+
+    return [
+      for (var i = 0; i < questions.length; i++)
+        _withBossFlag(questions[i], i == questions.length - 1),
+    ];
+  }
+
+  bool _isMathChapterPractice(LevelDefinition level) {
+    return level.island == Island.math && level.id.endsWith('-chapter');
+  }
+
+  List<Question> _buildMathChapterPractice(
+    LevelDefinition chapterLevel, {
+    required int count,
+  }) {
+    if (count <= 0) return const [];
+    if (const {
+      'money',
+      'hundred_add_sub',
+      'pattern',
+      'vertical_calc',
+    }.contains(chapterLevel.generatorKind)) {
+      return _buildFromPrimaryMathPool(chapterLevel, count: count);
+    }
+    final sourceLevels = mathLevels
+        .where((level) => level.chapterId == chapterLevel.chapterId)
+        .toList();
+    if (sourceLevels.isEmpty) {
+      return _buildFromPrimaryMathPool(chapterLevel, count: count);
+    }
+
+    final questions = <Question>[];
+    final seen = <String>{};
+    final levelOrder = [...sourceLevels]..shuffle(random);
+    var cursor = 0;
+    final maxAttempts = max(160, count * 48);
+
+    for (
+      var attempt = 0;
+      questions.length < count && attempt < maxAttempts;
+      attempt++
+    ) {
+      final source = levelOrder[cursor++ % levelOrder.length];
+      final templateId = attempt + random.nextInt(997);
+      final candidate = _buildPrimaryMathTemplate(
+        source,
+        templateId * 1000 + attempt * 17,
+        templateId,
+        isBoss: false,
+      );
+      if (seen.add(_questionKey(candidate))) {
+        questions.add(_retargetQuestion(candidate, chapterLevel));
+      }
+    }
+
+    while (questions.length < count) {
+      final source = sourceLevels[questions.length % sourceLevels.length];
+      final fallback = _build(source, questions.length * 31, isBoss: false);
+      if (!seen.add(_questionKey(fallback))) break;
+      questions.add(_retargetQuestion(fallback, chapterLevel));
     }
 
     return [
@@ -52,16 +122,19 @@ class QuestionFactory {
       ];
     }
 
-    final math = pick(Island.math, 5);
-    final chinese = pick(Island.chinese, 3);
-    final english = pick(Island.english, 2);
+    final math = pick(Island.math, 15);
+    final chinese = pick(Island.chinese, 9);
+    final english = pick(Island.english, 6);
     return [
-      for (var i = 0; i < math.length; i++)
-        _build(math[i], i, isBoss: i == math.length - 1),
+      for (var i = 0; i < math.length; i++) _build(math[i], i, isBoss: false),
       for (var i = 0; i < chinese.length; i++)
-        _build(chinese[i], i, isBoss: i == chinese.length - 1),
+        _build(chinese[i], math.length + i, isBoss: false),
       for (var i = 0; i < english.length; i++)
-        _build(english[i], i, isBoss: i == english.length - 1),
+        _build(
+          english[i],
+          math.length + chinese.length + i,
+          isBoss: i == english.length - 1,
+        ),
     ];
   }
 
@@ -133,6 +206,8 @@ class QuestionFactory {
         return _hundredNumber(level, index, isBoss);
       case 'hundred_add_sub':
         return _hundredAddSub(level, index, isBoss, advanced: false);
+      case 'vertical_calc':
+        return _verticalCalculation(level, index, isBoss);
       case 'length_angle':
         return _lengthAngle(level, index, isBoss);
       case 'hundred_add_sub2':
@@ -190,6 +265,1344 @@ class QuestionFactory {
       default:
         return _addSub(level, index, 20, isBoss);
     }
+  }
+
+  bool _usesPrimaryMathPool(LevelDefinition level) {
+    return level.island == Island.math &&
+        const {
+          'small_number',
+          'ten_add_sub',
+          'teen_number',
+          'solid_shape',
+          'clock_basic',
+          'make_ten',
+          'plane_classify',
+          'subtract20',
+          'money',
+          'hundred_add_sub',
+          'pattern',
+          'vertical_calc',
+        }.contains(level.generatorKind);
+  }
+
+  List<Question> _buildFromPrimaryMathPool(
+    LevelDefinition level, {
+    required int count,
+  }) {
+    if (count <= 0) return const [];
+
+    final useFixedBossTemplate = level.generatorKind == 'vertical_calc';
+    final regularCount = useFixedBossTemplate ? max(0, count - 1) : count;
+    final templateCount = _primaryMathTemplateCount(level);
+    final templateIds = [for (var i = 0; i < templateCount; i++) i]
+      ..shuffle(random);
+    final questions = <Question>[];
+    final seen = <String>{};
+    var cursor = 0;
+    final maxAttempts = max(100, count * 28);
+
+    for (
+      var attempt = 0;
+      questions.length < regularCount && attempt < maxAttempts;
+      attempt++
+    ) {
+      if (cursor >= templateIds.length) {
+        templateIds.shuffle(random);
+        cursor = 0;
+      }
+      final templateId = templateIds[cursor++];
+      final candidateIndex =
+          templateId * 1000 + attempt * 17 + random.nextInt(997);
+      final candidate = _buildPrimaryMathTemplate(
+        level,
+        candidateIndex,
+        templateId,
+        isBoss: false,
+      );
+      if (seen.add(_questionKey(candidate))) {
+        questions.add(candidate);
+      }
+    }
+
+    while (questions.length < regularCount) {
+      final fallback = _build(level, questions.length * 31, isBoss: false);
+      if (!seen.add(_questionKey(fallback))) break;
+      questions.add(fallback);
+    }
+
+    if (useFixedBossTemplate) {
+      questions.add(_verticalCalculationBoss(level, count * 1009));
+    }
+
+    return [
+      for (var i = 0; i < questions.length; i++)
+        _withBossFlag(questions[i], i == questions.length - 1),
+    ];
+  }
+
+  int _primaryMathTemplateCount(LevelDefinition level) {
+    if (level.generatorKind == 'plane_classify' && level.levelIndex == 3) {
+      return 48;
+    }
+    if (const {
+      'money',
+      'hundred_add_sub',
+      'pattern',
+      'vertical_calc',
+    }.contains(level.generatorKind)) {
+      return 30;
+    }
+    return 24;
+  }
+
+  Question _buildPrimaryMathTemplate(
+    LevelDefinition level,
+    int index,
+    int templateId, {
+    required bool isBoss,
+  }) {
+    return switch (level.generatorKind) {
+      'small_number' => _smallNumberPool(level, index, templateId, isBoss),
+      'ten_add_sub' => _tenAddSubPool(level, index, templateId, isBoss),
+      'teen_number' => _teenNumberPool(level, index, templateId, isBoss),
+      'solid_shape' => _solidShapePool(level, index, templateId, isBoss),
+      'clock_basic' => _clockBasicPool(level, index, templateId, isBoss),
+      'make_ten' => _makeTenPool(level, index, templateId, isBoss),
+      'plane_classify' => _planeClassifyPool(level, index, templateId, isBoss),
+      'subtract20' => _subtract20Pool(level, index, templateId, isBoss),
+      'money' => _moneyPool(level, index, templateId, isBoss),
+      'hundred_add_sub' => _hundredAddSubPool(level, index, templateId, isBoss),
+      'pattern' => _patternPool(level, index, templateId, isBoss),
+      'vertical_calc' => _verticalCalculationPool(
+        level,
+        index,
+        templateId,
+        isBoss,
+      ),
+      _ => _build(level, index, isBoss: isBoss),
+    };
+  }
+
+  Question _smallNumberPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final stage = level.levelIndex;
+    if (stage == 1) {
+      final items = [
+        ('苹果', '🍎'),
+        ('星星', '⭐'),
+        ('小鱼', '🐟'),
+        ('铅笔', '✏️'),
+        ('气球', '🎈'),
+        ('橘子', '🍊'),
+        ('小花', '🌸'),
+        ('圆片', '🔴'),
+      ];
+      final item = items[templateId % items.length];
+      final count = _range(1, 10);
+      return _choice(
+        level,
+        index,
+        '数一数：${_symbols(item.$2, count)} 一共有几个${item.$1}？',
+        '$count',
+        _numberChoices(count, spread: 3),
+        '可以用手指点着图形，一个一个数。',
+        '一共有$count个${item.$1}。',
+        isBoss,
+      );
+    }
+    if (stage == 2) {
+      final pairs = [
+        ('苹果', '🍎', '梨', '🍐'),
+        ('小猫', '🐱', '小狗', '🐶'),
+        ('星星', '⭐', '月亮', '🌙'),
+        ('圆片', '🔴', '方块', '🟦'),
+        ('铅笔', '✏️', '橡皮', '🧽'),
+        ('红花', '🌸', '黄花', '🌼'),
+      ];
+      final pair = pairs[templateId % pairs.length];
+      final left = _range(1, 9);
+      final right = _range(1, 9);
+      final askMore = templateId.isEven;
+      final answer = left == right
+          ? '一样多'
+          : askMore
+          ? (left > right ? '${pair.$1}多' : '${pair.$3}多')
+          : (left < right ? '${pair.$1}少' : '${pair.$3}少');
+      return _choice(
+        level,
+        index,
+        '比一比：${_symbols(pair.$2, left)} 和 ${_symbols(pair.$4, right)}，哪边${askMore ? '多' : '少'}？',
+        answer,
+        ['${pair.$1}多', '${pair.$3}多', '${pair.$1}少', '${pair.$3}少', '一样多'],
+        '先分别数出两边的数量，再比较。',
+        '$left和$right比较，答案是$answer。',
+        isBoss,
+      );
+    }
+    if (stage == 3) {
+      final rows = [
+        ('🐱 在桌子上面，⚽ 在桌子下面。小猫在哪里？', '上面', '找准参照物“桌子”。'),
+        ('✏️ 在 🎒 左边，🥤 在 🎒 右边。水杯在哪里？', '右边', '先找到书包，再看水杯的位置。'),
+        ('排队：小明 → 小红 → 小丽。小明在小红的哪里？', '前面', '箭头表示队伍前进方向。'),
+        ('排队：小鹅 → 小鸡 → 小鸭。小鸭在小鸡的哪里？', '后面', '排在后面的，就是后面。'),
+        ('⭐ 在 🌙 上面，☁️ 在 🌙 下面。云朵在哪里？', '下面', '先找到月亮，再看云朵。'),
+        ('位置：小明 小红 小丽。小明在小红哪边？', '左边', '按从左到右的顺序观察。'),
+        ('黑板在教室前面，书柜在教室后面。黑板在哪里？', '前面', '教室正前方通常是黑板。'),
+        ('🐶 在盒子前面，🐱 在盒子后面。小猫在哪里？', '后面', '题目直接说明小猫在盒子后面。'),
+      ];
+      final row = rows[templateId % rows.length];
+      return _choice(
+        level,
+        index,
+        row.$1,
+        row.$2,
+        ['上面', '下面', '前面', '后面', '左边', '右边'],
+        '位置题要先找参照物。',
+        row.$3,
+        isBoss,
+      );
+    }
+
+    if (templateId < 10) {
+      final length = _range(4, 7);
+      final target = _range(1, length);
+      final icons = [
+        for (var i = 1; i <= length; i++) i == target ? '🚩' : '⚪',
+      ].join(' ');
+      return _choice(
+        level,
+        index,
+        '从左往右数：$icons，红旗排第几？',
+        '第$target',
+        [for (var i = 1; i <= min(6, length); i++) '第$i'],
+        '第几表示位置，要按指定方向数。',
+        '从左往右数，红旗排第$target。',
+        isBoss,
+      );
+    }
+    final add = templateId.isEven;
+    final a = _range(1, 5);
+    final b = add ? _range(0, 5 - a) : _range(0, a);
+    final answer = add ? a + b : a - b;
+    return _choice(
+      level,
+      index,
+      '$a ${add ? '+' : '-'} $b = ?',
+      '$answer',
+      _numberChoices(answer, spread: 3),
+      add ? '加法表示合起来。' : '减法表示拿走一部分。',
+      '$a ${add ? '+' : '-'} $b = $answer。',
+      isBoss,
+    );
+  }
+
+  Question _tenAddSubPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final stage = level.levelIndex;
+    if (stage <= 3) {
+      final total = stage == 1
+          ? _range(6, 7)
+          : stage == 2
+          ? _range(8, 9)
+          : 10;
+      final known = _range(1, total - 1);
+      return _choice(
+        level,
+        index,
+        '$total可以分成$known和几？',
+        '${total - known}',
+        _numberChoices(total - known, spread: 4),
+        '想一想两个数合起来要等于$total。',
+        '$known + ${total - known} = $total。',
+        isBoss,
+      );
+    }
+    if (templateId < 10) {
+      final total = _range(6, 10);
+      final shown = stage == 4 ? _range(1, total - 1) : _range(1, total);
+      final answer = stage == 4 ? total - shown : shown;
+      return _choice(
+        level,
+        index,
+        stage == 4
+            ? '看图补全：${_symbols('🔴', shown)} + 几个🔴 = ${_symbols('🔴', total)}？'
+            : '看图计算：${_symbols('🔴', total)} 拿走${total - shown}个，还剩几个？',
+        '$answer',
+        _numberChoices(answer, spread: 4),
+        stage == 4 ? '右边总数减去左边已经有的数量。' : '减法表示从总数里拿走一部分。',
+        stage == 4
+            ? '$total - $shown = $answer。'
+            : '$total - ${total - shown} = $answer。',
+        isBoss,
+      );
+    }
+    final add = stage == 4;
+    final a = _range(1, 9);
+    final b = add ? _range(1, 10 - a) : _range(1, a);
+    final answer = add ? a + b : a - b;
+    final prompt = templateId % 5 == 0
+        ? '小盒里有$a颗糖，${add ? '又放进' : '拿走'}$b颗，现在有几颗？'
+        : '$a ${add ? '+' : '-'} $b = ?';
+    return _choice(
+      level,
+      index,
+      prompt,
+      '$answer',
+      _numberChoices(answer, spread: 5),
+      '10以内加减可以用数一数或分与合来想。',
+      '$a ${add ? '+' : '-'} $b = $answer。',
+      isBoss,
+    );
+  }
+
+  Question _teenNumberPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final teen = _range(11, 20);
+    final ones = teen - 10;
+    if (level.levelIndex <= 2 || templateId < 10) {
+      if (templateId % 3 == 0) {
+        return _choice(
+          level,
+          index,
+          '$teen里面有几个十和几个一？',
+          '1个十和$ones个一',
+          ['1个十和$ones个一', '$ones个十和1个一', '1个十和${max(0, ones - 1)}个一', '2个十'],
+          '十几就是1个十和几个一。',
+          '$teen = 10 + $ones。',
+          isBoss,
+        );
+      }
+      return _choice(
+        level,
+        index,
+        '数一数：10根小棒 + ${_symbols('丨', ones)}，表示哪个数？',
+        '$teen',
+        _numberChoices(teen, spread: 4),
+        '先看1个十，再数几个一。',
+        '10加$ones等于$teen。',
+        isBoss,
+      );
+    }
+    if (templateId < 16) {
+      final before = _range(11, 18);
+      return _choice(
+        level,
+        index,
+        '$before，${before + 1}，${before + 2}，？，${before + 4}',
+        '${before + 3}',
+        _numberChoices(before + 3, spread: 5),
+        '按顺序一个一个往后数。',
+        '${before + 2}后面是${before + 3}。',
+        isBoss,
+      );
+    }
+    final subtract = level.levelIndex == 4 || templateId.isOdd;
+    final b = _range(1, 8);
+    final answer = subtract ? teen - b : teen + b;
+    return _choice(
+      level,
+      index,
+      '$teen ${subtract ? '-' : '+'} $b = ?',
+      '$answer',
+      _numberChoices(answer, spread: 6),
+      '十几加减几，先处理个位。',
+      '$teen ${subtract ? '-' : '+'} $b = $answer。',
+      isBoss,
+    );
+  }
+
+  Question _solidShapePool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final items = [
+      ('魔方', '正方体', '6个一样大的正方形面'),
+      ('纸巾盒', '长方体', '长长方方的面'),
+      ('茶叶罐', '圆柱', '上下两个面是圆形'),
+      ('足球', '球', '圆圆的，没有平平的面'),
+      ('书本', '长方体', '像扁扁的盒子'),
+      ('乒乓球', '球', '可以向各个方向滚动'),
+    ];
+    final item = items[templateId % items.length];
+    if (templateId % 4 == 0 || level.levelIndex == 3) {
+      return _choice(
+        level,
+        index,
+        '分一分：魔方、纸巾盒、茶叶罐、足球，哪个最像${item.$2}？',
+        item.$1,
+        items.map((e) => e.$1).toList(),
+        '先想这种立体图形的样子，再找生活物品。',
+        '${item.$1}最像${item.$2}。',
+        isBoss,
+      );
+    }
+    return _choice(
+      level,
+      index,
+      '${item.$1}最接近哪种立体图形？',
+      item.$2,
+      ['长方体', '正方体', '圆柱', '球'],
+      item.$3,
+      '${item.$1}可以看成${item.$2}。',
+      isBoss,
+    );
+  }
+
+  Question _clockBasicPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final hour = _range(1, 12);
+    if (level.levelIndex == 1) {
+      return _choice(
+        level,
+        index,
+        '钟表：分针指向12，时针指向$hour，现在是几时？',
+        '$hour时',
+        ['$hour时', '${hour % 12 + 1}时', '$hour时半', '${max(1, hour - 1)}时'],
+        '分针指向12表示整时。',
+        '分针指向12，时针指向$hour，就是$hour时。',
+        isBoss,
+      );
+    }
+    if (level.levelIndex == 2) {
+      return _choice(
+        level,
+        index,
+        '钟表：分针指向6，时针走过$hour，现在是几时半？',
+        '$hour时半',
+        ['$hour时', '$hour时半', '${hour % 12 + 1}时半', '${hour % 12 + 1}时'],
+        '分针指向6表示半时。',
+        '时针走过$hour，分针指向6，就是$hour时半。',
+        isBoss,
+      );
+    }
+    return _choice(
+      level,
+      index,
+      '时针快指向${hour % 12 + 1}，分针快到12，可以说接近什么时间？',
+      '快到${hour % 12 + 1}时',
+      ['刚过$hour时', '快到${hour % 12 + 1}时', '$hour时半', '${hour % 12 + 1}时半'],
+      '看时针接近哪个数字，再看分针是不是接近12。',
+      '这是快到${hour % 12 + 1}时。',
+      isBoss,
+    );
+  }
+
+  Question _makeTenPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final first = switch (level.levelIndex) {
+      1 => 9,
+      2 => [8, 7, 6][templateId % 3],
+      3 => [5, 4, 3, 2][templateId % 4],
+      _ => _range(2, 9),
+    };
+    final second = _range(2, 9);
+    final sum = first + second;
+    if (templateId < 8) {
+      return _choice(
+        level,
+        index,
+        '$first + $second = ?',
+        '$sum',
+        _numberChoices(sum, spread: 5),
+        '先把$first凑成10。',
+        '$first还差${10 - first}到10，凑十后得到$sum。',
+        isBoss,
+      );
+    }
+    if (templateId < 16) {
+      final take = 10 - first;
+      return _choice(
+        level,
+        index,
+        '凑十：$first + $second，可以先从$second里拿几个给$first？',
+        '$take',
+        _numberChoices(take, spread: 3),
+        '看$first离10还差几。',
+        '$first离10差$take。',
+        isBoss,
+      );
+    }
+    final used = _range(1, min(8, sum - 1));
+    return _choice(
+      level,
+      index,
+      '盒子里有$first颗星星，又放进$second颗，拿走$used颗，还剩几颗？',
+      '${sum - used}',
+      _numberChoices(sum - used, spread: 6),
+      '先用凑十法算加法，再减去拿走的。',
+      '$first + $second = $sum，$sum - $used = ${sum - used}。',
+      isBoss,
+    );
+  }
+
+  Question _planeClassifyPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    if (level.levelIndex == 1) {
+      return _planeShapeRecognition(level, index, templateId, isBoss);
+    }
+    if (level.levelIndex == 2) {
+      return _planeShapeComposition(level, index, templateId, isBoss);
+    }
+    return _planeShapeClassification(level, index, templateId, isBoss);
+  }
+
+  Question _planeShapeClassification(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      (
+        '如果按颜色分类，红色图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '2个红色圆形加1个红色正方形，一共3个红色图形。',
+        'r:c:1,r:c:1,b:t:1,b:t:1,b:t:1,r:s:1',
+      ),
+      (
+        '如果按颜色分类，蓝色图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '2个蓝色圆形加1个蓝色长方形，一共3个蓝色图形。',
+        'b:c:1,b:c:1,y:s:1,y:s:1,b:r:1',
+      ),
+      (
+        '如果按形状分类，圆形有几个？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '圆圆的图形有3个。',
+        'r:c:1,b:c:1,y:c:1,r:t:1,b:t:1,y:s:1',
+      ),
+      (
+        '如果按形状分类，三角形有几个？',
+        '4个',
+        ['2个', '3个', '4个', '5个'],
+        '尖尖的三角形有4个。',
+        'r:t:1,b:t:1,y:t:1,r:t:1,b:c:1,y:c:1,g:r:1',
+      ),
+      (
+        '如果按形状分类，长方形有几个？',
+        '2个',
+        ['1个', '2个', '3个', '4个'],
+        '长长的长方形有2个。',
+        'g:r:1,b:r:1,y:s:1,r:s:1,b:s:1,g:c:1',
+      ),
+      (
+        '如果按大小分类，大图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '大圆形2个，大三角形1个，一共有3个大图形。',
+        'r:c:1.25,b:c:.75,y:c:.75,g:c:.75,r:t:1.25,b:t:.75',
+      ),
+      (
+        '如果按大小分类，小图形有几个？',
+        '4个',
+        ['2个', '3个', '4个', '6个'],
+        '小正方形有4个。',
+        'y:s:.72,y:s:.72,y:s:.72,y:s:.72,b:s:1.25,b:s:1.25',
+      ),
+      (
+        '如果按“有没有角”分类，没有角的图形有几个？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '圆形没有角，一共有3个圆形。',
+        'r:c:1,b:c:1,y:c:1,r:t:1,b:t:1,y:s:1',
+      ),
+      (
+        '如果按“有没有角”分类，有角的图形有几个？',
+        '4个',
+        ['2个', '3个', '4个', '6个'],
+        '三角形和正方形都有角，一共4个。',
+        'r:c:1,b:c:1,y:t:1,g:t:1,r:s:1,b:s:1',
+      ),
+      (
+        '如果按“有没有直直的边”分类，没有直边的是哪类？',
+        '圆形',
+        ['圆形', '三角形', '长方形', '正方形'],
+        '圆形没有直直的边。',
+        'r:c:1,b:t:1,y:r:1,g:s:1',
+      ),
+      (
+        '如果按颜色分类，黄色图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '黄色三角形2个，黄色圆形1个，一共3个。',
+        'y:t:1,y:t:1,y:c:1,b:s:1,b:s:1,b:s:1',
+      ),
+      (
+        '如果按形状分类，正方形有几个？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '四四方方的正方形有3个。',
+        'y:s:1,b:s:1,r:s:1,g:r:1,g:r:1,b:c:1',
+      ),
+      (
+        '哪个分类标准只看颜色？',
+        '红色和蓝色',
+        ['红色和蓝色', '圆形和三角形', '大图形和小图形', '有角和没有角'],
+        '红色和蓝色说的是颜色。',
+        '',
+      ),
+      (
+        '哪个分类标准只看形状？',
+        '圆形和三角形',
+        ['圆形和三角形', '红色和黄色', '大和小', '左边和右边'],
+        '圆形和三角形说的是形状。',
+        '',
+      ),
+      (
+        '把图形分成“大图形”和“小图形”，这是按什么分类？',
+        '大小',
+        ['大小', '颜色', '形状', '数量'],
+        '大和小说的是大小。',
+        '',
+      ),
+      (
+        '把图形分成“圆形”和“三角形”，这是按什么分类？',
+        '形状',
+        ['形状', '颜色', '大小', '位置'],
+        '圆形和三角形说的是形状。',
+        '',
+      ),
+      (
+        '按颜色分类，哪一类最多？',
+        '红色',
+        ['红色', '蓝色', '黄色', '一样多'],
+        '红色4个，数量最多。',
+        'r:c:1,r:t:1,r:s:1,r:r:1,b:c:1,b:t:1,y:s:1,y:c:1,y:r:1',
+      ),
+      (
+        '按颜色分类，哪一类最少？',
+        '红色',
+        ['红色', '蓝色', '黄色', '一样多'],
+        '红色2个，比蓝色和黄色都少。',
+        'r:c:1,r:t:1,b:c:1,b:t:1,b:s:1,b:r:1,b:c:1,y:s:1,y:t:1,y:r:1',
+      ),
+      (
+        '按形状分类，哪一类最多？',
+        '三角形',
+        ['圆形', '三角形', '正方形', '一样多'],
+        '三角形有4个，最多。',
+        'r:c:1,b:c:1,r:t:1,b:t:1,y:t:1,g:t:1,y:s:1,g:s:1,r:s:1',
+      ),
+      (
+        '按形状分类，哪一类最少？',
+        '圆形',
+        ['圆形', '三角形', '长方形', '一样多'],
+        '圆形只有1个，最少。',
+        'r:c:1,b:t:1,y:t:1,g:t:1,r:r:1,b:r:1',
+      ),
+      (
+        '红色图形比蓝色图形多几个？',
+        '2个',
+        ['1个', '2个', '3个', '4个'],
+        '红色5个，蓝色3个，5 - 3 = 2。',
+        'r:c:1,r:t:1,r:s:1,r:r:1,r:c:1,b:c:1,b:t:1,b:s:1',
+      ),
+      (
+        '圆形比三角形少几个？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '圆形2个，三角形5个，少3个。',
+        'r:c:1,b:c:1,r:t:1,b:t:1,y:t:1,g:t:1,r:t:1',
+      ),
+      (
+        '按形状分类，一共有几类？',
+        '4类',
+        ['2类', '3类', '4类', '5类'],
+        '图中有圆形、三角形、正方形、长方形，共4类。',
+        'r:c:1,b:t:1,y:s:1,g:r:1,r:c:1,b:t:1',
+      ),
+      (
+        'Boss题一：看图，按颜色分类后，数量最多的一类有几个？',
+        '5个',
+        ['3个', '4个', '5个', '6个'],
+        '蓝色5个，数量最多。',
+        'r:c:1,r:t:1,r:s:1,b:c:1,b:t:1,b:s:1,b:r:1,b:c:1,y:c:1,y:t:1,y:r:1,y:s:1',
+      ),
+      (
+        '这组图形如果按颜色分，可以分成几类？',
+        '2类',
+        ['1类', '2类', '3类', '4类'],
+        '只有红色和蓝色两种颜色。',
+        'r:c:1,b:c:1,r:t:1,b:t:1',
+      ),
+      (
+        '这组图形如果按形状分，可以分成几类？',
+        '2类',
+        ['1类', '2类', '3类', '4类'],
+        '只有圆形和三角形两种形状。',
+        'r:c:1,b:c:1,r:t:1,b:t:1',
+      ),
+      (
+        '同一组图形，既可以按颜色分，也可以按什么分？',
+        '形状',
+        ['形状', '天气', '声音', '数字'],
+        '图形还可以按形状来分。',
+        'r:c:1,b:c:1,r:t:1,b:t:1',
+      ),
+      (
+        '如果按颜色分，红色图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '红色圆形2个，红色三角形1个，一共3个。',
+        'r:c:1,r:c:1,r:t:1,b:c:1,b:c:1',
+      ),
+      (
+        '如果按形状分，圆形有几个？',
+        '4个',
+        ['2个', '3个', '4个', '5个'],
+        '圆形有4个。',
+        'r:c:1,r:c:1,b:c:1,b:c:1,r:t:1',
+      ),
+      (
+        '如果按大小分，可以分成几类？',
+        '2类',
+        ['1类', '2类', '3类', '4类'],
+        '可以分成大图形和小图形两类。',
+        'r:c:1.25,r:c:.75,b:t:1.25,b:t:.75',
+      ),
+      (
+        '如果按形状分，可以分成几类？',
+        '2类',
+        ['1类', '2类', '3类', '4类'],
+        '有圆形和三角形两种形状。',
+        'r:c:1.25,r:c:.75,b:t:1.25,b:t:.75',
+      ),
+      (
+        '如果按颜色分，可以分成几类？',
+        '3类',
+        ['1类', '2类', '3类', '4类'],
+        '有红色、蓝色、黄色三种颜色。',
+        'r:s:1,b:s:1,y:s:1',
+      ),
+      (
+        '如果按形状分，可以分成几类？',
+        '1类',
+        ['1类', '2类', '3类', '4类'],
+        '图中全是正方形，按形状只有1类。',
+        'r:s:1,b:s:1,y:s:1',
+      ),
+      (
+        '同一组图形按颜色分和按形状分，结果一样吗？',
+        '不一样',
+        ['一样', '不一样', '不能分', '没有图形'],
+        '按颜色有3类，按形状只有1类，结果不一样。',
+        'r:s:1,b:s:1,y:s:1',
+      ),
+      (
+        '如果按“有没有角”分，可以分成几类？',
+        '2类',
+        ['1类', '2类', '3类', '4类'],
+        '圆形没有角，三角形和正方形有角，可以分成2类。',
+        'r:c:1,b:c:1,y:t:1,g:t:1,r:s:1',
+      ),
+      (
+        '如果按形状分，可以分成几类？',
+        '3类',
+        ['1类', '2类', '3类', '4类'],
+        '有圆形、三角形、正方形，共3类。',
+        'r:c:1,b:c:1,y:t:1,g:t:1,r:s:1',
+      ),
+      (
+        '按颜色分，蓝色图形有几个？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '蓝色圆形1个，蓝色长方形2个，一共3个。',
+        'b:c:1,b:r:1,b:r:1,r:t:1,r:t:1',
+      ),
+      (
+        '按形状分，长方形有几个？',
+        '2个',
+        ['1个', '2个', '3个', '4个'],
+        '长方形有2个。',
+        'b:c:1,b:r:1,b:r:1,r:t:1,r:t:1',
+      ),
+      (
+        '哪个说法正确？',
+        '同一组物品可以按不同标准分',
+        ['同一组物品只能按一种方法分', '同一组物品可以按不同标准分', '分类时不能数数量', '颜色不能作为分类标准'],
+        '同一组物品可以按颜色、形状、大小等不同标准分类。',
+        '',
+      ),
+      (
+        '把同一组图形分成“红色、蓝色、黄色”，这是按什么标准？',
+        '颜色',
+        ['颜色', '形状', '大小', '是否有角'],
+        '红色、蓝色、黄色说的是颜色。',
+        '',
+      ),
+      (
+        '把同一组图形分成“圆形、三角形、正方形”，这是按什么标准？',
+        '形状',
+        ['形状', '颜色', '大小', '多少'],
+        '圆形、三角形、正方形说的是形状。',
+        '',
+      ),
+      (
+        '如果按大小分，大图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '大红圆2个，大蓝三角1个，一共3个大图形。',
+        'r:c:1.25,r:c:1.25,r:c:.75,b:t:1.25,b:t:.75,b:t:.75',
+      ),
+      (
+        '如果按颜色分，红色图形有几个？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '红色图形有3个。',
+        'r:c:1.25,r:c:1.25,r:c:.75,b:t:1.25,b:t:.75,b:t:.75',
+      ),
+      (
+        '同一组图形按大小分，可以分成“大”和什么？',
+        '小',
+        ['小', '红', '圆', '三角'],
+        '按大小分，可以分成大图形和小图形。',
+        'r:c:1.25,r:c:.75,b:t:1.25,b:t:.75',
+      ),
+      (
+        '按形状分，哪一类最多？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '一样多'],
+        '圆形4个，最多。',
+        'r:c:1,b:c:1,y:c:1,g:c:1,r:t:1,b:t:1,y:s:1,g:s:1,r:s:1',
+      ),
+      (
+        '按颜色分，哪一类最多？',
+        '蓝色',
+        ['红色', '蓝色', '黄色', '一样多'],
+        '蓝色5个，最多。',
+        'r:c:1,r:t:1,r:s:1,b:c:1,b:t:1,b:s:1,b:r:1,b:c:1,y:c:1',
+      ),
+      (
+        '这组图形按颜色分是3类，按形状分是几类？',
+        '2类',
+        ['1类', '2类', '3类', '4类'],
+        '图中有圆形和三角形两种形状。',
+        'r:c:1,b:c:1,y:c:1,r:t:1,b:t:1,y:t:1',
+      ),
+      (
+        'Boss题二：同一组图形，按颜色分有3类，按形状分有4类。下面哪个说法正确？',
+        '分类标准不同，结果可能不同',
+        ['分类标准不同，结果可能不同', '分类标准不同，结果一定一样', '不能按颜色分', '不能按形状分'],
+        '分类标准不同，分出的结果可能不同。',
+        'r:c:1,b:t:1,y:s:1,r:r:1,b:c:1,y:t:1',
+      ),
+    ];
+    final row = rows[templateId % rows.length];
+    return _choice(
+      level,
+      index,
+      row.$1,
+      row.$2,
+      row.$3,
+      '先确定分类标准，再数对应的一类。',
+      row.$4,
+      isBoss,
+      visual: row.$5.isEmpty ? null : _classificationVisual(row.$5),
+    );
+  }
+
+  Question _planeShapeRecognition(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      (
+        '这个图形是什么？',
+        '三角形',
+        ['三角形', '圆形', '正方形', '长方形'],
+        '三角形有3条边。',
+        'shape',
+        'triangle',
+      ),
+      (
+        '这个图形是什么？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '圆形圆圆的，没有角。',
+        'shape',
+        'circle',
+      ),
+      (
+        '这个图形是什么？',
+        '正方形',
+        ['正方形', '长方形', '圆形', '三角形'],
+        '正方形有4条一样长的边。',
+        'shape',
+        'square',
+      ),
+      (
+        '这个图形是什么？',
+        '长方形',
+        ['长方形', '正方形', '圆形', '三角形'],
+        '长方形有两条长边、两条短边。',
+        'shape',
+        'rectangle',
+      ),
+      (
+        '哪个图形有3条边？',
+        '三角形',
+        ['三角形', '圆形', '正方形', '长方形'],
+        '数一数边的条数。',
+        'shape',
+        'triangle',
+      ),
+      (
+        '哪个图形圆圆的，没有角？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '圆形没有直直的边和尖尖的角。',
+        'shape',
+        'circle',
+      ),
+      (
+        '哪个图形有4条一样长的边？',
+        '正方形',
+        ['正方形', '长方形', '三角形', '圆形'],
+        '四条边一样长的是正方形。',
+        'shape',
+        'square',
+      ),
+      (
+        '哪个图形有两条长边、两条短边？',
+        '长方形',
+        ['长方形', '正方形', '三角形', '圆形'],
+        '长方形的对边一样长。',
+        'shape',
+        'rectangle',
+      ),
+      (
+        '这个图形有几个角？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '三角形有3个角。',
+        'shape',
+        'triangle',
+      ),
+      (
+        '这个图形有几个角？',
+        '4个',
+        ['2个', '3个', '4个', '5个'],
+        '正方形有4个角。',
+        'shape',
+        'square',
+      ),
+      (
+        '这个图形有几条边？',
+        '4条',
+        ['2条', '3条', '4条', '5条'],
+        '长方形有4条边。',
+        'shape',
+        'rectangle',
+      ),
+      (
+        '这个图形有几条直直的边？',
+        '0条',
+        ['0条', '1条', '3条', '4条'],
+        '圆形没有直直的边。',
+        'shape',
+        'circle',
+      ),
+      (
+        '生活中，钟面最像哪种平面图形？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '钟面通常是圆圆的。',
+        'shape',
+        'circle',
+      ),
+      (
+        '生活中，黑板最像哪种平面图形？',
+        '长方形',
+        ['长方形', '圆形', '三角形', '正方形'],
+        '黑板通常是横向长方形。',
+        'shape',
+        'rectangle',
+      ),
+      (
+        '生活中，方手帕最像哪种平面图形？',
+        '正方形',
+        ['正方形', '长方形', '圆形', '三角形'],
+        '方手帕四条边一样长。',
+        'shape',
+        'square',
+      ),
+      (
+        '生活中，三角尺最像哪种平面图形？',
+        '三角形',
+        ['三角形', '圆形', '长方形', '正方形'],
+        '三角尺有三条边。',
+        'shape',
+        'triangle',
+      ),
+      (
+        '哪个图形不能用“有角”来描述？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '圆形没有角。',
+        'shape',
+        'circle',
+      ),
+      (
+        '哪两个图形都有4条边？',
+        '正方形和长方形',
+        ['正方形和长方形', '圆形和三角形', '圆形和正方形', '三角形和长方形'],
+        '正方形和长方形都是四边形。',
+        'shapeSet',
+        '',
+      ),
+      (
+        '哪个说法正确？',
+        '三角形有3条边',
+        ['三角形有3条边', '圆形有4个角', '正方形没有角', '长方形只有3条边'],
+        '三角形的名字里就藏着“三”。',
+        'shape',
+        'triangle',
+      ),
+      (
+        '哪个是圆形？',
+        '第2个',
+        ['第1个', '第2个', '第3个', '第4个'],
+        '从左往右数，圆圆的图形是第2个。',
+        'shapeSet',
+        'circle',
+      ),
+      (
+        '哪个是正方形？',
+        '第3个',
+        ['第1个', '第2个', '第3个', '第4个'],
+        '从左往右数，四条边一样长的是第3个。',
+        'shapeSet',
+        'square',
+      ),
+      (
+        '哪个是长方形？',
+        '第4个',
+        ['第1个', '第2个', '第3个', '第4个'],
+        '从左往右数，横向更长的是第4个。',
+        'shapeSet',
+        'rectangle',
+      ),
+      (
+        '哪个是三角形？',
+        '第1个',
+        ['第1个', '第2个', '第3个', '第4个'],
+        '从左往右数，有3个角的是第1个。',
+        'shapeSet',
+        'triangle',
+      ),
+      (
+        '小探险家说：“我有4个角，4条边一样长。”他说的是哪个图形？',
+        '正方形',
+        ['正方形', '长方形', '圆形', '三角形'],
+        '4条边一样长的是正方形。',
+        'shape',
+        'square',
+      ),
+    ];
+    final rowIndex = templateId % rows.length;
+    final row = rows[rowIndex];
+    final visual = rowIndex <= 3 || (rowIndex >= 8 && rowIndex <= 11)
+        ? _shapeVisual(row.$6)
+        : rowIndex >= 19 && rowIndex <= 22
+        ? _shapeSetVisual()
+        : null;
+    return _choice(
+      level,
+      index,
+      row.$1,
+      row.$2,
+      row.$3,
+      '先看边、角和整体形状。',
+      row.$4,
+      isBoss,
+      visual: visual,
+    );
+  }
+
+  Question _planeShapeComposition(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      (
+        '两个一样的三角形拼成的大图形是什么？',
+        '正方形',
+        ['正方形', '圆形', '长方形', '三角形'],
+        '两个一样的三角形可以拼成正方形。',
+        'twoTrianglesSquare',
+      ),
+      (
+        '两个一样的三角形拼成的大图形是什么？',
+        '长方形',
+        ['长方形', '正方形', '圆形', '三角形'],
+        '两个一样的三角形也可以拼成长方形。',
+        'twoTrianglesRectangle',
+      ),
+      (
+        '两个一样的三角形拼成的大图形是什么？',
+        '三角形',
+        ['三角形', '正方形', '圆形', '长方形'],
+        '两个三角形可以拼成一个更大的三角形。',
+        'twoTrianglesBigTriangle',
+      ),
+      (
+        '两个正方形左右拼在一起，拼成的大图形更像什么？',
+        '长方形',
+        ['长方形', '圆形', '三角形', '正方形'],
+        '两个正方形横着排会变成长方形。',
+        'twoSquaresRectangleHorizontal',
+      ),
+      (
+        '两个正方形上下拼在一起，拼成的大图形更像什么？',
+        '长方形',
+        ['长方形', '圆形', '三角形', '正方形'],
+        '两个正方形竖着排也是长方形。',
+        'twoSquaresRectangleVertical',
+      ),
+      (
+        '四个一样的小正方形拼成的大图形是什么？',
+        '正方形',
+        ['正方形', '长方形', '圆形', '三角形'],
+        '2行2列的小正方形能拼成大正方形。',
+        'fourSquaresBigSquare',
+      ),
+      (
+        '三个小正方形排成一排，拼成的大图形更像什么？',
+        '长方形',
+        ['长方形', '正方形', '圆形', '三角形'],
+        '一排小正方形整体是长方形。',
+        'threeSquaresRow',
+      ),
+      (
+        '一个正方形被分成两个一样的三角形，可以分成几个三角形？',
+        '2个',
+        ['1个', '2个', '3个', '4个'],
+        '一条对角线能把正方形分成2个三角形。',
+        'squareSplitTriangles',
+      ),
+      (
+        '一个长方形被分成两个一样的正方形，可以分成几个正方形？',
+        '2个',
+        ['1个', '2个', '3个', '4个'],
+        '中间分开后是2个正方形。',
+        'rectangleSplitSquares',
+      ),
+      (
+        '一个大正方形由几个小正方形组成？',
+        '4个',
+        ['2个', '3个', '4个', '5个'],
+        '2行2列一共4个。',
+        'fourSquaresBigSquare',
+      ),
+      (
+        '哪些图形可以拼成一个长方形？',
+        '两个一样的正方形',
+        ['两个一样的正方形', '一个圆形和一个三角形', '两个圆形', '一个圆形和一个正方形'],
+        '两个一样的正方形并排可以拼成长方形。',
+        'twoSquaresRectangleHorizontal',
+      ),
+      (
+        '哪些图形可以拼成一个正方形？',
+        '四个一样的小正方形',
+        ['四个一样的小正方形', '两个圆形', '三个圆形', '一个圆形和一个三角形'],
+        '四个小正方形可以拼成一个大正方形。',
+        'fourSquaresBigSquare',
+      ),
+      (
+        '两个一样的三角形，可能拼成下面哪个图形？',
+        '正方形',
+        ['正方形', '圆形', '球', '圆柱'],
+        '三角形拼组可以得到正方形。',
+        'twoTrianglesSquare',
+      ),
+      (
+        '两个圆形能拼成一个正方形吗？',
+        '不能',
+        ['不能', '能', '一定能', '不确定'],
+        '圆形没有直边，不能拼成正方形。',
+        'twoCircles',
+      ),
+      (
+        '这幅小船图是由什么拼成的？',
+        '多个平面图形',
+        ['多个平面图形', '多个数字', '多个钟表', '多个水果'],
+        '小船由三角形、正方形等平面图形拼成。',
+        'tangramBoat',
+      ),
+      (
+        '小房子的屋顶最像什么图形？',
+        '三角形',
+        ['三角形', '圆形', '长方形', '正方形'],
+        '屋顶尖尖的，像三角形。',
+        'house',
+      ),
+      (
+        '小房子的房身最像什么图形？',
+        '正方形',
+        ['正方形', '圆形', '三角形', '半圆形'],
+        '房身四四方方，像正方形。',
+        'house',
+      ),
+      (
+        '小汽车的车身最像什么图形？',
+        '长方形',
+        ['长方形', '圆形', '三角形', '正方形'],
+        '车身长长的，像长方形。',
+        'car',
+      ),
+      ('小汽车的车轮最像什么图形？', '圆形', ['圆形', '三角形', '正方形', '长方形'], '车轮圆圆的，像圆形。', 'car'),
+      (
+        '两个三角形和一个正方形拼成的图案，一共用了几个图形？',
+        '3个',
+        ['2个', '3个', '4个', '5个'],
+        '2个三角形加1个正方形，一共3个。',
+        'twoTrianglesOneSquare',
+      ),
+      (
+        '一个长方形和两个圆形拼成的图案，一共用了几个图形？',
+        '3个',
+        ['1个', '2个', '3个', '4个'],
+        '1个长方形加2个圆形，一共3个。',
+        'car',
+      ),
+      (
+        '图案中的三角形有几个？',
+        '2个',
+        ['1个', '2个', '3个', '4个'],
+        '数一数尖尖的三角形。',
+        'twoTrianglesSquareCircle',
+      ),
+      (
+        '拼图时，想拼出房子的屋顶，最适合选哪个图形？',
+        '三角形',
+        ['三角形', '圆形', '长方形', '正方形'],
+        '屋顶常用三角形表示。',
+        'house',
+      ),
+      (
+        '拼图时，想拼出太阳，最适合选哪个图形？',
+        '圆形',
+        ['圆形', '三角形', '长方形', '正方形'],
+        '太阳圆圆的，适合用圆形。',
+        'sun',
+      ),
+    ];
+    final row = rows[templateId % rows.length];
+    return _choice(
+      level,
+      index,
+      row.$1,
+      row.$2,
+      row.$3,
+      '先观察小图形，再看它们拼成的大图案。',
+      row.$4,
+      isBoss,
+      visual: _compositionVisual(row.$5),
+    );
+  }
+
+  Question _subtract20Pool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      ('11 - 9 = ?', '2', ['1', '2', '3', '4'], '11 - 9 = 2。'),
+      ('12 - 9 = ?', '3', ['2', '3', '4', '5'], '12 - 9 = 3。'),
+      ('13 - 9 = ?', '4', ['3', '4', '5', '6'], '13 - 9 = 4。'),
+      ('14 - 9 = ?', '5', ['4', '5', '6', '7'], '14 - 9 = 5。'),
+      ('15 - 9 = ?', '6', ['5', '6', '7', '8'], '15 - 9 = 6。'),
+      ('16 - 9 = ?', '7', ['6', '7', '8', '9'], '16 - 9 = 7。'),
+      ('17 - 9 = ?', '8', ['7', '8', '9', '10'], '17 - 9 = 8。'),
+      ('18 - 9 = ?', '9', ['8', '9', '10', '11'], '18 - 9 = 9。'),
+      ('13 - 8 = ?', '5', ['4', '5', '6', '7'], '13 - 8 = 5。'),
+      ('14 - 8 = ?', '6', ['5', '6', '7', '8'], '14 - 8 = 6。'),
+      ('15 - 8 = ?', '7', ['6', '7', '8', '9'], '15 - 8 = 7。'),
+      ('16 - 8 = ?', '8', ['7', '8', '9', '10'], '16 - 8 = 8。'),
+      ('12 - 7 = ?', '5', ['4', '5', '6', '7'], '12 - 7 = 5。'),
+      ('13 - 7 = ?', '6', ['5', '6', '7', '8'], '13 - 7 = 6。'),
+      ('14 - 7 = ?', '7', ['6', '7', '8', '9'], '14 - 7 = 7。'),
+      ('13 - 6 = ?', '7', ['6', '7', '8', '9'], '13 - 6 = 7。'),
+      ('14 - 6 = ?', '8', ['7', '8', '9', '10'], '14 - 6 = 8。'),
+      ('11 - 5 = ?', '6', ['5', '6', '7', '8'], '11 - 5 = 6。'),
+      ('12 - 5 = ?', '7', ['6', '7', '8', '9'], '12 - 5 = 7。'),
+      ('11 - 4 = ?', '7', ['6', '7', '8', '9'], '11 - 4 = 7。'),
+      ('12 - 4 = ?', '8', ['7', '8', '9', '10'], '12 - 4 = 8。'),
+      ('11 - 3 = ?', '8', ['7', '8', '9', '10'], '11 - 3 = 8。'),
+      ('11 - 2 = ?', '9', ['8', '9', '10', '11'], '11 - 2 = 9。'),
+      (
+        '破十法：13 - 9，可以先算 10 - 9 = ?',
+        '1',
+        ['1', '2', '3', '4'],
+        '先算10 - 9 = 1，再加上剩下的3，结果是4。',
+      ),
+      ('破十法：15 - 8，可以把15分成10和几？', '5', ['3', '4', '5', '6'], '15可以分成10和5。'),
+      (
+        '想加算减：9 + ? = 14，所以14 - 9 = ?',
+        '5',
+        ['4', '5', '6', '7'],
+        '因为9 + 5 = 14，所以14 - 9 = 5。',
+      ),
+      (
+        '想加算减：8 + ? = 15，所以15 - 8 = ?',
+        '7',
+        ['6', '7', '8', '9'],
+        '因为8 + 7 = 15，所以15 - 8 = 7。',
+      ),
+      ('果果有13颗星星，送给伙伴9颗，还剩几颗？', '4', ['3', '4', '5', '6'], '13 - 9 = 4，还剩4颗。'),
+      ('洞穴里有16块宝石，拿走8块，还剩几块？', '8', ['6', '7', '8', '9'], '16 - 8 = 8，还剩8块。'),
+      (
+        '小探险家有18个能量果，用掉9个，又找到3个，现在有几个？',
+        '12',
+        ['10', '11', '12', '13'],
+        '18 - 9 = 9，9 + 3 = 12。',
+      ),
+    ];
+    final row = rows[templateId % rows.length];
+    return _choice(
+      level,
+      index,
+      row.$1,
+      row.$2,
+      row.$3,
+      '可以用破十法，也可以想加算减。',
+      row.$4,
+      isBoss,
+    );
   }
 
   Question _smallNumber(LevelDefinition level, int index, bool isBoss) {
@@ -622,6 +2035,82 @@ class QuestionFactory {
     );
   }
 
+  Question _hundredAddSubPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      ('20 + 30 = ?', '50', ['40', '50', '60', '70'], '20 + 30 = 50。'),
+      ('50 - 20 = ?', '30', ['20', '30', '40', '50'], '50 - 20 = 30。'),
+      ('40 + 10 = ?', '50', ['40', '50', '60', '70'], '40 + 10 = 50。'),
+      ('80 - 30 = ?', '50', ['40', '50', '60', '70'], '80 - 30 = 50。'),
+      ('60 + 20 = ?', '80', ['70', '80', '90', '100'], '60 + 20 = 80。'),
+      ('90 - 40 = ?', '50', ['40', '50', '60', '70'], '90 - 40 = 50。'),
+      ('23 + 4 = ?', '27', ['25', '26', '27', '28'], '23 + 4 = 27。'),
+      ('35 + 3 = ?', '38', ['36', '37', '38', '39'], '35 + 3 = 38。'),
+      ('42 + 6 = ?', '48', ['46', '47', '48', '49'], '42 + 6 = 48。'),
+      ('51 + 7 = ?', '58', ['56', '57', '58', '59'], '51 + 7 = 58。'),
+      ('68 + 1 = ?', '69', ['67', '68', '69', '70'], '68 + 1 = 69。'),
+      ('74 + 5 = ?', '79', ['77', '78', '79', '80'], '74 + 5 = 79。'),
+      ('29 - 4 = ?', '25', ['23', '24', '25', '26'], '29 - 4 = 25。'),
+      ('46 - 3 = ?', '43', ['42', '43', '44', '45'], '46 - 3 = 43。'),
+      ('58 - 6 = ?', '52', ['50', '51', '52', '53'], '58 - 6 = 52。'),
+      ('67 - 5 = ?', '62', ['60', '61', '62', '63'], '67 - 5 = 62。'),
+      ('79 - 8 = ?', '71', ['69', '70', '71', '72'], '79 - 8 = 71。'),
+      ('84 - 2 = ?', '82', ['80', '81', '82', '83'], '84 - 2 = 82。'),
+      ('24 + 30 = ?', '54', ['44', '54', '64', '74'], '24 + 30 = 54。'),
+      ('37 + 20 = ?', '57', ['47', '57', '67', '77'], '37 + 20 = 57。'),
+      ('56 + 40 = ?', '96', ['86', '96', '76', '66'], '56 + 40 = 96。'),
+      ('75 - 30 = ?', '45', ['35', '45', '55', '65'], '75 - 30 = 45。'),
+      ('68 - 20 = ?', '48', ['38', '48', '58', '68'], '68 - 20 = 48。'),
+      ('92 - 50 = ?', '42', ['32', '42', '52', '62'], '92 - 50 = 42。'),
+      ('果果有23颗星星，又得到6颗，一共有几颗？', '29', ['27', '28', '29', '30'], '23 + 6 = 29。'),
+      (
+        '小探险家有48个能量果，用掉5个，还剩几个？',
+        '43',
+        ['41', '42', '43', '44'],
+        '48 - 5 = 43。',
+      ),
+      (
+        '书架上有35本书，又放上20本，现在有几本？',
+        '55',
+        ['45', '55', '65', '75'],
+        '35 + 20 = 55。',
+      ),
+      (
+        '洞穴里有76块宝石，拿走30块，还剩几块？',
+        '46',
+        ['36', '46', '56', '66'],
+        '76 - 30 = 46。',
+      ),
+      (
+        '哪个算式的得数是68？',
+        '60+8',
+        ['60+8', '70-8', '58+20', '80-10'],
+        '60 + 8 = 68。',
+      ),
+      (
+        '果果先收集42颗星星，又收集30颗，送给伙伴5颗，还剩几颗？',
+        '67',
+        ['65', '66', '67', '68'],
+        '42 + 30 = 72，72 - 5 = 67。',
+      ),
+    ];
+    final row = rows[templateId % rows.length];
+    return _choice(
+      level,
+      index,
+      row.$1,
+      row.$2,
+      row.$3,
+      '先看十位和个位，整十数可以按几个十来算。',
+      row.$4,
+      isBoss,
+    );
+  }
+
   Question _lengthAngle(LevelDefinition level, int index, bool isBoss) {
     if (level.levelIndex <= 2) {
       final rows = level.levelIndex == 1
@@ -1009,98 +2498,422 @@ class QuestionFactory {
   }
 
   Question _money(LevelDefinition level, int index, bool isBoss) {
-    if (isBoss) {
-      final pencil = _range(4, 8);
-      final eraser = _range(3, 7);
-      return _choice(
-        level,
-        index,
-        '买一支铅笔$pencil角和一块橡皮$eraser角，一共要付多少角？',
-        '${pencil + eraser}',
-        _numberChoices(pencil + eraser),
-        '购物题先把两个价钱合起来。',
-        '$pencil角 + $eraser角 = ${pencil + eraser}角。',
-        true,
-      );
-    }
-    if (level.levelIndex == 1) {
-      return _choice(
-        level,
-        index,
-        '1元等于多少角？',
-        '10角',
-        ['10角', '1角', '100角', '10分'],
-        '人民币单位从大到小可以换算。',
-        '1元 = 10角。',
-        isBoss,
-      );
-    }
-    if (level.levelIndex == 2) {
-      return _choice(
-        level,
-        index,
-        '5角等于多少分？',
-        '50分',
-        ['5分', '10分', '50分', '500分'],
-        '1角等于10分。',
-        '5角 = 50分。',
-        isBoss,
-      );
-    }
-    if (level.levelIndex == 3) {
-      final price = _range(4, 9);
-      return _choice(
-        level,
-        index,
-        '买一块橡皮$price角，付1元，应找回多少角？',
-        '${10 - price}角',
-        ['${10 - price}角', '${price - 1}角', '${price + 1}角', '${10 + price}角'],
-        '先把1元换成10角。',
-        '10角 - $price角 = ${10 - price}角。',
-        isBoss,
-      );
-    }
-    final yuan = _range(1, 5);
-    final jiao = _range(1, 9);
-    final answer = yuan * 10 + jiao;
+    return _moneyPool(level, index, index, isBoss);
+  }
+
+  Question _moneyPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      ('这张人民币是几元？', '1元', ['1元', '2元', '5元', '10元'], '这是1元。', '1元'),
+      ('这张人民币是几元？', '5元', ['1元', '2元', '5元', '10元'], '这是5元。', '5元'),
+      ('这张人民币是几元？', '10元', ['1元', '5元', '10元', '20元'], '这是10元。', '10元'),
+      ('这枚硬币是几角？', '1角', ['1角', '2角', '5角', '1元'], '这是1角硬币。', '1角'),
+      ('这枚硬币是几角？', '5角', ['1角', '2角', '5角', '1元'], '这是5角硬币。', '5角'),
+      ('1元 = 几角？', '10角', ['1角', '5角', '10角', '100角'], '1元 = 10角。', ''),
+      ('10角 = 几元？', '1元', ['1元', '2元', '5元', '10元'], '10角 = 1元。', ''),
+      ('1角 = 几分？', '10分', ['1分', '5分', '10分', '100分'], '1角 = 10分。', ''),
+      ('10分 = 几角？', '1角', ['1角', '2角', '5角', '10角'], '10分 = 1角。', ''),
+      (
+        '1元 = 几分？',
+        '100分',
+        ['10分', '50分', '100分', '1000分'],
+        '1元 = 10角 = 100分。',
+        '',
+      ),
+      ('2元 = 几角？', '20角', ['10角', '20角', '30角', '40角'], '2元 = 20角。', ''),
+      ('5元 = 几角？', '50角', ['20角', '30角', '50角', '100角'], '5元 = 50角。', ''),
+      ('3角 + 2角 = 几角？', '5角', ['4角', '5角', '6角', '7角'], '3角 + 2角 = 5角。', ''),
+      (
+        '5角 + 5角 = 几元？',
+        '1元',
+        ['5角', '8角', '1元', '2元'],
+        '5角 + 5角 = 10角 = 1元。',
+        '',
+      ),
+      ('1元 + 5角 = 多少钱？', '1元5角', ['1元', '1元5角', '2元', '5角'], '1元加5角是1元5角。', ''),
+      ('2元 + 3元 = 几元？', '5元', ['4元', '5元', '6元', '7元'], '2元 + 3元 = 5元。', ''),
+      ('10元 - 4元 = 几元？', '6元', ['4元', '5元', '6元', '7元'], '10元 - 4元 = 6元。', ''),
+      ('5元 - 2元 = 几元？', '3元', ['2元', '3元', '4元', '5元'], '5元 - 2元 = 3元。', ''),
+      (
+        '一支铅笔3元，付5元，应找回几元？',
+        '2元',
+        ['1元', '2元', '3元', '4元'],
+        '5元 - 3元 = 2元。',
+        '',
+      ),
+      (
+        '一本本子4元，付10元，应找回几元？',
+        '6元',
+        ['4元', '5元', '6元', '7元'],
+        '10元 - 4元 = 6元。',
+        '',
+      ),
+      (
+        '一个橡皮2元，一个尺子3元，一共多少钱？',
+        '5元',
+        ['4元', '5元', '6元', '7元'],
+        '2元 + 3元 = 5元。',
+        '',
+      ),
+      (
+        '买一个6元的玩具，付10元，应找回几元？',
+        '4元',
+        ['3元', '4元', '5元', '6元'],
+        '10元 - 6元 = 4元。',
+        '',
+      ),
+      (
+        '小明有8元，买了3元的贴纸，还剩几元？',
+        '5元',
+        ['4元', '5元', '6元', '7元'],
+        '8元 - 3元 = 5元。',
+        '',
+      ),
+      (
+        '小红有5元，又得到2元，现在有几元？',
+        '7元',
+        ['6元', '7元', '8元', '9元'],
+        '5元 + 2元 = 7元。',
+        '',
+      ),
+      (
+        '下面哪种付法正好是6元？',
+        '5元+1元',
+        ['5元+1元', '5元+2元', '10元-1元', '2元+3元'],
+        '5元 + 1元 = 6元。',
+        '',
+      ),
+      (
+        '下面哪种付法正好是1元？',
+        '5角+5角',
+        ['5角+5角', '1角+5角', '2角+5角', '5分+5分'],
+        '5角 + 5角 = 10角 = 1元。',
+        '',
+      ),
+      (
+        '3元和30角，哪个多？',
+        '一样多',
+        ['3元多', '30角多', '一样多', '不能比较'],
+        '3元 = 30角，所以一样多。',
+        '',
+      ),
+      (
+        '5角和1元，哪个多？',
+        '1元多',
+        ['5角多', '1元多', '一样多', '不能比较'],
+        '1元 = 10角，比5角多。',
+        '',
+      ),
+      (
+        '买7元的书，付10元，找回3元，对吗？',
+        '对',
+        ['对', '不对', '少找1元', '多找1元'],
+        '10元 - 7元 = 3元，找回3元是对的。',
+        '',
+      ),
+      (
+        '小探险家买铅笔3元、本子4元，付10元，应找回几元？',
+        '3元',
+        ['2元', '3元', '4元', '5元'],
+        '3元 + 4元 = 7元，10元 - 7元 = 3元。',
+        '',
+      ),
+    ];
+    final row = rows[templateId % rows.length];
     return _choice(
       level,
       index,
-      '$yuan元$jiao角等于多少角？',
-      '$answer角',
-      _numberChoices(answer).map((value) => '$value角').toList(),
-      '1元等于10角。',
-      '$yuan元是${yuan * 10}角，再加$jiao角，一共$answer角。',
+      row.$1,
+      row.$2,
+      row.$3,
+      '先看清单位是元、角还是分。',
+      row.$4,
       isBoss,
+      visual: row.$5.isEmpty ? null : _moneyVisual(row.$5),
+    );
+  }
+
+  Question _verticalCalculation(LevelDefinition level, int index, bool isBoss) {
+    if (isBoss) return _verticalCalculationBoss(level, index);
+    return _verticalCalculationPool(level, index, index, isBoss);
+  }
+
+  Question _verticalCalculationPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = <(String, int, int)>[
+      ('+', 23, 14),
+      ('+', 35, 22),
+      ('+', 41, 18),
+      ('+', 62, 25),
+      ('+', 16, 31),
+      ('+', 28, 5),
+      ('+', 46, 7),
+      ('+', 58, 6),
+      ('+', 37, 28),
+      ('+', 49, 16),
+      ('+', 56, 27),
+      ('+', 68, 19),
+      ('+', 76, 15),
+      ('-', 94, 31),
+      ('-', 78, 24),
+      ('-', 65, 42),
+      ('-', 89, 36),
+      ('-', 57, 6),
+      ('-', 43, 8),
+      ('-', 72, 9),
+      ('-', 54, 18),
+      ('-', 63, 27),
+      ('-', 81, 46),
+      ('-', 90, 35),
+      ('+', 24, 15),
+      ('+', 36, 23),
+      ('-', 76, 24),
+      ('+', 38, 27),
+      ('-', 74, 28),
+    ];
+    final row = rows[templateId % rows.length];
+    return _verticalQuestion(level, index, row.$1, row.$2, row.$3, isBoss);
+  }
+
+  Question _verticalCalculationBoss(LevelDefinition level, int index) {
+    final rows = <(String, int, int)>[
+      ('+', 58, 46),
+      ('+', 67, 38),
+      ('+', 75, 29),
+      ('+', 84, 37),
+      ('+', 89, 26),
+      ('+', 96, 28),
+    ];
+    final row = rows[index % rows.length];
+    return _verticalQuestion(level, index, row.$1, row.$2, row.$3, true);
+  }
+
+  Question _verticalQuestion(
+    LevelDefinition level,
+    int index,
+    String op,
+    int top,
+    int bottom,
+    bool isBoss,
+  ) {
+    final result = op == '+' ? top + bottom : top - bottom;
+    final answer = '$result';
+    final topOnes = top % 10;
+    final bottomOnes = bottom % 10;
+    final hasCarry = op == '+' && topOnes + bottomOnes >= 10;
+    final hasBorrow = op == '-' && topOnes < bottomOnes;
+    final hint = op == '+'
+        ? hasCarry
+              ? '先算个位，满10向十位进1，再算十位。'
+              : '个位和个位相加，十位和十位相加。'
+        : hasBorrow
+        ? '个位不够减时，从十位退1当10再减。'
+        : '个位和个位相减，十位和十位相减。';
+    final explanation = op == '+'
+        ? hasCarry
+              ? '个位${top % 10}+${bottom % 10}=${top % 10 + bottom % 10}，个位写${result % 10}，十位再加进位，结果是$result。'
+              : '$top + $bottom = $result。'
+        : hasBorrow
+        ? '个位${top % 10}不够减${bottom % 10}，从十位退1，结果是$result。'
+        : '$top - $bottom = $result。';
+    return Question(
+      id: '${level.id}-$index-${level.levelIndex}',
+      subject: _subjectName(level.island),
+      knowledgePoint: level.knowledgePoint,
+      questionType: level.questionType,
+      prompt: isBoss ? 'Boss题：计算下面的竖式' : '计算下面的竖式',
+      answer: answer,
+      choices: _numberChoices(result, spread: isBoss ? 18 : 9),
+      hint: hint,
+      explanation: explanation,
+      inputMode: QuestionInputMode.vertical,
+      variantSeed: level.levelIndex + index,
+      isBoss: isBoss,
+      visual: _verticalCalculationVisual(op: op, top: top, bottom: bottom),
     );
   }
 
   Question _pattern(LevelDefinition level, int index, bool isBoss) {
-    if (index % 2 == 0) {
-      final start = _range(1, 8);
-      final step = _range(2, 6);
-      final sequence = [for (var i = 0; i < 4; i++) start + i * step];
-      final answer = start + 4 * step;
-      return _choice(
-        level,
-        index,
-        '找规律：${sequence.join('，')}，？',
-        '$answer',
-        _numberChoices(answer),
-        '看看每次增加了多少。',
-        '每次增加$step，所以下一个是$answer。',
-        isBoss,
-      );
-    }
+    return _patternPool(level, index, index, isBoss);
+  }
+
+  Question _patternPool(
+    LevelDefinition level,
+    int index,
+    int templateId,
+    bool isBoss,
+  ) {
+    final rows = [
+      ('找规律：2，4，6，8，？', '10', ['9', '10', '11', '12'], '每次多2，下一个是10。', ''),
+      ('找规律：5，10，15，20，？', '25', ['22', '23', '24', '25'], '每次多5，下一个是25。', ''),
+      (
+        '找规律：10，20，30，40，？',
+        '50',
+        ['45', '50', '55', '60'],
+        '每次多10，下一个是50。',
+        '',
+      ),
+      ('找规律：1，3，5，7，？', '9', ['8', '9', '10', '11'], '每次多2，下一个是9。', ''),
+      ('找规律：4，8，12，16，？', '20', ['18', '19', '20', '21'], '每次多4，下一个是20。', ''),
+      ('找规律：30，25，20，15，？', '10', ['5', '10', '12', '14'], '每次少5，下一个是10。', ''),
+      ('找规律：50，40，30，20，？', '10', ['5', '10', '15', '20'], '每次少10，下一个是10。', ''),
+      ('找规律：18，16，14，12，？', '10', ['8', '9', '10', '11'], '每次少2，下一个是10。', ''),
+      ('找规律：3，6，9，12，？', '15', ['13', '14', '15', '16'], '每次多3，下一个是15。', ''),
+      ('找规律：7，14，21，28，？', '35', ['30', '32', '35', '36'], '每次多7，下一个是35。', ''),
+      ('红、蓝、红、蓝、？', '红', ['红', '蓝', '黄', '绿'], '红、蓝是一组重复。', 'color:r,b,r,b'),
+      (
+        '黄、黄、绿、黄、黄、绿、？',
+        '黄',
+        ['黄', '绿', '红', '蓝'],
+        '黄、黄、绿是一组重复。',
+        'color:y,y,g,y,y,g',
+      ),
+      (
+        '红、蓝、蓝、红、蓝、蓝、？',
+        '红',
+        ['红', '蓝', '黄', '绿'],
+        '红、蓝、蓝是一组重复。',
+        'color:r,b,b,r,b,b',
+      ),
+      (
+        '绿、黄、红、绿、黄、红、？',
+        '绿',
+        ['绿', '黄', '红', '蓝'],
+        '绿、黄、红是一组重复。',
+        'color:g,y,r,g,y,r',
+      ),
+      (
+        '蓝、蓝、红、蓝、蓝、红、？',
+        '蓝',
+        ['蓝', '红', '黄', '绿'],
+        '蓝、蓝、红是一组重复。',
+        'color:b,b,r,b,b,r',
+      ),
+      (
+        '圆形、三角形、圆形、三角形、？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '圆形、三角形交替出现。',
+        'shape:c,t,c,t',
+      ),
+      (
+        '正方形、圆形、正方形、圆形、？',
+        '正方形',
+        ['正方形', '圆形', '三角形', '长方形'],
+        '正方形、圆形交替出现。',
+        'shape:s,c,s,c',
+      ),
+      (
+        '三角形、三角形、圆形、三角形、三角形、圆形、？',
+        '三角形',
+        ['三角形', '圆形', '正方形', '长方形'],
+        '三角形、三角形、圆形是一组。',
+        'shape:t,t,c,t,t,c',
+      ),
+      (
+        '圆形、正方形、三角形、圆形、正方形、三角形、？',
+        '圆形',
+        ['圆形', '正方形', '三角形', '长方形'],
+        '圆形、正方形、三角形是一组。',
+        'shape:c,s,t,c,s,t',
+      ),
+      (
+        '长方形、圆形、圆形、长方形、圆形、圆形、？',
+        '长方形',
+        ['长方形', '圆形', '正方形', '三角形'],
+        '长方形、圆形、圆形是一组。',
+        'shape:r,c,c,r,c,c',
+      ),
+      (
+        '每次多2个：2个、4个、6个、下一个是几个？',
+        '8个',
+        ['7个', '8个', '9个', '10个'],
+        '每次多2个，下一个是8个。',
+        'count:2,4,6',
+      ),
+      (
+        '每次多5个：5个、10个、15个、下一个是几个？',
+        '20个',
+        ['18个', '20个', '25个', '30个'],
+        '每次多5个，下一个是20个。',
+        'count:5,10,15',
+      ),
+      (
+        '每次少3个：15个、12个、9个、下一个是几个？',
+        '6个',
+        ['3个', '4个', '5个', '6个'],
+        '每次少3个，下一个是6个。',
+        'count:15,12,9',
+      ),
+      (
+        '每次少4个：20个、16个、12个、下一个是几个？',
+        '8个',
+        ['4个', '6个', '8个', '10个'],
+        '每次少4个，下一个是8个。',
+        'count:20,16,12',
+      ),
+      (
+        '第1个是红，第2个是蓝，第3个是红，第4个是蓝，第5个是什么颜色？',
+        '红',
+        ['红', '蓝', '黄', '绿'],
+        '红、蓝交替，第5个是红。',
+        'color:r,b,r,b',
+      ),
+      (
+        '按“圆、三角、正方形”重复，第7个是什么？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '3个一组，第7个回到圆形。',
+        'shape:c,t,s,c,t,s',
+      ),
+      (
+        '按“红、黄、黄”重复，第6个是什么颜色？',
+        '黄',
+        ['红', '黄', '蓝', '绿'],
+        '红、黄、黄一组，第6个是黄。',
+        'color:r,y,y,r,y,y',
+      ),
+      (
+        '找规律：1，2，4，7，11，？',
+        '16',
+        ['14', '15', '16', '17'],
+        '依次多1、2、3、4，接着多5，答案是16。',
+        '',
+      ),
+      (
+        '找规律：20，18，15，11，？',
+        '6',
+        ['5', '6', '7', '8'],
+        '依次少2、3、4，接着少5，答案是6。',
+        '',
+      ),
+      (
+        '按“圆形、三角形、正方形、圆形、三角形、正方形……”排列，第10个是什么图形？',
+        '圆形',
+        ['圆形', '三角形', '正方形', '长方形'],
+        '3个一组，9个刚好3组，第10个是新一组的圆形。',
+        'shape:c,t,s,c,t,s',
+      ),
+    ];
+    final row = rows[templateId % rows.length];
     return _choice(
       level,
       index,
-      '找图形规律：红、蓝、蓝、红、蓝、蓝、？',
-      '红',
-      ['红', '蓝', '黄', '绿'],
-      '这是一组“红蓝蓝”不断重复。',
-      '红、蓝、蓝是一组，下一组从红开始。',
+      row.$1,
+      row.$2,
+      row.$3,
+      '先找一组重复或每次变化的数量。',
+      row.$4,
       isBoss,
+      visual: row.$5.isEmpty ? null : _patternVisual(row.$5),
     );
   }
 
@@ -1937,6 +3750,7 @@ class QuestionFactory {
     String explanation,
     bool isBoss, {
     String? subject,
+    Map<String, String>? visual,
   }) {
     final unique = <String>{answer, ...choices}.toList();
     while (unique.length < 4) {
@@ -1960,11 +3774,31 @@ class QuestionFactory {
       explanation: explanation,
       variantSeed: level.levelIndex + index,
       isBoss: isBoss,
+      visual: visual,
     );
   }
 
   String _questionKey(Question question) {
-    return question.prompt.replaceAll(RegExp(r'\s+'), '');
+    final prompt = question.prompt.replaceAll(RegExp(r'\s+'), '');
+    return '$prompt|${question.answer}|${question.visual ?? const {}}';
+  }
+
+  Question _retargetQuestion(Question question, LevelDefinition level) {
+    return Question(
+      id: '${level.id}-${question.id}',
+      subject: question.subject,
+      knowledgePoint: level.knowledgePoint,
+      questionType: question.questionType,
+      prompt: question.prompt,
+      answer: question.answer,
+      choices: question.choices,
+      hint: question.hint,
+      explanation: question.explanation,
+      inputMode: question.inputMode,
+      variantSeed: question.variantSeed,
+      isBoss: question.isBoss,
+      visual: question.visual,
+    );
   }
 
   Question _withBossFlag(Question question, bool isBoss) {
@@ -1982,6 +3816,7 @@ class QuestionFactory {
       inputMode: question.inputMode,
       variantSeed: question.variantSeed,
       isBoss: isBoss,
+      visual: question.visual,
     );
   }
 
@@ -1992,6 +3827,51 @@ class QuestionFactory {
     }
     return values.map((value) => '$value').toList()..shuffle(random);
   }
+
+  String _symbols(String symbol, int count) {
+    return List.filled(count, symbol).join();
+  }
+
+  Map<String, String> _shapeVisual(String shape) => {
+    'kind': 'shape',
+    'shape': shape,
+  };
+
+  Map<String, String> _shapeSetVisual({String highlight = ''}) => {
+    'kind': 'shapeSet',
+    if (highlight.isNotEmpty) 'highlight': highlight,
+  };
+
+  Map<String, String> _classificationVisual(String items) => {
+    'kind': 'classification',
+    'items': items,
+  };
+
+  Map<String, String> _moneyVisual(String items) => {
+    'kind': 'money',
+    'items': items,
+  };
+
+  Map<String, String> _patternVisual(String items) => {
+    'kind': 'pattern',
+    'items': items,
+  };
+
+  Map<String, String> _verticalCalculationVisual({
+    required String op,
+    required int top,
+    required int bottom,
+  }) => {
+    'kind': 'verticalCalculation',
+    'op': op,
+    'top': '$top',
+    'bottom': '$bottom',
+  };
+
+  Map<String, String> _compositionVisual(String scene) => {
+    'kind': 'composition',
+    'scene': scene,
+  };
 
   int _range(int min, int max) {
     if (max <= min) return min;

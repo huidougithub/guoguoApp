@@ -236,7 +236,7 @@ class _SudokuScreenState extends State<SudokuScreen> {
       if (!mounted) return;
       setState(() {
         cleanRun = false;
-        message = '还有几处线索不一致，擦掉可疑格子再试试。';
+        message = '还有行或列出现重复数字，擦掉可疑格子再试试。';
       });
       return;
     }

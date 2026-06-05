@@ -1,6 +1,38 @@
 enum Island { math, chinese, english, sudoku }
 
-enum QuestionInputMode { choice, sequence }
+enum QuestionInputMode { choice, sequence, vertical }
+
+const int gradeOneUp = 11;
+const int gradeOneDown = 12;
+const int gradeTwoUp = 21;
+const int gradeTwoDown = 22;
+
+int normalizeGradeCode(int? grade) {
+  return switch (grade) {
+    gradeOneUp || gradeOneDown || gradeTwoUp || gradeTwoDown => grade!,
+    2 => gradeTwoUp,
+    _ => gradeOneUp,
+  };
+}
+
+int gradeYearOf(int? grade) => normalizeGradeCode(grade) ~/ 10;
+
+int gradeTermOf(int? grade) => normalizeGradeCode(grade) % 10;
+
+bool supportsLearningStage({
+  required int selectedGrade,
+  required int gradeMin,
+  required int gradeMax,
+  int termMin = 1,
+  int termMax = 2,
+}) {
+  final year = gradeYearOf(selectedGrade);
+  final term = gradeTermOf(selectedGrade);
+  return year >= gradeMin &&
+      year <= gradeMax &&
+      term >= termMin &&
+      term <= termMax;
+}
 
 class PetDefinition {
   const PetDefinition({
@@ -56,6 +88,8 @@ class LevelDefinition {
     required this.questionType,
     required this.gradeMin,
     required this.gradeMax,
+    this.termMin = 1,
+    this.termMax = 2,
     this.bossKind = 'life',
   });
 
@@ -71,9 +105,17 @@ class LevelDefinition {
   final String questionType;
   final int gradeMin;
   final int gradeMax;
+  final int termMin;
+  final int termMax;
   final String bossKind;
 
-  bool supportsGrade(int grade) => grade >= gradeMin && grade <= gradeMax;
+  bool supportsGrade(int grade) => supportsLearningStage(
+    selectedGrade: grade,
+    gradeMin: gradeMin,
+    gradeMax: gradeMax,
+    termMin: termMin,
+    termMax: termMax,
+  );
 }
 
 class BossEscapeOutcome {
@@ -144,6 +186,7 @@ class Question {
     this.inputMode = QuestionInputMode.choice,
     this.variantSeed = 0,
     this.isBoss = false,
+    this.visual,
   });
 
   final String id;
@@ -158,6 +201,7 @@ class Question {
   final QuestionInputMode inputMode;
   final int variantSeed;
   final bool isBoss;
+  final Map<String, String>? visual;
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -172,6 +216,7 @@ class Question {
     'inputMode': inputMode.name,
     'variantSeed': variantSeed,
     'isBoss': isBoss,
+    if (visual != null) 'visual': visual,
   };
 
   factory Question.fromJson(Map<String, dynamic> json) => Question(
@@ -192,6 +237,9 @@ class Question {
     ),
     variantSeed: json['variantSeed'] as int? ?? 0,
     isBoss: json['isBoss'] as bool? ?? false,
+    visual: (json['visual'] as Map<dynamic, dynamic>?)?.map(
+      (key, value) => MapEntry(key.toString(), value.toString()),
+    ),
   );
 }
 
@@ -268,7 +316,11 @@ class SudokuPuzzle {
   final int gradeMin;
   final int gradeMax;
 
-  bool supportsGrade(int grade) => grade >= gradeMin && grade <= gradeMax;
+  bool supportsGrade(int grade) => supportsLearningStage(
+    selectedGrade: grade,
+    gradeMin: gradeMin,
+    gradeMax: gradeMax,
+  );
 }
 
 class ParentChallenge {
@@ -339,7 +391,8 @@ class AppProgress {
        sudokuResets = sudokuResets ?? {},
        unlockedCosmetics = unlockedCosmetics ?? {},
        equippedCosmetics = equippedCosmetics ?? {},
-       settings = settings ?? {'music': true, 'sfx': true},
+       settings =
+           settings ?? {'music': true, 'sfx': true, 'parentReview': false},
        bestTimes = bestTimes ?? {},
        challengeHistory = challengeHistory ?? {},
        parentChallenges = parentChallenges ?? [];
@@ -411,7 +464,9 @@ class AppProgress {
   };
 
   factory AppProgress.fromJson(Map<String, dynamic> json) => AppProgress(
-    selectedGrade: json['selectedGrade'] as int?,
+    selectedGrade: json['selectedGrade'] == null
+        ? null
+        : normalizeGradeCode(json['selectedGrade'] as int?),
     selectedPet: json['selectedPet'] as String?,
     energyFruit: json['energyFruit'] as int? ?? 0,
     petExp: json['petExp'] as int? ?? json['energyFruit'] as int? ?? 0,
@@ -450,6 +505,7 @@ class AppProgress {
     settings: {
       'music': true,
       'sfx': true,
+      'parentReview': false,
       ...(json['settings'] as Map<dynamic, dynamic>? ?? const {}).map(
         (key, value) => MapEntry(key.toString(), value == true),
       ),

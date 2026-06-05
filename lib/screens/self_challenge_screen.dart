@@ -18,7 +18,7 @@ class SelfChallengeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = store.progress;
-    final grade = progress.selectedGrade ?? 1;
+    final grade = normalizeGradeCode(progress.selectedGrade);
     final dailyBest = progress.challengeHistory['daily_best'] ?? 0;
     return ExplorerScaffold(
       title: '自我挑战',
@@ -33,7 +33,7 @@ class SelfChallengeScreen extends StatelessWidget {
             _ChallengeTile(
               icon: Icons.today,
               title: '今日挑战',
-              subtitle: '数学5题 + 语文3题 + 英语2题，历史最佳 $dailyBest/10',
+              subtitle: '数学15题 + 语文9题 + 英语6题，历史最佳 $dailyBest/30',
               color: const Color(0xFFFFF0A8),
               onTap: () {
                 final level = LevelDefinition(

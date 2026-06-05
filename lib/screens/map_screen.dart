@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import '../data/app_data.dart';
 import '../models/app_models.dart';
 import '../services/app_store.dart';
+import '../services/question_factory.dart';
 import '../widgets/ui_components.dart';
 import 'level_list_screen.dart';
+import 'quiz_screen.dart';
 import 'sudoku_screen.dart';
 
 class MapScreen extends StatelessWidget {
@@ -15,7 +17,7 @@ class MapScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final grade = store.progress.selectedGrade ?? 1;
+    final grade = normalizeGradeCode(store.progress.selectedGrade);
     final chapters = chapterSpecsFor(island, grade);
     return ExplorerScaffold(
       title: '${islandName(island)} · ${gradeName(grade)}',
@@ -29,26 +31,47 @@ class MapScreen extends StatelessWidget {
                 crossAxisSpacing: 14,
                 childAspectRatio: 2.05,
                 children: chapters.map((chapter) {
+                  final chapterLevel = chapterPracticeLevel(island, chapter);
                   final levels = levelsForIsland(
                     island,
                     grade,
                   ).where((level) => level.chapterId == chapter.id).toList();
-                  final finished = levels
-                      .where(
-                        (level) =>
-                            store.progress.completedLevels.contains(level.id),
-                      )
-                      .length;
+                  final mathChapter = island == Island.math;
+                  final finished = mathChapter
+                      ? (store.progress.levelStars[chapterLevel.id] ?? 0)
+                      : levels
+                            .where(
+                              (level) => store.progress.completedLevels
+                                  .contains(level.id),
+                            )
+                            .length;
+                  final total = mathChapter ? 3 : levels.length;
                   return SoftCard(
                     color: _chapterColor(chapter.id, island),
-                    onTap: () => pushScreen(
-                      context,
-                      LevelListScreen(
-                        store: store,
-                        title: chapter.title,
-                        levels: levels,
-                      ),
-                    ),
+                    onTap: () {
+                      if (mathChapter) {
+                        final questions = QuestionFactory().buildForLevel(
+                          chapterLevel,
+                        );
+                        pushScreen(
+                          context,
+                          QuizScreen(
+                            store: store,
+                            level: chapterLevel,
+                            questions: questions,
+                          ),
+                        );
+                        return;
+                      }
+                      pushScreen(
+                        context,
+                        LevelListScreen(
+                          store: store,
+                          title: chapter.title,
+                          levels: levels,
+                        ),
+                      );
+                    },
                     child: Row(
                       children: [
                         CircleAvatar(
@@ -78,16 +101,14 @@ class MapScreen extends StatelessWidget {
                               ),
                               const SizedBox(height: 8),
                               LinearProgressIndicator(
-                                value: levels.isEmpty
-                                    ? 0
-                                    : finished / levels.length,
+                                value: total == 0 ? 0 : finished / total,
                                 minHeight: 10,
                                 borderRadius: BorderRadius.circular(10),
                               ),
                             ],
                           ),
                         ),
-                        Text('$finished/${levels.length}'),
+                        Text('$finished/$total'),
                       ],
                     ),
                   );
@@ -180,6 +201,7 @@ IconData _chapterIcon(String kind) {
     case 'add_sub':
     case 'carry':
     case 'chain':
+    case 'vertical_calc':
     case 'multiply_low':
     case 'multiply_high':
     case 'divide':
