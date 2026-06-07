@@ -4,6 +4,7 @@ import '../data/app_data.dart';
 import '../services/app_store.dart';
 import '../services/audio_service.dart';
 import '../widgets/ui_components.dart';
+import 'grade_selection_screen.dart';
 
 class StatsSettingsScreen extends StatefulWidget {
   const StatsSettingsScreen({super.key, required this.store});
@@ -68,6 +69,13 @@ class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
                         label: '错题本',
                         value: '${progress.wrongItems.length}',
                         color: const Color(0xFFFFC6D9),
+                      ),
+                      const SizedBox(height: 12),
+                      StatPill(
+                        icon: Icons.diamond,
+                        label: '钻石',
+                        value: '${progress.diamonds}',
+                        color: const Color(0xFFE9D5FF),
                       ),
                       const SizedBox(height: 16),
                       Wrap(
@@ -142,6 +150,29 @@ class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
                           await AudioService.playSfx(
                             AppSound.tap,
                             enabled: store.progress.settings['sfx'] ?? true,
+                          );
+                          if (mounted) setState(() {});
+                        },
+                      ),
+                      ListTile(
+                        leading: const Icon(Icons.school),
+                        title: const Text('选择年级'),
+                        subtitle: Text(
+                          '当前：${gradeName(progress.selectedGrade)}',
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () async {
+                          await AudioService.playSfx(
+                            AppSound.tap,
+                            enabled: store.progress.settings['sfx'] ?? true,
+                          );
+                          if (!context.mounted) return;
+                          await pushScreen(
+                            context,
+                            GradeSelectionScreen(
+                              store: store,
+                              returnToPrevious: true,
+                            ),
                           );
                           if (mounted) setState(() {});
                         },

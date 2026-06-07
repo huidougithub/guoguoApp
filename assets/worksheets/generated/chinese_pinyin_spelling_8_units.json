@@ -1,0 +1,6248 @@
+{
+  "id": "chinese_pinyin_spelling_8_units",
+  "title": "注音拼写",
+  "subject": "chinese",
+  "grade": "一年级下册",
+  "description": "一年级语文下册1-8单元字词练习，按单元整理；生字注音按单字，重点词语按原试卷连续大格拆分。",
+  "sourceFile": "E:\\temp\\试题\\转换后\\注音拼写.pdf",
+  "days": [
+    {
+      "day": 1,
+      "title": "第一单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u01_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "霜",
+          "prompt": "给“霜”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吹",
+          "prompt": "给“吹”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "落",
+          "prompt": "给“落”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "降",
+          "prompt": "给“降”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "飘",
+          "prompt": "给“飘”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "游",
+          "prompt": "给“游”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "池",
+          "prompt": "给“池”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "入",
+          "prompt": "给“入”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "氏",
+          "prompt": "给“氏”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "什",
+          "prompt": "给“什”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "李",
+          "prompt": "给“李”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "张",
+          "prompt": "给“张”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "弓",
+          "prompt": "给“弓”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "古",
+          "prompt": "给“古”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "胡",
+          "prompt": "给“胡”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吴",
+          "prompt": "给“吴”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "言",
+          "prompt": "给“言”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "孙",
+          "prompt": "给“孙”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "河",
+          "prompt": "给“河”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "晴",
+          "prompt": "给“晴”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "眼",
+          "prompt": "给“眼”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "睛",
+          "prompt": "给“睛”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "保",
+          "prompt": "给“保”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "护",
+          "prompt": "给“护”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "苗",
+          "prompt": "给“苗”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吃",
+          "prompt": "给“吃”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "事",
+          "prompt": "给“事”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "情",
+          "prompt": "给“情”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "请",
+          "prompt": "给“请”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "让",
+          "prompt": "给“让”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "猜",
+          "prompt": "给“猜”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "边",
+          "prompt": "给“边”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "凉",
+          "prompt": "给“凉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "喜",
+          "prompt": "给“喜”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "欢",
+          "prompt": "给“欢”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "时",
+          "prompt": "给“时”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "怕",
+          "prompt": "给“怕”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "攻",
+          "prompt": "给“攻”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "令",
+          "prompt": "给“令”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "感",
+          "prompt": "给“感”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "动",
+          "prompt": "给“动”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "万",
+          "prompt": "给“万”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "无",
+          "prompt": "给“无”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_044",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "识",
+          "prompt": "给“识”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_045",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "足",
+          "prompt": "给“足”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_046",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "计",
+          "prompt": "给“计”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_047",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "算",
+          "prompt": "给“算”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_048",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "减",
+          "prompt": "给“减”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_049",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "式",
+          "prompt": "给“式”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_050",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "图",
+          "prompt": "给“图”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_051",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "形",
+          "prompt": "给“形”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_052",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "卡",
+          "prompt": "给“卡”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_053",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "合",
+          "prompt": "给“合”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_054",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "唱",
+          "prompt": "给“唱”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_char_055",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "团",
+          "prompt": "给“团”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chūn feng",
+          "prompt": "chūn feng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dōng tiān",
+          "prompt": "dōng tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chuī fēng",
+          "prompt": "chuī fēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fei niǎo",
+          "prompt": "fei niǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chū rù",
+          "prompt": "chū rù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shén me",
+          "prompt": "shén me",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gu rén",
+          "prompt": "gu rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hú zi",
+          "prompt": "hú zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shuāng shǒu",
+          "prompt": "shuāng shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yǔ yán",
+          "prompt": "yǔ yán",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qing tiān",
+          "prompt": "qing tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qīng shān",
+          "prompt": "qīng shān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qīng shuǐ",
+          "prompt": "qīng shuǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hé miáo",
+          "prompt": "hé miáo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qǐng wèn",
+          "prompt": "qǐng wèn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "míng tiān",
+          "prompt": "míng tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "ke wén",
+          "prompt": "ke wén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shēng zì",
+          "prompt": "shēng zì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hóng huā",
+          "prompt": "hóng huā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dòng lì",
+          "prompt": "dòng lì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "kǎ piàn",
+          "prompt": "kǎ piàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hé lì",
+          "prompt": "hé lì",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u01_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "wàn lǐ wú yún",
+          "prompt": "wàn lǐ wú yún",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "第二单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u02_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "热",
+          "prompt": "给“热”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "爱",
+          "prompt": "给“爱”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "产",
+          "prompt": "给“产”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "党",
+          "prompt": "给“党”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "太",
+          "prompt": "给“太”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "阳",
+          "prompt": "给“阳”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "光",
+          "prompt": "给“光”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "怀",
+          "prompt": "给“怀”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "抱",
+          "prompt": "给“抱”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "幸",
+          "prompt": "给“幸”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "福",
+          "prompt": "给“福”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "成",
+          "prompt": "给“成”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "井",
+          "prompt": "给“井”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "城",
+          "prompt": "给“城”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "村",
+          "prompt": "给“村”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "毛",
+          "prompt": "给“毛”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "主",
+          "prompt": "给“主”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "席",
+          "prompt": "给“席”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "住",
+          "prompt": "给“住”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "乡",
+          "prompt": "给“乡”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "亲",
+          "prompt": "给“亲”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "战",
+          "prompt": "给“战”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "士",
+          "prompt": "给“士”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "想",
+          "prompt": "给“想”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "念",
+          "prompt": "给“念”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "告",
+          "prompt": "给“告”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "诉",
+          "prompt": "给“诉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "走",
+          "prompt": "给“走”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "京",
+          "prompt": "给“京”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "座",
+          "prompt": "给“座”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "安",
+          "prompt": "给“安”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "广",
+          "prompt": "给“广”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "场",
+          "prompt": "给“场”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "非",
+          "prompt": "给“非”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "宽",
+          "prompt": "给“宽”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "丽",
+          "prompt": "给“丽”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "洁",
+          "prompt": "给“洁”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "认",
+          "prompt": "给“认”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "连",
+          "prompt": "给“连”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "选",
+          "prompt": "给“选”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "圈",
+          "prompt": "给“圈”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "涂",
+          "prompt": "给“涂”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "填",
+          "prompt": "给“填”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_char_044",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "试",
+          "prompt": "给“试”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gōng gòng",
+          "prompt": "gōng gòng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shēng chǎn",
+          "prompt": "shēng chǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chǎn shēng",
+          "prompt": "chǎn shēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "rù dǎng",
+          "prompt": "rù dǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tài duō",
+          "prompt": "tài duō",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tài yáng",
+          "prompt": "tài yáng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yáng guāng",
+          "prompt": "yáng guāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "guāng ming",
+          "prompt": "guāng ming",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fēng guāng",
+          "prompt": "fēng guāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shuǐ jǐng",
+          "prompt": "shuǐ jǐng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jing kōu",
+          "prompt": "jing kōu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhǔ rén",
+          "prompt": "zhǔ rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhǔ jiàn",
+          "prompt": "zhǔ jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jiāng shuǐ",
+          "prompt": "jiāng shuǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "cháng jiāng",
+          "prompt": "cháng jiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhù shǒu",
+          "prompt": "zhù shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhù kǒu",
+          "prompt": "zhù kǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dōng fāng",
+          "prompt": "dōng fāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hòu lái",
+          "prompt": "hòu lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "guǎng gào",
+          "prompt": "guǎng gào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà de",
+          "prompt": "dà de",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "duō de",
+          "prompt": "duō de",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "běi fāng",
+          "prompt": "běi fāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "běi jīng",
+          "prompt": "běi jīng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_025",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "guǎng dà",
+          "prompt": "guǎng dà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_026",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xiě zi",
+          "prompt": "xiě zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_027",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "rèn zi",
+          "prompt": "rèn zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_028",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gòng chǎn dǎng",
+          "prompt": "gòng chǎn dǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u02_word_029",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tài yáng guāng",
+          "prompt": "tài yáng guāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "第三单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u03_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "玩",
+          "prompt": "给“玩”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "得",
+          "prompt": "给“得”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "急",
+          "prompt": "给“急”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "直",
+          "prompt": "给“直”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "哭",
+          "prompt": "给“哭”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "跟",
+          "prompt": "给“跟”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "忽",
+          "prompt": "给“忽”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "然",
+          "prompt": "给“然”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "听",
+          "prompt": "给“听”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "喊",
+          "prompt": "给“喊”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "快",
+          "prompt": "给“快”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "己",
+          "prompt": "给“己”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "背",
+          "prompt": "给“背”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "只",
+          "prompt": "给“只”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "很",
+          "prompt": "给“很”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "孤",
+          "prompt": "给“孤”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "种",
+          "prompt": "给“种”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "每",
+          "prompt": "给“每”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "都",
+          "prompt": "给“都”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "邻",
+          "prompt": "给“邻”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "居",
+          "prompt": "给“居”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "叫",
+          "prompt": "给“叫”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "招",
+          "prompt": "给“招”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "呼",
+          "prompt": "给“呼”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "乐",
+          "prompt": "给“乐”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "怎",
+          "prompt": "给“怎”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "独",
+          "prompt": "给“独”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "跳",
+          "prompt": "给“跳”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "绳",
+          "prompt": "给“绳”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "当",
+          "prompt": "给“当”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "还",
+          "prompt": "给“还”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "羽",
+          "prompt": "给“羽”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "球",
+          "prompt": "给“球”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "劲",
+          "prompt": "给“劲”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "轮",
+          "prompt": "给“轮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "排",
+          "prompt": "给“排”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "母",
+          "prompt": "给“母”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "止",
+          "prompt": "给“止”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "斤",
+          "prompt": "给“斤”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "寸",
+          "prompt": "给“寸”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "丁",
+          "prompt": "给“丁”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "千",
+          "prompt": "给“千”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "全",
+          "prompt": "给“全”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zǒu kāi",
+          "prompt": "zǒu kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hé shuǐ",
+          "prompt": "hé shuǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xiǎo hé",
+          "prompt": "xiǎo hé",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shuō ming",
+          "prompt": "shuō ming",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "ràng kāi",
+          "prompt": "ràng kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zi zhǔ",
+          "prompt": "zi zhǔ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zi jī",
+          "prompt": "zi jī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jī fāng",
+          "prompt": "jī fāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "cóng lái",
+          "prompt": "cóng lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hǎo ren",
+          "prompt": "hǎo ren",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "wǒ mén",
+          "prompt": "wǒ mén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà jiào",
+          "prompt": "dà jiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tā men",
+          "prompt": "tā men",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tā rén",
+          "prompt": "tā rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "huí lái",
+          "prompt": "huí lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hui tóu",
+          "prompt": "hui tóu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fēi kuài",
+          "prompt": "fēi kuài",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "kuài lè",
+          "prompt": "kuài lè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "kě le",
+          "prompt": "kě le",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dāng xià",
+          "prompt": "dāng xià",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shū běn",
+          "prompt": "shū běn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shū huà",
+          "prompt": "shū huà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yáng máo",
+          "prompt": "yáng máo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "bù zhǐ",
+          "prompt": "bù zhǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_025",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qiān jīn",
+          "prompt": "qiān jīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_026",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chǐ cùn",
+          "prompt": "chǐ cùn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_027",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "rén ding",
+          "prompt": "rén ding",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_028",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yuán dàn",
+          "prompt": "yuán dàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_029",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "libu",
+          "prompt": "libu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u03_word_030",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "cóng xīn",
+          "prompt": "cóng xīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "第四单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u04_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "静",
+          "prompt": "给“静”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "思",
+          "prompt": "给“思”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "床",
+          "prompt": "给“床”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "疑",
+          "prompt": "给“疑”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "举",
+          "prompt": "给“举”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "望",
+          "prompt": "给“望”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "低",
+          "prompt": "给“低”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "故",
+          "prompt": "给“故”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "胆",
+          "prompt": "给“胆”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "敢",
+          "prompt": "给“敢”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "勇",
+          "prompt": "给“勇”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "讲",
+          "prompt": "给“讲”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "窗",
+          "prompt": "给“窗”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "乱",
+          "prompt": "给“乱”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "拉",
+          "prompt": "给“拉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "样",
+          "prompt": "给“样”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "笑",
+          "prompt": "给“笑”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "再",
+          "prompt": "给“再”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "睡",
+          "prompt": "给“睡”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "觉",
+          "prompt": "给“觉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "端",
+          "prompt": "给“端”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "粽",
+          "prompt": "给“粽”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "节",
+          "prompt": "给“节”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "总",
+          "prompt": "给“总”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "煮",
+          "prompt": "给“煮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "盼",
+          "prompt": "给“盼”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "米",
+          "prompt": "给“米”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "枣",
+          "prompt": "给“枣”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "甜",
+          "prompt": "给“甜”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "分",
+          "prompt": "给“分”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "鲜",
+          "prompt": "给“鲜”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "肉",
+          "prompt": "给“肉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "了",
+          "prompt": "给“了”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "支",
+          "prompt": "给“支”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "台",
+          "prompt": "给“台”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "电",
+          "prompt": "给“电”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "视",
+          "prompt": "给“视”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "部",
+          "prompt": "给“部”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "机",
+          "prompt": "给“机”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "衣",
+          "prompt": "给“衣”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "裤",
+          "prompt": "给“裤”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "被",
+          "prompt": "给“被”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "sī xiāng",
+          "prompt": "sī xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chuáng qián",
+          "prompt": "chuáng qián",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qián fāng",
+          "prompt": "qián fāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà di",
+          "prompt": "dà di",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gù xiāng",
+          "prompt": "gù xiāng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yuè se",
+          "prompt": "yuè se",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hóng se",
+          "prompt": "hóng se",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "bǎ shǒu",
+          "prompt": "bǎ shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "huobǎ",
+          "prompt": "huobǎ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jiǎng huà",
+          "prompt": "jiǎng huà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jiǎng tái",
+          "prompt": "jiǎng tái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yàng zi",
+          "prompt": "yàng zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "huā yàng",
+          "prompt": "huā yàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà xiào",
+          "prompt": "dà xiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zài jiàn",
+          "prompt": "zài jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jié ri",
+          "prompt": "jié ri",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chūn jié",
+          "prompt": "chūn jié",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà mǐ",
+          "prompt": "dà mǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhōng jiān",
+          "prompt": "zhōng jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "rén jiān",
+          "prompt": "rén jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fēn kāi",
+          "prompt": "fēn kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shí fēn",
+          "prompt": "shí fēn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chī li",
+          "prompt": "chī li",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xiǎo chī",
+          "prompt": "xiǎo chī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_025",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yáng ròu",
+          "prompt": "yáng ròu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_026",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "huà ce",
+          "prompt": "huà ce",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_027",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhī chū",
+          "prompt": "zhī chū",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_028",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shǒu diàn",
+          "prompt": "shǒu diàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_029",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shàng yī",
+          "prompt": "shàng yī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u04_word_030",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà yī",
+          "prompt": "dà yī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "第五单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u05_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "物",
+          "prompt": "给“物”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "捉",
+          "prompt": "给“捉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "迷",
+          "prompt": "给“迷”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "藏",
+          "prompt": "给“藏”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "造",
+          "prompt": "给“造”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "蚂",
+          "prompt": "给“蚂”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "蚁",
+          "prompt": "给“蚁”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "运",
+          "prompt": "给“运”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "食",
+          "prompt": "给“食”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "粮",
+          "prompt": "给“粮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "房",
+          "prompt": "给“房”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "结",
+          "prompt": "给“结”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "网",
+          "prompt": "给“网”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "圆",
+          "prompt": "给“圆”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "严",
+          "prompt": "给“严”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "寒",
+          "prompt": "给“寒”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "酷",
+          "prompt": "给“酷”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "暑",
+          "prompt": "给“暑”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "暖",
+          "prompt": "给“暖”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "晨",
+          "prompt": "给“晨”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "细",
+          "prompt": "给“细”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "朝",
+          "prompt": "给“朝”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "霞",
+          "prompt": "给“霞”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "夕",
+          "prompt": "给“夕”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "杨",
+          "prompt": "给“杨”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "香",
+          "prompt": "给“香”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "操",
+          "prompt": "给“操”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "拔",
+          "prompt": "给“拔”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "拍",
+          "prompt": "给“拍”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "跑",
+          "prompt": "给“跑”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "踢",
+          "prompt": "给“踢”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "铃",
+          "prompt": "给“铃”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "真",
+          "prompt": "给“真”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "闹",
+          "prompt": "给“闹”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "丢",
+          "prompt": "给“丢”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "沙",
+          "prompt": "给“沙”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "身",
+          "prompt": "给“身”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "体",
+          "prompt": "给“体”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "之",
+          "prompt": "给“之”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "初",
+          "prompt": "给“初”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "相",
+          "prompt": "给“相”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "近",
+          "prompt": "给“近”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "远",
+          "prompt": "给“远”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_044",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "教",
+          "prompt": "给“教”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_045",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "道",
+          "prompt": "给“道”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_046",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "专",
+          "prompt": "给“专”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_047",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "幼",
+          "prompt": "给“幼”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_048",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "玉",
+          "prompt": "给“玉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_049",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "知",
+          "prompt": "给“知”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_050",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "义",
+          "prompt": "给“义”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_051",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "饭",
+          "prompt": "给“饭”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_052",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "饱",
+          "prompt": "给“饱”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_053",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "茶",
+          "prompt": "给“茶”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_054",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "泡",
+          "prompt": "给“泡”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_055",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "轻",
+          "prompt": "给“轻”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_056",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "穿",
+          "prompt": "给“穿”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_057",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "袍",
+          "prompt": "给“袍”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_058",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "鞭",
+          "prompt": "给“鞭”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_char_059",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "炮",
+          "prompt": "给“炮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dòng wù",
+          "prompt": "dòng wù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zào zi",
+          "prompt": "zào zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yùn dòng",
+          "prompt": "yùn dòng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "huān le",
+          "prompt": "huān le",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fáng jiān",
+          "prompt": "fáng jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shàng wǎng",
+          "prompt": "shàng wǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dui mén",
+          "prompt": "dui mén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jīn tiān",
+          "prompt": "jīn tiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà xuě",
+          "prompt": "dà xuě",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xi xīn",
+          "prompt": "xi xīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xī yáng",
+          "prompt": "xī yáng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yǔ yán",
+          "prompt": "yǔ yán",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dǎ kāi",
+          "prompt": "dǎ kāi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "pí máo",
+          "prompt": "pí máo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "cháng pǎo",
+          "prompt": "cháng pǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shí zú",
+          "prompt": "shí zú",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shā bāo",
+          "prompt": "shā bāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yuǎn jìn",
+          "prompt": "yuǎn jìn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xué xi",
+          "prompt": "xué xi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "bái yù",
+          "prompt": "bái yù",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zheng yi",
+          "prompt": "zheng yi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "bǎo hé",
+          "prompt": "bǎo hé",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dā bào",
+          "prompt": "dā bào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u05_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "bu ping",
+          "prompt": "bu ping",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "第六单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u06_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "诗",
+          "prompt": "给“诗”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "首",
+          "prompt": "给“首”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "偷",
+          "prompt": "给“偷”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "浮",
+          "prompt": "给“浮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "萍",
+          "prompt": "给“萍”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "泉",
+          "prompt": "给“泉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "惜",
+          "prompt": "给“惜”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "照",
+          "prompt": "给“照”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "柔",
+          "prompt": "给“柔”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "荷",
+          "prompt": "给“荷”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "露",
+          "prompt": "给“露”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "角",
+          "prompt": "给“角”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "浪",
+          "prompt": "给“浪”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "迈",
+          "prompt": "给“迈”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "悄",
+          "prompt": "给“悄”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "泪",
+          "prompt": "给“泪”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "次",
+          "prompt": "给“次”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "给",
+          "prompt": "给“给”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "壳",
+          "prompt": "给“壳”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "虾",
+          "prompt": "给“虾”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "装",
+          "prompt": "给“装”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "像",
+          "prompt": "给“像”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "淘",
+          "prompt": "给“淘”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "娃",
+          "prompt": "给“娃”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "珠",
+          "prompt": "给“珠”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "摇",
+          "prompt": "给“摇”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "篮",
+          "prompt": "给“篮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "亮",
+          "prompt": "给“亮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "晶",
+          "prompt": "给“晶”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "停",
+          "prompt": "给“停”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "坪",
+          "prompt": "给“坪”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "展",
+          "prompt": "给“展”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "透",
+          "prompt": "给“透”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "翅",
+          "prompt": "给“翅”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "膀",
+          "prompt": "给“膀”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "朵",
+          "prompt": "给“朵”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "要",
+          "prompt": "给“要”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "腰",
+          "prompt": "给“腰”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "阴",
+          "prompt": "给“阴”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "沉",
+          "prompt": "给“沉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "呀",
+          "prompt": "给“呀”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "忙",
+          "prompt": "给“忙”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "呢",
+          "prompt": "给“呢”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_044",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吗",
+          "prompt": "给“吗”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_045",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "面",
+          "prompt": "给“面”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_046",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "空",
+          "prompt": "给“空”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_047",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "闷",
+          "prompt": "给“闷”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_048",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吧",
+          "prompt": "给“吧”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_049",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "消",
+          "prompt": "给“消”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_050",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "息",
+          "prompt": "给“息”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_051",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "棍",
+          "prompt": "给“棍”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_052",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "豆",
+          "prompt": "给“豆”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_053",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "汤",
+          "prompt": "给“汤”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_054",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "蚊",
+          "prompt": "给“蚊”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_055",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "扇",
+          "prompt": "给“扇”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_056",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "椅",
+          "prompt": "给“椅”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_057",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "牵",
+          "prompt": "给“牵”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_058",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "织",
+          "prompt": "给“织”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_char_059",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "斗",
+          "prompt": "给“斗”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shǒu xiān",
+          "prompt": "shǒu xiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shuǐ chí",
+          "prompt": "shuǐ chí",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fēng cǎi",
+          "prompt": "fēng cǎi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jiān jiǎo",
+          "prompt": "jiān jiǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zǎo chūn",
+          "prompt": "zǎo chūn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "wán xiào",
+          "prompt": "wán xiào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yǎn lei",
+          "prompt": "yǎn lei",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tā men",
+          "prompt": "tā men",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fēn bei",
+          "prompt": "fēn bei",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "chuī qi",
+          "prompt": "chuī qi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fei jī",
+          "prompt": "fei jī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tái fēng",
+          "prompt": "tái fēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hé chàng",
+          "prompt": "hé chàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yǔ sǎn",
+          "prompt": "yǔ sǎn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "huā duǒ",
+          "prompt": "huā duǒ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "měi rén",
+          "prompt": "měi rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhè me",
+          "prompt": "zhè me",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "kàn jiàn",
+          "prompt": "kàn jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xiǎo yú",
+          "prompt": "xiǎo yú",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qián miàn",
+          "prompt": "qián miàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qǐng wen",
+          "prompt": "qǐng wen",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "jiā kuài",
+          "prompt": "jiā kuài",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà dòu",
+          "prompt": "dà dòu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u06_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "běi dǒu",
+          "prompt": "běi dǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "第七单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u07_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "具",
+          "prompt": "给“具”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "铅",
+          "prompt": "给“铅”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "平",
+          "prompt": "给“平”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "盒",
+          "prompt": "给“盒”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "些",
+          "prompt": "给“些”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "此",
+          "prompt": "给“此”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "仔",
+          "prompt": "给“仔”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "检",
+          "prompt": "给“检”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "查",
+          "prompt": "给“查”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "所",
+          "prompt": "给“所”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "伙",
+          "prompt": "给“伙”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "伴",
+          "prompt": "给“伴”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "钟",
+          "prompt": "给“钟”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "迟",
+          "prompt": "给“迟”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "背",
+          "prompt": "给“背”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "灯",
+          "prompt": "给“灯”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "等",
+          "prompt": "给“等”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "啊",
+          "prompt": "给“啊”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "决",
+          "prompt": "给“决”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "定",
+          "prompt": "给“定”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "已",
+          "prompt": "给“已”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "经",
+          "prompt": "给“经”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "位",
+          "prompt": "给“位”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "表",
+          "prompt": "给“表”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "虎",
+          "prompt": "给“虎”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "熊",
+          "prompt": "给“熊”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "通",
+          "prompt": "给“通”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "意",
+          "prompt": "给“意”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "遍",
+          "prompt": "给“遍”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "百",
+          "prompt": "给“百”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "为",
+          "prompt": "给“为”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "因",
+          "prompt": "给“因”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "舌",
+          "prompt": "给“舌”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "理",
+          "prompt": "给“理”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "呀",
+          "prompt": "给“呀”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "忘",
+          "prompt": "给“忘”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "猴",
+          "prompt": "给“猴”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "块",
+          "prompt": "给“块”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "结",
+          "prompt": "给“结”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "兴",
+          "prompt": "给“兴”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "掰",
+          "prompt": "给“掰”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "扛",
+          "prompt": "给“扛”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "往",
+          "prompt": "给“往”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_044",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "棵",
+          "prompt": "给“棵”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_045",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "满",
+          "prompt": "给“满”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_046",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "扔",
+          "prompt": "给“扔”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_047",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "摘",
+          "prompt": "给“摘”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_048",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "捧",
+          "prompt": "给“捧”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_049",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "追",
+          "prompt": "给“追”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_050",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "刷",
+          "prompt": "给“刷”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_051",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "梳",
+          "prompt": "给“梳”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_052",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "巾",
+          "prompt": "给“巾”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_053",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "皂",
+          "prompt": "给“皂”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_054",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "洗",
+          "prompt": "给“洗”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_055",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "澡",
+          "prompt": "给“澡”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_056",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "脸",
+          "prompt": "给“脸”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_char_057",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "盆",
+          "prompt": "给“盆”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "máo bǐ",
+          "prompt": "máo bǐ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhī dào",
+          "prompt": "zhī dào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fàng xià",
+          "prompt": "fàng xià",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "píng ān",
+          "prompt": "píng ān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hóng dēng",
+          "prompt": "hóng dēng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "che zhàn",
+          "prompt": "che zhàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shàng kè",
+          "prompt": "shàng kè",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zuò xià",
+          "prompt": "zuò xià",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "lǎo shī",
+          "prompt": "lǎo shī",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhōng guó",
+          "prompt": "zhōng guó",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dōu shi",
+          "prompt": "dōu shi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "bǎi wàn",
+          "prompt": "bǎi wàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tīng jiàn",
+          "prompt": "tīng jiàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shí jiān",
+          "prompt": "shí jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "diǎn tóu",
+          "prompt": "diǎn tóu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shān lín",
+          "prompt": "shān lín",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gāo xing",
+          "prompt": "gāo xing",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xiào zhe",
+          "prompt": "xiào zhe",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qián wǎng",
+          "prompt": "qián wǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xī guā",
+          "prompt": "xī guā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tù zi",
+          "prompt": "tù zi",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qián jìn",
+          "prompt": "qián jìn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "máo jīn",
+          "prompt": "máo jīn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u07_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xǐ shǒu",
+          "prompt": "xǐ shǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "title": "第八单元",
+      "questions": [
+        {
+          "id": "pinyin_spelling_u08_char_001",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "棉",
+          "prompt": "给“棉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_002",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "姑",
+          "prompt": "给“姑”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_003",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "娘",
+          "prompt": "给“娘”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_004",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "病",
+          "prompt": "给“病”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_005",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "她",
+          "prompt": "给“她”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_006",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "治",
+          "prompt": "给“治”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_007",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "燕",
+          "prompt": "给“燕”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_008",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "帮",
+          "prompt": "给“帮”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_009",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "害",
+          "prompt": "给“害”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_010",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "别",
+          "prompt": "给“别”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_011",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "干",
+          "prompt": "给“干”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_012",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "惊",
+          "prompt": "给“惊”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_013",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "奇",
+          "prompt": "给“奇”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_014",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "咕",
+          "prompt": "给“咕”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_015",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "咚",
+          "prompt": "给“咚”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_016",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "熟",
+          "prompt": "给“熟”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_017",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "掉",
+          "prompt": "给“掉”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_018",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "湖",
+          "prompt": "给“湖”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_019",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吓",
+          "prompt": "给“吓”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_020",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "啦",
+          "prompt": "给“啦”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_021",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "鹿",
+          "prompt": "给“鹿”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_022",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "象",
+          "prompt": "给“象”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_023",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "野",
+          "prompt": "给“野”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_024",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "拦",
+          "prompt": "给“拦”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_025",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "哪",
+          "prompt": "给“哪”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_026",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "那",
+          "prompt": "给“那”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_027",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "领",
+          "prompt": "给“领”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_028",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "壁",
+          "prompt": "给“壁”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_029",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "借",
+          "prompt": "给“借”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_030",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "咬",
+          "prompt": "给“咬”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_031",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "难",
+          "prompt": "给“难”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_032",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "爬",
+          "prompt": "给“爬”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_033",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "您",
+          "prompt": "给“您”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_034",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "拨",
+          "prompt": "给“拨”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_035",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "赶",
+          "prompt": "给“赶”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_036",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "摆",
+          "prompt": "给“摆”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_037",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "过",
+          "prompt": "给“过”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_038",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "孩",
+          "prompt": "给“孩”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_039",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "转",
+          "prompt": "给“转”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_040",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "吵",
+          "prompt": "给“吵”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_041",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "现",
+          "prompt": "给“现”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_042",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "顶",
+          "prompt": "给“顶”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_043",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "胖",
+          "prompt": "给“胖”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_044",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "票",
+          "prompt": "给“票”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_045",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "户",
+          "prompt": "给“户”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_046",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "交",
+          "prompt": "给“交”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_char_047",
+          "type": "pinyin_annotation",
+          "sectionTitle": "一、生字注音",
+          "displayPrompt": "父",
+          "prompt": "给“父”注音",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_001",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tā men",
+          "prompt": "tā men",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_002",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "kōng jiān",
+          "prompt": "kōng jiān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_003",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "tiān kōng",
+          "prompt": "tiān kōng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_004",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hái yǒu",
+          "prompt": "hái yǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_005",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hái hǎo",
+          "prompt": "hái hǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_006",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhǔ gàn",
+          "prompt": "zhǔ gàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_007",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shēn gāo",
+          "prompt": "shēn gāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_008",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xīng xīng",
+          "prompt": "xīng xīng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_009",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xīng dǒu",
+          "prompt": "xīng dǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_010",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "cháng jiǔ",
+          "prompt": "cháng jiǔ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_011",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xià rén",
+          "prompt": "xià rén",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_012",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "kě pà",
+          "prompt": "kě pà",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_013",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà jiā",
+          "prompt": "dà jiā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_014",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dào jiā",
+          "prompt": "dào jiā",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_015",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "dà xiàng",
+          "prompt": "dà xiàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_016",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "méi yǒu",
+          "prompt": "méi yǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_017",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fāng xiàng",
+          "prompt": "fāng xiàng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_018",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "shēn biān",
+          "prompt": "shēn biān",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_019",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "xing zǒu",
+          "prompt": "xing zǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_020",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "qīng cǎo",
+          "prompt": "qīng cǎo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_021",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gǎn kuài",
+          "prompt": "gǎn kuài",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_022",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "guò wǎng",
+          "prompt": "guò wǎng",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_023",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "zhǎo dào",
+          "prompt": "zhǎo dào",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_024",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "yè miàn",
+          "prompt": "yè miàn",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_025",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "hù kǒu",
+          "prompt": "hù kǒu",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_026",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gōng jiāo",
+          "prompt": "gōng jiāo",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_027",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "fù nǚ",
+          "prompt": "fù nǚ",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_028",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "wèi shén me",
+          "prompt": "wèi shén me",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "pinyin_spelling_u08_word_029",
+          "type": "pinyin_write",
+          "sectionTitle": "二、重点词语",
+          "displayPrompt": "gǎn guò lái",
+          "prompt": "gǎn guò lái",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

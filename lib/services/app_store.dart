@@ -335,9 +335,37 @@ class AppStore extends ChangeNotifier {
       stars: stars,
       addedStars: addedStars,
       addedEnergyFruit: addedEnergyFruit,
+      addedDiamonds: 0,
       correct: correct,
       total: total,
     );
+  }
+
+  Future<bool> grantWorksheetDiamondIfPerfect({
+    required String worksheetId,
+    required int correct,
+    required int total,
+  }) async {
+    if (total <= 0 || correct != total) return false;
+    final key = 'worksheet_diamond_$worksheetId';
+    if ((progress.challengeHistory[key] ?? 0) > 0) return false;
+    progress.challengeHistory[key] = 1;
+    progress.diamonds += 1;
+    await _saveAndNotify();
+    return true;
+  }
+
+  bool canRedeemRealReward(String rewardId) {
+    return progress.diamonds > 0;
+  }
+
+  Future<bool> redeemRealReward(String rewardId) async {
+    if (!canRedeemRealReward(rewardId)) return false;
+    progress.diamonds -= 1;
+    progress.realRewardRedemptions[rewardId] =
+        (progress.realRewardRedemptions[rewardId] ?? 0) + 1;
+    await _saveAndNotify();
+    return true;
   }
 
   Future<void> addParentChallenge({

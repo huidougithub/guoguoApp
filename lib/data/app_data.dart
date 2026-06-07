@@ -12,7 +12,7 @@ const pets = [
   ),
   PetDefinition(
     id: 'fifi',
-    name: '菲菲',
+    name: '果果',
     role: '小狐狸',
     description: '机灵型，眼睛亮亮的，陪你一起发现规律。',
     primaryColor: 0xFFFF8C42,

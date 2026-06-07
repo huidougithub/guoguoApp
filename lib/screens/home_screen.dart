@@ -88,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Expanded(
                         child: StatPill(
                           icon: Icons.star,
-                          label: '总星星',
+                          label: '星星',
                           value: '${progress.totalStars}',
                           color: const Color(0xFFFFE08A),
                         ),
@@ -229,19 +229,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   _HomeAction(
                     icon: Icons.menu_book,
                     title: '语文岛',
-                    subtitle:
-                        '拼音、汉字、词语、阅读 · ${_progressText(Island.chinese, grade)}',
+                    subtitle: '暂未开放',
                     color: const Color(0xFFFFF8E1),
-                    onTap: () => _openIsland(Island.chinese),
+                    locked: true,
+                    onTap: () => _showLockedIsland('语文岛'),
                   ),
                   _HomeAction(
                     icon: Icons.translate,
                     emblem: const _EnglishIslandEmblem(),
                     title: '英语岛',
-                    subtitle:
-                        '单词、拼读和对话 · ${_progressText(Island.english, grade)}',
+                    subtitle: '暂未开放',
                     color: const Color(0xFFAEE2FF),
-                    onTap: () => _openIsland(Island.english),
+                    locked: true,
+                    onTap: () => _showLockedIsland('英语岛'),
                   ),
                   _HomeAction(
                     icon: Icons.search,
@@ -357,6 +357,12 @@ class _HomeScreenState extends State<HomeScreen> {
     if (widget.store.progress.settings['music'] ?? false) {
       AudioService.playBgm(AppMusicScene.home);
     }
+  }
+
+  void _showLockedIsland(String name) {
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text('$name 暂未开放，完善后再开启。')));
   }
 
   String _randomBubble() {
@@ -490,6 +496,7 @@ class _HomeAction extends StatelessWidget {
     required this.color,
     required this.onTap,
     this.emblem,
+    this.locked = false,
   });
 
   final IconData icon;
@@ -498,6 +505,7 @@ class _HomeAction extends StatelessWidget {
   final Color color;
   final VoidCallback onTap;
   final Widget? emblem;
+  final bool locked;
 
   @override
   Widget build(BuildContext context) {
@@ -509,8 +517,10 @@ class _HomeAction extends StatelessWidget {
           CircleAvatar(
             radius: 30,
             backgroundColor: Colors.white,
-            child:
-                emblem ?? Icon(icon, size: 34, color: const Color(0xFF2D2A32)),
+            child: locked
+                ? const Icon(Icons.lock, size: 32, color: Color(0xFF6B7280))
+                : emblem ??
+                      Icon(icon, size: 34, color: const Color(0xFF2D2A32)),
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -537,7 +547,7 @@ class _HomeAction extends StatelessWidget {
               ],
             ),
           ),
-          const Icon(Icons.chevron_right),
+          Icon(locked ? Icons.lock_outline : Icons.chevron_right),
         ],
       ),
     );

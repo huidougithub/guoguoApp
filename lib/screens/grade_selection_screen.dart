@@ -6,9 +6,14 @@ import '../services/audio_service.dart';
 import 'pet_selection_screen.dart';
 
 class GradeSelectionScreen extends StatelessWidget {
-  const GradeSelectionScreen({super.key, required this.store});
+  const GradeSelectionScreen({
+    super.key,
+    required this.store,
+    this.returnToPrevious = false,
+  });
 
   final AppStore store;
+  final bool returnToPrevious;
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +70,7 @@ class GradeSelectionScreen extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(18, 10, 18, 18),
                 child: Column(
                   children: [
-                    const _GradeHero(),
+                    _GradeHero(showBackButton: Navigator.of(context).canPop()),
                     const SizedBox(height: 8),
                     Expanded(
                       child: GridView.builder(
@@ -83,6 +88,7 @@ class GradeSelectionScreen extends StatelessWidget {
                           return _GradeCard(
                             data: card,
                             store: card.grade == null ? null : store,
+                            returnToPrevious: returnToPrevious,
                           );
                         },
                       ),
@@ -99,7 +105,9 @@ class GradeSelectionScreen extends StatelessWidget {
 }
 
 class _GradeHero extends StatelessWidget {
-  const _GradeHero();
+  const _GradeHero({required this.showBackButton});
+
+  final bool showBackButton;
 
   @override
   Widget build(BuildContext context) {
@@ -121,6 +129,22 @@ class _GradeHero extends StatelessWidget {
           ),
           const Positioned(left: 26, top: 46, child: _Spark(size: 16)),
           const Positioned(left: 210, top: 76, child: _Spark(size: 12)),
+          if (showBackButton)
+            Positioned(
+              left: 0,
+              top: 14,
+              child: FilledButton.icon(
+                style: FilledButton.styleFrom(
+                  backgroundColor: Colors.white.withValues(alpha: .88),
+                  foregroundColor: const Color(0xFF5A2E12),
+                  minimumSize: const Size(96, 46),
+                  side: const BorderSide(color: Color(0xFFE4B36C), width: 1.4),
+                ),
+                onPressed: () => Navigator.of(context).pop(),
+                icon: const Icon(Icons.arrow_back_rounded),
+                label: const Text('返回'),
+              ),
+            ),
           Positioned(
             top: 18,
             child: Column(
@@ -160,10 +184,15 @@ class _GradeHero extends StatelessWidget {
 }
 
 class _GradeCard extends StatelessWidget {
-  const _GradeCard({required this.data, required this.store});
+  const _GradeCard({
+    required this.data,
+    required this.store,
+    required this.returnToPrevious,
+  });
 
   final _GradeCardData data;
   final AppStore? store;
+  final bool returnToPrevious;
 
   @override
   Widget build(BuildContext context) {
@@ -189,6 +218,10 @@ class _GradeCard extends StatelessWidget {
                   );
                   await appStore.selectGrade(data.grade!);
                   if (!context.mounted) return;
+                  if (returnToPrevious) {
+                    Navigator.of(context).pop();
+                    return;
+                  }
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
                       builder: (_) => PetSelectionScreen(store: appStore),

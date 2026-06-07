@@ -179,6 +179,7 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
       _progress.correctQuestionIds.remove(id);
     }
     await _service.saveProgress(_worksheet.id, _progress);
+    await _tryGrantPerfectWorksheetDiamond();
     if (!mounted) return;
     setState(() {});
   }
@@ -334,6 +335,7 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
       total: total,
       missedQuestions: missedQuestions,
     );
+    await _tryGrantPerfectWorksheetDiamond();
 
     if (!mounted) return;
     setState(() {});
@@ -367,6 +369,26 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     if (correct == total) return '太棒了，全都答对！';
     if (correct >= total * 0.8) return '很接近满分啦';
     return '继续练习会更稳';
+  }
+
+  Future<void> _tryGrantPerfectWorksheetDiamond() async {
+    final questions = _worksheet.days
+        .expand((day) => day.questions)
+        .where((question) => question.countsForProgress)
+        .toList();
+    final total = questions.length;
+    final correct = questions
+        .where((question) => _progress.correctQuestionIds.contains(question.id))
+        .length;
+    final granted = await widget.store.grantWorksheetDiamondIfPerfect(
+      worksheetId: _worksheet.id,
+      correct: correct,
+      total: total,
+    );
+    if (!mounted || !granted) return;
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(const SnackBar(content: Text('整套试卷全部做对，获得1颗钻石！')));
   }
 
   Question _toWrongQuestion(WorksheetQuestion question) {

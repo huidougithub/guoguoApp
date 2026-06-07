@@ -105,11 +105,17 @@ class _ShopScreenState extends State<ShopScreen> {
                             value: '${progress.badges.length}',
                             color: const Color(0xFFBFDBFE),
                           ),
+                          StatPill(
+                            icon: Icons.diamond,
+                            label: '钻石',
+                            value: '${progress.diamonds}',
+                            color: const Color(0xFFE9D5FF),
+                          ),
                         ],
                       ),
                       const SizedBox(height: 14),
                       const Text(
-                        '勋章兑换物品区已预留，后续可以继续加入道具、皮肤或特别技能。',
+                        '整套试卷一次性全部做对，可获得1颗钻石。',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
@@ -131,7 +137,7 @@ class _ShopScreenState extends State<ShopScreen> {
                         tabs: [
                           Tab(icon: Icon(Icons.checkroom), text: '装扮'),
                           Tab(icon: Icon(Icons.auto_awesome), text: '勋章宠物'),
-                          Tab(icon: Icon(Icons.inventory_2), text: '预留兑换'),
+                          Tab(icon: Icon(Icons.inventory_2), text: '钻石兑换'),
                         ],
                       ),
                       const SizedBox(height: 12),
@@ -158,7 +164,10 @@ class _ShopScreenState extends State<ShopScreen> {
                               onPurchase: _purchasePet,
                               onUse: _usePet,
                             ),
-                            const _ReservedBadgeExchange(),
+                            _DiamondExchange(
+                              store: store,
+                              onRedeem: _redeemRealReward,
+                            ),
                           ],
                         ),
                       ),
@@ -216,6 +225,17 @@ class _ShopScreenState extends State<ShopScreen> {
     setState(() {
       previewPetId = pet.id;
       message = '已切换为${pet.name}。';
+    });
+  }
+
+  Future<void> _redeemRealReward(_RealReward reward) async {
+    final ok = await store.redeemRealReward(reward.id);
+    await _playResult(ok);
+    if (!mounted) return;
+    setState(() {
+      message = ok
+          ? '已兑换${reward.title}，记得让家长兑现奖励。'
+          : '钻石还不够，做对整套试卷可以获得钻石。';
     });
   }
 
@@ -384,34 +404,75 @@ class _PetBadgeShop extends StatelessWidget {
   }
 }
 
-class _ReservedBadgeExchange extends StatelessWidget {
-  const _ReservedBadgeExchange();
+class _DiamondExchange extends StatelessWidget {
+  const _DiamondExchange({required this.store, required this.onRedeem});
+
+  final AppStore store;
+  final ValueChanged<_RealReward> onRedeem;
+
+  static const rewards = [
+    _RealReward(
+      id: 'coins_10',
+      title: '10个币',
+      subtitle: '现实奖励：兑换10个币',
+      icon: Icons.monetization_on,
+    ),
+    _RealReward(
+      id: 'milk_tea',
+      title: '奶茶一杯',
+      subtitle: '现实奖励：请家长兑现一杯奶茶',
+      icon: Icons.local_cafe,
+    ),
+    _RealReward(
+      id: 'cake',
+      title: '蛋糕一个',
+      subtitle: '现实奖励：请家长兑现一个蛋糕',
+      icon: Icons.cake,
+    ),
+    _RealReward(
+      id: 'snack',
+      title: '零食一份',
+      subtitle: '现实奖励：请家长兑现一份零食',
+      icon: Icons.fastfood,
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    final items = [
-      ('神秘技能位', Icons.auto_fix_high, '预留：可兑换战斗特效或一次提示强化。'),
-      ('主题家具位', Icons.chair, '预留：可兑换宠物小屋摆件。'),
-      ('限定称号位', Icons.workspace_premium, '预留：可兑换展示称号。'),
-    ];
     return ListView.separated(
-      itemCount: items.length,
+      itemCount: rewards.length,
       separatorBuilder: (_, _) => const SizedBox(height: 10),
       itemBuilder: (context, index) {
-        final item = items[index];
+        final reward = rewards[index];
+        final redeemed = store.progress.realRewardRedemptions[reward.id] ?? 0;
+        final canRedeem = store.canRedeemRealReward(reward.id);
         return _ShopTile(
-          color: const Color(0xFFF3F4F6),
-          leading: Icon(item.$2, size: 34),
-          title: item.$1,
-          subtitle: item.$3,
-          actionIcon: Icons.lock_clock,
-          actionEnabled: false,
+          color: canRedeem ? const Color(0xFFFFFBEB) : const Color(0xFFF3F4F6),
+          leading: Icon(reward.icon, size: 34, color: const Color(0xFF7C3AED)),
+          title: reward.title,
+          subtitle: '${reward.subtitle} · 已兑 $redeemed 次 · 需要1颗钻石',
+          actionIcon: Icons.diamond,
+          actionEnabled: canRedeem,
           onTap: null,
-          onAction: null,
+          onAction: canRedeem ? () => onRedeem(reward) : null,
         );
       },
     );
   }
+}
+
+class _RealReward {
+  const _RealReward({
+    required this.id,
+    required this.title,
+    required this.subtitle,
+    required this.icon,
+  });
+
+  final String id;
+  final String title;
+  final String subtitle;
+  final IconData icon;
 }
 
 class _ShopTile extends StatelessWidget {

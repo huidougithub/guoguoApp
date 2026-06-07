@@ -150,6 +150,7 @@ class WorksheetCompletionResult {
     required this.stars,
     required this.addedStars,
     required this.addedEnergyFruit,
+    required this.addedDiamonds,
     required this.correct,
     required this.total,
   });
@@ -157,18 +158,20 @@ class WorksheetCompletionResult {
   final int stars;
   final int addedStars;
   final int addedEnergyFruit;
+  final int addedDiamonds;
   final int correct;
   final int total;
 
   String get message {
-    if (total <= 0) return '这页还没有可批改的题目。';
+    if (total <= 0) return '这套试卷还没有题目。';
+    final diamondText = addedDiamonds > 0 ? '，还获得1颗钻石' : '';
     if (stars == 3) {
-      return '太棒了，全部答对！获得$addedStars颗星星、$addedEnergyFruit颗能量果。';
+      return '太棒了，全部做对！获得$addedStars颗星星、$addedEnergyFruit个能量果$diamondText！';
     }
     if (stars > 0) {
-      return '完成练习：$correct/$total。获得$addedStars颗星星、$addedEnergyFruit颗能量果。';
+      return '本次做对$correct/$total题，获得$addedStars颗星星、$addedEnergyFruit个能量果。';
     }
-    return '完成练习：$correct/$total。错题已收进错题秘境，再练一次会更稳。';
+    return '本次做对$correct/$total题，再练一练，奖励就在前面。';
   }
 }
 
@@ -367,6 +370,7 @@ class AppProgress {
     this.selectedGrade,
     this.selectedPet,
     this.energyFruit = 0,
+    this.diamonds = 0,
     this.petExp = 0,
     this.totalStars = 0,
     this.dailyRewardDate,
@@ -382,6 +386,7 @@ class AppProgress {
     Map<String, bool>? settings,
     Map<String, int>? bestTimes,
     Map<String, int>? challengeHistory,
+    Map<String, int>? realRewardRedemptions,
     List<ParentChallenge>? parentChallenges,
   }) : levelStars = levelStars ?? {},
        completedLevels = completedLevels ?? {},
@@ -395,11 +400,13 @@ class AppProgress {
            settings ?? {'music': true, 'sfx': true, 'parentReview': false},
        bestTimes = bestTimes ?? {},
        challengeHistory = challengeHistory ?? {},
+       realRewardRedemptions = realRewardRedemptions ?? {},
        parentChallenges = parentChallenges ?? [];
 
   int? selectedGrade;
   String? selectedPet;
   int energyFruit;
+  int diamonds;
   int petExp;
   int totalStars;
   String? dailyRewardDate;
@@ -415,6 +422,7 @@ class AppProgress {
   final Map<String, bool> settings;
   final Map<String, int> bestTimes;
   final Map<String, int> challengeHistory;
+  final Map<String, int> realRewardRedemptions;
   final List<ParentChallenge> parentChallenges;
 
   int get petLevel {
@@ -443,6 +451,7 @@ class AppProgress {
     'selectedGrade': selectedGrade,
     'selectedPet': selectedPet,
     'energyFruit': energyFruit,
+    'diamonds': diamonds,
     'petExp': petExp,
     'totalStars': totalStars,
     'dailyRewardDate': dailyRewardDate,
@@ -458,6 +467,7 @@ class AppProgress {
     'settings': settings,
     'bestTimes': bestTimes,
     'challengeHistory': challengeHistory,
+    'realRewardRedemptions': realRewardRedemptions,
     'parentChallenges': parentChallenges
         .map((challenge) => challenge.toJson())
         .toList(),
@@ -469,6 +479,7 @@ class AppProgress {
         : normalizeGradeCode(json['selectedGrade'] as int?),
     selectedPet: json['selectedPet'] as String?,
     energyFruit: json['energyFruit'] as int? ?? 0,
+    diamonds: json['diamonds'] as int? ?? 0,
     petExp: json['petExp'] as int? ?? json['energyFruit'] as int? ?? 0,
     totalStars: json['totalStars'] as int? ?? 0,
     dailyRewardDate: json['dailyRewardDate'] as String?,
@@ -517,6 +528,9 @@ class AppProgress {
         (json['challengeHistory'] as Map<dynamic, dynamic>? ?? const {}).map(
           (key, value) => MapEntry(key.toString(), value as int),
         ),
+    realRewardRedemptions:
+        (json['realRewardRedemptions'] as Map<dynamic, dynamic>? ?? const {})
+            .map((key, value) => MapEntry(key.toString(), value as int)),
     parentChallenges: (json['parentChallenges'] as List<dynamic>? ?? const [])
         .whereType<Map<dynamic, dynamic>>()
         .map((item) => ParentChallenge.fromJson(item.cast<String, dynamic>()))

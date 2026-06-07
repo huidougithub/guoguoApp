@@ -1,12 +1,52 @@
 {
   "sets": [
     {
+      "id": "text_fill_8_units",
+      "title": "课文拼写",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "8单元 · 41道练习 · 手写练习",
+      "asset": "assets/worksheets/generated/text_fill_8_units.json"
+    },
+    {
       "id": "chinese_review_21_days",
       "title": "语文期末复习冲刺21天",
       "subject": "语文",
       "grade": "一年级下册",
       "description": "21天 · 557道练习 · 手写练习",
       "asset": "assets/worksheets/generated/chinese_review_21.json"
+    },
+    {
+      "id": "chinese_pinyin_spelling_8_units",
+      "title": "注音拼写",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "8单元 · 619道练习 · 手写练习",
+      "asset": "assets/worksheets/generated/chinese_pinyin_spelling_8_units.json"
+    },
+    {
+      "id": "chinese_common_specials",
+      "title": "常考专项题",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "5专项 · 48道练习 · 手写练习",
+      "asset": "assets/worksheets/generated/chinese_common_specials.json"
+    },
+    {
+      "id": "chinese_basic_dictation_7_units",
+      "title": "基础默写",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "7单元 · 246道练习 · 手写练习",
+      "asset": "assets/worksheets/generated/chinese_basic_dictation_7_units.json"
+    },
+    {
+      "id": "stroke_practice_17_lessons",
+      "title": "易错笔画填空",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "17课 · 98道练习 · 手写练习",
+      "asset": "assets/worksheets/generated/stroke_practice_17_lessons.json"
     },
     {
       "id": "math_daily_20_sample",

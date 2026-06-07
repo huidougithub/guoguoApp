@@ -15,8 +15,13 @@ void main() {
     final catalog =
         jsonDecode(File('assets/worksheets/index.json').readAsStringSync())
             as Map<String, dynamic>;
+    final mathDaily = (catalog['sets'] as List<dynamic>).firstWhere(
+      (item) =>
+          (item as Map<String, dynamic>)['asset'] ==
+          'assets/worksheets/generated/math_daily_20_full.json',
+    );
     final catalogItem = WorksheetCatalogItem.fromJson(
-      (catalog['sets'] as List<dynamic>).first as Map<String, dynamic>,
+      mathDaily as Map<String, dynamic>,
     );
     expect(
       catalogItem.asset,
@@ -157,5 +162,33 @@ void main() {
     expect(second.addedStars, 1);
     expect(second.addedEnergyFruit, 3);
     expect(store.progress.levelStars['worksheet:sample:day1'], 3);
+  });
+
+  test('试卷全对奖励钻石且现实奖励每次消耗一颗钻石', () async {
+    SharedPreferences.setMockInitialValues({});
+    final store = AppStore();
+    await store.load();
+
+    final first = await store.grantWorksheetDiamondIfPerfect(
+      worksheetId: 'sample',
+      correct: 10,
+      total: 10,
+    );
+    final second = await store.grantWorksheetDiamondIfPerfect(
+      worksheetId: 'sample',
+      correct: 10,
+      total: 10,
+    );
+
+    expect(first, isTrue);
+    expect(second, isFalse);
+    expect(store.progress.diamonds, 1);
+
+    final redeemed = await store.redeemRealReward('milk_tea');
+
+    expect(redeemed, isTrue);
+    expect(store.progress.diamonds, 0);
+    expect(store.progress.realRewardRedemptions['milk_tea'], 1);
+    expect(await store.redeemRealReward('cake'), isFalse);
   });
 }
