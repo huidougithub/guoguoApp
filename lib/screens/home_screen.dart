@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final pet = petById(progress.selectedPet);
     final grade = normalizeGradeCode(progress.selectedGrade);
     return ExplorerScaffold(
-      title: '果果加油！',
+      title: '菲菲加油！',
       actions: [
         IconButton(
           tooltip: '设置',

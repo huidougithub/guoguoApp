@@ -80,6 +80,7 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
           ),
       ],
       child: FutureBuilder<List<_CatalogCardData>>(
+        key: const ValueKey('worksheet-catalog-fb'),
         future: catalogFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState != ConnectionState.done) {
@@ -91,34 +92,32 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
           final items = snapshot.data!;
           return Padding(
             padding: const EdgeInsets.all(20),
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 180),
-              child: category == null
-                  ? _CategoryOverview(
-                      key: const ValueKey('worksheet-category-overview'),
-                      items: items,
-                      categories: categories,
-                      onSelect: (category) {
-                        setState(() => selectedCategory = category);
-                      },
-                    )
-                  : _CategoryWorksheetList(
-                      key: ValueKey('worksheet-list-${category.id}'),
-                      category: category,
-                      items: items
-                          .where((item) => _belongsToCategory(item, category))
-                          .toList(),
-                      onBack: () => setState(() => selectedCategory = null),
-                      onImport: _importWorksheet,
-                      onOpen: (item) => pushScreen(
-                        context,
-                        WorksheetPracticeScreen(
-                          store: widget.store,
-                          catalogItem: item.catalogItem,
-                        ),
+            child: category == null
+                ? _CategoryOverview(
+                    key: const ValueKey('worksheet-category-overview'),
+                    items: items,
+                    categories: categories,
+                    onSelect: (category) {
+                      setState(() => selectedCategory = category);
+                    },
+                  )
+                : _CategoryWorksheetList(
+                    key: ValueKey('worksheet-list-${category.id}'),
+                    category: category,
+                    items: items
+                        .where((item) => _belongsToCategory(item, category))
+                        .toList(),
+                    onBack: () => setState(() => selectedCategory = null),
+                    onImport: _importWorksheet,
+                    onOpen: (item) => pushScreen(
+                      context,
+                      WorksheetPracticeScreen(
+                        store: widget.store,
+                        catalogItem: item.catalogItem,
                       ),
                     ),
-            ),
+                    onDelete: (item) => _deleteWorksheet(item),
+                  ),
           );
         },
       ),
@@ -144,6 +143,41 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
     };
   }
 
+  Future<void> _deleteWorksheet(_CatalogCardData item) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('确认删除'),
+        content: Text('确定要删除试卷"${item.catalogItem.title}"吗？\n删除后练习进度也会一并清除。'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('取消'),
+          ),
+          FilledButton(
+            style: FilledButton.styleFrom(
+              backgroundColor: const Color(0xFFE57373),
+            ),
+            onPressed: () => Navigator.of(context).pop(true),
+            child: const Text('删除'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !mounted) return;
+    await service.deleteImportedWorksheet(item.catalogItem.id);
+    if (!mounted) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      setState(() {
+        catalogFuture = _loadCatalog();
+      });
+    });
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text('已删除：${item.catalogItem.title}')));
+  }
+
   Future<void> _importWorksheet() async {
     try {
       final raw = await service.pickWorksheetJson();
@@ -153,8 +187,13 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
       if (!mounted || title == null) return;
       final item = await service.importWorksheetFromJson(raw, title: title);
       if (!mounted) return;
-      setState(() {
-        catalogFuture = _loadCatalog();
+      // 用 addPostFrameCallback 确保当前帧完全结束后再刷新，
+      // 避免 dialog 关闭动画和 element 清理过程中触发重建
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        setState(() {
+          catalogFuture = _loadCatalog();
+        });
       });
       ScaffoldMessenger.of(
         context,
@@ -165,7 +204,7 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
         context: context,
         builder: (context) => AlertDialog(
           title: const Text('导入失败'),
-          content: Text('请选择由题库脚本生成的 JSON 文件。\n\n$error'),
+          content: Text('试卷格式不符合 v1.0 标准，请检查后重试。\n\n$error'),
           actions: [
             FilledButton(
               onPressed: () => Navigator.of(context).pop(),
@@ -233,7 +272,9 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
 
   bool _matchesSelectedGrade(WorksheetCatalogItem item, int selectedGrade) {
     final itemGrade = _gradeCodeFromText(item.grade);
-    return itemGrade != null && itemGrade == selectedGrade;
+    // 测试/通用类试卷在所有年级下都显示
+    if (itemGrade == null) return true;
+    return itemGrade == selectedGrade;
   }
 
   int? _gradeCodeFromText(String value) {
@@ -331,6 +372,7 @@ class _CategoryWorksheetList extends StatelessWidget {
     required this.onBack,
     required this.onImport,
     required this.onOpen,
+    this.onDelete,
   });
 
   final _WorksheetCategory category;
@@ -338,6 +380,7 @@ class _CategoryWorksheetList extends StatelessWidget {
   final VoidCallback onBack;
   final VoidCallback onImport;
   final ValueChanged<_CatalogCardData> onOpen;
+  final ValueChanged<_CatalogCardData>? onDelete;
 
   @override
   Widget build(BuildContext context) {
@@ -397,6 +440,7 @@ class _CategoryWorksheetList extends StatelessWidget {
                       data: item,
                       category: category,
                       onTap: () => onOpen(item),
+                      onDelete: onDelete != null ? () => onDelete!(item) : null,
                     );
                   },
                 ),
@@ -464,11 +508,15 @@ class _WorksheetSetCard extends StatelessWidget {
     required this.data,
     required this.category,
     required this.onTap,
+    this.onDelete,
   });
 
   final _CatalogCardData data;
   final _WorksheetCategory category;
   final VoidCallback onTap;
+  final VoidCallback? onDelete;
+
+  bool get _isImported => data.catalogItem.asset.startsWith('local:');
 
   @override
   Widget build(BuildContext context) {
@@ -502,7 +550,29 @@ class _WorksheetSetCard extends StatelessWidget {
                   ),
                 ),
               ),
-              const Icon(Icons.chevron_right),
+              if (_isImported && onDelete != null)
+                GestureDetector(
+                  onTap: onDelete,
+                  child: Container(
+                    width: 32,
+                    height: 32,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFFE5E5),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(
+                        color: const Color(0xFFE57373),
+                        width: 1.2,
+                      ),
+                    ),
+                    child: const Icon(
+                      Icons.delete_outline,
+                      color: Color(0xFFE57373),
+                      size: 18,
+                    ),
+                  ),
+                )
+              else
+                const Icon(Icons.chevron_right),
             ],
           ),
           const SizedBox(height: 6),

@@ -11,133 +11,133 @@
       "questions": [
         {
           "id": "day01_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-7=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day01_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+6-6=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day01_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-7+5=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day01_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 9=",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day01_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+13=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day01_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+4=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day01_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+4-9=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day01_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-8+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day01_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+5=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day01_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "19-9=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day01_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=17",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day01_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )= 5",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day01_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "10+( )=12",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day01_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "3+( )=10",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day01_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-4=12",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day01_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12-( )=4",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day01_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "4+( )=13",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day01_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "4+( )=15",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day01_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "欢欢带了10元钱去买零食，他买了1块2元钱的面包和1块1元钱的三 明治，欢欢还剩几元钱?",
           "answer": "7",
           "answerSource": "manual"
@@ -150,133 +150,133 @@
       "questions": [
         {
           "id": "day02_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-5=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day02_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+13=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day02_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-6=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day02_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 8=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day02_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+6-9=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day02_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+16=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day02_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+13=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day02_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+7=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day02_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+14=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day02_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11+4-5=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day02_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11+( )=13",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day02_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "3+( )=14",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day02_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=11",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day02_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=17",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day02_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=14",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day02_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "6+( )=14",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day02_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-9=8",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day02_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=10",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day02_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "课桌上有1支圆珠笔、2块橡皮、3支铅笔，请问课桌上一共有多少文具?",
           "answer": "6",
           "answerSource": "manual"
@@ -289,133 +289,133 @@
       "questions": [
         {
           "id": "day03_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11-3 =",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day03_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16-7=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day03_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+8-9=",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day03_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+ 8=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day03_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16+3=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day03_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+12=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day03_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+4-8=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day03_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+8-9=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day03_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+11=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day03_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "19-6=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day03_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+4=14",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day03_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+6=17",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day03_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "5+( )=14",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day03_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "18-( )=12",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day03_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+6=11",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day03_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-7=6",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day03_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=12",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day03_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "19-( )=18",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day03_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "树上里原有14个桃子成熟了，小亮采摘后，还剩10个。小亮摘走了多 少个?",
           "answer": "4",
           "answerSource": "manual"
@@ -428,126 +428,126 @@
       "questions": [
         {
           "id": "day04_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+7=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day04_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+6=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day04_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16+1-9=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day04_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+7=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day04_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+4-7=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day04_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18- 3 =",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day04_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18- 4=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day04_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+2-8=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day04_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 8=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day04_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "17-9+9=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day04_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "14-( )=11",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day04_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11-( )=6",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day04_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=14",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day04_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "16-( )=9",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day04_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=17",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day04_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-4=11",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day04_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-5=12",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day04_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=13",
           "answer": "4",
           "answerSource": "auto"
@@ -560,133 +560,133 @@
       "questions": [
         {
           "id": "day05_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+12=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day05_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+3-9=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day05_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "1+18=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day05_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+8=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day05_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-7+7=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day05_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+3=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day05_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+4-9=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day05_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11-2=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day05_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+9=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day05_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11-4+6=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day05_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12-( )=3",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day05_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "19-( )=16",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day05_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+2=13",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day05_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11+( )=12",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day05_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12-( )=6",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day05_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "2+( )=19",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day05_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+6=12",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day05_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )=6",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day05_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "院子里有8朵红花，1朵紫花，爷爷又种了9朵粉花。紫花和粉花一共 有多少朵?",
           "answer": "10",
           "answerSource": "manual"
@@ -699,126 +699,126 @@
       "questions": [
         {
           "id": "day06_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+3=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day06_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+2-8=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day06_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+8-7=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day06_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-8=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day06_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+6=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day06_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "17-5=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day06_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+9-9=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day06_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+7-5=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day06_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+7=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day06_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+9=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day06_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-6=8",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day06_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-4=15",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day06_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+11=13",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day06_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+6=9",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day06_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "15-( )=8",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day06_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "5+( )=18",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day06_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=15",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day06_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=13",
           "answer": "4",
           "answerSource": "auto"
@@ -831,126 +831,126 @@
       "questions": [
         {
           "id": "day07_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13- 9=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day07_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15+2-9=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day07_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+8=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day07_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11-2+8=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day07_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+9=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day07_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "1+14=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day07_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+5-7=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day07_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+6=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day07_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-4 +8=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day07_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2-2 =",
           "answer": "0",
           "answerSource": "auto"
         },
         {
           "id": "day07_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-6=13",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day07_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "13-( )=7",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day07_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=10",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day07_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "10+( )= 13",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day07_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-8=9",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day07_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "16-( )=15",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day07_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+14=16",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day07_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )=9",
           "answer": "2",
           "answerSource": "auto"
@@ -963,133 +963,133 @@
       "questions": [
         {
           "id": "day08_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+11=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day08_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 9=",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day08_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 4=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day08_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+2=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day08_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+7-5=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day08_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-7=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day08_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+12=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day08_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18-2=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day08_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13+1=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day08_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-3+7=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day08_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "14-( )=13",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day08_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "13-( )=5",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day08_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+12=15",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day08_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=18",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day08_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+7=10",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day08_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=17",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day08_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-6=8",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day08_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-9=2",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day08_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "外婆买来一框香蕉。全家人第一天吃了5个，第二天吃了6个，第三天 吃了1个。三天一共吃了多少个?",
           "answer": "12",
           "answerSource": "manual"
@@ -1102,133 +1102,133 @@
       "questions": [
         {
           "id": "day09_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-7=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day09_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+11=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day09_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+2=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day09_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+4=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day09_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-7+7=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day09_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+2=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day09_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16+1=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day09_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18-9=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day09_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+8=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day09_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-9+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day09_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=16",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day09_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+11=16",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day09_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-5=6",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day09_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "13-( )=5",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day09_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=13",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day09_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )- 7=5",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day09_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-8=9",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day09_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "13+( )=19",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day09_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "商店里的直尺是3块钱，圆珠笔是2块钱，转笔刀是3块。这3种物品 一样买一个一共需要多少钱?",
           "answer": "8",
           "answerSource": "manual"
@@ -1241,133 +1241,133 @@
       "questions": [
         {
           "id": "day10_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-5=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day10_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+5-9=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day10_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13+3-8=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day10_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+12=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day10_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-1=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day10_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+6=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day10_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+8-6=",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day10_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-6+9=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day10_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+16=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day10_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11+8=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day10_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12+( )=19",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day10_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+13=15",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day10_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )=2",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day10_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "14-( )=8",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day10_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "19-( )=14",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day10_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-7=5",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day10_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=12",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day10_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "19-( )=12",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day10_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "一根彩带长15米，剪去一段后，还剩10米。剪去的那段长多少米?",
           "answer": "5",
           "answerSource": "manual"
@@ -1380,133 +1380,133 @@
       "questions": [
         {
           "id": "day11_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-5=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day11_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-8+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day11_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+5-9=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day11_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 3=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day11_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15+3=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day11_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+3=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day11_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-8+8=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day11_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+9-9=",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day11_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18-5=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day11_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+5=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day11_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+2=12",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day11_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "2+( )=18",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day11_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-3=8",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day11_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )=3",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day11_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=14",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day11_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "18-( )=13",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day11_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=16",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day11_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "7+( )=16",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day11_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "门前停着3辆绿色的小汽车、1辆橙色的小汽车、4辆黄色的小汽车，门 前一共停着几辆小汽车?",
           "answer": "8",
           "answerSource": "manual"
@@ -1519,126 +1519,126 @@
       "questions": [
         {
           "id": "day12_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "19-9=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day12_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+9-9=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day12_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7+8=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day12_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+3-8=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day12_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+6=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day12_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14+2=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day12_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-6+9=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day12_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16+3=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day12_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+7-6=",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day12_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-6=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day12_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+13=18",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day12_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+1=11",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day12_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-5=12",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day12_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+6=14",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day12_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "10+( )=11",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day12_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11-( )=4",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day12_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12-( )=7",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day12_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "16-( )=5",
           "answer": "11",
           "answerSource": "auto"
@@ -1651,133 +1651,133 @@
       "questions": [
         {
           "id": "day13_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+4=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day13_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+17=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day13_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+4=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day13_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+5=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day13_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-9+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day13_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+8=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day13_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18-5=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day13_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13+5=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day13_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+6=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day13_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-7+8=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day13_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "2+( )=13",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day13_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "10+( )=11",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day13_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=18",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day13_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=14",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day13_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "2+( )=18",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day13_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "16-( )=8",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day13_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+7=14",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day13_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-11=8",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day13_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "草地上原有2只梅花鹿，后面又走来6只梅花鹿，现在一共有多少只梅 花鹿?",
           "answer": "8",
           "answerSource": "manual"
@@ -1790,126 +1790,126 @@
       "questions": [
         {
           "id": "day14_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "17-9=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day14_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+15=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day14_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+6=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day14_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-9+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day14_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-6+5=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day14_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-6=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day14_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 7=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day14_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+2=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day14_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+2-7=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day14_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-9+7=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day14_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "17-( )=11",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day14_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "5+( )=13",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day14_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=15",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day14_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=1",
           "answer": null,
           "answerSource": "manual_required"
         },
         {
           "id": "day14_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=16",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day14_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=11",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day14_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )=5",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day14_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )=2",
           "answer": "9",
           "answerSource": "auto"
@@ -1922,133 +1922,133 @@
       "questions": [
         {
           "id": "day15_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15+1=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day15_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-9=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day15_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+6-4=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day15_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-7+3=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day15_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+4=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day15_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-8=",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day15_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+6=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day15_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-4+8=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day15_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-5+9=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day15_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13+3=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day15_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=15",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day15_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "1+( )=13",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day15_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "18-( )=15",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day15_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "9+( )=17",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day15_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+11=12",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day15_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12-( )=5",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day15_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "17-( )=8",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day15_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "7+( )=16",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day15_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "书桌上一共有9块橡皮，天天拿走3块，亮亮拿走2块，书桌上还剩多 少块橡皮?",
           "answer": "4",
           "answerSource": "manual"
@@ -2061,126 +2061,126 @@
       "questions": [
         {
           "id": "day16_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7-9=",
           "answer": "-2",
           "answerSource": "auto"
         },
         {
           "id": "day16_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+15=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day16_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+6=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day16_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-9+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day16_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-6+5=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day16_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-6=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day16_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 7=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day16_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+2=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day16_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+2-7=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day16_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-9+7=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day16_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=16",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day16_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "19-( )=13",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day16_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "13-( )=10",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day16_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=13",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day16_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=14",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day16_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-6=8",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day16_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-3=8",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day16_q18",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "小光去买文具，买了1支2元钱的钢笔、1块1元钱的橡皮、1支3元钱 的铅笔，小光买文具一共花了多少钱?",
           "answer": "6",
           "answerSource": "manual"
@@ -2193,133 +2193,133 @@
       "questions": [
         {
           "id": "day17_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+6=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day17_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+5-8=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day17_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16-2=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day17_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-9=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day17_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13+2=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day17_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+8=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day17_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14+2-7=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day17_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+7=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day17_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16-1=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day17_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18-2=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day17_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "1+( )=12",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day17_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=17",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day17_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-3=14",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day17_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-8=9",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day17_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "15+( )= 19",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day17_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "15-( )=12",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day17_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+1=10",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day17_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+7=14",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day17_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "门前停着3辆红色的小汽车、2辆绿色的小汽车、2辆粉色的小汽车，门 前一共停着几辆小汽车?",
           "answer": "7",
           "answerSource": "manual"
@@ -2332,133 +2332,133 @@
       "questions": [
         {
           "id": "day18_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "7- 9=",
           "answer": "-2",
           "answerSource": "auto"
         },
         {
           "id": "day18_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+15=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day18_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+6=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day18_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-9+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day18_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-6+5=",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day18_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-6=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day18_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 7=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day18_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+2=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day18_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+2-7=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day18_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-9+7=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day18_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+5=11",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day18_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "18-( )=17",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day18_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+1=11",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day18_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-6=9",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day18_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-4=15",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day18_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "17-( )=16",
           "answer": "1",
           "answerSource": "auto"
         },
         {
           "id": "day18_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+6=11",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day18_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+7=1",
           "answer": null,
           "answerSource": "manual_required"
         },
         {
           "id": "day18_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "小羚吃了5个橙子，还剩7个，原来小玲一共有多 个橙子?",
           "answer": "12",
           "answerSource": "manual"
@@ -2471,133 +2471,133 @@
       "questions": [
         {
           "id": "day19_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "6+5-7=",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day19_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "18- 5=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day19_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16-7=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day19_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-7+6=",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day19_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+16=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day19_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-8+6=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day19_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "19-4=",
           "answer": "15",
           "answerSource": "auto"
         },
         {
           "id": "day19_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+15=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day19_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+4-8=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day19_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+4=",
           "answer": "13",
           "answerSource": "auto"
         },
         {
           "id": "day19_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "14+( )=16",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day19_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "10+( )=12",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day19_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "9+( )=12",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day19_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+5=15",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day19_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "6+( )=18",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day19_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "4+( )=13",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day19_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=12",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day19_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-5=9",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day19_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "商店售卖水彩笔，上午卖出了1支，下午卖出了8支， 一共卖出了多少 支水彩笔?",
           "answer": "9",
           "answerSource": "manual"
@@ -2610,133 +2610,133 @@
       "questions": [
         {
           "id": "day20_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-5=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day20_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "16+1=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day20_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13-4+9=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day20_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "9+1=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day20_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-6=",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day20_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "13- 8=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day20_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+2=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day20_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11-6+7=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day20_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14+5=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day20_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+14=",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day20_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "14-( )=12",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day20_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=13",
           "answer": "14",
           "answerSource": "auto"
         },
         {
           "id": "day20_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "15-( )=11",
           "answer": "4",
           "answerSource": "auto"
         },
         {
           "id": "day20_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+9=16",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day20_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "5+( )=14",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day20_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+12=19",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day20_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "14-( )=9",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day20_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-7=9",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day20_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "停车场里开走了6台挖掘机，还剩4台。停车场里原有多少台挖掘机?",
           "answer": "10",
           "answerSource": "manual"

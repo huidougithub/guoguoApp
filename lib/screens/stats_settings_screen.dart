@@ -5,6 +5,7 @@ import '../services/app_store.dart';
 import '../services/audio_service.dart';
 import '../widgets/ui_components.dart';
 import 'grade_selection_screen.dart';
+import 'pet_selection_screen.dart';
 
 class StatsSettingsScreen extends StatefulWidget {
   const StatsSettingsScreen({super.key, required this.store});
@@ -170,6 +171,29 @@ class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
                           await pushScreen(
                             context,
                             GradeSelectionScreen(
+                              store: store,
+                              returnToPrevious: true,
+                            ),
+                          );
+                          if (mounted) setState(() {});
+                        },
+                      ),
+                      ListTile(
+                        leading: const Icon(Icons.pets),
+                        title: const Text('重选宠物'),
+                        subtitle: Text(
+                          '当前：${petById(progress.selectedPet).name}',
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () async {
+                          await AudioService.playSfx(
+                            AppSound.tap,
+                            enabled: store.progress.settings['sfx'] ?? true,
+                          );
+                          if (!context.mounted) return;
+                          await pushScreen(
+                            context,
+                            PetSelectionScreen(
                               store: store,
                               returnToPrevious: true,
                             ),

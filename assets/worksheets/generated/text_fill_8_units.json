@@ -12,53 +12,101 @@
       "questions": [
         {
           "id": "text_fill_u01_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "春风（chuī）____    夏（yǔ）____落    （qiū）____霜降    （dōng xuě）____ ____飘    池（cǎo）____青    山花（hóng）____    鱼（chū shuǐ）____ ____    鸟（rù）____林",
-          "prompt": "根据拼音提示，填写课文《春夏秋冬》中的汉字：春风（chuī）____，夏（yǔ）____落，（qiū）____霜降，（dōng xuě）____ ____飘，池（cǎo）____青，山花（hóng）____。鱼（chū shuǐ）____ ____，鸟（rù）____林。",
-          "answer": "吹 雨 秋 冬雪 草 红 出水 入",
+          "prompt": "春风（chuī）/r，夏（yǔ）/r落，（qiū）/r霜降，（dōng xuě）/r /r飘，池（cǎo）/r青，山花（hóng）/r。鱼（chū shuǐ）/r /r，鸟（rù）/r林。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "吹",
+            "雨",
+            "秋",
+            "冬",
+            "雪",
+            "草",
+            "红",
+            "出",
+            "水",
+            "入"
+          ]
         },
         {
           "id": "text_fill_u01_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "你姓（shén me）____ ____？我姓李。什么李？（mù zǐ）____ ____李。他姓什么？他姓张。什么张？（gōng cháng）____ ____张。（gǔ yuè）____ ____胡，（kǒu tiān）____ ____吴，（shuāng rén）____ ____徐，（yán wǔ）____ ____许",
-          "prompt": "根据拼音提示，填写课文《姓氏歌》中的汉字：你姓（shén me）____ ____？我姓李。什么李？（mù zǐ）____ ____李。他姓什么？他姓张。什么张？（gōng cháng）____ ____张。（gǔ yuè）____ ____胡，（kǒu tiān）____ ____吴，（shuāng rén）____ ____徐，（yán wǔ）____ ____许。",
-          "answer": "什么 木子 弓长 古月 口天 双人 言午",
+          "prompt": "你姓（shén me）/r /r？我姓李。什么李？（mù zǐ）/r /r李。他姓什么？他姓张。什么张？（gōng cháng）/r /r张。（gǔ yuè）/r /r胡，（kǒu tiān）/r /r吴，（shuāng rén）/r /r徐，（yán wǔ）/r /r许。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "什",
+            "么",
+            "木",
+            "子",
+            "弓",
+            "长",
+            "古",
+            "月",
+            "口",
+            "天",
+            "双",
+            "人",
+            "言",
+            "午"
+          ]
         },
         {
           "id": "text_fill_u01_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "河水（qīng qīng）____ ____天气（qíng）____，小小青蛙大（yǎn jing）____ ____。保护（hé）____苗吃害虫，做了不少好事（qíng）____。（qǐng）____你爱护小青蛙，好让禾苗不生病",
-          "prompt": "根据拼音提示，填写课文《小青蛙》中的汉字：河水（qīng qīng）____ ____天气（qíng）____，小小青蛙大（yǎn jing）____ ____。保护（hé）____苗吃害虫，做了不少好事（qíng）____。（qǐng）____你爱护小青蛙，好让禾苗不生病。",
-          "answer": "清清 晴 眼睛 禾 情 请",
+          "prompt": "河水（qīng qīng）/r /r天气（qíng）/r，小小青蛙大（yǎn jing）/r /r。保护（hé）/r苗吃害虫，做了不少好事（qíng）/r。（qǐng）/r你爱护小青蛙，好让禾苗不生病。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "清",
+            "清",
+            "晴",
+            "眼",
+            "睛",
+            "禾",
+            "情",
+            "请"
+          ]
         },
         {
           "id": "text_fill_u01_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（zuǒ biān）____ ____绿，右边红，（zuǒ yòu）____ ____相遇起凉风。绿的喜欢及时雨，红的最怕水来攻    \"言\"来（xiāng hù）____ ____尊重，\"心\"至令人感动，\"日\"出（wàn lǐ wú yún）____ ____ ____ ____，\"水\"到纯净透明",
-          "prompt": "根据拼音提示，填写课文《猜字谜》中的汉字：（zuǒ biān）____ ____绿，右边红，（zuǒ yòu）____ ____相遇起凉风。绿的喜欢及时雨，红的最怕水来攻。\"言\"来（xiāng hù）____ ____尊重，\"心\"至令人感动，\"日\"出（wàn lǐ wú yún）____ ____ ____ ____，\"水\"到纯净透明。",
-          "answer": "左边 左右 相互 万里无云",
+          "prompt": "（zuǒ biān）/r /r绿，右边红，（zuǒ yòu）/r /r相遇起凉风。绿的喜欢及时雨，红的最怕水来攻。\"言\"来（xiāng hù）/r /r尊重，\"心\"至令人感动，\"日\"出（wàn lǐ wú yún）/r /r /r /r，\"水\"到纯净透明。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "左",
+            "边",
+            "左",
+            "右",
+            "相",
+            "互",
+            "万",
+            "里",
+            "无",
+            "云"
+          ]
         },
         {
           "id": "text_fill_u01_q005",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "春眠（bù）____觉晓，处处闻啼鸟。夜来（fēng yǔ）____ ____声，（huā）____落知（duō shǎo）____ ____",
-          "prompt": "根据拼音提示，填写古诗《春晓》中的汉字：春眠（bù）____觉晓，处处闻啼鸟。夜来（fēng yǔ）____ ____声，（huā）____落知（duō shǎo）____ ____。",
-          "answer": "不 风雨 花 多少",
+          "prompt": "春眠（bù）/r觉晓，处处闻啼鸟。夜来（fēng yǔ）/r /r声，（huā）/r落知（duō shǎo）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "不",
+            "风",
+            "雨",
+            "花",
+            "多",
+            "少"
+          ]
         }
       ]
     },
@@ -68,53 +116,94 @@
       "questions": [
         {
           "id": "text_fill_u02_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "花儿喜欢（tài yáng）____ ____，花儿在（yáng guāng）____ ____下开放。鸟儿喜欢（lán tiān）____ ____，鸟儿在（tiān kōng）____ ____中飞翔",
-          "prompt": "根据拼音提示，填写课文《四个太阳》中的汉字：花儿喜欢（tài yáng）____ ____，花儿在（yáng guāng）____ ____下开放。鸟儿喜欢（lán tiān）____ ____，鸟儿在（tiān kōng）____ ____中飞翔。",
-          "answer": "太阳 阳光 蓝天 天空",
+          "prompt": "花儿喜欢（tài yáng）/r /r，花儿在（yáng guāng）/r /r下开放。鸟儿喜欢（lán tiān）/r /r，鸟儿在（tiān kōng）/r /r中飞翔。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "太",
+            "阳",
+            "阳",
+            "光",
+            "蓝",
+            "天",
+            "天",
+            "空"
+          ]
         },
         {
           "id": "text_fill_u02_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "乡亲们在（jǐng）____旁边立了一块石碑，上面刻着：（chī shuǐ）____ ____不忘挖井人，时刻（xiǎng niàn）____ ____毛主席",
-          "prompt": "根据拼音提示，填写课文《吃水不忘挖井人》中的汉字：乡亲们在（jǐng）____旁边立了一块石碑，上面刻着：（chī shuǐ）____ ____不忘挖井人，时刻（xiǎng niàn）____ ____毛主席。",
-          "answer": "井 吃水 想念",
+          "prompt": "乡亲们在（jǐng）/r旁边立了一块石碑，上面刻着：（chī shuǐ）/r /r不忘挖井人，时刻（xiǎng niàn）/r /r毛主席。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "井",
+            "吃",
+            "水",
+            "想",
+            "念"
+          ]
         },
         {
           "id": "text_fill_u02_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "沿着弯弯的（xiǎo lù）____ ____，就会（zǒu chū）____ ____天山。遥远的（běi jīng）____ ____，有一座雄伟的（tiān ān mén）____ ____ ____，广场上升旗仪式（fēi cháng）____ ____壮观",
-          "prompt": "根据拼音提示，填写课文《我多想去看看》中的汉字：沿着弯弯的（xiǎo lù）____ ____，就会（zǒu chū）____ ____天山。遥远的（běi jīng）____ ____，有一座雄伟的（tiān ān mén）____ ____ ____，广场上升旗仪式（fēi cháng）____ ____壮观。",
-          "answer": "小路 走出 北京 天安门 非常",
+          "prompt": "沿着弯弯的（xiǎo lù）/r /r，就会（zǒu chū）/r /r天山。遥远的（běi jīng）/r /r，有一座雄伟的（tiān ān mén）/r /r /r，广场上升旗仪式（fēi cháng）/r /r壮观。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "小",
+            "路",
+            "走",
+            "出",
+            "北",
+            "京",
+            "天",
+            "安",
+            "门",
+            "非",
+            "常"
+          ]
         },
         {
           "id": "text_fill_u02_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "沿着宽宽的（gōng lù）____ ____，就会（zǒu chū）____ ____北京。遥远的（xīn jiāng）____ ____，有美丽的（tiān shān）____ ____，雪山上盛开着（jié bái）____ ____的雪莲",
-          "prompt": "根据拼音提示，填写课文《我多想去看看》中的汉字：沿着宽宽的（gōng lù）____ ____，就会（zǒu chū）____ ____北京。遥远的（xīn jiāng）____ ____，有美丽的（tiān shān）____ ____，雪山上盛开着（jié bái）____ ____的雪莲。",
-          "answer": "公路 走出 新疆 天山 洁白",
+          "prompt": "沿着宽宽的（gōng lù）/r /r，就会（zǒu chū）/r /r北京。遥远的（xīn jiāng）/r /r，有美丽的（tiān shān）/r /r，雪山上盛开着（jié bái）/r /r的雪莲。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "公",
+            "路",
+            "走",
+            "出",
+            "新",
+            "疆",
+            "天",
+            "山",
+            "洁",
+            "白"
+          ]
         },
         {
           "id": "text_fill_u02_q005",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "松（xià）____问童子，（yán）____师采药去。只在此（shān zhōng）____ ____，（yún）____深（bù）____知（chù）____",
-          "prompt": "根据拼音提示，填写古诗《寻隐者不遇》中的汉字：松（xià）____问童子，（yán）____师采药去。只在此（shān zhōng）____ ____，（yún）____深（bù）____知（chù）____。",
-          "answer": "下 言 山中 云 不 处",
+          "prompt": "松（xià）/r问童子，（yán）/r师采药去。只在此（shān zhōng）/r /r，（yún）/r深（bù）/r知（chù）/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "下",
+            "言",
+            "山",
+            "中",
+            "云",
+            "不",
+            "处"
+          ]
         }
       ]
     },
@@ -124,43 +213,75 @@
       "questions": [
         {
           "id": "text_fill_u03_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "小鸭子正在（shuǐ lǐ）____ ____里捉鱼，忽然听（jiàn）____小公鸡喊救命。他（fēi）____快地游到小公鸡身边，（ràng）____小公鸡坐在（zì jǐ）____ ____的背上",
-          "prompt": "根据拼音提示，填写课文《小公鸡和小鸭子》中的汉字：小鸭子正在（shuǐ lǐ）____ ____里捉鱼，忽然听（jiàn）____小公鸡喊救命。他（fēi）____快地游到小公鸡身边，（ràng）____小公鸡坐在（zì jǐ）____ ____的背上。",
-          "answer": "水里 见 飞 让 自己",
+          "prompt": "小鸭子正在（shuǐ lǐ）/r /r里捉鱼，忽然听（jiàn）/r小公鸡喊救命。他（fēi）/r快地游到小公鸡身边，（ràng）/r小公鸡坐在（zì jǐ）/r /r的背上。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "水",
+            "里",
+            "见",
+            "飞",
+            "让",
+            "自",
+            "己"
+          ]
         },
         {
           "id": "text_fill_u03_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "后来，这里（zhòng）____了（hǎo duō hǎo duō）____ ____ ____ ____树，每棵树上都有鸟窝，每个鸟窝里（dōu yǒu）____ ____喜鹊。每天天一亮，喜鹊们叽叽喳喳（jiào）____几声，打着招呼一起（fēi）____出去了",
-          "prompt": "根据拼音提示，填写课文《树和喜鹊》中的汉字：后来，这里（zhòng）____了（hǎo duō hǎo duō）____ ____ ____ ____树，每棵树上都有鸟窝，每个鸟窝里（dōu yǒu）____ ____喜鹊。每天天一亮，喜鹊们叽叽喳喳（jiào）____几声，打着招呼一起（fēi）____出去了。",
-          "answer": "种 好多好多 都有 叫 飞",
+          "prompt": "后来，这里（zhòng）/r了（hǎo duō hǎo duō）/r /r /r /r树，每棵树上都有鸟窝，每个鸟窝里（dōu yǒu）/r /r喜鹊。每天天一亮，喜鹊们叽叽喳喳（jiào）/r几声，打着招呼一起（fēi）/r出去了。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "种",
+            "好",
+            "多",
+            "好",
+            "多",
+            "都",
+            "有",
+            "叫",
+            "飞"
+          ]
         },
         {
           "id": "text_fill_u03_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "独自（yī rén）____ ____，静悄悄的，（zhèng hǎo）____ ____用纸折船，折马……踢毽子，跳绳，搭积木，当然还有（kàn shū）____ ____，（huà huà）____ ____，听音乐……",
-          "prompt": "根据拼音提示，填写课文《怎么都快乐》中的汉字：独自（yī rén）____ ____，静悄悄的，（zhèng hǎo）____ ____用纸折船，折马……踢毽子，跳绳，搭积木，当然还有（kàn shū）____ ____，（huà huà）____ ____，听音乐……",
-          "answer": "一人 正好 看书 画画",
+          "prompt": "独自（yī rén）/r /r，静悄悄的，（zhèng hǎo）/r /r用纸折船，折马……踢毽子，跳绳，搭积木，当然还有（kàn shū）/r /r，（huà huà）/r /r，听音乐……",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "一",
+            "人",
+            "正",
+            "好",
+            "看",
+            "书",
+            "画",
+            "画"
+          ]
         },
         {
           "id": "text_fill_u03_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（lǐ bái）____ ____乘舟将欲行，忽闻（àn shàng）____ ____踏歌声。桃花潭水深（qiān chǐ）____ ____，（bù jí）____ ____汪伦送我情",
-          "prompt": "根据拼音提示，填写古诗《赠汪伦》中的汉字：（lǐ bái）____ ____乘舟将欲行，忽闻（àn shàng）____ ____踏歌声。桃花潭水深（qiān chǐ）____ ____，（bù jí）____ ____汪伦送我情。",
-          "answer": "李白 岸上 千尺 不及",
+          "prompt": "（lǐ bái）/r /r乘舟将欲行，忽闻（àn shàng）/r /r踏歌声。桃花潭水深（qiān chǐ）/r /r，（bù jí）/r /r汪伦送我情。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "李",
+            "白",
+            "岸",
+            "上",
+            "千",
+            "尺",
+            "不",
+            "及"
+          ]
         }
       ]
     },
@@ -170,63 +291,112 @@
       "questions": [
         {
           "id": "text_fill_u04_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "床前（míng yuè）____ ____光，疑是（dì shàng）____ ____霜。举头望（míng yuè）____ ____，低头思（gù xiāng）____ ____",
-          "prompt": "根据拼音提示，填写古诗《静夜思》中的汉字：床前（míng yuè）____ ____光，疑是（dì shàng）____ ____霜。举头望（míng yuè）____ ____，低头思（gù xiāng）____ ____。",
-          "answer": "明月 地上 明月 故乡",
+          "prompt": "床前（míng yuè）/r /r光，疑是（dì shàng）/r /r霜。举头望（míng yuè）/r /r，低头思（gù xiāng）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "明",
+            "月",
+            "地",
+            "上",
+            "明",
+            "月",
+            "故",
+            "乡"
+          ]
         },
         {
           "id": "text_fill_u04_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "妈妈（bǎ）____勇敢的故事讲了又讲，可（wǒ）____一看窗（wài）____心就乱跳……爸爸（wǎn shàng）____ ____偏要拉我去散步，原来花草都像白天一样（wēi xiào）____ ____",
-          "prompt": "根据拼音提示，填写课文《夜色》中的汉字：妈妈（bǎ）____勇敢的故事讲了又讲，可（wǒ）____一看窗（wài）____心就乱跳……爸爸（wǎn shàng）____ ____偏要拉我去散步，原来花草都像白天一样（wēi xiào）____ ____。",
-          "answer": "把 我 外 晚上 微笑",
+          "prompt": "妈妈（bǎ）/r勇敢的故事讲了又讲，可（wǒ）/r一看窗（wài）/r心就乱跳……爸爸（wǎn shàng）/r /r偏要拉我去散步，原来花草都像白天一样（wēi xiào）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "把",
+            "我",
+            "外",
+            "晚",
+            "上",
+            "微",
+            "笑"
+          ]
         },
         {
           "id": "text_fill_u04_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "粽子是用（qīng qīng）____ ____的箬竹叶包的，里面裹着（bái bái）____ ____的糯米，中间有一颗（hóng hóng）____ ____的枣",
-          "prompt": "根据拼音提示，填写课文《端午粽》中的汉字：粽子是用（qīng qīng）____ ____的箬竹叶包的，里面裹着（bái bái）____ ____的糯米，中间有一颗（hóng hóng）____ ____的枣。",
-          "answer": "青青 白白 红红",
+          "prompt": "粽子是用（qīng qīng）/r /r的箬竹叶包的，里面裹着（bái bái）/r /r的糯米，中间有一颗（hóng hóng）/r /r的枣。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "青",
+            "青",
+            "白",
+            "白",
+            "红",
+            "红"
+          ]
         },
         {
           "id": "text_fill_u04_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "外婆包的粽子（shí fēn）____ ____好吃，花样也多。除了（hóng zǎo）____ ____粽，还有（hóng dòu）____ ____粽和（xiān ròu）____ ____粽",
-          "prompt": "根据拼音提示，填写课文《端午粽》中的汉字：外婆包的粽子（shí fēn）____ ____好吃，花样也多。除了（hóng zǎo）____ ____粽，还有（hóng dòu）____ ____粽和（xiān ròu）____ ____粽。",
-          "answer": "十分 红枣 红豆 鲜肉",
+          "prompt": "外婆包的粽子（shí fēn）/r /r好吃，花样也多。除了（hóng zǎo）/r /r粽，还有（hóng dòu）/r /r粽和（xiān ròu）/r /r粽。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "十",
+            "分",
+            "红",
+            "枣",
+            "红",
+            "豆",
+            "鲜",
+            "肉"
+          ]
         },
         {
           "id": "text_fill_u04_q005",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（zhǎng dà hòu）____ ____ ____我了解到，人们端午节（chī）____粽子，传说是为了（jì niàn）____ ____爱国诗人（qū yuán）____ ____",
-          "prompt": "根据拼音提示，填写课文《端午粽》中的汉字：（zhǎng dà hòu）____ ____ ____我了解到，人们端午节（chī）____粽子，传说是为了（jì niàn）____ ____爱国诗人（qū yuán）____ ____。",
-          "answer": "长大后 吃 纪念 屈原",
+          "prompt": "（zhǎng dà hòu）/r /r /r我了解到，人们端午节（chī）/r粽子，传说是为了（jì niàn）/r /r爱国诗人（qū yuán）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "长",
+            "大",
+            "后",
+            "吃",
+            "纪",
+            "念",
+            "屈",
+            "原"
+          ]
         },
         {
           "id": "text_fill_u04_q006",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "尊老（ài yòu）____ ____，（qí lè）____ ____融融，血浓（yú shuǐ）____ ____    （shǒu zú）____ ____情深，（tóng xīn）____ ____协力，同甘（gòng kǔ）____ ____",
-          "prompt": "根据拼音提示，填写日积月累中的词语：尊老（ài yòu）____ ____，（qí lè）____ ____融融，血浓（yú shuǐ）____ ____。（shǒu zú）____ ____情深，（tóng xīn）____ ____协力，同甘（gòng kǔ）____ ____。",
-          "answer": "爱幼 其乐 于水 手足 同心 共苦",
+          "prompt": "尊老（ài yòu）/r /r，（qí lè）/r /r融融，血浓（yú shuǐ）/r /r。（shǒu zú）/r /r情深，（tóng xīn）/r /r协力，同甘（gòng kǔ）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "爱",
+            "幼",
+            "其",
+            "乐",
+            "于",
+            "水",
+            "手",
+            "足",
+            "同",
+            "心",
+            "共",
+            "苦"
+          ]
         }
       ]
     },
@@ -236,63 +406,100 @@
       "questions": [
         {
           "id": "text_fill_u05_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "蜻蜓半空展翅飞，蝴蝶花间捉（mí）____藏。蚯蚓土里（zào）____宫殿，蚂蚁地上（yùn）____食粮。蝌蚪池（zhōng）____游的（huān）____。蜘蛛（fáng）____前结（wǎng）____忙",
-          "prompt": "根据拼音提示，填写课文《动物儿歌》中的汉字：蜻蜓半空展翅飞，蝴蝶花间捉（mí）____藏。蚯蚓土里（zào）____宫殿，蚂蚁地上（yùn）____食粮。蝌蚪池（zhōng）____游的（huān）____。蜘蛛（fáng）____前结（wǎng）____忙。",
-          "answer": "迷 造 运 中 欢 房 网",
+          "prompt": "蜻蜓半空展翅飞，蝴蝶花间捉（mí）/r藏。蚯蚓土里（zào）/r宫殿，蚂蚁地上（yùn）/r食粮。蝌蚪池（zhōng）/r游的（huān）/r。蜘蛛（fáng）/r前结（wǎng）/r忙。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "迷",
+            "造",
+            "运",
+            "中",
+            "欢",
+            "房",
+            "网"
+          ]
         },
         {
           "id": "text_fill_u05_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（gǔ）____对（jīn）____，（yuán）____对（fāng）____。严寒对酷暑，（chūn）____暖对（qiū liáng）____ ____。晨对暮，（xuě）____对霜。和（fēng）____对细（yǔ）____，朝霞对（xī yáng）____ ____。桃对李，柳对杨。莺歌对燕舞，（niǎo yǔ）____ ____对（huā xiāng）____ ____",
-          "prompt": "根据拼音提示，填写课文《古对今》中的汉字：（gǔ）____对（jīn）____，（yuán）____对（fāng）____。严寒对酷暑，（chūn）____暖对（qiū liáng）____ ____。晨对暮，（xuě）____对霜。和（fēng）____对细（yǔ）____，朝霞对（xī yáng）____ ____。桃对李，柳对杨。莺歌对燕舞，（niǎo yǔ）____ ____对（huā xiāng）____ ____。",
-          "answer": "古 今 圆 方 春 秋凉 雪 风 雨 夕阳 鸟语 花香",
+          "prompt": "（gǔ）/r对（jīn）/r，（yuán）/r对（fāng）/r。严寒对酷暑，（chūn）/r暖对（qiū liáng）/r /r。晨对暮，（xuě）/r对霜。和（fēng）/r对细（yǔ）/r，朝霞对（xī yáng）/r /r。桃对李，柳对杨。莺歌对燕舞，（niǎo yǔ）/r /r对（huā xiāng）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "古",
+            "今",
+            "圆",
+            "方",
+            "春",
+            "秋",
+            "凉",
+            "雪",
+            "风",
+            "雨",
+            "夕",
+            "阳",
+            "鸟",
+            "语",
+            "花",
+            "香"
+          ]
         },
         {
           "id": "text_fill_u05_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（dǎ）____球，拔（hé）____，拍（pí）____球。跳高，（pǎo）____步，踢（zú）____球",
-          "prompt": "根据拼音提示，填写课文《操场上》中的汉字：（dǎ）____球，拔（hé）____，拍（pí）____球。跳高，（pǎo）____步，踢（zú）____球。",
-          "answer": "打 河 皮 跑 足",
+          "prompt": "（dǎ）/r球，拔（hé）/r，拍（pí）/r球。跳高，（pǎo）/r步，踢（zú）/r球。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "打",
+            "河",
+            "皮",
+            "跑",
+            "足"
+          ]
         },
         {
           "id": "text_fill_u05_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "跳绳踢毽丢（shā bāo）____ ____，天天锻炼（shēn tǐ）____ ____好",
-          "prompt": "根据拼音提示，填写课文《操场上》中的汉字：跳绳踢毽丢（shā bāo）____ ____，天天锻炼（shēn tǐ）____ ____好。",
-          "answer": "沙包 身体",
+          "prompt": "跳绳踢毽丢（shā bāo）/r /r，天天锻炼（shēn tǐ）/r /r好。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "沙",
+            "包",
+            "身",
+            "体"
+          ]
         },
         {
           "id": "text_fill_u05_q005",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "人之初，性本善，性相（jìn）____，习相（yuǎn）____",
-          "prompt": "根据拼音提示，填写课文《人之初》中的汉字：人之初，性本善，性相（jìn）____，习相（yuǎn）____。",
-          "answer": "近 远",
+          "prompt": "人之初，性本善，性相（jìn）/r，习相（yuǎn）/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "近",
+            "远"
+          ]
         },
         {
           "id": "text_fill_u05_q006",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（yù）____不琢，不成器。人不（xué）____，不知（yì）____",
-          "prompt": "根据拼音提示，填写课文《人之初》中的汉字：（yù）____不琢，不成器。人不（xué）____，不知（yì）____。",
-          "answer": "玉 学 义",
+          "prompt": "（yù）/r不琢，不成器。人不（xué）/r，不知（yì）/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "玉",
+            "学",
+            "义"
+          ]
         }
       ]
     },
@@ -302,53 +509,89 @@
       "questions": [
         {
           "id": "text_fill_u06_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "小娃撑小艇，偷（cǎi）____白莲（huí）____。不解藏踪迹，浮萍（yī）____道开",
-          "prompt": "根据拼音提示，填写古诗《池上》中的汉字：小娃撑小艇，偷（cǎi）____白莲（huí）____。不解藏踪迹，浮萍（yī）____道开。",
-          "answer": "采 回 一",
+          "prompt": "小娃撑小艇，偷（cǎi）/r白莲（huí）/r。不解藏踪迹，浮萍（yī）/r道开。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "采",
+            "回",
+            "一"
+          ]
         },
         {
           "id": "text_fill_u06_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "泉眼（wú）____声惜细流，树阴照（shuǐ）____爱晴柔。小荷才露（jiān jiān jiǎo）____ ____ ____，（zǎo）____有蜻蜓立上头",
-          "prompt": "根据拼音提示，填写古诗《小池》中的汉字：泉眼（wú）____声惜细流，树阴照（shuǐ）____爱晴柔。小荷才露（jiān jiān jiǎo）____ ____ ____，（zǎo）____有蜻蜓立上头。",
-          "answer": "无 水 尖尖角 早",
+          "prompt": "泉眼（wú）/r声惜细流，树阴照（shuǐ）/r爱晴柔。小荷才露（jiān jiān jiǎo）/r /r /r，（zǎo）/r有蜻蜓立上头。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "无",
+            "水",
+            "尖",
+            "尖",
+            "角",
+            "早"
+          ]
         },
         {
           "id": "text_fill_u06_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "我（zài）____沙滩上玩耍。（làng huā）____ ____看见了，迈着（qīng qīng）____ ____的步子走来，（qiāo qiāo）____ ____地挠我的小脚丫。好痒啊！笑得我（yǎn lèi）____ ____都流出来了",
-          "prompt": "根据拼音提示，填写课文《浪花》中的汉字：我（zài）____沙滩上玩耍。（làng huā）____ ____看见了，迈着（qīng qīng）____ ____的步子走来，（qiāo qiāo）____ ____地挠我的小脚丫。好痒啊！笑得我（yǎn lèi）____ ____都流出来了。",
-          "answer": "在 浪花 轻轻 悄悄 眼泪",
+          "prompt": "我（zài）/r沙滩上玩耍。（làng huā）/r /r看见了，迈着（qīng qīng）/r /r的步子走来，（qiāo qiāo）/r /r地挠我的小脚丫。好痒啊！笑得我（yǎn lèi）/r /r都流出来了。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "在",
+            "浪",
+            "花",
+            "轻",
+            "轻",
+            "悄",
+            "悄",
+            "眼",
+            "泪"
+          ]
         },
         {
           "id": "text_fill_u06_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "小水珠说：\"荷叶是我的（yáo lán）____ ____。\"小水珠躺在荷叶上，眨着亮（jīng jīng）____ ____的眼睛。小蜻蜓说：\"荷叶是我的（tíng jī píng）____ ____ ____。\"小蜻蜓立在荷叶上，展（kāi）____透明的翅膀。小青蛙说：\"荷叶是我的（gē tái）____ ____。\"小青蛙蹲着荷叶上，呱呱地放声（gē chàng）____ ____",
-          "prompt": "根据拼音提示，填写课文《荷叶圆圆》中的汉字：小水珠说：\"荷叶是我的（yáo lán）____ ____。\"小水珠躺在荷叶上，眨着亮（jīng jīng）____ ____的眼睛。小蜻蜓说：\"荷叶是我的（tíng jī píng）____ ____ ____。\"小蜻蜓立在荷叶上，展（kāi）____透明的翅膀。小青蛙说：\"荷叶是我的（gē tái）____ ____。\"小青蛙蹲着荷叶上，呱呱地放声（gē chàng）____ ____。",
-          "answer": "摇篮 晶晶 停机坪 开 歌台 歌唱",
+          "prompt": "小水珠说：\"荷叶是我的（yáo lán）/r /r。\"小水珠躺在荷叶上，眨着亮（jīng jīng）/r /r的眼睛。小蜻蜓说：\"荷叶是我的（tíng jī píng）/r /r /r。\"小蜻蜓立在荷叶上，展（kāi）/r透明的翅膀。小青蛙说：\"荷叶是我的（gē tái）/r /r。\"小青蛙蹲着荷叶上，呱呱地放声（gē chàng）/r /r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "摇",
+            "篮",
+            "晶",
+            "晶",
+            "停",
+            "机",
+            "坪",
+            "开",
+            "歌",
+            "台",
+            "歌",
+            "唱"
+          ]
         },
         {
           "id": "text_fill_u06_q005",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（xiǎo yú）____ ____说：\"要下雨了，水里闷得很，我们到（shuǐ miàn）____ ____上来透透气。小兔子，你快（huí jiā）____ ____吧，小心淋着雨\"",
-          "prompt": "根据拼音提示，填写课文《要下雨了》中的汉字：（xiǎo yú）____ ____说：\"要下雨了，水里闷得很，我们到（shuǐ miàn）____ ____上来透透气。小兔子，你快（huí jiā）____ ____吧，小心淋着雨。\"",
-          "answer": "小鱼 水面 回家",
+          "prompt": "（xiǎo yú）/r /r说：\"要下雨了，水里闷得很，我们到（shuǐ miàn）/r /r上来透透气。小兔子，你快（huí jiā）/r /r吧，小心淋着雨。\"",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "小",
+            "鱼",
+            "水",
+            "面",
+            "回",
+            "家"
+          ]
         }
       ]
     },
@@ -358,43 +601,78 @@
       "questions": [
         {
           "id": "text_fill_u07_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "贝贝，你有一个家，（měi）____天放学后，你都（píng píng ān ān）____ ____ ____ ____地回家。你要想想办法，让你的（qiān bǐ）____ ____和转笔刀也有自己的家呀",
-          "prompt": "根据拼音提示，填写课文《文具的家》中的汉字：贝贝，你有一个家，（měi）____天放学后，你都（píng píng ān ān）____ ____ ____ ____地回家。你要想想办法，让你的（qiān bǐ）____ ____和转笔刀也有自己的家呀。",
-          "answer": "每 平平安安 铅笔",
+          "prompt": "贝贝，你有一个家，（měi）/r天放学后，你都（píng píng ān ān）/r /r /r /r地回家。你要想想办法，让你的（qiān bǐ）/r /r和转笔刀也有自己的家呀。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "每",
+            "平",
+            "平",
+            "安",
+            "安",
+            "铅",
+            "笔"
+          ]
         },
         {
           "id": "text_fill_u07_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "他等啊等。一直不见（gōng gòng）____ ____汽车的影子，（yuán yuán）____ ____决定走到学校去。到了学校，已经（shàng kè）____ ____了。李（lǎo shī）____ ____看了看手表，说：\"（yuán yuán）____ ____，今天你迟到了（èr shí）____ ____分钟\"",
-          "prompt": "根据拼音提示，填写课文《一分钟》中的汉字：他等啊等。一直不见（gōng gòng）____ ____汽车的影子，（yuán yuán）____ ____决定走到学校去。到了学校，已经（shàng kè）____ ____了。李（lǎo shī）____ ____看了看手表，说：\"（yuán yuán）____ ____，今天你迟到了（èr shí）____ ____分钟。\"",
-          "answer": "公共 圆圆 上课 老师 圆圆 二十",
+          "prompt": "他等啊等。一直不见（gōng gòng）/r /r汽车的影子，（yuán yuán）/r /r决定走到学校去。到了学校，已经（shàng kè）/r /r了。李（lǎo shī）/r /r看了看手表，说：\"（yuán yuán）/r /r，今天你迟到了（èr shí）/r /r分钟。\"",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "公",
+            "共",
+            "圆",
+            "圆",
+            "上",
+            "课",
+            "老",
+            "师",
+            "圆",
+            "圆",
+            "二",
+            "十"
+          ]
         },
         {
           "id": "text_fill_u07_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "大灰狼跑来对狗熊说：\"你喊（yì bǎi）____ ____遍，大会也开不起来\"\"为（shén me）____ ____？\"狗熊说。\"因为你没有（gào su）____ ____大家，在明天（shén me）____ ____时候开，上午还是下午，几（diǎn）____钟开。\"狗熊一（tīng）____，说：\"有道理，有道理！\"",
-          "prompt": "根据拼音提示，填写课文《动物王国开大会》中的汉字：大灰狼跑来对狗熊说：\"你喊（yì bǎi）____ ____遍，大会也开不起来\"\"为（shén me）____ ____？\"狗熊说。\"因为你没有（gào su）____ ____大家，在明天（shén me）____ ____时候开，上午还是下午，几（diǎn）____钟开。\"狗熊一（tīng）____，说：\"有道理，有道理！\"",
-          "answer": "一百 什么 告诉 什么 点 听",
+          "prompt": "大灰狼跑来对狗熊说：\"你喊（yì bǎi）/r /r遍，大会也开不起来\"\"为（shén me）/r /r？\"狗熊说。\"因为你没有（gào su）/r /r大家，在明天（shén me）/r /r时候开，上午还是下午，几（diǎn）/r钟开。\"狗熊一（tīng）/r，说：\"有道理，有道理！\"",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "一",
+            "百",
+            "什",
+            "么",
+            "告",
+            "诉",
+            "什",
+            "么",
+            "点",
+            "听"
+          ]
         },
         {
           "id": "text_fill_u07_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "猴子看见满地的（xī guā）____ ____又大又圆，（fēi cháng gāo xìng）____ ____ ____ ____，就扔了桃子，去摘西瓜",
-          "prompt": "根据拼音提示，填写课文《小猴子下山》中的汉字：猴子看见满地的（xī guā）____ ____又大又圆，（fēi cháng gāo xìng）____ ____ ____ ____，就扔了桃子，去摘西瓜。",
-          "answer": "西瓜 非常高兴",
+          "prompt": "猴子看见满地的（xī guā）/r /r又大又圆，（fēi cháng gāo xìng）/r /r /r /r，就扔了桃子，去摘西瓜。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "西",
+            "瓜",
+            "非",
+            "常",
+            "高",
+            "兴"
+          ]
         }
       ]
     },
@@ -404,63 +682,98 @@
       "questions": [
         {
           "id": "text_fill_u08_q001",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "棉花姑娘（shēng bìng）____ ____了，叶子上有许多可恶的蚜虫。她多么盼望有（yī shēng）____ ____来给她治病啊",
-          "prompt": "根据拼音提示，填写课文《棉花姑娘》中的汉字：棉花姑娘（shēng bìng）____ ____了，叶子上有许多可恶的蚜虫。她多么盼望有（yī shēng）____ ____来给她治病啊。",
-          "answer": "生病 医生",
+          "prompt": "棉花姑娘（shēng bìng）/r /r了，叶子上有许多可恶的蚜虫。她多么盼望有（yī shēng）/r /r来给她治病啊。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "生",
+            "病",
+            "医",
+            "生"
+          ]
         },
         {
           "id": "text_fill_u08_q002",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "青蛙（tiào）____来了。棉花姑娘高兴地说：\"（qǐng）____你帮我捉害虫吧！\"",
-          "prompt": "根据拼音提示，填写课文《棉花姑娘》中的汉字：青蛙（tiào）____来了。棉花姑娘高兴地说：\"（qǐng）____你帮我捉害虫吧！\"",
-          "answer": "跳 请",
+          "prompt": "青蛙（tiào）/r来了。棉花姑娘高兴地说：\"（qǐng）/r你帮我捉害虫吧！\"",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "跳",
+            "请"
+          ]
         },
         {
           "id": "text_fill_u08_q003",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "\"不好啦，'咕咚'来了，（kě pà）____ ____极了！\"小猴子一听，就跟着跑（qǐ lái）____ ____。他（yì biān）____ ____跑（yì biān）____ ____大叫：\"不好啦，不好啦，'咕咚'来了，大家快（pǎo）____哇！\"这一下可（rè nao）____ ____了",
-          "prompt": "根据拼音提示，填写课文《咕咚》中的汉字：\"不好啦，'咕咚'来了，（kě pà）____ ____极了！\"小猴子一听，就跟着跑（qǐ lái）____ ____。他（yì biān）____ ____跑（yì biān）____ ____大叫：\"不好啦，不好啦，'咕咚'来了，大家快（pǎo）____哇！\"这一下可（rè nao）____ ____了。",
-          "answer": "可怕 起来 一边 一边 跑 热闹",
+          "prompt": "\"不好啦，'咕咚'来了，（kě pà）/r /r极了！\"小猴子一听，就跟着跑（qǐ lái）/r /r。他（yì biān）/r /r跑（yì biān）/r /r大叫：\"不好啦，不好啦，'咕咚'来了，大家快（pǎo）/r哇！\"这一下可（rè nao）/r /r了。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "可",
+            "怕",
+            "起",
+            "来",
+            "一",
+            "边",
+            "一",
+            "边",
+            "跑",
+            "热",
+            "闹"
+          ]
         },
         {
           "id": "text_fill_u08_q004",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "没有尾巴多难（kàn）____哪！小壁虎想：（xiàng）____谁去借一条尾巴呢？小壁虎（pá）____呀（pá）____，（pá）____到小河边",
-          "prompt": "根据拼音提示，填写课文《小壁虎借尾巴》中的汉字：没有尾巴多难（kàn）____哪！小壁虎想：（xiàng）____谁去借一条尾巴呢？小壁虎（pá）____呀（pá）____，（pá）____到小河边。",
-          "answer": "看 向 爬 爬 爬",
+          "prompt": "没有尾巴多难（kàn）/r哪！小壁虎想：（xiàng）/r谁去借一条尾巴呢？小壁虎（pá）/r呀（pá）/r，（pá）/r到小河边。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "看",
+            "向",
+            "爬",
+            "爬",
+            "爬"
+          ]
         },
         {
           "id": "text_fill_u08_q005",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "小壁虎说：\"牛伯伯，您把尾巴借给我（xíng）____吗？\"老牛说：\"不（xíng）____啊，我要用尾巴（gǎn）____蝇子呢\"",
-          "prompt": "根据拼音提示，填写课文《小壁虎借尾巴》中的汉字：小壁虎说：\"牛伯伯，您把尾巴借给我（xíng）____吗？\"老牛说：\"不（xíng）____啊，我要用尾巴（gǎn）____蝇子呢。\"",
-          "answer": "行 行 赶",
+          "prompt": "小壁虎说：\"牛伯伯，您把尾巴借给我（xíng）/r吗？\"老牛说：\"不（xíng）/r啊，我要用尾巴（gǎn）/r蝇子呢。\"",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "行",
+            "行",
+            "赶"
+          ]
         },
         {
           "id": "text_fill_u08_q006",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "（tóu）____上红冠（bù yòng）____ ____裁，满身雪（bái zǒu）____ ____将来。（píng shēng）____ ____不敢轻言语，一叫（qiān）____门（wàn）____户（kāi）____",
-          "prompt": "根据拼音提示，填写古诗《画鸡》中的汉字：（tóu）____上红冠（bù yòng）____ ____裁，满身雪（bái zǒu）____ ____将来。（píng shēng）____ ____不敢轻言语，一叫（qiān）____门（wàn）____户（kāi）____。",
-          "answer": "头 不用 白走 平生 千 万 开",
+          "prompt": "（tóu）/r上红冠（bù yòng）/r /r裁，满身雪（bái zǒu）/r /r将来。（píng shēng）/r /r不敢轻言语，一叫（qiān）/r门（wàn）/r户（kāi）/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            "头",
+            "不",
+            "用",
+            "白",
+            "走",
+            "平",
+            "生",
+            "千",
+            "万",
+            "开"
+          ]
         }
       ]
     }

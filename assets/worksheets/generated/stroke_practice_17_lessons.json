@@ -12,63 +12,81 @@
       "questions": [
         {
           "id": "stroke_u01_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"春\"共____画，第2画是____，组词____。",
-          "prompt": "\"春\"共____画，第2画是____，组词____。",
-          "answer": "9 横 春天",
+          "prompt": "\"春\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u01_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"冬\"共____画，第3画是____，组词____。",
-          "prompt": "\"冬\"共____画，第3画是____，组词____。",
-          "answer": "5 撇 冬天",
+          "prompt": "\"冬\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u01_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"吹\"共____画，第2画是____，组词____。",
-          "prompt": "\"吹\"共____画，第2画是____，组词____。",
-          "answer": "7 横折钩 吹风",
+          "prompt": "\"吹\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u01_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"花\"共____画，第1画是____，组词____。",
-          "prompt": "\"花\"共____画，第1画是____，组词____。",
-          "answer": "7 横 花朵",
+          "prompt": "\"花\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u01_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"飞\"共____画，第2画是____，组词____。",
-          "prompt": "\"飞\"共____画，第2画是____，组词____。",
-          "answer": "3 横斜钩 飞鸟",
+          "prompt": "\"飞\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u01_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"入\"共____画，第1画是____，组词____。",
-          "prompt": "\"入\"共____画，第1画是____，组词____。",
-          "answer": "2 撇 出入",
+          "prompt": "\"入\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -78,63 +96,81 @@
       "questions": [
         {
           "id": "stroke_u02_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"什\"共____画，第2画是____，组词____。",
-          "prompt": "\"什\"共____画，第2画是____，组词____。",
-          "answer": "4 竖 什么",
+          "prompt": "\"什\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u02_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"么\"共____画，第2画是____，组词____。",
-          "prompt": "\"么\"共____画，第2画是____，组词____。",
-          "answer": "3 撇折 什么",
+          "prompt": "\"么\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u02_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"古\"共____画，第3画是____，组词____。",
-          "prompt": "\"古\"共____画，第3画是____，组词____。",
-          "answer": "5 竖 古人",
+          "prompt": "\"古\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u02_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"胡\"共____画，第2画是____，组词____。",
-          "prompt": "\"胡\"共____画，第2画是____，组词____。",
-          "answer": "9 竖 胡子",
+          "prompt": "\"胡\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u02_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"双\"共____画，第3画是____，组词____。",
-          "prompt": "\"双\"共____画，第3画是____，组词____。",
-          "answer": "4 捺 双手",
+          "prompt": "\"双\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u02_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"言\"共____画，第2画是____，组词____。",
-          "prompt": "\"言\"共____画，第2画是____，组词____。",
-          "answer": "7 横 语言",
+          "prompt": "\"言\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -144,63 +180,81 @@
       "questions": [
         {
           "id": "stroke_u03_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"青\"共____画，第2画是____，组词____。",
-          "prompt": "\"青\"共____画，第2画是____，组词____。",
-          "answer": "8 横 青草",
+          "prompt": "\"青\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u03_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"清\"共____画，第5画是____，组词____。",
-          "prompt": "\"清\"共____画，第5画是____，组词____。",
-          "answer": "11 横折钩 清水",
+          "prompt": "\"清\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u03_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"晴\"共____画，第2画是____，组词____。",
-          "prompt": "\"晴\"共____画，第2画是____，组词____。",
-          "answer": "12 竖 晴天",
+          "prompt": "\"晴\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u03_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"苗\"共____画，第1画是____，组词____。",
-          "prompt": "\"苗\"共____画，第1画是____，组词____。",
-          "answer": "8 横 禾苗",
+          "prompt": "\"苗\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u03_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"请\"共____画，第2画是____，组词____。",
-          "prompt": "\"请\"共____画，第2画是____，组词____。",
-          "answer": "10 横折提 请问",
+          "prompt": "\"请\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u03_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"生\"共____画，第1画是____，组词____。",
-          "prompt": "\"生\"共____画，第1画是____，组词____。",
-          "answer": "5 撇 生气",
+          "prompt": "\"生\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -210,63 +264,81 @@
       "questions": [
         {
           "id": "stroke_u04_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"字\"共____画，第2画是____，组词____。",
-          "prompt": "\"字\"共____画，第2画是____，组词____。",
-          "answer": "6 点 生字",
+          "prompt": "\"字\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u04_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"红\"共____画，第5画是____，组词____。",
-          "prompt": "\"红\"共____画，第5画是____，组词____。",
-          "answer": "6 横 红花",
+          "prompt": "\"红\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u04_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"动\"共____画，第3画是____，组词____。",
-          "prompt": "\"动\"共____画，第3画是____，组词____。",
-          "answer": "6 横折钩 动力",
+          "prompt": "\"动\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u04_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"万\"共____画，第1画是____，组词____。",
-          "prompt": "\"万\"共____画，第1画是____，组词____。",
-          "answer": "3 横 万一",
+          "prompt": "\"万\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u04_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"无\"共____画，第3画是____，组词____。",
-          "prompt": "\"无\"共____画，第3画是____，组词____。",
-          "answer": "4 撇 无人",
+          "prompt": "\"无\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u04_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"明\"共____画，第1画是____，组词____。",
-          "prompt": "\"明\"共____画，第1画是____，组词____。",
-          "answer": "8 竖 明天",
+          "prompt": "\"明\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -276,63 +348,81 @@
       "questions": [
         {
           "id": "stroke_u05_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"共\"共____画，第2画是____，组词____。",
-          "prompt": "\"共\"共____画，第2画是____，组词____。",
-          "answer": "6 竖 共同",
+          "prompt": "\"共\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u05_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"产\"共____画，第5画是____，组词____。",
-          "prompt": "\"产\"共____画，第5画是____，组词____。",
-          "answer": "6 撇 生产",
+          "prompt": "\"产\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u05_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"党\"共____画，第2画是____，组词____。",
-          "prompt": "\"党\"共____画，第2画是____，组词____。",
-          "answer": "10 点 党员",
+          "prompt": "\"党\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u05_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"太\"共____画，第3画是____，组词____。",
-          "prompt": "\"太\"共____画，第3画是____，组词____。",
-          "answer": "4 捺 太阳",
+          "prompt": "\"太\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u05_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"阳\"共____画，第3画是____，组词____。",
-          "prompt": "\"阳\"共____画，第3画是____，组词____。",
-          "answer": "6 横 阳光",
+          "prompt": "\"阳\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u05_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"光\"共____画，第1画是____，组词____。",
-          "prompt": "\"光\"共____画，第1画是____，组词____。",
-          "answer": "6 竖 光明",
+          "prompt": "\"光\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -342,63 +432,81 @@
       "questions": [
         {
           "id": "stroke_u06_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"井\"共____画，第2画是____，组词____。",
-          "prompt": "\"井\"共____画，第2画是____，组词____。",
-          "answer": "4 横 水井",
+          "prompt": "\"井\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u06_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"主\"共____画，第2画是____，组词____。",
-          "prompt": "\"主\"共____画，第2画是____，组词____。",
-          "answer": "5 横 主人",
+          "prompt": "\"主\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u06_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"江\"共____画，第4画是____，组词____。",
-          "prompt": "\"江\"共____画，第4画是____，组词____。",
-          "answer": "6 横 江水",
+          "prompt": "\"江\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u06_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"住\"共____画，第1画是____，组词____。",
-          "prompt": "\"住\"共____画，第1画是____，组词____。",
-          "answer": "7 撇 住手",
+          "prompt": "\"住\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u06_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"方\"共____画，第3画是____，组词____。",
-          "prompt": "\"方\"共____画，第3画是____，组词____。",
-          "answer": "4 横折钩 方向",
+          "prompt": "\"方\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u06_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"后\"共____画，第1画是____，组词____。",
-          "prompt": "\"后\"共____画，第1画是____，组词____。",
-          "answer": "6 撇 后来",
+          "prompt": "\"后\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -408,63 +516,81 @@
       "questions": [
         {
           "id": "stroke_u07_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"告\"共____画，第2画是____，组词____。",
-          "prompt": "\"告\"共____画，第2画是____，组词____。",
-          "answer": "7 竖 告诉",
+          "prompt": "\"告\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u07_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"的\"共____画，第2画是____，组词____。",
-          "prompt": "\"的\"共____画，第2画是____，组词____。",
-          "answer": "8 撇 好的",
+          "prompt": "\"的\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u07_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"会\"共____画，第4画是____，组词____。",
-          "prompt": "\"会\"共____画，第4画是____，组词____。",
-          "answer": "6 撇 开会",
+          "prompt": "\"会\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u07_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"北\"共____画，第2画是____，组词____。",
-          "prompt": "\"北\"共____画，第2画是____，组词____。",
-          "answer": "5 横 北方",
+          "prompt": "\"北\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u07_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"京\"共____画，第3画是____，组词____。",
-          "prompt": "\"京\"共____画，第3画是____，组词____。",
-          "answer": "8 竖 北京",
+          "prompt": "\"京\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u07_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"广\"共____画，第2画是____，组词____。",
-          "prompt": "\"广\"共____画，第2画是____，组词____。",
-          "answer": "3 横 广大",
+          "prompt": "\"广\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -474,63 +600,81 @@
       "questions": [
         {
           "id": "stroke_u08_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"走\"共____画，第4画是____，组词____。",
-          "prompt": "\"走\"共____画，第4画是____，组词____。",
-          "answer": "7 竖 走路",
+          "prompt": "\"走\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u08_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"河\"共____画，第4画是____，组词____。",
-          "prompt": "\"河\"共____画，第4画是____，组词____。",
-          "answer": "8 横 河水",
+          "prompt": "\"河\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u08_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"说\"共____画，第5画是____，组词____。",
-          "prompt": "\"说\"共____画，第5画是____，组词____。",
-          "answer": "9 点 说话",
+          "prompt": "\"说\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u08_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"让\"共____画，第2画是____，组词____。",
-          "prompt": "\"让\"共____画，第2画是____，组词____。",
-          "answer": "5 横折提 让开",
+          "prompt": "\"让\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u08_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"自\"共____画，第3画是____，组词____。",
-          "prompt": "\"自\"共____画，第3画是____，组词____。",
-          "answer": "6 横折 自己",
+          "prompt": "\"自\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u08_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"己\"共____画，第2画是____，组词____。",
-          "prompt": "\"己\"共____画，第2画是____，组词____。",
-          "answer": "3 横折 自己",
+          "prompt": "\"己\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -540,63 +684,81 @@
       "questions": [
         {
           "id": "stroke_u09_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"从\"共____画，第4画是____，组词____。",
-          "prompt": "\"从\"共____画，第4画是____，组词____。",
-          "answer": "4 捺 从前",
+          "prompt": "\"从\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u09_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"好\"共____画，第2画是____，组词____。",
-          "prompt": "\"好\"共____画，第2画是____，组词____。",
-          "answer": "6 撇 好事",
+          "prompt": "\"好\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u09_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"们\"共____画，第3画是____，组词____。",
-          "prompt": "\"们\"共____画，第3画是____，组词____。",
-          "answer": "5 点 人们",
+          "prompt": "\"们\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u09_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"叫\"共____画，第2画是____，组词____。",
-          "prompt": "\"叫\"共____画，第2画是____，组词____。",
-          "answer": "5 竖提 叫声",
+          "prompt": "\"叫\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u09_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"他\"共____画，第3画是____，组词____。",
-          "prompt": "\"他\"共____画，第3画是____，组词____。",
-          "answer": "5 横折钩 他们",
+          "prompt": "\"他\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u09_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"回\"共____画，第2画是____，组词____。",
-          "prompt": "\"回\"共____画，第2画是____，组词____。",
-          "answer": "6 横折 回来",
+          "prompt": "\"回\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -606,63 +768,81 @@
       "questions": [
         {
           "id": "stroke_u10_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"快\"共____画，第1画是____，组词____。",
-          "prompt": "\"快\"共____画，第1画是____，组词____。",
-          "answer": "7 点 快乐",
+          "prompt": "\"快\"共/r画，第1画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u10_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"乐\"共____画，第2画是____，组词____。",
-          "prompt": "\"乐\"共____画，第2画是____，组词____。",
-          "answer": "5 竖折 快乐",
+          "prompt": "\"乐\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u10_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"当\"共____画，第3画是____，组词____。",
-          "prompt": "\"当\"共____画，第3画是____，组词____。",
-          "answer": "6 撇 当时",
+          "prompt": "\"当\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u10_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"书\"共____画，第2画是____，组词____。",
-          "prompt": "\"书\"共____画，第2画是____，组词____。",
-          "answer": "4 横折钩 书本",
+          "prompt": "\"书\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u10_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"画\"共____画，第4画是____，组词____。",
-          "prompt": "\"画\"共____画，第4画是____，组词____。",
-          "answer": "8 横折 画画",
+          "prompt": "\"画\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u10_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"毛\"共____画，第2画是____，组词____。",
-          "prompt": "\"毛\"共____画，第2画是____，组词____。",
-          "answer": "4 横 毛笔",
+          "prompt": "\"毛\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -672,63 +852,81 @@
       "questions": [
         {
           "id": "stroke_u11_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"思\"共____画，第4画是____，组词____。",
-          "prompt": "\"思\"共____画，第4画是____，组词____。",
-          "answer": "9 竖 思念",
+          "prompt": "\"思\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u11_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"床\"共____画，第2画是____，组词____。",
-          "prompt": "\"床\"共____画，第2画是____，组词____。",
-          "answer": "7 撇 床前",
+          "prompt": "\"床\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u11_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"前\"共____画，第5画是____，组词____。",
-          "prompt": "\"前\"共____画，第5画是____，组词____。",
-          "answer": "9 横 前方",
+          "prompt": "\"前\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u11_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"地\"共____画，第2画是____，组词____。",
-          "prompt": "\"地\"共____画，第2画是____，组词____。",
-          "answer": "6 竖 地上",
+          "prompt": "\"地\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u11_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"故\"共____画，第3画是____，组词____。",
-          "prompt": "\"故\"共____画，第3画是____，组词____。",
-          "answer": "9 横 故乡",
+          "prompt": "\"故\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u11_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"乡\"共____画，第2画是____，组词____。",
-          "prompt": "\"乡\"共____画，第2画是____，组词____。",
-          "answer": "3 撇折 故乡",
+          "prompt": "\"乡\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -738,63 +936,81 @@
       "questions": [
         {
           "id": "stroke_u12_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"色\"共____画，第4画是____，组词____。",
-          "prompt": "\"色\"共____画，第4画是____，组词____。",
-          "answer": "6 竖 颜色",
+          "prompt": "\"色\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u12_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"把\"共____画，第3画是____，组词____。",
-          "prompt": "\"把\"共____画，第3画是____，组词____。",
-          "answer": "7 横 把手",
+          "prompt": "\"把\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u12_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"讲\"共____画，第5画是____，组词____。",
-          "prompt": "\"讲\"共____画，第5画是____，组词____。",
-          "answer": "6 竖 讲话",
+          "prompt": "\"讲\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u12_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"样\"共____画，第5画是____，组词____。",
-          "prompt": "\"样\"共____画，第5画是____，组词____。",
-          "answer": "10 横 样子",
+          "prompt": "\"样\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u12_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"笑\"共____画，第3画是____，组词____。",
-          "prompt": "\"笑\"共____画，第3画是____，组词____。",
-          "answer": "10 撇 笑容",
+          "prompt": "\"笑\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u12_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"再\"共____画，第3画是____，组词____。",
-          "prompt": "\"再\"共____画，第3画是____，组词____。",
-          "answer": "6 竖 再见",
+          "prompt": "\"再\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -804,63 +1020,81 @@
       "questions": [
         {
           "id": "stroke_u13_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"节\"共____画，第4画是____，组词____。",
-          "prompt": "\"节\"共____画，第4画是____，组词____。",
-          "answer": "5 横折钩 节日",
+          "prompt": "\"节\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u13_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"米\"共____画，第3画是____，组词____。",
-          "prompt": "\"米\"共____画，第3画是____，组词____。",
-          "answer": "6 横 大米",
+          "prompt": "\"米\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u13_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"间\"共____画，第2画是____，组词____。",
-          "prompt": "\"间\"共____画，第2画是____，组词____。",
-          "answer": "7 横折钩 中间",
+          "prompt": "\"间\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u13_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"分\"共____画，第5画是____，组词____。",
-          "prompt": "\"分\"共____画，第5画是____，组词____。",
-          "answer": "4 撇 分开",
+          "prompt": "\"分\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u13_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"吃\"共____画，第2画是____，组词____。",
-          "prompt": "\"吃\"共____画，第2画是____，组词____。",
-          "answer": "6 横 吃饭",
+          "prompt": "\"吃\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u13_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"肉\"共____画，第3画是____，组词____。",
-          "prompt": "\"肉\"共____画，第3画是____，组词____。",
-          "answer": "6 撇 牛肉",
+          "prompt": "\"肉\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -870,63 +1104,81 @@
       "questions": [
         {
           "id": "stroke_u14_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"文\"共____画，第3画是____，组词____。",
-          "prompt": "\"文\"共____画，第3画是____，组词____。",
-          "answer": "4 撇 文化",
+          "prompt": "\"文\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u14_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"卡\"共____画，第2画是____，组词____。",
-          "prompt": "\"卡\"共____画，第2画是____，组词____。",
-          "answer": "5 竖 卡片",
+          "prompt": "\"卡\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u14_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"片\"共____画，第2画是____，组词____。",
-          "prompt": "\"片\"共____画，第2画是____，组词____。",
-          "answer": "4 竖 一片",
+          "prompt": "\"片\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u14_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"合\"共____画，第5画是____，组词____。",
-          "prompt": "\"合\"共____画，第5画是____，组词____。",
-          "answer": "6 横 合作",
+          "prompt": "\"合\"共/r画，第5画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u14_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"见\"共____画，第2画是____，组词____。",
-          "prompt": "\"见\"共____画，第2画是____，组词____。",
-          "answer": "4 横折 看见",
+          "prompt": "\"见\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u14_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"长\"共____画，第4画是____，组词____。",
-          "prompt": "\"长\"共____画，第4画是____，组词____。",
-          "answer": "4 捺 长大",
+          "prompt": "\"长\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -936,23 +1188,29 @@
       "questions": [
         {
           "id": "stroke_u15_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"写\"共____画，第4画是____，组词____。",
-          "prompt": "\"写\"共____画，第4画是____，组词____。",
-          "answer": "5 竖折折钩 写字",
+          "prompt": "\"写\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u15_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"认\"共____画，第2画是____，组词____。",
-          "prompt": "\"认\"共____画，第2画是____，组词____。",
-          "answer": "4 横折提 认识",
+          "prompt": "\"认\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -962,63 +1220,81 @@
       "questions": [
         {
           "id": "stroke_u16_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"止\"共____画，第2画是____，组词____。",
-          "prompt": "\"止\"共____画，第2画是____，组词____。",
-          "answer": "4 竖 停止",
+          "prompt": "\"止\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u16_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"斤\"共____画，第2画是____，组词____。",
-          "prompt": "\"斤\"共____画，第2画是____，组词____。",
-          "answer": "4 撇 斤两",
+          "prompt": "\"斤\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u16_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"寸\"共____画，第3画是____，组词____。",
-          "prompt": "\"寸\"共____画，第3画是____，组词____。",
-          "answer": "3 点 尺寸",
+          "prompt": "\"寸\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u16_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"丁\"共____画，第2画是____，组词____。",
-          "prompt": "\"丁\"共____画，第2画是____，组词____。",
-          "answer": "2 竖钩 丁香",
+          "prompt": "\"丁\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u16_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"千\"共____画，第2画是____，组词____。",
-          "prompt": "\"千\"共____画，第2画是____，组词____。",
-          "answer": "3 撇 千万",
+          "prompt": "\"千\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u16_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"元\"共____画，第4画是____，组词____。",
-          "prompt": "\"元\"共____画，第4画是____，组词____。",
-          "answer": "4 横 元旦",
+          "prompt": "\"元\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -1028,63 +1304,81 @@
       "questions": [
         {
           "id": "stroke_u17_q001",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"册\"共____画，第2画是____，组词____。",
-          "prompt": "\"册\"共____画，第2画是____，组词____。",
-          "answer": "5 横折钩 手册",
+          "prompt": "\"册\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u17_q002",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"支\"共____画，第2画是____，组词____。",
-          "prompt": "\"支\"共____画，第2画是____，组词____。",
-          "answer": "4 竖 支出",
+          "prompt": "\"支\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u17_q003",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"电\"共____画，第4画是____，组词____。",
-          "prompt": "\"电\"共____画，第4画是____，组词____。",
-          "answer": "5 竖弯钩 电视",
+          "prompt": "\"电\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u17_q004",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"衣\"共____画，第4画是____，组词____。",
-          "prompt": "\"衣\"共____画，第4画是____，组词____。",
-          "answer": "6 竖提 衣服",
+          "prompt": "\"衣\"共/r画，第4画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u17_q005",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"书\"共____画，第2画是____，组词____。",
-          "prompt": "\"书\"共____画，第2画是____，组词____。",
-          "answer": "4 横折钩 书本",
+          "prompt": "\"书\"共/r画，第2画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "stroke_u17_q006",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "数笔画填空",
-          "displayPrompt": "\"我\"共____画，第3画是____，组词____。",
-          "prompt": "\"我\"共____画，第3画是____，组词____。",
-          "answer": "7 横折钩 我们",
+          "prompt": "\"我\"共/r画，第3画是/r，组词/r。",
           "answerSource": "textbook",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     }

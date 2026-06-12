@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class WorksheetCatalogItem {
   const WorksheetCatalogItem({
     required this.id,
@@ -102,24 +104,23 @@ class WorksheetQuestion {
     required this.id,
     required this.type,
     required this.prompt,
-    required this.answer,
+    required this.answers,
     required this.answerSource,
     this.sectionTitle = '',
-    this.displayPrompt = '',
     this.images = const [],
+    this.leftItems = const [],
+    this.rightItems = const [],
   });
 
   final String id;
   final String type;
   final String prompt;
-  final String? answer;
+  final List<String> answers;
   final String answerSource;
   final String sectionTitle;
-  final String displayPrompt;
   final List<String> images;
-
-  String get visiblePrompt =>
-      displayPrompt.trim().isEmpty ? prompt : displayPrompt.trim();
+  final List<String> leftItems;
+  final List<String> rightItems;
 
   bool get isDisplayOnly {
     final normalizedType = type.trim().toLowerCase();
@@ -131,20 +132,73 @@ class WorksheetQuestion {
 
   bool get countsForProgress => !isDisplayOnly;
   bool get canAutoCheck =>
-      countsForProgress && answer != null && answer!.isNotEmpty;
+      countsForProgress && answers.isNotEmpty;
   bool get needsManualAnswer => countsForProgress && !canAutoCheck;
+
+  bool get hasBlankMarkers => prompt.contains('/r');
+
+  bool get isMatch => leftItems.isNotEmpty && rightItems.isNotEmpty;
+
+  int get blankCount => '/r'.allMatches(prompt).length;
+
+  String blankAnswerKey(int blankIndex) => '${id}_blank_$blankIndex';
+
+  String? correctAnswerForBlank(int blankIndex) {
+    if (blankIndex < 0 || blankIndex >= answers.length) return null;
+    return answers[blankIndex];
+  }
+
+  bool hasAnyBlankAnswer(Map<String, String> userAnswers) {
+    if (isMatch) {
+      return (userAnswers[id] ?? '').trim().isNotEmpty;
+    }
+    if (hasBlankMarkers) {
+      for (var i = 0; i < blankCount; i++) {
+        if ((userAnswers[blankAnswerKey(i)] ?? '').trim().isNotEmpty) return true;
+      }
+      return false;
+    }
+    return (userAnswers[id] ?? '').trim().isNotEmpty;
+  }
+
+  bool allBlanksAnswered(Map<String, String> userAnswers) {
+    if (isMatch) {
+      final raw = userAnswers[id] ?? '';
+      if (raw.isEmpty) return false;
+      try {
+        final map = jsonDecode(raw) as Map<String, dynamic>;
+        return map.length == leftItems.length;
+      } catch (_) {
+        return false;
+      }
+    }
+    if (hasBlankMarkers) {
+      for (var i = 0; i < blankCount; i++) {
+        if ((userAnswers[blankAnswerKey(i)] ?? '').trim().isEmpty) return false;
+      }
+      return true;
+    }
+    return (userAnswers[id] ?? '').trim().isNotEmpty;
+  }
 
   factory WorksheetQuestion.fromJson(Map<String, dynamic> json) {
     return WorksheetQuestion(
       id: json['id'] as String? ?? '',
       type: json['type'] as String? ?? '',
       prompt: json['prompt'] as String? ?? '',
-      answer: json['answer'] as String?,
+      answers: (json['answers'] as List<dynamic>? ?? const [])
+          .map((item) => item?.toString() ?? '')
+          .toList(),
       answerSource: json['answerSource'] as String? ?? 'manual_required',
       sectionTitle: json['sectionTitle'] as String? ?? '',
-      displayPrompt: json['displayPrompt'] as String? ?? '',
       images: (json['images'] as List<dynamic>? ?? const [])
           .map((item) => item.toString())
+          .toList(),
+      leftItems: (json['left'] as List<dynamic>? ?? const [])
+          .map((item) => item?.toString() ?? '')
+          .toList(),
+      rightItems: (json['right'] as List<dynamic>? ?? const [])
+          .map((item) => item?.toString() ?? '')
           .toList(),
     );
   }
@@ -178,7 +232,7 @@ class WorksheetProgress {
         .where(
           (question) =>
               question.countsForProgress &&
-              (answers[question.id] ?? '').trim().isNotEmpty,
+              question.hasAnyBlankAnswer(answers),
         )
         .length;
   }

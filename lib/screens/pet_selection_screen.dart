@@ -8,9 +8,14 @@ import '../widgets/ui_components.dart';
 import 'home_screen.dart';
 
 class PetSelectionScreen extends StatelessWidget {
-  const PetSelectionScreen({super.key, required this.store});
+  const PetSelectionScreen({
+    super.key,
+    required this.store,
+    this.returnToPrevious = false,
+  });
 
   final AppStore store;
+  final bool returnToPrevious;
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +50,10 @@ class PetSelectionScreen extends StatelessWidget {
                           );
                           await store.selectPet(pet.id);
                           if (!context.mounted) return;
+                          if (returnToPrevious) {
+                            Navigator.of(context).pop();
+                            return;
+                          }
                           Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
                               builder: (_) => HomeScreen(store: store),

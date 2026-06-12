@@ -28,7 +28,7 @@ void main() {
     expect(find.text('待开放'), findsNWidgets(8));
   });
 
-  testWidgets('选择年级和宠物后进入果果加油', (tester) async {
+  testWidgets('选择年级和宠物后进入菲菲加油', (tester) async {
     SharedPreferences.setMockInitialValues({});
     final store = AppStore();
     await store.load();
@@ -40,7 +40,7 @@ void main() {
     await tester.pumpWidget(WisdomExplorerApp(store: store));
     await tester.pump();
 
-    expect(find.text('果果加油！'), findsOneWidget);
+    expect(find.text('菲菲加油！'), findsOneWidget);
     expect(find.text('数学岛'), findsOneWidget);
     expect(find.text('语文岛'), findsOneWidget);
     expect(find.text('英语岛'), findsOneWidget);

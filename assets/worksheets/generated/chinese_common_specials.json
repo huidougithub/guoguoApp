@@ -12,9 +12,8 @@
       "questions": [
         {
           "id": "common_special_s1_choice_01",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "一、选择题",
-          "displayPrompt": "1、下面音序排列正确的是哪一项?( )\nA. A C B D F E B. J K L M N\nC. 0 R S T P Q D. E G H J I",
           "prompt": "1、下面音序排列正确的是哪一项?( )\nA. A C B D F E B. J K L M N\nC. 0 R S T P Q D. E G H J I",
           "answer": null,
           "answerSource": "manual_required",
@@ -22,9 +21,8 @@
         },
         {
           "id": "common_special_s1_choice_02",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "一、选择题",
-          "displayPrompt": "2、下列字母按音序排列的一组是( )\nA. A B CD F E G B. H I J K L M N\nC.0 P Q S RT D. V U W X Y Z",
           "prompt": "2、下列字母按音序排列的一组是( )\nA. A B CD F E G B. H I J K L M N\nC.0 P Q S RT D. V U W X Y Z",
           "answer": null,
           "answerSource": "manual_required",
@@ -32,9 +30,8 @@
         },
         {
           "id": "common_special_s1_choice_03",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "一、选择题",
-          "displayPrompt": "3、下列按音序表顺序排列，且大小写字母对应的一组是\n( )\nA. Aa Bb Cc Db B. Hh li Kk Jj\nC.0o Pp Qq Rr D. Vu Uv Ww Xx",
           "prompt": "3、下列按音序表顺序排列，且大小写字母对应的一组是\n( )\nA. Aa Bb Cc Db B. Hh li Kk Jj\nC.0o Pp Qq Rr D. Vu Uv Ww Xx",
           "answer": null,
           "answerSource": "manual_required",
@@ -42,33 +39,57 @@
         },
         {
           "id": "common_special_s1_fill_01",
-          "type": "letter_fill",
+          "type": "chinese",
           "sectionTitle": "二、填空题",
-          "displayPrompt": "1、写出对应的大写字母.\nb(___) d(____) g(___) q(__)\nr(__) v(_ ) h(___) m(__)\nn(_____) t(_ _) u(_ ) y(__)",
-          "prompt": "1、写出对应的大写字母.\nb(___) d(____) g(___) q(__)\nr(__) v(_ ) h(___) m(__)\nn(_____) t(_ _) u(_ ) y(__)",
-          "answer": null,
+          "prompt": "1、写出对应的大写字母.\nb(/r) d(/r) g(/r) q(/r)\nr(/r) v(/r ) h(/r) m(/r)\nn(/r) t(/r /r) u(/r ) y(/r)",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s1_fill_02",
-          "type": "letter_fill",
+          "type": "chinese",
           "sectionTitle": "二、填空题",
-          "displayPrompt": "2、写出下列小写字母对应的大写字母。\nb(__) d( g(_ )\nh(_____) m(_ n(\nq(_ ) r( t(_",
-          "prompt": "2、写出下列小写字母对应的大写字母。\nb(__) d( g(_ )\nh(_____) m(_ n(\nq(_ ) r( t(_",
-          "answer": null,
+          "prompt": "2、写出下列小写字母对应的大写字母。\nb(/r) d( g(/r )\nh(/r) m(/r n(\nq(/r ) r( t(/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s1_fill_03",
-          "type": "letter_fill",
+          "type": "chinese",
           "sectionTitle": "二、填空题",
-          "displayPrompt": "3、在横线上写出对应的大小写字母。\nB___ g_ h_ d_ f_",
-          "prompt": "3、在横线上写出对应的大小写字母。\nB___ g_ h_ d_ f_",
-          "answer": null,
+          "prompt": "3、在横线上写出对应的大小写字母。\nB/r g/r h/r d/r f/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -78,133 +99,138 @@
       "questions": [
         {
           "id": "common_special_s2_text_01",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "1.池草……山花_ _,鱼出_ _,鸟入……",
           "prompt": "1.池草……山花_ _,鱼出_ _,鸟入……",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_02",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "2.河水_ ,天气… ,小……蛙大眼睛。",
           "prompt": "2.河水_ ,天气… ,小……蛙大眼睛。",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_03",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "3. ,疑是地上霜。”这两句诗出自《静夜\n思》,作者是 o",
-          "prompt": "3. ,疑是地上霜。”这两句诗出自《静夜\n思》,作者是 o",
+          "prompt": "3. ,疑是地上霜。”这两句诗出自《静夜  思》,作者是 o",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_04",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "4.“夜来风雨声，花落知多少”出自唐朝诗人_ _(李\n白孟浩然)的《春晓》,诗歌描写了…天的景象。积累\n了描写春天的四字词语：_ o",
-          "prompt": "4.“夜来风雨声，花落知多少”出自唐朝诗人_ _(李\n白孟浩然)的《春晓》,诗歌描写了…天的景象。积累\n了描写春天的四字词语：_ o",
+          "prompt": "4.“夜来风雨声，花落知多少”出自唐朝诗人_ _(李  白孟浩然)的《春晓》,诗歌描写了…天的景象。积累  了描写春天的四字词语：_ o",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_05",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "5.端午节吃粽子据说是为了纪念爱国诗人 o",
           "prompt": "5.端午节吃粽子据说是为了纪念爱国诗人 o",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_06",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "6.乡亲们在井旁边立了一块石碑，上面刻着：“ ……不忘\n挖井人，时刻想念毛主席。”",
-          "prompt": "6.乡亲们在井旁边立了一块石碑，上面刻着：“ ……不忘\n挖井人，时刻想念毛主席。”",
+          "prompt": "6.乡亲们在井旁边立了一块石碑，上面刻着：“ ……不忘  挖井人，时刻想念毛主席。”",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_07",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "7.花儿喜欢… ……花儿在 开放。鸟儿喜\n欢__ ………鸟儿在_ 飞翔。我们热爱中\n国…………我们在党的怀抱里幸福成长。",
-          "prompt": "7.花儿喜欢… ……花儿在 开放。鸟儿喜\n欢__ ………鸟儿在_ 飞翔。我们热爱中\n国…………我们在党的怀抱里幸福成长。",
-          "answer": null,
+          "prompt": "7.花儿喜欢… ……花儿在 开放。鸟儿喜  欢/r ………鸟儿在_ 飞翔。我们热爱中  国…………我们在党的怀抱里幸福成长。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s2_text_08",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "8…………潭水深千尺，不及汪伦送我_",
           "prompt": "8…………潭水深千尺，不及汪伦送我_",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_09",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "9. _,疑是地上霜。举头望明月，低\n头_ o",
-          "prompt": "9. _,疑是地上霜。举头望明月，低\n头_ o",
+          "prompt": "9. _,疑是地上霜。举头望明月，低  头_ o",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_10",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "10.中国姓氏有很多，我知道的有_\n等。",
-          "prompt": "10.中国姓氏有很多，我知道的有_\n等。",
+          "prompt": "10.中国姓氏有很多，我知道的有_  等。",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_11",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "11.床前 ……疑是地上霜。举头望明月，低\n头_ _ _o",
-          "prompt": "11.床前 ……疑是地上霜。举头望明月，低\n头_ _ _o",
+          "prompt": "11.床前 ……疑是地上霜。举头望明月，低  头_ _ _o",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "common_special_s2_text_12",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "12.松 _童子，言师___药 ………… 此_\n深不知处。",
-          "prompt": "12.松 _童子，言师___药 ………… 此_\n深不知处。",
-          "answer": null,
+          "prompt": "12.松 _童子，言师/r药 ………… 此_  深不知处。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s2_text_13",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "专项二、按课文内容填空",
-          "displayPrompt": "13.小青蛙做了不少好事情，它们“保护_______吃______ ”\n请你__________小青蛙。",
-          "prompt": "13.小青蛙做了不少好事情，它们“保护_______吃______ ”\n请你__________小青蛙。",
-          "answer": null,
+          "prompt": "13.小青蛙做了不少好事情，它们“保护/r吃/r ”  请你/r小青蛙。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -214,153 +240,177 @@
       "questions": [
         {
           "id": "common_special_s3_stroke_01",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "1、【春夏秋冬】数笔画填空。\n“春”共______画，第2画是 ,组词 o",
-          "prompt": "1、【春夏秋冬】数笔画填空。\n“春”共______画，第2画是 ,组词 o",
-          "answer": null,
+          "prompt": "1、【春夏秋冬】数笔画填空。\n“春”共/r画，第2画是 ,组词 o",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_02",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "1、【春夏秋冬】数笔画填空。\n“冬”共 _画，第3画是 ,组词 。",
-          "prompt": "1、【春夏秋冬】数笔画填空。\n“冬”共 _画，第3画是 ,组词 。",
-          "answer": null,
+          "prompt": "1、【春夏秋冬】数笔画填空。\n“冬”共 /r画，第3画是 ,组词 。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_03",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "1、【春夏秋冬】数笔画填空。\n“吹”共_ 画，第2画是 ,组词 o",
-          "prompt": "1、【春夏秋冬】数笔画填空。\n“吹”共_ 画，第2画是 ,组词 o",
-          "answer": null,
+          "prompt": "1、【春夏秋冬】数笔画填空。\n“吹”共/r 画，第2画是 ,组词 o",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_04",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "1、【春夏秋冬】数笔画填空。\n“花”共_ 画，第1画是 ,组词 。",
-          "prompt": "1、【春夏秋冬】数笔画填空。\n“花”共_ 画，第1画是 ,组词 。",
-          "answer": null,
+          "prompt": "1、【春夏秋冬】数笔画填空。\n“花”共/r 画，第1画是 ,组词 。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_05",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "1、【春夏秋冬】数笔画填空。\n“飞”共 _画，第2画是 ,组词 。",
-          "prompt": "1、【春夏秋冬】数笔画填空。\n“飞”共 _画，第2画是 ,组词 。",
-          "answer": null,
+          "prompt": "1、【春夏秋冬】数笔画填空。\n“飞”共 /r画，第2画是 ,组词 。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_06",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "1、【春夏秋冬】数笔画填空。\n“入”共 画，第1画是 ,组词 o",
-          "prompt": "1、【春夏秋冬】数笔画填空。\n“入”共 画，第1画是 ,组词 o",
-          "answer": null,
+          "prompt": "1、【春夏秋冬】数笔画填空。\n“入”共 画，第1画是 ,组词 o/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_07",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "2、【姓氏歌】数笔画填空。\n“什”共_ 画，第2画是 ,组词 o",
-          "prompt": "2、【姓氏歌】数笔画填空。\n“什”共_ 画，第2画是 ,组词 o",
-          "answer": null,
+          "prompt": "2、【姓氏歌】数笔画填空。\n“什”共/r 画，第2画是 ,组词 o",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_08",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "2、【姓氏歌】数笔画填空。\n“么”共_ 画，第2画是 ,组词 o",
-          "prompt": "2、【姓氏歌】数笔画填空。\n“么”共_ 画，第2画是 ,组词 o",
-          "answer": null,
+          "prompt": "2、【姓氏歌】数笔画填空。\n“么”共/r 画，第2画是 ,组词 o",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_09",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "2、【姓氏歌】数笔画填空。\n“古”共_ ___画，第3画是 ,组词 _。",
-          "prompt": "2、【姓氏歌】数笔画填空。\n“古”共_ ___画，第3画是 ,组词 _。",
-          "answer": null,
+          "prompt": "2、【姓氏歌】数笔画填空。\n“古”共/r /r画，第3画是 ,组词 /r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_10",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "2、【姓氏歌】数笔画填空。\n“胡”共_ _画，第2画是_ ,组词",
-          "prompt": "2、【姓氏歌】数笔画填空。\n“胡”共_ _画，第2画是_ ,组词",
-          "answer": null,
+          "prompt": "2、【姓氏歌】数笔画填空。\n“胡”共/r /r画，第2画是/r ,组词",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_11",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "2、【姓氏歌】数笔画填空。\n“双”共_ _画，第3画是 ,组词",
-          "prompt": "2、【姓氏歌】数笔画填空。\n“双”共_ _画，第3画是 ,组词",
-          "answer": null,
+          "prompt": "2、【姓氏歌】数笔画填空。\n“双”共/r /r画，第3画是 ,组词",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_12",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "2、【姓氏歌】数笔画填空。\n“言”共_ 画，第2画是 ,组词",
-          "prompt": "2、【姓氏歌】数笔画填空。\n“言”共_ 画，第2画是 ,组词",
-          "answer": null,
+          "prompt": "2、【姓氏歌】数笔画填空。\n“言”共/r 画，第2画是 ,组词",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_13",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "3、【小青蛙】数笔画填空。\n“青”共__ ___画，第2画是 ,组词_",
-          "prompt": "3、【小青蛙】数笔画填空。\n“青”共__ ___画，第2画是 ,组词_",
-          "answer": null,
+          "prompt": "3、【小青蛙】数笔画填空。\n“青”共/r /r画，第2画是 ,组词/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_14",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "3、【小青蛙】数笔画填空。\n“清”共______画，第5画是 ,组词__",
-          "prompt": "3、【小青蛙】数笔画填空。\n“清”共______画，第5画是 ,组词__",
-          "answer": null,
+          "prompt": "3、【小青蛙】数笔画填空。\n“清”共/r画，第5画是 ,组词/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s3_stroke_15",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "专项三、易错笔画填空",
-          "displayPrompt": "3、【小青蛙】数笔画填空。\n“晴”共____画，第2画是_ ,组词",
-          "prompt": "3、【小青蛙】数笔画填空。\n“晴”共____画，第2画是_ ,组词",
-          "answer": null,
+          "prompt": "3、【小青蛙】数笔画填空。\n“晴”共/r画，第2画是/r ,组词",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         }
       ]
     },
@@ -370,53 +420,103 @@
       "questions": [
         {
           "id": "common_special_s4_match_01",
-          "type": "word_match_fill",
+          "type": "chinese",
           "sectionTitle": "专项四、词语搭配",
-          "displayPrompt": "1、词语填空\n( )的夜晚( )的小草( )的糯米( )的春天\n( )的太阳( )的月亮( )的小路( )的河水",
-          "prompt": "1、词语填空\n( )的夜晚( )的小草( )的糯米( )的春天\n( )的太阳( )的月亮( )的小路( )的河水",
-          "answer": null,
+          "prompt": "1、词语填空\n/r的夜晚/r的小草/r的糯米/r的春天\n/r的太阳/r的月亮/r的小路/r的河水",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s4_match_02",
-          "type": "word_match_fill",
+          "type": "chinese",
           "sectionTitle": "专项四、词语搭配",
-          "displayPrompt": "2、填修饰词\n( )的地方( )的落叶( )的北京城\n( )的天安门( )的公路( )的新疆\n( )的天山( )的雪莲( )的太阳",
-          "prompt": "2、填修饰词\n( )的地方( )的落叶( )的北京城\n( )的天安门( )的公路( )的新疆\n( )的天山( )的雪莲( )的太阳",
-          "answer": null,
+          "prompt": "2、填修饰词\n/r的地方/r的落叶/r的北京城\n/r的天安门/r的公路/r的新疆\n/r的天山/r的雪莲/r的太阳",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s4_match_03",
-          "type": "word_match_fill",
+          "type": "chinese",
           "sectionTitle": "专项四、词语搭配",
-          "displayPrompt": "3、把词语补充完整。\n红红的( ) ( )的桥 ( )的月亮\n香甜的( ) 金黄的( )多彩的( )\n温暖的( ) 冻僵的( )( )的镜子",
-          "prompt": "3、把词语补充完整。\n红红的( ) ( )的桥 ( )的月亮\n香甜的( ) 金黄的( )多彩的( )\n温暖的( ) 冻僵的( )( )的镜子",
-          "answer": null,
+          "prompt": "3、把词语补充完整。\n红红的/r /r的桥 /r的月亮\n香甜的/r 金黄的/r多彩的/r\n温暖的/r 冻僵的/r/r的镜子",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s4_match_04",
-          "type": "word_match_fill",
+          "type": "chinese",
           "sectionTitle": "专项四、词语搭配",
-          "displayPrompt": "4、填动词\n( )招呼 ( )毽子 ( )积木\n( )音乐 ( )故事 ( )象棋\n( )羽毛球 ( )跷跷板 ( )绳子\n春风( ) 夏雨( ) 秋霜( )\n冬雪( ) 鱼( ) 保护( )",
-          "prompt": "4、填动词\n( )招呼 ( )毽子 ( )积木\n( )音乐 ( )故事 ( )象棋\n( )羽毛球 ( )跷跷板 ( )绳子\n春风( ) 夏雨( ) 秋霜( )\n冬雪( ) 鱼( ) 保护( )",
-          "answer": null,
+          "prompt": "4、填动词\n/r招呼 /r毽子 /r积木\n/r音乐 /r故事 /r象棋\n/r羽毛球 /r跷跷板 /r绳子\n春风/r 夏雨/r 秋霜/r\n冬雪/r 鱼/r 保护/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s4_match_05",
-          "type": "word_match_fill",
+          "type": "chinese",
           "sectionTitle": "专项四、词语搭配",
-          "displayPrompt": "5、在括号里填上合适的词\n一( )井 一( )石碑 一( )枣\n一( )树 ( )的天山 ( )的落叶\n( )的小手 ( )的糯米 ( )雪莲",
-          "prompt": "5、在括号里填上合适的词\n一( )井 一( )石碑 一( )枣\n一( )树 ( )的天山 ( )的落叶\n( )的小手 ( )的糯米 ( )雪莲",
-          "answer": null,
+          "prompt": "5、在括号里填上合适的词\n一/r井 一/r石碑 一/r枣\n一/r树 /r的天山 /r的落叶\n/r的小手 /r的糯米 /r雪莲",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -426,93 +526,104 @@
       "questions": [
         {
           "id": "common_special_s5_sentence_01",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "1、一到中秋节，外婆总会准备很多月饼，盼着我们回去。\n_,妈妈总会 0",
-          "prompt": "1、一到中秋节，外婆总会准备很多月饼，盼着我们回去。\n_,妈妈总会 0",
-          "answer": null,
+          "prompt": "1、一到中秋节，外婆总会准备很多月饼，盼着我们回去。\n/r,妈妈总会 0",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_02",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "2、原来花草都像白天一样微笑。\n像_ _一样. 0",
-          "prompt": "2、原来花草都像白天一样微笑。\n像_ _一样. 0",
-          "answer": null,
+          "prompt": "2、原来花草都像白天一样微笑。\n像/r /r一样. 0",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_03",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "3、除了红枣粽，还有红豆粽和鲜肉粽。(用加点词语写句\n子)\no",
-          "prompt": "3、除了红枣粽，还有红豆粽和鲜肉粽。(用加点词语写句\n子)\no",
-          "answer": null,
+          "prompt": "3、除了红枣粽，还有红豆粽和鲜肉粽。(用加点词语写句\n子)\no/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_04",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "4、毛主席就带领战士和乡亲们挖了一口井。\n带领 o",
-          "prompt": "4、毛主席就带领战士和乡亲们挖了一口井。\n带领 o",
-          "answer": null,
+          "prompt": "4、毛主席就带领战士和乡亲们挖了一口井。\n带领 o/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_05",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "5、我是北京的孩子。\n是 o",
-          "prompt": "5、我是北京的孩子。\n是 o",
-          "answer": null,
+          "prompt": "5、我是北京的孩子。\n是 o/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_06",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "6、广场上的升旗仪式非常壮观。\n非常_ 0",
-          "prompt": "6、广场上的升旗仪式非常壮观。\n非常_ 0",
-          "answer": null,
+          "prompt": "6、广场上的升旗仪式非常壮观。\n非常/r 0",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_07",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "7、这里只有一棵树，树上只有一个鸟窝，鸟窝里只有一\n只喜鹊。\n只有 只有 只\n有 o",
-          "prompt": "7、这里只有一棵树，树上只有一个鸟窝，鸟窝里只有一\n只喜鹊。\n只有 只有 只\n有 o",
-          "answer": null,
+          "prompt": "7、这里只有一棵树，树上只有一个鸟窝，鸟窝里只有一\n只喜鹊。\n只有 只有 只\n有 o/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_08",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "8、他飞快地游到小公鸡身边，让小公鸡坐在自己的背上。\n(两个动作词语)\no",
-          "prompt": "8、他飞快地游到小公鸡身边，让小公鸡坐在自己的背上。\n(两个动作词语)\no",
-          "answer": null,
+          "prompt": "8、他飞快地游到小公鸡身边，让小公鸡坐在自己的背上。\n(两个动作词语)\no/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "common_special_s5_sentence_09",
-          "type": "sentence_imitation",
+          "type": "chinese",
           "sectionTitle": "专项五、仿写句子",
-          "displayPrompt": "9、晚上，我一看窗外心就乱跳。\n一_____就______。",
-          "prompt": "9、晚上，我一看窗外心就乱跳。\n一_____就______。",
-          "answer": null,
+          "prompt": "9、晚上，我一看窗外心就乱跳。\n一/r就/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         }
       ]
     }

@@ -11,133 +11,133 @@
       "questions": [
         {
           "id": "day01_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-7=",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day01_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+6-6=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day01_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-7+5=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day01_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 9=",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day01_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+13=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day01_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12+4=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day01_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "10+4-9=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day01_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "12-8+8=",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day01_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "5+5=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day01_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "19-9=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day01_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-2=17",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day01_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11- ( )= 5",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day01_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "10+( )=12",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day01_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "3+( )=10",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day01_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-4=12",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day01_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "12-( )=4",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day01_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "4+( )=13",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day01_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "4+( )=15",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day01_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "欢欢带了10元钱去买零食，他买了1块2元钱的面包和1块1元钱的三 明治，欢欢还剩几元钱?",
           "answer": null,
           "answerSource": "manual_required"
@@ -150,133 +150,133 @@
       "questions": [
         {
           "id": "day02_q01",
-          "type": "calculation",
+          "type": "math",
           "prompt": "14-5=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day02_q02",
-          "type": "calculation",
+          "type": "math",
           "prompt": "4+13=",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day02_q03",
-          "type": "calculation",
+          "type": "math",
           "prompt": "15-6=",
           "answer": "9",
           "answerSource": "auto"
         },
         {
           "id": "day02_q04",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11- 8=",
           "answer": "3",
           "answerSource": "auto"
         },
         {
           "id": "day02_q05",
-          "type": "calculation",
+          "type": "math",
           "prompt": "8+6-9=",
           "answer": "5",
           "answerSource": "auto"
         },
         {
           "id": "day02_q06",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+16=",
           "answer": "19",
           "answerSource": "auto"
         },
         {
           "id": "day02_q07",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+13=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day02_q08",
-          "type": "calculation",
+          "type": "math",
           "prompt": "3+7=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day02_q09",
-          "type": "calculation",
+          "type": "math",
           "prompt": "2+14=",
           "answer": "16",
           "answerSource": "auto"
         },
         {
           "id": "day02_q10",
-          "type": "calculation",
+          "type": "math",
           "prompt": "11+4-5=",
           "answer": "10",
           "answerSource": "auto"
         },
         {
           "id": "day02_q11",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "11+( )=13",
           "answer": "2",
           "answerSource": "auto"
         },
         {
           "id": "day02_q12",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "3+( )=14",
           "answer": "11",
           "answerSource": "auto"
         },
         {
           "id": "day02_q13",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=11",
           "answer": "12",
           "answerSource": "auto"
         },
         {
           "id": "day02_q14",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-1=17",
           "answer": "18",
           "answerSource": "auto"
         },
         {
           "id": "day02_q15",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "8+( )=14",
           "answer": "6",
           "answerSource": "auto"
         },
         {
           "id": "day02_q16",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "6+( )=14",
           "answer": "8",
           "answerSource": "auto"
         },
         {
           "id": "day02_q17",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )-9=8",
           "answer": "17",
           "answerSource": "auto"
         },
         {
           "id": "day02_q18",
-          "type": "blank_equation",
+          "type": "math",
           "prompt": "( )+3=10",
           "answer": "7",
           "answerSource": "auto"
         },
         {
           "id": "day02_q19",
-          "type": "word_problem",
+          "type": "math",
           "prompt": "课桌上有1支圆珠笔、2块橡皮、3支铅笔，请问课桌上一共有多少文具?",
           "answer": null,
           "answerSource": "manual_required"

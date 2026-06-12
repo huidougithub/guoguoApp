@@ -12,289 +12,331 @@
       "questions": [
         {
           "id": "basic_dictation_u1_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "chūn fēng",
-          "prompt": "chūn fēng",
-          "answer": null,
+          "prompt": "chūn fēng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dōng rì",
-          "prompt": "dōng rì",
-          "answer": null,
+          "prompt": "dōng rì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xuě rén",
-          "prompt": "xuě rén",
-          "answer": null,
+          "prompt": "xuě rén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "kāi huā",
-          "prompt": "kāi huā",
-          "answer": null,
+          "prompt": "kāi huā/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fēi niǎo",
-          "prompt": "fēi niǎo",
-          "answer": null,
+          "prompt": "fēi niǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "rù kǒu",
-          "prompt": "rù kǒu",
-          "answer": null,
+          "prompt": "rù kǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "chū rù",
-          "prompt": "chū rù",
-          "answer": null,
+          "prompt": "chū rù/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xìng míng",
-          "prompt": "xìng míng",
-          "answer": null,
+          "prompt": "xìng míng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xìng shì",
-          "prompt": "xìng shì",
-          "answer": null,
+          "prompt": "xìng shì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhōng guó",
-          "prompt": "zhōng guó",
-          "answer": null,
+          "prompt": "zhōng guó/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "duì fāng",
-          "prompt": "duì fāng",
-          "answer": null,
+          "prompt": "duì fāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shuāng shǒu",
-          "prompt": "shuāng shǒu",
-          "answer": null,
+          "prompt": "shuāng shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shēng qì",
-          "prompt": "shēng qì",
-          "answer": null,
+          "prompt": "shēng qì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shén me",
-          "prompt": "shén me",
-          "answer": null,
+          "prompt": "shén me/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qīng wā",
-          "prompt": "qīng wā",
-          "answer": null,
+          "prompt": "qīng wā/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qíng tiān",
-          "prompt": "qíng tiān",
-          "answer": null,
+          "prompt": "qíng tiān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qīng shuǐ",
-          "prompt": "qīng shuǐ",
-          "answer": null,
+          "prompt": "qīng shuǐ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qīng zǎo",
-          "prompt": "qīng zǎo",
-          "answer": null,
+          "prompt": "qīng zǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tóng qíng",
-          "prompt": "tóng qíng",
-          "answer": null,
+          "prompt": "tóng qíng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xué shēng",
-          "prompt": "xué shēng",
-          "answer": null,
+          "prompt": "xué shēng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zì huà",
-          "prompt": "zì huà",
-          "answer": null,
+          "prompt": "zì huà/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zuǒ yòu",
-          "prompt": "zuǒ yòu",
-          "answer": null,
+          "prompt": "zuǒ yòu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hóng huā",
-          "prompt": "hóng huā",
-          "answer": null,
+          "prompt": "hóng huā/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shí jiān",
-          "prompt": "shí jiān",
-          "answer": null,
+          "prompt": "shí jiān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_25",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dòng xīn",
-          "prompt": "dòng xīn",
-          "answer": null,
+          "prompt": "dòng xīn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_pinyin_26",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "wàn guó",
-          "prompt": "wàn guó",
-          "answer": null,
+          "prompt": "wàn guó/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_text_fill_01",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "关于春天的成语",
-          "displayPrompt": "__歌__舞\n____大地\n冰雪____\n万物____\n泉水____\n百__放\n花红____\n百鸟____。",
-          "prompt": "__歌__舞、大地____、冰雪____、万物____、泉水____、百__放、花红____、百鸟____。",
-          "answer": null,
+          "prompt": "/r歌/r舞、大地/r、冰雪/r、万物/r、泉水/r、百/r放、花红/r、百鸟/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_word_group_02",
-          "type": "word_group",
+          "type": "chinese",
           "sectionTitle": "形近字组词",
-          "displayPrompt": "入（ ）    人（ ）\n生（ ）    王（ ）\n万（ ）    方（ ）\n晴（ ）    睛（ ）。",
-          "prompt": "入（ ）    人（ ）\n生（ ）    王（ ）\n万（ ）    方（ ）\n晴（ ）    睛（ ）。",
-          "answer": null,
+          "prompt": "入/r    人/r  生/r    王/r  万/r    方/r  晴/r    睛/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_choice_manual_03",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "displayPrompt": "秋霜（shuāng / xiāng）、落叶（luò / là）、游鱼（yóu / yiú）、姓氏（shì / si）。",
           "prompt": "秋霜（shuāng / xiāng）、落叶（luò / là）、游鱼（yóu / yiú）、姓氏（shì / si）。",
           "answer": null,
           "answerSource": "manual_required",
@@ -302,9 +344,8 @@
         },
         {
           "id": "basic_dictation_u1_choice_manual_04",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "displayPrompt": "张开（zhāng / zhǎng）、水池（cí / chí）、保护（dāi / bǎo）、上官（guān / gōng）。",
           "prompt": "张开（zhāng / zhǎng）、水池（cí / chí）、保护（dāi / bǎo）、上官（guān / gōng）。",
           "answer": null,
           "answerSource": "manual_required",
@@ -312,43 +353,51 @@
         },
         {
           "id": "basic_dictation_u1_stroke_fill_05",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "易错笔顺",
-          "displayPrompt": "“风”的笔顺是________，第3笔是________。",
-          "prompt": "“风”的笔顺是________，第3笔是________。",
-          "answer": null,
+          "prompt": "“风”的笔顺是/r，第3笔是/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_stroke_fill_06",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "易错笔顺",
-          "displayPrompt": "“万”的笔顺是________，第3笔是________。",
-          "prompt": "“万”的笔顺是________，第3笔是________。",
-          "answer": null,
+          "prompt": "“万”的笔顺是/r，第3笔是/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_stroke_fill_07",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "易错笔顺",
-          "displayPrompt": "“国”的笔顺是________，第4笔是________。",
-          "prompt": "“国”的笔顺是________，第4笔是________。",
-          "answer": null,
+          "prompt": "“国”的笔顺是/r，第4笔是/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u1_stroke_fill_08",
-          "type": "stroke_fill",
+          "type": "chinese",
           "sectionTitle": "易错笔顺",
-          "displayPrompt": "“情”的笔顺是________，第2笔是________。",
-          "prompt": "“情”的笔顺是________，第2笔是________。",
-          "answer": null,
+          "prompt": "“情”的笔顺是/r，第2笔是/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         }
       ]
     },
@@ -358,333 +407,408 @@
       "questions": [
         {
           "id": "basic_dictation_u2_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "chī shuǐ",
-          "prompt": "chī shuǐ",
-          "answer": null,
+          "prompt": "chī shuǐ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhǔ yào",
-          "prompt": "zhǔ yào",
-          "answer": null,
+          "prompt": "zhǔ yào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "cháng jiāng",
-          "prompt": "cháng jiāng",
-          "answer": null,
+          "prompt": "cháng jiāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dà jiào",
-          "prompt": "dà jiào",
-          "answer": null,
+          "prompt": "dà jiào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhù shǒu",
-          "prompt": "zhù shǒu",
-          "answer": null,
+          "prompt": "zhù shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "méi yǒu",
-          "prompt": "méi yǒu",
-          "answer": null,
+          "prompt": "méi yǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "kě yǐ",
-          "prompt": "kě yǐ",
-          "answer": null,
+          "prompt": "kě yǐ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xué huì",
-          "prompt": "xué huì",
-          "answer": null,
+          "prompt": "xué huì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fēi zǒu",
-          "prompt": "fēi zǒu",
-          "answer": null,
+          "prompt": "fēi zǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "běi fāng",
-          "prompt": "běi fāng",
-          "answer": null,
+          "prompt": "běi fāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "kāi mén",
-          "prompt": "kāi mén",
-          "answer": null,
+          "prompt": "kāi mén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "guǎng dà",
-          "prompt": "guǎng dà",
-          "answer": null,
+          "prompt": "guǎng dà/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhù rén",
-          "prompt": "zhù rén",
-          "answer": null,
+          "prompt": "zhù rén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "guò nián",
-          "prompt": "guò nián",
-          "answer": null,
+          "prompt": "guò nián/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "gè zì",
-          "prompt": "gè zì",
-          "answer": null,
+          "prompt": "gè zì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhòng tián",
-          "prompt": "zhòng tián",
-          "answer": null,
+          "prompt": "zhòng tián/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tóng yàng",
-          "prompt": "tóng yàng",
-          "answer": null,
+          "prompt": "tóng yàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tóng huǒ",
-          "prompt": "tóng huǒ",
-          "answer": null,
+          "prompt": "tóng huǒ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jīn guāng",
-          "prompt": "jīn guāng",
-          "answer": null,
+          "prompt": "jīn guāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "huǒ bàn",
-          "prompt": "huǒ bàn",
-          "answer": null,
+          "prompt": "huǒ bàn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhè er",
-          "prompt": "zhè er",
-          "answer": null,
+          "prompt": "zhè er/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhǔ rén",
-          "prompt": "zhǔ rén",
-          "answer": null,
+          "prompt": "zhǔ rén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tài yáng",
-          "prompt": "tài yáng",
-          "answer": null,
+          "prompt": "tài yáng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yáng guāng",
-          "prompt": "yáng guāng",
-          "answer": null,
+          "prompt": "yáng guāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_25",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qiū tiān",
-          "prompt": "qiū tiān",
-          "answer": null,
+          "prompt": "qiū tiān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_26",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yīn wèi",
-          "prompt": "yīn wèi",
-          "answer": null,
+          "prompt": "yīn wèi/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_27",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "bái xuě",
-          "prompt": "bái xuě",
-          "answer": null,
+          "prompt": "bái xuě/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_pinyin_28",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fēi xuě",
-          "prompt": "fēi xuě",
-          "answer": null,
+          "prompt": "fēi xuě/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_text_fill_01",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "日积月累，照样子写词语",
-          "displayPrompt": "例：葱葱绿绿。平平____、蹦蹦____。",
-          "prompt": "例：葱葱绿绿。平平____、蹦蹦____。",
-          "answer": null,
+          "prompt": "例：葱葱绿绿。平平/r、蹦蹦/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_word_fill_02",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "词语填空，填上合适的词语",
-          "displayPrompt": "____的落叶、____的太阳、____的季节、____的雪莲、____的公路、美丽的____、壮观的____。",
-          "prompt": "____的落叶、____的太阳、____的季节、____的雪莲、____的公路、美丽的____、壮观的____。",
-          "answer": null,
+          "prompt": "/r的落叶、/r的太阳、/r的季节、/r的雪莲、/r的公路、美丽的/r、壮观的/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_poem_fill_03",
-          "type": "poem_fill",
+          "type": "chinese",
           "sectionTitle": "古诗填空，补全《春晓》",
-          "displayPrompt": "____眠____觉晓，处处闻啼____。夜____声，____落知____。",
-          "prompt": "补全《春晓》：____眠____觉晓，处处闻啼____。夜____声，____落知____。",
-          "answer": null,
+          "prompt": "补全《春晓》：/r眠/r觉晓，处处闻啼/r。夜/r声，/r落知/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_letter_fill_04",
-          "type": "letter_fill",
+          "type": "chinese",
           "sectionTitle": "字母填空，补全以下字母",
-          "displayPrompt": "Aa B__ Cc ____ E__ ____ ____ ____ I__ J__ K__ ____ __m N__ ____ ____ ____ ____r S__ ____ ____ ____ ____X__ ____ ____",
-          "prompt": "Aa B__ Cc ____ E__ ____ ____ ____ I__ J__ K__ ____ __m N__ ____ ____ ____ ____r S__ ____ ____ ____ ____X__ ____ ____",
-          "answer": null,
+          "prompt": "Aa B/r Cc /r E/r /r /r /r I/r J/r K/r /r /rm N/r /r /r /r /rr S/r /r /r /r /rX/r /r /r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u2_word_fill_05",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "量词填空，填量词",
-          "displayPrompt": "一（ ）车、一（ ）井、一（ ）马、一（ ）书、一（ ）铅笔、一（ ）大树、一（ ）飞机、一（ ）石碑。",
-          "prompt": "一（ ）车、一（ ）井、一（ ）马、一（ ）书、一（ ）铅笔、一（ ）大树、一（ ）飞机、一（ ）石碑。",
-          "answer": null,
+          "prompt": "一/r车、一/r井、一/r马、一/r书、一/r铅笔、一/r大树、一/r飞机、一/r石碑。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -694,319 +818,352 @@
       "questions": [
         {
           "id": "basic_dictation_u3_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tā men",
-          "prompt": "tā men",
-          "answer": null,
+          "prompt": "tā men/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xiǎo hé",
-          "prompt": "xiǎo hé",
-          "answer": null,
+          "prompt": "xiǎo hé/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shuō míng",
-          "prompt": "shuō míng",
-          "answer": null,
+          "prompt": "shuō míng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yě shì",
-          "prompt": "yě shì",
-          "answer": null,
+          "prompt": "yě shì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhòng dì",
-          "prompt": "zhòng dì",
-          "answer": null,
+          "prompt": "zhòng dì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tīng jiàn",
-          "prompt": "tīng jiàn",
-          "answer": null,
+          "prompt": "tīng jiàn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "èr ge",
-          "prompt": "èr ge",
-          "answer": null,
+          "prompt": "èr ge/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dòng tīng",
-          "prompt": "dòng tīng",
-          "answer": null,
+          "prompt": "dòng tīng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "gē ge",
-          "prompt": "gē ge",
-          "answer": null,
+          "prompt": "gē ge/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dān shǒu",
-          "prompt": "dān shǒu",
-          "answer": null,
+          "prompt": "dān shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shū dān",
-          "prompt": "shū dān",
-          "answer": null,
+          "prompt": "shū dān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jū zhù",
-          "prompt": "jū zhù",
-          "answer": null,
+          "prompt": "jū zhù/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhāo hu",
-          "prompt": "zhāo hu",
-          "answer": null,
+          "prompt": "zhāo hu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "kuài lè",
-          "prompt": "kuài lè",
-          "answer": null,
+          "prompt": "kuài lè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhāo shǒu",
-          "prompt": "zhāo shǒu",
-          "answer": null,
+          "prompt": "zhāo shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "kě kǒu",
-          "prompt": "kě kǒu",
-          "answer": null,
+          "prompt": "kě kǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hòu lái",
-          "prompt": "hòu lái",
-          "answer": null,
+          "prompt": "hòu lái/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jū shàng",
-          "prompt": "jū shàng",
-          "answer": null,
+          "prompt": "jū shàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yīn yuè",
-          "prompt": "yīn yuè",
-          "answer": null,
+          "prompt": "yīn yuè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "bù xǔ",
-          "prompt": "bù xǔ",
-          "answer": null,
+          "prompt": "bù xǔ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hǎo wán",
-          "prompt": "hǎo wán",
-          "answer": null,
+          "prompt": "hǎo wán/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hěn hǎo",
-          "prompt": "hěn hǎo",
-          "answer": null,
+          "prompt": "hěn hǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dāng xīn",
-          "prompt": "dāng xīn",
-          "answer": null,
+          "prompt": "dāng xīn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shàng dàng",
-          "prompt": "shàng dàng",
-          "answer": null,
+          "prompt": "shàng dàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_25",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "pīn yīn",
-          "prompt": "pīn yīn",
-          "answer": null,
+          "prompt": "pīn yīn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_26",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jiǎng kè",
-          "prompt": "jiǎng kè",
-          "answer": null,
+          "prompt": "jiǎng kè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_27",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xíng wéi",
-          "prompt": "xíng wéi",
-          "answer": null,
+          "prompt": "xíng wéi/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_pinyin_28",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xǔ duō",
-          "prompt": "xǔ duō",
-          "answer": null,
+          "prompt": "xǔ duō/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_text_fill_01",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "日积月累，照样子写词语",
-          "displayPrompt": "例：叽叽喳喳（AABB式）。",
           "prompt": "例：叽叽喳喳（AABB式）。",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "basic_dictation_u3_text_fill_02",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "日积月累，照样子写词语",
-          "displayPrompt": "例：好多好多（ABAB式）。",
           "prompt": "例：好多好多（ABAB式）。",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "basic_dictation_u3_poem_fill_03",
-          "type": "poem_fill",
+          "type": "chinese",
           "sectionTitle": "古诗填空，补全《赠汪伦》",
-          "displayPrompt": "____乘舟将欲行，忽闻岸____踏歌声。\n桃____潭____深千尺，____及汪伦送____。",
-          "prompt": "____乘舟将欲行，忽闻岸____踏歌声。\n桃____潭____深千尺，____及汪伦送____。",
-          "answer": null,
+          "prompt": "/r乘舟将欲行，忽闻岸/r踏歌声。\n桃/r潭/r深千尺，/r及汪伦送/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_choice_manual_04",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "displayPrompt": "不行（xing / xín）、捉虫（zuo / zhuo）、急忙（jí / jī）、招呼（zhāo / zāo）。",
           "prompt": "不行（xing / xín）、捉虫（zuo / zhuo）、急忙（jí / jī）、招呼（zhāo / zāo）。",
           "answer": null,
           "answerSource": "manual_required",
@@ -1014,9 +1171,8 @@
         },
         {
           "id": "basic_dictation_u3_choice_manual_05",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "displayPrompt": "安静（jìn / jìng）、运动（yun / yùn）、连忙（lián / nián）、篮子（lán / nán）。",
           "prompt": "安静（jìn / jìng）、运动（yun / yùn）、连忙（lián / nián）、篮子（lán / nán）。",
           "answer": null,
           "answerSource": "manual_required",
@@ -1024,33 +1180,36 @@
         },
         {
           "id": "basic_dictation_u3_dictionary_fill_06",
-          "type": "dictionary_fill",
+          "type": "chinese",
           "sectionTitle": "查字典填表,填一填",
-          "displayPrompt": "“哥”的音序（大写字母）、音节、组词、笔顺。",
-          "prompt": "“哥”的音序（大写字母）、音节、组词、笔顺。",
-          "answer": null,
+          "prompt": "“哥”的音序（大写字母）、音节、组词、笔顺。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_dictionary_fill_07",
-          "type": "dictionary_fill",
+          "type": "chinese",
           "sectionTitle": "查字典填表",
-          "displayPrompt": "“很”的音序（大写字母）、音节、组词、笔顺。",
-          "prompt": "“很”的音序（大写字母）、音节、组词、笔顺。",
-          "answer": null,
+          "prompt": "“很”的音序（大写字母）、音节、组词、笔顺。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u3_dictionary_fill_08",
-          "type": "dictionary_fill",
+          "type": "chinese",
           "sectionTitle": "查字典填表",
-          "displayPrompt": "“招”的音序（大写字母）、音节、组词、笔顺。",
-          "prompt": "“招”的音序（大写字母）、音节、组词、笔顺。",
-          "answer": null,
+          "prompt": "“招”的音序（大写字母）、音节、组词、笔顺。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         }
       ]
     },
@@ -1060,363 +1219,416 @@
       "questions": [
         {
           "id": "basic_dictation_u4_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "sī xiāng",
-          "prompt": "sī xiāng",
-          "answer": null,
+          "prompt": "sī xiāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qián hòu",
-          "prompt": "qián hòu",
-          "answer": null,
+          "prompt": "qián hòu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yuè guāng",
-          "prompt": "yuè guāng",
-          "answer": null,
+          "prompt": "yuè guāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dī tóu",
-          "prompt": "dī tóu",
-          "answer": null,
+          "prompt": "dī tóu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "qù xiāng",
-          "prompt": "qù xiāng",
-          "answer": null,
+          "prompt": "qù xiāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xià sī",
-          "prompt": "xià sī",
-          "answer": null,
+          "prompt": "xià sī/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hóng sè",
-          "prompt": "hóng sè",
-          "answer": null,
+          "prompt": "hóng sè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "lǐ wài",
-          "prompt": "lǐ wài",
-          "answer": null,
+          "prompt": "lǐ wài/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "kàn jiàn",
-          "prompt": "kàn jiàn",
-          "answer": null,
+          "prompt": "kàn jiàn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "bà ba",
-          "prompt": "bà ba",
-          "answer": null,
+          "prompt": "bà ba/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "wǎn shàng",
-          "prompt": "wǎn shàng",
-          "answer": null,
+          "prompt": "wǎn shàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zài lái",
-          "prompt": "zài lái",
-          "answer": null,
+          "prompt": "zài lái/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "chuáng qián",
-          "prompt": "chuáng qián",
-          "answer": null,
+          "prompt": "chuáng qián/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "tǔ dòu",
-          "prompt": "tǔ dòu",
-          "answer": null,
+          "prompt": "tǔ dòu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zài jiàn",
-          "prompt": "zài jiàn",
-          "answer": null,
+          "prompt": "zài jiàn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhú yè",
-          "prompt": "zhú yè",
-          "answer": null,
+          "prompt": "zhú yè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "sān yè chóng",
-          "prompt": "sān yè chóng",
-          "answer": null,
+          "prompt": "sān yè chóng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xiào yi xiào",
-          "prompt": "xiào yi xiào",
-          "answer": null,
+          "prompt": "xiào yi xiào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhōng qiū jié",
-          "prompt": "zhōng qiū jié",
-          "answer": null,
+          "prompt": "zhōng qiū jié/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hěn wǎn",
-          "prompt": "hěn wǎn",
-          "answer": null,
+          "prompt": "hěn wǎn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dà xiào",
-          "prompt": "dà xiào",
-          "answer": null,
+          "prompt": "dà xiào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shàng wǔ",
-          "prompt": "shàng wǔ",
-          "answer": null,
+          "prompt": "shàng wǔ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xiǎo mǐ",
-          "prompt": "xiǎo mǐ",
-          "answer": null,
+          "prompt": "xiǎo mǐ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "rèn zhēn",
-          "prompt": "rèn zhēn",
-          "answer": null,
+          "prompt": "rèn zhēn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_25",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fēn kāi",
-          "prompt": "fēn kāi",
-          "answer": null,
+          "prompt": "fēn kāi/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_26",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "nà yàng",
-          "prompt": "nà yàng",
-          "answer": null,
+          "prompt": "nà yàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_pinyin_27",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "lái dào",
-          "prompt": "lái dào",
-          "answer": null,
+          "prompt": "lái dào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_sentence_write_01",
-          "type": "sentence_write",
+          "type": "chinese",
           "sectionTitle": "造句",
-          "displayPrompt": "用“一……就……”造句。",
-          "prompt": "用“一……就……”造句。",
-          "answer": null,
+          "prompt": "用“一……就……”造句。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_sentence_write_02",
-          "type": "sentence_write",
+          "type": "chinese",
           "sectionTitle": "造句",
-          "displayPrompt": "用“十分”造句。",
-          "prompt": "用“十分”造句。",
-          "answer": null,
+          "prompt": "用“十分”造句。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_word_group_03",
-          "type": "word_group",
+          "type": "chinese",
           "sectionTitle": "形近字组词",
-          "displayPrompt": "低（ ）/ 底（ ）；外（ ）/ 处（ ）；千（ ）/ 干（ ）。",
-          "prompt": "低（ ）/ 底（ ）；外（ ）/ 处（ ）；千（ ）/ 干（ ）。",
-          "answer": null,
+          "prompt": "低/r/ 底/r；外/r/ 处/r；千/r/ 干/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_word_fill_04",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "加一加",
-          "displayPrompt": "加一加：____ + 宗 = 粽；____ + 泉 = 原；____ + 田 = 思；____ + 月 = 明。",
-          "prompt": "加一加：____ + 宗 = 粽；____ + 泉 = 原；____ + 田 = 思；____ + 月 = 明。",
-          "answer": null,
+          "prompt": "加一加：/r + 宗 = 粽；/r + 泉 = 原；/r + 田 = 思；/r + 月 = 明。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_word_fill_05",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "反义词，写反义词",
-          "displayPrompt": "写反义词：快乐—（ ）、十分—（ ）、高—（ ）、哭—（ ）。",
-          "prompt": "写反义词：快乐—（ ）、十分—（ ）、高—（ ）、哭—（ ）。",
-          "answer": null,
+          "prompt": "写反义词：快乐—/r、十分—/r、高—/r、哭—/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_poem_fill_06",
-          "type": "poem_fill",
+          "type": "chinese",
           "sectionTitle": "古诗填空，补全《寻隐者不遇》",
-          "displayPrompt": "松____童子，言师采药____。只____此____，深____知处。",
-          "prompt": "松____童子，言师采药____。只____此____，深____知处。",
-          "answer": null,
+          "prompt": "松/r童子，言师采药/r。只/r此/r，深/r知处。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u4_text_fill_07",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "日积月累，照样子写词语",
-          "displayPrompt": "例：很小很小。",
           "prompt": "例：很小很小。",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "basic_dictation_u4_text_fill_08",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "日积月累，照样子写词语",
-          "displayPrompt": "例：又黏又甜。",
           "prompt": "例：又黏又甜。",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "basic_dictation_u4_poem_fill_09",
-          "type": "poem_fill",
+          "type": "chinese",
           "sectionTitle": "古诗填空，补全《静夜思》",
-          "displayPrompt": "床前________，疑是________霜。举____望____，低头________。",
-          "prompt": "床前________，疑是________霜。举____望____，低头________。",
-          "answer": null,
+          "prompt": "床前/r，疑是/r霜。举/r望/r，低头/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -1426,249 +1638,272 @@
       "questions": [
         {
           "id": "basic_dictation_u5_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhōng jiān",
-          "prompt": "zhōng jiān",
-          "answer": null,
+          "prompt": "zhōng jiān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "mí rén",
-          "prompt": "mí rén",
-          "answer": null,
+          "prompt": "mí rén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yùn qì",
-          "prompt": "yùn qì",
-          "answer": null,
+          "prompt": "yùn qì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shuǐ chí",
-          "prompt": "shuǐ chí",
-          "answer": null,
+          "prompt": "shuǐ chí/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "huān hū",
-          "prompt": "huān hū",
-          "answer": null,
+          "prompt": "huān hū/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shàng wǎng",
-          "prompt": "shàng wǎng",
-          "answer": null,
+          "prompt": "shàng wǎng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "rén zào",
-          "prompt": "rén zào",
-          "answer": null,
+          "prompt": "rén zào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "gǔ rén",
-          "prompt": "gǔ rén",
-          "answer": null,
+          "prompt": "gǔ rén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "liáng fēng",
-          "prompt": "liáng fēng",
-          "answer": null,
+          "prompt": "liáng fēng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xì xiǎo",
-          "prompt": "xì xiǎo",
-          "answer": null,
+          "prompt": "xì xiǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xī yáng",
-          "prompt": "xī yáng",
-          "answer": null,
+          "prompt": "xī yáng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "lǐ zi",
-          "prompt": "lǐ zi",
-          "answer": null,
+          "prompt": "lǐ zi/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yǔ wén",
-          "prompt": "yǔ wén",
-          "answer": null,
+          "prompt": "yǔ wén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xiāng qì",
-          "prompt": "xiāng qì",
-          "answer": null,
+          "prompt": "xiāng qì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "pāi dǎ",
-          "prompt": "pāi dǎ",
-          "answer": null,
+          "prompt": "pāi dǎ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "pāi shǒu",
-          "prompt": "pāi shǒu",
-          "answer": null,
+          "prompt": "pāi shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "pǎo dòng",
-          "prompt": "pǎo dòng",
-          "answer": null,
+          "prompt": "pǎo dòng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shǒu zú",
-          "prompt": "shǒu zú",
-          "answer": null,
+          "prompt": "shǒu zú/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shēng yīn",
-          "prompt": "shēng yīn",
-          "answer": null,
+          "prompt": "shēng yīn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shēn tǐ",
-          "prompt": "shēn tǐ",
-          "answer": null,
+          "prompt": "shēn tǐ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhī qián",
-          "prompt": "zhī qián",
-          "answer": null,
+          "prompt": "zhī qián/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xiāng duì",
-          "prompt": "xiāng duì",
-          "answer": null,
+          "prompt": "xiāng duì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yuǎn jìn",
-          "prompt": "yuǎn jìn",
-          "answer": null,
+          "prompt": "yuǎn jìn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yuǎn fāng",
-          "prompt": "yuǎn fāng",
-          "answer": null,
+          "prompt": "yuǎn fāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_choice_manual_01",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音判断，给下面加点的字划去错误的读音：",
-          "displayPrompt": "锻炼（duàn / dàn）、食粮（sí / shí）、热闹（rè / yè）、鞭炮（qào / pào）。",
           "prompt": "锻炼（duàn / dàn）、食粮（sí / shí）、热闹（rè / yè）、鞭炮（qào / pào）。",
           "answer": null,
           "answerSource": "manual_required",
@@ -1676,9 +1911,8 @@
         },
         {
           "id": "basic_dictation_u5_choice_manual_02",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音判断，给下面加点的字划去错误的读音：",
-          "displayPrompt": "朝霞（cháo / zhāo）、蜻蜓（qīng / ping）、玉器（yǜ / yù）、捉迷藏（cáng / zàng）。",
           "prompt": "朝霞（cháo / zhāo）、蜻蜓（qīng / ping）、玉器（yǜ / yù）、捉迷藏（cáng / zàng）。",
           "answer": null,
           "answerSource": "manual_required",
@@ -1686,63 +1920,73 @@
         },
         {
           "id": "basic_dictation_u5_text_fill_03",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "歇后语",
-          "displayPrompt": "把歇后语补充完整：芝麻开花——________；小葱拌豆腐——________。",
-          "prompt": "把歇后语补充完整：芝麻开花——________；小葱拌豆腐——________。",
-          "answer": null,
+          "prompt": "把歇后语补充完整：芝麻开花——/r；小葱拌豆腐——/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_word_fill_04",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "选字填空",
-          "displayPrompt": "选字填空（再 / 在）：夏令营结束了，我（ ）站台上和大家说（ ）见。",
-          "prompt": "选字填空（再 / 在）：夏令营结束了，我（ ）站台上和大家说（ ）见。",
-          "answer": null,
+          "prompt": "选字填空（再 / 在）：夏令营结束了，我/r站台上和大家说/r见。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_word_fill_05",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "选字填空",
-          "displayPrompt": "选字填空（青 / 清）：远处有（ ）山，近处有（ ）泉。",
-          "prompt": "选字填空（青 / 清）：远处有（ ）山，近处有（ ）泉。",
-          "answer": null,
+          "prompt": "选字填空（青 / 清）：远处有/r山，近处有/r泉。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_reading_06",
-          "type": "reading",
+          "type": "chinese",
           "sectionTitle": "课内阅读，阅读短文《铃声响，下课了》",
-          "displayPrompt": "从文中找出意思相近的词语：经常（ ）、喧闹（ ）。",
-          "prompt": "从文中找出意思相近的词语：经常（ ）、喧闹（ ）。",
-          "answer": null,
+          "prompt": "从文中找出意思相近的词语：经常/r、喧闹/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_reading_07",
-          "type": "reading",
+          "type": "chinese",
           "sectionTitle": "课内阅读，阅读短文《铃声响，下课了》",
-          "displayPrompt": "写出文中的体育活动。",
-          "prompt": "写出文中的体育活动。",
-          "answer": null,
+          "prompt": "写出文中的体育活动。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u5_reading_08",
-          "type": "reading",
+          "type": "chinese",
           "sectionTitle": "课内阅读，阅读短文《铃声响，下课了》",
-          "displayPrompt": "说说体育锻炼有什么好处。",
-          "prompt": "说说体育锻炼有什么好处。",
-          "answer": null,
+          "prompt": "说说体育锻炼有什么好处。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         }
       ]
     },
@@ -1752,383 +1996,433 @@
       "questions": [
         {
           "id": "basic_dictation_u6_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yuán shǒu",
-          "prompt": "yuán shǒu",
-          "answer": null,
+          "prompt": "yuán shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yì shǒu",
-          "prompt": "yì shǒu",
-          "answer": null,
+          "prompt": "yì shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yǒu wú",
-          "prompt": "yǒu wú",
-          "answer": null,
+          "prompt": "yǒu wú/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shù shàng",
-          "prompt": "shù shàng",
-          "answer": null,
+          "prompt": "shù shàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "ài qíng",
-          "prompt": "ài qíng",
-          "answer": null,
+          "prompt": "ài qíng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jiān jiǎo",
-          "prompt": "jiān jiǎo",
-          "answer": null,
+          "prompt": "jiān jiǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhǔ jué",
-          "prompt": "zhǔ jué",
-          "answer": null,
+          "prompt": "zhǔ jué/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "liàng guāng",
-          "prompt": "liàng guāng",
-          "answer": null,
+          "prompt": "liàng guāng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fēi jī",
-          "prompt": "fēi jī",
-          "answer": null,
+          "prompt": "fēi jī/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yú ér",
-          "prompt": "yú ér",
-          "answer": null,
+          "prompt": "yú ér/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "ěr duo",
-          "prompt": "ěr duo",
-          "answer": null,
+          "prompt": "ěr duo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yún duǒ",
-          "prompt": "yún duǒ",
-          "answer": null,
+          "prompt": "yún duǒ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "huā duǒ",
-          "prompt": "huā duǒ",
-          "answer": null,
+          "prompt": "huā duǒ/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "měi hǎo",
-          "prompt": "měi hǎo",
-          "answer": null,
+          "prompt": "měi hǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhí jiǎo",
-          "prompt": "zhí jiǎo",
-          "answer": null,
+          "prompt": "zhí jiǎo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zuǒ biān",
-          "prompt": "zuǒ biān",
-          "answer": null,
+          "prompt": "zuǒ biān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dà zì",
-          "prompt": "dà zì",
-          "answer": null,
+          "prompt": "dà zì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zuǒ yòu",
-          "prompt": "zuǒ yòu",
-          "answer": null,
+          "prompt": "zuǒ yòu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yòu shǒu",
-          "prompt": "yòu shǒu",
-          "answer": null,
+          "prompt": "yòu shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hóng sè",
-          "prompt": "hóng sè",
-          "answer": null,
+          "prompt": "hóng sè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "nǐ ne",
-          "prompt": "nǐ ne",
-          "answer": null,
+          "prompt": "nǐ ne/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hǎo ma",
-          "prompt": "hǎo ma",
-          "answer": null,
+          "prompt": "hǎo ma/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shì ba",
-          "prompt": "shì ba",
-          "answer": null,
+          "prompt": "shì ba/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jiā rù",
-          "prompt": "jiā rù",
-          "answer": null,
+          "prompt": "jiā rù/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_25",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "wú shēng",
-          "prompt": "wú shēng",
-          "answer": null,
+          "prompt": "wú shēng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_26",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "dà shù",
-          "prompt": "dà shù",
-          "answer": null,
+          "prompt": "dà shù/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_27",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shù yè",
-          "prompt": "shù yè",
-          "answer": null,
+          "prompt": "shù yè/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_28",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xīn ài",
-          "prompt": "xīn ài",
-          "answer": null,
+          "prompt": "xīn ài/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_29",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jiān dāo",
-          "prompt": "jiān dāo",
-          "answer": null,
+          "prompt": "jiān dāo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_30",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "míng liàng",
-          "prompt": "míng liàng",
-          "answer": null,
+          "prompt": "míng liàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_31",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhī dào",
-          "prompt": "zhī dào",
-          "answer": null,
+          "prompt": "zhī dào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_pinyin_32",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yì zhí",
-          "prompt": "yì zhí",
-          "answer": null,
+          "prompt": "yì zhí/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_choice_manual_01",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "选择题，选择正确答案，把序号写在横线上",
-          "displayPrompt": "《小池》写的是______的景色。①春天 ②夏天",
-          "prompt": "《小池》写的是______的景色。①春天 ②夏天",
-          "answer": null,
+          "prompt": "《小池》写的是/r的景色。①春天 ②夏天",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_choice_manual_02",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "选择题，选择正确答案，把序号写在横线上",
-          "displayPrompt": "要下雨时，鱼儿游到水面上______。①找食物 ②透气",
-          "prompt": "要下雨时，鱼儿游到水面上______。①找食物 ②透气",
-          "answer": null,
+          "prompt": "要下雨时，鱼儿游到水面上/r。①找食物 ②透气",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_choice_manual_03",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "选择题，选择正确答案，把序号写在横线上",
-          "displayPrompt": "荷叶是蜻蜓的______。①摇篮 ②凉伞 ③歌台 ④停机坪",
-          "prompt": "荷叶是蜻蜓的______。①摇篮 ②凉伞 ③歌台 ④停机坪",
-          "answer": null,
+          "prompt": "荷叶是蜻蜓的/r。①摇篮 ②凉伞 ③歌台 ④停机坪",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_word_group_04",
-          "type": "word_group",
+          "type": "chinese",
           "sectionTitle": "形近字组词",
-          "displayPrompt": "给采（ ）/ 彩（ ）；亮（ ）/ 高（ ）；边（ ）/ 加（ ）；直（ ）/ 真（ ）。",
-          "prompt": "给采（ ）/ 彩（ ）；亮（ ）/ 高（ ）；边（ ）/ 加（ ）；直（ ）/ 真（ ）。",
-          "answer": null,
+          "prompt": "给采/r/ 彩/r；亮/r/ 高/r；边/r/ 加/r；直/r/ 真/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_word_fill_05",
-          "type": "word_fill",
+          "type": "chinese",
           "sectionTitle": "词语搭配",
-          "displayPrompt": "（ ）的翅膀、（ ）的眼睛、（ ）地游来游去、（ ）的水花。",
-          "prompt": "（ ）的翅膀、（ ）的眼睛、（ ）地游来游去、（ ）的水花。",
-          "answer": null,
+          "prompt": "/r的翅膀、/r的眼睛、/r地游来游去、/r的水花。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u6_sentence_write_06",
-          "type": "sentence_write",
+          "type": "chinese",
           "sectionTitle": "仿写句子",
-          "displayPrompt": "例：小妹妹一边唱歌一边跳舞。\n____一边____一边____。",
-          "prompt": "例：小妹妹一边唱歌一边跳舞。\n____一边____一边____。",
-          "answer": null,
+          "prompt": "例：小妹妹一边唱歌一边跳舞。\n/r一边/r一边/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null
+          ]
         }
       ]
     },
@@ -2138,369 +2432,408 @@
       "questions": [
         {
           "id": "basic_dictation_u7_pinyin_01",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yǔ wén",
-          "prompt": "yǔ wén",
-          "answer": null,
+          "prompt": "yǔ wén/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_02",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zài cì",
-          "prompt": "zài cì",
-          "answer": null,
+          "prompt": "zài cì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_03",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zhǎo dào",
-          "prompt": "zhǎo dào",
-          "answer": null,
+          "prompt": "zhǎo dào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_04",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "píng shí",
-          "prompt": "píng shí",
-          "answer": null,
+          "prompt": "píng shí/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_05",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shuǐ píng",
-          "prompt": "shuǐ píng",
-          "answer": null,
+          "prompt": "shuǐ píng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_06",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "bàn dào",
-          "prompt": "bàn dào",
-          "answer": null,
+          "prompt": "bàn dào/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_07",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "ràng kāi",
-          "prompt": "ràng kāi",
-          "answer": null,
+          "prompt": "ràng kāi/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_08",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shū bāo",
-          "prompt": "shū bāo",
-          "answer": null,
+          "prompt": "shū bāo/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_09",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shí zhōng",
-          "prompt": "shí zhōng",
-          "answer": null,
+          "prompt": "shí zhōng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_10",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yuán dàn",
-          "prompt": "yuán dàn",
-          "answer": null,
+          "prompt": "yuán dàn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_11",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xǐ yī",
-          "prompt": "xǐ yī",
-          "answer": null,
+          "prompt": "xǐ yī/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_12",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "xǐ shǒu",
-          "prompt": "xǐ shǒu",
-          "answer": null,
+          "prompt": "xǐ shǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_13",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yí gòng",
-          "prompt": "yí gòng",
-          "answer": null,
+          "prompt": "yí gòng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_14",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "gòng tóng",
-          "prompt": "gòng tóng",
-          "answer": null,
+          "prompt": "gòng tóng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_15",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yǐ jīng",
-          "prompt": "yǐ jīng",
-          "answer": null,
+          "prompt": "yǐ jīng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_16",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jīng guò",
-          "prompt": "jīng guò",
-          "answer": null,
+          "prompt": "jīng guò/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_17",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zuò xià",
-          "prompt": "zuò xià",
-          "answer": null,
+          "prompt": "zuò xià/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_18",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "zuò zài",
-          "prompt": "zuò zài",
-          "answer": null,
+          "prompt": "zuò zài/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_19",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yào shi",
-          "prompt": "yào shi",
-          "answer": null,
+          "prompt": "yào shi/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_20",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "lián shàng",
-          "prompt": "lián shàng",
-          "answer": null,
+          "prompt": "lián shàng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_21",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "bǎi wàn",
-          "prompt": "bǎi wàn",
-          "answer": null,
+          "prompt": "bǎi wàn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_22",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "hái yǒu",
-          "prompt": "hái yǒu",
-          "answer": null,
+          "prompt": "hái yǒu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_23",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "lián rì",
-          "prompt": "lián rì",
-          "answer": null,
+          "prompt": "lián rì/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_24",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shé tou",
-          "prompt": "shé tou",
-          "answer": null,
+          "prompt": "shé tou/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_25",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "shé jiān",
-          "prompt": "shé jiān",
-          "answer": null,
+          "prompt": "shé jiān/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_26",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "diǎn tóu",
-          "prompt": "diǎn tóu",
-          "answer": null,
+          "prompt": "diǎn tóu/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_27",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yǔ diǎn",
-          "prompt": "yǔ diǎn",
-          "answer": null,
+          "prompt": "yǔ diǎn/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_28",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fāng kuài",
-          "prompt": "fāng kuài",
-          "answer": null,
+          "prompt": "fāng kuài/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_29",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "fēi cháng",
-          "prompt": "fēi cháng",
-          "answer": null,
+          "prompt": "fēi cháng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_30",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "jīng cháng",
-          "prompt": "jīng cháng",
-          "answer": null,
+          "prompt": "jīng cháng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_pinyin_31",
-          "type": "pinyin_word_write",
+          "type": "chinese",
           "sectionTitle": "看拼音，写词语",
-          "displayPrompt": "yǐ wǎng",
-          "prompt": "yǐ wǎng",
-          "answer": null,
+          "prompt": "yǐ wǎng/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_word_group_01",
-          "type": "word_group",
+          "type": "chinese",
           "sectionTitle": "比一比组词",
-          "displayPrompt": "已（  ）/ 己（  ）；刀（  ）/ 力（  ）；人（  ）/ 入（  ）。",
-          "prompt": "已（   ）/ 己（   ）；刀（  ）/ 力（  ）；人（  ）/ 入（   ）。",
-          "answer": null,
+          "prompt": "已/r/ 己/r；刀/r/ 力/r；人/r/ 入/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_sentence_write_02",
-          "type": "sentence_write",
+          "type": "chinese",
           "sectionTitle": "读一读，写一写",
-          "displayPrompt": "例句；一直不见公共汽车的踪影，元元决定走到学校去。\n用“一直” “决定”写一句话。",
-          "prompt": "一直不见公共汽车的踪影，元元决定走到学校去。用“一直”“决定”写一句话。",
-          "answer": null,
+          "prompt": "一直不见公共汽车的踪影，元元决定走到学校去。用“一直”“决定”写一句话。/r",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_text_fill_03",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "《一分钟》这篇课文告诉我们________。",
-          "prompt": "《一分钟》这篇课文告诉我们________。",
-          "answer": null,
+          "prompt": "《一分钟》这篇课文告诉我们/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_text_fill_04",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "在《动物王国开大会》一文中，狗熊在通知大家要召开动物大会时，分别被指出了哪些错误？",
           "prompt": "在《动物王国开大会》一文中，狗熊在通知大家要召开动物大会时，分别被指出了哪些错误？",
           "answer": null,
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": []
         },
         {
           "id": "basic_dictation_u7_text_fill_05",
-          "type": "text_fill",
+          "type": "chinese",
           "sectionTitle": "课文填空",
-          "displayPrompt": "读万卷书，________。",
-          "prompt": "读万卷书，________。",
-          "answer": null,
+          "prompt": "读万卷书，/r。",
           "answerSource": "manual_required",
-          "images": []
+          "images": [],
+          "answers": [
+            null
+          ]
         },
         {
           "id": "basic_dictation_u7_choice_manual_06",
-          "type": "choice_manual",
+          "type": "chinese",
           "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "displayPrompt": "百（bái / bǎi）、掰（bāi / bēn）、准（zǔn / zhǔn）。",
           "prompt": "百（bái / bǎi）、掰（bāi / bēn）、准（zǔn / zhǔn）。",
           "answer": null,
           "answerSource": "manual_required",
