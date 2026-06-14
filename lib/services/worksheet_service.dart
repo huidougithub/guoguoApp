@@ -27,6 +27,7 @@ class WorksheetService {
     'english',
     'example',
     'display_only',
+    'choice',
   };
   static const Set<String> _validAnswerSources = {
     'auto',
@@ -40,6 +41,7 @@ class WorksheetService {
     'blanks',
     'segments',
   };
+  // ignore: unused_field
   static const Map<String, String> _legacyTypeMap = {
     'calculation': 'math',
     'blank_equation': 'math',
@@ -66,6 +68,7 @@ class WorksheetService {
     'dictionary_fill': 'chinese',
     'chinese_manual': 'chinese',
     'pronunciation': 'chinese',
+    'choice': 'choice',
   };
 
   Future<List<WorksheetCatalogItem>> loadCatalog() async {
@@ -263,7 +266,9 @@ class WorksheetService {
           }
 
           // type 严格校验（不迁移）
-          final type = (questionRaw['type'] as String? ?? '').trim().toLowerCase();
+          final type = (questionRaw['type'] as String? ?? '')
+              .trim()
+              .toLowerCase();
           if (type.isEmpty) {
             errors.add('$qPrefix：缺少 type。');
           } else if (!_validTypes.contains(type)) {
@@ -273,8 +278,9 @@ class WorksheetService {
           }
 
           // answerSource 校验
-          final answerSource =
-              (questionRaw['answerSource'] as String? ?? '').trim().toLowerCase();
+          final answerSource = (questionRaw['answerSource'] as String? ?? '')
+              .trim()
+              .toLowerCase();
           if (answerSource.isEmpty) {
             errors.add('$qPrefix：缺少 answerSource。');
           } else if (!_validAnswerSources.contains(answerSource)) {
@@ -286,9 +292,7 @@ class WorksheetService {
           // prompt 中不允许出现 ____
           final prompt = questionRaw['prompt'] as String? ?? '';
           if (prompt.contains('____')) {
-            errors.add(
-              '$qPrefix：prompt 中存在旧格式 "____"，请替换为 "/r"。',
-            );
+            errors.add('$qPrefix：prompt 中存在旧格式 "____"，请替换为 "/r"。');
           }
 
           // 废弃字段检查
@@ -300,9 +304,7 @@ class WorksheetService {
 
           // 不允许存在旧 answer 字段
           if (questionRaw.containsKey('answer')) {
-            errors.add(
-              '$qPrefix：存在旧字段 "answer"，请替换为 "answers" 数组。',
-            );
+            errors.add('$qPrefix：存在旧字段 "answer"，请替换为 "answers" 数组。');
           }
 
           // /r 与 answers 数量严格校验
@@ -354,6 +356,25 @@ class WorksheetService {
               }
             }
           }
+
+          // 选择题（choice）校验
+          final options = questionRaw['options'] as List<dynamic>?;
+          if (options != null && options.isNotEmpty) {
+            if (options.length < 2) {
+              errors.add('$qPrefix：选择题至少需要 2 个选项。');
+            }
+            if (answers != null && answers.isNotEmpty) {
+              for (var i = 0; i < answers.length; i++) {
+                final idx = int.tryParse(answers[i].toString());
+                if (idx == null || idx < 0 || idx >= options.length) {
+                  errors.add(
+                    '$qPrefix：answers[$i] = "${answers[i]}" 不是有效的选项索引（0-${options.length - 1}）。',
+                  );
+                }
+              }
+            }
+            totalPracticeQuestions++;
+          }
         }
       }
     }
@@ -397,6 +418,7 @@ class WorksheetService {
 }
 
 extension _StringCount on String {
+  // ignore: unused_element
   int count(String pattern) {
     var count = 0;
     var start = 0;

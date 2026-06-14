@@ -49,14 +49,6 @@
       "asset": "assets/worksheets/generated/stroke_practice_17_lessons.json"
     },
     {
-      "id": "test_match_pairing",
-      "title": "【测试】配对连线题",
-      "subject": "语文",
-      "grade": "一年级下册",
-      "description": "1题 · 测试 match 配对连线题型",
-      "asset": "assets/worksheets/test_match_pairing.json"
-    },
-    {
       "id": "math_daily_20_sample",
       "title": "一年级上册数学计算每日一练",
       "subject": "数学",

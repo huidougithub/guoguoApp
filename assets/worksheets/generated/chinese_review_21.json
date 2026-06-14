@@ -7,7 +7,7 @@
   "days": [
     {
       "day": 1,
-      "title": "第一天",
+      "title": "第1天",
       "questions": [
         {
           "id": "chinese_review_21_d01_pinyin_01",
@@ -749,7 +749,7 @@
         {
           "id": "chinese_review_21_d03_s03_q01",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "口令(lìn lìng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -758,7 +758,7 @@
         {
           "id": "chinese_review_21_d03_s03_q02",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "告诉(sù shù)",
           "answer": null,
           "answerSource": "manual_required",
@@ -767,7 +767,7 @@
         {
           "id": "chinese_review_21_d03_s03_q03",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "跟从(gēn gēng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -776,7 +776,7 @@
         {
           "id": "chinese_review_21_d03_s03_q04",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "举起(jǔ jǚ)",
           "answer": null,
           "answerSource": "manual_required",
@@ -785,7 +785,7 @@
         {
           "id": "chinese_review_21_d03_s03_q05",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "教育(jiāo jiào)",
           "answer": null,
           "answerSource": "manual_required",
@@ -794,7 +794,7 @@
         {
           "id": "chinese_review_21_d03_s03_q06",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "露水(lòu lù)",
           "answer": null,
           "answerSource": "manual_required",
@@ -824,7 +824,7 @@
           "id": "chinese_review_21_d03_s05_merged",
           "type": "chinese",
           "sectionTitle": "五、日积月累。《春晓》",
-          "prompt": "/r眠/r觉晓，/r/r闻啼/r。\n/r/r/r/r声，/r落/r/r/r。",
+          "prompt": "/r眠/r觉晓，/r闻啼/r。\n/r声，/r落/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -1121,7 +1121,7 @@
         {
           "id": "chinese_review_21_d04_s04_q01",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "重要(yāo yào)",
           "answer": null,
           "answerSource": "manual_required",
@@ -1130,7 +1130,7 @@
         {
           "id": "chinese_review_21_d04_s04_q02",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "高兴(xin xìng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -1139,7 +1139,7 @@
         {
           "id": "chinese_review_21_d04_s04_q03",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "掰开(bāi bān)",
           "answer": null,
           "answerSource": "manual_required",
@@ -1148,7 +1148,7 @@
         {
           "id": "chinese_review_21_d04_s04_q04",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "干活(gàn gān)",
           "answer": null,
           "answerSource": "manual_required",
@@ -1157,7 +1157,7 @@
         {
           "id": "chinese_review_21_d04_s04_q05",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "转身(zhuǎn zhuàn)",
           "answer": null,
           "answerSource": "manual_required",
@@ -1166,7 +1166,7 @@
         {
           "id": "chinese_review_21_d04_s04_q06",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "墙壁(bì pi)",
           "answer": null,
           "answerSource": "manual_required",
@@ -1176,7 +1176,7 @@
           "id": "chinese_review_21_d04_s05_merged_01",
           "type": "chinese",
           "sectionTitle": "五、日积月累",
-          "prompt": "松/r/r童/r,/r师采药/r。/r/r/r/r/r，/r深/r/r/r。 乘舟将欲_  _师采药_。 忽闻岸 /r踏歌 _。  潭水深  深 汪伦_ 0",
+          "prompt": "松/r童/r,/r师采药/r。/r，/r深/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -1189,7 +1189,7 @@
           "id": "chinese_review_21_d04_s05_merged_02",
           "type": "chinese",
           "sectionTitle": "五、日积月累",
-          "prompt": "/r/r乘舟将欲/r，忽闻岸/r踏歌/r。/r/r潭水深/r/r，/r/r汪伦/r/r/r。",
+          "prompt": "/r乘舟将欲/r，忽闻岸/r踏歌/r。/r潭水深/r，/r汪伦/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -1795,7 +1795,7 @@
           "id": "chinese_review_21_d06_s04_q03",
           "type": "chinese",
           "sectionTitle": "四、先把口诀补充完整(填序号),再完成表格",
-          "prompt": "喊  大写字母/r，读音/r，组词/r\n孤  大写字母/r，读音/r，组词/r\n千  大写字母/r，读音/r，组词/r\n",
+          "prompt": "喊  大写字母/r，读音/r，组词/r\n孤  大写字母/r，读音/r，组词/r\n千  大写字母/r，读音/r，组词/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2294,7 +2294,7 @@
         {
           "id": "chinese_review_21_d08_s03_q01",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "姓氏(shi si)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2303,7 +2303,7 @@
         {
           "id": "chinese_review_21_d08_s03_q02",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "眼睛(jīng jing)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2312,7 +2312,7 @@
         {
           "id": "chinese_review_21_d08_s03_q03",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "城市(chéng chén)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2321,7 +2321,7 @@
         {
           "id": "chinese_review_21_d08_s03_q04",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "乡亲(qīng qīn)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2330,7 +2330,7 @@
         {
           "id": "chinese_review_21_d08_s03_q05",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "邻居(líng lín)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2339,7 +2339,7 @@
         {
           "id": "chinese_review_21_d08_s03_q06",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "得亏(de děi)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2348,7 +2348,7 @@
         {
           "id": "chinese_review_21_d08_s03_q07",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "窗外(chuāng chuān)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2357,7 +2357,7 @@
         {
           "id": "chinese_review_21_d08_s03_q08",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "睡觉(shui sui)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2366,7 +2366,7 @@
         {
           "id": "chinese_review_21_d08_s03_q09",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "端午(duān dān)",
           "answer": null,
           "answerSource": "manual_required",
@@ -2826,7 +2826,7 @@
           "id": "chinese_review_21_d10_s03_q01",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "古————（/r）",
+          "prompt": "古——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2837,7 +2837,7 @@
           "id": "chinese_review_21_d10_s03_q02",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "圆————（/r）",
+          "prompt": "圆——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2848,7 +2848,7 @@
           "id": "chinese_review_21_d10_s03_q03",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "朝————（/r）",
+          "prompt": "朝——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2859,7 +2859,7 @@
           "id": "chinese_review_21_d10_s03_q04",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "幼————（/r）",
+          "prompt": "幼——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2870,7 +2870,7 @@
           "id": "chinese_review_21_d10_s03_q05",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "前————（/r）",
+          "prompt": "前——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2881,7 +2881,7 @@
           "id": "chinese_review_21_d10_s03_q06",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "忙————（/r）",
+          "prompt": "忙——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2892,7 +2892,7 @@
           "id": "chinese_review_21_d10_s03_q07",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "暖————（/r）",
+          "prompt": "暖——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2903,7 +2903,7 @@
           "id": "chinese_review_21_d10_s03_q08",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "里————（/r）",
+          "prompt": "里——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2914,7 +2914,7 @@
           "id": "chinese_review_21_d10_s03_q09",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "粗————（/r）",
+          "prompt": "粗——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2925,7 +2925,7 @@
           "id": "chinese_review_21_d10_s03_q10",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "严寒————（/r）",
+          "prompt": "严寒——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2936,7 +2936,7 @@
           "id": "chinese_review_21_d10_s03_q11",
           "type": "chinese",
           "sectionTitle": "三、反义词",
-          "prompt": "热闹————（/r）",
+          "prompt": "热闹——（　）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2947,7 +2947,7 @@
           "id": "chinese_review_21_d10_s04_q01",
           "type": "chinese",
           "sectionTitle": "四、仿写句子",
-          "prompt": "（要是）早一分钟，（就）能赶上绿灯了。/r",
+          "prompt": "（要是）早一分钟，（就）能赶上绿灯了。",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
@@ -3135,7 +3135,7 @@
         {
           "id": "chinese_review_21_d11_s03_q01",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "新娘(niáng liáng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -3144,7 +3144,7 @@
         {
           "id": "chinese_review_21_d11_s03_q02",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "您(ní nín)好",
           "answer": null,
           "answerSource": "manual_required",
@@ -3153,7 +3153,7 @@
         {
           "id": "chinese_review_21_d11_s03_q03",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "拨(pō bō)水",
           "answer": null,
           "answerSource": "manual_required",
@@ -3162,7 +3162,7 @@
         {
           "id": "chinese_review_21_d11_s03_q04",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "闹钟(zhōng zōng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -3171,7 +3171,7 @@
         {
           "id": "chinese_review_21_d11_s03_q05",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "扛(gáng káng)着",
           "answer": null,
           "answerSource": "manual_required",
@@ -3180,7 +3180,7 @@
         {
           "id": "chinese_review_21_d11_s03_q06",
           "type": "chinese",
-          "sectionTitle": "三、请选择选择正确读音",
+          "sectionTitle": "三、请选择正确读音",
           "prompt": "闷(men mēng)热",
           "answer": null,
           "answerSource": "manual_required",
@@ -3372,41 +3372,25 @@
           "answerSource": "manual_required",
           "images": []
         },
+        
         {
-          "id": "chinese_review_21_d12_s03_q01",
+          "id": "match_d12_001",
           "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "洁白的 新疆 壮观的 天空",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+          "sectionTitle": "三、读一读，连一连",          
+          "answerSource": "auto",
+          "left": ["洁白的", "遥远的", "雄伟的", "弯弯的"],
+          "right": ["新疆", "雪莲", "小路", "天安门"],
+          "answers": ["1", "0", "3", "2"]
         },
         {
-          "id": "chinese_review_21_d12_s03_q02",
+          "id": "match_d12_001",
           "type": "chinese",
           "sectionTitle": "三、读一读，连一连",
-          "prompt": "遥远的 雪莲 美丽的 升旗仪式",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
-        },
-        {
-          "id": "chinese_review_21_d12_s03_q03",
-          "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "雄伟的 小路 蓝蓝的 公路",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
-        },
-        {
-          "id": "chinese_review_21_d12_s03_q04",
-          "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "弯弯的 天安门 宽宽的 天山",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+         
+          "answerSource": "auto",
+          "left": ["壮观的", "美丽的", "蓝蓝的", "宽宽的"],
+          "right": ["天空", "升旗仪式", "公路", "天山"],
+          "answers": ["1", "3", "0", "2"]
         },
         {
           "id": "chinese_review_21_d12_s04_q01",
@@ -3435,7 +3419,7 @@
           "id": "chinese_review_21_d12_s05_merged",
           "type": "chinese",
           "sectionTitle": "五、按课文内容填空",
-          "prompt": "/r之初，性/r善，性相/r，相/r。苟/r教，性乃迁，教之道，贵以专。\n/r,非所宜，幼/r,老何为？/r琢，/r成器，/r,/r知/r。",
+          "prompt": "/r之初，性/r善，性相/r，相/r。苟/r教，性乃迁，教之道，贵以专。\n/r,非所宜，幼/r,老何为？/r琢，/r成器，/r,/r知/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -3614,44 +3598,27 @@
         {
           "id": "chinese_review_21_d13_s03_q01",
           "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "美丽的 空气 小水珠 停机坪",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+          "prompt": "读一读，连一连。",
+          "answerSource": "auto",
+          "left": ["美丽的", "潮湿的", "雪白的", "透明的"],
+          "right": ["空气", "翅膀", "夏夜", "贝壳"],
+          "answers": ["2", "0", "3", "1"]
         },
         {
           "id": "chinese_review_21_d13_s03_q02",
           "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "潮湿的 翅膀 小蜻蜓 歌台",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+          "prompt": "读一读，连一连。",
+          "answerSource": "auto",
+          "left": ["小水珠", "小蜻蜓", "小青蛙", "小鱼儿"],
+          "right": ["停机坪", "歌台", "凉伞", "摇篮"],
+          "answers": ["3", "0", "1", "2"]
         },
-        {
-          "id": "chinese_review_21_d13_s03_q03",
-          "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "雪白的 夏夜 小青蛙 凉伞",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
-        },
-        {
-          "id": "chinese_review_21_d13_s03_q04",
-          "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "透明的 贝壳 小鱼儿 摇篮",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
-        },
+        
         {
           "id": "chinese_review_21_d13_s04_q01",
           "type": "chinese",
-          "sectionTitle": "四、用“/”划去不是同一类的词语",
-          "prompt": "水杯 牙膏 铅笔袋 洗手液",
+          "sectionTitle": "四、选择不是同一类的词语",
+          "prompt": "水杯　牙膏　铅笔袋　洗手液",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -3659,8 +3626,8 @@
         {
           "id": "chinese_review_21_d13_s04_q02",
           "type": "chinese",
-          "sectionTitle": "四、用“/”划去不是同一类的词语",
-          "prompt": "橡皮 直尺 蚕丝被 水彩笔",
+          "sectionTitle": "四、选择不是同一类的词语",
+          "prompt": "橡皮　直尺　蚕丝被　水彩笔",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -3668,8 +3635,8 @@
         {
           "id": "chinese_review_21_d13_s04_q03",
           "type": "chinese",
-          "sectionTitle": "四、用“/”划去不是同一类的词语",
-          "prompt": "外套 衬衫 洗衣机 运动鞋",
+          "sectionTitle": "四、选择不是同一类的词语",
+          "prompt": "外套　衬衫　洗衣机 运动鞋",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4095,7 +4062,7 @@
           "id": "chinese_review_21_d15_s04_merged_01",
           "type": "chinese",
           "sectionTitle": "四、按课文内容填空",
-          "prompt": "/r珠/r:“/r摇篮。”\n/r珠躺在荷/r,眨着/r。",
+          "prompt": "/r珠/r：“/r摇篮。”\n/r珠躺在荷/r，眨着/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4110,7 +4077,7 @@
           "id": "chinese_review_21_d15_s04_merged_02",
           "type": "chinese",
           "sectionTitle": "四、按课文内容填空",
-          "prompt": "小蜻蜓/r:“荷/r停机坪。”小蜻蜓/r荷/r,展开透明的翅膀。",
+          "prompt": "小蜻蜓/r：“荷/r停机坪。”小蜻蜓/r荷/r，展开透明的翅膀。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4262,8 +4229,8 @@
         {
           "id": "chinese_review_21_d16_s02_q01",
           "type": "chinese",
-          "sectionTitle": "二、请选择选择正确读音",
-          "prompt": "翅膀(cì chi)",
+          "sectionTitle": "二、请选择正确读音",
+          "prompt": "翅膀(cì chì)",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4271,7 +4238,7 @@
         {
           "id": "chinese_review_21_d16_s02_q02",
           "type": "chinese",
-          "sectionTitle": "二、请选择选择正确读音",
+          "sectionTitle": "二、请选择正确读音",
           "prompt": "泉水(quán qián)",
           "answer": null,
           "answerSource": "manual_required",
@@ -4280,7 +4247,7 @@
         {
           "id": "chinese_review_21_d16_s02_q03",
           "type": "chinese",
-          "sectionTitle": "二、请选择选择正确读音",
+          "sectionTitle": "二、请选择正确读音",
           "prompt": "浮萍(pín píng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -4289,7 +4256,7 @@
         {
           "id": "chinese_review_21_d16_s02_q04",
           "type": "chinese",
-          "sectionTitle": "二、请选择选择正确读音",
+          "sectionTitle": "二、请选择正确读音",
           "prompt": "风扇(sàn shàn)",
           "answer": null,
           "answerSource": "manual_required",
@@ -4298,7 +4265,7 @@
         {
           "id": "chinese_review_21_d16_s02_q05",
           "type": "chinese",
-          "sectionTitle": "二、请选择选择正确读音",
+          "sectionTitle": "二、请选择正确读音",
           "prompt": "弯腰(yāo yào)",
           "answer": null,
           "answerSource": "manual_required",
@@ -4307,7 +4274,7 @@
         {
           "id": "chinese_review_21_d16_s02_q06",
           "type": "chinese",
-          "sectionTitle": "二、请选择选择正确读音",
+          "sectionTitle": "二、请选择正确读音",
           "prompt": "阴沉(chén chéng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -4339,7 +4306,7 @@
           "id": "chinese_review_21_d16_s04_q01",
           "type": "chinese",
           "sectionTitle": "四、易错笔顺",
-          "prompt": "“朵”的笔顺 ,第2笔是__。",
+          "prompt": "“朵”的笔顺/r，第2笔是/r。",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4348,7 +4315,7 @@
           "id": "chinese_review_21_d16_s04_q02",
           "type": "chinese",
           "sectionTitle": "四、易错笔顺",
-          "prompt": "“为”的笔顺 ,第2笔是___。",
+          "prompt": "“为”的笔顺/r，第2笔是/r。",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4357,7 +4324,7 @@
           "id": "chinese_review_21_d16_s04_q03",
           "type": "chinese",
           "sectionTitle": "四、易错笔顺",
-          "prompt": "“瓜”的笔顺 ,第3笔是_",
+          "prompt": "“瓜”的笔顺/r，第3笔是/r",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4365,8 +4332,8 @@
         {
           "id": "chinese_review_21_d16_s05_merged",
           "type": "chinese",
-          "sectionTitle": "五、按课文内容填空",
-          "prompt": "静夜思 【唐】李白  ,疑/r霜。  望 _,",
+          "sectionTitle": "五、按课文内容填空。《静夜思》",
+          "prompt": "/r，疑/r霜。\n/r望/r，/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4514,8 +4481,8 @@
         {
           "id": "chinese_review_21_d17_s02_q01",
           "type": "chinese",
-          "sectionTitle": "二、用“__”画出每组词语中加点字读音有误的一项",
-          "prompt": "棉花(mián) 掉落(diào) 拦路(nán)",
+          "sectionTitle": "二、选出每组词语中加点字读音有误的一项",
+          "prompt": "棉花(mián)    掉落(diào)    拦路(nán)",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4523,8 +4490,8 @@
         {
           "id": "chinese_review_21_d17_s02_q02",
           "type": "chinese",
-          "sectionTitle": "二、用“__”画出每组词语中加点字读音有误的一项",
-          "prompt": "墙壁(bi) 难过(nàn) 咬住(yǎo)",
+          "sectionTitle": "二、选出每组词语中加点字读音有误的一项",
+          "prompt": "墙壁(bi)    难过(nàn)    咬住(yǎo)",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4533,7 +4500,7 @@
           "id": "chinese_review_21_d17_example_01",
           "type": "example",
           "sectionTitle": "三、照样子，写一写",
-          "prompt": "例：雪白 雪白雪白 雪白雪白的云朵",
+          "prompt": "例：雪白    雪白雪白    雪白雪白的云朵",
           "answer": null,
           "answerSource": "display_only",
           "images": []
@@ -4542,7 +4509,16 @@
           "id": "chinese_review_21_d17_s03_q02",
           "type": "chinese",
           "sectionTitle": "三、照样子，写一写",
-          "prompt": "火红",
+          "prompt": "火红　＿＿＿＿　＿＿＿＿＿＿＿＿",
+          "answer": null,
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_review_21_d17_s03_q03",
+          "type": "chinese",
+          "sectionTitle": "三、照样子，写一写",
+          "prompt": "＿＿　＿＿＿＿　＿＿＿＿＿＿＿＿",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -4560,7 +4536,7 @@
           "id": "chinese_review_21_d17_options_01",
           "type": "chinese",
           "sectionTitle": "四、词语搭配",
-          "prompt": "（/r）的天空",
+          "prompt": "（　）的天空",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4571,7 +4547,7 @@
           "id": "chinese_review_21_d17_options_02",
           "type": "chinese",
           "sectionTitle": "四、词语搭配",
-          "prompt": "（/r）的枫叶",
+          "prompt": "（　）的枫叶",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4582,7 +4558,7 @@
           "id": "chinese_review_21_d17_options_03",
           "type": "chinese",
           "sectionTitle": "四、词语搭配",
-          "prompt": "（/r）的草地",
+          "prompt": "（　）的草地",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4593,7 +4569,7 @@
           "id": "chinese_review_21_d17_options_04",
           "type": "chinese",
           "sectionTitle": "四、词语搭配",
-          "prompt": "（/r）的稻谷",
+          "prompt": "（　）的稻谷",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4604,7 +4580,7 @@
           "id": "chinese_review_21_d17_s05_q01",
           "type": "chinese",
           "sectionTitle": "五、读句子，填上合适的语气词",
-          "prompt": "这朵花真香/r!",
+          "prompt": "这朵花真香____/r！",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4615,7 +4591,7 @@
           "id": "chinese_review_21_d17_s05_q02",
           "type": "chinese",
           "sectionTitle": "五、读句子，填上合适的语气词",
-          "prompt": "我正忙着捉虫子/r_!",
+          "prompt": "我正忙着捉虫子/r____！",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4626,7 +4602,7 @@
           "id": "chinese_review_21_d17_s05_q03",
           "type": "chinese",
           "sectionTitle": "五、读句子，填上合适的语气词",
-          "prompt": "你可以把直尺借给我用一下/r__?",
+          "prompt": "你可以把直尺借给我用一下/r____？",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4637,7 +4613,7 @@
           "id": "chinese_review_21_d17_s05_q04",
           "type": "chinese",
           "sectionTitle": "五、读句子，填上合适的语气词",
-          "prompt": "要下雨了，你还是赶快回家__!",
+          "prompt": "要下雨了，你还是赶快回家____！",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
@@ -4785,7 +4761,7 @@
           "id": "chinese_review_21_d18_s02_q01",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 中（/r）",
+          "prompt": "午    牛\n中（/r)    水（/r）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4796,7 +4772,7 @@
           "id": "chinese_review_21_d18_s02_q02",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 （/r）气",
+          "prompt": "刀    力\n（/r)气    剪（/r）",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4807,7 +4783,7 @@
           "id": "chinese_review_21_d18_s02_q03",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 （/r）们",
+          "prompt": "人    入\n（/r)们    （/r）入",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4818,62 +4794,19 @@
           "id": "chinese_review_21_d18_s02_q04",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 （/r）食",
+          "prompt": "玉    主\n（/r)食    （/r）米",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
             null
           ]
         },
-        {
-          "id": "chinese_review_21_d18_s02_q05",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 水（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d18_s02_q06",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 剪（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d18_s02_q07",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 出（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d18_s02_q08",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "午 牛 刀 力 人 入 玉 主 （/r）米",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
+        
         {
           "id": "chinese_review_21_d18_s03_q01",
           "type": "chinese",
           "sectionTitle": "三、根据题意，填一填",
-          "prompt": "我发现“猫、猴、狮”等字的部首都是 ,含有这个部首 的字多与/r有关，含有这个部首的字还有：/r, ○",
+          "prompt": "我发现“猫、猴、狮”等字的部首都是/r,含有这个部首 的字多与/r有关，含有这个部首的字还有：/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4885,7 +4818,7 @@
           "id": "chinese_review_21_d18_s03_q02",
           "type": "chinese",
           "sectionTitle": "三、根据题意，填一填",
-          "prompt": "我发现“蝴、蝶、蜻”等字的部首都是/r,含有这个部首的字 多与 有关，含有这个部首的字还有：",
+          "prompt": "我发现“蝴、蝶、蜻”等字的部首都是/r,含有这个部首的字多与/r有关，含有这个部首的字还有：/r。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4905,7 +4838,7 @@
           "id": "chinese_review_21_d18_s04_q02",
           "type": "chinese",
           "sectionTitle": "四、照样子，填一填",
-          "prompt": "雪白雪白的 金黄金黄的 乌黑乌黑的/r",
+          "prompt": "雪白雪白的/r  金黄金黄的/r  乌黑乌黑的/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4925,7 +4858,7 @@
           "id": "chinese_review_21_d18_s04_q04",
           "type": "chinese",
           "sectionTitle": "四、照样子，填一填",
-          "prompt": "又/r又_ 又 又 又_又",
+          "prompt": "又/r又/r　　又/r又/r　　又/r又/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -4945,7 +4878,7 @@
           "id": "chinese_review_21_d18_s04_q06",
           "type": "chinese",
           "sectionTitle": "四、照样子，填一填",
-          "prompt": "平安 许多 红火",
+          "prompt": "平安/r  许多/r  红火/r",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5092,90 +5025,26 @@
           "id": "chinese_review_21_d19_s02_q01",
           "type": "chinese",
           "sectionTitle": "二、反义词",
-          "prompt": "（/r）一后",
+          "prompt": "/r——后　　/r——出　　哭——/r　　低——/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
             null
           ]
         },
-        {
-          "id": "chinese_review_21_d19_s02_q02",
-          "type": "chinese",
-          "sectionTitle": "二、反义词",
-          "prompt": "（/r）一出",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d19_s02_q03",
-          "type": "chinese",
-          "sectionTitle": "二、反义词",
-          "prompt": "哭————（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d19_s02_q04",
-          "type": "chinese",
-          "sectionTitle": "二、反义词",
-          "prompt": "低————（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
+        
         {
           "id": "chinese_review_21_d19_s03_q01",
           "type": "chinese",
           "sectionTitle": "三、近义词",
-          "prompt": "（/r）一入",
+          "prompt": "/r——入　　/r——降　　洁白——/r　　想念——/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
             null
           ]
         },
-        {
-          "id": "chinese_review_21_d19_s03_q02",
-          "type": "chinese",
-          "sectionTitle": "三、近义词",
-          "prompt": "（/r）————降",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d19_s03_q03",
-          "type": "chinese",
-          "sectionTitle": "三、近义词",
-          "prompt": "洁白一（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d19_s03_q04",
-          "type": "chinese",
-          "sectionTitle": "三、近义词",
-          "prompt": "想念————（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
+        
         {
           "id": "chinese_review_21_d19_options_example",
           "type": "example",
@@ -5189,7 +5058,7 @@
           "id": "chinese_review_21_d19_options_merged",
           "type": "chinese",
           "sectionTitle": "四、量词搭配",
-          "prompt": "一（/r）大眼睛  一（/r）玉米地  一（/r）桃树  一（/r）瓜地  一（/r）西瓜  一（/r）小兔子",
+          "prompt": "一/r大眼睛　　一/r玉米地　　一/r桃树\n一/r瓜地　    一/r西瓜　　一/r小兔子",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -5204,8 +5073,8 @@
         {
           "id": "chinese_review_21_d19_s05_q01",
           "type": "chinese",
-          "sectionTitle": "五、读一读，用“√”选择正确的生字",
-          "prompt": "妈妈夸我最(进近)有了很大的(进近)步。",
+          "sectionTitle": "五、读一读，选择正确的生字",
+          "prompt": "妈妈夸我最(进 近)/r有了很大的(进 近)/r步。",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5213,8 +5082,8 @@
         {
           "id": "chinese_review_21_d19_s05_q02",
           "type": "chinese",
-          "sectionTitle": "五、读一读，用“√”选择正确的生字",
-          "prompt": "我(在再)游乐场(在再)一次见到了同学林立。",
+          "sectionTitle": "五、读一读，选择正确的生字",
+          "prompt": "我(在 再)/r游乐场(在 再)/r一次见到了同学林立。",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5222,8 +5091,8 @@
         {
           "id": "chinese_review_21_d19_s05_q03",
           "type": "chinese",
-          "sectionTitle": "五、读一读，用“√”选择正确的生字",
-          "prompt": "(清青)的山，(清青)的水，家乡的景色真迷人!",
+          "sectionTitle": "五、读一读，选择正确的生字",
+          "prompt": "(清 青)/r的山，(清 青)/r的水，家乡的景色真迷人!",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5231,8 +5100,8 @@
         {
           "id": "chinese_review_21_d19_s05_q04",
           "type": "chinese",
-          "sectionTitle": "五、读一读，用“√”选择正确的生字",
-          "prompt": "过年了，妈妈给奶奶(跑泡)茶，爸爸放鞭(饱 炮)。",
+          "sectionTitle": "五、读一读，选择正确的生字",
+          "prompt": "过年了，妈妈给奶奶(跑 泡)/r茶，爸爸放鞭(饱 炮)/r。",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5376,10 +5245,21 @@
           ]
         },
         {
+          "id": "chinese_review_21_d20_example_q01",
+          "type": "chinese",
+          "sectionTitle": "二、选字填空",
+          "prompt": "运 远    地 池    饱 抱    干 千    干 千",
+          "answerSource": "display_only",
+          "images": [],
+          "answers": [
+            null
+          ]
+        },
+        {
           "id": "chinese_review_21_d20_s02_q01",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 （/r）近",
+          "prompt": "/r近    /r送",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -5390,7 +5270,7 @@
           "id": "chinese_review_21_d20_s02_q02",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 （/r）塘",
+          "prompt": "/r塘    土/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -5401,7 +5281,7 @@
           "id": "chinese_review_21_d20_s02_q03",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 怀（/r）",
+          "prompt": "怀/r    吃/r",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -5412,82 +5292,30 @@
           "id": "chinese_review_21_d20_s02_q04",
           "type": "chinese",
           "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 （/r）万",
+          "prompt": "/r万    /r活",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
             null
           ]
         },
-        {
-          "id": "chinese_review_21_d20_s02_q05",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 （/r）送",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d20_s02_q06",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 土（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d20_s02_q07",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 吃（/r）",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d20_s02_q08",
-          "type": "chinese",
-          "sectionTitle": "二、选字填空",
-          "prompt": "运远 地池 饱抱 干千 （/r）活",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
+        
         {
           "id": "chinese_review_21_d20_s03_q01",
           "type": "chinese",
           "sectionTitle": "三、查字典，填一填",
-          "prompt": "要查的字 大写字母 音节 组词",
+          "prompt": "房  大写字母/r    音节/r    组词/r",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
           "answers": []
         },
-        {
-          "id": "chinese_review_21_d20_s03_q02",
-          "type": "chinese",
-          "sectionTitle": "三、查字典，填一填",
-          "prompt": "房",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": []
-        },
+        
         {
           "id": "chinese_review_21_d20_s03_q03",
           "type": "chinese",
           "sectionTitle": "三、查字典，填一填",
-          "prompt": "怀",
+          "prompt": "怀  大写字母/r    音节/r    组词/r",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
@@ -5497,7 +5325,7 @@
           "id": "chinese_review_21_d20_s03_q04",
           "type": "chinese",
           "sectionTitle": "三、查字典，填一填",
-          "prompt": "舌",
+          "prompt": "舌  大写字母/r    音节/r    组词/r",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
@@ -5506,7 +5334,7 @@
         {
           "id": "chinese_review_21_d20_s04_q01",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "捉住(zhuō zuō)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5515,7 +5343,7 @@
         {
           "id": "chinese_review_21_d20_s04_q02",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "喝茶(chá cá)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5524,7 +5352,7 @@
         {
           "id": "chinese_review_21_d20_s04_q03",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "专心(zuān zhuān)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5533,7 +5361,7 @@
         {
           "id": "chinese_review_21_d20_s04_q04",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "相反(xiàng xiāng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5542,7 +5370,7 @@
         {
           "id": "chinese_review_21_d20_s04_q05",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "做操(cāo chāo)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5551,7 +5379,7 @@
         {
           "id": "chinese_review_21_d20_s04_q06",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "初级(chū cū)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5561,66 +5389,23 @@
           "id": "chinese_review_21_d20_s05_q01",
           "type": "chinese",
           "sectionTitle": "五、词语搭配",
-          "prompt": "(白白)的糯米",
+          "prompt": "(白白)的糯米    （/r）的枣    （/r）的箬竹叶",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
           "answers": []
         },
-        {
-          "id": "chinese_review_21_d20_s05_q02",
-          "type": "chinese",
-          "sectionTitle": "五、词语搭配",
-          "prompt": "（/r）的枣",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d20_s05_q03",
-          "type": "chinese",
-          "sectionTitle": "五、词语搭配",
-          "prompt": "（/r）的箬竹叶",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
+        
         {
           "id": "chinese_review_21_d20_s05_q04",
           "type": "chinese",
           "sectionTitle": "五、词语搭配",
-          "prompt": "(美滋滋)地吃",
+          "prompt": "(美滋滋)地吃    （/r）地跑    （/r）地散步",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
           "answers": []
-        },
-        {
-          "id": "chinese_review_21_d20_s05_q05",
-          "type": "chinese",
-          "sectionTitle": "五、词语搭配",
-          "prompt": "（/r）地跑",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        },
-        {
-          "id": "chinese_review_21_d20_s05_q06",
-          "type": "chinese",
-          "sectionTitle": "五、词语搭配",
-          "prompt": "（/r）地散步",
-          "answerSource": "manual_required",
-          "images": [],
-          "answers": [
-            null
-          ]
-        }
+        }        
       ]
     },
     {
@@ -5762,8 +5547,8 @@
         {
           "id": "chinese_review_21_d21_s02_q01",
           "type": "chinese",
-          "sectionTitle": "二、用“___”画出每组词语中不是轻声的一项",
-          "prompt": "胆子 眼睛 洒水 喜欢",
+          "sectionTitle": "二、选出每组词语中不是轻声的一项",
+          "prompt": "胆子     眼睛     洒水    喜欢",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5771,8 +5556,8 @@
         {
           "id": "chinese_review_21_d21_s02_q02",
           "type": "chinese",
-          "sectionTitle": "二、用“___”画出每组词语中不是轻声的一项",
-          "prompt": "爸爸 故事 粽子 画画",
+          "sectionTitle": "二、选出每组词语中不是轻声的一项",
+          "prompt": "爸爸    故事    粽子    画画",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
@@ -5780,52 +5565,47 @@
         {
           "id": "chinese_review_21_d21_s02_q03",
           "type": "chinese",
-          "sectionTitle": "二、用“___”画出每组词语中不是轻声的一项",
-          "prompt": "样子 妈妈 哥哥 房间",
+          "sectionTitle": "二、选出每组词语中不是轻声的一项",
+          "prompt": "样子     妈妈    哥哥    房间",
           "answer": null,
           "answerSource": "manual_required",
           "images": []
         },
         {
-          "id": "chinese_review_21_d21_s03_q01",
+          "id": "match_001",
           "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "一台 书 燕子 跑 包 足球",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+          "sectionTitle": "三、读一读，连一连。",
+          
+          "answerSource": "auto",
+          "left": ["一台", "一册", "一部", "一支"],
+          "right": ["书", "手机", "电视", "铅笔"],
+          "answers": ["0", "1", "2", "3", "4"]
         },
         {
-          "id": "chinese_review_21_d21_s03_q02",
+          "id": "match_002",
           "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "一册 手机 壁虎 飞 踢 迷藏",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+          "sectionTitle": "三、读一读，连一连。",
+          
+          "answerSource": "auto",
+          "left": ["燕子", "壁虎", "小鹿", "鱼儿"],
+          "right": ["跑", "飞", "游", "爬"],
+          "answers": ["0", "1", "2", "3", "4"]
         },
         {
-          "id": "chinese_review_21_d21_s03_q03",
+          "id": "match_003",
           "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "一部 电视 小鹿 游 捉 鞭炮",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
+          "sectionTitle": "三、读一读，连一连。",
+          
+          "answerSource": "auto",
+          "left": ["包", "踢", "捉", "放"],
+          "right": ["足球", "迷藏", "鞭炮", "粽子"],
+          "answers": ["0", "1", "2", "3", "4"]
         },
-        {
-          "id": "chinese_review_21_d21_s03_q04",
-          "type": "chinese",
-          "sectionTitle": "三、读一读，连一连",
-          "prompt": "一支 铅笔 鱼儿 爬 放 粽子",
-          "answer": null,
-          "answerSource": "manual_required",
-          "images": []
-        },
+        
         {
           "id": "chinese_review_21_d21_s04_q01",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "一直(zhí zí)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5834,7 +5614,7 @@
         {
           "id": "chinese_review_21_d21_s04_q02",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "邻居(lín líng)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5843,7 +5623,7 @@
         {
           "id": "chinese_review_21_d21_s04_q03",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "尺寸(cùn chùn)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5852,7 +5632,7 @@
         {
           "id": "chinese_review_21_d21_s04_q04",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "听见(tīng tīn)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5861,7 +5641,7 @@
         {
           "id": "chinese_review_21_d21_s04_q05",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "静止(zhǐ zǐ)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5870,7 +5650,7 @@
         {
           "id": "chinese_review_21_d21_s04_q06",
           "type": "chinese",
-          "sectionTitle": "四、请选择选择正确读音",
+          "sectionTitle": "四、请选择正确读音",
           "prompt": "喊叫(hǎn hàn)",
           "answer": null,
           "answerSource": "manual_required",
@@ -5880,7 +5660,7 @@
           "id": "chinese_review_21_d21_s05_q01",
           "type": "chinese",
           "sectionTitle": "五、连词成句",
-          "prompt": "跳绳 ②和③我 ④一起⑤大家",
+          "prompt": "①跳绳 ②和 ③我 ④一起 ⑤大家",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],
@@ -5890,7 +5670,7 @@
           "id": "chinese_review_21_d21_s05_q02",
           "type": "chinese",
           "sectionTitle": "五、连词成句",
-          "prompt": "森林广场②参加③动物们④大会⑤来到",
+          "prompt": "①森林广场 ②参加 ③动物们 ④大会 ⑤来到",
           "answer": null,
           "answerSource": "manual_required",
           "images": [],

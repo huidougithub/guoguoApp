@@ -8,7 +8,7 @@
   "days": [
     {
       "day": 1,
-      "title": "第一单元 基础知识默写",
+      "title": "第一单元",
       "questions": [
         {
           "id": "basic_dictation_u1_pinyin_01",
@@ -334,21 +334,123 @@
           ]
         },
         {
-          "id": "basic_dictation_u1_choice_manual_03",
-          "type": "chinese",
-          "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "prompt": "秋霜（shuāng / xiāng）、落叶（luò / là）、游鱼（yóu / yiú）、姓氏（shì / si）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u1_choice_01",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "秋霜",
+          "options": [
+            "shuāng",
+            "xiāng"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         },
         {
-          "id": "basic_dictation_u1_choice_manual_04",
-          "type": "chinese",
-          "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "prompt": "张开（zhāng / zhǎng）、水池（cí / chí）、保护（dāi / bǎo）、上官（guān / gōng）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u1_choice_02",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "落叶",
+          "options": [
+            "luò",
+            "là"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u1_choice_03",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "游鱼",
+          "options": [
+            "yóu",
+            "yiú"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u1_choice_04",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "姓氏",
+          "options": [
+            "shì",
+            "si"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u1_choice_05",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "张开",
+          "options": [
+            "zhāng",
+            "zhǎng"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u1_choice_06",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "水池",
+          "options": [
+            "cí",
+            "chí"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u1_choice_07",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "保护",
+          "options": [
+            "dāi",
+            "bǎo"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u1_choice_08",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "上官",
+          "options": [
+            "guān",
+            "gōng"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         },
         {
@@ -403,7 +505,7 @@
     },
     {
       "day": 2,
-      "title": "第二单元 基础知识默写",
+      "title": "第二单元",
       "questions": [
         {
           "id": "basic_dictation_u2_pinyin_01",
@@ -814,7 +916,7 @@
     },
     {
       "day": 3,
-      "title": "第三单元 基础知识默写",
+      "title": "第三单元",
       "questions": [
         {
           "id": "basic_dictation_u3_pinyin_01",
@@ -1161,21 +1263,123 @@
           ]
         },
         {
-          "id": "basic_dictation_u3_choice_manual_04",
-          "type": "chinese",
-          "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "prompt": "不行（xing / xín）、捉虫（zuo / zhuo）、急忙（jí / jī）、招呼（zhāo / zāo）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u3_choice_01",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "不行",
+          "options": [
+            "xing",
+            "xín"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         },
         {
-          "id": "basic_dictation_u3_choice_manual_05",
-          "type": "chinese",
-          "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "prompt": "安静（jìn / jìng）、运动（yun / yùn）、连忙（lián / nián）、篮子（lán / nán）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u3_choice_02",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "捉虫",
+          "options": [
+            "zuo",
+            "zhuo"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u3_choice_03",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "急忙",
+          "options": [
+            "jí",
+            "jī"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u3_choice_04",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "招呼",
+          "options": [
+            "zhāo",
+            "zāo"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u3_choice_05",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "安静",
+          "options": [
+            "jìn",
+            "jìng"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u3_choice_06",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "运动",
+          "options": [
+            "yun",
+            "yùn"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u3_choice_07",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "连忙",
+          "options": [
+            "lián",
+            "nián"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u3_choice_08",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "篮子",
+          "options": [
+            "lán",
+            "nán"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         },
         {
@@ -1215,7 +1419,7 @@
     },
     {
       "day": 4,
-      "title": "第四单元 基础知识默写",
+      "title": "第四单元",
       "questions": [
         {
           "id": "basic_dictation_u4_pinyin_01",
@@ -1634,7 +1838,7 @@
     },
     {
       "day": 5,
-      "title": "第五单元 基础知识默写",
+      "title": "第五单元",
       "questions": [
         {
           "id": "basic_dictation_u5_pinyin_01",
@@ -1901,21 +2105,123 @@
           ]
         },
         {
-          "id": "basic_dictation_u5_choice_manual_01",
-          "type": "chinese",
-          "sectionTitle": "读音判断，给下面加点的字划去错误的读音：",
-          "prompt": "锻炼（duàn / dàn）、食粮（sí / shí）、热闹（rè / yè）、鞭炮（qào / pào）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u5_choice_01",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "锻炼",
+          "options": [
+            "duàn",
+            "dàn"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         },
         {
-          "id": "basic_dictation_u5_choice_manual_02",
-          "type": "chinese",
-          "sectionTitle": "读音判断，给下面加点的字划去错误的读音：",
-          "prompt": "朝霞（cháo / zhāo）、蜻蜓（qīng / ping）、玉器（yǜ / yù）、捉迷藏（cáng / zàng）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u5_choice_02",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "食粮",
+          "options": [
+            "sí",
+            "shí"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u5_choice_03",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "热闹",
+          "options": [
+            "rè",
+            "yè"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u5_choice_04",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "鞭炮",
+          "options": [
+            "qào",
+            "pào"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u5_choice_05",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "朝霞",
+          "options": [
+            "cháo",
+            "zhāo"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u5_choice_06",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "蜻蜓",
+          "options": [
+            "qīng",
+            "ping"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u5_choice_07",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "玉器",
+          "options": [
+            "yǜ",
+            "yù"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u5_choice_08",
+          "type": "choice",
+          "sectionTitle": "读音判断，请选出错误的读音：",
+          "prompt": "捉迷藏",
+          "options": [
+            "cáng",
+            "zàng"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         },
         {
@@ -1992,7 +2298,7 @@
     },
     {
       "day": 6,
-      "title": "第六单元 基础知识默写",
+      "title": "第六单元",
       "questions": [
         {
           "id": "basic_dictation_u6_pinyin_01",
@@ -2428,7 +2734,7 @@
     },
     {
       "day": 7,
-      "title": "第七单元 基础知识默写",
+      "title": "第七单元",
       "questions": [
         {
           "id": "basic_dictation_u7_pinyin_01",
@@ -2823,7 +3129,7 @@
           "id": "basic_dictation_u7_text_fill_05",
           "type": "chinese",
           "sectionTitle": "课文填空",
-          "prompt": "读万卷书，/r。",
+          "prompt": "读万卷书，_______。",
           "answerSource": "manual_required",
           "images": [],
           "answers": [
@@ -2831,12 +3137,48 @@
           ]
         },
         {
-          "id": "basic_dictation_u7_choice_manual_06",
-          "type": "chinese",
-          "sectionTitle": "读音选择，用“√”给加点的字画出正确的读音",
-          "prompt": "百（bái / bǎi）、掰（bāi / bēn）、准（zǔn / zhǔn）。",
-          "answer": null,
-          "answerSource": "manual_required",
+          "id": "basic_dictation_u7_choice_01",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "百",
+          "options": [
+            "bái",
+            "bǎi"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u7_choice_02",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "掰",
+          "options": [
+            "bāi",
+            "bēn"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "basic_dictation_u7_choice_03",
+          "type": "choice",
+          "sectionTitle": "读音选择，请选择正确的读音",
+          "prompt": "准",
+          "options": [
+            "zǔn",
+            "zhǔn"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
           "images": []
         }
       ]

@@ -64,9 +64,11 @@ flutter:
     - assets/pets/
     - assets/pets/cosmetics/
     - assets/bosses/
+    - assets/leisure/
+    - assets/leisure/spot/
+    - assets/leisure/spot/ai/
     - assets/money/
     - assets/worksheets/index.json
-    - assets/worksheets/test_match_pairing.json
     - assets/worksheets/generated/
 
   # An image asset can refer to one or more resolution-specific "variants", see

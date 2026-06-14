@@ -9,6 +9,7 @@ import '../services/app_store.dart';
 import '../services/audio_service.dart';
 import '../widgets/pet_avatar.dart';
 import '../widgets/ui_components.dart';
+import 'leisure_playground_screen.dart';
 import 'map_screen.dart';
 import 'self_challenge_screen.dart';
 import 'shop_screen.dart';
@@ -57,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final pet = petById(progress.selectedPet);
     final grade = normalizeGradeCode(progress.selectedGrade);
     return ExplorerScaffold(
-      title: '菲菲加油！',
+      title: '果果加油！',
       actions: [
         IconButton(
           tooltip: '设置',
@@ -249,6 +250,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     subtitle: '4×4 到 9×9 逻辑案件',
                     color: const Color(0xFFD9C7FF),
                     onTap: () => _openIsland(Island.sudoku),
+                  ),
+                  _HomeAction(
+                    icon: Icons.extension,
+                    title: '休闲乐园',
+                    subtitle: '找不同、翻牌、五子棋',
+                    color: const Color(0xFFFFC6D9),
+                    onTap: () => _openSceneScreen(
+                      AppMusicScene.home,
+                      const LeisurePlaygroundScreen(),
+                    ),
                   ),
                   _HomeAction(
                     icon: Icons.emoji_events,

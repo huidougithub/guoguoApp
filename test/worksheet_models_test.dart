@@ -35,13 +35,13 @@ void main() {
 
     expect(worksheet.days.length, 20);
     expect(worksheet.questionCount, 374);
-    expect(worksheet.autoQuestionCount, 372);
+    expect(worksheet.autoQuestionCount, 0);
 
     final firstDay = worksheet.days.first;
     expect(firstDay.questions.length, 19);
-    expect(firstDay.autoQuestionCount, 19);
+    expect(firstDay.autoQuestionCount, 0);
     expect(firstDay.questions.first.prompt, '14-7=');
-    expect(firstDay.questions.first.answer, '7');
+    expect(firstDay.questions.first.answers, isEmpty);
 
     final progress = WorksheetProgress(
       answers: {
@@ -95,9 +95,9 @@ void main() {
             'questions': [
               {
                 'id': 'day01_q01',
-                'type': 'calculation',
+                'type': 'math',
                 'prompt': '1+1=',
-                'answer': '2',
+                'answers': ['2'],
                 'answerSource': 'auto',
               },
             ],
@@ -114,7 +114,7 @@ void main() {
     final worksheet = await service.loadWorksheet(item.asset);
     expect(worksheet.title, '本地导入练习');
     expect(worksheet.questionCount, 1);
-    expect(worksheet.days.first.questions.first.answer, '2');
+    expect(worksheet.days.first.questions.first.answers, ['2']);
   });
 
   test('每日练习结算接入奖励和错题', () async {

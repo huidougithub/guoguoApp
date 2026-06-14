@@ -117,7 +117,11 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
                             onBackspace: _backspaceSelectedAnswer,
                             onClearSelected: _clearSelectedAnswer,
                             onOpenHandwriting: (id, {blankIndex}) =>
-                                _openHandwritingPractice(day, questionId: id, blankIndex: blankIndex),
+                                _openHandwritingPractice(
+                                  day,
+                                  questionId: id,
+                                  blankIndex: blankIndex,
+                                ),
                             onPreviousQuestion: () =>
                                 _selectPreviousQuestion(day),
                             onNextQuestion: () => _selectNextQuestion(day),
@@ -161,7 +165,15 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
   Future<void> _clearSelectedAnswer() async {
     final id = _selectedQuestionId;
     if (id == null) return;
-    await _setAnswer(id, '');
+    // 清除所有与当前题目相关的答案 key（包括 blank 答案）
+    final keysToRemove = _progress.answers.keys
+        .where((key) => key == id || key.startsWith('${id}_'))
+        .toList();
+    for (final key in keysToRemove) {
+      _progress.answers.remove(key);
+    }
+    await _service.saveProgress(_worksheet.id, _progress);
+    setState(() {});
   }
 
   Future<void> _markSelectedQuestion(WorksheetDay day, bool isCorrect) async {
@@ -200,9 +212,7 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     if (question.isDisplayOnly) return;
     final answerKey = blankIndex != null
         ? question.blankAnswerKey(blankIndex)
-        : (question.hasBlankMarkers
-            ? question.blankAnswerKey(0)
-            : id);
+        : (question.hasBlankMarkers ? question.blankAnswerKey(0) : id);
     final result = await showDialog<String>(
       context: context,
       barrierDismissible: false,
@@ -218,9 +228,8 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
       ),
     );
     if (result == null) return;
-    if (result.isNotEmpty) {
-      await _setAnswer(answerKey, result);
-    }
+    // 非空字符串表示内部未保存的遗留情况（兼容），
+    // 空字符串 '' 表示已在对话框内部保存完成，无需重复保存。
   }
 
   void _selectPreviousQuestion(WorksheetDay day) {
@@ -302,7 +311,15 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
 
   Future<void> _clearDay(WorksheetDay day) async {
     for (final question in day.questions) {
-      _progress.answers.remove(question.id);
+      // 清除所有与这道题相关的答案 key（包括 blank 答案）
+      final keysToRemove = _progress.answers.keys
+          .where(
+            (key) => key == question.id || key.startsWith('${question.id}_'),
+          )
+          .toList();
+      for (final key in keysToRemove) {
+        _progress.answers.remove(key);
+      }
       _progress.checkedQuestionIds.remove(question.id);
       _progress.correctQuestionIds.remove(question.id);
     }
@@ -328,7 +345,7 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     for (final question in day.questions) {
       if (!question.canAutoCheck) continue;
       _progress.checkedQuestionIds.add(question.id);
-      
+
       bool isCorrect;
       if (question.isMatch) {
         // 配对连线题
@@ -352,13 +369,23 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
             isCorrect = false;
           }
         }
+      } else if (question.isChoice) {
+        // 选择题
+        final userAnswer = _progress.answers[question.id] ?? '';
+        if (userAnswer.isEmpty || question.answers.isEmpty) {
+          isCorrect = false;
+        } else {
+          isCorrect = userAnswer == question.answers.first;
+        }
       } else if (question.hasBlankMarkers) {
         // 多 blank 题目：逐个比对
         var allCorrect = true;
         for (var i = 0; i < question.blankCount; i++) {
-          final input = (_progress.answers[question.blankAnswerKey(i)] ?? '').trim();
+          final input = (_progress.answers[question.blankAnswerKey(i)] ?? '')
+              .trim();
           final expected = question.correctAnswerForBlank(i);
-          if (expected == null || _normalizeAnswer(input) != _normalizeAnswer(expected)) {
+          if (expected == null ||
+              _normalizeAnswer(input) != _normalizeAnswer(expected)) {
             allCorrect = false;
           }
         }
@@ -367,10 +394,12 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
         // 单空题目
         final input = (_progress.answers[question.id] ?? '').trim();
         _progress.answers[question.id] = input;
-        final expected = question.answers.isNotEmpty ? question.answers.first : question.answerSource;
+        final expected = question.answers.isNotEmpty
+            ? question.answers.first
+            : question.answerSource;
         isCorrect = _normalizeAnswer(input) == _normalizeAnswer(expected);
       }
-      
+
       if (isCorrect) {
         correct += 1;
         _progress.correctQuestionIds.add(question.id);
@@ -1047,8 +1076,10 @@ class _QuestionRow extends StatelessWidget {
       null when selected => const Color(0xFFFFF4CA),
       _ => const Color(0xFFF8EEDB),
     };
-    // 判断是否需要右侧大框：无填空 或 单blank，且不是match题型
-    final needsRightSlot = !question.isMatch &&
+    // 判断是否需要右侧大框：无填空、非match、非choice，且单blank
+    final needsRightSlot =
+        !question.isMatch &&
+        !question.isChoice &&
         (!question.hasBlankMarkers ||
             (question.hasBlankMarkers && question.blankCount == 1));
 
@@ -1106,9 +1137,7 @@ class _QuestionRow extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 18),
-              Expanded(
-                child: _buildQuestionContent(context),
-              ),
+              Expanded(child: _buildQuestionContent(context)),
               if (needsRightSlot) ...[
                 const SizedBox(width: 14),
                 _AnswerSlot(
@@ -1140,17 +1169,29 @@ class _QuestionRow extends StatelessWidget {
       );
     }
 
-    // 1. /r 标记多空 → 内联框模式
+    // 1. 选择题
+    if (question.isChoice) {
+      return _ChoiceQuestionWidget(
+        question: question,
+        answers: answers,
+        onChanged: (value) {
+          answers[question.id] = value;
+          onTap();
+        },
+      );
+    }
+
+    // 2. /r 标记多空 → 内联框模式
     if (question.hasBlankMarkers && question.blankCount > 1) {
       return _buildBlankMarkersInline(context);
     }
 
-    // 2. /r 标记单空 → 普通文本（右侧大框在 Row 中）
+    // 3. /r 标记单空 → 普通文本（右侧大框在 Row 中）
     if (question.hasBlankMarkers && question.blankCount == 1) {
       return _buildPlainText(context, question.prompt.replaceAll('/r', ''));
     }
 
-    // 3. 无填空 → 普通文本（右侧大框在 Row 中）
+    // 4. 无填空 → 普通文本（右侧大框在 Row 中）
     return _buildPlainText(context, question.prompt);
   }
 
@@ -1185,41 +1226,44 @@ class _QuestionRow extends StatelessWidget {
   Widget _buildBlankMarkersInline(BuildContext context) {
     final spans = <InlineSpan>[];
     final parts = question.prompt.split('/r');
-    
+
     for (var i = 0; i < parts.length; i++) {
       final text = parts[i];
       if (text.isNotEmpty) {
-        spans.add(TextSpan(
-          text: text,
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            fontSize: manualMode ? 24 : 18,
-            height: 1.6,
-            fontWeight: FontWeight.w800,
-            color: const Color(0xFF27190F),
+        spans.add(
+          TextSpan(
+            text: text,
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontSize: manualMode ? 24 : 18,
+              height: 1.6,
+              fontWeight: FontWeight.w800,
+              color: const Color(0xFF27190F),
+            ),
           ),
-        ));
+        );
       }
       if (i < parts.length - 1) {
         final currentBlank = i;
         final answerKey = question.blankAnswerKey(currentBlank);
         final ink = answers[answerKey] ?? '';
-        spans.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: _InlineHandwritingBox(
-            ink: ink,
-            selected: selected,
-            onTap: () => onOpenHandwriting(question.id, blankIndex: currentBlank),
+        spans.add(
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: _InlineHandwritingBox(
+              ink: ink,
+              selected: selected,
+              onTap: () =>
+                  onOpenHandwriting(question.id, blankIndex: currentBlank),
+            ),
           ),
-        ));
+        );
       }
     }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RichText(
-          text: TextSpan(children: spans),
-        ),
+        RichText(text: TextSpan(children: spans)),
         if (question.images.isNotEmpty) ...[
           const SizedBox(height: 8),
           Wrap(
@@ -1258,9 +1302,7 @@ class _MatchQuestionWidgetState extends State<_MatchQuestionWidget> {
     if (raw.isEmpty) return {};
     try {
       final map = jsonDecode(raw) as Map<String, dynamic>;
-      return map.map(
-        (k, v) => MapEntry(int.parse(k), int.parse(v.toString())),
-      );
+      return map.map((k, v) => MapEntry(int.parse(k), int.parse(v.toString())));
     } catch (_) {
       return {};
     }
@@ -1341,7 +1383,10 @@ class _MatchQuestionWidgetState extends State<_MatchQuestionWidget> {
               SizedBox(
                 width: 120,
                 child: CustomPaint(
-                  size: Size(120, math.max(leftItems.length, rightItems.length) * 56.0 + 40),
+                  size: Size(
+                    120,
+                    math.max(leftItems.length, rightItems.length) * 56.0 + 40,
+                  ),
                   painter: _MatchLinePainter(
                     leftCount: leftItems.length,
                     rightCount: rightItems.length,
@@ -1405,15 +1450,15 @@ class _MatchItemCard extends StatelessWidget {
               color: isSelected
                   ? const Color(0xFFFFF4CA)
                   : isPaired
-                      ? const Color(0xFFF1FAE8)
-                      : const Color(0xFFFFFEFA),
+                  ? const Color(0xFFF1FAE8)
+                  : const Color(0xFFFFFEFA),
               borderRadius: BorderRadius.circular(12),
               border: Border.all(
                 color: isSelected
                     ? const Color(0xFF2E91FF)
                     : isPaired
-                        ? const Color(0xFF4CAF50)
-                        : const Color(0xFFE2D6C7),
+                    ? const Color(0xFF4CAF50)
+                    : const Color(0xFFE2D6C7),
                 width: isSelected ? 2.2 : 1.2,
               ),
             ),
@@ -1471,7 +1516,14 @@ class _MatchLinePainter extends CustomPainter {
 
       final path = Path()
         ..moveTo(start.dx, start.dy)
-        ..cubicTo(control1.dx, control1.dy, control2.dx, control2.dy, end.dx, end.dy);
+        ..cubicTo(
+          control1.dx,
+          control1.dy,
+          control2.dx,
+          control2.dy,
+          end.dx,
+          end.dy,
+        );
       canvas.drawPath(path, paint);
 
       // 端点圆点
@@ -1495,7 +1547,14 @@ class _MatchLinePainter extends CustomPainter {
 
       final path = Path()
         ..moveTo(start.dx, start.dy)
-        ..cubicTo(control1.dx, control1.dy, control2.dx, control2.dy, end.dx, end.dy);
+        ..cubicTo(
+          control1.dx,
+          control1.dy,
+          control2.dx,
+          control2.dy,
+          end.dx,
+          end.dy,
+        );
 
       // 画虚线
       final dashPath = _dashPath(path, 8, 6);
@@ -1527,7 +1586,119 @@ class _MatchLinePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _MatchLinePainter oldDelegate) {
-    return oldDelegate.pairs != pairs || oldDelegate.selectedLeft != selectedLeft;
+    return oldDelegate.pairs != pairs ||
+        oldDelegate.selectedLeft != selectedLeft;
+  }
+}
+
+class _ChoiceQuestionWidget extends StatefulWidget {
+  const _ChoiceQuestionWidget({
+    required this.question,
+    required this.answers,
+    required this.onChanged,
+  });
+
+  final WorksheetQuestion question;
+  final Map<String, String> answers;
+  final ValueChanged<String> onChanged;
+
+  @override
+  State<_ChoiceQuestionWidget> createState() => _ChoiceQuestionWidgetState();
+}
+
+class _ChoiceQuestionWidgetState extends State<_ChoiceQuestionWidget> {
+  String? get _selectedIndex => widget.answers[widget.question.id];
+
+  void _onOptionTap(int index) {
+    widget.onChanged(index.toString());
+    setState(() {});
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final options = widget.question.options;
+    final selected = _selectedIndex;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (widget.question.prompt.isNotEmpty)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 12),
+            child: Text(
+              widget.question.prompt,
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                fontSize: 20,
+                fontWeight: FontWeight.w800,
+                color: const Color(0xFF27190F),
+              ),
+            ),
+          ),
+        Wrap(
+          spacing: 24,
+          runSpacing: 20,
+          children: [
+            for (var i = 0; i < options.length; i++)
+              _ChoiceOptionCard(
+                text: options[i],
+                index: i,
+                isSelected: selected == i.toString(),
+                onTap: () => _onOptionTap(i),
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _ChoiceOptionCard extends StatelessWidget {
+  const _ChoiceOptionCard({
+    required this.text,
+    required this.index,
+    required this.isSelected,
+    required this.onTap,
+  });
+
+  final String text;
+  final int index;
+  final bool isSelected;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+          decoration: BoxDecoration(
+            color: isSelected
+                ? const Color(0xFFFFF4CA)
+                : const Color(0xFFFFFEFA),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: isSelected
+                  ? const Color(0xFF2E91FF)
+                  : const Color(0xFFE2D6C7),
+              width: isSelected ? 2.2 : 1.2,
+            ),
+          ),
+          child: Text(
+            text,
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontSize: 18,
+              fontWeight: FontWeight.w800,
+              color: const Color(0xFF27190F),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -1563,7 +1734,9 @@ class _InlineHandwritingBox extends StatelessWidget {
               color: const Color(0xFFFFFEFA),
               borderRadius: BorderRadius.circular(8),
               border: Border.all(
-                color: selected ? const Color(0xFF2E91FF) : const Color(0xFFC9AC8A),
+                color: selected
+                    ? const Color(0xFF2E91FF)
+                    : const Color(0xFFC9AC8A),
                 width: selected ? 1.6 : 1.0,
               ),
             ),
@@ -1960,8 +2133,8 @@ class _HandwritingPracticeDialogState
     return navBlankIndex != null
         ? _question.blankAnswerKey(navBlankIndex)
         : (_question.hasBlankMarkers
-            ? _question.blankAnswerKey(0)
-            : _question.id);
+              ? _question.blankAnswerKey(0)
+              : _question.id);
   }
 
   void _loadInk(String ink) {
@@ -1977,7 +2150,7 @@ class _HandwritingPracticeDialogState
       final renderBox = context.findRenderObject() as RenderBox?;
       if (renderBox == null) return;
 
-      final scrollable = Scrollable.of(context);
+      final scrollable = Scrollable.maybeOf(context);
       if (scrollable == null) return;
 
       final position = scrollable.position;
@@ -1986,11 +2159,11 @@ class _HandwritingPracticeDialogState
 
       // 获取目标在 scroll view 中的相对偏移
       final targetOffset = renderBox.localToGlobal(Offset.zero).dy;
-      final scrollableOffset =
-          (scrollable.context.findRenderObject() as RenderBox?)
-              ?.localToGlobal(Offset.zero)
-              .dy ??
-          0;
+      final scrollableRenderBox =
+          scrollable.context.findRenderObject() as RenderBox;
+      final scrollableOffset = scrollableRenderBox
+          .localToGlobal(Offset.zero)
+          .dy;
       final relativeTop = targetOffset - scrollableOffset + currentScroll;
       final relativeBottom = relativeTop + renderBox.size.height;
 
@@ -2010,7 +2183,6 @@ class _HandwritingPracticeDialogState
     });
   }
 
-
   List<_BlankLocation> _buildBlankLocations() {
     final locations = <_BlankLocation>[];
     for (final question in widget.day.questions) {
@@ -2022,11 +2194,7 @@ class _HandwritingPracticeDialogState
         } else {
           for (var i = 0; i < blankCount; i++) {
             locations.add(
-              _BlankLocation(
-                question,
-                i,
-                question.blankAnswerKey(i),
-              ),
+              _BlankLocation(question, i, question.blankAnswerKey(i)),
             );
           }
         }
@@ -2069,7 +2237,7 @@ class _HandwritingPracticeDialogState
     return null;
   }
 
-  void _navigateTo(_BlankLocation? location, String direction) {
+  void _navigateTo(_BlankLocation? location, String direction) async {
     if (location == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -2080,7 +2248,7 @@ class _HandwritingPracticeDialogState
       return;
     }
 
-    // 保存当前手写内容
+    // 保存当前手写内容（必须 await，确保在切换前完成）
     final currentKey = _currentAnswerKey();
     if (_strokes.isNotEmpty) {
       final encoded = jsonEncode(
@@ -2097,14 +2265,14 @@ class _HandwritingPracticeDialogState
             )
             .toList(),
       );
-      widget.onSave(currentKey, 'ink:$encoded');
+      await widget.onSave(currentKey, 'ink:$encoded');
     }
 
     // 计算新题目的 answer key 并加载已保存的手写内容
     final newKey = location.question.hasBlankMarkers
         ? (location.question.blankCount <= 1
-            ? location.question.id
-            : location.question.blankAnswerKey(location.blankIndex))
+              ? location.question.id
+              : location.question.blankAnswerKey(location.blankIndex))
         : location.question.id;
 
     setState(() {
@@ -2120,63 +2288,69 @@ class _HandwritingPracticeDialogState
     final prompt = _question.prompt;
     final parts = prompt.split('/r');
     final spans = <InlineSpan>[];
-    
+
     for (var i = 0; i < parts.length; i++) {
       final text = parts[i];
       if (text.isNotEmpty) {
-        spans.add(TextSpan(
-          text: text,
-          style: const TextStyle(
-            fontSize: 24,
-            height: 1.35,
-            fontWeight: FontWeight.w800,
-            color: Color(0xFF2D1B10),
+        spans.add(
+          TextSpan(
+            text: text,
+            style: const TextStyle(
+              fontSize: 24,
+              height: 1.35,
+              fontWeight: FontWeight.w800,
+              color: Color(0xFF2D1B10),
+            ),
           ),
-        ));
+        );
       }
-      
+
       // 当前空 → 红色高亮
       if (i == currentBlankIndex && i < parts.length - 1) {
         // 插入不可见标记，用于 Scrollable.ensureVisible 定位
-        spans.add(WidgetSpan(
-          alignment: PlaceholderAlignment.middle,
-          child: SizedBox(
-            key: _currentBlankKey,
-            width: 0.1,
-            height: 0.1,
-            child: Container(),
+        spans.add(
+          WidgetSpan(
+            alignment: PlaceholderAlignment.middle,
+            child: SizedBox(
+              key: _currentBlankKey,
+              width: 0.1,
+              height: 0.1,
+              child: Container(),
+            ),
           ),
-        ));
-        spans.add(const TextSpan(
-          text: '＿＿',
-          style: TextStyle(
-            fontSize: 24,
-            height: 1.35,
-            fontWeight: FontWeight.w900,
-            color: Colors.red,
-            decoration: TextDecoration.underline,
-            decorationColor: Colors.red,
-            decorationThickness: 2,
+        );
+        spans.add(
+          const TextSpan(
+            text: '＿＿',
+            style: TextStyle(
+              fontSize: 24,
+              height: 1.35,
+              fontWeight: FontWeight.w900,
+              color: Colors.red,
+              decoration: TextDecoration.underline,
+              decorationColor: Colors.red,
+              decorationThickness: 2,
+            ),
           ),
-        ));
+        );
       }
       // 非当前空 → 灰色占位
       else if (i < parts.length - 1) {
-        spans.add(const TextSpan(
-          text: '＿＿',
-          style: TextStyle(
-            fontSize: 24,
-            height: 1.35,
-            fontWeight: FontWeight.w400,
-            color: Color(0xFFCCCCCC),
+        spans.add(
+          const TextSpan(
+            text: '＿＿',
+            style: TextStyle(
+              fontSize: 24,
+              height: 1.35,
+              fontWeight: FontWeight.w400,
+              color: Color(0xFFCCCCCC),
+            ),
           ),
-        ));
+        );
       }
     }
-    
-    return RichText(
-      text: TextSpan(children: spans),
-    );
+
+    return RichText(text: TextSpan(children: spans));
   }
 
   @override
@@ -2281,9 +2455,9 @@ class _HandwritingPracticeDialogState
                           colors: [Color(0xFFFFA83A), Color(0xFFFF7A18)],
                         ),
                         borderColor: const Color(0xFFB95410),
-                        onTap: () {
+                        onTap: () async {
                           if (_strokes.isEmpty) {
-                            Navigator.of(context).pop('');
+                            if (mounted) Navigator.of(context).pop('');
                             return;
                           }
                           final encoded = jsonEncode(
@@ -2292,15 +2466,23 @@ class _HandwritingPracticeDialogState
                                   (stroke) => stroke
                                       .map(
                                         (point) => [
-                                          double.parse(point.dx.toStringAsFixed(4)),
-                                          double.parse(point.dy.toStringAsFixed(4)),
+                                          double.parse(
+                                            point.dx.toStringAsFixed(4),
+                                          ),
+                                          double.parse(
+                                            point.dy.toStringAsFixed(4),
+                                          ),
                                         ],
                                       )
                                       .toList(),
                                 )
                                 .toList(),
                           );
-                          Navigator.of(context).pop('ink:$encoded');
+                          // 先保存到当前题目的 key，再关闭对话框
+                          final currentKey = _currentAnswerKey();
+                          await widget.onSave(currentKey, 'ink:$encoded');
+                          if (!context.mounted) return;
+                          Navigator.of(context).pop('');
                         },
                         child: const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -2845,12 +3027,14 @@ class _DayButton extends StatelessWidget {
               const SizedBox(width: 12),
               Expanded(
                 child: Text(
-                  'Day ${day.day}',
+                  day.title.isNotEmpty ? day.title : 'Day ${day.day}',
                   style: const TextStyle(
                     color: Color(0xFF3D2313),
                     fontSize: 18,
                     fontWeight: FontWeight.w900,
                   ),
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
                 ),
               ),
               Text(

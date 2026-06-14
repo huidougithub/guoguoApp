@@ -110,6 +110,7 @@ class WorksheetQuestion {
     this.images = const [],
     this.leftItems = const [],
     this.rightItems = const [],
+    this.options = const [],
   });
 
   final String id;
@@ -121,6 +122,7 @@ class WorksheetQuestion {
   final List<String> images;
   final List<String> leftItems;
   final List<String> rightItems;
+  final List<String> options;
 
   bool get isDisplayOnly {
     final normalizedType = type.trim().toLowerCase();
@@ -132,12 +134,13 @@ class WorksheetQuestion {
 
   bool get countsForProgress => !isDisplayOnly;
   bool get canAutoCheck =>
-      countsForProgress && answers.isNotEmpty;
+      countsForProgress && (answers.isNotEmpty || isChoice);
   bool get needsManualAnswer => countsForProgress && !canAutoCheck;
 
   bool get hasBlankMarkers => prompt.contains('/r');
 
   bool get isMatch => leftItems.isNotEmpty && rightItems.isNotEmpty;
+  bool get isChoice => options.isNotEmpty;
 
   int get blankCount => '/r'.allMatches(prompt).length;
 
@@ -150,6 +153,9 @@ class WorksheetQuestion {
 
   bool hasAnyBlankAnswer(Map<String, String> userAnswers) {
     if (isMatch) {
+      return (userAnswers[id] ?? '').trim().isNotEmpty;
+    }
+    if (isChoice) {
       return (userAnswers[id] ?? '').trim().isNotEmpty;
     }
     if (hasBlankMarkers) {
@@ -171,6 +177,9 @@ class WorksheetQuestion {
       } catch (_) {
         return false;
       }
+    }
+    if (isChoice) {
+      return (userAnswers[id] ?? '').trim().isNotEmpty;
     }
     if (hasBlankMarkers) {
       for (var i = 0; i < blankCount; i++) {
@@ -198,6 +207,9 @@ class WorksheetQuestion {
           .map((item) => item?.toString() ?? '')
           .toList(),
       rightItems: (json['right'] as List<dynamic>? ?? const [])
+          .map((item) => item?.toString() ?? '')
+          .toList(),
+      options: (json['options'] as List<dynamic>? ?? const [])
           .map((item) => item?.toString() ?? '')
           .toList(),
     );
