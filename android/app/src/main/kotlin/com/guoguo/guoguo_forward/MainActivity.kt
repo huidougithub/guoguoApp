@@ -158,6 +158,12 @@ class MainActivity : FlutterActivity() {
         soundIds["boss_escape"] = pool.load(this, R.raw.ui_boss_escape, 1)
         soundIds["steal"] = pool.load(this, R.raw.ui_steal, 1)
         soundIds["feed"] = pool.load(this, R.raw.ui_feed, 1)
+        soundIds["spot_correct"] = pool.load(this, R.raw.ui_spot_correct, 1)
+        soundIds["spot_wrong"] = pool.load(this, R.raw.ui_spot_wrong, 1)
+        soundIds["gomoku_stone"] = pool.load(this, R.raw.ui_gomoku_stone, 1)
+        soundIds["gomoku_player_stone"] = pool.load(this, R.raw.ui_gomoku_player_stone, 1)
+        soundIds["gomoku_ai_stone"] = pool.load(this, R.raw.ui_gomoku_ai_stone, 1)
+        soundIds["game_fail"] = pool.load(this, R.raw.ui_game_fail, 1)
     }
 
     private fun playOneShot(key: String, result: MethodChannel.Result) {
@@ -165,6 +171,7 @@ class MainActivity : FlutterActivity() {
             "victory" -> R.raw.ui_victory
             "pet_click" -> R.raw.ui_pet_click
             "sudoku_victory" -> R.raw.ui_sudoku_victory
+            "spot_complete", "game_complete" -> R.raw.ui_game_complete
             else -> 0
         }
         if (resId == 0) {
@@ -221,6 +228,9 @@ class MainActivity : FlutterActivity() {
             "self_challenge", "tz" -> R.raw.bgm_tz
             "shop", "shoping" -> R.raw.bgm_shoping
             "boss", "boss_user" -> R.raw.bgm_boss_user
+            "spot_difference" -> R.raw.bgm_spot_difference
+            "memory_flip" -> R.raw.bgm_memory_flip
+            "gomoku" -> R.raw.bgm_gomoku
             else -> R.raw.bgm_menu
         }
         mediaPlayer = MediaPlayer.create(this, resId)?.apply {

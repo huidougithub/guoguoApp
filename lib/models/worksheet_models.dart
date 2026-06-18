@@ -111,6 +111,7 @@ class WorksheetQuestion {
     this.leftItems = const [],
     this.rightItems = const [],
     this.options = const [],
+    this.multiSelect = false,
   });
 
   final String id;
@@ -123,6 +124,7 @@ class WorksheetQuestion {
   final List<String> leftItems;
   final List<String> rightItems;
   final List<String> options;
+  final bool multiSelect;
 
   bool get isDisplayOnly {
     final normalizedType = type.trim().toLowerCase();
@@ -212,6 +214,7 @@ class WorksheetQuestion {
       options: (json['options'] as List<dynamic>? ?? const [])
           .map((item) => item?.toString() ?? '')
           .toList(),
+      multiSelect: json['multiSelect'] as bool? ?? false,
     );
   }
 }

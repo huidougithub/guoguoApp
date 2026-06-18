@@ -252,16 +252,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () => _openIsland(Island.sudoku),
                   ),
                   _HomeAction(
-                    icon: Icons.extension,
-                    title: '休闲乐园',
-                    subtitle: '找不同、翻牌、五子棋',
-                    color: const Color(0xFFFFC6D9),
-                    onTap: () => _openSceneScreen(
-                      AppMusicScene.home,
-                      const LeisurePlaygroundScreen(),
-                    ),
-                  ),
-                  _HomeAction(
                     icon: Icons.emoji_events,
                     title: '自我挑战',
                     subtitle: '今日挑战、错题秘境、速度之星、连胜纪录',
@@ -279,6 +269,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () => _openSceneScreen(
                       AppMusicScene.home,
                       WorksheetLibraryScreen(store: widget.store),
+                    ),
+                  ),
+                  _HomeAction(
+                    icon: Icons.extension,
+                    title: '休闲乐园',
+                    subtitle: '找不同、翻牌、五子棋',
+                    color: const Color(0xFFFFC6D9),
+                    onTap: () => _openSceneScreen(
+                      AppMusicScene.home,
+                      LeisurePlaygroundScreen(store: widget.store),
                     ),
                   ),
                 ],

@@ -27,7 +27,15 @@ enum AppSound {
   feed('feed'),
   victory('victory'),
   petClick('pet_click'),
-  sudokuVictory('sudoku_victory');
+  sudokuVictory('sudoku_victory'),
+  spotCorrect('spot_correct'),
+  spotWrong('spot_wrong'),
+  spotComplete('spot_complete'),
+  gameComplete('game_complete'),
+  gomokuStone('gomoku_stone'),
+  gomokuPlayerStone('gomoku_player_stone'),
+  gomokuAiStone('gomoku_ai_stone'),
+  gameFail('game_fail');
 
   const AppSound(this.key);
 
@@ -43,7 +51,10 @@ enum AppMusicScene {
   wrongChallenge('ct'),
   selfChallenge('tz'),
   boss('boss_user'),
-  shop('shoping');
+  shop('shoping'),
+  spotDifference('spot_difference'),
+  memoryFlip('memory_flip'),
+  gomoku('gomoku');
 
   const AppMusicScene(this.key);
 

@@ -1,0 +1,1168 @@
+{
+  "id": "yuan_di_zhuan_xiang_1_8",
+  "title": "26春一年级下册语文园地专项练习",
+  "subject": "chinese",
+  "grade": "一年级下册",
+  "description": "8单元语文园地专项练习，涵盖拼音、汉字、古诗、阅读等",
+  "days": [
+    {
+      "day": 1,
+      "title": "第一单元",
+      "questions": [
+        
+        {
+          "id": "yuan_di_1_1_１",
+          "type": "chinese",
+          "sectionTitle": "一、在欢乐中与拼音字母、汉字交朋友",
+          "prompt": "按《汉语拼音字母表》的顺序，把小写字母穿成一串\n小写：n/r/r/rr s/r/r/r/r/r",
+          "answers": [
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_1_3",
+          "type": "chinese",
+          "sectionTitle": "一、在欢乐中与拼音字母、汉字交朋友",
+          "prompt": "按《汉语拼音字母表》的顺序，把大写字母穿成一串\n大写：A/rC/r/r/r/rH/r/r/r",
+          "answers": [
+            "D",
+            "E",
+            "F",
+            "G",
+            "I",
+            "J",
+            "K"
+          ],
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_1_2_2",
+          "type": "chinese",
+          "sectionTitle": "一、在欢乐中与拼音字母、汉字交朋友",
+          "prompt": "①感　②霜　③唱　④边　⑤降　⑥凉　⑦团　⑧减\n按韵母给汉字分类，韵母是“an”的字有：/r/r/r\n按韵母给汉字分类，韵母是“ang”的字有：/r/r/r",          
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_1_3_1",
+          "type": "choice",
+          "sectionTitle": "二、拼一拼，写一写，选择正确的读音",
+          "prompt": "列算(suàn shuàn)式",
+          "options": [
+            "suàn",
+            "shuàn"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_3_2",
+          "type": "choice",
+          "sectionTitle": "二、拼一拼，写一写，选择正确的读音",
+          "prompt": "唱(càng chàng)儿歌",
+          "options": [
+            "càng",
+            "chàng"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_3_3",
+          "type": "choice",
+          "sectionTitle": "二、拼一拼，写一写，选择正确的读音",
+          "prompt": "画图形(xín xíng)",
+          "options": [
+            "xín",
+            "xíng"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_3_4",
+          "type": "choice",
+          "sectionTitle": "二、拼一拼，写一写，选择正确的读音",
+          "prompt": "分组(zǔ zhǔ)，选择正确的读音",
+          "options": [
+            "zǔ",
+            "zhǔ"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_3_5",
+          "type": "chinese",
+          "sectionTitle": "二、拼一拼，写一写，选择正确的读音",
+          "prompt": "都是“说wén/r解字”的好方法。本节语文课上，我们将通过抽kǎ　piàn/r的方式分组，hé/r作完成学习任务。",
+          "answers": [
+            "文"
+          ],
+          "answerSource": "auto"
+        },
+                        
+        {
+          "id": "yuan_di_1_4_1",
+          "type": "chinese",
+          "sectionTitle": "三、补全下面的古诗，完成小题",
+          "prompt": "春眠 /r 觉晓，处处闻啼 /r。\n夜来 /r /r 声，花落知 /r /r。",
+          "answers": [
+            "不",
+            "鸟",
+            "风",
+            "雨",
+            "多",
+            "少"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_4_2",
+          "type": "choice",
+          "sectionTitle": "三、补全下面的古诗，完成小题",
+          "prompt": "这首诗的作者是谁",
+          "options": [
+            "①唐代孟浩然",
+            "②唐代李白",
+            "③唐代杜甫"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_1_4_3",
+          "type": "chinese",
+          "sectionTitle": "三、补全下面的古诗，完成小题",
+          "prompt": "这首诗描写的是 /r (季节) /r (时候)的情景。",
+          "answers": [
+            "春天",
+            "早晨"
+          ],
+          "answerSource": "auto"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "第二单元",
+      "questions": [
+        {
+          "id": "yuan_di_2_1_1",
+          "type": "chinese",
+          "sectionTitle": "一、请依次输入验证码的小写字母",
+          "prompt": "TANGPO 的小写字母是 /r /r /r /r /r /r",
+          "answers": [
+            "t",
+            "a",
+            "n",
+            "g",
+            "p",
+            "o"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_2_2_0",
+          "type": "example",
+          "sectionTitle": "二、照样子，选字填空，并完成练习",
+          "prompt": "①明　②地　③尘　④早　⑤阳　⑥场",          
+          "answerSource": "display_only"
+        },
+        {
+          "id": "yuan_di_2_2_1",
+          "type": "choice",
+          "sectionTitle": "二、照样子，选字填空，并完成练习",
+          "prompt": "含“日”的字意思多和什么有关",
+          "options": [
+            "①身体",
+            "②时间"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_2_2_2",
+          "type": "chinese",
+          "sectionTitle": "二、照样子，选字填空，并完成练习",
+          "prompt": "我还认识这些含有“日”的字：/r、/r。",
+          "answers": [
+            "明",
+            "早"
+          ],
+          "answerSource": "manual_required"
+        },
+        {
+          "id": "yuan_di_2_2_3",
+          "type": "choice",
+          "sectionTitle": "二、照样子，选字填空，并完成练习",
+          "prompt": "含“土”的字意思多和什么有关",
+          "options": [
+            "①土地",
+            "②灰尘"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_2_2_4",
+          "type": "chinese",
+          "sectionTitle": "二、照样子，选字填空，并完成练习",
+          "prompt": "我能用“场”组词：/r。",
+          "answers": [
+            "广场"
+          ],
+          "answerSource": "manual_required"
+        },
+        {
+          "id": "yuan_di_2_3_1",
+          "type": "chinese",
+          "sectionTitle": "三、春日踏青，拼写诗句，完成手账",
+          "prompt": "渭城朝雨浥轻尘，客舍青青柳色新。\n“城”“尘”都含有“ /r ”，这些字的意思与 /r 有关。\n“浥”“客”“ /r ”都含有“ /r ”，我知道( /r )字也有该部件。",
+          "answers": [
+            "土",
+            "土地"
+          ],
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_2_3_3",
+          "type": "chinese",
+          "sectionTitle": "三、春日踏青，拼写诗句，完成手账",
+          "prompt": "寻隐者不遇\n松 /r 问童子，言师采药 /r。\n/r /r 此 /r /r， /r 深 /r 知处。",
+          "answers": [
+            "下",
+            "去",
+            "只",
+            "在",
+            "山",
+            "中",
+            "云",
+            "不"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_2_3_4",
+          "type": "choice",
+          "sectionTitle": "三、春日踏青，拼写诗句，完成手账",
+          "prompt": "诗题中的“隐者”指的是",
+          "options": [
+            "①童子",
+            "②童子的师父",
+            "③诗人自己"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_2_3_5",
+          "type": "chinese",
+          "sectionTitle": "三、春日踏青，拼写诗句，完成手账",
+          "prompt": "填序号：①云雾　　②山中　　③采药\n诗人询问后，童子可能会说：师父为了/r去了/r，可是/r太浓。我也不知道他到底在哪里。",          
+          "answers": [
+          ],
+          "answerSource": "auto"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "第三单元",
+      "questions": [
+        
+        
+        {
+          "id": "yuan_di_3_1_3",
+          "type": "chinese",
+          "sectionTitle": "一、查字典，完成小题",
+          "prompt": "根据音序法查“寸”：\n寸　音序是 C，音节是 /r ，组词 /r。",
+          "answers": [
+            "cun",
+            "尺寸"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_3_1_4",
+          "type": "chinese",
+          "sectionTitle": "一、查字典，完成小题",
+          "prompt": "根据音序法查“快”：\n“快”　音序是 C，音节是 /r ，组词 /r。",
+          "answers": [
+            "K",
+            "kuai",
+            "快乐"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_3_2_1",
+          "type": "chinese",
+          "sectionTitle": "二、补全古诗《赠汪伦》，完成小题",
+          "prompt": "/r /r 乘舟将欲 /r，忽闻岸 /r 踏歌声。\n桃 /r 潭水深 /r /r，不及汪伦送我 /r。",
+          "answers": [
+            "李",
+            "白",
+            "行",
+            "上",
+            "花",
+            "千",
+            "尺",
+            "情"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_3_2_2",
+          "type": "choice",
+          "sectionTitle": "二、补全古诗《赠汪伦》，完成小题",
+          "prompt": "这首诗的作者是什么代诗人。",
+          "options": [
+            "①唐",
+            "②宋"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_3_2_2",
+          "type": "choice",
+          "sectionTitle": "二、补全古诗《赠汪伦》，完成小题",
+          "prompt": "作者是谁",
+          "options": [
+            "①李白",
+            "②汪伦"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_3_2_3",
+          "type": "chinese",
+          "sectionTitle": "二、补全下面的古诗，完成小题",
+          "prompt": "送别之人：/r 送别 /r。（①李白 ②汪伦）",
+          "answers": [
+            "②",
+            "①"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_3_2_4",
+          "type": "choice",
+          "sectionTitle": "二、补全下面的古诗，完成小题",
+          "prompt": "这首诗表达了诗人",
+          "options": [
+            "①与好朋友之间的深厚情谊",
+            "②对家乡和亲人的思念之情"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "第四单元",
+      "questions": [
+                {
+          "id": "yuan_di_4_1_2",
+          "type": "choice",
+          "sectionTitle": "一、读一读，完成练习",
+          "prompt": "下列词语中，读轻声的字有哪些",
+          "options": [
+            "①哥哥","②眼睛","③告诉","④喜欢","⑤粽子","⑥故事"
+          ],
+          "multiSelect": true,          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_1_3",
+          "type": "chinese",
+          "sectionTitle": "一、读一读，完成练习",
+          "prompt": "名句“黑发不知勤学早，白首方悔读书迟”中，先写点的字有/r，后写点的字有/r。（填序号）①发　②方　③书",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_2_1",
+          "type": "chinese",
+          "sectionTitle": "二、我会按照笔顺规则给下列生字分类",
+          "prompt": "衣 成 间 书 床 我\n点在正上方或左上方，先写点的字有：衣、/r。\n点在右上方，后写点的字有：成、/r。",
+          
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_4_3_1",
+          "type": "choice",
+          "sectionTitle": "三、选择合适的量词填一填",
+          "prompt": "一(  )伞",
+          "options": [
+            "①本",
+            "②支",
+            "③包",
+            "④个",
+            "⑤把",
+            "⑥双"
+          ],
+          "answers": [
+            "4"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_3_2",
+          "type": "choice",
+          "sectionTitle": "三、选择合适的量词填一填",
+          "prompt": "一(  )水壶",
+          "options": [
+            "①本",
+            "②支",
+            "③包",
+            "④个",
+            "⑤把",
+            "⑥双"
+          ],
+          "answers": [
+            "3"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_3_3",
+          "type": "choice",
+          "sectionTitle": "三、选择合适的量词填一填",
+          "prompt": "一(  )鞋",
+          "options": [
+            "①本",
+            "②支",
+            "③包",
+            "④个",
+            "⑤把",
+            "⑥双"
+          ],
+          "answers": [
+            "5"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_3_4",
+          "type": "choice",
+          "sectionTitle": "三、选择合适的量词填一填",
+          "prompt": "一(  )笔",
+          "options": [
+            "①本",
+            "②支",
+            "③包",
+            "④个",
+            "⑤把",
+            "⑥双"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_3_5",
+          "type": "choice",
+          "sectionTitle": "三、选择合适的量词填一填",
+          "prompt": "一(  )画册",
+          "options": [
+            "①本",
+            "②支",
+            "③包",
+            "④个",
+            "⑤把",
+            "⑥双"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_3_6",
+          "type": "choice",
+          "sectionTitle": "三、选择合适的量词填一填",
+          "prompt": "一(  )餐巾纸",
+          "options": [
+            "①本",
+            "②支",
+            "③包",
+            "④个",
+            "⑤把",
+            "⑥双"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_4_1",
+          "type": "chinese",
+          "sectionTitle": "四、先把四字词语补充完整，再选词填空",
+          "prompt": "①其( /r )融融　②血浓于( /r )　③( /r )　足( /r )深\n④天伦之( /r )　⑤欢聚( /r )堂　⑥同( /r )协( /r )",
+          "answers": [
+            "乐",
+            "水",
+            "手",
+            "足",
+            "乐",
+            "一",
+            "心",
+            "力"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_4_4_2",
+          "type": "chinese",
+          "sectionTitle": "四、先把四字词语补充完整，再选词填空",
+          "prompt": "除夕，我们一家人 /r。厨房里，长辈们做好一桌年夜饭，大家围坐在一起共享 /r。",
+          
+          "answerSource": "auto"
+        }        
+      ]
+    },
+    {
+      "day": 5,
+      "title": "第五单元",
+      "questions": [
+        {
+          "id": "yuan_di_5_1_1",
+          "type": "chinese",
+          "sectionTitle": "一、给“包”字加偏旁，组成新字写在车厢上，再选字填空",
+          "prompt": "“包”字加偏旁，组成新字( /r )( /r )( /r )( /r )\n吃( /r )饭后，我和妹妹一起( /r )到院子里吹肥皂( /r )。",
+          "answers": [
+            "饱",
+            "跑",
+            "泡"
+          ],
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_5_2_1",
+          "type": "chinese",
+          "sectionTitle": "二、选字填空",
+          "prompt": "【清 青】小河的水很( /r )，能看见( /r )色的石头。",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_5_2_2",
+          "type": "chinese",
+          "sectionTitle": "二、选字填空",
+          "prompt": "【再 在】木木( /r )图书馆( /r )看了一遍《西游记》。",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_5_3_1",
+          "type": "chinese",
+          "sectionTitle": "三、观察大家抽到的卡片，完成练习",
+          "prompt": "唱歌、吹气球、吹哨\n1.我发现有些字的偏旁都是 /r，大多和 /r 有关。",
+          "answers": [
+            "口",
+            "嘴巴"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_5_3_2",
+          "type": "chinese",
+          "sectionTitle": "三、观察大家抽到的卡片，完成练习",
+          "prompt": "2.“歌”的读音是 /r，查字典时先查大写字母 /r，再查音节 /r。",
+          "answers": [
+            "gē",
+            "G",
+            "ge"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_5_4_1",
+          "type": "chinese",
+          "sectionTitle": "四、先把歇后语补充完整，再选一选",
+          "prompt": "①芝麻开花—— /r\n②竹篮打水—— /r\n③十五个吊桶打水—— /r",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_5_4_2",
+          "type": "chinese",
+          "sectionTitle": "四、先把歇后语补充完整，再选一选",
+          "prompt": "1.比赛时，我紧张极了，心里就像“ /r ”。\n2.忙了这么久，结果居然失败了，真是“ /r ”。",
+          
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_5_5_1",
+          "type": "choice",
+          "sectionTitle": "五、和大人一起读《孙悟空打妖怪》完成练习",
+          "prompt": "《孙悟空打妖怪》中，谁跑得快。",
+          "options": [
+            "①孙悟空",
+            "②唐僧",
+            "③猪八戒",
+            "④沙和尚"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_5_5_2",
+          "type": "choice",
+          "sectionTitle": "五、和大人一起读《孙悟空打妖怪》完成练习",
+          "prompt": "《孙悟空打妖怪》中，谁很糊涂，人妖不分？",
+          "options": [
+            "①猪八戒、唐僧",
+            "②孙悟空、沙和尚",
+            "③沙和尚、唐僧",
+            "④唐僧、孙悟空"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "第六单元",
+      "questions": [
+        
+        {
+          "id": "yuan_di_6_1_2",
+          "type": "choice",
+          "sectionTitle": "一、照片中有哪些事物？选一选",
+          "prompt": "夏天的夜晚，（　　）提着灯笼在草丛中飞来飞去。",
+          "options": [
+            "①蒲扇",
+            "②绿豆汤",
+            "③萤火虫",
+            "④竹椅",
+            "⑤冰棍"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_6_1_3",
+          "type": "choice",
+          "sectionTitle": "一、照片中有哪些事物？选一选",
+          "prompt": "爷爷坐在（　　）上用（　　）扇风。",
+          "options": [
+            "①蒲扇",
+            "②绿豆汤",
+            "③萤火虫",
+            "④竹椅",
+            "⑤冰棍"
+          ],
+          "multiSelect": true,
+          "answers": [
+            "3",
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_6_1_4",
+          "type": "choice",
+          "sectionTitle": "一、照片中有哪些事物？选一选",
+          "prompt": "小桌子上放着两碗（　　），我想一会儿吃根（　　）降降温。",
+          "options": [
+            "①蒲扇",
+            "②绿豆汤",
+            "③萤火虫",
+            "④竹椅",
+            "⑤冰棍"
+          ],
+          "answers": [
+            "1",
+            "4"
+          ],
+          "multiSelect": true,
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_6_2_1",
+          "type": "example",
+          "sectionTitle": "二、露营地的风景真美呀！照样子记录美景",
+          "prompt": "例：小鸭子游泳。→小鸭子(唱着歌)(在水里)游泳。",
+          "answerSource": "display_only"
+        },
+        {
+          "id": "yuan_di_6_2_2",
+          "type": "chinese",
+          "sectionTitle": "二、露营地的风景真美呀！照样子记录美景",
+          "prompt": "1.蜜蜂采蜜。→蜜蜂( /r )( /r )采蜜。",
+          "answers": [
+            "嗡嗡地",
+            "在花丛中"
+          ],
+          "answerSource": "manual_required"
+        },
+        {
+          "id": "yuan_di_6_2_3",
+          "type": "chinese",
+          "sectionTitle": "二、露营地的风景真美呀！照样子记录美景",
+          "prompt": "2.小鸟唱歌。→小鸟( /r )( /r )唱歌。",
+          "answers": [
+            "欢快地",
+            "在树枝上"
+          ],
+          "answerSource": "manual_required"
+        },
+        {
+          "id": "yuan_di_6_3_1",
+          "type": "chinese",
+          "sectionTitle": "三、信中有些标点丢了，请你帮忙加上标点",
+          "prompt": "爸爸您最近身体好吗 /r 家里种的苹果熟了吗 /r 木木说家里的苹果是最甜的 /r 我们周末放假就回去看您 /r",
+          "answers": [
+            "？",
+            "？",
+            "。",
+            "。"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_6_4_1",
+          "type": "chinese",
+          "sectionTitle": "四、先把下面的谚语补充完整，再帮小玉判断出行天气",
+          "prompt": "1.朝霞 /r /r /r，晚霞 /r /r /r。\n2. /r /r 山戴帽， /r /r 半山腰。\n3.早晨 /r /r 当日晴，晚上 /r /r 到天明。\n4.蚂蚁搬家蛇过道， /r /r /r /r 要来到。",
+          "answers": [
+            "不",
+            "出",
+            "门",
+            "行",
+            "千",
+            "里",
+            "有",
+            "雨",
+            "无",
+            "雨",
+            "下",
+            "雨",
+            "下",
+            "雨",
+            "大",
+            "雨",
+            "不",
+            "久"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_6_4_2",
+          "type": "choice",
+          "sectionTitle": "四、先把下面的谚语补充完整，再帮小玉判断出行天气",
+          "prompt": "今天傍晚我看到了美丽的晚霞，所以我猜明天可能是",
+          "options": [
+            "①晴天",
+            "②雨天"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_6_5_1",
+          "type": "chinese",
+          "sectionTitle": "五、晚上爷爷读了《夏夜多美》完成练习",
+          "prompt": "故事中出现的小动物有 /r、/r、/r。",
+          "answers": [
+            "蜻蜓",
+            "萤火虫",
+            "蚂蚁"
+          ],
+          "answerSource": "manual_required"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "第七单元",
+      "questions": [
+        
+        {
+          "id": "yuan_di_7_1_2",
+          "type": "match",
+          "sectionTitle": "一、看一看，连一连，填一填（不重复）",
+          "prompt": "将物品与对应的动作连线。",
+          "left": [
+            "牙刷",
+            "梳子",
+            "脸盆",
+            "香皂",
+            "毛巾"
+          ],
+          "right": [
+            "擦手",
+            "洗脸",
+            "刷牙",
+            "梳头",
+            "洗澡"
+          ],
+          "answers": [
+            "2",
+            "3",
+            "1",
+            "4",
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_1_3",
+          "type": "chinese",
+          "sectionTitle": "一、看一看，连一连，填一填（不重复）",
+          "prompt": "我知道这些东西多出现在（　　）。",
+          "answers": [
+            "卫生间"
+          ],
+          "answerSource": "manual_required"
+        },
+        {
+          "id": "yuan_di_7_2_1",
+          "type": "choice",
+          "sectionTitle": "二、先按照偏旁给下列字词归类，再填一填",
+          "prompt": "1.鸟：",
+          "options": [
+            "①猫",
+            "②蚂蚁",
+            "③猴",
+            "④鹊",
+            "⑤蝴蝶",
+            "⑥狮",
+            "⑦鸭",
+            "⑧蜻蜓",
+            "⑨鹅"
+          ],
+          "answers": [
+            "3",
+            "6",
+            "8"
+          ],
+           "multiSelect": true,
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_2_2",
+          "type": "choice",
+          "sectionTitle": "二、先按照偏旁给下列字词归类，再填一填",
+          "prompt": "2.虫：",
+          "options": [
+            "①猫",
+            "②蚂蚁",
+            "③猴",
+            "④鹊",
+            "⑤蝴蝶",
+            "⑥狮",
+            "⑦鸭",
+            "⑧蜻蜓",
+            "⑨鹅"
+          ],
+          "answers": [
+            "1",
+            "4",
+            "7"
+          ],
+           "multiSelect": true,
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_2_3",
+          "type": "choice",
+          "sectionTitle": "二、先按照偏旁给下列字词归类，再填一填",
+          "prompt": "3.犭：",
+          "options": [
+            "①猫",
+            "②蚂蚁",
+            "③猴",
+            "④鹊",
+            "⑤蝴蝶",
+            "⑥狮",
+            "⑦鸭",
+            "⑧蜻蜓",
+            "⑨鹅"
+          ],
+          "answers": [
+            "0",
+            "2",
+            "5"
+          ],
+           "multiSelect": true,
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_2_4",
+          "type": "choice",
+          "sectionTitle": "二、先按照偏旁给下列字词归类，再填一填",
+          "prompt": "带偏旁“鸟”的字一般和什么有关",
+          "options": [
+            "①兽类",
+            "②昆虫",
+            "③鸟类"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_2_5",
+          "type": "choice",
+          "sectionTitle": "二、先按照偏旁给下列字词归类，再填一填",
+          "prompt": "带偏旁“虫”的字一般和什么有关",
+          "options": [
+            "①兽类",
+            "②昆虫",
+            "③鸟类"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_2_6",
+          "type": "choice",
+          "sectionTitle": "二、先按照偏旁给下列字词归类，再填一填",
+          "prompt": "带偏旁“犭”的字一般和什么有关",
+          "options": [
+            "①兽类",
+            "②昆虫",
+            "③鸟类"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_3_1",
+          "type": "choice",
+          "sectionTitle": "三、我会写一写，填一填",
+          "prompt": "房、老、着、包这些字都是什么结构",
+          "options": [
+            "①半包围",
+            "②全包围"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_3_2",
+          "type": "choice",
+          "sectionTitle": "三、我会写一写，填一填",
+          "prompt": "它们的笔顺规则都是",
+          "options": [
+            "①先内后外",
+            "②先外后内"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_4_1",
+          "type": "chinese",
+          "sectionTitle": "四、读一读，填一填，选一选",
+          "prompt": "①不知则( /r )，不能则( /r )。——《荀子》\n②读书破( /r )卷，下( /r )如有神。——杜甫\n③读( /r )卷书，行( /r )里路。——董其昌",
+          "answers": [
+            "问",
+            "学",
+            "万",
+            "笔",
+            "万",
+            "万"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_7_4_2",
+          "type": "chinese",
+          "sectionTitle": "四、读一读，填一填，选一选",
+          "prompt": "我们不但要多读书，还要多出去看看，这正是“(   )”。",
+          
+          "answerSource": "auto"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "title": "第八单元",
+      "questions": [
+        {
+          "id": "yuan_di_8_1_1",
+          "type": "chinese",
+          "sectionTitle": "一、先写字，再组词，和汉字玩变身游戏",
+          "prompt": "1.加一加：口+少= /r ( /r )\n王+见= /r ( /r )",
+          "answers": [
+            "吵",
+            "吵架",
+            "现",
+            "现在"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_8_1_2",
+          "type": "chinese",
+          "sectionTitle": "一、先写字，再组词，和汉字玩变身游戏",
+          "prompt": "2.减一减：甜-甘= /r ( /r )\n校-木= /r ( /r )",
+          "answers": [
+            "舌",
+            "舌头",
+            "交",
+            "交通"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_8_1_3",
+          "type": "chinese",
+          "sectionTitle": "一、先写字，再组词，和汉字玩变身游戏",
+          "prompt": "3.换偏旁：他→ /r ( /r )\n拍→ /r ( /r )",
+          "answers": [
+            "地",
+            "土地",
+            "怕",
+            "害怕"
+          ],
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_8_2_1",
+          "type": "chinese",
+          "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
+          "prompt": "父、义：( /r )亲，正( /r )",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_8_2_2",
+          "type": "chinese",
+          "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
+          "prompt": "午、牛：下( /r )，( /r )羊",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_8_2_3",
+          "type": "chinese",
+          "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
+          "prompt": "井、进：前( /r )，水( /r )",
+          
+          "answerSource": "auto"
+        },
+        {
+          "id": "yuan_di_8_2_4",
+          "type": "chinese",
+          "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
+          "prompt": "母、每：( /r )爱，( /r )天",
+          
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_8_3_5",
+          "type": "chinese",
+          "sectionTitle": "三、选一选，再写一写",
+          "prompt": "请你从（生气、害怕、高兴、难过）中选择一种心情，结合自己在森林公园里冒险的经历，写一句话。",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required"
+        },
+        {
+          "id": "yuan_di_8_4_1",
+          "type": "chinese",
+          "sectionTitle": "四、快来把古诗补全，和唐寅笔下的鸡交朋友",
+          "prompt": "/r 红冠不用裁，满 /r 走将来。\n/r 不敢轻 /r， /r。",
+          "answers": [
+            "头上",
+            "身",
+            "雪",
+            "白",
+            "平",
+            "生",
+            "言",
+            "语",
+            "一",
+            "叫",
+            "千",
+            "门",
+            "万",
+            "户",
+            "开"
+          ],
+          "answerSource": "auto"
+        },
+        
+        {
+          "id": "yuan_di_8_4_3",
+          "type": "choice",
+          "sectionTitle": "四、快来把古诗补全，和唐寅笔下的鸡交朋友",
+          "prompt": "以下和公鸡打鸣有关的成语是",
+          "options": [
+            "①鸡犬不宁",
+            "②闻鸡起舞",
+            "③鸡飞狗跳",
+            "④鹤立鸡群"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,14 @@
 {
   "sets": [
     {
+      "id": "yuan_di_zhuan_xiang_1_8",
+      "title": "语文园地专项练习",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "8单元 · 96道练习 · 拼音汉字古诗阅读",
+      "asset": "assets/worksheets/generated/yuan_di_zhuan_xiang_1_8.json"
+    },
+    {
       "id": "text_fill_8_units",
       "title": "课文拼写",
       "subject": "语文",

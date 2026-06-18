@@ -370,10 +370,16 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
           }
         }
       } else if (question.isChoice) {
-        // 选择题
+        // 选择题（支持单选/多选）
         final userAnswer = _progress.answers[question.id] ?? '';
         if (userAnswer.isEmpty || question.answers.isEmpty) {
           isCorrect = false;
+        } else if (question.multiSelect) {
+          // 多选：比对集合（排序后比较）
+          final userSet = userAnswer.split(',').map((s) => s.trim()).toSet();
+          final expectedSet = question.answers.map((s) => s.trim()).toSet();
+          isCorrect = userSet.length == expectedSet.length &&
+              userSet.containsAll(expectedSet);
         } else {
           isCorrect = userAnswer == question.answers.first;
         }
@@ -1607,17 +1613,36 @@ class _ChoiceQuestionWidget extends StatefulWidget {
 }
 
 class _ChoiceQuestionWidgetState extends State<_ChoiceQuestionWidget> {
-  String? get _selectedIndex => widget.answers[widget.question.id];
+  Set<int> get _selectedIndices {
+    final raw = widget.answers[widget.question.id] ?? '';
+    if (raw.isEmpty) return {};
+    return raw.split(',').map((s) => int.tryParse(s.trim())).whereType<int>().toSet();
+  }
 
   void _onOptionTap(int index) {
-    widget.onChanged(index.toString());
+    final current = Set<int>.of(_selectedIndices);
+    if (widget.question.multiSelect) {
+      // 多选：点击切换
+      if (current.contains(index)) {
+        current.remove(index);
+      } else {
+        current.add(index);
+      }
+    } else {
+      // 单选：替换
+      current.clear();
+      current.add(index);
+    }
+    final sorted = current.toList()..sort();
+    widget.onChanged(sorted.join(','));
     setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     final options = widget.question.options;
-    final selected = _selectedIndex;
+    final selected = _selectedIndices;
+    final isMulti = widget.question.multiSelect;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1634,6 +1659,18 @@ class _ChoiceQuestionWidgetState extends State<_ChoiceQuestionWidget> {
               ),
             ),
           ),
+        if (isMulti)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Text(
+              '（多选题，可选择多个答案）',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w700,
+                color: const Color(0xFF2E91FF),
+              ),
+            ),
+          ),
         Wrap(
           spacing: 24,
           runSpacing: 20,
@@ -1642,7 +1679,7 @@ class _ChoiceQuestionWidgetState extends State<_ChoiceQuestionWidget> {
               _ChoiceOptionCard(
                 text: options[i],
                 index: i,
-                isSelected: selected == i.toString(),
+                isSelected: selected.contains(i),
                 onTap: () => _onOptionTap(i),
               ),
           ],

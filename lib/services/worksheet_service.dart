@@ -358,7 +358,8 @@ class WorksheetService {
           }
 
           // 选择题（choice）校验
-          final options = questionRaw['options'] as List<dynamic>?;
+          final options = questionRaw['options'] as List<dynamic>?
+;
           if (options != null && options.isNotEmpty) {
             if (options.length < 2) {
               errors.add('$qPrefix：选择题至少需要 2 个选项。');
@@ -371,6 +372,13 @@ class WorksheetService {
                     '$qPrefix：answers[$i] = "${answers[i]}" 不是有效的选项索引（0-${options.length - 1}）。',
                   );
                 }
+              }
+              // 多选校验：answers 数量不应超过选项数量
+              final multiSelect = questionRaw['multiSelect'] as bool? ?? false;
+              if (multiSelect && answers.length > options.length) {
+                errors.add(
+                  '$qPrefix：多选题 answers 数量（${answers.length}）超过选项数量（${options.length}）。',
+                );
               }
             }
             totalPracticeQuestions++;

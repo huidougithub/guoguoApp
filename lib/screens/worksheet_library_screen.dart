@@ -426,14 +426,11 @@ class _CategoryWorksheetList extends StatelessWidget {
         Expanded(
           child: items.isEmpty
               ? _EmptyWorksheetList(category: category)
-              : GridView.builder(
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 14,
-                    crossAxisSpacing: 14,
-                    mainAxisExtent: 208,
-                  ),
+              : ListView.separated(
+                  padding: const EdgeInsets.only(bottom: 8),
                   itemCount: items.length,
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(height: 8),
                   itemBuilder: (context, index) {
                     final item = items[index];
                     return _WorksheetSetCard(
@@ -530,113 +527,148 @@ class _WorksheetSetCard extends StatelessWidget {
 
     return SoftCard(
       color: category.color,
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       onTap: onTap,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              _SubjectBadge(category: category, size: 44),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  data.catalogItem.title,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
+      child: SizedBox(
+        height: 78,
+        child: Row(
+          children: [
+            _SubjectBadge(category: category, size: 42),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    data.catalogItem.title,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
-                ),
+                  const SizedBox(height: 4),
+                  Text(
+                    '${_metaText(worksheet)} · ${_practiceType(worksheet)}',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Color(0xFF6B4A2B),
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  const SizedBox(height: 7),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(999),
+                    child: LinearProgressIndicator(
+                      value: percent.clamp(0.0, 1.0),
+                      minHeight: 7,
+                      backgroundColor: Colors.white,
+                      color: category.accent,
+                    ),
+                  ),
+                ],
               ),
-              if (_isImported && onDelete != null)
-                GestureDetector(
-                  onTap: onDelete,
-                  child: Container(
-                    width: 32,
-                    height: 32,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFFFE5E5),
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(
-                        color: const Color(0xFFE57373),
-                        width: 1.2,
+            ),
+            const SizedBox(width: 14),
+            SizedBox(
+              width: 168,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    '已填写 $answered/${worksheet.questionCount}',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    '正确 $correct/${worksheet.questionCount}',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w900,
+                      color: Color(0xFF6B4A2B),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 10),
+            SizedBox(
+              width: _isImported && onDelete != null ? 142 : 104,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  FilledButton(
+                    style: FilledButton.styleFrom(
+                      backgroundColor: category.accent,
+                      foregroundColor: Colors.white,
+                      minimumSize: const Size(86, 38),
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 8,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                        side: const BorderSide(
+                          color: Color(0xFF2D2A32),
+                          width: 1.2,
+                        ),
                       ),
                     ),
-                    child: const Icon(
-                      Icons.delete_outline,
-                      color: Color(0xFFE57373),
-                      size: 18,
-                    ),
+                    onPressed: onTap,
+                    child: const Text('继续'),
                   ),
-                )
-              else
-                const Icon(Icons.chevron_right),
-            ],
-          ),
-          const SizedBox(height: 6),
-          Text(
-            '${_metaText(worksheet)} · ${_practiceType(worksheet)}',
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
-          ),
-          const SizedBox(height: 8),
-          LinearProgressIndicator(
-            value: percent.clamp(0.0, 1.0),
-            minHeight: 9,
-            borderRadius: BorderRadius.circular(12),
-            backgroundColor: Colors.white,
-            color: category.accent,
-          ),
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  '已填写 $answered/${worksheet.questionCount}',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(fontWeight: FontWeight.w800),
-                ),
+                  if (_isImported && onDelete != null) ...[
+                    const SizedBox(width: 8),
+                    IconButton(
+                      tooltip: '删除试卷',
+                      style: IconButton.styleFrom(
+                        backgroundColor: const Color(0xFFFFE5E5),
+                        foregroundColor: const Color(0xFFE57373),
+                        side: const BorderSide(
+                          color: Color(0xFFE57373),
+                          width: 1.1,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      onPressed: onDelete,
+                      icon: const Icon(Icons.delete_outline, size: 18),
+                    ),
+                  ],
+                ],
               ),
-              const SizedBox(width: 8),
-              Text(
-                '批改 $correct/${worksheet.questionCount}',
-                style: const TextStyle(fontWeight: FontWeight.w800),
-              ),
-            ],
-          ),
-          const Spacer(),
-          Align(
-            alignment: Alignment.centerRight,
-            child: FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: category.accent,
-                foregroundColor: Colors.white,
-                minimumSize: const Size(96, 36),
-                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 8,
-                ),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12),
-                  side: const BorderSide(color: Color(0xFF2D2A32), width: 1.2),
-                ),
-              ),
-              onPressed: onTap,
-              child: const Text('继续练习'),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
 
   String _metaText(WorksheetSet worksheet) {
-    return '${data.catalogItem.grade} · ${worksheet.days.length}单元 · ${worksheet.questionCount}道';
+    return '${data.catalogItem.grade} · ${worksheet.days.length}${_periodUnit()} · ${worksheet.questionCount}题';
+  }
+
+  String _periodUnit() {
+    final description = data.catalogItem.description;
+    if (description.contains('单元')) return '单元';
+    if (description.contains('专项')) return '专项';
+    if (description.contains('课')) return '课';
+    if (description.contains('天')) return '天';
+    return '组';
   }
 
   String _practiceType(WorksheetSet worksheet) {
@@ -644,7 +676,7 @@ class _WorksheetSetCard extends StatelessWidget {
     if (worksheet.autoQuestionCount == worksheet.questionCount) {
       return '自动批改';
     }
-    return '手写练习';
+    return '手写+自动';
   }
 }
 
@@ -671,7 +703,7 @@ class _EmptyWorksheetList extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                '导入新试卷后会出现在这里。',
+                '这个分类下还没有可练习的试卷。',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
               ),

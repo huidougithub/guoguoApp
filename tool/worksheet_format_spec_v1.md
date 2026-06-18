@@ -1,7 +1,7 @@
-# 《智慧小探险家》题库格式规范 v1.1
+# 《智慧小探险家》题库格式规范 v1.2
 
 > 适用范围：所有 `assets/worksheets/generated/*.json` 试卷文件  
-> 版本：v1.1（2026-06-13）  
+> 版本：v1.2（2026-06-17）  
 > 后续调整时，请递增版本号并同步更新此文档。
 
 ---
@@ -73,7 +73,8 @@
 | `answers` | `array<string>` | ✅ | 标准答案数组。含义根据题型不同，见下方 **answers 用法表** |
 | `answerSource` | `string` | ✅ | 答案来源，见下方 **answerSource 取值表** |
 | `images` | `array<string>` | ❌ | 配图资源路径数组（当前未启用，预留） |
-| `options` | `array<string>` | ❌ | 选择题选项列表。有此字段时该题为 **选择题**（见下方） |
+| `options` | `array<string>` | ❌ | 选择题选项列表。有此字段时该题为 **选择题**（见 3.5） |
+| `multiSelect` | `bool` | ❌ | 多选标记。`true` 表示该选择题可多选，默认 `false`（单选） |
 | `left` | `array<string>` | ❌ | 配对连线题左列。与 `right` 同时存在时该题为 **配对题** |
 | `right` | `array<string>` | ❌ | 配对连线题右列。与 `left` 同时存在时该题为 **配对题** |
 
@@ -104,7 +105,8 @@
 | 题型 | `answers` 含义 | 示例 |
 |------|---------------|------|
 | 填空题（含 `/r`） | 与 `/r` 一一对应的标准答案 | `answers: ["吹", "雨", "秋"]` 对应 3 个 `/r` |
-| 选择题（`options`） | 正确选项的**索引**数组 | `answers: ["1"]` 表示选项 B（索引 1）正确 |
+| 单选选择题（`options`） | 正确选项的**单个索引** | `answers: ["1"]` 表示选项 B（索引 1）正确 |
+| 多选选择题（`options` + `multiSelect: true`） | 正确选项的**多个索引**数组 | `answers: ["0", "2", "4"]` 表示索引 0、2、4 都正确 |
 | 配对题（`left`/`right`） | 与 `left` 一一对应的 `right` 索引 | `answers: ["0", "1", "2", "3"]` 表示 left[i] 连到 right[answers[i]] |
 | 无答案 | 空数组 `[]` | 配合 `answerSource: "manual_required"` |
 
@@ -122,6 +124,8 @@
 
 ### 3.5 选择题（`options`）
 
+#### 单选
+
 ```json
 {
   "id": "choice_001",
@@ -133,11 +137,27 @@
 }
 ```
 
+#### 多选
+
+```json
+{
+  "id": "choice_multi_001",
+  "type": "choice",
+  "prompt": "下列词语中，读轻声的字是（填序号）",
+  "options": ["①哥哥", "②眼睛", "③告诉", "④喜欢", "⑤粽子", "⑥故事"],
+  "answers": ["0", "1", "2", "3", "4", "5"],
+  "multiSelect": true,
+  "answerSource": "auto"
+}
+```
+
 **规则**：
 - `options` 至少 2 个元素，通常 4 个
 - `answers` 中的值必须是 `options` 的有效索引（`0` 到 `options.length - 1`）
 - `type` 建议为 `"choice"`，也可使用学科类型（如 `"chinese"`）
-- 用户答案存储为单个索引字符串，如 `"0"`、`"2"`
+- 单选：用户答案存储为单个索引字符串，如 `"0"`、`"2"`
+- 多选：添加 `"multiSelect": true`，用户答案存储为逗号分隔索引，如 `"0,2,4"`
+- 多选批改：用户选择的集合与 `answers` 集合完全一致才算对
 
 ### 3.6 配对连线题（`left`/`right`）
 
@@ -181,6 +201,7 @@
 - [ ] `answerSource` 取值在规范表内
 - [ ] `prompt` 中的 `/r` 数量 == `answers.length`（填空题）
 - [ ] 选择题：`options` 至少 2 个，`answers` 中每个值都是有效选项索引
+- [ ] 多选题：`multiSelect: true` 时，`answers` 数量不超过 `options` 数量，且每个值都是有效索引
 - [ ] 配对题：`left`/`right` 同时存在且非空，`answers` 长度 == `left` 长度，每个值都是有效 `right` 索引
 - [ ] 无 `answer`、`displayPrompt`、`blanks`、`segments` 等废弃字段
 - [ ] JSON 格式合法，UTF-8 编码
@@ -191,5 +212,6 @@
 
 | 版本 | 日期 | 变更内容 |
 |------|------|---------|
+| v1.2 | 2026-06-17 | 新增 **多选题** 模式：`multiSelect: true`，支持多选批改、UI 多选切换、导入校验、格式规范 |
 | v1.1 | 2026-06-13 | 新增 **选择题**（`options` + `type: "choice"`）和 **配对连线题**（`left`/`right`）两种题型规范，补充 `answers` 用法表 |
 | v1.0 | 2026-06-11 | 初始版本。统一 type 为 5 种，废弃 `answer`/`displayPrompt`/`blanks`/`segments`，采用 `/r` + `answers` 数组方案 |
