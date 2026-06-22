@@ -57,12 +57,20 @@
       "asset": "assets/worksheets/generated/stroke_practice_17_lessons.json"
     },
     {
-      "id": "math_daily_20_sample",
-      "title": "一年级上册数学计算每日一练",
+      "id": "morning_calc_7",
+      "title": "早读计算",
       "subject": "数学",
-      "grade": "一年级上",
-      "description": "20天计算小纸条，普通计算和括号填空可自动批改。",
-      "asset": "assets/worksheets/generated/math_daily_20_full.json"
+      "grade": "一年级下册",
+      "description": "66题 · 口算、元角分、比较大小、竖式计算",
+      "asset": "assets/worksheets/generated/morning_calc_7.json"
+    },
+    {
+      "id": "final_review",
+      "title": "期末复习",
+      "subject": "数学",
+      "grade": "一年级下册",
+      "description": "57题 · 课本+拓展解决问题（带图）",
+      "asset": "assets/worksheets/generated/final_review.json"
     }
   ]
 }

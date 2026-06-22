@@ -14,6 +14,7 @@ import 'map_screen.dart';
 import 'self_challenge_screen.dart';
 import 'shop_screen.dart';
 import 'stats_settings_screen.dart';
+import 'study_materials_screen.dart';
 import 'worksheet_library_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -269,6 +270,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     onTap: () => _openSceneScreen(
                       AppMusicScene.home,
                       WorksheetLibraryScreen(store: widget.store),
+                    ),
+                  ),
+                  _HomeAction(
+                    icon: Icons.fact_check_rounded,
+                    title: '考试重点',
+                    subtitle: '复习资料 · PDF 查看',
+                    color: const Color(0xFFE3F2FD),
+                    onTap: () => _openSceneScreen(
+                      AppMusicScene.home,
+                      const StudyMaterialsScreen(),
                     ),
                   ),
                   _HomeAction(

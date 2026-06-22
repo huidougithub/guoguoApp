@@ -1,24 +1,34 @@
 package com.guoguo.guoguo_forward
 
 import android.app.Activity
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.pdf.PdfRenderer
 import android.content.Intent
 import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.media.SoundPool
+import android.os.ParcelFileDescriptor
+import android.provider.OpenableColumns
 import android.speech.tts.TextToSpeech
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
+import java.io.ByteArrayOutputStream
+import java.io.File
 import java.util.Locale
 
 class MainActivity : FlutterActivity() {
     private val pickWorksheetRequestCode = 4017
+    private val pickStudyMaterialRequestCode = 4018
     private var soundPool: SoundPool? = null
     private val soundIds = mutableMapOf<String, Int>()
     private var mediaPlayer: MediaPlayer? = null
     private var oneShotPlayer: MediaPlayer? = null
     private var oneShotResult: MethodChannel.Result? = null
     private var pickWorksheetResult: MethodChannel.Result? = null
+    private var pickStudyMaterialResult: MethodChannel.Result? = null
     private var currentBgmKey: String? = null
     private var tts: TextToSpeech? = null
     private var ttsReady = false
@@ -73,6 +83,41 @@ class MainActivity : FlutterActivity() {
                 else -> result.notImplemented()
             }
         }
+        MethodChannel(
+            flutterEngine.dartExecutor.binaryMessenger,
+            "guoguo_forward/study_materials"
+        ).setMethodCallHandler { call, result ->
+            when (call.method) {
+                "pickStudyMaterialPdf" -> pickStudyMaterialPdf(result)
+                "cacheBundledPdf" -> {
+                    val args = call.arguments as? Map<*, *>
+                    val fileName = args?.get("fileName") as? String ?: "study_material.pdf"
+                    val bytes = args?.get("bytes") as? ByteArray
+                    if (bytes == null) {
+                        result.error("bad_args", "资料文件内容为空。", null)
+                    } else {
+                        result.success(writeStudyMaterialBytes(fileName, bytes, "bundled").absolutePath)
+                    }
+                }
+                "pdfPageCount" -> {
+                    val args = call.arguments as? Map<*, *>
+                    val path = args?.get("path") as? String ?: ""
+                    result.success(pdfPageCount(path))
+                }
+                "renderPdfPage" -> {
+                    val args = call.arguments as? Map<*, *>
+                    val path = args?.get("path") as? String ?: ""
+                    val pageIndex = (args?.get("pageIndex") as? Int) ?: 0
+                    val widthPx = (args?.get("widthPx") as? Int) ?: 1200
+                    try {
+                        result.success(renderPdfPage(path, pageIndex, widthPx))
+                    } catch (error: Exception) {
+                        result.error("render_failed", error.message, null)
+                    }
+                }
+                else -> result.notImplemented()
+            }
+        }
     }
 
     private fun pickWorksheetJson(result: MethodChannel.Result) {
@@ -93,6 +138,25 @@ class MainActivity : FlutterActivity() {
             startActivityForResult(intent, pickWorksheetRequestCode)
         } catch (error: Exception) {
             pickWorksheetResult = null
+            result.error("open_failed", error.message, null)
+        }
+    }
+
+    private fun pickStudyMaterialPdf(result: MethodChannel.Result) {
+        if (pickStudyMaterialResult != null) {
+            result.error("busy", "正在选择文件，请先完成当前操作。", null)
+            return
+        }
+        pickStudyMaterialResult = result
+        val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+            addCategory(Intent.CATEGORY_OPENABLE)
+            type = "application/pdf"
+            putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("application/pdf"))
+        }
+        try {
+            startActivityForResult(intent, pickStudyMaterialRequestCode)
+        } catch (error: Exception) {
+            pickStudyMaterialResult = null
             result.error("open_failed", error.message, null)
         }
     }
@@ -120,7 +184,97 @@ class MainActivity : FlutterActivity() {
             }
             return
         }
+        if (requestCode == pickStudyMaterialRequestCode) {
+            val pending = pickStudyMaterialResult
+            pickStudyMaterialResult = null
+            if (pending == null) {
+                super.onActivityResult(requestCode, resultCode, data)
+                return
+            }
+            if (resultCode != Activity.RESULT_OK || data?.data == null) {
+                pending.success(null)
+                return
+            }
+            try {
+                val uri = data.data!!
+                val fileName = displayNameForUri(uri.toString()) ?: "study_material.pdf"
+                val bytes = contentResolver.openInputStream(uri)?.use { it.readBytes() }
+                if (bytes == null || bytes.isEmpty()) {
+                    pending.error("read_failed", "文件内容为空。", null)
+                    return
+                }
+                val file = writeStudyMaterialBytes(fileName, bytes, "imported")
+                pending.success(
+                    mapOf(
+                        "path" to file.absolutePath,
+                        "fileName" to fileName,
+                        "sizeBytes" to file.length().toInt()
+                    )
+                )
+            } catch (error: Exception) {
+                pending.error("read_failed", error.message, null)
+            }
+            return
+        }
         super.onActivityResult(requestCode, resultCode, data)
+    }
+
+    private fun displayNameForUri(uriText: String): String? {
+        val uri = android.net.Uri.parse(uriText)
+        return contentResolver.query(uri, null, null, null, null)?.use { cursor ->
+            val nameIndex = cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME)
+            if (nameIndex >= 0 && cursor.moveToFirst()) cursor.getString(nameIndex) else null
+        }
+    }
+
+    private fun writeStudyMaterialBytes(fileName: String, bytes: ByteArray, bucket: String): File {
+        val safeName = fileName.replace(Regex("[\\\\/:*?\"<>|]+"), "_")
+        val dir = File(filesDir, "study_materials/$bucket").apply { mkdirs() }
+        val targetName = if (bucket == "imported") {
+            "${System.currentTimeMillis()}_$safeName"
+        } else {
+            safeName
+        }
+        val file = File(dir, targetName)
+        file.writeBytes(bytes)
+        return file
+    }
+
+    private fun pdfPageCount(path: String): Int {
+        val file = File(path)
+        if (!file.exists()) return 0
+        val descriptor = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY)
+        descriptor.use {
+            PdfRenderer(it).use { renderer ->
+                return renderer.pageCount
+            }
+        }
+    }
+
+    private fun renderPdfPage(path: String, pageIndex: Int, widthPx: Int): ByteArray {
+        val file = File(path)
+        val descriptor = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY)
+        descriptor.use {
+            PdfRenderer(it).use { renderer ->
+                val safeIndex = pageIndex.coerceIn(0, renderer.pageCount - 1)
+                renderer.openPage(safeIndex).use { page ->
+                    val safeWidth = widthPx.coerceIn(480, 2200)
+                    val safeHeight = (safeWidth.toFloat() * page.height / page.width).toInt()
+                        .coerceAtLeast(1)
+                    val bitmap = Bitmap.createBitmap(
+                        safeWidth,
+                        safeHeight,
+                        Bitmap.Config.ARGB_8888
+                    )
+                    Canvas(bitmap).drawColor(Color.WHITE)
+                    page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                    val stream = ByteArrayOutputStream()
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 92, stream)
+                    bitmap.recycle()
+                    return stream.toByteArray()
+                }
+            }
+        }
     }
 
     private fun preloadSounds() {

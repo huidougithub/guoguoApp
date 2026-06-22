@@ -33,6 +33,7 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
   late WorksheetProgress _progress;
   int _selectedDayIndex = 0;
   String? _selectedQuestionId;
+  int? _selectedBlankIndex;
   final Map<String, GlobalKey> _questionKeys = {};
 
   @override
@@ -50,7 +51,13 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     _progress = progress;
     if (worksheet.days.isNotEmpty &&
         worksheet.days.first.questions.isNotEmpty) {
-      _selectedQuestionId = _firstPracticeQuestion(worksheet.days.first)?.id;
+      final firstPracticeQuestion = _firstPracticeQuestion(
+        worksheet.days.first,
+      );
+      _selectedQuestionId = firstPracticeQuestion?.id;
+      _selectedBlankIndex = _defaultBlankIndexForQuestion(
+        firstPracticeQuestion,
+      );
     }
   }
 
@@ -72,74 +79,102 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
             final isMathWorksheet = _worksheet.subject == 'math';
             final parentReviewMode =
                 widget.store.progress.settings['parentReview'] ?? false;
-            return SafeArea(
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1360),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        SizedBox(
-                          width: 300,
-                          child: _WorksheetSidePanel(
-                            worksheet: _worksheet,
-                            progress: _progress,
-                            selectedDayIndex: _selectedDayIndex,
-                            pet: pet,
-                            isMathWorksheet: isMathWorksheet,
-                            onBack: () => Navigator.of(context).pop(),
-                            onSelectDay: (index) {
-                              final nextDay = _worksheet.days[index];
-                              final firstPracticeQuestion =
-                                  _firstPracticeQuestion(nextDay);
-                              setState(() {
-                                _selectedDayIndex = index;
-                                _selectedQuestionId = firstPracticeQuestion?.id;
-                              });
-                            },
-                          ),
+            return LayoutBuilder(
+              builder: (context, constraints) {
+                final compactMathTablet =
+                    isMathWorksheet && constraints.maxWidth < 1160;
+                final sidePanelWidth = compactMathTablet ? 224.0 : 300.0;
+                final horizontalPadding = compactMathTablet ? 8.0 : 16.0;
+                final panelGap = compactMathTablet ? 10.0 : 18.0;
+                return SafeArea(
+                  child: Center(
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 1360),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(
+                          horizontalPadding,
+                          12,
+                          horizontalPadding,
+                          compactMathTablet ? 10 : 16,
                         ),
-                        const SizedBox(width: 18),
-                        Expanded(
-                          child: _WorksheetWorkArea(
-                            day: day,
-                            progress: _progress,
-                            selectedQuestionId: _selectedQuestionId,
-                            isMathWorksheet: isMathWorksheet,
-                            parentReviewMode: parentReviewMode,
-                            questionKeyFor: _questionKeyFor,
-                            onSelectQuestion: (id) {
-                              setState(() => _selectedQuestionId = id);
-                            },
-                            onDigit: _appendDigitToSelected,
-                            onBackspace: _backspaceSelectedAnswer,
-                            onClearSelected: _clearSelectedAnswer,
-                            onOpenHandwriting: (id, {blankIndex}) =>
-                                _openHandwritingPractice(
-                                  day,
-                                  questionId: id,
-                                  blankIndex: blankIndex,
-                                ),
-                            onPreviousQuestion: () =>
-                                _selectPreviousQuestion(day),
-                            onNextQuestion: () => _selectNextQuestion(day),
-                            onMarkSelectedCorrect: () =>
-                                _markSelectedQuestion(day, true),
-                            onMarkSelectedWrong: () =>
-                                _markSelectedQuestion(day, false),
-                            onCheck: isMathWorksheet
-                                ? () => _checkDay(day)
-                                : () => _markDayComplete(day),
-                            onClearDay: () => _clearDay(day),
-                          ),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            SizedBox(
+                              width: sidePanelWidth,
+                              child: _WorksheetSidePanel(
+                                worksheet: _worksheet,
+                                progress: _progress,
+                                selectedDayIndex: _selectedDayIndex,
+                                pet: pet,
+                                isMathWorksheet: isMathWorksheet,
+                                onBack: () => Navigator.of(context).pop(),
+                                onSelectDay: (index) {
+                                  final nextDay = _worksheet.days[index];
+                                  final firstPracticeQuestion =
+                                      _firstPracticeQuestion(nextDay);
+                                  setState(() {
+                                    _selectedDayIndex = index;
+                                    _selectedQuestionId =
+                                        firstPracticeQuestion?.id;
+                                    _selectedBlankIndex =
+                                        _defaultBlankIndexForQuestion(
+                                          firstPracticeQuestion,
+                                        );
+                                  });
+                                },
+                              ),
+                            ),
+                            SizedBox(width: panelGap),
+                            Expanded(
+                              child: _WorksheetWorkArea(
+                                day: day,
+                                progress: _progress,
+                                selectedQuestionId: _selectedQuestionId,
+                                selectedBlankIndex: _selectedBlankIndex,
+                                isMathWorksheet: isMathWorksheet,
+                                parentReviewMode: parentReviewMode,
+                                questionKeyFor: _questionKeyFor,
+                                onSelectQuestion: (id) {
+                                  final question = _questionById(day, id);
+                                  setState(() {
+                                    _selectedQuestionId = id;
+                                    _selectedBlankIndex =
+                                        _defaultBlankIndexForQuestion(question);
+                                  });
+                                },
+                                onSelectBlank: _selectBlank,
+                                onSetAnswer: (id, value) =>
+                                    _setAnswer(id, value),
+                                onDigit: _appendDigitToSelected,
+                                onBackspace: _backspaceSelectedAnswer,
+                                onClearSelected: _clearSelectedAnswer,
+                                onOpenHandwriting: (id, {blankIndex}) =>
+                                    _openHandwritingPractice(
+                                      day,
+                                      questionId: id,
+                                      blankIndex: blankIndex,
+                                    ),
+                                onPreviousQuestion: () =>
+                                    _selectPreviousQuestion(day),
+                                onNextQuestion: () => _selectNextQuestion(day),
+                                onMarkSelectedCorrect: () =>
+                                    _markSelectedQuestion(day, true),
+                                onMarkSelectedWrong: () =>
+                                    _markSelectedQuestion(day, false),
+                                onCheck: isMathWorksheet
+                                    ? () => _checkDay(day)
+                                    : () => _markDayComplete(day),
+                                onClearDay: () => _clearDay(day),
+                              ),
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-              ),
+                );
+              },
             );
           },
         ),
@@ -147,31 +182,144 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     );
   }
 
-  Future<void> _appendDigitToSelected(String digit) async {
+  void _selectBlank(String questionId, int blankIndex) {
+    setState(() {
+      _selectedQuestionId = questionId;
+      _selectedBlankIndex = blankIndex;
+    });
+  }
+
+  String _selectedAnswerKey() {
     final id = _selectedQuestionId;
-    if (id == null) return;
-    final current = _progress.answers[id] ?? '';
-    await _setAnswer(id, '$current$digit');
+    if (id == null) return '';
+
+    final day = _worksheet.days[_selectedDayIndex];
+    final question = day.questions.cast<WorksheetQuestion?>().firstWhere(
+      (q) => q?.id == id,
+      orElse: () => null,
+    );
+
+    // 竖式计算题：始终使用 question.id 作为键
+    if (question != null &&
+        _isBuildVerticalQuestion(question) &&
+        _selectedBlankIndex != null) {
+      return _verticalBuildAnswerKey(question.id, _selectedBlankIndex!);
+    }
+
+    if (question != null && question.visual != null) {
+      return id;
+    }
+
+    if (_selectedBlankIndex != null) {
+      return '${id}_blank_$_selectedBlankIndex';
+    }
+    if (question != null &&
+        question.hasBlankMarkers &&
+        question.blankCount == 1) {
+      return question.blankAnswerKey(0);
+    }
+    return id;
+  }
+
+  Future<void> _appendDigitToSelected(String digit) async {
+    final key = _selectedAnswerKey();
+    if (key.isEmpty) return;
+    final current = _progress.answers[key] ?? '';
+
+    // 竖式计算题：逐位替换
+    if (_selectedBlankIndex != null) {
+      final day = _worksheet.days[_selectedDayIndex];
+      final question = day.questions.cast<WorksheetQuestion?>().firstWhere(
+        (q) => q?.id == _selectedQuestionId,
+        orElse: () => null,
+      );
+      if (question != null && _isBuildVerticalQuestion(question)) {
+        if (!_isAllowedBuildVerticalInput(
+          question,
+          _selectedBlankIndex!,
+          digit,
+        )) {
+          return;
+        }
+        await _setAnswer(key, digit);
+        final nextSlot = _nextVerticalBuildSlotAfterInput(
+          question,
+          _selectedBlankIndex!,
+        );
+        if (nextSlot != null && mounted) {
+          setState(() => _selectedBlankIndex = nextSlot);
+        }
+        return;
+      }
+      if (question != null && question.visual != null) {
+        if (int.tryParse(digit) == null) return;
+        final answerWidth = question.answers[0].length;
+        final chars = _verticalAnswerChars(current, answerWidth);
+        if (_selectedBlankIndex! < chars.length) {
+          chars[_selectedBlankIndex!] = digit;
+        }
+        final next = chars.join();
+        await _setAnswer(key, next.trim().isEmpty ? '' : next, trim: false);
+        return;
+      }
+      if (question != null && question.hasBlankMarkers) {
+        final inputType = question.blankInputType(_selectedBlankIndex!);
+        if (!_isAllowedBlankInput(inputType, digit)) {
+          return;
+        }
+        if (inputType == 'operator' || inputType == 'compare') {
+          await _setAnswer(key, digit);
+          return;
+        }
+      }
+    }
+
+    await _setAnswer(key, '$current$digit');
   }
 
   Future<void> _backspaceSelectedAnswer() async {
-    final id = _selectedQuestionId;
-    if (id == null) return;
-    final current = _progress.answers[id] ?? '';
+    final key = _selectedAnswerKey();
+    if (key.isEmpty) return;
+    final current = _progress.answers[key] ?? '';
     if (current.isEmpty) return;
-    await _setAnswer(id, current.substring(0, current.length - 1));
+
+    // 竖式计算题：清除当前位
+    if (_selectedBlankIndex != null) {
+      final day = _worksheet.days[_selectedDayIndex];
+      final question = day.questions.cast<WorksheetQuestion?>().firstWhere(
+        (q) => q?.id == _selectedQuestionId,
+        orElse: () => null,
+      );
+      if (question != null && _isBuildVerticalQuestion(question)) {
+        await _setAnswer(key, '');
+        return;
+      }
+      if (question != null && question.visual != null) {
+        final answerWidth = question.answers[0].length;
+        final chars = _verticalAnswerChars(current, answerWidth);
+        if (_selectedBlankIndex! < chars.length) {
+          chars[_selectedBlankIndex!] = ' ';
+        }
+        final next = chars.join();
+        await _setAnswer(key, next.trim().isEmpty ? '' : next, trim: false);
+        return;
+      }
+    }
+
+    await _setAnswer(key, current.substring(0, current.length - 1));
   }
 
   Future<void> _clearSelectedAnswer() async {
     final id = _selectedQuestionId;
     if (id == null) return;
     // 清除所有与当前题目相关的答案 key（包括 blank 答案）
-    final keysToRemove = _progress.answers.keys
-        .where((key) => key == id || key.startsWith('${id}_'))
-        .toList();
-    for (final key in keysToRemove) {
-      _progress.answers.remove(key);
-    }
+    final newAnswers = Map<String, String>.from(_progress.answers);
+    newAnswers.removeWhere((key, _) => key == id || key.startsWith('${id}_'));
+    _progress = WorksheetProgress(
+      answers: newAnswers,
+      checkedQuestionIds: Set<String>.from(_progress.checkedQuestionIds),
+      correctQuestionIds: Set<String>.from(_progress.correctQuestionIds),
+    );
     await _service.saveProgress(_worksheet.id, _progress);
     setState(() {});
   }
@@ -243,8 +391,12 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     final previousIndex = currentIndex <= 0
         ? practiceQuestions.length - 1
         : currentIndex - 1;
-    final previousId = practiceQuestions[previousIndex].id;
-    setState(() => _selectedQuestionId = previousId);
+    final previousQuestion = practiceQuestions[previousIndex];
+    final previousId = previousQuestion.id;
+    setState(() {
+      _selectedQuestionId = previousId;
+      _selectedBlankIndex = _defaultBlankIndexForQuestion(previousQuestion);
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _scrollQuestionIntoView(previousId);
     });
@@ -261,8 +413,12 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     final nextIndex = currentIndex < 0
         ? 0
         : (currentIndex + 1) % practiceQuestions.length;
-    final nextId = practiceQuestions[nextIndex].id;
-    setState(() => _selectedQuestionId = nextId);
+    final nextQuestion = practiceQuestions[nextIndex];
+    final nextId = nextQuestion.id;
+    setState(() {
+      _selectedQuestionId = nextId;
+      _selectedBlankIndex = _defaultBlankIndexForQuestion(nextQuestion);
+    });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _scrollQuestionIntoView(nextId);
     });
@@ -284,11 +440,162 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     );
   }
 
-  Future<void> _setAnswer(String questionId, String value) async {
-    final trimmed = value.trim();
-    _progress.answers[questionId] = trimmed;
-    _progress.checkedQuestionIds.remove(questionId);
-    _progress.correctQuestionIds.remove(questionId);
+  bool _isBuildVerticalQuestion(WorksheetQuestion question) {
+    return question.visual?['mode'] == 'build';
+  }
+
+  int? _defaultBlankIndexForQuestion(WorksheetQuestion? question) {
+    if (question == null) return null;
+    return _isBuildVerticalQuestion(question) ? 0 : null;
+  }
+
+  WorksheetQuestion? _questionById(WorksheetDay day, String id) {
+    for (final question in day.questions) {
+      if (question.id == id) return question;
+    }
+    return null;
+  }
+
+  int _verticalBuildWidth(WorksheetQuestion question) {
+    final visual = question.visual ?? const <String, String>{};
+    final top = visual['top'] ?? '';
+    final bottom = visual['bottom'] ?? '';
+    final result =
+        visual['result'] ??
+        (question.answers.isNotEmpty ? question.answers.first : '');
+    return math.max(result.length, math.max(top.length, bottom.length));
+  }
+
+  String _verticalBuildAnswerKey(String questionId, int slotIndex) {
+    return '${questionId}_vertical_$slotIndex';
+  }
+
+  int _verticalBuildOpSlot(WorksheetQuestion question) {
+    return _verticalBuildWidth(question);
+  }
+
+  bool _isAllowedBuildVerticalInput(
+    WorksheetQuestion question,
+    int slotIndex,
+    String value,
+  ) {
+    if (slotIndex == _verticalBuildOpSlot(question)) {
+      return value == '+' || value == '-';
+    }
+    return int.tryParse(value) != null;
+  }
+
+  bool _isAllowedBlankInput(String inputType, String value) {
+    switch (inputType) {
+      case 'operator':
+        return value == '+' || value == '-';
+      case 'compare':
+        return value == '>' || value == '<' || value == '=';
+      case 'number':
+      default:
+        return int.tryParse(value) != null;
+    }
+  }
+
+  int? _nextVerticalBuildSlotAfterInput(
+    WorksheetQuestion question,
+    int slotIndex,
+  ) {
+    final width = _verticalBuildWidth(question);
+    final opSlot = _verticalBuildOpSlot(question);
+    final bottomStart = opSlot + 1;
+    final bottomEnd = bottomStart + width - 1;
+    final resultStart = bottomEnd + 1;
+    final resultEnd = resultStart + width - 1;
+
+    if (slotIndex >= 0 && slotIndex < width - 1) {
+      return slotIndex + 1;
+    }
+    if (slotIndex == width - 1) {
+      return opSlot;
+    }
+    if (slotIndex == opSlot) {
+      return bottomStart;
+    }
+    if (slotIndex >= bottomStart && slotIndex < bottomEnd) {
+      return slotIndex + 1;
+    }
+    if (slotIndex == bottomEnd) {
+      return resultEnd;
+    }
+    if (slotIndex > resultStart && slotIndex <= resultEnd) {
+      return slotIndex - 1;
+    }
+    return null;
+  }
+
+  String _expectedVerticalBuildValue(
+    WorksheetQuestion question,
+    int slotIndex,
+  ) {
+    final visual = question.visual ?? const <String, String>{};
+    final width = _verticalBuildWidth(question);
+    final opSlot = _verticalBuildOpSlot(question);
+    final top = (visual['top'] ?? '').padLeft(width);
+    final bottom = (visual['bottom'] ?? '').padLeft(width);
+    final result =
+        (visual['result'] ??
+                (question.answers.isNotEmpty ? question.answers.first : ''))
+            .padLeft(width);
+
+    if (slotIndex < width) return top[slotIndex].trim();
+    if (slotIndex == opSlot) return visual['op'] ?? '';
+    if (slotIndex <= opSlot + width) {
+      return bottom[slotIndex - opSlot - 1].trim();
+    }
+    return result[slotIndex - opSlot - width - 1].trim();
+  }
+
+  int _verticalBuildSlotCount(WorksheetQuestion question) {
+    return _verticalBuildWidth(question) * 3 + 1;
+  }
+
+  bool _isVerticalBuildAnswerCorrect(
+    WorksheetQuestion question,
+    Map<String, String> answers,
+  ) {
+    for (var i = 0; i < _verticalBuildSlotCount(question); i++) {
+      final expected = _expectedVerticalBuildValue(question, i);
+      final actual = (answers[_verticalBuildAnswerKey(question.id, i)] ?? '')
+          .trim();
+      if (actual != expected) return false;
+    }
+    return true;
+  }
+
+  List<String> _verticalAnswerChars(String current, int answerWidth) {
+    final padded = current.padLeft(answerWidth, ' ');
+    final normalized = padded.length > answerWidth
+        ? padded.substring(padded.length - answerWidth)
+        : padded;
+    return normalized.split('');
+  }
+
+  Future<void> _setAnswer(
+    String questionId,
+    String value, {
+    bool trim = true,
+  }) async {
+    final trimmed = trim ? value.trim() : value;
+    final checkedQuestionId = questionId.contains('_vertical_')
+        ? questionId.split('_vertical_').first
+        : questionId.contains('_blank_')
+        ? questionId.split('_blank_').first
+        : questionId;
+    // 创建新的 Map 实例，确保 Flutter diff 算法能检测到变化
+    _progress = WorksheetProgress(
+      answers: Map<String, String>.from(_progress.answers)
+        ..[questionId] = trimmed,
+      checkedQuestionIds: Set<String>.from(_progress.checkedQuestionIds)
+        ..remove(checkedQuestionId),
+      correctQuestionIds: Set<String>.from(_progress.correctQuestionIds)
+        ..remove(checkedQuestionId),
+    );
     await _service.saveProgress(_worksheet.id, _progress);
     if (!mounted) return;
     setState(() {});
@@ -328,6 +635,9 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
     final firstPracticeQuestion = _firstPracticeQuestion(day);
     setState(() {
       _selectedQuestionId = firstPracticeQuestion?.id;
+      _selectedBlankIndex = _defaultBlankIndexForQuestion(
+        firstPracticeQuestion,
+      );
     });
   }
 
@@ -378,11 +688,14 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
           // 多选：比对集合（排序后比较）
           final userSet = userAnswer.split(',').map((s) => s.trim()).toSet();
           final expectedSet = question.answers.map((s) => s.trim()).toSet();
-          isCorrect = userSet.length == expectedSet.length &&
+          isCorrect =
+              userSet.length == expectedSet.length &&
               userSet.containsAll(expectedSet);
         } else {
           isCorrect = userAnswer == question.answers.first;
         }
+      } else if (_isBuildVerticalQuestion(question)) {
+        isCorrect = _isVerticalBuildAnswerCorrect(question, _progress.answers);
       } else if (question.hasBlankMarkers) {
         // 多 blank 题目：逐个比对
         var allCorrect = true;
@@ -672,10 +985,13 @@ class _WorksheetWorkArea extends StatelessWidget {
     required this.day,
     required this.progress,
     required this.selectedQuestionId,
+    required this.selectedBlankIndex,
     required this.isMathWorksheet,
     required this.parentReviewMode,
     required this.questionKeyFor,
     required this.onSelectQuestion,
+    required this.onSelectBlank,
+    required this.onSetAnswer,
     required this.onDigit,
     required this.onBackspace,
     required this.onClearSelected,
@@ -691,10 +1007,13 @@ class _WorksheetWorkArea extends StatelessWidget {
   final WorksheetDay day;
   final WorksheetProgress progress;
   final String? selectedQuestionId;
+  final int? selectedBlankIndex;
   final bool isMathWorksheet;
   final bool parentReviewMode;
   final GlobalKey Function(String questionId) questionKeyFor;
   final ValueChanged<String> onSelectQuestion;
+  final void Function(String, int) onSelectBlank;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
   final ValueChanged<String> onDigit;
   final VoidCallback onBackspace;
   final VoidCallback onClearSelected;
@@ -715,9 +1034,12 @@ class _WorksheetWorkArea extends StatelessWidget {
             day: day,
             progress: progress,
             selectedQuestionId: selectedQuestionId,
+            selectedBlankIndex: selectedBlankIndex,
             isMathWorksheet: isMathWorksheet,
             questionKeyFor: questionKeyFor,
             onSelectQuestion: onSelectQuestion,
+            onSelectBlank: onSelectBlank,
+            onSetAnswer: onSetAnswer,
             onOpenHandwriting: onOpenHandwriting,
             onCheck: onCheck,
             onClearDay: onClearDay,
@@ -750,9 +1072,12 @@ class _QuestionPaper extends StatelessWidget {
     required this.day,
     required this.progress,
     required this.selectedQuestionId,
+    required this.selectedBlankIndex,
     required this.isMathWorksheet,
     required this.questionKeyFor,
     required this.onSelectQuestion,
+    required this.onSelectBlank,
+    required this.onSetAnswer,
     required this.onOpenHandwriting,
     required this.onCheck,
     required this.onClearDay,
@@ -761,9 +1086,12 @@ class _QuestionPaper extends StatelessWidget {
   final WorksheetDay day;
   final WorksheetProgress progress;
   final String? selectedQuestionId;
+  final int? selectedBlankIndex;
   final bool isMathWorksheet;
   final GlobalKey Function(String questionId) questionKeyFor;
   final ValueChanged<String> onSelectQuestion;
+  final void Function(String, int) onSelectBlank;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
   final void Function(String questionId, {int? blankIndex}) onOpenHandwriting;
   final VoidCallback onCheck;
   final VoidCallback onClearDay;
@@ -850,6 +1178,20 @@ class _QuestionPaper extends StatelessWidget {
                     subtitle: entry.subtitle,
                   );
                 }
+                if (entry is _CompactBlockEntry) {
+                  return _CompactQuestionBlock(
+                    questions: entry.questions,
+                    answers: progress.answers,
+                    selectedQuestionId: selectedQuestionId,
+                    selectedBlankIndex: selectedBlankIndex,
+                    checkedResultFor: (id) => progress.checkedResultFor(id),
+                    manualMode: !isMathWorksheet,
+                    onSelectQuestion: onSelectQuestion,
+                    onSelectBlank: onSelectBlank,
+                    onSetAnswer: onSetAnswer,
+                    onOpenHandwriting: onOpenHandwriting,
+                  );
+                }
                 final questionEntry = entry as _QuestionItemEntry;
                 final question = questionEntry.question;
                 if (question.isDisplayOnly) {
@@ -864,6 +1206,8 @@ class _QuestionPaper extends StatelessWidget {
                     checkedResult: progress.checkedResultFor(question.id),
                     manualMode: !isMathWorksheet,
                     selected: selectedQuestionId == question.id,
+                    selectedBlankIndex: selectedBlankIndex,
+                    onSetAnswer: onSetAnswer,
                     onTap: () => onSelectQuestion(question.id),
                     onAnswerTap: () {
                       onSelectQuestion(question.id);
@@ -872,6 +1216,7 @@ class _QuestionPaper extends StatelessWidget {
                       }
                     },
                     onOpenHandwriting: onOpenHandwriting,
+                    onSelectBlank: onSelectBlank,
                   ),
                 );
               },
@@ -886,11 +1231,30 @@ class _QuestionPaper extends StatelessWidget {
     final entries = <_QuestionListEntry>[];
     var lastSection = '';
     var questionIndex = 0;
-    for (final question in day.questions) {
+    for (var i = 0; i < day.questions.length; i++) {
+      final question = day.questions[i];
       final section = question.sectionTitle.trim();
-      if (!isMathWorksheet && section.isNotEmpty && section != lastSection) {
+      if (section.isNotEmpty && section != lastSection) {
         entries.add(_QuestionSectionEntry(section, _sectionSubtitle(section)));
         lastSection = section;
+      }
+      if (question.compact && question.images.isEmpty) {
+        final compactQuestions = <_QuestionItemEntry>[];
+        var j = i;
+        while (j < day.questions.length) {
+          final q = day.questions[j];
+          if (!q.compact || q.images.isNotEmpty) break;
+          final qSection = q.sectionTitle.trim();
+          if (qSection.isNotEmpty && qSection != lastSection) break;
+          final idx = q.countsForProgress ? ++questionIndex : null;
+          compactQuestions.add(_QuestionItemEntry(idx, q));
+          j++;
+        }
+        if (compactQuestions.isNotEmpty) {
+          entries.add(_CompactBlockEntry(compactQuestions));
+        }
+        i = j - 1;
+        continue;
       }
       final index = question.countsForProgress ? ++questionIndex : null;
       entries.add(_QuestionItemEntry(index, question));
@@ -927,6 +1291,12 @@ class _QuestionItemEntry extends _QuestionListEntry {
 
   final int? index;
   final WorksheetQuestion question;
+}
+
+class _CompactBlockEntry extends _QuestionListEntry {
+  const _CompactBlockEntry(this.questions);
+
+  final List<_QuestionItemEntry> questions;
 }
 
 class _QuestionSectionHeader extends StatelessWidget {
@@ -1047,9 +1417,12 @@ class _QuestionRow extends StatelessWidget {
     required this.checkedResult,
     required this.manualMode,
     required this.selected,
+    required this.selectedBlankIndex,
+    required this.onSetAnswer,
     required this.onTap,
     required this.onAnswerTap,
     required this.onOpenHandwriting,
+    required this.onSelectBlank,
   });
 
   final int index;
@@ -1058,9 +1431,12 @@ class _QuestionRow extends StatelessWidget {
   final bool? checkedResult;
   final bool manualMode;
   final bool selected;
+  final int? selectedBlankIndex;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
   final VoidCallback onTap;
   final VoidCallback onAnswerTap;
   final void Function(String questionId, {int? blankIndex}) onOpenHandwriting;
+  final void Function(String, int) onSelectBlank;
 
   @override
   Widget build(BuildContext context) {
@@ -1082,12 +1458,12 @@ class _QuestionRow extends StatelessWidget {
       null when selected => const Color(0xFFFFF4CA),
       _ => const Color(0xFFF8EEDB),
     };
-    // 判断是否需要右侧大框：无填空、非match、非choice，且单blank
+    // 判断是否需要右侧大框：非match、非choice，且单blank在末尾，且非竖式题
     final needsRightSlot =
         !question.isMatch &&
         !question.isChoice &&
-        (!question.hasBlankMarkers ||
-            (question.hasBlankMarkers && question.blankCount == 1));
+        question.visual == null &&
+        (!question.hasBlankMarkers || question.isBlankAtEnd);
 
     return Material(
       color: Colors.transparent,
@@ -1163,6 +1539,41 @@ class _QuestionRow extends StatelessWidget {
   }
 
   Widget _buildQuestionContent(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // 图片放在文本上方
+        if (question.images.isNotEmpty) ...[
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: question.images
+                .map((image) => _QuestionImage(image: image))
+                .toList(),
+          ),
+          const SizedBox(height: 8),
+        ],
+        // 文本内容
+        _buildTextContent(context),
+      ],
+    );
+  }
+
+  Widget _buildTextContent(BuildContext context) {
+    // 竖式计算题
+    if (question.visual != null) {
+      return _CompactVerticalCalculation(
+        question: question,
+        answers: answers,
+        answer: answers[question.id] ?? '',
+        selected: selected,
+        selectedBlankIndex: selectedBlankIndex,
+        onSetAnswer: onSetAnswer,
+        onSelectQuestion: (_) => onTap(),
+        onSelectBlank: onSelectBlank,
+      );
+    }
+
     // 0. match 配对题
     if (question.isMatch) {
       return _MatchQuestionWidget(
@@ -1192,9 +1603,11 @@ class _QuestionRow extends StatelessWidget {
       return _buildBlankMarkersInline(context);
     }
 
-    // 3. /r 标记单空 → 普通文本（右侧大框在 Row 中）
+    // 3. /r 标记单空 → 如果 /r 在末尾：普通文本（右侧大框）；如果 /r 在中间：内联框
     if (question.hasBlankMarkers && question.blankCount == 1) {
-      return _buildPlainText(context, question.prompt.replaceAll('/r', ''));
+      return question.isBlankAtEnd
+          ? _buildPlainText(context, question.prompt.replaceAll('/r', ''))
+          : _buildBlankMarkersInline(context);
     }
 
     // 4. 无填空 → 普通文本（右侧大框在 Row 中）
@@ -1202,30 +1615,14 @@ class _QuestionRow extends StatelessWidget {
   }
 
   Widget _buildPlainText(BuildContext context, String text) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          text,
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            fontSize: manualMode ? 24 : 18,
-            height: 1.28,
-            fontWeight: FontWeight.w800,
-            color: const Color(0xFF27190F),
-          ),
-        ),
-        if (question.images.isNotEmpty) ...[
-          const SizedBox(height: 8),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: question.images
-                .map((image) => _QuestionImage(image: image))
-                .toList(),
-          ),
-        ],
-      ],
+    return Text(
+      text,
+      style: Theme.of(context).textTheme.titleMedium?.copyWith(
+        fontSize: manualMode ? 24 : 18,
+        height: 1.28,
+        fontWeight: FontWeight.w800,
+        color: const Color(0xFF27190F),
+      ),
     );
   }
 
@@ -1252,36 +1649,31 @@ class _QuestionRow extends StatelessWidget {
         final currentBlank = i;
         final answerKey = question.blankAnswerKey(currentBlank);
         final ink = answers[answerKey] ?? '';
+        final blankSelected = selected && selectedBlankIndex == currentBlank;
         spans.add(
           WidgetSpan(
             alignment: PlaceholderAlignment.middle,
-            child: _InlineHandwritingBox(
-              ink: ink,
-              selected: selected,
-              onTap: () =>
-                  onOpenHandwriting(question.id, blankIndex: currentBlank),
-            ),
+            child: manualMode
+                ? _InlineHandwritingBox(
+                    ink: ink,
+                    selected: blankSelected,
+                    onTap: () => onOpenHandwriting(
+                      question.id,
+                      blankIndex: currentBlank,
+                    ),
+                  )
+                : _InlineDigitBox(
+                    value: ink,
+                    selected: blankSelected,
+                    inputType: question.blankInputType(currentBlank),
+                    onTap: () => onSelectBlank(question.id, currentBlank),
+                  ),
           ),
         );
       }
     }
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        RichText(text: TextSpan(children: spans)),
-        if (question.images.isNotEmpty) ...[
-          const SizedBox(height: 8),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: question.images
-                .map((image) => _QuestionImage(image: image))
-                .toList(),
-          ),
-        ],
-      ],
-    );
+    return RichText(text: TextSpan(children: spans));
   }
 }
 
@@ -1616,7 +2008,11 @@ class _ChoiceQuestionWidgetState extends State<_ChoiceQuestionWidget> {
   Set<int> get _selectedIndices {
     final raw = widget.answers[widget.question.id] ?? '';
     if (raw.isEmpty) return {};
-    return raw.split(',').map((s) => int.tryParse(s.trim())).whereType<int>().toSet();
+    return raw
+        .split(',')
+        .map((s) => int.tryParse(s.trim()))
+        .whereType<int>()
+        .toSet();
   }
 
   void _onOptionTap(int index) {
@@ -1730,6 +2126,391 @@ class _ChoiceOptionCard extends StatelessWidget {
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
               fontSize: 18,
               fontWeight: FontWeight.w800,
+              color: const Color(0xFF27190F),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _InlineDigitBox extends StatelessWidget {
+  const _InlineDigitBox({
+    required this.value,
+    required this.selected,
+    required this.onTap,
+    this.inputType = 'number',
+  });
+
+  final String value;
+  final bool selected;
+  final VoidCallback onTap;
+  final String inputType;
+
+  @override
+  Widget build(BuildContext context) {
+    final isOperator = inputType == 'operator';
+    final isCompare = inputType == 'compare';
+    final background = isOperator
+        ? const Color(0xFFFFF3D5)
+        : isCompare
+        ? const Color(0xFFEFF6FF)
+        : const Color(0xFFFFFEFA);
+    final border = selected
+        ? const Color(0xFF2E91FF)
+        : isOperator
+        ? const Color(0xFFE6A13A)
+        : isCompare
+        ? const Color(0xFF7AA7E8)
+        : const Color(0xFFC9AC8A);
+    return Semantics(
+      button: true,
+      label: value.isNotEmpty
+          ? '已填写 $value'
+          : isOperator
+          ? '点击输入运算符'
+          : '点击输入数字',
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(isOperator ? 10 : 8),
+          onTap: onTap,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 150),
+            width: isOperator ? 52 : 64,
+            height: 40,
+            margin: const EdgeInsets.symmetric(horizontal: 2),
+            decoration: BoxDecoration(
+              color: background,
+              borderRadius: BorderRadius.circular(isOperator ? 10 : 8),
+              border: Border.all(color: border, width: selected ? 1.6 : 1.0),
+            ),
+            child: Center(
+              child: Text(
+                value,
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontSize: isOperator ? 26 : 24,
+                  fontWeight: isOperator ? FontWeight.w900 : FontWeight.w800,
+                  color: isOperator
+                      ? const Color(0xFF8A4A00)
+                      : const Color(0xFF27190F),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _CompactVerticalCalculation extends StatelessWidget {
+  const _CompactVerticalCalculation({
+    required this.question,
+    required this.answers,
+    required this.answer,
+    required this.selected,
+    required this.selectedBlankIndex,
+    required this.onSetAnswer,
+    required this.onSelectQuestion,
+    required this.onSelectBlank,
+  });
+
+  final WorksheetQuestion question;
+  final Map<String, String> answers;
+  final String answer;
+  final bool selected;
+  final int? selectedBlankIndex;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
+  final ValueChanged<String> onSelectQuestion;
+  final void Function(String, int) onSelectBlank;
+
+  static const _lineColor = Color(0xFF2D2A32);
+
+  @override
+  Widget build(BuildContext context) {
+    if (question.visual?['mode'] == 'build') {
+      return _BuildVerticalCalculation(
+        question: question,
+        answers: answers,
+        selected: selected,
+        selectedBlankIndex: selectedBlankIndex,
+        onSetAnswer: onSetAnswer,
+        onSelectQuestion: onSelectQuestion,
+        onSelectBlank: onSelectBlank,
+      );
+    }
+
+    final visual = question.visual!;
+    final op = visual['op'] ?? '+';
+    final top = visual['top'] ?? '0';
+    final bottom = visual['bottom'] ?? '0';
+    final width = math.max(
+      question.answers[0].length,
+      math.max(top.length, bottom.length),
+    );
+    final answerSlots = answer.padLeft(width);
+    final digitSize = width <= 2 ? 32.0 : 26.0; // 2位数用大框，3位数用小框
+    final boxSize = digitSize + 8;
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _VerticalNumberRow(value: top, width: width, digitSize: digitSize),
+        const SizedBox(height: 4),
+        _VerticalNumberRow(
+          value: bottom,
+          width: width,
+          op: op,
+          digitSize: digitSize,
+        ),
+        Container(
+          width: width * (digitSize + 4) + digitSize * 0.6,
+          height: 2,
+          margin: const EdgeInsets.symmetric(vertical: 6),
+          color: _lineColor.withValues(alpha: .5),
+        ),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(width: digitSize * 0.6),
+            for (var i = 0; i < width; i++)
+              _VerticalDigitBox(
+                value: i < answerSlots.length ? answerSlots[i].trim() : '',
+                selected: selected && selectedBlankIndex == i,
+                size: boxSize,
+                onTap: () {
+                  onSelectQuestion(question.id);
+                  onSelectBlank(question.id, i);
+                },
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _BuildVerticalCalculation extends StatelessWidget {
+  const _BuildVerticalCalculation({
+    required this.question,
+    required this.answers,
+    required this.selected,
+    required this.selectedBlankIndex,
+    required this.onSetAnswer,
+    required this.onSelectQuestion,
+    required this.onSelectBlank,
+  });
+
+  final WorksheetQuestion question;
+  final Map<String, String> answers;
+  final bool selected;
+  final int? selectedBlankIndex;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
+  final ValueChanged<String> onSelectQuestion;
+  final void Function(String, int) onSelectBlank;
+
+  int get _width {
+    final visual = question.visual ?? const <String, String>{};
+    final top = visual['top'] ?? '';
+    final bottom = visual['bottom'] ?? '';
+    final result =
+        visual['result'] ??
+        (question.answers.isNotEmpty ? question.answers.first : '');
+    return math.max(result.length, math.max(top.length, bottom.length));
+  }
+
+  int get _opSlot => _width;
+
+  String _slotKey(int slotIndex) {
+    return '${question.id}_vertical_$slotIndex';
+  }
+
+  Widget _cell({
+    required BuildContext context,
+    required int slotIndex,
+    required double size,
+    double? width,
+  }) {
+    final isOpCell = slotIndex == _opSlot;
+    return _VerticalDigitBox(
+      value: answers[_slotKey(slotIndex)] ?? '',
+      selected: selected && selectedBlankIndex == slotIndex,
+      size: size,
+      width: width,
+      onTap: () async {
+        onSelectQuestion(question.id);
+        onSelectBlank(question.id, slotIndex);
+        if (isOpCell) return;
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final width = _width;
+    final cellSize = width <= 2 ? 34.0 : 30.0;
+    final opWidth = cellSize * 0.8;
+    final lineWidth = width * (cellSize + 4) + opWidth;
+    final prompt = question.prompt.replaceAll('/r', '?');
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          prompt,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: const TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.w900,
+            color: Color(0xFF27190F),
+            fontFeatures: [FontFeature.tabularFigures()],
+          ),
+        ),
+        const SizedBox(height: 6),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(width: opWidth),
+            for (var i = 0; i < width; i++)
+              _cell(context: context, slotIndex: i, size: cellSize),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _cell(
+              context: context,
+              slotIndex: _opSlot,
+              size: cellSize,
+              width: opWidth,
+            ),
+            for (var i = 0; i < width; i++)
+              _cell(
+                context: context,
+                slotIndex: _opSlot + 1 + i,
+                size: cellSize,
+              ),
+          ],
+        ),
+        Container(
+          width: lineWidth,
+          height: 2,
+          margin: const EdgeInsets.symmetric(vertical: 6),
+          color: _CompactVerticalCalculation._lineColor.withValues(alpha: .55),
+        ),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(width: opWidth),
+            for (var i = 0; i < width; i++)
+              _cell(
+                context: context,
+                slotIndex: _opSlot + width + 1 + i,
+                size: cellSize,
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _VerticalNumberRow extends StatelessWidget {
+  const _VerticalNumberRow({
+    required this.value,
+    required this.width,
+    this.op,
+    required this.digitSize,
+  });
+
+  final String value;
+  final int width;
+  final String? op;
+  final double digitSize;
+
+  @override
+  Widget build(BuildContext context) {
+    final padded = value.padLeft(width);
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          width: digitSize * 0.6,
+          child: Text(
+            op ?? '',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: digitSize * 0.85,
+              fontWeight: FontWeight.w900,
+              color: _CompactVerticalCalculation._lineColor,
+            ),
+          ),
+        ),
+        for (final char in padded.characters)
+          SizedBox(
+            width: digitSize + 4,
+            child: Text(
+              char.trim(),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: digitSize,
+                fontWeight: FontWeight.w900,
+                color: const Color(0xFF27190F),
+                fontFeatures: const [FontFeature.tabularFigures()],
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _VerticalDigitBox extends StatelessWidget {
+  const _VerticalDigitBox({
+    required this.value,
+    required this.selected,
+    required this.size,
+    required this.onTap,
+    this.width,
+  });
+
+  final String value;
+  final bool selected;
+  final double size;
+  final VoidCallback onTap;
+  final double? width;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 2),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(8),
+        onTap: onTap,
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 120),
+          width: width ?? size,
+          height: size + 4,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: selected ? const Color(0xFFE0F2FE) : const Color(0xFFFFFEFA),
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(
+              color: selected
+                  ? const Color(0xFF2E91FF)
+                  : const Color(0xFFC9AC8A),
+              width: selected ? 2 : 1,
+            ),
+          ),
+          child: Text(
+            value,
+            style: TextStyle(
+              fontSize: size * 0.75,
+              fontWeight: FontWeight.w900,
               color: const Color(0xFF27190F),
             ),
           ),
@@ -2710,6 +3491,21 @@ class _MathKeypad extends StatelessWidget {
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                for (final symbol in const ['+', '-'])
+                  Padding(
+                    padding: EdgeInsets.only(bottom: symbol == '-' ? 0 : 10),
+                    child: _DigitButton(
+                      label: symbol,
+                      size: digitSize,
+                      onTap: () => onDigit(symbol),
+                    ),
+                  ),
+              ],
+            ),
+            SizedBox(width: compact ? 10 : 20),
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
@@ -2853,7 +3649,7 @@ class _NextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return _PressableSurface(
-      width: compact ? 138 : 170,
+      width: compact ? 118 : 146,
       height: compact ? 112 : 124,
       gradient: const LinearGradient(
         begin: Alignment.topCenter,
@@ -3161,20 +3957,38 @@ class _PaperCard extends StatelessWidget {
 class _QuestionImage extends StatelessWidget {
   const _QuestionImage({required this.image});
 
+  static const double _questionImageHeight = 112;
+
   final String image;
 
   @override
   Widget build(BuildContext context) {
+    // 外部文件路径（如 assets/worksheets/images/...）
+    if (image.startsWith('assets/')) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Image.asset(
+          image.trim(),
+          width: double.infinity,
+          height: _questionImageHeight,
+          fit: BoxFit.contain,
+          gaplessPlayback: true,
+          errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+        ),
+      );
+    }
+
+    // base64 编码图片
     try {
       final data = image.contains(',') ? image.split(',').last : image;
       final bytes = base64Decode(data);
       return ClipRRect(
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(12),
         child: Image.memory(
           bytes,
-          width: 92,
-          height: 92,
-          fit: BoxFit.cover,
+          width: double.infinity,
+          height: _questionImageHeight,
+          fit: BoxFit.contain,
           gaplessPlayback: true,
         ),
       );
@@ -3200,6 +4014,560 @@ class _WorksheetBackdrop extends StatelessWidget {
         ),
       ),
       child: child,
+    );
+  }
+}
+
+class _CompareSymbolSelector extends StatelessWidget {
+  const _CompareSymbolSelector();
+
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: const Text('选择符号'),
+      content: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: ['>', '<', '=']
+            .map(
+              (s) => Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  borderRadius: BorderRadius.circular(12),
+                  onTap: () => Navigator.of(context).pop(s),
+                  child: Container(
+                    width: 64,
+                    height: 64,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFFFEFA),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: const Color(0xFFC9AC8A),
+                        width: 1.2,
+                      ),
+                    ),
+                    child: Text(
+                      s,
+                      style: const TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.w900,
+                        color: Color(0xFF27190F),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            )
+            .toList(),
+      ),
+    );
+  }
+}
+
+class _CompactQuestionBlock extends StatelessWidget {
+  const _CompactQuestionBlock({
+    required this.questions,
+    required this.answers,
+    required this.selectedQuestionId,
+    required this.selectedBlankIndex,
+    required this.checkedResultFor,
+    required this.manualMode,
+    required this.onSelectQuestion,
+    required this.onSelectBlank,
+    required this.onSetAnswer,
+    required this.onOpenHandwriting,
+  });
+
+  final List<_QuestionItemEntry> questions;
+  final Map<String, String> answers;
+  final String? selectedQuestionId;
+  final int? selectedBlankIndex;
+  final bool? Function(String) checkedResultFor;
+  final bool manualMode;
+  final ValueChanged<String> onSelectQuestion;
+  final void Function(String, int) onSelectBlank;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
+  final void Function(String, {int? blankIndex}) onOpenHandwriting;
+
+  double _measureTextWidth(String text, TextStyle style) {
+    final painter = TextPainter(
+      text: TextSpan(text: text, style: style),
+      textDirection: TextDirection.ltr,
+    );
+    painter.layout();
+    return painter.size.width;
+  }
+
+  double _estimateItemWidth(WorksheetQuestion question, TextStyle style) {
+    // 竖式计算题
+    if (question.visual != null) {
+      final visual = question.visual!;
+      final top = visual['top'] ?? '0';
+      final bottom = visual['bottom'] ?? '0';
+      final answer = question.answers[0];
+      final width = math.max(
+        answer.length,
+        math.max(top.length, bottom.length),
+      );
+      final digitSize = width <= 2 ? 32.0 : 26.0;
+      final itemWidth = width * (digitSize + 4) + digitSize * 0.6 + 48 + 8;
+      return itemWidth;
+    }
+
+    final text = question.prompt.replaceAll('/r', '');
+    final textWidth = _measureTextWidth(text, style);
+    double extra = 0;
+    if (question.hasBlankMarkers) {
+      if (question.isBlankAtEnd) {
+        extra = 72;
+      } else {
+        extra = question.blankCount * 68;
+      }
+    } else if (question.isCompare) {
+      extra = 68;
+    }
+    return textWidth + extra + 48 + 8;
+  }
+
+  _CompactQuestionItem _createItem(
+    _QuestionItemEntry q,
+    double estimatedWidth,
+  ) {
+    return _CompactQuestionItem(
+      questionEntry: q,
+      answers: answers,
+      selectedQuestionId: selectedQuestionId,
+      selectedBlankIndex: selectedBlankIndex,
+      checkedResult: checkedResultFor(q.question.id),
+      manualMode: manualMode,
+      onSelectQuestion: onSelectQuestion,
+      onSelectBlank: onSelectBlank,
+      onSetAnswer: onSetAnswer,
+      onOpenHandwriting: onOpenHandwriting,
+      estimatedWidth: estimatedWidth,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final maxWidth = constraints.maxWidth;
+        const gap = 12.0;
+        const containerHorizontalPadding = 12.0;
+        final contentMaxWidth = math.max(
+          1.0,
+          maxWidth - containerHorizontalPadding,
+        );
+        final targetColumns = contentMaxWidth >= 640
+            ? 3
+            : contentMaxWidth >= 420
+            ? 2
+            : 1;
+        final adaptiveItemWidth =
+            (contentMaxWidth - gap * (targetColumns - 1)) / targetColumns;
+        final style =
+            Theme.of(context).textTheme.titleMedium?.copyWith(
+              fontSize: manualMode ? 24 : 22,
+              fontWeight: FontWeight.w800,
+            ) ??
+            const TextStyle(fontSize: 22, fontWeight: FontWeight.w800);
+
+        // 计算每个题目的预估宽度，并按宽度排序（短题在前）
+        final items = List.generate(questions.length, (i) {
+          final width = _estimateItemWidth(questions[i].question, style);
+          return (
+            originalIndex: i,
+            estimatedWidth: math.min(
+              math.max(width, adaptiveItemWidth),
+              contentMaxWidth,
+            ),
+            entry: questions[i],
+          );
+        });
+        items.sort((a, b) => a.estimatedWidth.compareTo(b.estimatedWidth));
+
+        // 按排序后的顺序重新创建 item，并重新分配题号
+        final sortedItems = <_CompactQuestionItem>[];
+        for (var i = 0; i < items.length; i++) {
+          final item = items[i];
+          final entry = item.entry;
+          // 重新创建 entry，用新的排序后题号
+          final sortedEntry = _QuestionItemEntry(
+            entry.index != null ? (i + 1) : null,
+            entry.question,
+          );
+          sortedItems.add(_createItem(sortedEntry, item.estimatedWidth));
+        }
+
+        final rows = <List<_CompactQuestionItem>>[];
+        var currentRow = <_CompactQuestionItem>[];
+        var currentRowWidth = 0.0;
+
+        for (var i = 0; i < sortedItems.length; i++) {
+          final item = sortedItems[i];
+          final itemWidth = item.estimatedWidth;
+
+          if (currentRow.isEmpty) {
+            currentRow.add(item);
+            currentRowWidth = itemWidth;
+          } else if (currentRow.length < targetColumns) {
+            final newWidth = currentRowWidth + gap + itemWidth;
+            if (newWidth <= contentMaxWidth || currentRow.length == 1) {
+              currentRow.add(item);
+              currentRowWidth = newWidth;
+            } else {
+              rows.add(currentRow);
+              currentRow = [item];
+              currentRowWidth = itemWidth;
+            }
+          } else {
+            rows.add(currentRow);
+            currentRow = [item];
+            currentRowWidth = itemWidth;
+          }
+        }
+        if (currentRow.isNotEmpty) {
+          rows.add(currentRow);
+        }
+
+        return Container(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 6),
+          decoration: BoxDecoration(
+            color: const Color(0xFFFFFEFA),
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(color: const Color(0xFFE2D6C7), width: 1.2),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              for (final row in rows)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: Row(
+                    mainAxisAlignment: row.length == targetColumns
+                        ? MainAxisAlignment.spaceBetween
+                        : MainAxisAlignment.start,
+                    children: [
+                      for (var c = 0; c < targetColumns; c++) ...[
+                        if (c < row.length)
+                          SizedBox(width: row[c].estimatedWidth, child: row[c])
+                        else
+                          const Expanded(child: SizedBox.shrink()),
+                        if (c < targetColumns - 1) const SizedBox(width: gap),
+                      ],
+                    ],
+                  ),
+                ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _CompactQuestionItem extends StatelessWidget {
+  const _CompactQuestionItem({
+    required this.questionEntry,
+    required this.answers,
+    required this.selectedQuestionId,
+    required this.selectedBlankIndex,
+    required this.checkedResult,
+    required this.manualMode,
+    required this.onSelectQuestion,
+    required this.onSelectBlank,
+    required this.onSetAnswer,
+    required this.onOpenHandwriting,
+    required this.estimatedWidth,
+  });
+
+  final _QuestionItemEntry questionEntry;
+  final Map<String, String> answers;
+  final String? selectedQuestionId;
+  final int? selectedBlankIndex;
+  final bool? checkedResult;
+  final bool manualMode;
+  final ValueChanged<String> onSelectQuestion;
+  final void Function(String, int) onSelectBlank;
+  final Future<void> Function(String questionId, String value) onSetAnswer;
+  final void Function(String, {int? blankIndex}) onOpenHandwriting;
+  final double estimatedWidth;
+
+  WorksheetQuestion get question => questionEntry.question;
+
+  @override
+  Widget build(BuildContext context) {
+    final selected = selectedQuestionId == question.id;
+    final stateColor = switch (checkedResult) {
+      true => const Color(0xFFF1FAE8),
+      false => const Color(0xFFFFD4D9),
+      null when selected => const Color(0xFFFFF9D9),
+      _ => const Color(0xFFFFFEFA),
+    };
+    final borderColor = switch (checkedResult) {
+      true => const Color(0xFFC8DFA0),
+      false => const Color(0xFFE5485C),
+      null when selected => const Color(0xFF2E91FF),
+      _ => const Color(0xFFE2D6C7),
+    };
+    final numberColor = switch (checkedResult) {
+      true => const Color(0xFFDFF1C2),
+      false => const Color(0xFFFF9FAB),
+      null when selected => const Color(0xFFFFF4CA),
+      _ => const Color(0xFFF8EEDB),
+    };
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(14),
+        onTap: () => onSelectQuestion(question.id),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          padding: const EdgeInsets.all(3),
+          decoration: BoxDecoration(
+            color: stateColor,
+            borderRadius: BorderRadius.circular(14),
+            border: Border.all(color: borderColor, width: selected ? 2.2 : 1.2),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 32,
+                height: 32,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: numberColor,
+                  shape: BoxShape.circle,
+                ),
+                child: Text(
+                  '${questionEntry.index ?? ''}',
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w900,
+                    color: Color(0xFF3C2A1A),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(child: _buildQuestionContent(context, selected)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildQuestionContent(BuildContext context, bool selected) {
+    // 竖式计算题
+    if (question.visual != null) {
+      return _CompactVerticalCalculation(
+        question: question,
+        answers: answers,
+        answer: answers[question.id] ?? '',
+        selected: selected,
+        selectedBlankIndex: selectedBlankIndex,
+        onSetAnswer: onSetAnswer,
+        onSelectQuestion: onSelectQuestion,
+        onSelectBlank: onSelectBlank,
+      );
+    }
+
+    // 选择题
+    if (question.isChoice) {
+      return Text(
+        question.prompt,
+        style: TextStyle(
+          fontSize: manualMode ? 24 : 22,
+          fontWeight: FontWeight.w800,
+          color: const Color(0xFF27190F),
+        ),
+        overflow: TextOverflow.ellipsis,
+      );
+    }
+
+    // 多 blank 或 单 blank 在中间 → 内联框
+    if (question.hasBlankMarkers && !question.isBlankAtEnd) {
+      return _buildCompactBlankMarkersInline(context, selected);
+    }
+
+    // 单 blank 在末尾 → 文本 + 右侧小框
+    if (question.hasBlankMarkers && question.isBlankAtEnd) {
+      final textWidget = Text(
+        question.prompt.replaceAll('/r', ''),
+        style: TextStyle(
+          fontSize: manualMode ? 24 : 22,
+          fontWeight: FontWeight.w800,
+          color: const Color(0xFF27190F),
+        ),
+        overflow: TextOverflow.ellipsis,
+      );
+      final boxWidget = _InlineDigitBox(
+        value: answers[question.blankAnswerKey(0)] ?? '',
+        selected: selected && selectedBlankIndex == 0,
+        inputType: question.blankInputType(0),
+        onTap: () => onSelectBlank(question.id, 0),
+      );
+      // 不超宽：两端对齐，文本在左、框在右
+      if (estimatedWidth <= 270) {
+        return Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [textWidget, const SizedBox(width: 6), boxWidget],
+        );
+      }
+      // 超宽：保持现有结构
+      return Row(
+        children: [
+          Expanded(child: textWidget),
+          const SizedBox(width: 6),
+          boxWidget,
+        ],
+      );
+    }
+
+    // 比较题（无 blank markers 时）
+    if (question.isCompare) {
+      return _buildCompactCompare(context, selected);
+    }
+
+    // 普通文本
+    return Text(
+      question.prompt,
+      style: TextStyle(
+        fontSize: manualMode ? 24 : 22,
+        fontWeight: FontWeight.w800,
+        color: const Color(0xFF27190F),
+      ),
+      overflow: TextOverflow.ellipsis,
+    );
+  }
+
+  Widget _buildCompactBlankMarkersInline(BuildContext context, bool selected) {
+    final spans = <InlineSpan>[];
+    final parts = question.prompt.split('/r');
+
+    for (var i = 0; i < parts.length; i++) {
+      final text = parts[i];
+      if (text.isNotEmpty) {
+        spans.add(
+          TextSpan(
+            text: text,
+            style: TextStyle(
+              fontSize: manualMode ? 24 : 22,
+              height: 1.6,
+              fontWeight: FontWeight.w800,
+              color: const Color(0xFF27190F),
+            ),
+          ),
+        );
+      }
+      if (i < parts.length - 1) {
+        final currentBlank = i;
+        final blankSelected = selected && selectedBlankIndex == currentBlank;
+
+        if (question.isCompare) {
+          final ink = answers[question.id] ?? '';
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: _InlineDigitBox(
+                value: ink,
+                selected: blankSelected,
+                onTap: () async {
+                  onSelectQuestion(question.id);
+                  final result = await showDialog<String>(
+                    context: context,
+                    builder: (_) => const _CompareSymbolSelector(),
+                  );
+                  if (result != null) {
+                    await onSetAnswer(question.id, result);
+                  }
+                },
+              ),
+            ),
+          );
+        } else {
+          final answerKey = question.blankAnswerKey(currentBlank);
+          final ink = answers[answerKey] ?? '';
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: manualMode
+                  ? _InlineHandwritingBox(
+                      ink: ink,
+                      selected: blankSelected,
+                      onTap: () => onOpenHandwriting(
+                        question.id,
+                        blankIndex: currentBlank,
+                      ),
+                    )
+                  : _InlineDigitBox(
+                      value: ink,
+                      selected: blankSelected,
+                      inputType: question.blankInputType(currentBlank),
+                      onTap: () => onSelectBlank(question.id, currentBlank),
+                    ),
+            ),
+          );
+        }
+      }
+    }
+
+    return RichText(
+      text: TextSpan(children: spans),
+      overflow: TextOverflow.ellipsis,
+    );
+  }
+
+  Widget _buildCompactCompare(BuildContext context, bool selected) {
+    final parts = question.prompt.split('/r');
+    final left = parts.isNotEmpty ? parts[0] : '';
+    final right = parts.length > 1 ? parts[1] : '';
+    final ink = answers[question.id] ?? '';
+
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            left,
+            style: TextStyle(
+              fontSize: manualMode ? 24 : 22,
+              fontWeight: FontWeight.w800,
+              color: const Color(0xFF27190F),
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+        const SizedBox(width: 4),
+        _InlineDigitBox(
+          value: ink,
+          selected: selected,
+          onTap: () async {
+            onSelectQuestion(question.id);
+            final result = await showDialog<String>(
+              context: context,
+              builder: (_) => const _CompareSymbolSelector(),
+            );
+            if (result != null) {
+              await onSetAnswer(question.id, result);
+            }
+          },
+        ),
+        const SizedBox(width: 4),
+        Expanded(
+          child: Text(
+            right,
+            style: TextStyle(
+              fontSize: manualMode ? 24 : 22,
+              fontWeight: FontWeight.w800,
+              color: const Color(0xFF27190F),
+            ),
+            overflow: TextOverflow.ellipsis,
+          ),
+        ),
+      ],
     );
   }
 }

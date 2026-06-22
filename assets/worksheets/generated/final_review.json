@@ -1,0 +1,989 @@
+{
+  "id": "final_review",
+  "title": "期末复习",
+  "subject": "math",
+  "grade": "一年级下册",
+  "description": "一年级数学期末复习试卷，包含课本和拓展解决问题",
+  "sourceFile": "期末复习课本解决问题.pdf",
+  "days": [
+    {
+      "day": 1,
+      "title": "第1天",
+      "questions": [
+        {
+          "id": "final_review_01_001",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "妈妈一共要包12个汤圆，已经包好了/r个，还要包几个？/r-/r=/r(个)",
+          "answers": [
+            "6",
+            "12",
+            "6",
+            "6"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/1.jpg"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_002",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "一共有15只天鹅。\n左边7只，右边几只？/r-/r=/r(只)\n白天鹅6只，黑天鹅几只？/r-/r=/r(只)",
+          "answers": [
+            "15",
+            "7",
+            "8",
+            "15",
+            "6",
+            "9"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/2.jpg"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_004",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "/r/r/r=/r(个)                   /r/r/r=/r(个)",
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answers": [
+            "11",
+            "5",
+            "6",
+            "13",
+            "4",
+            "9"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/3.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_006",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "有一群海豚，共12只，跃起/r只，水面下有几只？/r/r/r=/r(只)",
+          "inputTypes": [
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answers": [
+            "5",
+            "12",
+            "5",
+            "7"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/4.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_007",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "松鼠妈妈和松鼠宝宝一共采了12个松果，松鼠妈妈采了8个，松鼠宝宝采了几个？\n/r/r/r=/r(个)",
+          "inputTypes": [
+            "",
+            "",
+            "operator",
+            ""
+          ],
+          "answers": [
+            "12",
+            "8",
+            "4"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/5.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_008",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "一共有15个正方形，5个三角形，还剩几个正方形？/r/r/r=/r(个)",
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answers": [
+            "15",
+            "6",
+            "9"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/6.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_009",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "树上和树下一共有13只猴子，树上有5只，树下有几只？/r/r/r=/r(只)\n猴子们一共摘了13个桃，吃掉了8个，还剩几个？/r/r/r=/r(个)",
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answers": [
+            "13",
+            "5",
+            "8"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_011",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "/r/r/r=/r(个)                   /r/r/r=/r(个)",
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answers": [
+            "12",
+            "5",
+            "7",
+            "13",
+            "4",
+            "9"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/8.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_013",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "小月和小军一起折了14只纸船，其中黄色的有6只。小军折了8只，小月折了几只？\n/r/r/r=/r(只)",
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answers": [
+            "14",
+            "8",
+            "6"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/9.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_01_014",
+          "type": "math",
+          "sectionTitle": "一、课本解决问题",
+          "prompt": "15名同学排成一行做广播体操，小红左边有8名同学，她的右边有几名同学？/r(名)",
+          "answers": [
+            "6"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "第2天",
+      "questions": [
+        {
+          "id": "final_review_02_001",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "现在有多少个矿泉水瓶？/r/r/r=/r(个)",
+          "answers": [
+            "16",
+            "+",
+            "11",
+            "27"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_1.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_002",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "野鸭和天鹅一共有多少只？/r/r/r=/r(只)",
+          "answers": [
+            "25",
+            "+",
+            "8",
+            "33"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_2.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_003",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "还剩多少个足球？/r/r/r=/r(个)",
+          "answers": [
+            "36",
+            "-",
+            "8",
+            "28"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_3.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_004",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "运走了多少箱？/r/r/r=/r(箱)",
+          "answers": [
+            "68",
+            "-",
+            "12",
+            "56"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_4.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_005",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "王阿姨要包30个粽子，已经包了7个。还要包多少个？/r/r/r=/r(个)",
+          "answers": [
+            "30",
+            "-",
+            "7",
+            "23"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_5.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_006",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "如果10个装一箱，可以装满几箱？/r(箱)\n如果6个装一箱，可以装满几箱？/r(箱)",
+          "answers": [
+            "2",
+            "4"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_6.png"
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_02_008",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "爸爸买了3袋苹果，每袋6个。一共买了多少个苹果？\n/r/r/r/r/r=/r(个)",
+          "answers": [
+            "6",
+            "+",
+            "6",
+            "+",
+            "6",
+            "18"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_8.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_009",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "还缺多少把椅子？/r/r/r=/r(把)",
+          "answers": [
+            "42",
+            "-",
+            "30",
+            "12"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_02_010",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "做一个羽毛球要用4根羽毛，18根羽毛最多可以做几个？/r(个)",
+          "answers": [
+            "4"
+          ],
+          "images": [
+            
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_02_011",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "需要几次才能把苹果全部运走？/r(次)",
+          "answers": [
+            "3"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d2_10.png"
+            
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_02_012",
+          "type": "math",
+          "sectionTitle": "二、课本补充解决问题",
+          "prompt": "船上还可以坐56人，哪两个班可以一起坐船？/r(班)和/r(班)",
+          "answers": [
+            "一",
+            "三"
+          ],
+          "images": ["assets/worksheets/images/final_review/d2_11.png"],
+          "answerSource": "auto",
+          "compact": false
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "第3天",
+      "questions": [
+        {
+          "id": "final_review_03_001",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "王奶奶养的公鸡和母鸡一共有多少只？/r/r/r=/r(只)",
+          "answers": [
+            "18",
+            "+",
+            "25",
+            "43"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d3_1.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_002",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "每人参加一项体育活动，算一算总人数？/r/r/r/r/r=/r(人)",
+          "answers": [
+            "28",
+            "+",
+            "11",
+            "+",
+            "59",
+            "98"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d3_2.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_003",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "鸽舍里原有24只鸽子，飞出了8只。鸽舍里还剩几只？/r/r/r=/r(只)",
+          "answers": [
+            "24",
+            "-",
+            "8",
+            "16"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d3_3.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_004",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "李叔叔摘了43箱草莓，卖掉了一些，还剩28箱。卖掉了多少箱？/r/r/r=/r(箱)",
+          "answers": [
+            "43",
+            "-",
+            "28",
+            "15"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d3_4.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_005",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "上面是小兰收集邮票的种类和数量，请问：\n风景邮票和人物邮票共有多少枚？/r/r/r=/r(枚)\n动物邮票和建筑邮票共有多少枚？/r/r/r=/r(枚)\n请你尝试提出其他数学问题并解答",
+          "answers": [
+            "31",
+            "+",
+            "22",
+            "53",
+            "25",
+            "+",
+            "16",
+            "41"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d3_5.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_007",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "小欣捡了32个贝壳，小亮捡了25个贝壳，那小欣比小亮多捡了多少个贝壳？/r/r/r=/r(个)",
+          "answers": [
+            "32",
+            "-",
+            "25",
+            "7"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_008",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "小兰养了14条蚕，小宁养了8条。小兰比小宁多养了几条？/r/r/r=/r(条)",
+          "answers": [
+            "14",
+            "-",
+            "8",
+            "6"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_009",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "苹果有45箱，梨比苹果多17箱。梨有多少箱？/r/r/r=/r(箱)。\n桔子比苹果少8箱。桔子有多少箱？/r/r/r=/r(箱)",
+          "answers": [
+            "45",
+            "+",
+            "17",
+            "62",
+            "45",
+            "-",
+            "8",
+            "37"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_011",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "有84个南瓜，李叔叔运走了40个。还剩多少个？/r/r/r=/r(个)。\n王叔叔又运走了26个。还剩多少个？/r/r/r=/r(个)",
+          "answers": [
+            "84",
+            "-",
+            "40",
+            "44",
+            "44",
+            "-",
+            "26",
+            "18"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_03_013",
+          "type": "math",
+          "sectionTitle": "三、拓展解决问题",
+          "prompt": "小明有28本故事书，科普书比故事书多6本。小明科普书有多少本？/r/r/r=/r(本)\n故事书和科普书一共有多少本？/r/r/r=/r(本)",
+          "answers": [
+            "28",
+            "+",
+            "6",
+            "34",
+            "28",
+            "+",
+            "34",
+            "62"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "第4天",
+      "questions": [
+        {
+          "id": "final_review_04_001",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "佳佳擦了12张课桌，浩浩擦了9张课桌。\n佳佳和浩浩一共擦了多少张课桌？/r/r/r=/r(张)\n浩浩比佳佳少擦了多少张课桌？/r/r/r=/r(张)",
+          "answers": [
+            "12",
+            "+",
+            "9",
+            "21",
+            "12",
+            "-",
+            "9",
+            "3"
+          ],
+          "images": [
+            "assets/worksheets/images/final_review/d4_1.png"
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_003",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "2020年进行了39次航天发射，2021年比2020年多16次。2021年进行了多少次？\n/r/r/r=/r(次)",
+          "answers": [
+            "39",
+            "+",
+            "16",
+            "55"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_004",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "孵小鸭需要28天。\n孵小鸡比孵小鸭少用7天。孵小鸡要用多少天？/r/r/r=/r(天)\n孵小鹅比孵小鸡多用9天。孵小鹅要用多少天？/r/r/r=/r(天)",
+          "answers": [
+            "28",
+            "-",
+            "7",
+            "21",
+            "21",
+            "+",
+            "9",
+            "30"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_006",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "美术兴趣小组有男生24人，女生比男生少7人。女生有多少人？/r/r/r=/r(人)\n一共有多少人？/r/r/r=/r(人)",
+          "answers": [
+            "24",
+            "-",
+            "7",
+            "17",
+            "24",
+            "+",
+            "17",
+            "41"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_008",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "草地上有28只黑羊，黑羊比白羊少17只。白羊有多少只？/r/r/r=/r(只)\n黑羊和白羊一共有多少只？/r/r/r=/r(只)",
+          "answers": [
+            "28",
+            "+",
+            "17",
+            "45",
+            "28",
+            "+",
+            "45",
+            "73"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_010",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "动物园里有38只猴子，5只老虎。猴子比老虎多多少只？/r/r/r=/r(只)",
+          "answers": [
+            "38",
+            "-",
+            "5",
+            "33"
+          ],
+          "images": [
+            
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_011",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "动物园里有5只老虎，猴子比老虎多33只。猴子有多少只？/r/r/r=/r(只)",
+          "answers": [
+            "5",
+            "+",
+            "33",
+            "38"
+          ],
+          "images": [
+            
+          ],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_012",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "动物园里有38只猴子，老虎比猴子少33只。老虎有多少只？/r/r/r=/r(只)",
+          "answers": [
+            "38",
+            "-",
+            "33",
+            "5"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_013",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "湖边原来有30只小船，划走了一些，还剩19只。划走了多少只？/r/r/r=/r(只)",
+          "answers": [
+            "30",
+            "-",
+            "19",
+            "11"
+          ],
+          "images": [],
+          "answerSource": "auto",
+          "compact": false,
+          "inputTypes": [
+            "",
+            "operator",
+            "",
+            ""
+          ]
+        },
+        {
+          "id": "final_review_04_014",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "商场店庆，满50元减10元。玩具车26元，积木24元，女娃玩偶28元，小熊玩偶35元。\n买一辆玩具车和一盒积木能减10元吗？/r(1是能，0是不能)\n买一个女娃玩偶和一个小熊玩偶要花多少钱？/r/r/r=/r(元)",
+          "answers": [
+            "1",
+            "28",
+            "+",
+            "35",
+            "63"
+          ],
+          "images": ["assets/worksheets/images/final_review/d4_10.png"],
+          "inputTypes": [
+            "",
+            "",
+            "operator",
+            "",
+            ""
+          ],
+          "answerSource": "auto",
+          "compact": false
+        },
+        {
+          "id": "final_review_04_016",
+          "type": "math",
+          "sectionTitle": "四、拓展解决问题",
+          "prompt": "玩套圈游戏，小红得了51分，小明得了40分。小红可能套中了哪两个玩具？\n小明呢",
+          "answers": [],
+          "images": ["assets/worksheets/images/final_review/d4_11.png"],
+          "answerSource": "auto",
+          "compact": false
+        }
+      ]
+    }
+  ]
+}

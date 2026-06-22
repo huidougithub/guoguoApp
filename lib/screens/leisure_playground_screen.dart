@@ -162,6 +162,7 @@ class _SpotDifferenceGameState extends State<_SpotDifferenceGame> {
   _SpotLevel get level => _currentLevels[levelIndex];
 
   bool _hasSavedOverride(_SpotLevel spotLevel) {
+    if (spotLevel.manualMarked) return true;
     final points =
         widget.store.progress.spotDifferenceOverrides[spotLevel.rightAsset];
     return points != null && points.isNotEmpty;
@@ -2932,12 +2933,14 @@ enum _GomokuDifficulty {
 
 class _SpotLevel {
   const _SpotLevel({
+    required this.manualMarked,
     required this.title,
     required this.leftAsset,
     required this.rightAsset,
     required this.differences,
   });
 
+  final bool manualMarked;
   final String title;
   final String leftAsset;
   final String rightAsset;
@@ -3005,6 +3008,7 @@ const _games = [
 
 const _spotLevels = [
   _SpotLevel(
+    manualMarked: true,
     title: '小狗草地',
     leftAsset: 'assets/leisure/spot/ai/level_1_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_1_right.jpg',
@@ -3017,6 +3021,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '快乐伙伴',
     leftAsset: 'assets/leisure/spot/ai/level_2_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_2_right.jpg',
@@ -3029,6 +3034,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '野餐草地',
     leftAsset: 'assets/leisure/spot/ai/level_3_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_3_right.jpg',
@@ -3041,6 +3047,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '沙滩城堡',
     leftAsset: 'assets/leisure/spot/ai/level_4_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_4_right.jpg',
@@ -3053,6 +3060,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '阳光游乐场',
     leftAsset: 'assets/leisure/spot/ai/level_5_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_5_right.jpg',
@@ -3065,6 +3073,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '课堂书桌',
     leftAsset: 'assets/leisure/spot/ai/level_6_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_6_right.jpg',
@@ -3077,6 +3086,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '农场小院',
     leftAsset: 'assets/leisure/spot/ai/level_7_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_7_right.jpg',
@@ -3089,6 +3099,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '森林小路',
     leftAsset: 'assets/leisure/spot/ai/level_8_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_8_right.jpg',
@@ -3100,6 +3111,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '烘焙厨房',
     leftAsset: 'assets/leisure/spot/ai/level_9_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_9_right.jpg',
@@ -3113,6 +3125,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '海底水族箱',
     leftAsset: 'assets/leisure/spot/ai/level_10_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_10_right.jpg',
@@ -3125,6 +3138,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '花园茶会',
     leftAsset: 'assets/leisure/spot/ai/level_11_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_11_right.jpg',
@@ -3137,6 +3151,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '恐龙玩具岛',
     leftAsset: 'assets/leisure/spot/ai/level_12_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_12_right.jpg',
@@ -3149,6 +3164,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '睡前小屋',
     leftAsset: 'assets/leisure/spot/ai/level_13_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_13_right.jpg',
@@ -3161,6 +3177,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '糖果小店',
     leftAsset: 'assets/leisure/spot/ai/level_14_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_14_right.jpg',
@@ -3173,6 +3190,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '雨天窗边',
     leftAsset: 'assets/leisure/spot/ai/level_15_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_15_right.jpg',
@@ -3185,6 +3203,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '雪地院子',
     leftAsset: 'assets/leisure/spot/ai/level_16_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_16_right.jpg',
@@ -3197,6 +3216,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '音乐角落',
     leftAsset: 'assets/leisure/spot/ai/level_17_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_17_right.jpg',
@@ -3209,6 +3229,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '太空书桌',
     leftAsset: 'assets/leisure/spot/ai/level_18_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_18_right.jpg',
@@ -3221,6 +3242,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '绘画桌面',
     leftAsset: 'assets/leisure/spot/ai/level_19_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_19_right.jpg',
@@ -3233,6 +3255,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '蔬菜小园',
     leftAsset: 'assets/leisure/spot/ai/level_20_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_20_right.jpg',
@@ -3245,6 +3268,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '魔法教室',
     leftAsset: 'assets/leisure/spot/ai/level_21_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_21_right.jpg',
@@ -3257,6 +3281,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '森林茶会',
     leftAsset: 'assets/leisure/spot/ai/level_22_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_22_right.jpg',
@@ -3269,6 +3294,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '海边沙堡',
     leftAsset: 'assets/leisure/spot/ai/level_23_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_23_right.jpg',
@@ -3281,6 +3307,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '果香小铺',
     leftAsset: 'assets/leisure/spot/ai/level_24_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_24_right.jpg',
@@ -3293,6 +3320,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '玩具工坊',
     leftAsset: 'assets/leisure/spot/ai/level_25_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_25_right.jpg',
@@ -3305,6 +3333,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '雪镇广场',
     leftAsset: 'assets/leisure/spot/ai/level_26_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_26_right.jpg',
@@ -3317,6 +3346,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '花房园丁',
     leftAsset: 'assets/leisure/spot/ai/level_27_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_27_right.jpg',
@@ -3329,6 +3359,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '甜点厨房',
     leftAsset: 'assets/leisure/spot/ai/level_28_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_28_right.jpg',
@@ -3341,6 +3372,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '星夜卧室',
     leftAsset: 'assets/leisure/spot/ai/level_29_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_29_right.jpg',
@@ -3353,6 +3385,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '森林书屋',
     leftAsset: 'assets/leisure/spot/ai/level_30_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_30_right.jpg',
@@ -3365,6 +3398,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '海底宝藏',
     leftAsset: 'assets/leisure/spot/ai/level_31_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_31_right.jpg',
@@ -3377,6 +3411,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '湖边露营',
     leftAsset: 'assets/leisure/spot/ai/level_32_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_32_right.jpg',
@@ -3389,6 +3424,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '花市小巷',
     leftAsset: 'assets/leisure/spot/ai/level_33_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_33_right.jpg',
@@ -3401,6 +3437,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '雨夜书店',
     leftAsset: 'assets/leisure/spot/ai/level_34_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_34_right.jpg',
@@ -3413,6 +3450,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '秋日野餐',
     leftAsset: 'assets/leisure/spot/ai/level_35_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_35_right.jpg',
@@ -3425,6 +3463,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '魔法烘焙屋',
     leftAsset: 'assets/leisure/spot/ai/level_36_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_36_right.jpg',
@@ -3437,6 +3476,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '玻璃花房',
     leftAsset: 'assets/leisure/spot/ai/level_37_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_37_right.jpg',
@@ -3449,6 +3489,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '玩具阅读角',
     leftAsset: 'assets/leisure/spot/ai/level_38_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_38_right.jpg',
@@ -3461,6 +3502,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '清澈潮池',
     leftAsset: 'assets/leisure/spot/ai/level_39_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_39_right.jpg',
@@ -3473,6 +3515,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '森林故事角',
     leftAsset: 'assets/leisure/spot/ai/level_40_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_40_right.jpg',
@@ -3485,6 +3528,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '星光书桌',
     leftAsset: 'assets/leisure/spot/ai/level_41_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_41_right.jpg',
@@ -3497,6 +3541,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '夜窗甜品屋',
     leftAsset: 'assets/leisure/spot/ai/level_42_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_42_right.jpg',
@@ -3509,6 +3554,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '蘑菇花园',
     leftAsset: 'assets/leisure/spot/ai/level_43_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_43_right.jpg',
@@ -3521,6 +3567,7 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '烛光甜点柜',
     leftAsset: 'assets/leisure/spot/ai/level_44_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_44_right.jpg',
@@ -3533,15 +3580,214 @@ const _spotLevels = [
     ],
   ),
   _SpotLevel(
+    manualMarked: true,
     title: '阳光花房',
     leftAsset: 'assets/leisure/spot/ai/level_45_left.jpg',
     rightAsset: 'assets/leisure/spot/ai/level_45_right.jpg',
     differences: [
-      _SpotDifferenceMark(target: Offset(.793, .559)),
-      _SpotDifferenceMark(target: Offset(.875, .661)),
-      _SpotDifferenceMark(target: Offset(.290, .088)),
-      _SpotDifferenceMark(target: Offset(.383, .192)),
-      _SpotDifferenceMark(target: Offset(.616, .616)),
+      _SpotDifferenceMark(target: Offset(0.483, 0.902)),
+      _SpotDifferenceMark(target: Offset(0.899, 0.736)),
+      _SpotDifferenceMark(target: Offset(0.776, 0.551)),
+      _SpotDifferenceMark(target: Offset(0.364, 0.176)),
+      _SpotDifferenceMark(target: Offset(0.399, 0.777)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: true,
+    title: '雨后温室',
+    leftAsset: 'assets/leisure/spot/ai/level_46_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_46_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.860, 0.830)),
+      _SpotDifferenceMark(target: Offset(0.719, 0.707)),
+      _SpotDifferenceMark(target: Offset(0.204, 0.434)),
+      _SpotDifferenceMark(target: Offset(0.620, 0.315)),
+      _SpotDifferenceMark(target: Offset(0.196, 0.137)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: true,
+    title: '森林野餐',
+    leftAsset: 'assets/leisure/spot/ai/level_47_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_47_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.772, 0.867)),
+      _SpotDifferenceMark(target: Offset(0.352, 0.715)),
+      _SpotDifferenceMark(target: Offset(0.198, 0.871)),
+      _SpotDifferenceMark(target: Offset(0.380, 0.328)),
+      _SpotDifferenceMark(target: Offset(0.563, 0.535)),
+      _SpotDifferenceMark(target: Offset(0.747, 0.461)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: true,
+    title: '旧书桌角',
+    leftAsset: 'assets/leisure/spot/ai/level_48_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_48_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.596, 0.826)),
+      _SpotDifferenceMark(target: Offset(0.225, 0.900)),
+      _SpotDifferenceMark(target: Offset(0.239, 0.555)),
+      _SpotDifferenceMark(target: Offset(0.760, 0.375)),
+      _SpotDifferenceMark(target: Offset(0.756, 0.607)),
+      _SpotDifferenceMark(target: Offset(0.583, 0.531)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: true,
+    title: '海边贝壳摊',
+    leftAsset: 'assets/leisure/spot/ai/level_49_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_49_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.286, 0.935)),
+      _SpotDifferenceMark(target: Offset(0.881, 0.773)),
+      _SpotDifferenceMark(target: Offset(0.561, 0.500)),
+      _SpotDifferenceMark(target: Offset(0.069, 0.127)),
+      _SpotDifferenceMark(target: Offset(0.516, 0.320)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: true,
+    title: '玩具小架',
+    leftAsset: 'assets/leisure/spot/ai/level_50_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_50_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.587, 0.151)),
+      _SpotDifferenceMark(target: Offset(0.333, 0.090)),
+      _SpotDifferenceMark(target: Offset(0.430, 0.404)),
+      _SpotDifferenceMark(target: Offset(0.651, 0.434)),
+      _SpotDifferenceMark(target: Offset(0.499, 0.605)),
+      _SpotDifferenceMark(target: Offset(0.503, 0.945)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '静物书桌',
+    leftAsset: 'assets/leisure/spot/ai/level_51_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_51_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.18, 0.69)),
+      _SpotDifferenceMark(target: Offset(0.42, 0.53)),
+      _SpotDifferenceMark(target: Offset(0.58, 0.30)),
+      _SpotDifferenceMark(target: Offset(0.74, 0.17)),
+      _SpotDifferenceMark(target: Offset(0.83, 0.75)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '森林野餐',
+    leftAsset: 'assets/leisure/spot/ai/level_52_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_52_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.20, 0.72)),
+      _SpotDifferenceMark(target: Offset(0.43, 0.45)),
+      _SpotDifferenceMark(target: Offset(0.58, 0.64)),
+      _SpotDifferenceMark(target: Offset(0.72, 0.57)),
+      _SpotDifferenceMark(target: Offset(0.84, 0.78)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '雨后花架',
+    leftAsset: 'assets/leisure/spot/ai/level_53_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_53_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.19, 0.31)),
+      _SpotDifferenceMark(target: Offset(0.38, 0.46)),
+      _SpotDifferenceMark(target: Offset(0.57, 0.28)),
+      _SpotDifferenceMark(target: Offset(0.76, 0.63)),
+      _SpotDifferenceMark(target: Offset(0.84, 0.82)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '烘焙餐台',
+    leftAsset: 'assets/leisure/spot/ai/level_54_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_54_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.25, 0.28)),
+      _SpotDifferenceMark(target: Offset(0.48, 0.18)),
+      _SpotDifferenceMark(target: Offset(0.57, 0.69)),
+      _SpotDifferenceMark(target: Offset(0.73, 0.53)),
+      _SpotDifferenceMark(target: Offset(0.84, 0.83)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '水彩桌面',
+    leftAsset: 'assets/leisure/spot/ai/level_55_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_55_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.19, 0.23)),
+      _SpotDifferenceMark(target: Offset(0.33, 0.52)),
+      _SpotDifferenceMark(target: Offset(0.53, 0.38)),
+      _SpotDifferenceMark(target: Offset(0.71, 0.75)),
+      _SpotDifferenceMark(target: Offset(0.86, 0.61)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '窗边阅读',
+    leftAsset: 'assets/leisure/spot/ai/level_56_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_56_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.24, 0.72)),
+      _SpotDifferenceMark(target: Offset(0.39, 0.37)),
+      _SpotDifferenceMark(target: Offset(0.55, 0.57)),
+      _SpotDifferenceMark(target: Offset(0.70, 0.29)),
+      _SpotDifferenceMark(target: Offset(0.86, 0.70)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '香料木架',
+    leftAsset: 'assets/leisure/spot/ai/level_57_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_57_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.18, 0.48)),
+      _SpotDifferenceMark(target: Offset(0.38, 0.22)),
+      _SpotDifferenceMark(target: Offset(0.55, 0.75)),
+      _SpotDifferenceMark(target: Offset(0.71, 0.38)),
+      _SpotDifferenceMark(target: Offset(0.83, 0.84)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '陶艺小桌',
+    leftAsset: 'assets/leisure/spot/ai/level_58_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_58_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.22, 0.80)),
+      _SpotDifferenceMark(target: Offset(0.42, 0.61)),
+      _SpotDifferenceMark(target: Offset(0.58, 0.36)),
+      _SpotDifferenceMark(target: Offset(0.72, 0.54)),
+      _SpotDifferenceMark(target: Offset(0.86, 0.30)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '火车模型',
+    leftAsset: 'assets/leisure/spot/ai/level_59_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_59_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.17, 0.63)),
+      _SpotDifferenceMark(target: Offset(0.35, 0.29)),
+      _SpotDifferenceMark(target: Offset(0.52, 0.54)),
+      _SpotDifferenceMark(target: Offset(0.72, 0.40)),
+      _SpotDifferenceMark(target: Offset(0.84, 0.78)),
+    ],
+  ),
+  _SpotLevel(
+    manualMarked: false,
+    title: '雨窗早餐',
+    leftAsset: 'assets/leisure/spot/ai/level_60_left.jpg',
+    rightAsset: 'assets/leisure/spot/ai/level_60_right.jpg',
+    differences: [
+      _SpotDifferenceMark(target: Offset(0.20, 0.87)),
+      _SpotDifferenceMark(target: Offset(0.37, 0.58)),
+      _SpotDifferenceMark(target: Offset(0.52, 0.43)),
+      _SpotDifferenceMark(target: Offset(0.72, 0.26)),
+      _SpotDifferenceMark(target: Offset(0.86, 0.76)),
     ],
   ),
 ];

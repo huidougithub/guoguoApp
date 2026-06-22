@@ -1,0 +1,898 @@
+{
+  "id": "morning_calc_7",
+  "title": "早读计算",
+  "subject": "math",
+  "grade": "一年级下册",
+  "description": "一年级下册数学早读计算，共66题",
+  "days": [
+    {
+      "day": 1,
+      "title": "早读计算",
+      "questions": [
+        {
+          "id": "morning_calc_001",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "34-20=/r",
+          "answers": [
+            "14"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_002",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "8+33=/r",
+          "answers": [
+            "41"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_003",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "35+42=/r",
+          "answers": [
+            "77"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_004",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "62-9=/r",
+          "answers": [
+            "53"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_005",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "55+40=/r",
+          "answers": [
+            "95"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_006",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "86-9=/r",
+          "answers": [
+            "77"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_007",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "73-6=/r",
+          "answers": [
+            "67"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_008",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "23+10=/r",
+          "answers": [
+            "33"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_009",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "6+41=/r",
+          "answers": [
+            "47"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_010",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "43+32=/r",
+          "answers": [
+            "75"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_011",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "8+10=/r",
+          "answers": [
+            "18"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_012",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "5+28=/r",
+          "answers": [
+            "33"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_013",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "54+8=/r",
+          "answers": [
+            "62"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_014",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "27-10=/r",
+          "answers": [
+            "17"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_015",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "46-7=/r",
+          "answers": [
+            "39"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_016",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "28-12=/r",
+          "answers": [
+            "16"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_017",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "80-9=/r",
+          "answers": [
+            "71"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_018",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "70-20=/r",
+          "answers": [
+            "50"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_019",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "14+36=/r",
+          "answers": [
+            "50"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_020",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "95+4=/r",
+          "answers": [
+            "99"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_021",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "91-50=/r",
+          "answers": [
+            "41"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_022",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "96-56=/r",
+          "answers": [
+            "40"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_023",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "40-7=/r",
+          "answers": [
+            "33"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_024",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "50-30=/r",
+          "answers": [
+            "20"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_025",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "20+40=/r",
+          "answers": [
+            "60"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_026",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "21+9=/r",
+          "answers": [
+            "30"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_027",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "67+10=/r",
+          "answers": [
+            "77"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_028",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "12+43=/r",
+          "answers": [
+            "55"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_029",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "90-9=/r",
+          "answers": [
+            "81"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_030",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "53-7=/r",
+          "answers": [
+            "46"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_031",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "40+60=/r",
+          "answers": [
+            "100"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_032",
+          "type": "math",
+          "sectionTitle": "一、直接写出得数",
+          "prompt": "100-70=/r",
+          "answers": [
+            "30"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_033",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "/r角=40分",
+          "answers": [
+            "4"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_034",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "3元=/r角",
+          "answers": [
+            "30"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_035",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "/r角=7元",
+          "answers": [
+            "70"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_036",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "7元1角=/r角",
+          "answers": [
+            "71"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_037",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "82角=/r元/r角",
+          "answers": [
+            "8",
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_038",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "9角+7角=/r元/r角",
+          "answers": [
+            "1",
+            "6"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_039",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "1元-8角=/r角",
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_040",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "4元+6元=/r元",
+          "answers": [
+            "10"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_041",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "6角-4角=/r角",
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_042",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "8角+2角=/r元",
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_043",
+          "type": "math",
+          "sectionTitle": "二、元角分换算",
+          "prompt": "10元+8元=/r元",
+          "answers": [
+            "18"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "compact": true
+        },
+        {
+          "id": "morning_calc_044",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "31-6 /r 24",
+          "answers": [
+            ">"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_045",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "50+28 /r 76",
+          "answers": [
+            ">"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_046",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "92-90 /r 73-70",
+          "answers": [
+            "<"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_047",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "60+3 /r 53",
+          "answers": [
+            ">"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_048",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "75-4 /r 56",
+          "answers": [
+            ">"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_049",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "37+50 /r 56+30",
+          "answers": [
+            ">"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_050",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "21-7 /r 17",
+          "answers": [
+            "<"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_051",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "54+40 /r 94",
+          "answers": [
+            "="
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_052",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "50-4 /r 62-7",
+          "answers": [
+            "<"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_053",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "30+46 /r 80",
+          "answers": [
+            "<"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_054",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "63-7 /r 56",
+          "answers": [
+            "="
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_055",
+          "type": "math",
+          "sectionTitle": "三、在○里填>、<或=",
+          "prompt": "9+40 /r 34+9",
+          "answers": [
+            ">"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "isCompare": true,
+          "compact": true
+        },
+        {
+          "id": "morning_calc_056",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "15+36=?",
+          "answers": [
+            "51"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "+",
+            "top": "15",
+            "bottom": "36",
+            "result": "51"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_057",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "9+61=?",
+          "answers": [
+            "70"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "+",
+            "top": "9",
+            "bottom": "61",
+            "result": "70"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_058",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "33+15=?",
+          "answers": [
+            "48"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "+",
+            "top": "33",
+            "bottom": "15",
+            "result": "48"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_059",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "62-44=?",
+          "answers": [
+            "18"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "-",
+            "top": "62",
+            "bottom": "44",
+            "result": "18"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_060",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "45-26=?",
+          "answers": [
+            "19"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "-",
+            "top": "45",
+            "bottom": "26",
+            "result": "19"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_061",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "45-19=?",
+          "answers": [
+            "26"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "-",
+            "top": "45",
+            "bottom": "19",
+            "result": "26"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_062",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "84-77=?",
+          "answers": [
+            "7"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "-",
+            "top": "84",
+            "bottom": "77",
+            "result": "7"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_063",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "63-37=?",
+          "answers": [
+            "26"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "-",
+            "top": "63",
+            "bottom": "37",
+            "result": "26"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_064",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "91-62=?",
+          "answers": [
+            "29"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "-",
+            "top": "91",
+            "bottom": "62",
+            "result": "29"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_065",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "33+48=?",
+          "answers": [
+            "81"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "+",
+            "top": "33",
+            "bottom": "48",
+            "result": "81"
+          },
+          "compact": true
+        },
+        {
+          "id": "morning_calc_066",
+          "type": "math",
+          "sectionTitle": "四、用竖式计算",
+          "prompt": "8+49=?",
+          "answers": [
+            "57"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "visual": {
+            "mode": "build",
+            "op": "+",
+            "top": "8",
+            "bottom": "49",
+            "result": "57"
+          },
+          "compact": true
+        }
+      ]
+    }
+  ]
+}

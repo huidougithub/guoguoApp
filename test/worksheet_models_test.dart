@@ -12,23 +12,7 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   test('每日练习JSON能被模型加载并统计进度', () {
-    final catalog =
-        jsonDecode(File('assets/worksheets/index.json').readAsStringSync())
-            as Map<String, dynamic>;
-    final mathDaily = (catalog['sets'] as List<dynamic>).firstWhere(
-      (item) =>
-          (item as Map<String, dynamic>)['asset'] ==
-          'assets/worksheets/generated/math_daily_20_full.json',
-    );
-    final catalogItem = WorksheetCatalogItem.fromJson(
-      mathDaily as Map<String, dynamic>,
-    );
-    expect(
-      catalogItem.asset,
-      'assets/worksheets/generated/math_daily_20_full.json',
-    );
-
-    final file = File(catalogItem.asset);
+    final file = File('assets/worksheets/generated/math_daily_20_full.json');
     final worksheet = WorksheetSet.fromJson(
       jsonDecode(file.readAsStringSync()) as Map<String, dynamic>,
     );
@@ -75,6 +59,72 @@ void main() {
     expect(restored.answers['day01_q01'], '7');
     expect(restored.checkedResultFor('day01_q01'), isTrue);
     expect(restored.checkedResultFor('day01_q02'), isNull);
+  });
+
+  test('数学列式题 inputTypes 可选且空值默认为数字', () {
+    final expression = WorksheetQuestion.fromJson({
+      'id': 'expr_001',
+      'type': 'math',
+      'prompt': '/r /r /r = /r',
+      'answers': ['8', '+', '5', '13'],
+      'inputTypes': ['', 'operator'],
+      'answerSource': 'auto',
+    });
+    final legacy = WorksheetQuestion.fromJson({
+      'id': 'expr_legacy',
+      'type': 'math',
+      'prompt': '/r+/r=/r',
+      'answers': ['8', '5', '13'],
+      'answerSource': 'auto',
+    });
+
+    expect(expression.inputTypes, ['', 'operator']);
+    expect(expression.blankInputType(0), 'number');
+    expect(expression.blankInputType(1), 'operator');
+    expect(expression.blankInputType(2), 'number');
+    expect(expression.blankInputType(3), 'number');
+    expect(legacy.inputTypes, isEmpty);
+    expect(legacy.blankInputType(0), 'number');
+  });
+
+  test('final review day 2 to 4 uses fillable operators and valid images', () {
+    final file = File('assets/worksheets/generated/final_review.json');
+    final worksheet = WorksheetSet.fromJson(
+      jsonDecode(file.readAsStringSync()) as Map<String, dynamic>,
+    );
+
+    for (final day in worksheet.days.where(
+      (day) => day.day >= 2 && day.day <= 4,
+    )) {
+      for (final question in day.questions) {
+        expect(
+          question.prompt.contains('/r+/r='),
+          isFalse,
+          reason: question.id,
+        );
+        expect(
+          question.prompt.contains('/r-/r='),
+          isFalse,
+          reason: question.id,
+        );
+        expect(
+          question.answers.length,
+          question.blankCount,
+          reason: question.id,
+        );
+
+        for (var i = 0; i < question.answers.length; i++) {
+          final answer = question.answers[i];
+          if (answer == '+' || answer == '-') {
+            expect(question.blankInputType(i), 'operator', reason: question.id);
+          }
+        }
+
+        for (final image in question.images) {
+          expect(File(image).existsSync(), isTrue, reason: question.id);
+        }
+      }
+    }
   });
 
   test('每日练习支持导入本地题库JSON并持久化', () async {

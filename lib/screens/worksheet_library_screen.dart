@@ -69,10 +69,12 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
   @override
   Widget build(BuildContext context) {
     final category = selectedCategory;
+    final parentReviewMode =
+        widget.store.progress.settings['parentReview'] == true;
     return ExplorerScaffold(
       title: category?.title ?? '试卷练习',
       actions: [
-        if (category != null)
+        if (category != null && parentReviewMode)
           IconButton(
             tooltip: '导入新试卷',
             icon: const Icon(Icons.upload_file),
@@ -108,7 +110,7 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
                         .where((item) => _belongsToCategory(item, category))
                         .toList(),
                     onBack: () => setState(() => selectedCategory = null),
-                    onImport: _importWorksheet,
+                    onImport: parentReviewMode ? _importWorksheet : null,
                     onOpen: (item) => pushScreen(
                       context,
                       WorksheetPracticeScreen(
@@ -116,7 +118,9 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
                         catalogItem: item.catalogItem,
                       ),
                     ),
-                    onDelete: (item) => _deleteWorksheet(item),
+                    onDelete: parentReviewMode
+                        ? (item) => _deleteWorksheet(item)
+                        : null,
                   ),
           );
         },
@@ -251,7 +255,9 @@ class _WorksheetLibraryScreenState extends State<WorksheetLibraryScreen> {
   }
 
   Future<List<_CatalogCardData>> _loadCatalog() async {
-    final selectedGrade = normalizeGradeCode(widget.store.progress.selectedGrade);
+    final selectedGrade = normalizeGradeCode(
+      widget.store.progress.selectedGrade,
+    );
     final catalog = (await service.loadCatalog())
         .where((item) => _matchesSelectedGrade(item, selectedGrade))
         .toList();
@@ -370,7 +376,7 @@ class _CategoryWorksheetList extends StatelessWidget {
     required this.category,
     required this.items,
     required this.onBack,
-    required this.onImport,
+    this.onImport,
     required this.onOpen,
     this.onDelete,
   });
@@ -378,7 +384,7 @@ class _CategoryWorksheetList extends StatelessWidget {
   final _WorksheetCategory category;
   final List<_CatalogCardData> items;
   final VoidCallback onBack;
-  final VoidCallback onImport;
+  final VoidCallback? onImport;
   final ValueChanged<_CatalogCardData> onOpen;
   final ValueChanged<_CatalogCardData>? onDelete;
 
@@ -414,12 +420,14 @@ class _CategoryWorksheetList extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(width: 12),
-            FilledButton.icon(
-              icon: const Icon(Icons.upload_file),
-              label: const Text('导入新试卷'),
-              onPressed: onImport,
-            ),
+            if (onImport != null) ...[
+              const SizedBox(width: 12),
+              FilledButton.icon(
+                icon: const Icon(Icons.upload_file),
+                label: const Text('导入新试卷'),
+                onPressed: onImport,
+              ),
+            ],
           ],
         ),
         const SizedBox(height: 16),

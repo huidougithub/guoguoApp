@@ -111,7 +111,11 @@ class WorksheetQuestion {
     this.leftItems = const [],
     this.rightItems = const [],
     this.options = const [],
+    this.inputTypes = const [],
     this.multiSelect = false,
+    this.isCompare = false,
+    this.compact = false,
+    this.visual,
   });
 
   final String id;
@@ -124,7 +128,11 @@ class WorksheetQuestion {
   final List<String> leftItems;
   final List<String> rightItems;
   final List<String> options;
+  final List<String> inputTypes;
   final bool multiSelect;
+  final bool isCompare;
+  final bool compact;
+  final Map<String, String>? visual;
 
   bool get isDisplayOnly {
     final normalizedType = type.trim().toLowerCase();
@@ -141,12 +149,39 @@ class WorksheetQuestion {
 
   bool get hasBlankMarkers => prompt.contains('/r');
 
+  bool get isBlankAtEnd => !hasBlankMarkers || prompt.endsWith('/r');
+
   bool get isMatch => leftItems.isNotEmpty && rightItems.isNotEmpty;
   bool get isChoice => options.isNotEmpty;
+  bool get isBuildVertical => visual?['mode'] == 'build';
 
   int get blankCount => '/r'.allMatches(prompt).length;
 
   String blankAnswerKey(int blankIndex) => '${id}_blank_$blankIndex';
+
+  String blankInputType(int blankIndex) {
+    if (blankIndex < 0 || blankIndex >= inputTypes.length) return 'number';
+    final normalized = inputTypes[blankIndex].trim().toLowerCase();
+    if (normalized.isEmpty) return 'number';
+    return normalized;
+  }
+
+  int get verticalBuildWidth {
+    final top = visual?['top'] ?? '';
+    final bottom = visual?['bottom'] ?? '';
+    final result =
+        visual?['result'] ?? (answers.isNotEmpty ? answers.first : '');
+    var width = result.length;
+    if (top.length > width) width = top.length;
+    if (bottom.length > width) width = bottom.length;
+    return width < 1 ? 1 : width;
+  }
+
+  int get verticalBuildSlotCount => verticalBuildWidth * 3 + 1;
+
+  String verticalBuildAnswerKey(int slotIndex) {
+    return '${id}_vertical_$slotIndex';
+  }
 
   String? correctAnswerForBlank(int blankIndex) {
     if (blankIndex < 0 || blankIndex >= answers.length) return null;
@@ -160,9 +195,19 @@ class WorksheetQuestion {
     if (isChoice) {
       return (userAnswers[id] ?? '').trim().isNotEmpty;
     }
+    if (isBuildVertical) {
+      for (var i = 0; i < verticalBuildSlotCount; i++) {
+        if ((userAnswers[verticalBuildAnswerKey(i)] ?? '').trim().isNotEmpty) {
+          return true;
+        }
+      }
+      return false;
+    }
     if (hasBlankMarkers) {
       for (var i = 0; i < blankCount; i++) {
-        if ((userAnswers[blankAnswerKey(i)] ?? '').trim().isNotEmpty) return true;
+        if ((userAnswers[blankAnswerKey(i)] ?? '').trim().isNotEmpty) {
+          return true;
+        }
       }
       return false;
     }
@@ -182,6 +227,14 @@ class WorksheetQuestion {
     }
     if (isChoice) {
       return (userAnswers[id] ?? '').trim().isNotEmpty;
+    }
+    if (isBuildVertical) {
+      for (var i = 0; i < verticalBuildSlotCount; i++) {
+        if ((userAnswers[verticalBuildAnswerKey(i)] ?? '').trim().isNotEmpty) {
+          return true;
+        }
+      }
+      return false;
     }
     if (hasBlankMarkers) {
       for (var i = 0; i < blankCount; i++) {
@@ -214,7 +267,15 @@ class WorksheetQuestion {
       options: (json['options'] as List<dynamic>? ?? const [])
           .map((item) => item?.toString() ?? '')
           .toList(),
+      inputTypes: (json['inputTypes'] as List<dynamic>? ?? const [])
+          .map((item) => item?.toString() ?? '')
+          .toList(),
       multiSelect: json['multiSelect'] as bool? ?? false,
+      isCompare: json['isCompare'] as bool? ?? false,
+      compact: json['compact'] as bool? ?? false,
+      visual: (json['visual'] as Map<String, dynamic>?)?.map(
+        (k, v) => MapEntry(k, v?.toString() ?? ''),
+      ),
     );
   }
 }
@@ -246,8 +307,7 @@ class WorksheetProgress {
     return questions
         .where(
           (question) =>
-              question.countsForProgress &&
-              question.hasAnyBlankAnswer(answers),
+              question.countsForProgress && question.hasAnyBlankAnswer(answers),
         )
         .length;
   }

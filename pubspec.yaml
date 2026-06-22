@@ -69,9 +69,12 @@ flutter:
     - assets/leisure/spot/
     - assets/leisure/spot/ai/
     - assets/money/
+    - assets/study_materials/
+    - assets/study_materials/chinese_final_review_key_points/
     - assets/worksheets/index.json
     - assets/worksheets/generated/
     - assets/worksheets/images/
+    - assets/worksheets/images/final_review/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

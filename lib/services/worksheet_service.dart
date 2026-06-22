@@ -35,6 +35,12 @@ class WorksheetService {
     'manual_required',
     'display_only',
   };
+  static const Set<String> _validInputTypes = {
+    '',
+    'number',
+    'operator',
+    'compare',
+  };
   static const Set<String> _deprecatedFields = {
     'answer',
     'displayPrompt',
@@ -310,6 +316,7 @@ class WorksheetService {
           // /r 与 answers 数量严格校验
           final blankCount = '/r'.allMatches(prompt).length;
           final answers = questionRaw['answers'] as List<dynamic>?;
+          final inputTypes = questionRaw['inputTypes'] as List<dynamic>?;
 
           if (blankCount > 0) {
             if (answers == null) {
@@ -324,6 +331,22 @@ class WorksheetService {
             // 无 /r 的题目
             if (answers != null && answers.isNotEmpty) {
               totalPracticeQuestions++;
+            }
+          }
+
+          if (inputTypes != null) {
+            if (inputTypes.length > blankCount) {
+              errors.add(
+                '$qPrefix：inputTypes 长度（${inputTypes.length}）不能超过 "/r" 数量（$blankCount）。',
+              );
+            }
+            for (var i = 0; i < inputTypes.length; i++) {
+              final inputType = inputTypes[i].toString().trim().toLowerCase();
+              if (!_validInputTypes.contains(inputType)) {
+                errors.add(
+                  '$qPrefix：inputTypes[$i] = "${inputTypes[i]}" 不合法。合法取值：空字符串、number、operator、compare。',
+                );
+              }
             }
           }
 
@@ -358,8 +381,7 @@ class WorksheetService {
           }
 
           // 选择题（choice）校验
-          final options = questionRaw['options'] as List<dynamic>?
-;
+          final options = questionRaw['options'] as List<dynamic>?;
           if (options != null && options.isNotEmpty) {
             if (options.length < 2) {
               errors.add('$qPrefix：选择题至少需要 2 个选项。');
