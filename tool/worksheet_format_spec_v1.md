@@ -1,7 +1,7 @@
-# 《智慧小探险家》题库格式规范 v1.9
+# 《智慧小探险家》题库格式规范 v1.10
 
 > 适用范围：所有 `assets/worksheets/generated/*.json` 试卷文件  
-> 版本：v1.9（2026-06-20）
+> 版本：v1.10（2026-06-26）
 > 后续调整时，请递增版本号并同步更新此文档。
 
 ---
@@ -74,6 +74,7 @@
 | `answerSource` | `string` | ✅ | 答案来源，见下方 **answerSource 取值表** |
 | `images` | `array<string>` | ❌ | 配图资源路径数组。支持外部文件路径（`assets/...`）或 base64 编码字符串（见 3.10） |
 | `options` | `array<string>` | ❌ | 选择题选项列表。有此字段时该题为 **选择题**（见 3.5） |
+| `blankChoices` | `array<array<string>>` | ❌ | 内联下拉选择题选项组。`type: "inline_choice"` 时使用（见 3.4.2） |
 | `inputTypes` | `array<string>` | ❌ | `/r` 填空输入类型数组。缺省、缺少某项或该项为空字符串 `""` 时均按 `number` 处理（见 3.4.1） |
 | `multiSelect` | `bool` | ❌ | 多选标记。`true` 表示该选择题可多选，默认 `false`（单选） |
 | `left` | `array<string>` | ❌ | 配对连线题左列。与 `right` 同时存在时该题为 **配对题** |
@@ -90,6 +91,7 @@
 | `math` | 数学题 | 单 blank 时手写框/数字键盘；多 blank 时内联数字小框（见 3.8） |
 | `english` | 英语题 | 手写框模式（预留） |
 | `choice` | 选择题 | 点击选项卡片模式，自动批改 |
+| `inline_choice` | 内联下拉选择题 | 在题干 `/r` 位置显示下拉选择框，适合“选正确读音/选字填空”等一题多个选择空 |
 | `example` | 示例/例题 | 只展示，不计入练习进度，显示"看例子"标签 |
 | `display_only` | 纯展示内容 | 只展示，不计入练习进度 |
 
@@ -109,6 +111,7 @@
 | 题型 | `answers` 含义 | 示例 |
 |------|---------------|------|
 | 填空题（含 `/r`） | 与 `/r` 一一对应的标准答案 | `answers: ["吹", "雨", "秋"]` 对应 3 个 `/r` |
+| 内联下拉选择题（`type: "inline_choice"`） | 与 `/r` 一一对应的标准答案，答案文本必须出现在对应 `blankChoices` 选项中 | `answers: ["zhī", "de"]` 对应 2 个 `/r` |
 | 单选选择题（`options`） | 正确选项的**单个索引** | `answers: ["1"]` 表示选项 B（索引 1）正确 |
 | 多选选择题（`options` + `multiSelect: true`） | 正确选项的**多个索引**数组 | `answers: ["0", "2", "4"]` 表示索引 0、2、4 都正确 |
 | 配对题（`left`/`right`） | 与 `left` 一一对应的 `right` 索引 | `answers: ["0", "1", "2", "3"]` 表示 left[i] 连到 right[answers[i]] |
@@ -125,6 +128,7 @@
 - `/r` 在 `prompt` **末尾**（如 `34-20=/r`）：文本在左，右侧显示大答题框
 - `/r` 在 `prompt` **中间**（如 `（/r）角=40分`）：内联小框，保留括号前后文本
 - 多个 `/r`（如 `82角=/r元/r角`）：多个内联小框依次排列
+- `type: "inline_choice"` 时：每个 `/r` 渲染为内联下拉选择框，不使用手写框或数字键盘
 - 无 `/r`：纯文本，右侧显示大答题框（数学题）或手写框（语文题）
 
 **规则**：
@@ -161,6 +165,59 @@
   - `compare`：比较符输入，预留给 `>`、`<`、`=`
 - `inputTypes` 只描述 `/r` 的输入限制，不改变 `answers` 的对应关系；第 `i` 个 `/r` 仍对应 `answers[i]`。
 - 竖式计算题不要用 `inputTypes` 表示过程格，继续使用 `visual.mode: "build"`。
+
+### 3.4.2 内联下拉选择题（`inline_choice` + `blankChoices`）
+
+适用于题干中有一个或多个可点击选择空的语文题，例如“用 √ 给加点字选择正确读音”“选择正确的字填入句子”。这类题不要拆成普通 `options` 单选题，因为一道题可能包含多个空位。
+
+#### 共用一组选项
+
+当一道题中多个 `/r` 使用同一组选项时，`blankChoices` 只写一组：
+
+```json
+{
+  "id": "comeback_day07_q003",
+  "type": "inline_choice",
+  "sectionTitle": "二、用“√”给加点字选择正确的读音。",
+  "prompt": "只（/r）有一只（/r）乌鸦居住在大树上。",
+  "blankChoices": [
+    ["zhǐ", "zhī"]
+  ],
+  "answers": ["zhǐ", "zhī"],
+  "answerSource": "auto"
+}
+```
+
+#### 每个空位单独一组选项
+
+当每个 `/r` 的选项不同时，`blankChoices` 按 `/r` 顺序一一对应：
+
+```json
+{
+  "id": "comeback_day07_q004",
+  "type": "inline_choice",
+  "sectionTitle": "三、选择正确的字填空。",
+  "prompt": "小朋友/r认真学习，/r到老师表扬。",
+  "blankChoices": [
+    ["的", "地", "得"],
+    ["的", "地", "得"]
+  ],
+  "answers": ["地", "得"],
+  "answerSource": "auto"
+}
+```
+
+**规则**：
+- `type` 必须为 `"inline_choice"`。
+- `prompt` 中必须至少包含 1 个 `/r`。
+- `answers.length` 必须等于 `/r` 数量。
+- `blankChoices` 必须非空。
+- `blankChoices.length` 只能是 `1` 或等于 `/r` 数量：
+  - `1`：所有 `/r` 共用同一组选项。
+  - 等于 `/r` 数量：第 `i` 组对应第 `i` 个 `/r`。
+- 每个 `answers[i]` 必须存在于对应的 `blankChoices` 选项组中。
+- 不要同时使用 `options`；`options` 是整题单选/多选，`blankChoices` 是题干内每个空位的下拉选择。
+- APP 中未选择和已选择的下拉框宽度均为 70px；未选择时只显示空框，不显示“选择”占位文字。
 
 ### 3.5 选择题（`options`）
 
@@ -395,6 +452,7 @@
 - [ ] `type` 取值在规范表内
 - [ ] `answerSource` 取值在规范表内
 - [ ] `prompt` 中的 `/r` 数量 == `answers.length`（填空题）
+- [ ] 内联下拉选择题：`type == "inline_choice"` 时，`blankChoices` 非空，长度为 1 或等于 `/r` 数量；每个 `answers[i]` 都在对应选项组中；不得同时使用 `options`
 - [ ] 选择题：`options` 至少 2 个，`answers` 中每个值都是有效选项索引
 - [ ] 多选题：`multiSelect: true` 时，`answers` 数量不超过 `options` 数量，且每个值都是有效索引
 - [ ] 配对题：`left`/`right` 同时存在且非空，`answers` 长度 == `left` 长度，每个值都是有效 `right` 索引
@@ -413,6 +471,7 @@
 
 | 版本 | 日期 | 变更内容 |
 |------|------|---------|
+| v1.10 | 2026-06-26 | 新增 **内联下拉选择题** 标准：`type: "inline_choice"` + `blankChoices`，支持一题多个 `/r` 下拉框；`blankChoices` 可一组共用或多组逐空对应，并补充校验规则和渲染对照 |
 | v1.9 | 2026-06-20 | 优化 **带图题图片显示尺寸**：宽度保持题目内容区宽度，高度固定为 112px，避免期末复习等带图题占用过多竖向空间 |
 | v1.8 | 2026-06-20 | 优化 **`inputTypes: "operator"` 符号框样式标准**：运算符空位在 APP 中应与数字框视觉区分，使用更窄的符号框、淡黄色底和橙色边框 |
 | v1.7 | 2026-06-20 | 新增 **`inputTypes` 输入类型标注**：用于完整列式等 `/r` 空位中数字和运算符混合的数学题；字段可选，缺省、缺项或空字符串均默认 `number`；新增 `operator` 和 `compare` 类型说明及校验规则 |
@@ -434,6 +493,7 @@
 | `compact: true`（且无图、无 visual） | `_CompactQuestionBlock` | 紧凑块，每行3题，左对齐 | 视具体题型 |
 | `type=match` | `_MatchQuestionWidget` | 单题卡片 | 拖拽连线 |
 | `type=choice` | `_ChoiceQuestionWidget` | 单题卡片 | 点击选项 |
+| `type=inline_choice` | `_buildBlankMarkersInline` + `_InlineChoiceBox` | 在题干 `/r` 位置嵌入下拉框 | 点击空框弹出选项；答案按 `{questionId}_blank_{index}` 存储 |
 | `blankCount > 1` | `_buildBlankMarkersInline` + `_InlineDigitBox` | 单题卡片或紧凑块 | 数字键盘 |
 | `blankCount == 1 && isCompare` | `_AnswerSlot` + 居中弹窗 | 单题卡片 | 符号选择器 |
 | `blankCount == 1 && !isCompare` | 左侧文本 + 右侧 `_AnswerSlot` | 单题卡片或紧凑块 | 数字键盘 |

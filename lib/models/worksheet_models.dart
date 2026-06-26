@@ -111,6 +111,7 @@ class WorksheetQuestion {
     this.leftItems = const [],
     this.rightItems = const [],
     this.options = const [],
+    this.blankChoices = const [],
     this.inputTypes = const [],
     this.multiSelect = false,
     this.isCompare = false,
@@ -128,6 +129,7 @@ class WorksheetQuestion {
   final List<String> leftItems;
   final List<String> rightItems;
   final List<String> options;
+  final List<List<String>> blankChoices;
   final List<String> inputTypes;
   final bool multiSelect;
   final bool isCompare;
@@ -153,11 +155,20 @@ class WorksheetQuestion {
 
   bool get isMatch => leftItems.isNotEmpty && rightItems.isNotEmpty;
   bool get isChoice => options.isNotEmpty;
+  bool get isInlineChoice =>
+      type.trim().toLowerCase() == 'inline_choice' && blankChoices.isNotEmpty;
   bool get isBuildVertical => visual?['mode'] == 'build';
 
   int get blankCount => '/r'.allMatches(prompt).length;
 
   String blankAnswerKey(int blankIndex) => '${id}_blank_$blankIndex';
+
+  List<String> blankChoicesForBlank(int blankIndex) {
+    if (blankChoices.isEmpty) return const [];
+    if (blankChoices.length == 1) return blankChoices.first;
+    if (blankIndex < 0 || blankIndex >= blankChoices.length) return const [];
+    return blankChoices[blankIndex];
+  }
 
   String blankInputType(int blankIndex) {
     if (blankIndex < 0 || blankIndex >= inputTypes.length) return 'number';
@@ -267,6 +278,7 @@ class WorksheetQuestion {
       options: (json['options'] as List<dynamic>? ?? const [])
           .map((item) => item?.toString() ?? '')
           .toList(),
+      blankChoices: _parseBlankChoices(json['blankChoices']),
       inputTypes: (json['inputTypes'] as List<dynamic>? ?? const [])
           .map((item) => item?.toString() ?? '')
           .toList(),
@@ -277,6 +289,20 @@ class WorksheetQuestion {
         (k, v) => MapEntry(k, v?.toString() ?? ''),
       ),
     );
+  }
+
+  static List<List<String>> _parseBlankChoices(Object? raw) {
+    if (raw is! List) return const [];
+    return raw
+        .map((group) {
+          if (group is List) {
+            return group.map((item) => item?.toString() ?? '').toList();
+          }
+          final value = group?.toString() ?? '';
+          return value.isEmpty ? <String>[] : <String>[value];
+        })
+        .where((group) => group.isNotEmpty)
+        .toList();
   }
 }
 

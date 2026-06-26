@@ -76,6 +76,14 @@ void main() {
     expect(screenSource, contains('Color(0xFFE6A13A)'));
   });
 
+  test('inline choice blanks do not show placeholder text', () {
+    final screenSource = practiceScreen.readAsStringSync();
+
+    expect(screenSource, contains('class _InlineChoiceBox'));
+    expect(screenSource, isNot(contains("hasValue ? value : '选择'")));
+    expect(screenSource, contains('minWidth: 70'));
+  });
+
   test('worksheet images keep full width with reduced height', () {
     final screenSource = practiceScreen.readAsStringSync();
 

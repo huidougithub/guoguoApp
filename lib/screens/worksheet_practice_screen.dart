@@ -1650,6 +1650,23 @@ class _QuestionRow extends StatelessWidget {
         final answerKey = question.blankAnswerKey(currentBlank);
         final ink = answers[answerKey] ?? '';
         final blankSelected = selected && selectedBlankIndex == currentBlank;
+        if (question.isInlineChoice) {
+          spans.add(
+            WidgetSpan(
+              alignment: PlaceholderAlignment.middle,
+              child: _InlineChoiceBox(
+                value: ink,
+                choices: question.blankChoicesForBlank(currentBlank),
+                selected: blankSelected,
+                onSelected: (value) async {
+                  onSelectBlank(question.id, currentBlank);
+                  await onSetAnswer(answerKey, value);
+                },
+              ),
+            ),
+          );
+          continue;
+        }
         spans.add(
           WidgetSpan(
             alignment: PlaceholderAlignment.middle,
@@ -2198,6 +2215,101 @@ class _InlineDigitBox extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _InlineChoiceBox extends StatelessWidget {
+  const _InlineChoiceBox({
+    required this.value,
+    required this.choices,
+    required this.selected,
+    required this.onSelected,
+  });
+
+  final String value;
+  final List<String> choices;
+  final bool selected;
+  final Future<void> Function(String value) onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    final hasValue = value.trim().isNotEmpty;
+    final borderColor = selected
+        ? const Color(0xFF2E91FF)
+        : hasValue
+        ? const Color(0xFFC58A38)
+        : const Color(0xFFD6B68B);
+    return Semantics(
+      button: true,
+      label: hasValue ? '已选择 $value' : '点击选择答案',
+      child: PopupMenuButton<String>(
+        tooltip: '选择答案',
+        enabled: choices.isNotEmpty,
+        onSelected: (choice) async => onSelected(choice),
+        itemBuilder: (context) => [
+          for (final choice in choices)
+            PopupMenuItem<String>(
+              value: choice,
+              child: Text(
+                choice,
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w800,
+                  color: Color(0xFF27190F),
+                ),
+              ),
+            ),
+        ],
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 150),
+          constraints: BoxConstraints(
+            minWidth: 70,
+            minHeight: 40,
+          ),
+          margin: const EdgeInsets.symmetric(horizontal: 3),
+          padding: EdgeInsets.symmetric(
+            horizontal: hasValue ? 12 : 8,
+            vertical: 4,
+          ),
+          decoration: BoxDecoration(
+            color: hasValue ? const Color(0xFFFFF4CA) : const Color(0xFFFFFEFA),
+            borderRadius: BorderRadius.circular(11),
+            border: Border.all(color: borderColor, width: selected ? 1.8 : 1.2),
+            boxShadow: selected
+                ? [
+                    BoxShadow(
+                      color: const Color(0xFF2E91FF).withValues(alpha: .14),
+                      blurRadius: 8,
+                      offset: const Offset(0, 2),
+                    ),
+                  ]
+                : null,
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (hasValue) ...[
+                Text(
+                  value,
+                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontSize: 22,
+                    height: 1,
+                    fontWeight: FontWeight.w900,
+                    color: const Color(0xFF27190F),
+                  ),
+                ),
+                const SizedBox(width: 4),
+              ],
+              const Icon(
+                Icons.keyboard_arrow_down_rounded,
+                size: 20,
+                color: Color(0xFF9B5B24),
+              ),
+            ],
           ),
         ),
       ),
@@ -4491,6 +4603,23 @@ class _CompactQuestionItem extends StatelessWidget {
         } else {
           final answerKey = question.blankAnswerKey(currentBlank);
           final ink = answers[answerKey] ?? '';
+          if (question.isInlineChoice) {
+            spans.add(
+              WidgetSpan(
+                alignment: PlaceholderAlignment.middle,
+                child: _InlineChoiceBox(
+                  value: ink,
+                  choices: question.blankChoicesForBlank(currentBlank),
+                  selected: blankSelected,
+                  onSelected: (value) async {
+                    onSelectBlank(question.id, currentBlank);
+                    await onSetAnswer(answerKey, value);
+                  },
+                ),
+              ),
+            );
+            continue;
+          }
           spans.add(
             WidgetSpan(
               alignment: PlaceholderAlignment.middle,

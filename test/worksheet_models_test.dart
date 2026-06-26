@@ -87,6 +87,24 @@ void main() {
     expect(legacy.blankInputType(0), 'number');
   });
 
+  test('内联选择题支持一组 blankChoices 共享给多个填空', () {
+    final question = WorksheetQuestion.fromJson({
+      'id': 'polyphone_001',
+      'type': 'inline_choice',
+      'prompt': '只/r有一只/r乌鸦居住在大树上。',
+      'blankChoices': [
+        ['zhǐ', 'zhī'],
+      ],
+      'answers': ['zhǐ', 'zhī'],
+      'answerSource': 'auto',
+    });
+
+    expect(question.isInlineChoice, isTrue);
+    expect(question.blankCount, 2);
+    expect(question.blankChoicesForBlank(0), ['zhǐ', 'zhī']);
+    expect(question.blankChoicesForBlank(1), ['zhǐ', 'zhī']);
+  });
+
   test('final review day 2 to 4 uses fillable operators and valid images', () {
     final file = File('assets/worksheets/generated/final_review.json');
     final worksheet = WorksheetSet.fromJson(
@@ -123,6 +141,213 @@ void main() {
         for (final image in question.images) {
           expect(File(image).existsSync(), isTrue, reason: question.id);
         }
+      }
+    }
+  });
+
+  test('语文期末七天逆袭小卷已接入目录且题库合法', () {
+    final catalog =
+        jsonDecode(File('assets/worksheets/index.json').readAsStringSync())
+            as Map<String, dynamic>;
+    final item = (catalog['sets'] as List<dynamic>)
+        .cast<Map<String, dynamic>>()
+        .firstWhere((item) => item['id'] == 'chinese_final_7day_comeback');
+
+    expect(item['title'], '语文期末七天逆袭小卷');
+    expect(item['subject'], '语文');
+    expect(item['grade'], '一年级下册');
+
+    final worksheet = WorksheetSet.fromJson(
+      jsonDecode(File(item['asset'] as String).readAsStringSync())
+          as Map<String, dynamic>,
+    );
+
+    expect(worksheet.id, 'chinese_final_7day_comeback');
+    expect(worksheet.subject, 'chinese');
+    expect(worksheet.days.length, 7);
+    expect(worksheet.days.map((day) => day.day), [7, 6, 5, 4, 3, 2, 1]);
+    expect(worksheet.questionCount, 225);
+    final day2 = worksheet.days.firstWhere((day) => day.day == 2);
+    final day3 = worksheet.days.firstWhere((day) => day.day == 3);
+    final day4 = worksheet.days.firstWhere((day) => day.day == 4);
+    final day5 = worksheet.days.firstWhere((day) => day.day == 5);
+    final day6 = worksheet.days.firstWhere((day) => day.day == 6);
+    final day7 = worksheet.days.firstWhere((day) => day.day == 7);
+    const day6InlineChoiceIds = {
+      'chinese_7day_d06_q001',
+      'chinese_7day_d06_q002',
+      'chinese_7day_d06_q003',
+      'chinese_7day_d06_q006',
+      'chinese_7day_d06_q007',
+      'chinese_7day_d06_q008',
+      'chinese_7day_d06_q009',
+      'chinese_7day_d06_q010',
+      'chinese_7day_d06_q011',
+      'chinese_7day_d06_q014',
+      'chinese_7day_d06_q015',
+      'chinese_7day_d06_q016',
+      'chinese_7day_d06_q018',
+      'chinese_7day_d06_q019',
+      'chinese_7day_d06_q020',
+      'chinese_7day_d06_q021',
+      'chinese_7day_d06_q026',
+      'chinese_7day_d06_q027',
+      'chinese_7day_d06_q028',
+      'chinese_7day_d06_q029',
+      'chinese_7day_d06_q031',
+      'chinese_7day_d06_q032',
+      'chinese_7day_d06_q033',
+    };
+    final day6InlineChoices = day6.questions
+        .where((question) => day6InlineChoiceIds.contains(question.id))
+        .toList();
+    final day7InlineChoices = day7.questions
+        .where((question) => question.isInlineChoice)
+        .toList();
+    expect(day2.title, '考前第02天');
+    expect(day3.title, '考前第03天');
+    expect(day4.title, '考前第04天');
+    expect(day5.title, '考前第05天');
+    expect(day6.title, '考前第6天');
+    expect(day7.title, '考前第7天');
+    expect(day6InlineChoices, hasLength(day6InlineChoiceIds.length));
+    for (final question in day6InlineChoices) {
+      expect(question.isInlineChoice, isTrue, reason: question.id);
+      expect(question.prompt, isNot(contains('?')), reason: question.id);
+      expect(question.blankChoices, isNotEmpty, reason: question.id);
+      expect(
+        question.blankChoices.length == 1 ||
+            question.blankChoices.length == question.blankCount,
+        isTrue,
+        reason: question.id,
+      );
+      expect(question.answers, hasLength(question.blankCount), reason: question.id);
+      for (var i = 0; i < question.blankCount; i++) {
+        expect(
+          question.blankChoicesForBlank(i),
+          contains(question.answers[i]),
+          reason: question.id,
+        );
+      }
+    }
+    expect(day7InlineChoices, hasLength(day7.questions.length));
+    for (final question in day7InlineChoices) {
+      expect(question.isInlineChoice, isTrue, reason: question.id);
+      expect(question.blankChoices, hasLength(1), reason: question.id);
+      expect(question.blankChoicesForBlank(0), hasLength(2), reason: question.id);
+      if (question.blankCount > 1) {
+        expect(
+          question.blankChoicesForBlank(1),
+          hasLength(2),
+          reason: question.id,
+        );
+      }
+    }
+    expect(
+      day2.questions.map((q) => q.sectionTitle).toSet(),
+      containsAll([
+        '第一单元',
+        '第二单元',
+        '第三单元',
+        '第四单元',
+        '第五单元',
+        '第六单元',
+        '第七单元',
+        '第八单元',
+      ]),
+    );
+    expect(
+      day3.questions.map((q) => q.sectionTitle).toSet(),
+      containsAll([
+        '第一单元',
+        '第二单元',
+        '第三单元',
+        '第四单元',
+        '第五单元',
+        '第六单元',
+        '第七单元',
+        '第八单元',
+      ]),
+    );
+    expect(
+      day4.questions.map((q) => q.sectionTitle).toSet(),
+      containsAll(['第一单元', '第二单元', '第三单元', '第六单元', '第七单元']),
+    );
+    expect(
+      day5.questions.map((q) => q.sectionTitle).toSet(),
+      containsAll([
+        '第一单元',
+        '第二单元',
+        '第三单元',
+        '第四单元',
+        '第五单元',
+        '第六单元',
+        '第七单元',
+        '第八单元',
+      ]),
+    );
+    expect(
+      day6.questions.map((q) => q.sectionTitle).toSet(),
+      containsAll([
+        '请选择正确读音',
+        '给形近字组词',
+        '加一加，变成新字',
+        '请选出正确的字',
+        '第五单元',
+        '给下面的字注音',
+        '第六单元',
+        '比一比，再组词',
+      ]),
+    );
+    expect(
+      day7.questions.map((q) => q.sectionTitle).toSet(),
+      containsAll(['请选择正确读音']),
+    );
+    expect(
+      worksheet.days.expand((day) => day.questions).map((q) => q.id).toSet(),
+      hasLength(worksheet.questionCount),
+    );
+    for (final question in worksheet.days.expand((day) => day.questions)) {
+      if (question.isMatch) {
+        expect(question.leftItems, isNotEmpty, reason: question.id);
+        expect(question.rightItems, isNotEmpty, reason: question.id);
+        expect(
+          question.answers.length,
+          question.leftItems.length,
+          reason: question.id,
+        );
+        for (final answer in question.answers) {
+          final index = int.tryParse(answer);
+          expect(index, isNotNull, reason: question.id);
+          expect(
+            index,
+            inInclusiveRange(0, question.rightItems.length - 1),
+            reason: question.id,
+          );
+        }
+      } else if (question.isChoice) {
+        expect(
+          question.options.length,
+          greaterThanOrEqualTo(2),
+          reason: question.id,
+        );
+        expect(question.answers, isNotEmpty, reason: question.id);
+        for (final answer in question.answers) {
+          final index = int.tryParse(answer);
+          expect(index, isNotNull, reason: question.id);
+          expect(
+            index,
+            inInclusiveRange(0, question.options.length - 1),
+            reason: question.id,
+          );
+        }
+      } else if (question.hasBlankMarkers &&
+          question.answerSource != 'manual_required') {
+        expect(
+          question.answers.length,
+          question.blankCount,
+          reason: question.id,
+        );
       }
     }
   });

@@ -1,0 +1,4615 @@
+﻿{
+  "id": "chinese_final_7day_comeback",
+  "title": "语文期末七天逆袭小卷",
+  "subject": "chinese",
+  "grade": "一年级下册",
+  "description": "一年级语文下册考前第01-07天，覆盖生字、词语、句子、课文内容和日积月累。",
+  "sourceFile": "",
+  "days": [
+    {
+      "day": 7,
+      "title": "考前第7天",
+      "questions": [
+        {
+          "id": "chinese_7day_d07_q001",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "音乐/r，快乐/r。",
+          "answers": [
+            "yuè",
+            "lè"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "lè",
+              "yuè"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q002",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "感觉/r，睡觉/r。",
+          "answers": [
+            "jué",
+            "jiào"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "jué",
+              "jiào"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q003",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "只/r有一只/r乌鸦居住在大树上。",
+          "answers": [
+            "zhǐ",
+            "zhī"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "zhǐ",
+              "zhī"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q004",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "要想取得/r好成绩，就得/r努力学习。",
+          "answers": [
+            "dé",
+            "děi"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "děi",
+              "dé"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q005",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "我一觉/r醒来，发觉/r天已经大亮了。",
+          "answers": [
+            "jiào",
+            "jué"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "jué",
+              "jiào"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q006",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "等我们长大了/r，就会了/r解得更加深刻。",
+          "answers": [
+            "le",
+            "liǎo"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "le",
+              "liǎo"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q007",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "有空/r，天空/r，空气/r，空格/r。",
+          "answers": [
+            "kòng",
+            "kōng",
+            "kōng",
+            "kòng"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "kōng",
+              "kòng"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d07_q008",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "今天，晴空/r万里，我和妹妹到院子的空/r地上玩耍。",
+          "answers": [
+            "kōng",
+            "kòng"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "kōng",
+              "kòng"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "考前第6天",
+      "questions": [
+        {
+          "id": "chinese_7day_d06_q001",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "霜降/r，风吹/r，落叶/r，下降/r，飘荡/r，游泳/r。",
+          "answers": [
+            "shuāng",
+            "chuī",
+            "luò",
+            "jiàng",
+            "piāo",
+            "yóu"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "shuāng",
+              "suān"
+            ],
+            [
+              "chuī",
+              "chūn"
+            ],
+            [
+              "lòu",
+              "luò"
+            ],
+            [
+              "jiàn",
+              "jiàng"
+            ],
+            [
+              "piāo",
+              "pāo"
+            ],
+            [
+              "yóu",
+              "yuó"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q002",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "水池/r，入林/r，姓/r氏/r，金钱/r，眼/r睛/r，官员/r。",
+          "answers": [
+            "chí",
+            "rù",
+            "xìng",
+            "shì",
+            "qián",
+            "yǎn",
+            "jīng",
+            "guān"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "cí",
+              "chí"
+            ],
+            [
+              "rén",
+              "rù"
+            ],
+            [
+              "xìn",
+              "xìng"
+            ],
+            [
+              "sì",
+              "shì"
+            ],
+            [
+              "qián",
+              "qiáng"
+            ],
+            [
+              "yǎn",
+              "yǎng"
+            ],
+            [
+              "jīng",
+              "qīng"
+            ],
+            [
+              "guāng",
+              "guān"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q003",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "保/r护/r，事/r情/r，不让/r，生病/r，害怕/r，相/r遇/r，清水/r，攻击/r，令人/r，纯/r净/r，晴天/r，雨夹雪/r。",
+          "answers": [
+            "bǎo",
+            "hù",
+            "shì",
+            "qíng",
+            "ràng",
+            "bìng",
+            "pà",
+            "xiāng",
+            "yù",
+            "qīng",
+            "gōng",
+            "lìng",
+            "chún",
+            "jìng",
+            "qíng",
+            "jiā"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "dǎo",
+              "bǎo"
+            ],
+            [
+              "hù",
+              "nù"
+            ],
+            [
+              "sì",
+              "shì"
+            ],
+            [
+              "qìng",
+              "qíng"
+            ],
+            [
+              "ràn",
+              "ràng"
+            ],
+            [
+              "bìn",
+              "bìng"
+            ],
+            [
+              "pà",
+              "bà"
+            ],
+            [
+              "xiān",
+              "xiāng"
+            ],
+            [
+              "yù",
+              "yǜ"
+            ],
+            [
+              "qīn",
+              "qīng"
+            ],
+            [
+              "gōng",
+              "gōn"
+            ],
+            [
+              "lìn",
+              "lìng"
+            ],
+            [
+              "cún",
+              "chún"
+            ],
+            [
+              "jìn",
+              "jìng"
+            ],
+            [
+              "qín",
+              "qíng"
+            ],
+            [
+              "jiā",
+              "jā"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q004",
+          "type": "chinese",
+          "sectionTitle": "给形近字组词",
+          "prompt": "入/r，人/r，生/r，牛/r，双/r，又/r，方/r，万/r，王/r，土/r，气/r，汽/r，字/r，子/r，左/r，右/r，红/r，工/r，么/r，公/r，飞/r，乙/r，冬/r，圣/r。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q005",
+          "type": "chinese",
+          "sectionTitle": "加一加，变成新字",
+          "prompt": "：雨+彐=/r，艹+化=/r，夫+日=/r，女+生=/r，亻+十=/r，口+玉=/r，日+寸=/r，云+力=/r。",
+          "answers": [
+            "雪",
+            "花",
+            "春",
+            "姓",
+            "什",
+            "国",
+            "时",
+            "动"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q006",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "忘记/r，井边/r，村里/r，毛主席/r，上面/r，乡/r亲/r，想念/r，战/r士/r。",
+          "answers": [
+            "wàng",
+            "jǐng",
+            "cūn",
+            "xí",
+            "miàn",
+            "xiāng",
+            "qīn",
+            "xiǎng",
+            "zhàn",
+            "shì"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "wàn",
+              "wàng"
+            ],
+            [
+              "jǐn",
+              "jǐng"
+            ],
+            [
+              "cūi",
+              "cūn"
+            ],
+            [
+              "xí",
+              "xī"
+            ],
+            [
+              "màn",
+              "miàn"
+            ],
+            [
+              "xiān",
+              "xiāng"
+            ],
+            [
+              "qīn",
+              "qīng"
+            ],
+            [
+              "xiǎng",
+              "xiǎn"
+            ],
+            [
+              "zhàn",
+              "zàn"
+            ],
+            [
+              "sì",
+              "shì"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q007",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "就是/r，告/r诉/r，城市/r，安全/r，道路/r，送给/r，帮忙/r，品尝/r，应该/r。",
+          "answers": [
+            "jiù",
+            "gào",
+            "sù",
+            "chéng",
+            "ān",
+            "dào",
+            "sòng",
+            "máng",
+            "cháng",
+            "gāi"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "juì",
+              "jiù"
+            ],
+            [
+              "gào",
+              "gàn"
+            ],
+            [
+              "sù",
+              "shù"
+            ],
+            [
+              "chén",
+              "chéng"
+            ],
+            [
+              "ān",
+              "āng"
+            ],
+            [
+              "dào",
+              "bào"
+            ],
+            [
+              "sòu",
+              "sòng"
+            ],
+            [
+              "mán",
+              "máng"
+            ],
+            [
+              "chān",
+              "cháng"
+            ],
+            [
+              "gāi",
+              "guāi"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q008",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "香/r甜/r，颜色/r，温/r暖/r，一辆/r车，一匹/r马，一棵/r树，一册/r书，铅/r笔。",
+          "answers": [
+            "xiāng",
+            "tián",
+            "yán",
+            "wēn",
+            "nuǎn",
+            "liàng",
+            "pǐ",
+            "kē",
+            "cè",
+            "qiān"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "xiāng",
+              "xiān"
+            ],
+            [
+              "tán",
+              "tián"
+            ],
+            [
+              "yáng",
+              "yán"
+            ],
+            [
+              "wēn",
+              "mēn"
+            ],
+            [
+              "nǎn",
+              "nuǎn"
+            ],
+            [
+              "liǎn",
+              "liàng"
+            ],
+            [
+              "pǐ",
+              "qǐ"
+            ],
+            [
+              "kē",
+              "gē"
+            ],
+            [
+              "cè",
+              "chè"
+            ],
+            [
+              "qiān",
+              "yān"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q009",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "因为/r，一架/r飞机，吃饭/r，叫喊/r，广阔/r，太阳/r。",
+          "answers": [
+            "yīn",
+            "jià",
+            "chī",
+            "jiào",
+            "guǎng",
+            "yáng"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "yīn",
+              "yīng"
+            ],
+            [
+              "jià",
+              "jà"
+            ],
+            [
+              "chī",
+              "cī"
+            ],
+            [
+              "jiào",
+              "jào"
+            ],
+            [
+              "guǎn",
+              "guǎng"
+            ],
+            [
+              "yáng",
+              "yán"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q010",
+          "type": "inline_choice",
+          "sectionTitle": "请选出正确的字",
+          "prompt": "/r人，长/r，/r办法，/r么，宽/r，/r子，/r果，学/r，/r东西。",
+          "answers": [
+            "主",
+            "江",
+            "没",
+            "多",
+            "广",
+            "太",
+            "因",
+            "校",
+            "吃"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "主",
+              "王"
+            ],
+            [
+              "红",
+              "江"
+            ],
+            [
+              "没",
+              "设"
+            ],
+            [
+              "夕",
+              "多"
+            ],
+            [
+              "厂",
+              "广"
+            ],
+            [
+              "太",
+              "大"
+            ],
+            [
+              "困",
+              "因"
+            ],
+            [
+              "较",
+              "校"
+            ],
+            [
+              "吃",
+              "池"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q011",
+          "type": "inline_choice",
+          "sectionTitle": "请选出正确的字",
+          "prompt": "/r声，/r在，可/r，/r做，/r路，南/r，/r色，/r天，/r园。",
+          "answers": [
+            "叫",
+            "住",
+            "以",
+            "会",
+            "走",
+            "京",
+            "金",
+            "秋",
+            "公"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "叫",
+              "纠"
+            ],
+            [
+              "往",
+              "住"
+            ],
+            [
+              "以",
+              "已"
+            ],
+            [
+              "会",
+              "公"
+            ],
+            [
+              "走",
+              "足"
+            ],
+            [
+              "京",
+              "景"
+            ],
+            [
+              "今",
+              "金"
+            ],
+            [
+              "求",
+              "秋"
+            ],
+            [
+              "公",
+              "幺"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_F01",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "捉虫(zhō)　行动(xíng)　身体(shēn)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F02",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "鸟窝(wō)　邻居(líng)　睡觉(jiào)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F03",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "一块(kuài)　着急(jí)　一直(zí)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F04",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "小河(hé)　装死(sǐ)　信任(xìng)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F05",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "紧跟(gēng)　忽然(hū)　喊声(hǎn)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F06",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "只有(zī)　孤单(dān)　种瓜(zhòng)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F07",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "都是(dōu)　招呼(zhāo)　快乐(yuè)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F08",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "也许(yě)　这里(zhè)　孤单(gù)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F09",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "居住(jū)　招呼(hū)　跳舞(tiào)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F10",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "讲课(jiǎng)　还得(dé)　排球(pái)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F11",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "篮球(lián)　连续(lián)　运动(yùn)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F12",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "怎样(zěn)　独自(dú)　跳绳(shén)",
+          
+          "answerSource": "",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_F13",
+          "type": "chinese",
+          "sectionTitle": "找出每组读音中错误的一个，并改正：",
+          "prompt": "羽毛(yǚ)　打球(qiú)　游戏(xì)",
+          
+          "answerSource": "",
+          "images": []
+        },
+
+        {
+          "id": "chinese_7day_d06_q013",
+          "type": "chinese",
+          "sectionTitle": "加一加，组成新字再组词",
+          "prompt": "氵+可=/r（/r），口+斤=/r（/r），禾+中=/r（/r），扌+召=/r（/r），王+元=/r（/r），立+日=/r（/r），亻+也=/r（/r），土+也=/r（/r）。",
+          "answers": [
+            "河",
+            "",
+            "听",
+            "",
+            "种",
+            "",
+            "招",
+            "",
+            "玩",
+            "",
+            "音",
+            "",
+            "他",
+            "",
+            "地",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q014",
+          "type": "inline_choice",
+          "sectionTitle": "选出正确读音",
+          "prompt": "静/r夜/r思，疑/r是，举/r头，仰望/r，低/r头，故/r乡，不敢/r，勇敢/r，窗户/r，乱跳/r。",
+          "answers": [
+            "jìng",
+            "yè",
+            "yí",
+            "jǔ",
+            "wàng",
+            "dī",
+            "gù",
+            "gǎn",
+            "yǒng",
+            "chuāng",
+            "luàn"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "jìng",
+              "jìn"
+            ],
+            [
+              "yiè",
+              "yè"
+            ],
+            [
+              "yí",
+              "ní"
+            ],
+            [
+              "jǔ"
+            ],
+            [
+              "wàn",
+              "wàng"
+            ],
+            [
+              "dī",
+              "tī"
+            ],
+            [
+              "gù"
+            ],
+            [
+              "gǎn",
+              "gǎng"
+            ],
+            [
+              "yǒu",
+              "yǒng"
+            ],
+            [
+              "chuān",
+              "chuāng"
+            ],
+            [
+              "luàn",
+              "làn"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q015",
+          "type": "inline_choice",
+          "sectionTitle": "选出正确读音",
+          "prompt": "偏要/r，散步/r，微笑/r，好像/r，传说/r，纪念/r，彩虹/r，座位/r，洒水/r，镜子/r。",
+          "answers": [
+            "piān",
+            "sàn",
+            "wēi",
+            "xiàng",
+            "chuán",
+            "niàn",
+            "hóng",
+            "zuò",
+            "sǎ",
+            "jìng"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "piān",
+              "qiān"
+            ],
+            [
+              "sà",
+              "sàn"
+            ],
+            [
+              "wié",
+              "wēi"
+            ],
+            [
+              "xiàng",
+              "xiàn"
+            ],
+            [
+              "chuán",
+              "cháng"
+            ],
+            [
+              "nàn",
+              "niàn"
+            ],
+            [
+              "hóng",
+              "nóng"
+            ],
+            [
+              "zuò",
+              "zhuò"
+            ],
+            [
+              "jiǔ",
+              "sǎ"
+            ],
+            [
+              "jìn",
+              "jìng"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q016",
+          "type": "inline_choice",
+          "sectionTitle": "选出正确读音",
+          "prompt": "裙子/r，眉毛/r，鼻子/r，嘴巴/r，脖子/r，手臂/r，小腿/r，脚尖/r，了解/r，提水/r，挑水/r。",
+          "answers": [
+            "qún",
+            "méi",
+            "bí",
+            "zuǐ",
+            "bó",
+            "bì",
+            "tuǐ",
+            "jiǎo",
+            "liǎo",
+            "tí",
+            "tiāo"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "qún",
+              "pún"
+            ],
+            [
+              "méi",
+              "mié"
+            ],
+            [
+              "bí",
+              "dí"
+            ],
+            [
+              "ziǔ",
+              "zuǐ"
+            ],
+            [
+              "bó",
+              "pó"
+            ],
+            [
+              "bì",
+              "pì"
+            ],
+            [
+              "tuǐ",
+              "tiǔ"
+            ],
+            [
+              "jǎo",
+              "jiǎo"
+            ],
+            [
+              "liǎo",
+              "le"
+            ],
+            [
+              "tí",
+              "dí"
+            ],
+            [
+              "tiāo",
+              "tāo"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q017",
+          "type": "chinese",
+          "sectionTitle": "给形近字组词",
+          "prompt": "思/r，恩/r，前/r，剪/r，故/r，做/r，乡/r，多/r，外/r，处/r，看/r，着/r，午/r，牛/r，千/r，干，到/r，倒，兴/r，头/r，色/r，巴/r，晚/r，挽/r，笑/r，笔/r，高/r，亮/r，着/r，看/r。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q018",
+          "type": "inline_choice",
+          "sectionTitle": "请选出正确的字",
+          "prompt": "/r见，现/r，/r次，正/r。/r头，床/r，高/r，海/r。",
+          "answers": [
+            "再",
+            "在",
+            "再",
+            "在",
+            "低",
+            "底",
+            "低",
+            "底"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "再",
+              "在"
+            ],
+            [
+              "再",
+              "在"
+            ],
+            [
+              "再",
+              "在"
+            ],
+            [
+              "再",
+              "在"
+            ],
+            [
+              "低",
+              "底"
+            ],
+            [
+              "低",
+              "底"
+            ],
+            [
+              "低",
+              "底"
+            ],
+            [
+              "低",
+              "底"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q019",
+          "type": "inline_choice",
+          "sectionTitle": "请选出正确的字",
+          "prompt": "蜻/r蜓/r，制造/r，捉迷/r藏/r，蚂/r蚁/r，食/r粮/r，蜘/r蛛/r，圆形/r，酷/r暑/r，清凉/r，早晨/r。",
+          "answers": [
+            "qīng",
+            "tíng",
+            "zào",
+            "mí",
+            "cáng",
+            "mǎ",
+            "yǐ",
+            "shí",
+            "liáng",
+            "zhī",
+            "zhū",
+            "yuán",
+            "kù",
+            "shǔ",
+            "liáng",
+            "chen"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "qīn",
+              "qīng"
+            ],
+            [
+              "tín",
+              "tíng"
+            ],
+            [
+              "zào",
+              "zhào"
+            ],
+            [
+              "mí",
+              "ní"
+            ],
+            [
+              "cán",
+              "cáng"
+            ],
+            [
+              "má",
+              "mǎ"
+            ],
+            [
+              "yǐ",
+              "ǐ"
+            ],
+            [
+              "shí",
+              "sí"
+            ],
+            [
+              "láng",
+              "liáng"
+            ],
+            [
+              "zī",
+              "zhī"
+            ],
+            [
+              "zū",
+              "zhū"
+            ],
+            [
+              "yán",
+              "yuán"
+            ],
+            [
+              "kù",
+              "kǚ"
+            ],
+            [
+              "shǔ",
+              "sǔ"
+            ],
+            [
+              "liáng",
+              "lián"
+            ],
+            [
+              "cén",
+              "chen"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q020",
+          "type": "inline_choice",
+          "sectionTitle": "第五单元",
+          "prompt": "朝/r霞/r，柳树/r，操/r场/r，拔河/r，跑/r步，踢球/r，铃声/r，身体/r，性格/r，锻/r炼/r。",
+          "answers": [
+            "zhāo",
+            "xiá",
+            "liǔ",
+            "cāo",
+            "chǎng",
+            "bá",
+            "pǎo",
+            "tī",
+            "líng",
+            "tǐ",
+            "xìng",
+            "duàn",
+            "liàn"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "zhāo",
+              "zāo"
+            ],
+            [
+              "xá",
+              "xiá"
+            ],
+            [
+              "luí",
+              "liǔ"
+            ],
+            [
+              "chāo",
+              "cāo"
+            ],
+            [
+              "cǎng",
+              "chǎng"
+            ],
+            [
+              "dá",
+              "bá"
+            ],
+            [
+              "pǎo",
+              "qiǎo"
+            ],
+            [
+              "tī",
+              "dī"
+            ],
+            [
+              "líng",
+              "lín"
+            ],
+            [
+              "tǐ",
+              "dǐ"
+            ],
+            [
+              "xìng",
+              "xìn"
+            ],
+            [
+              "duàn",
+              "dàn"
+            ],
+            [
+              "làn",
+              "liàn"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q021",
+          "type": "inline_choice",
+          "sectionTitle": "第五单元",
+          "prompt": "教导/r，珍贵/r，幼小/r，机器/r，知道/r，吃饭/r，吃饱/r，泡/r茶/r，年轻/r，鞭/r炮/r。",
+          "answers": [
+            "jiào",
+            "guì",
+            "yòu",
+            "qì",
+            "zhī",
+            "fàn",
+            "bǎo",
+            "pào",
+            "chá",
+            "qīng",
+            "biān",
+            "pào"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "jiào",
+              "jào"
+            ],
+            [
+              "giù",
+              "guì"
+            ],
+            [
+              "yò",
+              "yòu"
+            ],
+            [
+              "pì",
+              "qì"
+            ],
+            [
+              "zhī",
+              "zī"
+            ],
+            [
+              "fàn",
+              "tàn"
+            ],
+            [
+              "bǎo",
+              "pǎo"
+            ],
+            [
+              "pào",
+              "bào"
+            ],
+            [
+              "cá",
+              "chá"
+            ],
+            [
+              "qīn",
+              "qīng"
+            ],
+            [
+              "biān",
+              "bān"
+            ],
+            [
+              "bào",
+              "pào"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_J01",
+          "type": "chinese",
+          "sectionTitle": "给下面的字加上相同的偏旁，组成新字后，并组词",
+          "prompt": "米（/r），告（/r），云（/r）。",
+          
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_J02",
+          "type": "chinese",
+          "sectionTitle": "给下面的字加上相同的偏旁，组成新字后，并组词",
+          "prompt": "西（/r），白（/r）。",
+          
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q022",
+          "type": "chinese",
+          "sectionTitle": "写反义词并组词",
+          "prompt": "暖→/r（/r），粗→/r（/r），臭→/r（/r），朝→/r（/r）。",
+          "answers": [
+            "凉",
+            "",
+            "细",
+            "",
+            "香",
+            "",
+            "夕",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q023",
+          "type": "chinese",
+          "sectionTitle": "加一加，减一减，变新字",
+          "prompt": "乏-丿=/r，想-心=/r，斤+辶=/r，羽-习=/r，元+辶=/r，王+丶=/r，门+日=/r，氵+也=/r，又+欠=/r，木+子=/r，讠+吾=/r，足+包=/r，跳-兆=/r，休+一=/r。",
+          "answers": [
+            "之",
+            "相",
+            "近",
+            "习",
+            "远",
+            "玉",
+            "间",
+            "池",
+            "欢",
+            "李",
+            "语",
+            "跑",
+            "足",
+            "体"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_J03",
+          "type": "chinese",
+          "sectionTitle": "形近字组词",
+          "prompt": "网（/r），问（/r），声（/r），卢（/r），身（/r），射（/r），义（/r），叉（/r）。",
+          
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q024",
+          "type": "chinese",
+          "sectionTitle": "给下面的字注音",
+          "prompt": "踪（/r），迹（/r），浮（/r），萍（/r），泉（/r），流（/r），柔（/r），荷（/r），露（/r），珠（/r），躺（/r），晶（/r），停（/r），展（/r），透（/r），翅（/r）膀（/r），唱（/r），腰（/r），坡（/r），沉（/r），伸（/r），潮（/r），湿（/r），空（/r），闷（/r），消（/r），息（/r），搬（/r），响（/r），棍（/r），汤（/r），扇（/r），椅（/r），萤（/r），牵（/r），织（/r），斗（/r），摇（/r），呢（/r）。",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q025",
+          "type": "choice",
+          "sectionTitle": "第六单元",
+          "prompt": "下列字音和字形完全正确的一组是哪一项？",
+          "options": [
+            "首领(shǒu) 采摘(chǎi) 干吗(má)",
+            "热爱(ài) 尖角(jiǎo) 亮光(làng)",
+            "平台(tái) 开放(fàng) 小鱼(yǘ)",
+            "过来(guò) 这边(bān) 加法(jiā)",
+            "无声(wú) 大树(shù) 哎呀(yá)",
+            "飞机(jī) 美丽(měi) 好吧(ba)"
+          ],
+          "answers": [
+            "5"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q026",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "文具/r，丢/r失，哪/r里，最新/r，每天/r，一些/r，所有/r，背包/r，伙/r伴/r，迟到/r。",
+          "answers": [
+            "jù",
+            "diū",
+            "nǎ",
+            "xīn",
+            "měi",
+            "xiē",
+            "suǒ",
+            "bēi",
+            "huǒ",
+            "bàn",
+            "chí"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "jù",
+              "jǜ"
+            ],
+            [
+              "diū",
+              "duī"
+            ],
+            [
+              "nǎ",
+              "hǎ"
+            ],
+            [
+              "xīng",
+              "xīn"
+            ],
+            [
+              "měi",
+              "miě"
+            ],
+            [
+              "xiē",
+              "xēi"
+            ],
+            [
+              "suǒ",
+              "sǒu"
+            ],
+            [
+              "bēi",
+              "dēi"
+            ],
+            [
+              "huǒ",
+              "huo"
+            ],
+            [
+              "bàn",
+              "bàng"
+            ],
+            [
+              "cí",
+              "chí"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q027",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "洗衣/r，刚才/r，汽车/r，动物/r，老虎/r，已/r经/r，黑熊/r，通知/r，注/r意/r，鬼/r脸/r。",
+          "answers": [
+            "xǐ",
+            "gāng",
+            "qì",
+            "wù",
+            "hǔ",
+            "yǐ",
+            "jīng",
+            "xióng",
+            "tōng",
+            "zhù",
+            "yì",
+            "guǐ",
+            "liǎn"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "xǐ",
+              "sǐ"
+            ],
+            [
+              "gān",
+              "gāng"
+            ],
+            [
+              "qì",
+              "pì"
+            ],
+            [
+              "wù",
+              "ù"
+            ],
+            [
+              "nǔ",
+              "hǔ"
+            ],
+            [
+              "ǐ",
+              "yǐ"
+            ],
+            [
+              "jīn",
+              "jīng"
+            ],
+            [
+              "xóng",
+              "xióng"
+            ],
+            [
+              "tōng",
+              "dōng"
+            ],
+            [
+              "zù",
+              "zhù"
+            ],
+            [
+              "yì",
+              "ì"
+            ],
+            [
+              "giǔ",
+              "guǐ"
+            ],
+            [
+              "lǎn",
+              "liǎn"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q028",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "准确/r，第一名/r，猴子/r，结果子/r，掰玉米/r，扛着/r，扔东西/r，抱着/r，采摘/r，捧着/r，追赶/r，吵架/r，肥胖/r，甘甜/r。",
+          "answers": [
+            "zhǔn",
+            "dì",
+            "hóu",
+            "jiē",
+            "bāi",
+            "káng",
+            "rēng",
+            "bào",
+            "zhāi",
+            "pěng",
+            "zhuī",
+            "chǎo",
+            "pàng",
+            "gān"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "zǔn",
+              "zhǔn"
+            ],
+            [
+              "tì",
+              "dì"
+            ],
+            [
+              "huó",
+              "hóu"
+            ],
+            [
+              "jiē",
+              "jié"
+            ],
+            [
+              "bāi",
+              "dāi"
+            ],
+            [
+              "kán",
+              "káng"
+            ],
+            [
+              "rēn",
+              "rēng"
+            ],
+            [
+              "bàn",
+              "bào"
+            ],
+            [
+              "zāi",
+              "zhāi"
+            ],
+            [
+              "pěn",
+              "pěng"
+            ],
+            [
+              "zhiū",
+              "zhuī"
+            ],
+            [
+              "chǎo",
+              "cǎo"
+            ],
+            [
+              "pàn",
+              "pàng"
+            ],
+            [
+              "gān",
+              "kān"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_J04",
+          "type": "chinese",
+          "sectionTitle": "加一笔变新字，并组词",
+          "prompt": "白→/r（/r），古→/r（/r），住→/r（/r）。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+
+        {
+          "id": "chinese_7day_d06_q029",
+          "type": "inline_choice",
+          "sectionTitle": "请选出正确的字",
+          "prompt": "/r位，请/r，让/r，/r下；/r表，/r树，时/r，栽/r；/r天，口/r，古/r，命/r；远/r，/r去，/r处，请/r。",
+          "answers": [
+            "座",
+            "坐",
+            "座",
+            "坐",
+            "钟",
+            "种",
+            "钟",
+            "种",
+            "今",
+            "令",
+            "今",
+            "令",
+            "近",
+            "进",
+            "近",
+            "进"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "座",
+              "坐"
+            ],
+            [
+              "座",
+              "坐"
+            ],
+            [
+              "座",
+              "坐"
+            ],
+            [
+              "座",
+              "坐"
+            ],
+            [
+              "钟",
+              "种"
+            ],
+            [
+              "钟",
+              "种"
+            ],
+            [
+              "钟",
+              "种"
+            ],
+            [
+              "钟",
+              "种"
+            ],
+            [
+              "今",
+              "令"
+            ],
+            [
+              "今",
+              "令"
+            ],
+            [
+              "今",
+              "令"
+            ],
+            [
+              "今",
+              "令"
+            ],
+            [
+              "进",
+              "近"
+            ],
+            [
+              "进",
+              "近"
+            ],
+            [
+              "进",
+              "近"
+            ],
+            [
+              "进",
+              "近"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q030",
+          "type": "chinese",
+          "sectionTitle": "加一加，减一减，组成新字并组词",
+          "prompt": "纹-纟=/r（/r），苹-艹=/r（/r），亻+火=/r（/r），亻+半=/r（/r），辶+车=/r（/r），辶+不=/r（/r），土+夬=/r（/r），尚+巾=/r（/r）。",
+          "answers": [
+            "文",
+            "",
+            "平",
+            "",
+            "伙",
+            "",
+            "伴",
+            "",
+            "连",
+            "",
+            "还",
+            "",
+            "块",
+            "",
+            "常",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_J05",
+          "type": "chinese",
+          "sectionTitle": "给形近字组词",
+          "prompt": "办/r，为/r，面/r，画/r，片/r，分/r，瓜/r，爪/r，空/r，牢/r。",
+          
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q031",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "棉花/r，亲娘/r，治病/r，燕/r子，别/r人，树干/r，然后/r，惊奇/r，一颗/r，七星瓢虫/r。",
+          "answers": [
+            "mián",
+            "niáng",
+            "zhì",
+            "yàn",
+            "bié",
+            "gàn",
+            "rán",
+            "qí",
+            "kē",
+            "piáo"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "mán",
+              "mián"
+            ],
+            [
+              "niáng",
+              "náng"
+            ],
+            [
+              "zì",
+              "zhì"
+            ],
+            [
+              "yàn",
+              "yà"
+            ],
+            [
+              "bié",
+              "béi"
+            ],
+            [
+              "gān",
+              "gàn"
+            ],
+            [
+              "rán",
+              "ráng"
+            ],
+            [
+              "qí",
+              "pí"
+            ],
+            [
+              "kē",
+              "ké"
+            ],
+            [
+              "piáo",
+              "páo"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q032",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "碧绿/r，吐出/r，咕/r咚/r，熟了/r，掉进/r，吓/r坏，野猪/r，山羊/r，拦着/r，带领/r。",
+          "answers": [
+            "bì",
+            "tǔ",
+            "gū",
+            "dōng",
+            "shú",
+            "diào",
+            "xià",
+            "yě",
+            "yáng",
+            "lán",
+            "lǐng"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "bì",
+              "dì"
+            ],
+            [
+              "tǔ",
+              "tù"
+            ],
+            [
+              "gū",
+              "gǔ"
+            ],
+            [
+              "dōng",
+              "dàn"
+            ],
+            [
+              "sú",
+              "shú"
+            ],
+            [
+              "dào",
+              "diào"
+            ],
+            [
+              "xià",
+              "xà"
+            ],
+            [
+              "yě",
+              "iě"
+            ],
+            [
+              "yáng",
+              "yán"
+            ],
+            [
+              "lán",
+              "lá"
+            ],
+            [
+              "lǐn",
+              "lǐng"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q033",
+          "type": "inline_choice",
+          "sectionTitle": "请选择正确读音",
+          "prompt": "壁虎/r，借用/r，墙壁/r，蚊子/r，您好/r，房/r子，咬/r断/r，拨开/r，甩掉/r，赶走/r，傻子/r。",
+          "answers": [
+            "bì",
+            "jiè",
+            "qiáng",
+            "wén",
+            "nín",
+            "fáng",
+            "yǎo",
+            "duàn",
+            "bō",
+            "shuǎi",
+            "gǎn",
+            "shǎ"
+          ],
+          "answerSource": "auto",
+          "images": [],
+          "blankChoices": [
+            [
+              "bì",
+              "pì"
+            ],
+            [
+              "jiè",
+              "jè"
+            ],
+            [
+              "qián",
+              "qiáng"
+            ],
+            [
+              "wén",
+              "mén"
+            ],
+            [
+              "nǐ",
+              "nín"
+            ],
+            [
+              "fán",
+              "fáng"
+            ],
+            [
+              "yǎo",
+              "yǎ"
+            ],
+            [
+              "dàn",
+              "duàn"
+            ],
+            [
+              "bā",
+              "bō"
+            ],
+            [
+              "shuǎi",
+              "suǎi"
+            ],
+            [
+              "gǎn",
+              "gǎ"
+            ],
+            [
+              "sǎ",
+              "shǎ"
+            ]
+          ]
+        },
+        {
+          "id": "chinese_7day_d06_q034",
+          "type": "chinese",
+          "sectionTitle": "比一比，再组词",
+          "prompt": "病（/r），柄（/r），别（/r），另（/r），干（/r），千（/r），象（/r），家（/r），羊（/r），样（/r），条（/r），朵（/r），姐（/r），组（/r），医（/r），区（/r）都（/r），者（/r），爬（/r），趴（/r），草（/r），早（/r），向（/r），同（/r）。",
+          
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d06_q035",
+          "type": "chinese",
+          "sectionTitle": "换偏旁，变新字，再组词",
+          "prompt": "他→/r（/r），拍→/r（/r），很→/r（/r），防→/r（/r）。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "考前第05天",
+      "questions": [
+        {
+          "id": "chinese_7day_d05_q001",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "看拼音写词语：chūn fēng、dōng xuě、hóng huā、fēi niǎo、rù lín、xìng shì\n/r /r /r /r /r /r",
+          "answers": [
+            "春风",
+            "冬雪",
+            "红花",
+            "飞鸟",
+            "入林",
+            "姓氏"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q002",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "看拼音写词语：shén me、zhōng guó、dōng fāng、wáng zǐ、qīng wā、qīng shuǐ\n/r /r /r /r /r /r",
+          "answers": [
+            "什么",
+            "中国",
+            "东方",
+            "王子",
+            "青蛙",
+            "清水"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q003",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "看拼音写词语：tiān qì、qíng tiān、shì qing、qǐng zuò、shēng bìng、zì mí\n/r /r /r /r /r /r",
+          "answers": [
+            "天气",
+            "晴天",
+            "事情",
+            "请坐",
+            "生病",
+            "字谜"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q004",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "看拼音写词语：zuǒ yòu、hóng sè、jí shí、gǎn dòng、wàn lǐ、shuāng rén\n/r /r /r /r /r /r",
+          "answers": [
+            "左右",
+            "红色",
+            "及时",
+            "感动",
+            "万里",
+            "双人"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q005",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "写出反义词：出——/r，圆——/r，左——/r。",
+          "answers": [
+            "入",
+            "方",
+            "右"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q006",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "把词语补充完整：/r回大地，/r物复苏，柳绿花/r，冰/r融化，泉/r叮咚，/r花齐放，/r争鸣，莺/r燕舞。",
+          "answers": [
+            "春",
+            "万",
+            "红",
+            "雪",
+            "水",
+            "百",
+            "百鸟",
+            "歌"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q007",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "看拼音写词语：zhǔ rén、chī shuǐ、jiào shēng、jiāng shuǐ、zhù zài、méi yǒu\n/r /r /r /r /r /r",
+          "answers": [
+            "主人",
+            "吃水",
+            "叫声",
+            "江水",
+            "住在",
+            "没有"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q008",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "看拼音写词语：kě yǐ、duō me、guǎng chǎng、bú huì、tài yáng、jīn huáng\n/r /r /r /r /r /r",
+          "answers": [
+            "可以",
+            "多么",
+            "广场",
+            "不会",
+            "太阳",
+            "金黄"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q009",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "看拼音写词语：qiū tiān、yīn wèi、zǒu lù、běi jīng、gōng lù、xué xiào\n/r /r /r /r /r /r",
+          "answers": [
+            "秋天",
+            "因为",
+            "走路",
+            "北京",
+            "公路",
+            "学校"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q010",
+          "type": "match",
+          "sectionTitle": "第二单元",
+          "prompt": "词语搭配，连一连。",
+          "left": [
+            "弯弯的",
+            "宽宽的",
+            "美丽的",
+            "洁白的",
+            "雄伟的",
+            "壮观的"
+          ],
+          "right": [
+            "小路",
+            "街道",
+            "天山",
+            "雪莲",
+            "天安门",
+            "升旗仪式"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q011",
+          "type": "choice",
+          "sectionTitle": "第二单元",
+          "prompt": "圈出与其他三项不同类的一项：高山、田野、果园、水果。",
+          "options": [
+            "高山",
+            "田野",
+            "果园",
+            "水果"
+          ],
+          "answers": [
+            "3"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q012",
+          "type": "choice",
+          "sectionTitle": "第二单元",
+          "prompt": "圈出与其他三项不同类的一项：颜色、碧绿、金黄、火红。",
+          "options": [
+            "颜色",
+            "碧绿",
+            "金黄",
+            "火红"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q013",
+          "type": "choice",
+          "sectionTitle": "第二单元",
+          "prompt": "圈出与其他三项不同类的一项：清凉、温暖、小鸟、香甜。",
+          "options": [
+            "清凉",
+            "温暖",
+            "小鸟",
+            "香甜"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q014",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "用恰当的量词填空：一/r车，一/r飞机，一/r马，一/r书，一/r树，一/r铅笔。",
+          "answers": [
+            "辆",
+            "架",
+            "匹",
+            "本",
+            "棵",
+            "支"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q015",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "看拼音写词语：tā men、xiǎo hé、tīng shuō、gē ge、tǔ dì、yě xǔ\n/r /r /r /r /r /r",
+          "answers": [
+            "他们",
+            "小河",
+            "听说",
+            "哥哥",
+            "土地",
+            "也许"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q016",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "看拼音写词语：zhòng shù、kuài lè、gū dān、lín jū、shēng yīn、zhāo hu\n/r /r /r /r /r /r",
+          "answers": [
+            "种树",
+            "快乐",
+            "孤单",
+            "邻居",
+            "声音",
+            "招呼"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q017",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "看拼音写词语：dāng rán、wán jù、jiǎng huà、bù xǔ、hěn duō、bù xíng\n/r /r /r /r /r /r",
+          "answers": [
+            "当然",
+            "玩具",
+            "讲话",
+            "不许",
+            "很多",
+            "不行"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q018",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "填上恰当的动词：/r绳，/r足球，/r故事，/r音乐，/r排球，/r游戏。",
+          "answers": [
+            "跳",
+            "踢",
+            "讲",
+            "听",
+            "打",
+            "做"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q019",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "看拼音写词语：sī niàn、chuáng qián、yuè guāng、dī tóu、yán sè、wài miàn\n/r /r /r /r /r /r",
+          "answers": [
+            "思念",
+            "床前",
+            "月光",
+            "低头",
+            "颜色",
+            "外面"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q020",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "看拼音写词语：kàn jiàn、bà ba、wǎn shang、wēi xiào、duān wǔ jié、yè zi\n/r /r /r /r /r /r",
+          "answers": [
+            "看见",
+            "爸爸",
+            "晚上",
+            "微笑",
+            "端午节",
+            "叶子"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q021",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "看拼音写词语：dà mǐ、fēn gěi、huā yàng、hóng dòu、nà biān、gāo xìng\n/r /r /r /r /r /r",
+          "answers": [
+            "大米",
+            "分给",
+            "花样",
+            "红豆",
+            "那边",
+            "高兴"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q022",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "看拼音写词语：qiū qiān、gù xiāng、zài cì、kàn zhe、lái dào、chéng zhǎng\n/r /r /r /r /r /r",
+          "answers": [
+            "秋千",
+            "故乡",
+            "再次",
+            "看着",
+            "来到",
+            "成长"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q023",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "一字组多词：胆/r /r /r，勇/r /r /r，原/r /r /r。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q024",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "照样子写词语。例：荡来荡去。\n/r来/r去，/r来/r去，/r来/r去，/r来/r去。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q025",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "看拼音写词语：huā jiān、yùn sòng、shuǐ chí、huān lè、jié wǎng、mí gōng\n/r /r /r /r /r /r",
+          "answers": [
+            "花间",
+            "运送",
+            "水池",
+            "欢乐",
+            "结网",
+            "迷宫"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q026",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "看拼音写词语：gǔ dài、liáng fēng、xì yǔ、zào jù、xī yáng、lǐ zi\n/r /r /r /r /r /r",
+          "answers": [
+            "古代",
+            "凉风",
+            "细雨",
+            "造句",
+            "夕阳",
+            "李子"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q027",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "看拼音写词语：niǎo yǔ huā xiāng、dǎ qiú、pǎo bù、zú qiú、shēng yīn、shēn tǐ\n/r /r /r /r /r /r",
+          "answers": [
+            "鸟语花香",
+            "打球",
+            "跑步",
+            "足球",
+            "声音",
+            "身体"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q028",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "看拼音写词语：pāi dǎ、hù xiāng、xué xí、yuǎn jìn、yù shí、zhī jiān\n/r /r /r /r /r /r",
+          "answers": [
+            "拍打",
+            "互相",
+            "学习",
+            "远近",
+            "玉石",
+            "之间"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q029",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "看拼音写词语：yuǎn jìn、yì qì\n/r /r",
+          "answers": [
+            "远近",
+            "义气"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q030",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "写出反义词：今——/r，粗——/r，朝——/r，严寒——/r，圆——/r，晨——/r。",
+          "answers": [
+            "古",
+            "细",
+            "夕",
+            "酷暑",
+            "方",
+            "暮"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q031",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "看图补充词语：/r搬家，/r展翅，/r游泳，/r飞舞，/r松土，/r结网。",
+          "answers": [
+            "蚂蚁",
+            "蜻蜓",
+            "蝌蚪",
+            "蝴蝶",
+            "蚯蚓",
+            "蜘蛛"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q032",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "给“包”加不同偏旁，再填空：/r茶，吃/r，长/r，鞭/r，/r步，拥/r。",
+          "answers": [
+            "泡",
+            "饱",
+            "袍",
+            "炮",
+            "跑",
+            "抱"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q033",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "加偏旁，组成不同的字，再组词。\n口：/r /r /r\n足：/r /r /r\n扌：/r /r /r",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q034",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "看拼音写词语：liǎng shǒu、cǎi huā、wú shēng、xiǎo shù、xǐ ài、jiān jiǎo\n/r /r /r /r /r /r",
+          "answers": [
+            "两首",
+            "采花",
+            "无声",
+            "小树",
+            "喜爱",
+            "尖角"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q035",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "看拼音写词语：shǎn liàng、fēi jī、gē tái、fàng shēng、xiǎo yú、huā duǒ\n/r /r /r /r /r /r",
+          "answers": [
+            "闪亮",
+            "飞机",
+            "歌台",
+            "放声",
+            "小鱼",
+            "花朵"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q036",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "看拼音写词语：měi lì、fēi guò、zhè biān、jiā fǎ、āi ya、gàn má\n/r /r /r /r /r /r",
+          "answers": [
+            "美丽",
+            "飞过",
+            "这边",
+            "加法",
+            "哎呀",
+            "干嘛"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q037",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "看拼音写词语：hǎo ba\n/r",
+          "answers": [
+            "好吧"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q038",
+          "type": "choice",
+          "sectionTitle": "第六单元",
+          "prompt": "圈出每组中不是同类的一个：西瓜、冰棍、包子、绿豆汤。",
+          "options": [
+            "西瓜",
+            "冰棍",
+            "包子",
+            "绿豆汤"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q039",
+          "type": "choice",
+          "sectionTitle": "第六单元",
+          "prompt": "圈出每组中不是同类的一个：凉席、蒲扇、竹椅、棉袄。",
+          "options": [
+            "凉席",
+            "蒲扇",
+            "竹椅",
+            "棉袄"
+          ],
+          "answers": [
+            "3"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q040",
+          "type": "choice",
+          "sectionTitle": "第六单元",
+          "prompt": "圈出每组中不是同类的一个：牵牛星、星星、织女星、北斗星。",
+          "options": [
+            "牵牛星",
+            "星星",
+            "织女星",
+            "北斗星"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q041",
+          "type": "choice",
+          "sectionTitle": "第六单元",
+          "prompt": "圈出每组中不是同类的一个：蚊子、苍蝇、萤火虫、蚯蚓。",
+          "options": [
+            "蚊子",
+            "苍蝇",
+            "萤火虫",
+            "蚯蚓"
+          ],
+          "answers": [
+            "3"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q042",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "看拼音写词语：wén jù、píng ān、bàn fǎ、shū bāo、huǒ bàn、fēn zhōng\n/r /r /r /r /r /r",
+          "answers": [
+            "文具",
+            "平安",
+            "办法",
+            "书包",
+            "伙伴",
+            "分钟"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q043",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "看拼音写词语：shàng miàn、qì chē、gōng gòng、zuò xià、zhǐ yào、lián máng\n/r /r /r /r /r /r",
+          "answers": [
+            "上面",
+            "汽车",
+            "公共",
+            "坐下",
+            "只要",
+            "连忙"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q044",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "看拼音写词语：jǐ bǎi、jīn tiān、hái yǒu、shé tou、yí kuài、fēi cháng\n/r /r /r /r /r /r",
+          "answers": [
+            "几百",
+            "今天",
+            "还有",
+            "舌头",
+            "一块",
+            "非常"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q045",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "看拼音写词语：xī guā、jìn rù、kòng dì、bú ràng、dīng líng líng、yuán dàn\n/r /r /r /r /r /r",
+          "answers": [
+            "西瓜",
+            "进入",
+            "空地",
+            "不让",
+            "叮铃铃",
+            "元旦"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q046",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "看拼音写词语：zhōng diǎn、guò wǎng、yí piàn\n/r /r /r",
+          "answers": [
+            "钟点",
+            "过往",
+            "一片"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q047",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "加一加，减一减，变成新字并组词：口+少=/r（/r），月+半=/r（/r），山+夕=/r（/r），王+见=/r（/r），飘-风=/r（/r），校-木=/r（/r），张-长=/r（/r），甜-舌=/r（/r）。",
+          "answers": [
+            "吵",
+            "吵闹",
+            "胖",
+            "胖子",
+            "岁",
+            "岁月",
+            "现",
+            "现在",
+            "票",
+            "车票",
+            "交",
+            "交通",
+            "弓",
+            "弓箭",
+            "甘",
+            "甘甜"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q048",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "比一比，选一选：放/r，小/r，/r假，/r人，中/r，/r气，/r尺，/r米。\n可选：牛、午、刀、力、直、真、玉、主",
+          "answers": [
+            "牛",
+            "刀",
+            "真",
+            "主",
+            "午",
+            "力",
+            "直",
+            "玉"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q049",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "看拼音写词语：shēng bìng、yī shēng、bié rén、gàn huó、qí guài、qī xīng piáo chóng\n/r /r /r /r /r /r",
+          "answers": [
+            "生病",
+            "医生",
+            "别人",
+            "干活",
+            "奇怪",
+            "七星瓢虫"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q050",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "看拼音写词语：jīng xià、hài pà、gēn zhe、qǐ lái、dà jiā、xiǎo yáng\n/r /r /r /r /r /r",
+          "answers": [
+            "惊吓",
+            "害怕",
+            "跟着",
+            "起来",
+            "大家",
+            "小羊"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q051",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "看拼音写词语：dà xiàng、zhuō chóng、fāng xiàng、jiě jie、nín hǎo、cǎo cóng\n/r /r /r /r /r /r",
+          "answers": [
+            "大象",
+            "捉虫",
+            "方向",
+            "姐姐",
+            "您好",
+            "草丛"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q052",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "看拼音写词语：fáng zi、quán dōu、yì tiáo、pá shān\n/r /r /r /r",
+          "answers": [
+            "房子",
+            "全都",
+            "一条",
+            "爬山"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q053",
+          "type": "match",
+          "sectionTitle": "第八单元",
+          "prompt": "词语搭配，连一连。",
+          "left": [
+            "高高的",
+            "小小的",
+            "白白的",
+            "吓了",
+            "拔腿",
+            "转过"
+          ],
+          "right": [
+            "大树",
+            "虫子",
+            "棉花",
+            "一跳",
+            "就跑",
+            "身子"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q054",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "照样子写一写：碧绿碧绿的叶子，碧绿碧绿的/r；雪白雪白的棉花，雪白雪白的/r；金黄金黄的落叶，金黄金黄的/r。",
+          "answers": [
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d05_q055",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "写出含有下面偏旁的字，并组词：含“犭”的字/r（/r）/r（/r）；含“鸟”的字/r（/r）/r（/r）；含“虫”的字/r（/r）/r（/r）。",
+          "answers": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "考前第04天",
+      "questions": [
+        {
+          "id": "chinese_7day_d04_q001",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "我来问，你来答。例：你姓什么？我姓张。什么张？弓长张。\n你姓什么？我姓林，什么林？/r。",
+          "answers": [
+            "双木林"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q002",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "照样子写一写：你姓什么？我姓/r。/r？/r。",
+          "answers": [
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q003",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "仿照例句写一写。\n例：遥远的北京城，有一座雄伟的天安门，我多想去看看！\n遥远的/r，有/r，我多想去看看！",
+          "answers": [
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q004",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "照样子，把句子写得更生动。\n小公鸡跟在小鸭子后面。（偷偷地）\n/r",
+          "answers": [
+            "小公鸡偷偷地跟在小鸭子后面。"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q005",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "照样子，把句子写得更生动。\n喜鹊们一起飞到树枝上。（叽叽喳喳地）\n/r",
+          "answers": [
+            "喜鹊们叽叽喳喳地一起飞到树枝上。"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q006",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "照样子仿写句子。例：荷叶圆圆的，绿绿的。\n苹果/r，/r。",
+          "answers": [
+            "圆圆的",
+            "红红的"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q007",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "照样子仿写句子。例：荷叶圆圆的，绿绿的。\n香蕉/r，/r。",
+          "answers": [
+            "弯弯的",
+            "黄黄的"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q008",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "照样子，把句子写具体。\n例：小白兔割草。小白兔在山坡上割草。小白兔弯着腰在山坡上割草。\n小鸭子游泳。\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q009",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "照样子，把句子写具体。\n例：小白兔割草。小白兔在山坡上割草。小白兔弯着腰在山坡上割草。\n小鸟歌唱。\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q010",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "给句子加上恰当的标点符号：你看见那只蝴蝶了吗/r",
+          "answers": [
+            "？"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q011",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "给句子加上恰当的标点符号：操场上真热闹啊/r",
+          "answers": [
+            "！"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q012",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "给句子加上恰当的标点符号：土里有一只蚯蚓/r",
+          "answers": [
+            "。"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q013",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "用加点词语仿写句子：元元非常后悔。\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q014",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "用加点词语仿写句子：要是早一分钟就好了。\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d04_q015",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "观察图画，选择几个词语写一句话，至少选择 2 个词。\n花朵  笑声  歌唱  草地  喜欢  阳光\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "考前第03天",
+      "questions": [
+        {
+          "id": "chinese_7day_d03_q001",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写课文内容：春/r吹，夏/r落，秋霜降，冬/r飘。",
+          "answers": [
+            "风",
+            "雨",
+            "雪"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q002",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写课文内容：青草，红花，游鱼，/r鸟。",
+          "answers": [
+            "飞"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q003",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写课文内容：池草青，山花/r，鱼出水，鸟/r林。",
+          "answers": [
+            "红",
+            "入"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q004",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写《姓氏歌》：你/r什么？我/r李。/r李？木子李。",
+          "answers": [
+            "姓",
+            "姓",
+            "什么"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q005",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写《姓氏歌》：他/r什么？他/r张。/r张？弓长张。",
+          "answers": [
+            "姓",
+            "姓",
+            "什么"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q006",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写《姓氏歌》：古月胡，口天吴，/r人徐，言午许。",
+          "answers": [
+            "双"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q007",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "填写《姓氏歌》：中/r姓氏有很多，赵、钱、孙、李，周、吴、郑、/r，诸葛、东/r，上官、欧阳……",
+          "answers": [
+            "国",
+            "王",
+            "方"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q008",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "回忆《汉语拼音字母表》，把缺少的大写字母补充完整，并写出相应的小写字母。\nB C F G J K N\nO R S T V Z\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q009",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "默写古诗《春晓》：春眠/r觉晓，处处闻啼/r。",
+          "answers": [
+            "不",
+            "鸟"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q010",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "默写古诗《春晓》：夜来/r声，/r落知多少。",
+          "answers": [
+            "风雨",
+            "花"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q011",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "默写古诗《赠汪伦》：李白乘舟将欲/r，忽闻岸/r踏歌声。",
+          "answers": [
+            "行",
+            "上"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q012",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "默写古诗《赠汪伦》：桃花潭水深/r，/r及汪伦送我/r。",
+          "answers": [
+            "千尺",
+            "不",
+            "情"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q013",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "默写古诗《静夜思》：/r明月/r，疑是地上霜。",
+          "answers": [
+            "床前",
+            "光"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q014",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "默写古诗《静夜思》：举头望明月，/r头思/r。",
+          "answers": [
+            "低",
+            "故乡"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q015",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "默写古诗《寻隐者不遇》：/r问童/r，言师采药/r。",
+          "answers": [
+            "松下",
+            "子",
+            "去"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q016",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "默写古诗《寻隐者不遇》：/r在此/r，/r深不知处。",
+          "answers": [
+            "只",
+            "山中",
+            "云"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q017",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "填写课文内容：/r对今，圆对方。严寒对酷暑，春暖对秋/r。",
+          "answers": [
+            "古",
+            "凉"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q018",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "填写课文内容：晨对暮，雪对霜。和风对/r，朝霞对/r。桃对/r，柳对杨。莺歌对燕舞，鸟/r对花/r。",
+          "answers": [
+            "细雨",
+            "夕阳",
+            "李",
+            "语",
+            "香"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q019",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "默写《人之初》：人/r初，性本善，性/r近，习相/r。苟不教，性乃迁，教之道，贵以专。",
+          "answers": [
+            "之",
+            "相",
+            "远"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q020",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "默写《人之初》：/r不学，非所宜，幼不学，老何为？/r不琢，不成器，人不学，不知/r。",
+          "answers": [
+            "子",
+            "玉",
+            "义"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q021",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "补充歇后语：小葱拌豆腐——/r；竹篮子打水——/r；芝麻开花——/r；十五个吊桶打水——/r。",
+          "answers": [
+            "一清（青）二白",
+            "一场空",
+            "节节高",
+            "七上八下"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q022",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "默写古诗《池上》：小娃撑小艇，偷/r白莲回。/r解藏踪迹，浮萍/r道/r。",
+          "answers": [
+            "采",
+            "不",
+            "一",
+            "开"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q023",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "默写古诗《小池》：泉眼/r声惜细流，/r阴照/r爱晴柔。/r荷才露/r角，早有蜻蜓立/r。",
+          "answers": [
+            "无",
+            "树",
+            "水",
+            "小",
+            "尖尖",
+            "上头"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q024",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "填写《荷叶圆圆》：小水珠躺在荷叶上，眨着/r晶晶的眼睛。小蜻蜓/r在荷叶上，展/r透明的翅膀。",
+          "answers": [
+            "亮",
+            "立",
+            "开"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q025",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "填写《荷叶圆圆》：小青蛙说：“荷叶是我的歌/r。”小青蛙蹲在荷叶上，呱呱地/r声歌唱。",
+          "answers": [
+            "台",
+            "放"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q026",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "填写《荷叶圆圆》：小/r说：“荷叶是我的凉伞。”小/r在荷叶下笑嘻嘻地游来游去，捧起一/r很美很美的水花。",
+          "answers": [
+            "鱼儿",
+            "鱼儿",
+            "朵朵"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q027",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "补全俗语：朝霞/r，晚霞/r。/r山戴帽，/r半山腰。早晨/r当日晴，晚上/r到天明。蚂蚁搬家蛇过道，/r不久要来到。",
+          "answers": [
+            "不出门",
+            "行千里",
+            "有雨",
+            "无雨",
+            "下雨",
+            "下雨",
+            "大雨"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q028",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "补全名言：不知则/r，不能则/r。——《荀子》",
+          "answers": [
+            "问",
+            "学"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q029",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "补全名言：读书/r遍，而义自/r。——董遇",
+          "answers": [
+            "百",
+            "见"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q030",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "补全名言：读/r卷书，行/r里路。——董其昌",
+          "answers": [
+            "万",
+            "万"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q031",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "默写古诗《画鸡》：/r红冠不用裁，满身/r走将来。",
+          "answers": [
+            "头上",
+            "雪白"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d03_q032",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "默写古诗《画鸡》：平生不敢轻言/r，一叫/r开。",
+          "answers": [
+            "语",
+            "千门万户"
+          ],
+          "answerSource": "auto",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "考前第02天",
+      "questions": [
+        {
+          "id": "chinese_7day_d02_q001",
+          "type": "match",
+          "sectionTitle": "第一单元",
+          "prompt": "连一连。",
+          "left": [
+            "春风",
+            "夏雨",
+            "秋霜",
+            "冬雪"
+          ],
+          "right": [
+            "吹",
+            "落",
+            "降",
+            "飘"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q002",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "画出下列姓名的姓氏。李白/r，周恩来/r，欧阳修/r，钱学森/r，诸葛亮/r。",
+          "answers": [
+            "李",
+            "周",
+            "欧阳",
+            "钱",
+            "诸葛"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q003",
+          "type": "choice",
+          "sectionTitle": "第一单元",
+          "prompt": "有一种小动物，大大的眼睛白肚皮，专门吃田里的害虫，是禾苗的小卫士。它是谁？",
+          "options": [
+            "青蛙",
+            "蜻蜓",
+            "蛇"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q004",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "猜字谜：左边绿，右边红，左右相遇起凉风。绿的喜欢及时雨，红的最怕水来攻。谜底：/r",
+          "answers": [
+            "秋"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q005",
+          "type": "chinese",
+          "sectionTitle": "第一单元",
+          "prompt": "猜字谜：“言”来互相尊重，“心”至令人感动，“日”出万里无云，“水”到纯净透明。谜底：/r",
+          "answers": [
+            "青"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q006",
+          "type": "choice",
+          "sectionTitle": "第二单元",
+          "prompt": "《吃水不忘挖井人》中，“挖井人”指的是谁？",
+          "options": [
+            "乡亲们",
+            "战士们",
+            "毛主席、乡亲们、战士们"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q007",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "《四个太阳》中，“我”画了个红红的太阳送给/r，画了个金黄的太阳送给/r，画了个绿绿的太阳送给/r，画个彩色的太阳送给/r。\n①夏天 ②秋天 ③冬天 ④春天",
+          "answers": [
+            "③",
+            "②",
+            "①",
+            "④"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q008",
+          "type": "chinese",
+          "sectionTitle": "第二单元",
+          "prompt": "回顾《我多想去看看》：/r有天安门，广场上有壮观的升旗仪式。",
+          "answers": [
+            "北京"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q009",
+          "type": "choice",
+          "sectionTitle": "第二单元",
+          "prompt": "新疆有什么呢？根据课文内容选择。",
+          "options": [
+            "天山",
+            "长城",
+            "雪莲",
+            "大海"
+          ],
+          "answers": [
+            "0",
+            "2"
+          ],
+          "multiSelect": true,
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q010",
+          "type": "chinese",
+          "sectionTitle": "第三单元",
+          "prompt": "在《小公鸡和小鸭子》一文中，小公鸡捉/r给小鸭子吃，/r救了/r。\n①小公鸡 ②小鸭子 ③小虫子 ④鱼",
+          "answers": [
+            "③",
+            "②",
+            "①"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q011",
+          "type": "choice",
+          "sectionTitle": "第三单元",
+          "prompt": "树和喜鹊后来很快乐的原因是什么？",
+          "options": [
+            "树和喜鹊天天聊天，很快乐",
+            "喜鹊在树上叽叽喳喳地叫，很快乐",
+            "树和喜鹊都有了邻居，不再孤单，很快乐"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q012",
+          "type": "choice",
+          "sectionTitle": "第三单元",
+          "prompt": "在《怎么都快乐》中，为什么说“许多人玩，更好”？",
+          "options": [
+            "因为许多人在一起，可以玩更多的游戏，会更加快乐。",
+            "因为大家不喜欢一个人玩。"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q013",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "《静夜思》是/r代诗人/r写的。诗人看到/r，想起了自己的故乡。\n①雪花 ②霜 ③月光",
+          "answers": [
+            "唐",
+            "李白",
+            "③"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q014",
+          "type": "choice",
+          "sectionTitle": "第四单元",
+          "prompt": "《夜色》中，爸爸晚上非要拉“我”去散步的原因是什么？",
+          "options": [
+            "锻炼“我”的胆量",
+            "夜晚的景色很美",
+            "散步对身体好"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q015",
+          "type": "choice",
+          "sectionTitle": "第四单元",
+          "prompt": "学完《端午粽》，我知道端午节的习俗是什么？",
+          "options": [
+            "吃粽子",
+            "吃元宵",
+            "登高",
+            "吃月饼"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q016",
+          "type": "match",
+          "sectionTitle": "第四单元",
+          "prompt": "根据《彩虹》一文，连一连。",
+          "left": [
+            "水壶洒水像",
+            "镜子像",
+            "花裙子像"
+          ],
+          "right": [
+            "下雨",
+            "月亮",
+            "一朵彩云"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q017",
+          "type": "chinese",
+          "sectionTitle": "第四单元",
+          "prompt": "你眼中的彩虹是什么样子的？大胆想象，写一写。\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q018",
+          "type": "match",
+          "sectionTitle": "第五单元",
+          "prompt": "动物们会做什么呢？根据《动物儿歌》一文，连一连。",
+          "left": [
+            "蜻蜓",
+            "蚂蚁",
+            "蜘蛛",
+            "蚯蚓",
+            "蝴蝶"
+          ],
+          "right": [
+            "展翅飞",
+            "运粮食",
+            "结网",
+            "造宫殿",
+            "捉迷藏"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q019",
+          "type": "match",
+          "sectionTitle": "第五单元",
+          "prompt": "对一对，连一连。",
+          "left": [
+            "圆",
+            "晨",
+            "雪",
+            "柳",
+            "严寒",
+            "春暖",
+            "朝霞",
+            "莺歌"
+          ],
+          "right": [
+            "方",
+            "暮",
+            "霜",
+            "杨",
+            "酷暑",
+            "秋凉",
+            "夕阳",
+            "燕舞"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q020",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "同学们/r，在/r锻炼身体。\n①上课时 ②下课后 ③操场上 ④教室里",
+          "answers": [
+            "②",
+            "③"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q021",
+          "type": "chinese",
+          "sectionTitle": "第五单元",
+          "prompt": "根据意思选择句子。\n①幼不学，老何为？ ②人不学，不知义。\n人若不学习，就不懂得礼仪，不能成材。/r\n小时候不好好学习，到老的时候，什么都没有学到，能有什么用呢？/r",
+          "answers": [
+            "②",
+            "①"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q022",
+          "type": "match",
+          "sectionTitle": "第六单元",
+          "prompt": "根据对《池上》《小池》的学习，连一连。",
+          "left": [
+            "《池上》",
+            "《小池》"
+          ],
+          "right": [
+            "唐代 白居易",
+            "宋代 杨万里"
+          ],
+          "answers": [
+            "0",
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q023",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "这两首诗描写的都是/r季的景色，这两首诗都描写的景物有/r。",
+          "answers": [
+            "夏",
+            "荷花"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q024",
+          "type": "match",
+          "sectionTitle": "第六单元",
+          "prompt": "连一连，读一读，再填空。",
+          "left": [
+            "小蜻蜓的",
+            "小水珠的",
+            "小青蛙的",
+            "小鱼儿的"
+          ],
+          "right": [
+            "停机坪",
+            "摇篮",
+            "歌台",
+            "凉伞"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q025",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "荷叶是小朋友们的/r。",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q026",
+          "type": "match",
+          "sectionTitle": "第六单元",
+          "prompt": "要下雨了，小动物们在忙着干什么呢？连一连。",
+          "left": [
+            "燕子",
+            "小鱼",
+            "蚂蚁"
+          ],
+          "right": [
+            "低飞",
+            "透气",
+            "搬家"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q027",
+          "type": "chinese",
+          "sectionTitle": "第六单元",
+          "prompt": "你还知道动物的哪些行为说明要下雨了？\n/r",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q028",
+          "type": "choice",
+          "sectionTitle": "第七单元",
+          "prompt": "哪些事物应该放在文具盒里？",
+          "options": [
+            "橡皮",
+            "铅笔",
+            "面包",
+            "作业本",
+            "尺子",
+            "玩具",
+            "笔袋",
+            "转笔刀"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "4",
+            "7"
+          ],
+          "multiSelect": true,
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q029",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "元元多睡了/r分钟，结果迟到了/r分钟。",
+          "answers": [
+            "一",
+            "二十"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q030",
+          "type": "chinese",
+          "sectionTitle": "第七单元",
+          "prompt": "我想对元元说：“元元，/r。”",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q031",
+          "type": "choice",
+          "sectionTitle": "第七单元",
+          "prompt": "小猴子为什么最后空着手回家了？",
+          "options": [
+            "因为东西太多了，拿不了。",
+            "因为小猴子见什么喜欢什么，做事不专一。"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q032",
+          "type": "choice",
+          "sectionTitle": "第七单元",
+          "prompt": "学了《动物王国开大会》，我们知道了什么？",
+          "options": [
+            "要多说几遍会议内容。",
+            "通知的时候声音要大一点。",
+            "通知的时候要说清楚时间和地点。"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q033",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "回忆《棉花姑娘》，选一选。\n①燕子 ②七星瓢虫 ③青蛙 ④啄木鸟\n/r捉田里的害虫。/r捉空中的害虫。/r捉树干里的害虫。/r捉棉花叶子上的害虫。",
+          "answers": [
+            "③",
+            "①",
+            "④",
+            "②"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q034",
+          "type": "chinese",
+          "sectionTitle": "第八单元",
+          "prompt": "回顾《咕咚》，完成填空。《咕咚》是一篇有趣的/r故事，告诉我们：听到或遇到任何事情，一定要动脑想想或去实地看看，不要盲目地跟随/r。",
+          "answers": [
+            "童话",
+            "别人"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d02_q035",
+          "type": "match",
+          "sectionTitle": "第八单元",
+          "prompt": "回忆《小壁虎借尾巴》，想想这些动物尾巴的作用，再连一连。",
+          "left": [
+            "挣断尾巴",
+            "摆着尾巴",
+            "摇着尾巴",
+            "甩着尾巴"
+          ],
+          "right": [
+            "赶蝇子",
+            "拨水",
+            "掌握方向",
+            "逃生"
+          ],
+          "answers": [
+            "3",
+            "2",
+            "1",
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        }
+      ]
+    },
+    {
+      "day": 1,
+      "title": "考前第01天",
+      "questions": [
+        {
+          "id": "chinese_7day_d01_q001",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "先将大小写字母连线，再把小写字母按字母表顺序排列。\n大写：H Z V M A G\n小写：z v a g q h m\n排序：/r",
+          "answers": [
+            "a g h m q v z"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q002",
+          "type": "choice",
+          "sectionTitle": "一、生字练习",
+          "prompt": "“姓氏”的正确读音是哪一项？",
+          "options": [
+            "xìng shì",
+            "xìng sì"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q003",
+          "type": "choice",
+          "sectionTitle": "一、生字练习",
+          "prompt": "“翅膀”的正确读音是哪一项？",
+          "options": [
+            "chì bǎn",
+            "chì bǎng"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q004",
+          "type": "choice",
+          "sectionTitle": "一、生字练习",
+          "prompt": "“柳树”的正确读音是哪一项？",
+          "options": [
+            "liǔ shù",
+            "líu shù"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q005",
+          "type": "choice",
+          "sectionTitle": "一、生字练习",
+          "prompt": "“决定”的正确读音是哪一项？",
+          "options": [
+            "jué dìng",
+            "jüé dìng"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q006",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "给句子中加点的字注音：星期天，空/r气清新，妈妈有空/r带我去爬山。",
+          "answers": [
+            "kōng",
+            "kòng"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q007",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "给句子中加点的字注音：公园里，人们随着优美的乐/r曲翩翩起舞，快乐/r极了。",
+          "answers": [
+            "yuè",
+            "lè"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q008",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "给句子中加点的字注音：爷爷睡醒一觉/r，觉/r得舒服多了。",
+          "answers": [
+            "jiào",
+            "jué"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q009",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "选字填空：我经常/r大院里和小朋友们玩耍。",
+          "answers": [
+            "在"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q010",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "选字填空：当我/r一次回到家乡，我发现家乡更美了。",
+          "answers": [
+            "再"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q011",
+          "type": "chinese",
+          "sectionTitle": "一、生字练习",
+          "prompt": "选字填空：今天，天气/r，池水/r，心/r好，小草/r，/r你来。",
+          "answers": [
+            "晴",
+            "清",
+            "情",
+            "青",
+            "请"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q012",
+          "type": "chinese",
+          "sectionTitle": "二、词语闯关",
+          "prompt": "看拼音写词语：duǒ měi huā\n小鱼儿游来游去，捧起一/r/r的水/r。",
+          "answers": [
+            "朵",
+            "美丽",
+            "花"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q013",
+          "type": "chinese",
+          "sectionTitle": "二、词语闯关",
+          "prompt": "看拼音写词语：tài yáng、fāng、huǒ bàn、xué xiào、pǎo bù\n早晨，/r从东/r升起，小/r们来到/r操场上，一起/r。",
+          "answers": [
+            "太阳",
+            "方",
+            "伙伴",
+            "学校",
+            "跑步"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q014",
+          "type": "chinese",
+          "sectionTitle": "二、词语闯关",
+          "prompt": "看拼音写词语：fēi cháng、zhōng、jiě jie\n我/r喜欢这个闹/r，这是/r送我的。",
+          "answers": [
+            "非常",
+            "钟",
+            "姐姐"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q014_word_group",
+          "type": "chinese",
+          "sectionTitle": "二、词语闯关",
+          "prompt": "照样子，一字组多词。例：新——新书。\n请给“微”组两个词：/r、/r。\n请给“做”组两个词：/r、/r。",
+          "answers": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q015",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "照样子写句子：燕子阿姨，您把尾巴借给我行吗？\n/r行吗？",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q016",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "照样子写句子：小狗在草丛里一边跑，一边叫。\n/r一边/r，一边/r。",
+          "answers": [
+            "",
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q017",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "连词成句，并加上标点符号：飞过了  蜻蜓  草坪  青青的\n/r",
+          "answers": [
+            "蜻蜓飞过了青青的草坪。"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q018",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "给句子加标点：今天/r我和小伙伴们一起去荡秋千/r",
+          "answers": [
+            "，",
+            "。"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q019",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "给句子加标点：这里的风景真美啊/r 你怎么哭了呢/r",
+          "answers": [
+            "！",
+            "？"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q020",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "大胆想象，照样子写句子：爸爸说：“大海是鱼儿的家。”\n我说：“/r是小鸟的家。”",
+          "answers": [
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q021",
+          "type": "chinese",
+          "sectionTitle": "三、按要求完成句子练习",
+          "prompt": "大胆想象，照样子写句子：我还会说：“/r是/r的家。”",
+          "answers": [
+            "",
+            ""
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q022",
+          "type": "choice",
+          "sectionTitle": "四、日积月累",
+          "prompt": "傍晚，彩霞满天，我想明天一定是晴天。因为“（ ）”。",
+          "options": [
+            "有雨山戴帽，无雨半山腰",
+            "朝霞不出门，晚霞行千里",
+            "早晨下雨当日晴，晚上下雨到天明",
+            "蚂蚁搬家蛇过道，大雨不久要来到"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q023",
+          "type": "match",
+          "sectionTitle": "四、日积月累",
+          "prompt": "读一读，连一连。",
+          "left": [
+            "不知则问",
+            "读书百遍",
+            "读万卷书"
+          ],
+          "right": [
+            "不能则学",
+            "而义自见",
+            "行万里路",
+            "董其昌",
+            "《荀子》",
+            "董遇"
+          ],
+          "answers": [
+            "0",
+            "1",
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q024",
+          "type": "choice",
+          "sectionTitle": "四、日积月累",
+          "prompt": "把歇后语补充完整：小葱拌豆腐——（ ）",
+          "options": [
+            "七上八下",
+            "一场空",
+            "一清（青）二白",
+            "节节高"
+          ],
+          "answers": [
+            "2"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q025",
+          "type": "choice",
+          "sectionTitle": "四、日积月累",
+          "prompt": "把歇后语补充完整：竹篮子打水——（ ）",
+          "options": [
+            "七上八下",
+            "一场空",
+            "一清（青）二白",
+            "节节高"
+          ],
+          "answers": [
+            "1"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q026",
+          "type": "choice",
+          "sectionTitle": "四、日积月累",
+          "prompt": "把歇后语补充完整：芝麻开花——（ ）",
+          "options": [
+            "七上八下",
+            "一场空",
+            "一清（青）二白",
+            "节节高"
+          ],
+          "answers": [
+            "3"
+          ],
+          "answerSource": "auto",
+          "images": []
+        },
+        {
+          "id": "chinese_7day_d01_q027",
+          "type": "choice",
+          "sectionTitle": "四、日积月累",
+          "prompt": "把歇后语补充完整：十五个吊桶打水——（ ）",
+          "options": [
+            "七上八下",
+            "一场空",
+            "一清（青）二白",
+            "节节高"
+          ],
+          "answers": [
+            "0"
+          ],
+          "answerSource": "auto",
+          "images": []
+        }
+      ]
+    }
+  ]
+}

@@ -25,6 +25,14 @@
       "asset": "assets/worksheets/generated/chinese_review_21.json"
     },
     {
+      "id": "chinese_final_7day_comeback",
+      "title": "语文期末七天逆袭小卷",
+      "subject": "语文",
+      "grade": "一年级下册",
+      "description": "考前7天 · 208道练习 · 课文内容与基础专项",
+      "asset": "assets/worksheets/generated/chinese_final_7day_comeback.json"
+    },
+    {
       "id": "chinese_pinyin_spelling_8_units",
       "title": "注音拼写",
       "subject": "语文",
