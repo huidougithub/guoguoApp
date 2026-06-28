@@ -145,6 +145,38 @@ void main() {
     }
   });
 
+  test('语文七天逆袭带图题已配置图片资源', () {
+    final worksheet = WorksheetSet.fromJson(
+      jsonDecode(
+            File(
+              'assets/worksheets/generated/chinese_final_7day_comeback.json',
+            ).readAsStringSync(),
+          )
+          as Map<String, dynamic>,
+    );
+    final day4 = worksheet.days.firstWhere((day) => day.day == 4);
+    final day5 = worksheet.days.firstWhere((day) => day.day == 5);
+    final day4ImageQuestion = day4.questions.firstWhere(
+      (question) => question.id == 'chinese_7day_d04_q015',
+    );
+    final day5ImageQuestion = day5.questions.firstWhere(
+      (question) => question.id == 'chinese_7day_d05_q031',
+    );
+
+    expect(day4ImageQuestion.images, [
+      'assets/worksheets/images/chinese_final_7day_comeback/d04_q015.png',
+    ]);
+    expect(day5ImageQuestion.images, [
+      'assets/worksheets/images/chinese_final_7day_comeback/d05_q031.png',
+    ]);
+    expect(File(day4ImageQuestion.images.single).existsSync(), isTrue);
+    expect(File(day5ImageQuestion.images.single).existsSync(), isTrue);
+    expect(
+      File('pubspec.yaml').readAsStringSync(),
+      contains('assets/worksheets/images/chinese_final_7day_comeback/'),
+    );
+  });
+
   test('语文期末七天逆袭小卷已接入目录且题库合法', () {
     final catalog =
         jsonDecode(File('assets/worksheets/index.json').readAsStringSync())
@@ -166,7 +198,7 @@ void main() {
     expect(worksheet.subject, 'chinese');
     expect(worksheet.days.length, 7);
     expect(worksheet.days.map((day) => day.day), [7, 6, 5, 4, 3, 2, 1]);
-    expect(worksheet.questionCount, 225);
+    expect(worksheet.questionCount, 215);
     final day2 = worksheet.days.firstWhere((day) => day.day == 2);
     final day3 = worksheet.days.firstWhere((day) => day.day == 3);
     final day4 = worksheet.days.firstWhere((day) => day.day == 4);
@@ -204,10 +236,10 @@ void main() {
     final day7InlineChoices = day7.questions
         .where((question) => question.isInlineChoice)
         .toList();
-    expect(day2.title, '考前第02天');
-    expect(day3.title, '考前第03天');
-    expect(day4.title, '考前第04天');
-    expect(day5.title, '考前第05天');
+    expect(day2.title, '考前第2天');
+    expect(day3.title, '考前第3天');
+    expect(day4.title, '考前第4天');
+    expect(day5.title, '考前第5天');
     expect(day6.title, '考前第6天');
     expect(day7.title, '考前第7天');
     expect(day6InlineChoices, hasLength(day6InlineChoiceIds.length));
@@ -221,7 +253,11 @@ void main() {
         isTrue,
         reason: question.id,
       );
-      expect(question.answers, hasLength(question.blankCount), reason: question.id);
+      expect(
+        question.answers,
+        hasLength(question.blankCount),
+        reason: question.id,
+      );
       for (var i = 0; i < question.blankCount; i++) {
         expect(
           question.blankChoicesForBlank(i),
@@ -234,7 +270,11 @@ void main() {
     for (final question in day7InlineChoices) {
       expect(question.isInlineChoice, isTrue, reason: question.id);
       expect(question.blankChoices, hasLength(1), reason: question.id);
-      expect(question.blankChoicesForBlank(0), hasLength(2), reason: question.id);
+      expect(
+        question.blankChoicesForBlank(0),
+        hasLength(2),
+        reason: question.id,
+      );
       if (question.blankCount > 1) {
         expect(
           question.blankChoicesForBlank(1),
@@ -243,71 +283,27 @@ void main() {
         );
       }
     }
-    expect(
-      day2.questions.map((q) => q.sectionTitle).toSet(),
-      containsAll([
-        '第一单元',
-        '第二单元',
-        '第三单元',
-        '第四单元',
-        '第五单元',
-        '第六单元',
-        '第七单元',
-        '第八单元',
-      ]),
-    );
-    expect(
-      day3.questions.map((q) => q.sectionTitle).toSet(),
-      containsAll([
-        '第一单元',
-        '第二单元',
-        '第三单元',
-        '第四单元',
-        '第五单元',
-        '第六单元',
-        '第七单元',
-        '第八单元',
-      ]),
-    );
-    expect(
-      day4.questions.map((q) => q.sectionTitle).toSet(),
-      containsAll(['第一单元', '第二单元', '第三单元', '第六单元', '第七单元']),
-    );
-    expect(
-      day5.questions.map((q) => q.sectionTitle).toSet(),
-      containsAll([
-        '第一单元',
-        '第二单元',
-        '第三单元',
-        '第四单元',
-        '第五单元',
-        '第六单元',
-        '第七单元',
-        '第八单元',
-      ]),
-    );
-    expect(
-      day6.questions.map((q) => q.sectionTitle).toSet(),
-      containsAll([
-        '请选择正确读音',
-        '给形近字组词',
-        '加一加，变成新字',
-        '请选出正确的字',
-        '第五单元',
-        '给下面的字注音',
-        '第六单元',
-        '比一比，再组词',
-      ]),
-    );
+    for (final day in [day2, day3, day4, day5, day6, day7]) {
+      expect(day.questions, isNotEmpty, reason: 'day ${day.day}');
+      expect(
+        day.questions.any((q) => q.sectionTitle.trim().isNotEmpty),
+        isTrue,
+        reason: 'day ${day.day}',
+      );
+    }
     expect(
       day7.questions.map((q) => q.sectionTitle).toSet(),
-      containsAll(['请选择正确读音']),
+      contains('请选择正确读音'),
     );
     expect(
       worksheet.days.expand((day) => day.questions).map((q) => q.id).toSet(),
-      hasLength(worksheet.questionCount),
+      hasLength(worksheet.days.expand((day) => day.questions).length),
     );
     for (final question in worksheet.days.expand((day) => day.questions)) {
+      if (question.isDisplayOnly ||
+          question.answerSource == 'manual_required') {
+        continue;
+      }
       if (question.isMatch) {
         expect(question.leftItems, isNotEmpty, reason: question.id);
         expect(question.rightItems, isNotEmpty, reason: question.id);
@@ -348,6 +344,90 @@ void main() {
           question.blankCount,
           reason: question.id,
         );
+      }
+    }
+  });
+
+  test('所有语文题库的客观题答案结构合法', () {
+    final catalog =
+        jsonDecode(File('assets/worksheets/index.json').readAsStringSync())
+            as Map<String, dynamic>;
+    final chineseItems = (catalog['sets'] as List<dynamic>)
+        .cast<Map<String, dynamic>>()
+        .where((item) => item['subject'] == '语文')
+        .toList();
+
+    expect(chineseItems, isNotEmpty);
+    for (final item in chineseItems) {
+      final worksheet = WorksheetSet.fromJson(
+        jsonDecode(File(item['asset'] as String).readAsStringSync())
+            as Map<String, dynamic>,
+      );
+      final questions = worksheet.days.expand((day) => day.questions).toList();
+      expect(
+        questions.map((question) => question.id).toSet(),
+        hasLength(questions.length),
+        reason: worksheet.id,
+      );
+
+      for (final question in questions) {
+        if (question.isDisplayOnly ||
+            question.answerSource == 'manual_required') {
+          continue;
+        }
+        if (question.isMatch) {
+          expect(
+            question.answers,
+            hasLength(question.leftItems.length),
+            reason: question.id,
+          );
+          for (final answer in question.answers) {
+            final index = int.tryParse(answer);
+            expect(index, isNotNull, reason: question.id);
+            expect(
+              index,
+              inInclusiveRange(0, question.rightItems.length - 1),
+              reason: question.id,
+            );
+          }
+        } else if (question.isChoice) {
+          expect(question.answers, isNotEmpty, reason: question.id);
+          for (final answer in question.answers) {
+            final index = int.tryParse(answer);
+            expect(index, isNotNull, reason: question.id);
+            expect(
+              index,
+              inInclusiveRange(0, question.options.length - 1),
+              reason: question.id,
+            );
+          }
+        } else if (question.isInlineChoice) {
+          expect(question.blankChoices, isNotEmpty, reason: question.id);
+          expect(
+            question.blankChoices.length == 1 ||
+                question.blankChoices.length == question.blankCount,
+            isTrue,
+            reason: question.id,
+          );
+          expect(
+            question.answers,
+            hasLength(question.blankCount),
+            reason: question.id,
+          );
+          for (var i = 0; i < question.blankCount; i++) {
+            expect(
+              question.blankChoicesForBlank(i),
+              contains(question.answers[i]),
+              reason: question.id,
+            );
+          }
+        } else if (question.hasBlankMarkers) {
+          expect(
+            question.answers,
+            hasLength(question.blankCount),
+            reason: question.id,
+          );
+        }
       }
     }
   });

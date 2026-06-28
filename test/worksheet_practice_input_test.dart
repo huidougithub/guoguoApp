@@ -6,11 +6,20 @@ void main() {
   final practiceScreen = File('lib/screens/worksheet_practice_screen.dart');
   final morningCalc = File('assets/worksheets/generated/morning_calc_7.json');
 
-  test('compact compare answers use the parent save callback', () {
+  test('compact compare answers use the blank answer key for checking', () {
     final source = practiceScreen.readAsStringSync();
 
     expect(source, isNot(contains('progress.answers[questionId] = value;')));
-    expect(source, contains('await onSetAnswer(question.id, result);'));
+    expect(
+      source,
+      contains('final answerKey = question.blankAnswerKey(currentBlank);'),
+    );
+    expect(
+      source,
+      contains("final ink = answers[answerKey] ?? answers[question.id] ?? '';"),
+    );
+    expect(source, contains("_progress.answers[question.id] ?? '';"));
+    expect(source, contains('await onSetAnswer(answerKey, result);'));
   });
 
   test('vertical calculation digit slots preserve leading empty places', () {
@@ -82,6 +91,47 @@ void main() {
     expect(screenSource, contains('class _InlineChoiceBox'));
     expect(screenSource, isNot(contains("hasValue ? value : '选择'")));
     expect(screenSource, contains('minWidth: 70'));
+  });
+
+  test('right handwriting slot is not added for multi blank prompts', () {
+    final screenSource = practiceScreen.readAsStringSync();
+
+    expect(screenSource, contains('!question.hasBlankMarkers'));
+    expect(
+      screenSource,
+      contains('(question.blankCount == 1 && question.isBlankAtEnd)'),
+    );
+    expect(
+      screenSource,
+      isNot(contains('!question.hasBlankMarkers || question.isBlankAtEnd')),
+    );
+  });
+
+  test('match question lines are painted across the full row', () {
+    final screenSource = practiceScreen.readAsStringSync();
+
+    expect(screenSource, contains('static const double _matchSideInset'));
+    expect(screenSource, contains('static const double _matchRowHeight'));
+    expect(screenSource, contains('_matchSideInset'));
+    expect(screenSource, contains('itemCount * rowHeight + 32'));
+    expect(screenSource, contains('leftColumnWidth: leftColumnWidth'));
+    expect(screenSource, contains('rightColumnWidth: rightColumnWidth'));
+    expect(screenSource, contains('Stack('));
+    expect(screenSource, isNot(contains('// 中间连线区域')));
+    expect(screenSource, isNot(contains('size.width - 8')));
+    expect(screenSource, isNot(contains('* 56.0 + 40')));
+  });
+
+  test('match question keeps labels on one line with adaptive columns', () {
+    final screenSource = practiceScreen.readAsStringSync();
+
+    expect(screenSource, contains('_effectiveMatchColumnWidth'));
+    expect(screenSource, contains('_estimatedMatchLabelWidth'));
+    expect(screenSource, contains('leftColumnWidth: leftColumnWidth'));
+    expect(screenSource, contains('rightColumnWidth: rightColumnWidth'));
+    expect(screenSource, contains('maxLines: 1'));
+    expect(screenSource, contains('softWrap: false'));
+    expect(screenSource, isNot(contains('_matchTallRowHeight')));
   });
 
   test('worksheet images keep full width with reduced height', () {
@@ -162,6 +212,18 @@ void main() {
     expect(
       screenSource,
       contains('_selectedBlankIndex = _defaultBlankIndexForQuestion'),
+    );
+  });
+
+  test('worksheet top page actions require parent review mode', () {
+    final screenSource = practiceScreen.readAsStringSync();
+
+    expect(screenSource, contains('parentReviewMode: parentReviewMode'));
+    expect(screenSource, contains('final bool parentReviewMode;'));
+    expect(screenSource, contains('if (parentReviewMode) ...['));
+    expect(
+      screenSource.indexOf('if (parentReviewMode) ...['),
+      lessThan(screenSource.indexOf('_TopActionButton(')),
     );
   });
 }

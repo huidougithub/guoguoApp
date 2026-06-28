@@ -700,8 +700,14 @@ class _WorksheetPracticeScreenState extends State<WorksheetPracticeScreen> {
         // 多 blank 题目：逐个比对
         var allCorrect = true;
         for (var i = 0; i < question.blankCount; i++) {
-          final input = (_progress.answers[question.blankAnswerKey(i)] ?? '')
-              .trim();
+          final answerKey = question.blankAnswerKey(i);
+          var input = (_progress.answers[answerKey] ?? '').trim();
+          if (input.isEmpty && question.isCompare && question.blankCount == 1) {
+            input = (_progress.answers[question.id] ?? '').trim();
+            if (input.isNotEmpty) {
+              _progress.answers[answerKey] = input;
+            }
+          }
           final expected = question.correctAnswerForBlank(i);
           if (expected == null ||
               _normalizeAnswer(input) != _normalizeAnswer(expected)) {
@@ -1036,6 +1042,7 @@ class _WorksheetWorkArea extends StatelessWidget {
             selectedQuestionId: selectedQuestionId,
             selectedBlankIndex: selectedBlankIndex,
             isMathWorksheet: isMathWorksheet,
+            parentReviewMode: parentReviewMode,
             questionKeyFor: questionKeyFor,
             onSelectQuestion: onSelectQuestion,
             onSelectBlank: onSelectBlank,
@@ -1074,6 +1081,7 @@ class _QuestionPaper extends StatelessWidget {
     required this.selectedQuestionId,
     required this.selectedBlankIndex,
     required this.isMathWorksheet,
+    required this.parentReviewMode,
     required this.questionKeyFor,
     required this.onSelectQuestion,
     required this.onSelectBlank,
@@ -1088,6 +1096,7 @@ class _QuestionPaper extends StatelessWidget {
   final String? selectedQuestionId;
   final int? selectedBlankIndex;
   final bool isMathWorksheet;
+  final bool parentReviewMode;
   final GlobalKey Function(String questionId) questionKeyFor;
   final ValueChanged<String> onSelectQuestion;
   final void Function(String, int) onSelectBlank;
@@ -1148,20 +1157,22 @@ class _QuestionPaper extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              _TopActionButton(
-                label: '清空答题',
-                icon: Icons.cleaning_services,
-                onTap: onClearDay,
-              ),
-              const SizedBox(width: 12),
-              _TopActionButton(
-                label: isMathWorksheet ? '检查' : '完成本页',
-                icon: isMathWorksheet
-                    ? Icons.check_rounded
-                    : Icons.task_alt_rounded,
-                onTap: onCheck,
-                filled: true,
-              ),
+              if (parentReviewMode) ...[
+                _TopActionButton(
+                  label: '清空答题',
+                  icon: Icons.cleaning_services,
+                  onTap: onClearDay,
+                ),
+                const SizedBox(width: 12),
+                _TopActionButton(
+                  label: isMathWorksheet ? '检查' : '完成本页',
+                  icon: isMathWorksheet
+                      ? Icons.check_rounded
+                      : Icons.task_alt_rounded,
+                  onTap: onCheck,
+                  filled: true,
+                ),
+              ],
             ],
           ),
           const SizedBox(height: 16),
@@ -1458,12 +1469,13 @@ class _QuestionRow extends StatelessWidget {
       null when selected => const Color(0xFFFFF4CA),
       _ => const Color(0xFFF8EEDB),
     };
-    // 判断是否需要右侧大框：非match、非choice，且单blank在末尾，且非竖式题
+    // 判断是否需要右侧大框：无 /r 的普通题，或只有 1 个 /r 且在末尾的题。
     final needsRightSlot =
         !question.isMatch &&
         !question.isChoice &&
         question.visual == null &&
-        (!question.hasBlankMarkers || question.isBlankAtEnd);
+        (!question.hasBlankMarkers ||
+            (question.blankCount == 1 && question.isBlankAtEnd));
 
     return Material(
       color: Colors.transparent,
@@ -1710,6 +1722,13 @@ class _MatchQuestionWidget extends StatefulWidget {
 }
 
 class _MatchQuestionWidgetState extends State<_MatchQuestionWidget> {
+  static const double _matchColumnWidth = 92;
+  static const double _matchColumnGap = 16;
+  static const double _matchSideInset = 52;
+  static const double _matchRowHeight = 62;
+  static const double _matchVerticalPadding = 16;
+  static const double _matchColumnMaxWidth = 168;
+
   int? _selectedLeft;
 
   Map<int, int> get _userPairs {
@@ -1753,11 +1772,28 @@ class _MatchQuestionWidgetState extends State<_MatchQuestionWidget> {
     widget.onChanged(jsonEncode(json));
   }
 
+  double _effectiveMatchColumnWidth(List<String> items) {
+    final desiredWidth = items.fold<double>(
+      _matchColumnWidth,
+      (width, text) => math.max(width, _estimatedMatchLabelWidth(text)),
+    );
+    return desiredWidth.clamp(_matchColumnWidth, _matchColumnMaxWidth);
+  }
+
+  double _estimatedMatchLabelWidth(String text) {
+    final labelLength = text.trim().replaceAll('\n', '').runes.length;
+    return labelLength * 19.0 + 30;
+  }
+
   @override
   Widget build(BuildContext context) {
     final leftItems = widget.question.leftItems;
     final rightItems = widget.question.rightItems;
     final pairs = _userPairs;
+    final itemCount = math.max(leftItems.length, rightItems.length);
+    const rowHeight = _matchRowHeight;
+    final leftColumnWidth = _effectiveMatchColumnWidth(leftItems);
+    final rightColumnWidth = _effectiveMatchColumnWidth(rightItems);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1775,54 +1811,77 @@ class _MatchQuestionWidgetState extends State<_MatchQuestionWidget> {
             ),
           ),
         SizedBox(
-          height: math.max(leftItems.length, rightItems.length) * 56.0 + 40,
-          child: Row(
+          height: itemCount * rowHeight + 32,
+          child: Stack(
             children: [
-              // 左列
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    for (var i = 0; i < leftItems.length; i++)
-                      _MatchItemCard(
-                        text: leftItems[i],
-                        index: i,
-                        isSelected: _selectedLeft == i,
-                        isPaired: pairs.containsKey(i),
-                        onTap: () => _onLeftTap(i),
-                      ),
-                  ],
-                ),
-              ),
-              // 中间连线区域
-              SizedBox(
-                width: 120,
+              Positioned.fill(
                 child: CustomPaint(
-                  size: Size(
-                    120,
-                    math.max(leftItems.length, rightItems.length) * 56.0 + 40,
-                  ),
                   painter: _MatchLinePainter(
                     leftCount: leftItems.length,
                     rightCount: rightItems.length,
+                    leftColumnWidth: leftColumnWidth,
+                    rightColumnWidth: rightColumnWidth,
+                    columnGap: _matchColumnGap,
+                    sideInset: _matchSideInset,
+                    rowHeight: rowHeight,
+                    verticalPadding: _matchVerticalPadding,
                     pairs: pairs,
                     selectedLeft: _selectedLeft,
                   ),
                 ),
               ),
-              // 右列
-              Expanded(
-                child: Column(
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: _matchSideInset,
+                ),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    for (var i = 0; i < rightItems.length; i++)
-                      _MatchItemCard(
-                        text: rightItems[i],
-                        index: i,
-                        isSelected: false,
-                        isPaired: pairs.values.contains(i),
-                        onTap: () => _onRightTap(i),
+                    SizedBox(
+                      width: leftColumnWidth,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          for (var i = 0; i < leftItems.length; i++)
+                            SizedBox(
+                              height: rowHeight,
+                              child: Center(
+                                child: _MatchItemCard(
+                                  text: leftItems[i],
+                                  index: i,
+                                  isSelected: _selectedLeft == i,
+                                  isPaired: pairs.containsKey(i),
+                                  onTap: () => _onLeftTap(i),
+                                ),
+                              ),
+                            ),
+                        ],
                       ),
+                    ),
+                    const SizedBox(width: _matchColumnGap),
+                    const Expanded(child: SizedBox.shrink()),
+                    const SizedBox(width: _matchColumnGap),
+                    SizedBox(
+                      width: rightColumnWidth,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          for (var i = 0; i < rightItems.length; i++)
+                            SizedBox(
+                              height: rowHeight,
+                              child: Center(
+                                child: _MatchItemCard(
+                                  text: rightItems[i],
+                                  index: i,
+                                  isSelected: false,
+                                  isPaired: pairs.values.contains(i),
+                                  onTap: () => _onRightTap(i),
+                                ),
+                              ),
+                            ),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -1860,7 +1919,8 @@ class _MatchItemCard extends StatelessWidget {
           onTap: onTap,
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 150),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             decoration: BoxDecoration(
               color: isSelected
                   ? const Color(0xFFFFF4CA)
@@ -1880,6 +1940,9 @@ class _MatchItemCard extends StatelessWidget {
             child: Text(
               text,
               textAlign: TextAlign.center,
+              maxLines: 1,
+              softWrap: false,
+              overflow: TextOverflow.ellipsis,
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                 fontSize: 18,
                 fontWeight: FontWeight.w800,
@@ -1897,12 +1960,24 @@ class _MatchLinePainter extends CustomPainter {
   const _MatchLinePainter({
     required this.leftCount,
     required this.rightCount,
+    required this.leftColumnWidth,
+    required this.rightColumnWidth,
+    required this.columnGap,
+    required this.sideInset,
+    required this.rowHeight,
+    required this.verticalPadding,
     required this.pairs,
     required this.selectedLeft,
   });
 
   final int leftCount;
   final int rightCount;
+  final double leftColumnWidth;
+  final double rightColumnWidth;
+  final double columnGap;
+  final double sideInset;
+  final double rowHeight;
+  final double verticalPadding;
   final Map<int, int> pairs;
   final int? selectedLeft;
 
@@ -1918,16 +1993,18 @@ class _MatchLinePainter extends CustomPainter {
       ..color = const Color(0xFF4CAF50)
       ..style = PaintingStyle.fill;
 
-    final leftStep = size.height / (leftCount + 1);
-    final rightStep = size.height / (rightCount + 1);
+    final startX = sideInset + leftColumnWidth + columnGap * .35;
+    final endX = size.width - sideInset - rightColumnWidth - columnGap * .35;
+    final controlLeftX = startX + (endX - startX) * .35;
+    final controlRightX = startX + (endX - startX) * .65;
 
     for (final entry in pairs.entries) {
-      final leftY = leftStep * (entry.key + 1);
-      final rightY = rightStep * (entry.value + 1);
-      final start = Offset(8, leftY);
-      final end = Offset(size.width - 8, rightY);
-      final control1 = Offset(size.width * 0.35, leftY);
-      final control2 = Offset(size.width * 0.65, rightY);
+      final leftY = _rowCenterY(entry.key);
+      final rightY = _rowCenterY(entry.value);
+      final start = Offset(startX, leftY);
+      final end = Offset(endX, rightY);
+      final control1 = Offset(controlLeftX, leftY);
+      final control2 = Offset(controlRightX, rightY);
 
       final path = Path()
         ..moveTo(start.dx, start.dy)
@@ -1948,17 +2025,17 @@ class _MatchLinePainter extends CustomPainter {
 
     // 选中左项的虚线提示
     if (selectedLeft != null) {
-      final leftY = leftStep * (selectedLeft! + 1);
+      final leftY = _rowCenterY(selectedLeft!);
       final dashPaint = Paint()
         ..color = const Color(0xFF2E91FF).withValues(alpha: .4)
         ..strokeWidth = 2
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round;
 
-      final start = Offset(8, leftY);
-      final end = Offset(size.width - 8, size.height / 2);
-      final control1 = Offset(size.width * 0.35, leftY);
-      final control2 = Offset(size.width * 0.65, size.height / 2);
+      final start = Offset(startX, leftY);
+      final end = Offset(endX, size.height / 2);
+      final control1 = Offset(controlLeftX, leftY);
+      final control2 = Offset(controlRightX, size.height / 2);
 
       final path = Path()
         ..moveTo(start.dx, start.dy)
@@ -1999,9 +2076,19 @@ class _MatchLinePainter extends CustomPainter {
     return dest;
   }
 
+  double _rowCenterY(int index) => verticalPadding + rowHeight * (index + .5);
+
   @override
   bool shouldRepaint(covariant _MatchLinePainter oldDelegate) {
     return oldDelegate.pairs != pairs ||
+        oldDelegate.leftCount != leftCount ||
+        oldDelegate.rightCount != rightCount ||
+        oldDelegate.leftColumnWidth != leftColumnWidth ||
+        oldDelegate.rightColumnWidth != rightColumnWidth ||
+        oldDelegate.columnGap != columnGap ||
+        oldDelegate.sideInset != sideInset ||
+        oldDelegate.rowHeight != rowHeight ||
+        oldDelegate.verticalPadding != verticalPadding ||
         oldDelegate.selectedLeft != selectedLeft;
   }
 }
@@ -2266,10 +2353,7 @@ class _InlineChoiceBox extends StatelessWidget {
         ],
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 150),
-          constraints: BoxConstraints(
-            minWidth: 70,
-            minHeight: 40,
-          ),
+          constraints: BoxConstraints(minWidth: 70, minHeight: 40),
           margin: const EdgeInsets.symmetric(horizontal: 3),
           padding: EdgeInsets.symmetric(
             horizontal: hasValue ? 12 : 8,
@@ -4500,13 +4584,16 @@ class _CompactQuestionItem extends StatelessWidget {
       );
     }
 
-    // 多 blank 或 单 blank 在中间 → 内联框
-    if (question.hasBlankMarkers && !question.isBlankAtEnd) {
+    // 多 blank 或单 blank 在中间 → 内联框
+    if (question.hasBlankMarkers &&
+        (question.blankCount > 1 || !question.isBlankAtEnd)) {
       return _buildCompactBlankMarkersInline(context, selected);
     }
 
     // 单 blank 在末尾 → 文本 + 右侧小框
-    if (question.hasBlankMarkers && question.isBlankAtEnd) {
+    if (question.hasBlankMarkers &&
+        question.blankCount == 1 &&
+        question.isBlankAtEnd) {
       final textWidget = Text(
         question.prompt.replaceAll('/r', ''),
         style: TextStyle(
@@ -4577,10 +4664,11 @@ class _CompactQuestionItem extends StatelessWidget {
       }
       if (i < parts.length - 1) {
         final currentBlank = i;
+        final answerKey = question.blankAnswerKey(currentBlank);
         final blankSelected = selected && selectedBlankIndex == currentBlank;
 
         if (question.isCompare) {
-          final ink = answers[question.id] ?? '';
+          final ink = answers[answerKey] ?? answers[question.id] ?? '';
           spans.add(
             WidgetSpan(
               alignment: PlaceholderAlignment.middle,
@@ -4588,20 +4676,19 @@ class _CompactQuestionItem extends StatelessWidget {
                 value: ink,
                 selected: blankSelected,
                 onTap: () async {
-                  onSelectQuestion(question.id);
+                  onSelectBlank(question.id, currentBlank);
                   final result = await showDialog<String>(
                     context: context,
                     builder: (_) => const _CompareSymbolSelector(),
                   );
                   if (result != null) {
-                    await onSetAnswer(question.id, result);
+                    await onSetAnswer(answerKey, result);
                   }
                 },
               ),
             ),
           );
         } else {
-          final answerKey = question.blankAnswerKey(currentBlank);
           final ink = answers[answerKey] ?? '';
           if (question.isInlineChoice) {
             spans.add(

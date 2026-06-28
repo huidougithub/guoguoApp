@@ -14,7 +14,7 @@
           "id": "yuan_di_1_1_１",
           "type": "chinese",
           "sectionTitle": "一、在欢乐中与拼音字母、汉字交朋友",
-          "prompt": "按《汉语拼音字母表》的顺序，把小写字母穿成一串\n小写：n/r/r/rr s/r/r/r/r/r",
+          "prompt": "按《汉语拼音字母表》的顺序，把小写字母穿成一串\n小写：n o p q r s/r/r/r/r/r/r",
           "answers": [
             "t",
             "u",
@@ -31,6 +31,7 @@
           "sectionTitle": "一、在欢乐中与拼音字母、汉字交朋友",
           "prompt": "按《汉语拼音字母表》的顺序，把大写字母穿成一串\n大写：A/rC/r/r/r/rH/r/r/r",
           "answers": [
+            "B",
             "D",
             "E",
             "F",
@@ -46,7 +47,15 @@
           "id": "yuan_di_1_2_2",
           "type": "chinese",
           "sectionTitle": "一、在欢乐中与拼音字母、汉字交朋友",
-          "prompt": "①感　②霜　③唱　④边　⑤降　⑥凉　⑦团　⑧减\n按韵母给汉字分类，韵母是“an”的字有：/r/r/r\n按韵母给汉字分类，韵母是“ang”的字有：/r/r/r",          
+          "prompt": "①感　②霜　③唱　④边　⑤降　⑥凉　⑦团　⑧减\n按韵母给汉字分类，韵母是“an”的字有：/r/r/r\n按韵母给汉字分类，韵母是“ang”的字有：/r/r/r",
+          "answers": [
+            "感",
+            "边",
+            "减",
+            "霜",
+            "唱",
+            "降"
+          ],
           "answerSource": "auto"
         },
         
@@ -112,7 +121,9 @@
           "sectionTitle": "二、拼一拼，写一写，选择正确的读音",
           "prompt": "都是“说wén/r解字”的好方法。本节语文课上，我们将通过抽kǎ　piàn/r的方式分组，hé/r作完成学习任务。",
           "answers": [
-            "文"
+            "文",
+            "卡片",
+            "合"
           ],
           "answerSource": "auto"
         },
@@ -130,7 +141,7 @@
             "多",
             "少"
           ],
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         {
           "id": "yuan_di_1_4_2",
@@ -244,7 +255,7 @@
             "土",
             "土地"
           ],
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         
         {
@@ -283,8 +294,11 @@
           "id": "yuan_di_2_3_5",
           "type": "chinese",
           "sectionTitle": "三、春日踏青，拼写诗句，完成手账",
-          "prompt": "填序号：①云雾　　②山中　　③采药\n诗人询问后，童子可能会说：师父为了/r去了/r，可是/r太浓。我也不知道他到底在哪里。",          
+          "prompt": "填序号：①云雾　　②山中　　③采药\n诗人询问后，童子可能会说：师父为了/r去了/r，可是/r太浓。我也不知道他到底在哪里。",
           "answers": [
+            "③",
+            "②",
+            "①"
           ],
           "answerSource": "auto"
         }
@@ -311,7 +325,7 @@
           "id": "yuan_di_3_1_4",
           "type": "chinese",
           "sectionTitle": "一、查字典，完成小题",
-          "prompt": "根据音序法查“快”：\n“快”　音序是 C，音节是 /r ，组词 /r。",
+          "prompt": "根据音序法查“快”：\n“快”　音序是 /r，音节是 /r ，组词 /r。",
           "answers": [
             "K",
             "kuai",
@@ -351,7 +365,7 @@
           "answerSource": "auto"
         },
         {
-          "id": "yuan_di_3_2_2",
+          "id": "yuan_di_3_2_3",
           "type": "choice",
           "sectionTitle": "二、补全古诗《赠汪伦》，完成小题",
           "prompt": "作者是谁",
@@ -365,7 +379,7 @@
           "answerSource": "auto"
         },
         {
-          "id": "yuan_di_3_2_3",
+          "id": "yuan_di_3_2_4",
           "type": "chinese",
           "sectionTitle": "二、补全下面的古诗，完成小题",
           "prompt": "送别之人：/r 送别 /r。（①李白 ②汪伦）",
@@ -376,7 +390,7 @@
           "answerSource": "auto"
         },
         {
-          "id": "yuan_di_3_2_4",
+          "id": "yuan_di_3_2_5",
           "type": "choice",
           "sectionTitle": "二、补全下面的古诗，完成小题",
           "prompt": "这首诗表达了诗人",
@@ -403,7 +417,15 @@
           "options": [
             "①哥哥","②眼睛","③告诉","④喜欢","⑤粽子","⑥故事"
           ],
-          "multiSelect": true,          
+          "answers": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "multiSelect": true,
           "answerSource": "auto"
         },
         {
@@ -412,7 +434,7 @@
           "sectionTitle": "一、读一读，完成练习",
           "prompt": "名句“黑发不知勤学早，白首方悔读书迟”中，先写点的字有/r，后写点的字有/r。（填序号）①发　②方　③书",
           
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         {
           "id": "yuan_di_4_2_1",
@@ -420,7 +442,7 @@
           "sectionTitle": "二、我会按照笔顺规则给下列生字分类",
           "prompt": "衣 成 间 书 床 我\n点在正上方或左上方，先写点的字有：衣、/r。\n点在右上方，后写点的字有：成、/r。",
           
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         
         {
@@ -439,7 +461,7 @@
           "answers": [
             "4"
           ],
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         {
           "id": "yuan_di_4_3_2",
@@ -457,7 +479,7 @@
           "answers": [
             "3"
           ],
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         {
           "id": "yuan_di_4_3_3",
@@ -554,7 +576,7 @@
           "sectionTitle": "四、先把四字词语补充完整，再选词填空",
           "prompt": "除夕，我们一家人 /r。厨房里，长辈们做好一桌年夜饭，大家围坐在一起共享 /r。",
           
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         }        
       ]
     },
@@ -572,7 +594,7 @@
             "跑",
             "泡"
           ],
-          "answerSource": "auto"
+          "answerSource": "manual_required"
         },
         
         {
@@ -580,7 +602,10 @@
           "type": "chinese",
           "sectionTitle": "二、选字填空",
           "prompt": "【清 青】小河的水很( /r )，能看见( /r )色的石头。",
-          
+          "answers": [
+            "清",
+            "青"
+          ],
           "answerSource": "auto"
         },
         {
@@ -588,7 +613,10 @@
           "type": "chinese",
           "sectionTitle": "二、选字填空",
           "prompt": "【再 在】木木( /r )图书馆( /r )看了一遍《西游记》。",
-          
+          "answers": [
+            "在",
+            "再"
+          ],
           "answerSource": "auto"
         },
         {
@@ -619,7 +647,11 @@
           "type": "chinese",
           "sectionTitle": "四、先把歇后语补充完整，再选一选",
           "prompt": "①芝麻开花—— /r\n②竹篮打水—— /r\n③十五个吊桶打水—— /r",
-          
+          "answers": [
+            "节节高",
+            "一场空",
+            "七上八下"
+          ],
           "answerSource": "auto"
         },
         {
@@ -627,7 +659,10 @@
           "type": "chinese",
           "sectionTitle": "四、先把歇后语补充完整，再选一选",
           "prompt": "1.比赛时，我紧张极了，心里就像“ /r ”。\n2.忙了这么久，结果居然失败了，真是“ /r ”。",
-          
+          "answers": [
+            "十五个吊桶打水——七上八下",
+            "竹篮打水——一场空"
+          ],
           "answerSource": "auto"
         },
         
@@ -1029,8 +1064,10 @@
           "id": "yuan_di_7_4_2",
           "type": "chinese",
           "sectionTitle": "四、读一读，填一填，选一选",
-          "prompt": "我们不但要多读书，还要多出去看看，这正是“(   )”。",
-          
+          "prompt": "我们不但要多读书，还要多出去看看，这正是“/r”。",
+          "answers": [
+            "读万卷书，行万里路"
+          ],
           "answerSource": "auto"
         }
       ]
@@ -1083,7 +1120,10 @@
           "type": "chinese",
           "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
           "prompt": "父、义：( /r )亲，正( /r )",
-          
+          "answers": [
+            "父",
+            "义"
+          ],
           "answerSource": "auto"
         },
         {
@@ -1091,7 +1131,10 @@
           "type": "chinese",
           "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
           "prompt": "午、牛：下( /r )，( /r )羊",
-          
+          "answers": [
+            "午",
+            "牛"
+          ],
           "answerSource": "auto"
         },
         {
@@ -1099,7 +1142,10 @@
           "type": "chinese",
           "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
           "prompt": "井、进：前( /r )，水( /r )",
-          
+          "answers": [
+            "进",
+            "井"
+          ],
           "answerSource": "auto"
         },
         {
@@ -1107,7 +1153,10 @@
           "type": "chinese",
           "sectionTitle": "二、琳琳记录时有些字分不清，请你帮他填一填",
           "prompt": "母、每：( /r )爱，( /r )天",
-          
+          "answers": [
+            "母",
+            "每"
+          ],
           "answerSource": "auto"
         },
         
@@ -1128,20 +1177,10 @@
           "prompt": "/r 红冠不用裁，满 /r 走将来。\n/r 不敢轻 /r， /r。",
           "answers": [
             "头上",
-            "身",
-            "雪",
-            "白",
-            "平",
-            "生",
-            "言",
-            "语",
-            "一",
-            "叫",
-            "千",
-            "门",
-            "万",
-            "户",
-            "开"
+            "身雪白",
+            "平生",
+            "言语",
+            "一叫千门万户开"
           ],
           "answerSource": "auto"
         },

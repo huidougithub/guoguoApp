@@ -1,4 +1,4 @@
-﻿{
+{
   "id": "chinese_final_7day_comeback",
   "title": "语文期末七天逆袭小卷",
   "subject": "chinese",
@@ -747,7 +747,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "捉虫(zhō)　行动(xíng)　身体(shēn)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -756,7 +756,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "鸟窝(wō)　邻居(líng)　睡觉(jiào)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -765,7 +765,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "一块(kuài)　着急(jí)　一直(zí)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -774,7 +774,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "小河(hé)　装死(sǐ)　信任(xìng)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -783,7 +783,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "紧跟(gēng)　忽然(hū)　喊声(hǎn)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -792,7 +792,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "只有(zī)　孤单(dān)　种瓜(zhòng)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -801,7 +801,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "都是(dōu)　招呼(zhāo)　快乐(yuè)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -810,7 +810,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "也许(yě)　这里(zhè)　孤单(gù)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -819,7 +819,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "居住(jū)　招呼(hū)　跳舞(tiào)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -828,7 +828,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "讲课(jiǎng)　还得(dé)　排球(pái)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -837,7 +837,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "篮球(lián)　连续(lián)　运动(yùn)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -846,7 +846,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "怎样(zěn)　独自(dú)　跳绳(shén)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -855,7 +855,7 @@
           "type": "chinese",
           "sectionTitle": "找出每组读音中错误的一个，并改正：",
           "prompt": "羽毛(yǚ)　打球(qiú)　游戏(xì)",
-          
+
           "answerSource": "",
           "images": []
         },
@@ -1157,7 +1157,7 @@
         {
           "id": "chinese_7day_d06_q019",
           "type": "inline_choice",
-          "sectionTitle": "请选出正确的字",
+          "sectionTitle": "请选出正确选项",
           "prompt": "蜻/r蜓/r，制造/r，捉迷/r藏/r，蚂/r蚁/r，食/r粮/r，蜘/r蛛/r，圆形/r，酷/r暑/r，清凉/r，早晨/r。",
           "answers": [
             "qīng",
@@ -1249,7 +1249,7 @@
         {
           "id": "chinese_7day_d06_q020",
           "type": "inline_choice",
-          "sectionTitle": "第五单元",
+          "sectionTitle": "请选出正确选项",
           "prompt": "朝/r霞/r，柳树/r，操/r场/r，拔河/r，跑/r步，踢球/r，铃声/r，身体/r，性格/r，锻/r炼/r。",
           "answers": [
             "zhāo",
@@ -1400,7 +1400,7 @@
           "type": "chinese",
           "sectionTitle": "给下面的字加上相同的偏旁，组成新字后，并组词",
           "prompt": "米（/r），告（/r），云（/r）。",
-          
+
           "answerSource": "manual_required",
           "images": []
         },
@@ -1409,7 +1409,7 @@
           "type": "chinese",
           "sectionTitle": "给下面的字加上相同的偏旁，组成新字后，并组词",
           "prompt": "西（/r），白（/r）。",
-          
+
           "answerSource": "manual_required",
           "images": []
         },
@@ -1460,7 +1460,7 @@
           "type": "chinese",
           "sectionTitle": "形近字组词",
           "prompt": "网（/r），问（/r），声（/r），卢（/r），身（/r），射（/r），义（/r），叉（/r）。",
-          
+
           "answerSource": "manual_required",
           "images": []
         },
@@ -1862,7 +1862,7 @@
           "type": "chinese",
           "sectionTitle": "给形近字组词",
           "prompt": "办/r，为/r，面/r，画/r，片/r，分/r，瓜/r，爪/r，空/r，牢/r。",
-          
+
           "answerSource": "manual_required",
           "images": []
         },
@@ -2072,7 +2072,7 @@
           "type": "chinese",
           "sectionTitle": "比一比，再组词",
           "prompt": "病（/r），柄（/r），别（/r），另（/r），干（/r），千（/r），象（/r），家（/r），羊（/r），样（/r），条（/r），朵（/r），姐（/r），组（/r），医（/r），区（/r）都（/r），者（/r），爬（/r），趴（/r），草（/r），早（/r），向（/r），同（/r）。",
-          
+
           "answerSource": "manual_required",
           "images": []
         },
@@ -2098,13 +2098,13 @@
     },
     {
       "day": 5,
-      "title": "考前第05天",
+      "title": "考前第5天",
       "questions": [
         {
           "id": "chinese_7day_d05_q001",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "看拼音写词语：chūn fēng、dōng xuě、hóng huā、fēi niǎo、rù lín、xìng shì\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "chūn fēng/r、dōng xuě/r、hóng huā/r、fēi niǎo/r、rù lín/r、xìng shì/r",
           "answers": [
             "春风",
             "冬雪",
@@ -2119,8 +2119,8 @@
         {
           "id": "chinese_7day_d05_q002",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "看拼音写词语：shén me、zhōng guó、dōng fāng、wáng zǐ、qīng wā、qīng shuǐ\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "shén me/r、zhōng guó/r、dōng fāng/r、wáng zǐ/r、qīng/r蛙、qīng shuǐ/r",
           "answers": [
             "什么",
             "中国",
@@ -2135,8 +2135,8 @@
         {
           "id": "chinese_7day_d05_q003",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "看拼音写词语：tiān qì、qíng tiān、shì qing、qǐng zuò、shēng bìng、zì mí\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "tiān qì/r、qíng tiān/r、shì qing/r、qǐng zuò/r、shēng bìng/r、zì mí/r",
           "answers": [
             "天气",
             "晴天",
@@ -2151,8 +2151,8 @@
         {
           "id": "chinese_7day_d05_q004",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "看拼音写词语：zuǒ yòu、hóng sè、jí shí、gǎn dòng、wàn lǐ、shuāng rén\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "zuǒ yòu/r、hóng/r色、及shí/r、感dòng/r、wàn/r里、shuāng rén/r",
           "answers": [
             "左右",
             "红色",
@@ -2167,8 +2167,8 @@
         {
           "id": "chinese_7day_d05_q005",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "写出反义词：出——/r，圆——/r，左——/r。",
+          "sectionTitle": "写出反义词",
+          "prompt": "出——/r，圆——/r，左——/r。",
           "answers": [
             "入",
             "方",
@@ -2180,8 +2180,8 @@
         {
           "id": "chinese_7day_d05_q006",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "把词语补充完整：/r回大地，/r物复苏，柳绿花/r，冰/r融化，泉/r叮咚，/r花齐放，/r争鸣，莺/r燕舞。",
+          "sectionTitle": "把词语补充完整",
+          "prompt": "/r回大地，/r物复苏，柳绿花/r，冰/r融化，泉/r叮咚，/r花齐放，/r争鸣，莺/r燕舞。",
           "answers": [
             "春",
             "万",
@@ -2198,8 +2198,8 @@
         {
           "id": "chinese_7day_d05_q007",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "看拼音写词语：zhǔ rén、chī shuǐ、jiào shēng、jiāng shuǐ、zhù zài、méi yǒu\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "zhǔ rén/r、chī shuǐ/r、jiào/r声、jiāng shuǐ/r、zhù zài/r、méi yǒu/r",
           "answers": [
             "主人",
             "吃水",
@@ -2214,8 +2214,8 @@
         {
           "id": "chinese_7day_d05_q008",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "看拼音写词语：kě yǐ、duō me、guǎng chǎng、bú huì、tài yáng、jīn huáng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "kě yǐ/r、duō me/r、guǎng chǎng/r、bú huì/r、tài yáng/r、jīn huáng/r",
           "answers": [
             "可以",
             "多么",
@@ -2230,8 +2230,8 @@
         {
           "id": "chinese_7day_d05_q009",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "看拼音写词语：qiū tiān、yīn wèi、zǒu lù、běi jīng、gōng lù、xué xiào\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "qiū tiān/r、yīn wèi/r、zǒu lù/r、běi jīng/r、gōng lù/r、xué xiào/r",
           "answers": [
             "秋天",
             "因为",
@@ -2246,7 +2246,7 @@
         {
           "id": "chinese_7day_d05_q010",
           "type": "match",
-          "sectionTitle": "第二单元",
+          "sectionTitle": "词语搭配，连一连。",
           "prompt": "词语搭配，连一连。",
           "left": [
             "弯弯的",
@@ -2278,8 +2278,8 @@
         {
           "id": "chinese_7day_d05_q011",
           "type": "choice",
-          "sectionTitle": "第二单元",
-          "prompt": "圈出与其他三项不同类的一项：高山、田野、果园、水果。",
+          "sectionTitle": "选出与其他不同类的一项",
+          "prompt": "高山、田野、果园、水果。",
           "options": [
             "高山",
             "田野",
@@ -2295,8 +2295,8 @@
         {
           "id": "chinese_7day_d05_q012",
           "type": "choice",
-          "sectionTitle": "第二单元",
-          "prompt": "圈出与其他三项不同类的一项：颜色、碧绿、金黄、火红。",
+          "sectionTitle": "选出与其他不同类的一项",
+          "prompt": "颜色、碧绿、金黄、火红。",
           "options": [
             "颜色",
             "碧绿",
@@ -2312,8 +2312,8 @@
         {
           "id": "chinese_7day_d05_q013",
           "type": "choice",
-          "sectionTitle": "第二单元",
-          "prompt": "圈出与其他三项不同类的一项：清凉、温暖、小鸟、香甜。",
+          "sectionTitle": "选出与其他不同类的一项",
+          "prompt": "清凉、温暖、小鸟、香甜。",
           "options": [
             "清凉",
             "温暖",
@@ -2329,8 +2329,8 @@
         {
           "id": "chinese_7day_d05_q014",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "用恰当的量词填空：一/r车，一/r飞机，一/r马，一/r书，一/r树，一/r铅笔。",
+          "sectionTitle": "用恰当的量词填空",
+          "prompt": "一/r车，一/r飞机，一/r马，一/r书，一/r树，一/r铅笔。",
           "answers": [
             "辆",
             "架",
@@ -2345,8 +2345,8 @@
         {
           "id": "chinese_7day_d05_q015",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "看拼音写词语：tā men、xiǎo hé、tīng shuō、gē ge、tǔ dì、yě xǔ\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "tā men/r、xiǎo hé/r、tīng shuō/r、gē ge/r、tǔ dì/r、yě xǔ/r",
           "answers": [
             "他们",
             "小河",
@@ -2361,8 +2361,8 @@
         {
           "id": "chinese_7day_d05_q016",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "看拼音写词语：zhòng shù、kuài lè、gū dān、lín jū、shēng yīn、zhāo hu\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "zhòng shù/r、kuài lè/r、gū dān/r、lín jū/r、shēng yīn/r、zhāo hu/r",
           "answers": [
             "种树",
             "快乐",
@@ -2377,8 +2377,8 @@
         {
           "id": "chinese_7day_d05_q017",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "看拼音写词语：dāng rán、wán jù、jiǎng huà、bù xǔ、hěn duō、bù xíng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "dāng rán/r、wán jù/r、jiǎng huà/r、bù xǔ/r、hěn duō/r、bù xíng/r",
           "answers": [
             "当然",
             "玩具",
@@ -2393,8 +2393,8 @@
         {
           "id": "chinese_7day_d05_q018",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "填上恰当的动词：/r绳，/r足球，/r故事，/r音乐，/r排球，/r游戏。",
+          "sectionTitle": "填上恰当的动词：",
+          "prompt": "/r绳，/r足球，/r故事，/r音乐，/r排球，/r游戏。",
           "answers": [
             "跳",
             "踢",
@@ -2409,8 +2409,8 @@
         {
           "id": "chinese_7day_d05_q019",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "看拼音写词语：sī niàn、chuáng qián、yuè guāng、dī tóu、yán sè、wài miàn\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "sī niàn/r、chuáng qián/r、yuè guāng/r、dī tóu/r、yán sè/r、wài miàn/r",
           "answers": [
             "思念",
             "床前",
@@ -2425,8 +2425,8 @@
         {
           "id": "chinese_7day_d05_q020",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "看拼音写词语：kàn jiàn、bà ba、wǎn shang、wēi xiào、duān wǔ jié、yè zi\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "kàn jiàn/r、bà ba/r、wǎn shang/r、微xiào/r、端wǔ jié/r、yè zi/r",
           "answers": [
             "看见",
             "爸爸",
@@ -2441,8 +2441,8 @@
         {
           "id": "chinese_7day_d05_q021",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "看拼音写词语：dà mǐ、fēn gěi、huā yàng、hóng dòu、nà biān、gāo xìng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "dà mǐ/r、fēn gěi/r、huā yàng/r、hóng dòu/r、nà biān/r、gāo xìng/r",
           "answers": [
             "大米",
             "分给",
@@ -2457,8 +2457,8 @@
         {
           "id": "chinese_7day_d05_q022",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "看拼音写词语：qiū qiān、gù xiāng、zài cì、kàn zhe、lái dào、chéng zhǎng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "qiū qiān/r、gù xiāng/r、zài cì/r、kàn zhe/r、lái dào/r、chéng zhǎng/r",
           "answers": [
             "秋千",
             "故乡",
@@ -2473,8 +2473,8 @@
         {
           "id": "chinese_7day_d05_q023",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "一字组多词：胆/r /r /r，勇/r /r /r，原/r /r /r。",
+          "sectionTitle": "一字组多词",
+          "prompt": "胆/r /r /r，勇/r /r /r，微/r /r /r，原/r /r /r。",
           "answers": [
             "",
             "",
@@ -2492,8 +2492,8 @@
         {
           "id": "chinese_7day_d05_q024",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "照样子写词语。例：荡来荡去。\n/r来/r去，/r来/r去，/r来/r去，/r来/r去。",
+          "sectionTitle": "照样子写词语",
+          "prompt": "例：荡来荡去。\n/r来/r去，/r来/r去，/r来/r去，/r来/r去。",
           "answers": [
             "",
             "",
@@ -2510,8 +2510,8 @@
         {
           "id": "chinese_7day_d05_q025",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "看拼音写词语：huā jiān、yùn sòng、shuǐ chí、huān lè、jié wǎng、mí gōng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "huā jiān/r、yùn sòng/r、shuǐ chí/r、huān lè/r、jié wǎng/r、mí gōng/r",
           "answers": [
             "花间",
             "运送",
@@ -2526,8 +2526,8 @@
         {
           "id": "chinese_7day_d05_q026",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "看拼音写词语：gǔ dài、liáng fēng、xì yǔ、zào jù、xī yáng、lǐ zi\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "gǔ dài/r、liáng fēng/r、xì yǔ/r、zào jù/r、xī yáng/r、lǐ zi/r",
           "answers": [
             "古代",
             "凉风",
@@ -2542,8 +2542,8 @@
         {
           "id": "chinese_7day_d05_q027",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "看拼音写词语：niǎo yǔ huā xiāng、dǎ qiú、pǎo bù、zú qiú、shēng yīn、shēn tǐ\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "niǎo yǔ huā xiāng/r、dǎ qiú/r、pǎo bù/r、zú qiú/r、shēng yīn/r、shēn tǐ/r",
           "answers": [
             "鸟语花香",
             "打球",
@@ -2558,8 +2558,8 @@
         {
           "id": "chinese_7day_d05_q028",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "看拼音写词语：pāi dǎ、hù xiāng、xué xí、yuǎn jìn、yù shí、zhī jiān\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "pāi dǎ/r、hù xiāng/r、xué xí/r、yuǎn jìn/r、yù shí/r、zhī jiān/r",
           "answers": [
             "拍打",
             "互相",
@@ -2574,8 +2574,8 @@
         {
           "id": "chinese_7day_d05_q029",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "看拼音写词语：yuǎn jìn、yì qì\n/r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "yuǎn jìn/r、yì qì/r",
           "answers": [
             "远近",
             "义气"
@@ -2586,8 +2586,8 @@
         {
           "id": "chinese_7day_d05_q030",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "写出反义词：今——/r，粗——/r，朝——/r，严寒——/r，圆——/r，晨——/r。",
+          "sectionTitle": "写出反义词",
+          "prompt": "今——/r，粗——/r，朝——/r，严寒——/r，圆——/r，晨——/r。",
           "answers": [
             "古",
             "细",
@@ -2602,8 +2602,8 @@
         {
           "id": "chinese_7day_d05_q031",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "看图补充词语：/r搬家，/r展翅，/r游泳，/r飞舞，/r松土，/r结网。",
+          "sectionTitle": "看图补充词语",
+          "prompt": "/r搬家，/r展翅，/r游泳，/r飞舞，/r松土，/r结网。",
           "answers": [
             "蚂蚁",
             "蜻蜓",
@@ -2613,13 +2613,15 @@
             "蜘蛛"
           ],
           "answerSource": "auto",
-          "images": []
+          "images": [
+            "assets/worksheets/images/chinese_final_7day_comeback/d05_q031.png"
+          ]
         },
         {
           "id": "chinese_7day_d05_q032",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "给“包”加不同偏旁，再填空：/r茶，吃/r，长/r，鞭/r，/r步，拥/r。",
+          "sectionTitle": "给“包”加不同偏旁，再填空",
+          "prompt": "：/r茶，吃/r，长/r，鞭/r，/r步，拥/r。",
           "answers": [
             "泡",
             "饱",
@@ -2634,8 +2636,8 @@
         {
           "id": "chinese_7day_d05_q033",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "加偏旁，组成不同的字，再组词。\n口：/r /r /r\n足：/r /r /r\n扌：/r /r /r",
+          "sectionTitle": "加偏旁，组成不同的字，再组词",
+          "prompt": "口：/r /r /r\n足：/r /r /r\n扌：/r /r /r",
           "answers": [
             "",
             "",
@@ -2653,8 +2655,8 @@
         {
           "id": "chinese_7day_d05_q034",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "看拼音写词语：liǎng shǒu、cǎi huā、wú shēng、xiǎo shù、xǐ ài、jiān jiǎo\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "liǎng shǒu/r、cǎi huā/r、wú shēng/r、xiǎo shù/r、喜ài/r、jiān jiǎo/r",
           "answers": [
             "两首",
             "采花",
@@ -2669,8 +2671,8 @@
         {
           "id": "chinese_7day_d05_q035",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "看拼音写词语：shǎn liàng、fēi jī、gē tái、fàng shēng、xiǎo yú、huā duǒ\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "shǎn liàng/r、fēi jī/r、gē tái/r、fàng shēng/r、xiǎo yú/r、huā duǒ/r",
           "answers": [
             "闪亮",
             "飞机",
@@ -2685,26 +2687,45 @@
         {
           "id": "chinese_7day_d05_q036",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "看拼音写词语：měi lì、fēi guò、zhè biān、jiā fǎ、āi ya、gàn má\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "měi lì/r、fēi guò/r、zhè biān/r、jiā fǎ/r、āi ya/r、gàn má/r、hǎo ba/r",
           "answers": [
             "美丽",
             "飞过",
             "这边",
             "加法",
             "哎呀",
-            "干嘛"
+            "干嘛",
+            "好吧"
           ],
           "answerSource": "auto",
           "images": []
         },
         {
           "id": "chinese_7day_d05_q037",
-          "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "看拼音写词语：hǎo ba\n/r",
+          "type": "match",
+          "sectionTitle": "连一连。",
+          "prompt": "连一连。",
+          "left": [
+            "山",
+            "潮",
+            "连",
+            "消",
+            "搬"
+          ],
+          "right": [
+            "家",
+            "忙",
+            "息",
+            "坡",
+            "湿"
+          ],
           "answers": [
-            "好吧"
+            "3",
+            "4",
+            "1",
+            "2",
+            "0"
           ],
           "answerSource": "auto",
           "images": []
@@ -2712,8 +2733,8 @@
         {
           "id": "chinese_7day_d05_q038",
           "type": "choice",
-          "sectionTitle": "第六单元",
-          "prompt": "圈出每组中不是同类的一个：西瓜、冰棍、包子、绿豆汤。",
+          "sectionTitle": "圈出每组中不是同类的一个",
+          "prompt": "西瓜、冰棍、包子、绿豆汤。",
           "options": [
             "西瓜",
             "冰棍",
@@ -2729,8 +2750,8 @@
         {
           "id": "chinese_7day_d05_q039",
           "type": "choice",
-          "sectionTitle": "第六单元",
-          "prompt": "圈出每组中不是同类的一个：凉席、蒲扇、竹椅、棉袄。",
+          "sectionTitle": "圈出每组中不是同类的一个",
+          "prompt": "凉席、蒲扇、竹椅、棉袄。",
           "options": [
             "凉席",
             "蒲扇",
@@ -2746,8 +2767,8 @@
         {
           "id": "chinese_7day_d05_q040",
           "type": "choice",
-          "sectionTitle": "第六单元",
-          "prompt": "圈出每组中不是同类的一个：牵牛星、星星、织女星、北斗星。",
+          "sectionTitle": "圈出每组中不是同类的一个",
+          "prompt": "牵牛星、星星、织女星、北斗星。",
           "options": [
             "牵牛星",
             "星星",
@@ -2763,8 +2784,8 @@
         {
           "id": "chinese_7day_d05_q041",
           "type": "choice",
-          "sectionTitle": "第六单元",
-          "prompt": "圈出每组中不是同类的一个：蚊子、苍蝇、萤火虫、蚯蚓。",
+          "sectionTitle": "圈出每组中不是同类的一个",
+          "prompt": "蚊子、苍蝇、萤火虫、蚯蚓。",
           "options": [
             "蚊子",
             "苍蝇",
@@ -2780,8 +2801,8 @@
         {
           "id": "chinese_7day_d05_q042",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "看拼音写词语：wén jù、píng ān、bàn fǎ、shū bāo、huǒ bàn、fēn zhōng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "wén jù、píng ān、bàn fǎ、shū bāo、huǒ bàn、fēn zhōng\n/r /r /r /r /r /r",
           "answers": [
             "文具",
             "平安",
@@ -2796,8 +2817,8 @@
         {
           "id": "chinese_7day_d05_q043",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "看拼音写词语：shàng miàn、qì chē、gōng gòng、zuò xià、zhǐ yào、lián máng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "shàng miàn/r、qì chē/r、gōng gòng/r、zuò xià/r、zhǐ yào/r、lián máng/r",
           "answers": [
             "上面",
             "汽车",
@@ -2812,8 +2833,8 @@
         {
           "id": "chinese_7day_d05_q044",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "看拼音写词语：jǐ bǎi、jīn tiān、hái yǒu、shé tou、yí kuài、fēi cháng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "jǐ bǎi/r、jīn tiān/r、hái yǒu/r、shé tou/r、yí kuài/r、fēi cháng/r",
           "answers": [
             "几百",
             "今天",
@@ -2828,8 +2849,8 @@
         {
           "id": "chinese_7day_d05_q045",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "看拼音写词语：xī guā、jìn rù、kòng dì、bú ràng、dīng líng líng、yuán dàn\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "xī guā/r、jìn rù/r、kòng dì/r、bú ràng/r、dīng líng líng/r、yuán dàn/r",
           "answers": [
             "西瓜",
             "进入",
@@ -2844,8 +2865,8 @@
         {
           "id": "chinese_7day_d05_q046",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "看拼音写词语：zhōng diǎn、guò wǎng、yí piàn\n/r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "zhōng diǎn/r、guò wǎng/r、yí piàn/r",
           "answers": [
             "钟点",
             "过往",
@@ -2855,10 +2876,17 @@
           "images": []
         },
         {
+          "id": "chinese_7day_d05_J05",
+          "type": "chinese",
+          "sectionTitle": "一字组多词",
+          "prompt": "新：/r、/r、/r、/r\n平：/r、/r、/r、/r\n些：/r、/r、/r、/r"
+
+        },
+        {
           "id": "chinese_7day_d05_q047",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "加一加，减一减，变成新字并组词：口+少=/r（/r），月+半=/r（/r），山+夕=/r（/r），王+见=/r（/r），飘-风=/r（/r），校-木=/r（/r），张-长=/r（/r），甜-舌=/r（/r）。",
+          "sectionTitle": "加一加，减一减，变成新字并组词",
+          "prompt": "口+少=/r（/r），月+半=/r（/r），山+夕=/r（/r），王+见=/r（/r），飘-风=/r（/r），校-木=/r（/r），张-长=/r（/r），甜-舌=/r（/r）。",
           "answers": [
             "吵",
             "吵闹",
@@ -2882,17 +2910,20 @@
         },
         {
           "id": "chinese_7day_d05_q048",
-          "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "比一比，选一选：放/r，小/r，/r假，/r人，中/r，/r气，/r尺，/r米。\n可选：牛、午、刀、力、直、真、玉、主",
+          "type": "inline_choice",
+          "sectionTitle": "比一比，选一选",
+          "prompt": "放/r，中/r，小/r，/r气，/r假，/r尺，/r人，/r米。",
+          "blankChoices": [
+            ["牛","午"],["牛","午"],["刀","力"],["刀","力"],["直","真"],["直","真"],["玉","主"],["玉","主"]
+          ],
           "answers": [
             "牛",
-            "刀",
-            "真",
-            "主",
             "午",
+            "刀",
             "力",
+            "真",
             "直",
+            "主",
             "玉"
           ],
           "answerSource": "auto",
@@ -2901,8 +2932,8 @@
         {
           "id": "chinese_7day_d05_q049",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "看拼音写词语：shēng bìng、yī shēng、bié rén、gàn huó、qí guài、qī xīng piáo chóng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "shēng bìng/r、yī shēng/r、bié rén/r、gàn huó/r、qí guài/r、qī xīng piáo chóng/r",
           "answers": [
             "生病",
             "医生",
@@ -2911,14 +2942,14 @@
             "奇怪",
             "七星瓢虫"
           ],
-          "answerSource": "auto",
+          "answerSource": "manual_required",
           "images": []
         },
         {
           "id": "chinese_7day_d05_q050",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "看拼音写词语：jīng xià、hài pà、gēn zhe、qǐ lái、dà jiā、xiǎo yáng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "jīng xià/r、hài pà/r、gēn zhe/r、qǐ lái/r、dà jiā/r、xiǎo yáng/r",
           "answers": [
             "惊吓",
             "害怕",
@@ -2933,8 +2964,8 @@
         {
           "id": "chinese_7day_d05_q051",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "看拼音写词语：dà xiàng、zhuō chóng、fāng xiàng、jiě jie、nín hǎo、cǎo cóng\n/r /r /r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "dà xiàng/r、zhuō chóng/r、fāng xiàng/r、jiě jie/r、nín hǎo/r、cǎo cóng/r",
           "answers": [
             "大象",
             "捉虫",
@@ -2949,8 +2980,8 @@
         {
           "id": "chinese_7day_d05_q052",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "看拼音写词语：fáng zi、quán dōu、yì tiáo、pá shān\n/r /r /r /r",
+          "sectionTitle": "看拼音写词语",
+          "prompt": "fáng zi/r、quán dōu/r、yì tiáo/r、pá shān/r",
           "answers": [
             "房子",
             "全都",
@@ -2963,7 +2994,7 @@
         {
           "id": "chinese_7day_d05_q053",
           "type": "match",
-          "sectionTitle": "第八单元",
+          "sectionTitle": "词语搭配，连一连。",
           "prompt": "词语搭配，连一连。",
           "left": [
             "高高的",
@@ -2995,8 +3026,8 @@
         {
           "id": "chinese_7day_d05_q054",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "照样子写一写：碧绿碧绿的叶子，碧绿碧绿的/r；雪白雪白的棉花，雪白雪白的/r；金黄金黄的落叶，金黄金黄的/r。",
+          "sectionTitle": "照样子写一写",
+          "prompt": "碧绿碧绿的叶子、碧绿碧绿的/r\n雪白雪白的棉花、雪白雪白的/r；金黄金黄的落叶、金黄金黄的/r。",
           "answers": [
             "",
             "",
@@ -3008,8 +3039,8 @@
         {
           "id": "chinese_7day_d05_q055",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "写出含有下面偏旁的字，并组词：含“犭”的字/r（/r）/r（/r）；含“鸟”的字/r（/r）/r（/r）；含“虫”的字/r（/r）/r（/r）。",
+          "sectionTitle": "写俩个含有下面偏旁的字，并组词",
+          "prompt": "含“犭”的字（/r）（/r）；含“鸟”的字（/r）（/r）；含“虫”的字（/r）（/r）。",
           "answers": [
             "",
             "",
@@ -3031,37 +3062,25 @@
     },
     {
       "day": 4,
-      "title": "考前第04天",
+      "title": "考前第4天",
       "questions": [
         {
           "id": "chinese_7day_d04_q001",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "我来问，你来答。例：你姓什么？我姓张。什么张？弓长张。\n你姓什么？我姓林，什么林？/r。",
+          "sectionTitle": "我来问，你来答",
+          "prompt": "例：你姓什么？我姓张。什么张？弓长张。\n你姓什么？我姓林，什么林？/r。\n你姓什么？我姓/r。/r？/r。",
           "answers": [
             "双木林"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d04_q002",
-          "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "照样子写一写：你姓什么？我姓/r。/r？/r。",
-          "answers": [
-            "",
-            "",
-            ""
           ],
           "answerSource": "manual_required",
           "images": []
         },
+
         {
           "id": "chinese_7day_d04_q003",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "仿照例句写一写。\n例：遥远的北京城，有一座雄伟的天安门，我多想去看看！\n遥远的/r，有/r，我多想去看看！",
+          "sectionTitle": "仿照例句写一写",
+          "prompt": "例：遥远的北京城，有一座雄伟的天安门，我多想去看看！\n遥远的/r，有/r，我多想去看看！",
           "answers": [
             "",
             ""
@@ -3072,8 +3091,8 @@
         {
           "id": "chinese_7day_d04_q004",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "照样子，把句子写得更生动。\n小公鸡跟在小鸭子后面。（偷偷地）\n/r",
+          "sectionTitle": "",
+          "prompt": "例：小鸭子游到了小公鸡身边。（飞快地）\n小鸭子飞快地游到了小公鸡身边\n小公鸡跟在小鸭子后面。（偷偷地）\n/r",
           "answers": [
             "小公鸡偷偷地跟在小鸭子后面。"
           ],
@@ -3083,8 +3102,8 @@
         {
           "id": "chinese_7day_d04_q005",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "照样子，把句子写得更生动。\n喜鹊们一起飞到树枝上。（叽叽喳喳地）\n/r",
+          "sectionTitle": "照样子，把句子写得更生动。",
+          "prompt": "喜鹊们一起飞到树枝上。（叽叽喳喳地）\n/r",
           "answers": [
             "喜鹊们叽叽喳喳地一起飞到树枝上。"
           ],
@@ -3094,21 +3113,11 @@
         {
           "id": "chinese_7day_d04_q006",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "照样子仿写句子。例：荷叶圆圆的，绿绿的。\n苹果/r，/r。",
+          "sectionTitle": "照样子仿写句子",
+          "prompt": "例：荷叶圆圆的，绿绿的。\n苹果/r，/r。\n香蕉/r，/r。",
           "answers": [
             "圆圆的",
-            "红红的"
-          ],
-          "answerSource": "manual_required",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d04_q007",
-          "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "照样子仿写句子。例：荷叶圆圆的，绿绿的。\n香蕉/r，/r。",
-          "answers": [
+            "红红的",
             "弯弯的",
             "黄黄的"
           ],
@@ -3116,10 +3125,18 @@
           "images": []
         },
         {
+          "id": "chinese_7day_d04_J06",
+          "type": "example",
+          "sectionTitle": "照样子仿写句子",
+          "prompt": "例：小白兔割草。小白兔在山坡上割草。小白兔弯着腰在山坡上割草。",
+          "answerSource": "display_only",
+          "images": []
+        },
+        {
           "id": "chinese_7day_d04_q008",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "照样子，把句子写具体。\n例：小白兔割草。小白兔在山坡上割草。小白兔弯着腰在山坡上割草。\n小鸭子游泳。\n/r",
+          "sectionTitle": "照样子仿写句子",
+          "prompt": "小鸭子游泳。/r/r",
           "answers": [
             ""
           ],
@@ -3129,8 +3146,8 @@
         {
           "id": "chinese_7day_d04_q009",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "照样子，把句子写具体。\n例：小白兔割草。小白兔在山坡上割草。小白兔弯着腰在山坡上割草。\n小鸟歌唱。\n/r",
+          "sectionTitle": "照样子仿写句子",
+          "prompt": "小鸟歌唱。/r/r",
           "answers": [
             ""
           ],
@@ -3140,41 +3157,22 @@
         {
           "id": "chinese_7day_d04_q010",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "给句子加上恰当的标点符号：你看见那只蝴蝶了吗/r",
+          "sectionTitle": "给句子加上恰当的标点符号",
+          "prompt": "你看见那只蝴蝶了吗/r操场上真热闹啊/r土里有一只蚯蚓/r",
           "answers": [
-            "？"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d04_q011",
-          "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "给句子加上恰当的标点符号：操场上真热闹啊/r",
-          "answers": [
-            "！"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d04_q012",
-          "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "给句子加上恰当的标点符号：土里有一只蚯蚓/r",
-          "answers": [
+            "？",
+            "！",
             "。"
           ],
           "answerSource": "auto",
           "images": []
         },
+
         {
           "id": "chinese_7day_d04_q013",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "用加点词语仿写句子：元元非常后悔。\n/r",
+          "sectionTitle": "用括号中的词语仿写句子",
+          "prompt": "：元元（非常）后悔。/r",
           "answers": [
             ""
           ],
@@ -3184,8 +3182,8 @@
         {
           "id": "chinese_7day_d04_q014",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "用加点词语仿写句子：要是早一分钟就好了。\n/r",
+          "sectionTitle": "用括号中的词语仿写句子",
+          "prompt": "要是早一分钟就好了。/r",
           "answers": [
             ""
           ],
@@ -3195,29 +3193,31 @@
         {
           "id": "chinese_7day_d04_q015",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "观察图画，选择几个词语写一句话，至少选择 2 个词。\n花朵  笑声  歌唱  草地  喜欢  阳光\n/r",
+          "sectionTitle": "观察图画，选择几个词语写一句话，至少选择 2 个词",
+          "prompt": "花朵  笑声  歌唱  草地  喜欢  阳光",
           "answers": [
             ""
           ],
           "answerSource": "manual_required",
-          "images": []
+          "images": [
+            "assets/worksheets/images/chinese_final_7day_comeback/d04_q015.png"
+          ]
         }
       ]
     },
     {
       "day": 3,
-      "title": "考前第03天",
+      "title": "考前第3天",
       "questions": [
         {
           "id": "chinese_7day_d03_q001",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写课文内容：春/r吹，夏/r落，秋霜降，冬/r飘。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "春/r吹，夏/r落，秋霜降，/r飘。",
           "answers": [
             "风",
             "雨",
-            "雪"
+            "冬雪"
           ],
           "answerSource": "auto",
           "images": []
@@ -3225,8 +3225,8 @@
         {
           "id": "chinese_7day_d03_q002",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写课文内容：青草，红花，游鱼，/r鸟。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "青草，红花，游鱼，/r鸟。",
           "answers": [
             "飞"
           ],
@@ -3236,10 +3236,10 @@
         {
           "id": "chinese_7day_d03_q003",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写课文内容：池草青，山花/r，鱼出水，鸟/r林。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "池草青，山/r红，鱼出水，鸟/r林。",
           "answers": [
-            "红",
+            "花",
             "入"
           ],
           "answerSource": "auto",
@@ -3248,8 +3248,8 @@
         {
           "id": "chinese_7day_d03_q004",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写《姓氏歌》：你/r什么？我/r李。/r李？木子李。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "你/r什么？我/r李。/r李？木子李。",
           "answers": [
             "姓",
             "姓",
@@ -3261,8 +3261,8 @@
         {
           "id": "chinese_7day_d03_q005",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写《姓氏歌》：他/r什么？他/r张。/r张？弓长张。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "他/r什么？他/r张。/r张？弓长张。",
           "answers": [
             "姓",
             "姓",
@@ -3274,8 +3274,8 @@
         {
           "id": "chinese_7day_d03_q006",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写《姓氏歌》：古月胡，口天吴，/r人徐，言午许。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "古月胡，口天吴，/r人徐，言午许。",
           "answers": [
             "双"
           ],
@@ -3285,8 +3285,8 @@
         {
           "id": "chinese_7day_d03_q007",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "填写《姓氏歌》：中/r姓氏有很多，赵、钱、孙、李，周、吴、郑、/r，诸葛、东/r，上官、欧阳……",
+          "sectionTitle": "填写课文内容",
+          "prompt": "中/r姓氏有很多，赵、钱、孙、李，周、吴、郑、/r，诸葛、东/r，上官、欧阳……",
           "answers": [
             "国",
             "王",
@@ -3298,8 +3298,8 @@
         {
           "id": "chinese_7day_d03_q008",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "回忆《汉语拼音字母表》，把缺少的大写字母补充完整，并写出相应的小写字母。\nB C F G J K N\nO R S T V Z\n/r",
+          "sectionTitle": "把缺少的大写字母补充完整，并写出相应的小写字母。",
+          "prompt": "/rB C/r/rF G/rI J K/r/r NO/r/r R S T /rV/r/ry Z\n/r",
           "answers": [
             ""
           ],
@@ -3309,45 +3309,26 @@
         {
           "id": "chinese_7day_d03_q009",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "默写古诗《春晓》：春眠/r觉晓，处处闻啼/r。",
+          "sectionTitle": "默写古诗",
+          "prompt": "春眠/r觉晓，处处闻啼/r。\n夜来/r声，/r落知多少。",
           "answers": [
             "不",
-            "鸟"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d03_q010",
-          "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "默写古诗《春晓》：夜来/r声，/r落知多少。",
-          "answers": [
-            "风雨",
+            "鸟",
+             "风雨",
             "花"
           ],
           "answerSource": "auto",
           "images": []
         },
+
         {
           "id": "chinese_7day_d03_q011",
           "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "默写古诗《赠汪伦》：李白乘舟将欲/r，忽闻岸/r踏歌声。",
+          "sectionTitle": "默写古诗",
+          "prompt": "李白乘舟将欲/r，忽闻岸/r踏歌声。\n桃花潭水深/r，/r及汪伦送我/r。",
           "answers": [
             "行",
-            "上"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d03_q012",
-          "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "默写古诗《赠汪伦》：桃花潭水深/r，/r及汪伦送我/r。",
-          "answers": [
+            "上",
             "千尺",
             "不",
             "情"
@@ -3355,49 +3336,32 @@
           "answerSource": "auto",
           "images": []
         },
+
         {
           "id": "chinese_7day_d03_q013",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "默写古诗《静夜思》：/r明月/r，疑是地上霜。",
+          "sectionTitle": "默写古诗",
+          "prompt": "/r明月/r，疑是地上霜。\n举头望明月，/r头思/r。",
           "answers": [
             "床前",
-            "光"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d03_q014",
-          "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "默写古诗《静夜思》：举头望明月，/r头思/r。",
-          "answers": [
+            "光",
             "低",
             "故乡"
+
           ],
           "answerSource": "auto",
           "images": []
         },
+
         {
           "id": "chinese_7day_d03_q015",
           "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "默写古诗《寻隐者不遇》：/r问童/r，言师采药/r。",
+          "sectionTitle": "默写古诗",
+          "prompt": "/r问童/r，言师采药/r。\n/r在此/r，/r深不知处。",
           "answers": [
             "松下",
             "子",
-            "去"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d03_q016",
-          "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "默写古诗《寻隐者不遇》：/r在此/r，/r深不知处。",
-          "answers": [
+            "去",
             "只",
             "山中",
             "云"
@@ -3405,11 +3369,12 @@
           "answerSource": "auto",
           "images": []
         },
+
         {
           "id": "chinese_7day_d03_q017",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "填写课文内容：/r对今，圆对方。严寒对酷暑，春暖对秋/r。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "/r对今，圆对方。严寒对酷暑，春暖对秋/r。",
           "answers": [
             "古",
             "凉"
@@ -3420,8 +3385,8 @@
         {
           "id": "chinese_7day_d03_q018",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "填写课文内容：晨对暮，雪对霜。和风对/r，朝霞对/r。桃对/r，柳对杨。莺歌对燕舞，鸟/r对花/r。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "晨对暮，雪对霜。和风对/r，朝霞对/r。桃对/r，柳对杨。莺歌对燕舞，鸟/r对花/r。",
           "answers": [
             "细雨",
             "夕阳",
@@ -3435,22 +3400,12 @@
         {
           "id": "chinese_7day_d03_q019",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "默写《人之初》：人/r初，性本善，性/r近，习相/r。苟不教，性乃迁，教之道，贵以专。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "人/r初，性本善，性/r近，习相/r。苟不教，性乃迁，教之道，贵以专。/r不学，非所宜，幼不学，老何为？/r不琢，不成器，人不学，不知/r。",
           "answers": [
             "之",
             "相",
-            "远"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d03_q020",
-          "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "默写《人之初》：/r不学，非所宜，幼不学，老何为？/r不琢，不成器，人不学，不知/r。",
-          "answers": [
+            "远",
             "子",
             "玉",
             "义"
@@ -3458,11 +3413,12 @@
           "answerSource": "auto",
           "images": []
         },
+
         {
           "id": "chinese_7day_d03_q021",
           "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "补充歇后语：小葱拌豆腐——/r；竹篮子打水——/r；芝麻开花——/r；十五个吊桶打水——/r。",
+          "sectionTitle": "补充歇后语",
+          "prompt": "小葱拌豆腐——/r；竹篮子打水——/r；芝麻开花——/r；十五个吊桶打水——/r。",
           "answers": [
             "一清（青）二白",
             "一场空",
@@ -3475,8 +3431,8 @@
         {
           "id": "chinese_7day_d03_q022",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "默写古诗《池上》：小娃撑小艇，偷/r白莲回。/r解藏踪迹，浮萍/r道/r。",
+          "sectionTitle": "默写古诗",
+          "prompt": "小娃撑小艇，偷/r白莲回。/r解藏踪迹，浮萍/r道/r。",
           "answers": [
             "采",
             "不",
@@ -3489,8 +3445,8 @@
         {
           "id": "chinese_7day_d03_q023",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "默写古诗《小池》：泉眼/r声惜细流，/r阴照/r爱晴柔。/r荷才露/r角，早有蜻蜓立/r。",
+          "sectionTitle": "默写古诗",
+          "prompt": "泉眼/r声惜细流，/r阴照/r爱晴柔。/r荷才露/r角，早有蜻蜓立/r。",
           "answers": [
             "无",
             "树",
@@ -3505,10 +3461,11 @@
         {
           "id": "chinese_7day_d03_q024",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "填写《荷叶圆圆》：小水珠躺在荷叶上，眨着/r晶晶的眼睛。小蜻蜓/r在荷叶上，展/r透明的翅膀。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "荷叶圆圆的，绿绿的。\n小水珠说：“荷叶是我的摇篮。”小水珠躺在荷叶上，眨着/r晶晶的眼睛。小蜻蜓说：“荷叶是我的停/r坪。”小蜻蜓/r在荷叶上，展/r透明的翅膀。",
           "answers": [
             "亮",
+            "机",
             "立",
             "开"
           ],
@@ -3518,8 +3475,8 @@
         {
           "id": "chinese_7day_d03_q025",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "填写《荷叶圆圆》：小青蛙说：“荷叶是我的歌/r。”小青蛙蹲在荷叶上，呱呱地/r声歌唱。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "小青蛙说：“荷叶是我的歌/r。”小青蛙蹲在荷叶上，呱呱地/r声歌唱。",
           "answers": [
             "台",
             "放"
@@ -3530,12 +3487,14 @@
         {
           "id": "chinese_7day_d03_q026",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "填写《荷叶圆圆》：小/r说：“荷叶是我的凉伞。”小/r在荷叶下笑嘻嘻地游来游去，捧起一/r很美很美的水花。",
+          "sectionTitle": "填写课文内容",
+          "prompt": "小/r说：“荷叶是我的凉伞。”小/r在荷叶下笑嘻嘻地游来游去，捧起一/r很/r很/r的水花。",
           "answers": [
             "鱼儿",
             "鱼儿",
-            "朵朵"
+            "朵朵",
+            "美",
+            "美"
           ],
           "answerSource": "auto",
           "images": []
@@ -3543,8 +3502,8 @@
         {
           "id": "chinese_7day_d03_q027",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "补全俗语：朝霞/r，晚霞/r。/r山戴帽，/r半山腰。早晨/r当日晴，晚上/r到天明。蚂蚁搬家蛇过道，/r不久要来到。",
+          "sectionTitle": "补全俗语",
+          "prompt": "朝霞/r，晚霞/r。\n/r山戴帽，/r半山腰。\n早晨/r当日晴，晚上/r到天明。\n蚂蚁搬家蛇过道，/r不久要来到。",
           "answers": [
             "不出门",
             "行千里",
@@ -3560,8 +3519,8 @@
         {
           "id": "chinese_7day_d03_q028",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "补全名言：不知则/r，不能则/r。——《荀子》",
+          "sectionTitle": "补全名言",
+          "prompt": "不知则/r，不能则/r。——《荀子》",
           "answers": [
             "问",
             "学"
@@ -3572,8 +3531,8 @@
         {
           "id": "chinese_7day_d03_q029",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "补全名言：读书/r遍，而义自/r。——董遇",
+          "sectionTitle": "补全名言",
+          "prompt": "读书/r遍，而义自/r。——董遇",
           "answers": [
             "百",
             "见"
@@ -3584,8 +3543,8 @@
         {
           "id": "chinese_7day_d03_q030",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "补全名言：读/r卷书，行/r里路。——董其昌",
+          "sectionTitle": "补全名言",
+          "prompt": "读/r卷书，行/r里路。——董其昌",
           "answers": [
             "万",
             "万"
@@ -3596,38 +3555,29 @@
         {
           "id": "chinese_7day_d03_q031",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "默写古诗《画鸡》：/r红冠不用裁，满身/r走将来。",
+          "sectionTitle": "默写古诗",
+          "prompt": "/r红冠不用裁，满身/r走将来。\n平生不敢轻言/r，一叫/r开。",
           "answers": [
             "头上",
-            "雪白"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d03_q032",
-          "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "默写古诗《画鸡》：平生不敢轻言/r，一叫/r开。",
-          "answers": [
+            "雪白",
             "语",
             "千门万户"
           ],
           "answerSource": "auto",
           "images": []
         }
+
       ]
     },
     {
       "day": 2,
-      "title": "考前第02天",
+      "title": "考前第2天",
       "questions": [
         {
           "id": "chinese_7day_d02_q001",
           "type": "match",
-          "sectionTitle": "第一单元",
-          "prompt": "连一连。",
+          "sectionTitle": "连一连",
+          "prompt": "连一连",
           "left": [
             "春风",
             "夏雨",
@@ -3652,8 +3602,8 @@
         {
           "id": "chinese_7day_d02_q002",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "画出下列姓名的姓氏。李白/r，周恩来/r，欧阳修/r，钱学森/r，诸葛亮/r。",
+          "sectionTitle": "写出下列姓名的姓氏。",
+          "prompt": "李白/r，周恩来/r，欧阳修/r，钱学森/r，诸葛亮/r。",
           "answers": [
             "李",
             "周",
@@ -3683,8 +3633,8 @@
         {
           "id": "chinese_7day_d02_q004",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "猜字谜：左边绿，右边红，左右相遇起凉风。绿的喜欢及时雨，红的最怕水来攻。谜底：/r",
+          "sectionTitle": "猜字谜",
+          "prompt": "左边绿，右边红，左右相遇起凉风。绿的喜欢及时雨，红的最怕水来攻。谜底：/r",
           "answers": [
             "秋"
           ],
@@ -3694,8 +3644,8 @@
         {
           "id": "chinese_7day_d02_q005",
           "type": "chinese",
-          "sectionTitle": "第一单元",
-          "prompt": "猜字谜：“言”来互相尊重，“心”至令人感动，“日”出万里无云，“水”到纯净透明。谜底：/r",
+          "sectionTitle": "猜字谜",
+          "prompt": "“言”来互相尊重，“心”至令人感动，“日”出万里无云，“水”到纯净透明。谜底：/r",
           "answers": [
             "青"
           ],
@@ -3705,7 +3655,7 @@
         {
           "id": "chinese_7day_d02_q006",
           "type": "choice",
-          "sectionTitle": "第二单元",
+          "sectionTitle": "回忆课文并完成下面练习",
           "prompt": "《吃水不忘挖井人》中，“挖井人”指的是谁？",
           "options": [
             "乡亲们",
@@ -3720,14 +3670,17 @@
         },
         {
           "id": "chinese_7day_d02_q007",
-          "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "《四个太阳》中，“我”画了个红红的太阳送给/r，画了个金黄的太阳送给/r，画了个绿绿的太阳送给/r，画个彩色的太阳送给/r。\n①夏天 ②秋天 ③冬天 ④春天",
+          "type": "inline_choice",
+          "sectionTitle": "回忆课文并完成下面练习",
+          "prompt": "《四个太阳》中，“我”画了个红红的太阳送给/r，画了个金黄的太阳送给/r，画了个绿绿的太阳送给/r，画个彩色的太阳送给/r。",
+          "blankChoices": [
+             ["①夏天", "②秋天", "③冬天", "④春天"]
+          ],
           "answers": [
-            "③",
-            "②",
-            "①",
-            "④"
+            "③冬天",
+            "②秋天",
+            "①夏天",
+            "④春天"
           ],
           "answerSource": "auto",
           "images": []
@@ -3735,8 +3688,8 @@
         {
           "id": "chinese_7day_d02_q008",
           "type": "chinese",
-          "sectionTitle": "第二单元",
-          "prompt": "回顾《我多想去看看》：/r有天安门，广场上有壮观的升旗仪式。",
+          "sectionTitle": "回顾《我多想去看看》",
+          "prompt": "/r有天安门，广场上有壮观的升旗仪式。",
           "answers": [
             "北京"
           ],
@@ -3746,8 +3699,8 @@
         {
           "id": "chinese_7day_d02_q009",
           "type": "choice",
-          "sectionTitle": "第二单元",
-          "prompt": "新疆有什么呢？根据课文内容选择。",
+          "sectionTitle": "根据课文内容选择。",
+          "prompt": "新疆有什么呢？",
           "options": [
             "天山",
             "长城",
@@ -3764,13 +3717,16 @@
         },
         {
           "id": "chinese_7day_d02_q010",
-          "type": "chinese",
-          "sectionTitle": "第三单元",
-          "prompt": "在《小公鸡和小鸭子》一文中，小公鸡捉/r给小鸭子吃，/r救了/r。\n①小公鸡 ②小鸭子 ③小虫子 ④鱼",
+          "type": "inline_choice",
+          "sectionTitle": "根据课文内容选择。",
+          "prompt": "在《小公鸡和小鸭子》一文中，小公鸡捉/r给小鸭子吃，/r救了/r。",
+          "blankChoices": [
+             ["①小公鸡", "②小鸭子", "③小虫子", "④鱼"]
+          ],
           "answers": [
-            "③",
-            "②",
-            "①"
+            "③小虫子",
+            "②小鸭子",
+            "①小公鸡"
           ],
           "answerSource": "auto",
           "images": []
@@ -3778,7 +3734,7 @@
         {
           "id": "chinese_7day_d02_q011",
           "type": "choice",
-          "sectionTitle": "第三单元",
+          "sectionTitle": "根据课文内容选择。",
           "prompt": "树和喜鹊后来很快乐的原因是什么？",
           "options": [
             "树和喜鹊天天聊天，很快乐",
@@ -3794,7 +3750,7 @@
         {
           "id": "chinese_7day_d02_q012",
           "type": "choice",
-          "sectionTitle": "第三单元",
+          "sectionTitle": "根据课文内容选择。",
           "prompt": "在《怎么都快乐》中，为什么说“许多人玩，更好”？",
           "options": [
             "因为许多人在一起，可以玩更多的游戏，会更加快乐。",
@@ -3808,13 +3764,16 @@
         },
         {
           "id": "chinese_7day_d02_q013",
-          "type": "chinese",
-          "sectionTitle": "第四单元",
-          "prompt": "《静夜思》是/r代诗人/r写的。诗人看到/r，想起了自己的故乡。\n①雪花 ②霜 ③月光",
+          "type": "inline_choice",
+          "sectionTitle": "根据课文内容选择。",
+          "prompt": "《静夜思》是/r代诗人/r写的。诗人看到/r，想起了自己的故乡。",
+          "blankChoices": [
+            ["唐","李白","雪花", "霜", "月光"]
+          ],
           "answers": [
             "唐",
             "李白",
-            "③"
+            "月光"
           ],
           "answerSource": "auto",
           "images": []
@@ -3822,7 +3781,7 @@
         {
           "id": "chinese_7day_d02_q014",
           "type": "choice",
-          "sectionTitle": "第四单元",
+          "sectionTitle": "根据课文内容选择。",
           "prompt": "《夜色》中，爸爸晚上非要拉“我”去散步的原因是什么？",
           "options": [
             "锻炼“我”的胆量",
@@ -3838,7 +3797,7 @@
         {
           "id": "chinese_7day_d02_q015",
           "type": "choice",
-          "sectionTitle": "第四单元",
+          "sectionTitle": "根据课文内容选择。",
           "prompt": "学完《端午粽》，我知道端午节的习俗是什么？",
           "options": [
             "吃粽子",
@@ -3855,7 +3814,7 @@
         {
           "id": "chinese_7day_d02_q016",
           "type": "match",
-          "sectionTitle": "第四单元",
+          "sectionTitle": "连一连",
           "prompt": "根据《彩虹》一文，连一连。",
           "left": [
             "水壶洒水像",
@@ -3879,7 +3838,7 @@
           "id": "chinese_7day_d02_q017",
           "type": "chinese",
           "sectionTitle": "第四单元",
-          "prompt": "你眼中的彩虹是什么样子的？大胆想象，写一写。\n/r",
+          "prompt": "你眼中的彩虹是什么样子的？大胆想象，写一写。/r",
           "answers": [
             ""
           ],
@@ -3889,7 +3848,7 @@
         {
           "id": "chinese_7day_d02_q018",
           "type": "match",
-          "sectionTitle": "第五单元",
+          "sectionTitle": "连一连",
           "prompt": "动物们会做什么呢？根据《动物儿歌》一文，连一连。",
           "left": [
             "蜻蜓",
@@ -3918,7 +3877,7 @@
         {
           "id": "chinese_7day_d02_q019",
           "type": "match",
-          "sectionTitle": "第五单元",
+          "sectionTitle": "连一连",
           "prompt": "对一对，连一连。",
           "left": [
             "圆",
@@ -3955,40 +3914,47 @@
         },
         {
           "id": "chinese_7day_d02_q020",
-          "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "同学们/r，在/r锻炼身体。\n①上课时 ②下课后 ③操场上 ④教室里",
+          "type": "inline_choice",
+          "sectionTitle": "选择正确的选项",
+          "prompt": "同学们/r，在/r锻炼身体。",
+           "blankChoices": [
+            ["①上课时", "②下课后", "③操场上", "④教室里"]
+          ],
+
           "answers": [
-            "②",
-            "③"
+            "②下课后",
+            "③操场上"
           ],
           "answerSource": "auto",
           "images": []
         },
         {
           "id": "chinese_7day_d02_q021",
-          "type": "chinese",
-          "sectionTitle": "第五单元",
-          "prompt": "根据意思选择句子。\n①幼不学，老何为？ ②人不学，不知义。\n人若不学习，就不懂得礼仪，不能成材。/r\n小时候不好好学习，到老的时候，什么都没有学到，能有什么用呢？/r",
-          "answers": [
-            "②",
-            "①"
+          "type": "inline_choice",
+          "sectionTitle": "根据意思选择句子",
+          "prompt": " 人若不学习，就不懂得礼仪，不能成材。/r\n小时候不好好学习，到老的时候，什么都没有学到，能有什么用呢？/r",
+          "blankChoices": [
+            ["①幼不学，老何为？", "②人不学，不知义。"]
           ],
-          "answerSource": "auto",
+          "answers": [
+            "②人不学，不知义。",
+            "①幼不学，老何为？"
+          ],
+          "answerSource": "manual_required",
           "images": []
         },
         {
           "id": "chinese_7day_d02_q022",
           "type": "match",
-          "sectionTitle": "第六单元",
-          "prompt": "根据对《池上》《小池》的学习，连一连。",
+          "sectionTitle": "连一连，并填空",
+          "prompt": "《池上》《小池》",
           "left": [
             "《池上》",
             "《小池》"
           ],
           "right": [
-            "唐代 白居易",
-            "宋代 杨万里"
+            "唐代白居易",
+            "宋代杨万里"
           ],
           "answers": [
             "0",
@@ -4000,7 +3966,7 @@
         {
           "id": "chinese_7day_d02_q023",
           "type": "chinese",
-          "sectionTitle": "第六单元",
+          "sectionTitle": "连一连，并填空",
           "prompt": "这两首诗描写的都是/r季的景色，这两首诗都描写的景物有/r。",
           "answers": [
             "夏",
@@ -4012,8 +3978,8 @@
         {
           "id": "chinese_7day_d02_q024",
           "type": "match",
-          "sectionTitle": "第六单元",
-          "prompt": "连一连，读一读，再填空。",
+          "sectionTitle": "连一连，并填空",
+          "prompt": "荷叶是：",
           "left": [
             "小蜻蜓的",
             "小水珠的",
@@ -4038,7 +4004,7 @@
         {
           "id": "chinese_7day_d02_q025",
           "type": "chinese",
-          "sectionTitle": "第六单元",
+          "sectionTitle": "连一连，并填空",
           "prompt": "荷叶是小朋友们的/r。",
           "answers": [
             ""
@@ -4049,7 +4015,7 @@
         {
           "id": "chinese_7day_d02_q026",
           "type": "match",
-          "sectionTitle": "第六单元",
+          "sectionTitle": "连一连，并填空",
           "prompt": "要下雨了，小动物们在忙着干什么呢？连一连。",
           "left": [
             "燕子",
@@ -4072,8 +4038,8 @@
         {
           "id": "chinese_7day_d02_q027",
           "type": "chinese",
-          "sectionTitle": "第六单元",
-          "prompt": "你还知道动物的哪些行为说明要下雨了？\n/r",
+          "sectionTitle": "连一连，并填空",
+          "prompt": "你还知道动物的哪些行为说明要下雨了？/r",
           "answers": [
             ""
           ],
@@ -4083,8 +4049,8 @@
         {
           "id": "chinese_7day_d02_q028",
           "type": "choice",
-          "sectionTitle": "第七单元",
-          "prompt": "哪些事物应该放在文具盒里？",
+          "sectionTitle": "哪些事物应该放在文具盒里？",
+          "prompt": "",
           "options": [
             "橡皮",
             "铅笔",
@@ -4108,30 +4074,20 @@
         {
           "id": "chinese_7day_d02_q029",
           "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "元元多睡了/r分钟，结果迟到了/r分钟。",
+          "sectionTitle": "根据课文内容填写",
+          "prompt": "元元多睡了/r分钟，结果迟到了/r分钟。我想对元元说：“元元，/r。",
           "answers": [
             "一",
             "二十"
           ],
-          "answerSource": "auto",
-          "images": []
-        },
-        {
-          "id": "chinese_7day_d02_q030",
-          "type": "chinese",
-          "sectionTitle": "第七单元",
-          "prompt": "我想对元元说：“元元，/r。”",
-          "answers": [
-            ""
-          ],
           "answerSource": "manual_required",
           "images": []
         },
+
         {
           "id": "chinese_7day_d02_q031",
           "type": "choice",
-          "sectionTitle": "第七单元",
+          "sectionTitle": "根据课文内容填写",
           "prompt": "小猴子为什么最后空着手回家了？",
           "options": [
             "因为东西太多了，拿不了。",
@@ -4146,7 +4102,7 @@
         {
           "id": "chinese_7day_d02_q032",
           "type": "choice",
-          "sectionTitle": "第七单元",
+          "sectionTitle": "根据课文内容填写",
           "prompt": "学了《动物王国开大会》，我们知道了什么？",
           "options": [
             "要多说几遍会议内容。",
@@ -4161,14 +4117,18 @@
         },
         {
           "id": "chinese_7day_d02_q033",
-          "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "回忆《棉花姑娘》，选一选。\n①燕子 ②七星瓢虫 ③青蛙 ④啄木鸟\n/r捉田里的害虫。/r捉空中的害虫。/r捉树干里的害虫。/r捉棉花叶子上的害虫。",
+          "type": "inline_choice",
+          "sectionTitle": "根据课文内容填写",
+          "prompt": "回忆《棉花姑娘》，选一选。\n/r捉田里的害虫。/r捉空中的害虫。/r捉树干里的害虫。/r捉棉花叶子上的害虫。",
+           "blankChoices": [
+            ["①燕子", "②七星瓢虫", "③青蛙", "④啄木鸟"]
+          ],
+
           "answers": [
-            "③",
-            "①",
-            "④",
-            "②"
+            "③青蛙",
+            "①燕子",
+            "④啄木鸟",
+            "②七星瓢虫"
           ],
           "answerSource": "auto",
           "images": []
@@ -4176,8 +4136,8 @@
         {
           "id": "chinese_7day_d02_q034",
           "type": "chinese",
-          "sectionTitle": "第八单元",
-          "prompt": "回顾《咕咚》，完成填空。《咕咚》是一篇有趣的/r故事，告诉我们：听到或遇到任何事情，一定要动脑想想或去实地看看，不要盲目地跟随/r。",
+          "sectionTitle": "根据课文内容填写",
+          "prompt": "回顾《咕咚》，完成填空。\n《咕咚》是一篇有趣的/r故事，告诉我们：听到或遇到任何事情，一定要动脑想想或去实地看看，不要盲目地跟随/r。",
           "answers": [
             "童话",
             "别人"
@@ -4188,13 +4148,13 @@
         {
           "id": "chinese_7day_d02_q035",
           "type": "match",
-          "sectionTitle": "第八单元",
+          "sectionTitle": "根据课文内容填写",
           "prompt": "回忆《小壁虎借尾巴》，想想这些动物尾巴的作用，再连一连。",
           "left": [
-            "挣断尾巴",
-            "摆着尾巴",
-            "摇着尾巴",
-            "甩着尾巴"
+            "壁虎挣断尾巴",
+            "鱼儿摆着尾巴",
+            "燕子摇着尾巴",
+            "牛儿甩着尾巴"
           ],
           "right": [
             "赶蝇子",
@@ -4215,13 +4175,39 @@
     },
     {
       "day": 1,
-      "title": "考前第01天",
+      "title": "考前第1天",
       "questions": [
+        {
+          "id": "chinese_7day_d01_f001",
+          "type": "match",
+          "sectionTitle": "先将大小写字母连线",
+          "prompt": "",
+         "left": [
+            "H",
+            "Z",
+            "V",
+            "M",
+            "A",
+            "G",
+            "Q"
+          ],
+          "right": [
+            "z",
+            "v",
+            "a",
+            "g",
+            "q",
+            "h",
+            "m"
+          ],
+          "answerSource": "manual_required",
+          "images": []
+        },
         {
           "id": "chinese_7day_d01_q001",
           "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "先将大小写字母连线，再把小写字母按字母表顺序排列。\n大写：H Z V M A G\n小写：z v a g q h m\n排序：/r",
+          "sectionTitle": "连一连",
+          "prompt": "把上面的小写字母按字母表顺序排列。",
           "answers": [
             "a g h m q v z"
           ],
@@ -4231,7 +4217,7 @@
         {
           "id": "chinese_7day_d01_q002",
           "type": "choice",
-          "sectionTitle": "一、生字练习",
+          "sectionTitle": "选择正确的选项",
           "prompt": "“姓氏”的正确读音是哪一项？",
           "options": [
             "xìng shì",
@@ -4246,7 +4232,7 @@
         {
           "id": "chinese_7day_d01_q003",
           "type": "choice",
-          "sectionTitle": "一、生字练习",
+          "sectionTitle": "选择正确的选项",
           "prompt": "“翅膀”的正确读音是哪一项？",
           "options": [
             "chì bǎn",
@@ -4261,7 +4247,7 @@
         {
           "id": "chinese_7day_d01_q004",
           "type": "choice",
-          "sectionTitle": "一、生字练习",
+          "sectionTitle": "选择正确的选项",
           "prompt": "“柳树”的正确读音是哪一项？",
           "options": [
             "liǔ shù",
@@ -4276,7 +4262,7 @@
         {
           "id": "chinese_7day_d01_q005",
           "type": "choice",
-          "sectionTitle": "一、生字练习",
+          "sectionTitle": "选择正确的选项",
           "prompt": "“决定”的正确读音是哪一项？",
           "options": [
             "jué dìng",
@@ -4291,8 +4277,8 @@
         {
           "id": "chinese_7day_d01_q006",
           "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "给句子中加点的字注音：星期天，空/r气清新，妈妈有空/r带我去爬山。",
+          "sectionTitle": "生字注音",
+          "prompt": "星期天，（空）/r气清新，妈妈有（空）/r带我去爬山。",
           "answers": [
             "kōng",
             "kòng"
@@ -4303,8 +4289,8 @@
         {
           "id": "chinese_7day_d01_q007",
           "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "给句子中加点的字注音：公园里，人们随着优美的乐/r曲翩翩起舞，快乐/r极了。",
+          "sectionTitle": "生字注音",
+          "prompt": "公园里，人们随着优美的（乐）/r曲翩翩起舞，快（乐）/r极了。",
           "answers": [
             "yuè",
             "lè"
@@ -4315,8 +4301,8 @@
         {
           "id": "chinese_7day_d01_q008",
           "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "给句子中加点的字注音：爷爷睡醒一觉/r，觉/r得舒服多了。",
+          "sectionTitle": "生字注音",
+          "prompt": "爷爷睡醒一（觉）/r，（觉）/r得舒服多了。",
           "answers": [
             "jiào",
             "jué"
@@ -4326,31 +4312,27 @@
         },
         {
           "id": "chinese_7day_d01_q009",
-          "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "选字填空：我经常/r大院里和小朋友们玩耍。",
+          "type": "inline_choice",
+          "sectionTitle": "选择正确的选项",
+          "prompt": "我经常/r大院里和小朋友们玩耍。\n当我/r一次回到家乡，我发现家乡更美了。",
+           "blankChoices": [
+            ["在", "再"]
+          ],
           "answers": [
-            "在"
+            "在","再"
           ],
           "answerSource": "auto",
           "images": []
         },
-        {
-          "id": "chinese_7day_d01_q010",
-          "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "选字填空：当我/r一次回到家乡，我发现家乡更美了。",
-          "answers": [
-            "再"
-          ],
-          "answerSource": "auto",
-          "images": []
-        },
+
         {
           "id": "chinese_7day_d01_q011",
-          "type": "chinese",
-          "sectionTitle": "一、生字练习",
-          "prompt": "选字填空：今天，天气/r，池水/r，心/r好，小草/r，/r你来。",
+          "type": "inline_choice",
+          "sectionTitle": "选择正确的选项",
+          "prompt": "今天，天气/r，池水/r，心/r好，小草/r，/r你来。",
+          "blankChoices": [
+            ["青", "清","请","情","晴"]
+          ],
           "answers": [
             "晴",
             "清",
@@ -4364,8 +4346,8 @@
         {
           "id": "chinese_7day_d01_q012",
           "type": "chinese",
-          "sectionTitle": "二、词语闯关",
-          "prompt": "看拼音写词语：duǒ měi huā\n小鱼儿游来游去，捧起一/r/r的水/r。",
+          "sectionTitle": "词语闯关",
+          "prompt": "  小鱼儿游来游去，捧起一(duǒ)/r(měi)/r的水(huā)/r。",
           "answers": [
             "朵",
             "美丽",
@@ -4377,8 +4359,8 @@
         {
           "id": "chinese_7day_d01_q013",
           "type": "chinese",
-          "sectionTitle": "二、词语闯关",
-          "prompt": "看拼音写词语：tài yáng、fāng、huǒ bàn、xué xiào、pǎo bù\n早晨，/r从东/r升起，小/r们来到/r操场上，一起/r。",
+          "sectionTitle": "词语闯关",
+          "prompt": "早晨，(tài yáng)/r从东(fāng)/r升起，小(huǒ bàn)/r们来到(xué xiào)/r操场上，一起(pǎo bù)/r。",
           "answers": [
             "太阳",
             "方",
@@ -4392,8 +4374,8 @@
         {
           "id": "chinese_7day_d01_q014",
           "type": "chinese",
-          "sectionTitle": "二、词语闯关",
-          "prompt": "看拼音写词语：fēi cháng、zhōng、jiě jie\n我/r喜欢这个闹/r，这是/r送我的。",
+          "sectionTitle": "词语闯关",
+          "prompt": "我(fēi cháng)/r喜欢这个闹(zhōng)/r，这是(jiě jie)/r送我的。",
           "answers": [
             "非常",
             "钟",
@@ -4405,8 +4387,8 @@
         {
           "id": "chinese_7day_d01_q014_word_group",
           "type": "chinese",
-          "sectionTitle": "二、词语闯关",
-          "prompt": "照样子，一字组多词。例：新——新书。\n请给“微”组两个词：/r、/r。\n请给“做”组两个词：/r、/r。",
+          "sectionTitle": "一字组多词",
+          "prompt": "请给“新”组3个词：/r、/r。\n请给“微”组3个词：/r、/r、/r。\n请给“做”组两个词：/r、/r、/r。",
           "answers": [
             "",
             "",
@@ -4419,7 +4401,7 @@
         {
           "id": "chinese_7day_d01_q015",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
+          "sectionTitle": "按要求完成句子练习",
           "prompt": "照样子写句子：燕子阿姨，您把尾巴借给我行吗？\n/r行吗？",
           "answers": [
             ""
@@ -4430,7 +4412,7 @@
         {
           "id": "chinese_7day_d01_q016",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
+          "sectionTitle": "按要求完成句子练习",
           "prompt": "照样子写句子：小狗在草丛里一边跑，一边叫。\n/r一边/r，一边/r。",
           "answers": [
             "",
@@ -4443,8 +4425,8 @@
         {
           "id": "chinese_7day_d01_q017",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
-          "prompt": "连词成句，并加上标点符号：飞过了  蜻蜓  草坪  青青的\n/r",
+          "sectionTitle": "按要求完成句子练习",
+          "prompt": "连词成句，并加上标点符号：\n飞过了  蜻蜓  草坪  青青的/r",
           "answers": [
             "蜻蜓飞过了青青的草坪。"
           ],
@@ -4454,7 +4436,7 @@
         {
           "id": "chinese_7day_d01_q018",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
+          "sectionTitle": "按要求完成句子练习",
           "prompt": "给句子加标点：今天/r我和小伙伴们一起去荡秋千/r",
           "answers": [
             "，",
@@ -4466,7 +4448,7 @@
         {
           "id": "chinese_7day_d01_q019",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
+          "sectionTitle": "按要求完成句子练习",
           "prompt": "给句子加标点：这里的风景真美啊/r 你怎么哭了呢/r",
           "answers": [
             "！",
@@ -4478,7 +4460,7 @@
         {
           "id": "chinese_7day_d01_q020",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
+          "sectionTitle": "按要求完成句子练习",
           "prompt": "大胆想象，照样子写句子：爸爸说：“大海是鱼儿的家。”\n我说：“/r是小鸟的家。”",
           "answers": [
             ""
@@ -4489,7 +4471,7 @@
         {
           "id": "chinese_7day_d01_q021",
           "type": "chinese",
-          "sectionTitle": "三、按要求完成句子练习",
+          "sectionTitle": "按要求完成句子练习",
           "prompt": "大胆想象，照样子写句子：我还会说：“/r是/r的家。”",
           "answers": [
             "",
@@ -4501,7 +4483,7 @@
         {
           "id": "chinese_7day_d01_q022",
           "type": "choice",
-          "sectionTitle": "四、日积月累",
+          "sectionTitle": "日积月累",
           "prompt": "傍晚，彩霞满天，我想明天一定是晴天。因为“（ ）”。",
           "options": [
             "有雨山戴帽，无雨半山腰",
@@ -4518,7 +4500,7 @@
         {
           "id": "chinese_7day_d01_q023",
           "type": "match",
-          "sectionTitle": "四、日积月累",
+          "sectionTitle": "日积月累",
           "prompt": "读一读，连一连。",
           "left": [
             "不知则问",
@@ -4528,10 +4510,7 @@
           "right": [
             "不能则学",
             "而义自见",
-            "行万里路",
-            "董其昌",
-            "《荀子》",
-            "董遇"
+            "行万里路"
           ],
           "answers": [
             "0",
@@ -4544,7 +4523,7 @@
         {
           "id": "chinese_7day_d01_q024",
           "type": "choice",
-          "sectionTitle": "四、日积月累",
+          "sectionTitle": "日积月累",
           "prompt": "把歇后语补充完整：小葱拌豆腐——（ ）",
           "options": [
             "七上八下",
@@ -4561,7 +4540,7 @@
         {
           "id": "chinese_7day_d01_q025",
           "type": "choice",
-          "sectionTitle": "四、日积月累",
+          "sectionTitle": "日积月累",
           "prompt": "把歇后语补充完整：竹篮子打水——（ ）",
           "options": [
             "七上八下",
@@ -4578,7 +4557,7 @@
         {
           "id": "chinese_7day_d01_q026",
           "type": "choice",
-          "sectionTitle": "四、日积月累",
+          "sectionTitle": "日积月累",
           "prompt": "把歇后语补充完整：芝麻开花——（ ）",
           "options": [
             "七上八下",
@@ -4595,7 +4574,7 @@
         {
           "id": "chinese_7day_d01_q027",
           "type": "choice",
-          "sectionTitle": "四、日积月累",
+          "sectionTitle": "日积月累",
           "prompt": "把歇后语补充完整：十五个吊桶打水——（ ）",
           "options": [
             "七上八下",
