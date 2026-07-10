@@ -1,11 +1,26 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/worksheet_models.dart';
 
+typedef WorksheetAssetLoader = Future<String> Function(String asset);
+typedef WorksheetRemoteFetcher = Future<String> Function(Uri uri);
+
+const String defaultWorksheetRemoteCatalogUrl =
+    'http://8.163.115.183/guoguo/worksheets/index.json';
+
 class WorksheetService {
+  WorksheetService({
+    String? remoteCatalogUrl,
+    WorksheetAssetLoader? assetLoader,
+    WorksheetRemoteFetcher? remoteFetcher,
+  }) : remoteCatalogUrl = remoteCatalogUrl ?? defaultWorksheetRemoteCatalogUrl,
+       _assetLoader = assetLoader ?? rootBundle.loadString,
+       _remoteFetcher = remoteFetcher ?? _fetchRemoteText;
+
   static const String catalogAsset = 'assets/worksheets/index.json';
   static const String defaultAsset =
       'assets/worksheets/generated/math_daily_20_full.json';
@@ -14,11 +29,19 @@ class WorksheetService {
   );
   static const String _importedCatalogKey = 'imported_worksheet_catalog';
   static const String _localAssetPrefix = 'local:';
+  static const String _remoteAssetPrefix = 'remote:';
+  static const String _remoteCatalogCacheKey = 'remote_worksheet_catalog_v1';
+
+  final String remoteCatalogUrl;
+  final WorksheetAssetLoader _assetLoader;
+  final WorksheetRemoteFetcher _remoteFetcher;
 
   static String _progressKey(String worksheetId) =>
       'worksheet_progress_$worksheetId';
   static String _worksheetKey(String worksheetId) =>
       'imported_worksheet_$worksheetId';
+  static String _remoteWorksheetKey(String worksheetId) =>
+      'remote_worksheet_$worksheetId';
 
   // ===== v1.0 格式规范常量 =====
   static const Set<String> _validTypes = {
@@ -78,7 +101,7 @@ class WorksheetService {
   };
 
   Future<List<WorksheetCatalogItem>> loadCatalog() async {
-    final raw = await rootBundle.loadString(catalogAsset);
+    final raw = await _assetLoader(catalogAsset);
     final json = jsonDecode(raw) as Map<String, dynamic>;
     final bundled = (json['sets'] as List<dynamic>? ?? const [])
         .map(
@@ -86,15 +109,17 @@ class WorksheetService {
         )
         .toList();
     final prefs = await SharedPreferences.getInstance();
+    final remote = await _loadRemoteCatalog(prefs);
     final importedRaw = prefs.getString(_importedCatalogKey);
-    if (importedRaw == null || importedRaw.isEmpty) return bundled;
-    final importedJson = jsonDecode(importedRaw) as List<dynamic>;
-    final imported = importedJson
-        .map(
-          (item) => WorksheetCatalogItem.fromJson(item as Map<String, dynamic>),
-        )
-        .toList();
-    return [...imported, ...bundled];
+    final imported = importedRaw == null || importedRaw.isEmpty
+        ? <WorksheetCatalogItem>[]
+        : (jsonDecode(importedRaw) as List<dynamic>)
+              .map(
+                (item) =>
+                    WorksheetCatalogItem.fromJson(item as Map<String, dynamic>),
+              )
+              .toList();
+    return _mergeCatalogs([imported, remote, bundled]);
   }
 
   Future<WorksheetSet> loadWorksheet(String asset) async {
@@ -107,7 +132,10 @@ class WorksheetService {
       }
       return WorksheetSet.fromJson(jsonDecode(raw) as Map<String, dynamic>);
     }
-    final raw = await rootBundle.loadString(asset);
+    if (asset.startsWith(_remoteAssetPrefix)) {
+      return _loadRemoteWorksheet(asset);
+    }
+    final raw = await _assetLoader(asset);
     return WorksheetSet.fromJson(jsonDecode(raw) as Map<String, dynamic>);
   }
 
@@ -444,6 +472,155 @@ class WorksheetService {
       'english' => '英语',
       _ => subject.isEmpty ? '综合' : subject,
     };
+  }
+
+  Future<List<WorksheetCatalogItem>> _loadRemoteCatalog(
+    SharedPreferences prefs,
+  ) async {
+    final urlText = remoteCatalogUrl.trim();
+    if (urlText.isEmpty) return _loadCachedRemoteCatalog(prefs);
+
+    try {
+      final catalogUri = Uri.parse(urlText);
+      final raw = await _remoteFetcher(catalogUri);
+      final items = _parseRemoteCatalog(raw, catalogUri);
+      await prefs.setString(
+        _remoteCatalogCacheKey,
+        jsonEncode(items.map((item) => item.toJson()).toList()),
+      );
+      return items;
+    } catch (_) {
+      return _loadCachedRemoteCatalog(prefs);
+    }
+  }
+
+  List<WorksheetCatalogItem> _parseRemoteCatalog(String raw, Uri catalogUri) {
+    final decoded = jsonDecode(raw);
+    if (decoded is! Map<String, dynamic>) return const [];
+    final baseUrlText = decoded['baseUrl']?.toString().trim() ?? '';
+    final baseUri = baseUrlText.isEmpty
+        ? catalogUri.resolve('.')
+        : _directoryUri(Uri.parse(baseUrlText));
+    final sets = decoded['sets'] as List<dynamic>? ?? const [];
+
+    return sets
+        .whereType<Map<String, dynamic>>()
+        .map((item) {
+          final id = item['id']?.toString().trim() ?? '';
+          if (id.isEmpty) return null;
+          final assetText = item['asset']?.toString().trim() ?? '';
+          final worksheetUri = _resolveRemoteWorksheetUri(
+            baseUri: baseUri,
+            worksheetId: id,
+            asset: assetText,
+          );
+          return WorksheetCatalogItem.fromJson({
+            ...item,
+            'asset': '$_remoteAssetPrefix$id|$worksheetUri',
+          });
+        })
+        .whereType<WorksheetCatalogItem>()
+        .toList();
+  }
+
+  Future<List<WorksheetCatalogItem>> _loadCachedRemoteCatalog(
+    SharedPreferences prefs,
+  ) async {
+    final raw = prefs.getString(_remoteCatalogCacheKey);
+    if (raw == null || raw.isEmpty) return const [];
+    try {
+      return (jsonDecode(raw) as List<dynamic>)
+          .map(
+            (item) =>
+                WorksheetCatalogItem.fromJson(item as Map<String, dynamic>),
+          )
+          .toList();
+    } catch (_) {
+      return const [];
+    }
+  }
+
+  List<WorksheetCatalogItem> _mergeCatalogs(
+    List<List<WorksheetCatalogItem>> groups,
+  ) {
+    final result = <WorksheetCatalogItem>[];
+    final seen = <String>{};
+    for (final group in groups) {
+      for (final item in group) {
+        final id = item.id.trim();
+        if (id.isEmpty || seen.contains(id)) continue;
+        seen.add(id);
+        result.add(item);
+      }
+    }
+    return result;
+  }
+
+  Future<WorksheetSet> _loadRemoteWorksheet(String asset) async {
+    final remote = _parseRemoteAsset(asset);
+    final prefs = await SharedPreferences.getInstance();
+    try {
+      final raw = await _remoteFetcher(remote.uri);
+      final worksheet = WorksheetSet.fromJson(
+        jsonDecode(raw) as Map<String, dynamic>,
+      );
+      final cacheId = worksheet.id.trim().isEmpty ? remote.id : worksheet.id;
+      await prefs.setString(_remoteWorksheetKey(cacheId), raw);
+      if (cacheId != remote.id) {
+        await prefs.setString(_remoteWorksheetKey(remote.id), raw);
+      }
+      return worksheet;
+    } catch (_) {
+      final cached = prefs.getString(_remoteWorksheetKey(remote.id));
+      if (cached == null || cached.isEmpty) rethrow;
+      return WorksheetSet.fromJson(jsonDecode(cached) as Map<String, dynamic>);
+    }
+  }
+
+  ({String id, Uri uri}) _parseRemoteAsset(String asset) {
+    final body = asset.substring(_remoteAssetPrefix.length);
+    final splitIndex = body.indexOf('|');
+    if (splitIndex <= 0 || splitIndex == body.length - 1) {
+      throw FormatException('Invalid remote worksheet asset: $asset');
+    }
+    return (
+      id: body.substring(0, splitIndex),
+      uri: Uri.parse(body.substring(splitIndex + 1)),
+    );
+  }
+
+  Uri _resolveRemoteWorksheetUri({
+    required Uri baseUri,
+    required String worksheetId,
+    required String asset,
+  }) {
+    if (asset.startsWith('http://') || asset.startsWith('https://')) {
+      return Uri.parse(asset);
+    }
+    final relative = asset.isEmpty ? 'generated/$worksheetId.json' : asset;
+    return baseUri.resolve(relative);
+  }
+
+  static Uri _directoryUri(Uri uri) {
+    final text = uri.toString();
+    return text.endsWith('/') ? uri : Uri.parse('$text/');
+  }
+
+  static Future<String> _fetchRemoteText(Uri uri) async {
+    final client = HttpClient();
+    client.connectionTimeout = const Duration(seconds: 4);
+    try {
+      final request = await client.getUrl(uri);
+      request.headers.set(HttpHeaders.acceptHeader, 'application/json');
+      final response = await request.close();
+      final body = await utf8.decodeStream(response);
+      if (response.statusCode < 200 || response.statusCode >= 300) {
+        throw HttpException('HTTP ${response.statusCode}', uri: uri);
+      }
+      return body;
+    } finally {
+      client.close(force: true);
+    }
   }
 }
 

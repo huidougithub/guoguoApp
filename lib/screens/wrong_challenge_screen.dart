@@ -2,7 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../data/app_data.dart';
 import '../models/app_models.dart';
+import '../services/ai_service.dart';
 import '../services/app_store.dart';
 import '../services/audio_service.dart';
 import '../services/question_factory.dart';
@@ -18,9 +20,17 @@ class WrongChallengeScreen extends StatefulWidget {
 }
 
 class _WrongChallengeScreenState extends State<WrongChallengeScreen> {
+  final aiService = AiService();
   WrongItem? activeItem;
   Question? activeQuestion;
   String message = '有错题就可以练习；每5道错题会形成一个挑战组。';
+  bool aiLoading = false;
+
+  @override
+  void dispose() {
+    aiService.close();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -69,6 +79,21 @@ class _WrongChallengeScreenState extends State<WrongChallengeScreen> {
                                   subtitle: Text(
                                     '答错${item.wrongCount}次，连续答对${item.variantCorrectStreak}/3',
                                   ),
+                                  trailing: IconButton(
+                                    tooltip: 'AI讲解',
+                                    icon: aiLoading && activeItem == item
+                                        ? const SizedBox(
+                                            width: 22,
+                                            height: 22,
+                                            child: CircularProgressIndicator(
+                                              strokeWidth: 2.4,
+                                            ),
+                                          )
+                                        : const Icon(Icons.auto_awesome),
+                                    onPressed: aiLoading
+                                        ? null
+                                        : () => _explainWithAi(item),
+                                  ),
                                   onTap: () => _start(item),
                                 );
                               },
@@ -85,12 +110,15 @@ class _WrongChallengeScreenState extends State<WrongChallengeScreen> {
                   ? SoftCard(
                       color: const Color(0xFFFFC6D9),
                       child: Center(
-                        child: Text(
-                          message,
-                          textAlign: TextAlign.center,
-                          style: const TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w900,
+                        child: SingleChildScrollView(
+                          child: Text(
+                            message,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontSize: 24,
+                              height: 1.45,
+                              fontWeight: FontWeight.w900,
+                            ),
                           ),
                         ),
                       ),
@@ -113,6 +141,41 @@ class _WrongChallengeScreenState extends State<WrongChallengeScreen> {
       activeQuestion = QuestionFactory().buildVariant(item);
       message = '变式题来了，连续答对3次就能移出错题本。';
     });
+  }
+
+  Future<void> _explainWithAi(WrongItem item) async {
+    final question = item.originalQuestion;
+    setState(() {
+      activeItem = item;
+      activeQuestion = null;
+      aiLoading = true;
+      message = '果果正在看这道错题...';
+    });
+    try {
+      final result = await aiService.explainWrongItem(
+        subject: question.subject,
+        question: question.prompt,
+        studentAnswer: '曾答错',
+        correctAnswer: question.answer,
+        knowledgePoint: item.knowledgePoint,
+        gradeLabel: gradeName(normalizeGradeCode(widget.store.progress.selectedGrade)),
+      );
+      if (!mounted) return;
+      setState(() {
+        message = result.explanation;
+      });
+    } on AiServiceException catch (error) {
+      if (!mounted) return;
+      setState(() {
+        message = error.statusCode == 503
+            ? 'AI 服务还没有配置 DeepSeek API Key。配置完成后果果就能讲题。'
+            : '果果暂时没连上 AI 服务：${error.message}';
+      });
+    } finally {
+      if (mounted) {
+        setState(() => aiLoading = false);
+      }
+    }
   }
 
   Future<void> _answer(String choice) async {

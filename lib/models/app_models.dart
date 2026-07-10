@@ -387,7 +387,6 @@ class AppProgress {
     Map<String, int>? bestTimes,
     Map<String, int>? challengeHistory,
     Map<String, int>? realRewardRedemptions,
-    Map<String, List<List<double>>>? spotDifferenceOverrides,
     List<ParentChallenge>? parentChallenges,
   }) : levelStars = levelStars ?? {},
        completedLevels = completedLevels ?? {},
@@ -398,18 +397,10 @@ class AppProgress {
        unlockedCosmetics = unlockedCosmetics ?? {},
        equippedCosmetics = equippedCosmetics ?? {},
        settings =
-           settings ??
-           {
-             'music': true,
-             'sfx': true,
-             'parentReview': false,
-             'spotMarker': false,
-             'spotMarkerShowMarked': false,
-           },
+           settings ?? {'music': true, 'sfx': true, 'parentReview': false},
        bestTimes = bestTimes ?? {},
        challengeHistory = challengeHistory ?? {},
        realRewardRedemptions = realRewardRedemptions ?? {},
-       spotDifferenceOverrides = spotDifferenceOverrides ?? {},
        parentChallenges = parentChallenges ?? [];
 
   int? selectedGrade;
@@ -432,7 +423,6 @@ class AppProgress {
   final Map<String, int> bestTimes;
   final Map<String, int> challengeHistory;
   final Map<String, int> realRewardRedemptions;
-  final Map<String, List<List<double>>> spotDifferenceOverrides;
   final List<ParentChallenge> parentChallenges;
 
   int get petLevel {
@@ -478,7 +468,6 @@ class AppProgress {
     'bestTimes': bestTimes,
     'challengeHistory': challengeHistory,
     'realRewardRedemptions': realRewardRedemptions,
-    'spotDifferenceOverrides': spotDifferenceOverrides,
     'parentChallenges': parentChallenges
         .map((challenge) => challenge.toJson())
         .toList(),
@@ -528,8 +517,6 @@ class AppProgress {
       'music': true,
       'sfx': true,
       'parentReview': false,
-      'spotMarker': false,
-      'spotMarkerShowMarked': false,
       ...(json['settings'] as Map<dynamic, dynamic>? ?? const {}).map(
         (key, value) => MapEntry(key.toString(), value == true),
       ),
@@ -544,20 +531,6 @@ class AppProgress {
     realRewardRedemptions:
         (json['realRewardRedemptions'] as Map<dynamic, dynamic>? ?? const {})
             .map((key, value) => MapEntry(key.toString(), value as int)),
-    spotDifferenceOverrides:
-        (json['spotDifferenceOverrides'] as Map<dynamic, dynamic>? ?? const {})
-            .map((key, value) {
-              final points = <List<double>>[];
-              for (final point in value as List<dynamic>? ?? const []) {
-                if (point is List && point.length >= 2) {
-                  points.add([
-                    (point[0] as num).toDouble(),
-                    (point[1] as num).toDouble(),
-                  ]);
-                }
-              }
-              return MapEntry(key.toString(), points);
-            }),
     parentChallenges: (json['parentChallenges'] as List<dynamic>? ?? const [])
         .whereType<Map<dynamic, dynamic>>()
         .map((item) => ParentChallenge.fromJson(item.cast<String, dynamic>()))

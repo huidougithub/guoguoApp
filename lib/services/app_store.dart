@@ -425,41 +425,6 @@ class AppStore extends ChangeNotifier {
     await _saveAndNotify();
   }
 
-  Future<void> setSpotDifferenceOverride(
-    String assetKey,
-    List<List<double>> points,
-  ) async {
-    if (points.isEmpty) {
-      progress.spotDifferenceOverrides.remove(assetKey);
-    } else {
-      progress.spotDifferenceOverrides[assetKey] = points
-          .map((point) => [point[0].clamp(0.0, 1.0), point[1].clamp(0.0, 1.0)])
-          .toList();
-    }
-    await _saveAndNotify();
-  }
-
-  bool isSpotDifferenceCompleted(String assetKey) {
-    return progress.completedLevels.contains(_spotDifferenceKey(assetKey));
-  }
-
-  Future<void> completeSpotDifferenceLevel(String assetKey) async {
-    progress.completedLevels.add(_spotDifferenceKey(assetKey));
-    await _saveAndNotify();
-  }
-
-  Future<void> resetSpotDifferenceCycle(Iterable<String> assetKeys) async {
-    for (final assetKey in assetKeys) {
-      progress.completedLevels.remove(_spotDifferenceKey(assetKey));
-    }
-    await _saveAndNotify();
-  }
-
-  Future<void> clearSpotDifferenceOverride(String assetKey) async {
-    progress.spotDifferenceOverrides.remove(assetKey);
-    await _saveAndNotify();
-  }
-
   Future<void> resetProgress() async {
     progress = AppProgress();
     await _saveAndNotify();
@@ -579,6 +544,4 @@ class AppStore extends ChangeNotifier {
     await prefs.setInt(_schemaKey, schemaVersion);
     await prefs.setString(_progressKey, jsonEncode(progress.toJson()));
   }
-
-  String _spotDifferenceKey(String assetKey) => 'spot:$assetKey';
 }

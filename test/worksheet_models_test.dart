@@ -434,7 +434,7 @@ void main() {
 
   test('每日练习支持导入本地题库JSON并持久化', () async {
     SharedPreferences.setMockInitialValues({});
-    final service = WorksheetService();
+    final service = WorksheetService(remoteCatalogUrl: '');
     final item = await service.importWorksheetFromJson(
       jsonEncode({
         'formatVersion': 1,

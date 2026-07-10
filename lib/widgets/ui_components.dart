@@ -6,16 +6,18 @@ class ExplorerScaffold extends StatelessWidget {
     required this.title,
     required this.child,
     this.actions,
+    this.showAppBar = true,
   });
 
   final String title;
   final Widget child;
   final List<Widget>? actions;
+  final bool showAppBar;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title), actions: actions),
+      appBar: showAppBar ? AppBar(title: Text(title), actions: actions) : null,
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../data/app_data.dart';
+import '../services/app_update_service.dart';
 import '../services/app_store.dart';
 import '../services/audio_service.dart';
+import '../widgets/app_update_prompt.dart';
 import '../widgets/ui_components.dart';
 import 'grade_selection_screen.dart';
 import 'pet_selection_screen.dart';
@@ -17,6 +19,9 @@ class StatsSettingsScreen extends StatefulWidget {
 }
 
 class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
+  late final Future<AppVersionInfo> _appVersionFuture = AppUpdatePlatform()
+      .currentAppInfo();
+
   AppStore get store => widget.store;
 
   @override
@@ -148,9 +153,6 @@ class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
                             progress.settings['parentReview'] == true
                                 ? '批改已开'
                                 : '批改已关',
-                            progress.settings['spotMarker'] == true
-                                ? '标记已开'
-                                : '标记已关',
                           ].join(' · '),
                         ),
                         trailing: const Icon(Icons.chevron_right),
@@ -211,6 +213,29 @@ class _StatsSettingsScreenState extends State<StatsSettingsScreen> {
                             ),
                           );
                           if (mounted) setState(() {});
+                        },
+                      ),
+                      ListTile(
+                        leading: const Icon(Icons.system_update_alt),
+                        title: const Text('检查更新'),
+                        subtitle: FutureBuilder<AppVersionInfo>(
+                          future: _appVersionFuture,
+                          builder: (context, snapshot) {
+                            final info = snapshot.data;
+                            if (info == null) return const Text('查看服务器上的新版本');
+                            return Text(
+                              '当前版本：v${info.versionName}（${info.versionCode}）',
+                            );
+                          },
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () async {
+                          await AudioService.playSfx(
+                            AppSound.tap,
+                            enabled: store.progress.settings['sfx'] ?? true,
+                          );
+                          if (!context.mounted) return;
+                          await checkForAppUpdate(context, manual: true);
                         },
                       ),
                       ListTile(
@@ -285,40 +310,9 @@ class _ParentManagementScreenState extends State<_ParentManagementScreen> {
     );
   }
 
-  Future<void> _setSpotMarker(bool value) async {
-    if (value) {
-      final confirmed = await showDialog<bool>(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: const Text('开启标记模式？'),
-          content: const Text('这是家长校准工具，孩子正常玩的时候请保持关闭。'),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.of(context).pop(false),
-              child: const Text('取消'),
-            ),
-            FilledButton(
-              onPressed: () => Navigator.of(context).pop(true),
-              child: const Text('开启'),
-            ),
-          ],
-        ),
-      );
-      if (confirmed != true) return;
-    }
-    await store.setSetting('spotMarker', value);
-    if (!value) {
-      await store.setSetting('spotMarkerShowMarked', false);
-    }
-    await _playTap();
-    if (mounted) setState(() {});
-  }
-
   @override
   Widget build(BuildContext context) {
     final progress = store.progress;
-    final spotMarker = progress.settings['spotMarker'] ?? false;
-    final showMarked = progress.settings['spotMarkerShowMarked'] ?? false;
     return ExplorerScaffold(
       title: '家长管理',
       child: Padding(
@@ -341,7 +335,7 @@ class _ParentManagementScreenState extends State<_ParentManagementScreen> {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      '这里放家长使用的批改和校准功能，孩子正常学习时建议保持关闭。',
+                      '这里放家长使用的批改功能，孩子正常学习时建议保持关闭。',
                       style: TextStyle(
                         fontSize: 16,
                         color: Color(0xFF7A5A35),
@@ -351,74 +345,13 @@ class _ParentManagementScreenState extends State<_ParentManagementScreen> {
                     const SizedBox(height: 18),
                     SwitchListTile(
                       title: const Text('家长批改模式'),
-                      subtitle: const Text(
-                        '开启后，语文试卷练习会显示“对/错”按钮，方便家长给手写题做标记。',
-                      ),
+                      subtitle: const Text('开启后，语文试卷练习会显示“对/错”按钮，方便家长给手写题做标记。'),
                       value: progress.settings['parentReview'] ?? false,
                       onChanged: (value) async {
                         await store.setSetting('parentReview', value);
                         await _playTap();
                         if (mounted) setState(() {});
                       },
-                    ),
-                    const Divider(height: 20),
-                    SwitchListTile(
-                      title: const Text('找不同标记模式'),
-                      subtitle: const Text(
-                        '用于家长校准找不同坐标；开启后，找不同页面会显示撤销、清空和复制坐标工具。',
-                      ),
-                      value: spotMarker,
-                      onChanged: _setSpotMarker,
-                    ),
-                    AnimatedOpacity(
-                      duration: const Duration(milliseconds: 180),
-                      opacity: spotMarker ? 1 : .45,
-                      child: IgnorePointer(
-                        ignoring: !spotMarker,
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 16, right: 8),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const SizedBox(height: 4),
-                              const Text(
-                                '标记图片范围',
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w900,
-                                  color: Color(0xFF5B3416),
-                                ),
-                              ),
-                              _ParentOptionTile(
-                                title: '不显示已标记',
-                                subtitle: '默认选项：只展示还没有手动保存坐标的图片。',
-                                selected: !showMarked,
-                                onTap: () async {
-                                  await store.setSetting(
-                                    'spotMarkerShowMarked',
-                                    false,
-                                  );
-                                  await _playTap();
-                                  if (mounted) setState(() {});
-                                },
-                              ),
-                              _ParentOptionTile(
-                                title: '显示已标记',
-                                subtitle: '用于复查已经保存过坐标的图片。',
-                                selected: showMarked,
-                                onTap: () async {
-                                  await store.setSetting(
-                                    'spotMarkerShowMarked',
-                                    true,
-                                  );
-                                  await _playTap();
-                                  if (mounted) setState(() {});
-                                },
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
                     ),
                   ],
                 ),
@@ -427,34 +360,6 @@ class _ParentManagementScreenState extends State<_ParentManagementScreen> {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _ParentOptionTile extends StatelessWidget {
-  const _ParentOptionTile({
-    required this.title,
-    required this.subtitle,
-    required this.selected,
-    required this.onTap,
-  });
-
-  final String title;
-  final String subtitle;
-  final bool selected;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      contentPadding: const EdgeInsets.symmetric(horizontal: 8),
-      leading: Icon(
-        selected ? Icons.check_circle : Icons.radio_button_unchecked,
-        color: selected ? const Color(0xFF43A047) : const Color(0xFFB8A58E),
-      ),
-      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w900)),
-      subtitle: Text(subtitle),
-      onTap: onTap,
     );
   }
 }

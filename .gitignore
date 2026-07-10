@@ -39,6 +39,12 @@ tmp_*.png
 .pub/
 /build/
 /coverage/
+backend/.env
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/*/__pycache__/
+backend/.pytest_cache/
 
 # Symbolication related
 app.*.symbols

@@ -9,14 +9,19 @@ import android.content.Intent
 import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.media.SoundPool
+import android.net.Uri
+import android.os.Build
 import android.os.ParcelFileDescriptor
+import android.provider.Settings
 import android.provider.OpenableColumns
 import android.speech.tts.TextToSpeech
+import androidx.core.content.FileProvider
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
 import java.io.ByteArrayOutputStream
 import java.io.File
+import java.security.MessageDigest
 import java.util.Locale
 
 class MainActivity : FlutterActivity() {
@@ -118,6 +123,110 @@ class MainActivity : FlutterActivity() {
                 else -> result.notImplemented()
             }
         }
+        MethodChannel(
+            flutterEngine.dartExecutor.binaryMessenger,
+            "guoguo_forward/update"
+        ).setMethodCallHandler { call, result ->
+            try {
+                when (call.method) {
+                    "getAppInfo" -> result.success(appInfoMap())
+                    "getApkPath" -> {
+                        val fileName = call.arguments as? String ?: "guoguo_update.apk"
+                        result.success(updateApkFile(fileName).absolutePath)
+                    }
+                    "sha256File" -> {
+                        val path = call.arguments as? String ?: ""
+                        result.success(sha256File(path))
+                    }
+                    "canInstallPackages" -> result.success(canInstallUpdatePackages())
+                    "openInstallPermissionSettings" -> {
+                        openInstallPermissionSettings()
+                        result.success(null)
+                    }
+                    "installApk" -> {
+                        val path = call.arguments as? String ?: ""
+                        installApk(path)
+                        result.success(null)
+                    }
+                    else -> result.notImplemented()
+                }
+            } catch (error: Exception) {
+                result.error("update_failed", error.message, null)
+            }
+        }
+    }
+
+    @Suppress("DEPRECATION")
+    private fun appInfoMap(): Map<String, Any> {
+        val info = packageManager.getPackageInfo(packageName, 0)
+        val versionCode = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            info.longVersionCode.toInt()
+        } else {
+            info.versionCode
+        }
+        return mapOf(
+            "versionName" to (info.versionName ?: "0.0.0"),
+            "versionCode" to versionCode
+        )
+    }
+
+    private fun updateApkFile(fileName: String): File {
+        val safeName = fileName.replace(Regex("[\\\\/:*?\"<>|]+"), "_")
+        val dir = File(cacheDir, "updates").apply { mkdirs() }
+        return File(dir, safeName)
+    }
+
+    private fun sha256File(path: String): String {
+        val file = File(path)
+        if (!file.exists()) {
+            throw IllegalArgumentException("APK 文件不存在。")
+        }
+        val digest = MessageDigest.getInstance("SHA-256")
+        file.inputStream().use { input ->
+            val buffer = ByteArray(8192)
+            while (true) {
+                val read = input.read(buffer)
+                if (read <= 0) break
+                digest.update(buffer, 0, read)
+            }
+        }
+        return digest.digest().joinToString("") { "%02x".format(it) }
+    }
+
+    private fun canInstallUpdatePackages(): Boolean {
+        return Build.VERSION.SDK_INT < Build.VERSION_CODES.O ||
+            packageManager.canRequestPackageInstalls()
+    }
+
+    private fun openInstallPermissionSettings() {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
+        val intent = Intent(
+            Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES,
+            Uri.parse("package:$packageName")
+        ).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivity(intent)
+    }
+
+    private fun installApk(path: String) {
+        val file = File(path)
+        if (!file.exists()) {
+            throw IllegalArgumentException("APK 文件不存在。")
+        }
+        if (!canInstallUpdatePackages()) {
+            openInstallPermissionSettings()
+            throw IllegalStateException("需要先允许本应用安装未知应用。")
+        }
+        val uri = FileProvider.getUriForFile(
+            this,
+            "$packageName.fileprovider",
+            file
+        )
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            setDataAndType(uri, "application/vnd.android.package-archive")
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        }
+        startActivity(intent)
     }
 
     private fun pickWorksheetJson(result: MethodChannel.Result) {
@@ -312,8 +421,6 @@ class MainActivity : FlutterActivity() {
         soundIds["boss_escape"] = pool.load(this, R.raw.ui_boss_escape, 1)
         soundIds["steal"] = pool.load(this, R.raw.ui_steal, 1)
         soundIds["feed"] = pool.load(this, R.raw.ui_feed, 1)
-        soundIds["spot_correct"] = pool.load(this, R.raw.ui_spot_correct, 1)
-        soundIds["spot_wrong"] = pool.load(this, R.raw.ui_spot_wrong, 1)
         soundIds["gomoku_stone"] = pool.load(this, R.raw.ui_gomoku_stone, 1)
         soundIds["gomoku_player_stone"] = pool.load(this, R.raw.ui_gomoku_player_stone, 1)
         soundIds["gomoku_ai_stone"] = pool.load(this, R.raw.ui_gomoku_ai_stone, 1)
@@ -325,7 +432,7 @@ class MainActivity : FlutterActivity() {
             "victory" -> R.raw.ui_victory
             "pet_click" -> R.raw.ui_pet_click
             "sudoku_victory" -> R.raw.ui_sudoku_victory
-            "spot_complete", "game_complete" -> R.raw.ui_game_complete
+            "game_complete" -> R.raw.ui_game_complete
             else -> 0
         }
         if (resId == 0) {
@@ -382,7 +489,6 @@ class MainActivity : FlutterActivity() {
             "self_challenge", "tz" -> R.raw.bgm_tz
             "shop", "shoping" -> R.raw.bgm_shoping
             "boss", "boss_user" -> R.raw.bgm_boss_user
-            "spot_difference" -> R.raw.bgm_spot_difference
             "memory_flip" -> R.raw.bgm_memory_flip
             "gomoku" -> R.raw.bgm_gomoku
             else -> R.raw.bgm_menu

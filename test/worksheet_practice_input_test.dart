@@ -145,6 +145,14 @@ void main() {
     expect(screenSource, contains('height: _questionImageHeight'));
   });
 
+  test('worksheet images can be loaded from remote urls', () {
+    final screenSource = practiceScreen.readAsStringSync();
+
+    expect(screenSource, contains("image.startsWith('http://')"));
+    expect(screenSource, contains("image.startsWith('https://')"));
+    expect(screenSource, contains('Image.network'));
+  });
+
   test('math compact questions keep three columns by adapting card width', () {
     final screenSource = practiceScreen.readAsStringSync();
 

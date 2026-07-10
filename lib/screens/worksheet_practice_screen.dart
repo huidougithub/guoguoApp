@@ -4159,6 +4159,20 @@ class _QuestionImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (image.startsWith('http://') || image.startsWith('https://')) {
+      return ClipRRect(
+        borderRadius: BorderRadius.circular(12),
+        child: Image.network(
+          image.trim(),
+          width: double.infinity,
+          height: _questionImageHeight,
+          fit: BoxFit.contain,
+          gaplessPlayback: true,
+          errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+        ),
+      );
+    }
+
     // 外部文件路径（如 assets/worksheets/images/...）
     if (image.startsWith('assets/')) {
       return ClipRRect(
