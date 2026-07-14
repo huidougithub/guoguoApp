@@ -1,6 +1,8 @@
 package com.guoguo.guoguo_forward
 
+import android.Manifest
 import android.app.Activity
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
@@ -14,7 +16,11 @@ import android.os.Build
 import android.os.ParcelFileDescriptor
 import android.provider.Settings
 import android.provider.OpenableColumns
+import android.os.Bundle
 import android.speech.tts.TextToSpeech
+import android.speech.RecognitionListener
+import android.speech.RecognizerIntent
+import android.speech.SpeechRecognizer
 import androidx.core.content.FileProvider
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -37,6 +43,11 @@ class MainActivity : FlutterActivity() {
     private var currentBgmKey: String? = null
     private var tts: TextToSpeech? = null
     private var ttsReady = false
+    private var ttsLocale: Locale? = null
+    private var voiceChannel: MethodChannel? = null
+    private var speechRecognizer: SpeechRecognizer? = null
+    private var pendingVoiceResult: MethodChannel.Result? = null
+    private val voicePermissionRequestCode = 5091
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
@@ -77,6 +88,34 @@ class MainActivity : FlutterActivity() {
                     result.success(null)
                 }
                 else -> result.notImplemented()
+            }
+        }
+        voiceChannel = MethodChannel(
+            flutterEngine.dartExecutor.binaryMessenger,
+            "guoguo_forward/voice"
+        ).also { channel ->
+            channel.setMethodCallHandler { call, result ->
+                when (call.method) {
+                    "startListening" -> startListening(result)
+                    "stopListening" -> {
+                        stopListening()
+                        result.success(null)
+                    }
+                    "speakChinese" -> {
+                        speakText(
+                            call.arguments as? String ?: "",
+                            Locale.SIMPLIFIED_CHINESE,
+                            "chinese_reply",
+                            0.9f
+                        )
+                        result.success(null)
+                    }
+                    "stopSpeaking" -> {
+                        tts?.stop()
+                        result.success(null)
+                    }
+                    else -> result.notImplemented()
+                }
             }
         }
         MethodChannel(
@@ -508,26 +547,148 @@ class MainActivity : FlutterActivity() {
         currentBgmKey = null
     }
 
+    private fun startListening(result: MethodChannel.Result) {
+        if (!SpeechRecognizer.isRecognitionAvailable(this)) {
+            result.error("not_available", "当前平板没有可用的语音识别服务。", null)
+            return
+        }
+        if (checkSelfPermission(Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            pendingVoiceResult = result
+            requestPermissions(arrayOf(Manifest.permission.RECORD_AUDIO), voicePermissionRequestCode)
+            return
+        }
+        startSpeechRecognizer()
+        result.success(null)
+    }
+
+    private fun startSpeechRecognizer() {
+        speechRecognizer?.cancel()
+        speechRecognizer?.destroy()
+        speechRecognizer = SpeechRecognizer.createSpeechRecognizer(this).apply {
+            setRecognitionListener(object : RecognitionListener {
+                override fun onReadyForSpeech(params: Bundle?) {
+                    sendVoiceEvent("listening", null)
+                }
+
+                override fun onBeginningOfSpeech() {
+                    sendVoiceEvent("speaking", null)
+                }
+
+                override fun onRmsChanged(rmsdB: Float) = Unit
+
+                override fun onBufferReceived(buffer: ByteArray?) = Unit
+
+                override fun onEndOfSpeech() {
+                    sendVoiceEvent("processing", null)
+                }
+
+                override fun onError(error: Int) {
+                    sendVoiceEvent("error", speechErrorMessage(error))
+                }
+
+                override fun onResults(results: Bundle?) {
+                    val text = results
+                        ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                        ?.firstOrNull()
+                    sendVoiceEvent("completed", text)
+                }
+
+                override fun onPartialResults(partialResults: Bundle?) {
+                    val text = partialResults
+                        ?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+                        ?.firstOrNull()
+                    sendVoiceEvent("partial", text)
+                }
+
+                override fun onEvent(eventType: Int, params: Bundle?) = Unit
+            })
+            val intent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+                putExtra(
+                    RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                    RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
+                )
+                putExtra(RecognizerIntent.EXTRA_LANGUAGE, "zh-CN")
+                putExtra(RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE, "zh-CN")
+                putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
+                putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 1)
+            }
+            startListening(intent)
+        }
+        sendVoiceEvent("starting", null)
+    }
+
+    private fun stopListening() {
+        speechRecognizer?.stopListening()
+    }
+
+    private fun sendVoiceEvent(state: String, text: String?) {
+        val payload = mutableMapOf<String, Any>("state" to state)
+        if (!text.isNullOrBlank()) payload["text"] = text
+        runOnUiThread {
+            voiceChannel?.invokeMethod("speechEvent", payload)
+        }
+    }
+
+    private fun speechErrorMessage(error: Int): String {
+        return when (error) {
+            SpeechRecognizer.ERROR_AUDIO -> "麦克风暂时不可用。"
+            SpeechRecognizer.ERROR_CLIENT -> "语音识别被中断，请再试一次。"
+            SpeechRecognizer.ERROR_INSUFFICIENT_PERMISSIONS -> "请允许果果使用麦克风。"
+            SpeechRecognizer.ERROR_NETWORK,
+            SpeechRecognizer.ERROR_NETWORK_TIMEOUT -> "语音识别需要网络，请检查平板网络。"
+            SpeechRecognizer.ERROR_NO_MATCH -> "没有听清，请再说一次。"
+            SpeechRecognizer.ERROR_RECOGNIZER_BUSY -> "语音识别服务正忙，请稍后再试。"
+            else -> "语音识别失败，请再试一次。"
+        }
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode != voicePermissionRequestCode) return
+        val pending = pendingVoiceResult
+        pendingVoiceResult = null
+        if (grantResults.firstOrNull() == PackageManager.PERMISSION_GRANTED) {
+            startSpeechRecognizer()
+            pending?.success(null)
+        } else {
+            pending?.error("permission_denied", "请允许果果使用麦克风。", null)
+        }
+    }
+
     private fun speakEnglish(text: String) {
+        speakText(text, Locale.US, "english_question", 0.82f)
+    }
+
+    private fun speakText(text: String, locale: Locale, utteranceId: String, rate: Float) {
         if (text.isBlank()) return
         val engine = tts
         if (engine == null) {
             ttsReady = false
+            ttsLocale = null
             tts = TextToSpeech(this) { status ->
                 if (status == TextToSpeech.SUCCESS) {
-                    val value = tts?.setLanguage(Locale.US)
-                    ttsReady = value != TextToSpeech.LANG_MISSING_DATA &&
-                        value != TextToSpeech.LANG_NOT_SUPPORTED
-                    tts?.setSpeechRate(0.82f)
+                    configureTts(locale, rate)
                     if (ttsReady) {
-                        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, "english_question")
+                        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, utteranceId)
                     }
                 }
             }
             return
         }
-        if (!ttsReady) return
-        engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, "english_question")
+        if (ttsLocale != locale) configureTts(locale, rate)
+        if (ttsReady) engine.speak(text, TextToSpeech.QUEUE_FLUSH, null, utteranceId)
+    }
+
+    private fun configureTts(locale: Locale, rate: Float) {
+        val value = tts?.setLanguage(locale)
+        ttsReady = value != TextToSpeech.LANG_MISSING_DATA &&
+            value != TextToSpeech.LANG_NOT_SUPPORTED
+        ttsLocale = if (ttsReady) locale else null
+        tts?.setSpeechRate(rate)
     }
 
     override fun onDestroy() {
@@ -540,6 +701,12 @@ class MainActivity : FlutterActivity() {
         tts?.stop()
         tts?.shutdown()
         tts = null
+        speechRecognizer?.cancel()
+        speechRecognizer?.destroy()
+        speechRecognizer = null
+        pendingVoiceResult?.error("cancelled", "语音服务已关闭。", null)
+        pendingVoiceResult = null
+        voiceChannel = null
         soundPool?.release()
         soundPool = null
         soundIds.clear()

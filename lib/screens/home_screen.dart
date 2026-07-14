@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../data/app_data.dart';
 import '../models/app_models.dart';
@@ -29,6 +30,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   static bool playedLaunchPetVoice = false;
   static bool checkedUpdatesThisRun = false;
+  static const voiceChannel = MethodChannel('guoguo_forward/voice');
 
   final aiService = AiService();
   final aiInputController = TextEditingController();
@@ -37,11 +39,14 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   bool aiSending = false;
+  bool voiceListening = false;
+  bool aiExpanded = false;
   String? homeConversationId;
 
   @override
   void initState() {
     super.initState();
+    voiceChannel.setMethodCallHandler(_handleVoiceCall);
     if (widget.store.progress.settings['music'] ?? false) {
       AudioService.playBgm(AppMusicScene.home);
     }
@@ -53,6 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void dispose() {
+    voiceChannel.setMethodCallHandler(null);
     aiInputController.dispose();
     aiService.close();
     super.dispose();
@@ -62,7 +68,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final progress = widget.store.progress;
     final pet = petById(progress.selectedPet);
-    final grade = normalizeGradeCode(progress.selectedGrade);
     return ExplorerScaffold(
       title: '',
       showAppBar: false,
@@ -72,7 +77,6 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             _HomeTopBar(
               progress: progress,
-              onFeed: progress.energyFruit > 0 ? _feedPet : null,
               onShop: () => _openSceneScreen(
                 AppMusicScene.shop,
                 ShopScreen(store: widget.store),
@@ -81,47 +85,64 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 14),
             Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 4,
-                    child: _HomeAiPanel(
+              child: aiExpanded
+                  ? _HomeAiPanel(
                       pet: pet,
                       messages: aiMessages,
                       controller: aiInputController,
                       sending: aiSending,
+                      voiceListening: voiceListening,
+                      expanded: true,
+                      onExpand: () => setState(() => aiExpanded = false),
                       onSend: _sendHomeAiMessage,
+                      onVoice: _toggleVoiceInput,
+                      onSpeak: _speakAiReply,
                       onShortcut: _sendShortcutMessage,
+                    )
+                  : Row(
+                      children: [
+                        Expanded(
+                          flex: 4,
+                          child: _HomeAiPanel(
+                            pet: pet,
+                            messages: aiMessages,
+                            controller: aiInputController,
+                            sending: aiSending,
+                            voiceListening: voiceListening,
+                            expanded: false,
+                            onExpand: () => setState(() => aiExpanded = true),
+                            onSend: _sendHomeAiMessage,
+                            onVoice: _toggleVoiceInput,
+                            onSpeak: _speakAiReply,
+                            onShortcut: _sendShortcutMessage,
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          flex: 8,
+                          child: _HomeModuleGrid(
+                            onOpenIsland: _openIsland,
+                            onOpenSelfChallenge: () => _openSceneScreen(
+                              AppMusicScene.selfChallenge,
+                              SelfChallengeScreen(store: widget.store),
+                            ),
+                            onOpenWorksheet: () => _openSceneScreen(
+                              AppMusicScene.home,
+                              WorksheetLibraryScreen(store: widget.store),
+                            ),
+                            onOpenStudyMaterials: () => _openSceneScreen(
+                              AppMusicScene.home,
+                              const StudyMaterialsScreen(),
+                            ),
+                            onOpenLeisure: () => _openSceneScreen(
+                              AppMusicScene.home,
+                              LeisurePlaygroundScreen(store: widget.store),
+                            ),
+                            onLockedIsland: _showLockedIsland,
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    flex: 8,
-                    child: _HomeModuleGrid(
-                      grade: grade,
-                      progressText: _progressText,
-                      onOpenIsland: _openIsland,
-                      onOpenSelfChallenge: () => _openSceneScreen(
-                        AppMusicScene.selfChallenge,
-                        SelfChallengeScreen(store: widget.store),
-                      ),
-                      onOpenWorksheet: () => _openSceneScreen(
-                        AppMusicScene.home,
-                        WorksheetLibraryScreen(store: widget.store),
-                      ),
-                      onOpenStudyMaterials: () => _openSceneScreen(
-                        AppMusicScene.home,
-                        const StudyMaterialsScreen(),
-                      ),
-                      onOpenLeisure: () => _openSceneScreen(
-                        AppMusicScene.home,
-                        LeisurePlaygroundScreen(store: widget.store),
-                      ),
-                      onLockedIsland: _showLockedIsland,
-                    ),
-                  ),
-                ],
-              ),
             ),
           ],
         ),
@@ -144,20 +165,61 @@ class _HomeScreenState extends State<HomeScreen> {
     await checkForAppUpdate(context);
   }
 
-  Future<void> _feedPet() async {
-    final fed = await widget.store.feedPet();
-    if (!fed) return;
-    await AudioService.playSfx(
-      AppSound.feed,
-      enabled: widget.store.progress.settings['sfx'] ?? true,
-    );
-    if (!mounted) return;
-    setState(() {});
-  }
-
   Future<void> _sendShortcutMessage(String text) async {
     aiInputController.text = text;
     await _sendHomeAiMessage();
+  }
+
+  Future<void> _handleVoiceCall(MethodCall call) async {
+    if (call.method != 'speechEvent' || !mounted) return;
+    final args = call.arguments is Map
+        ? Map<String, dynamic>.from(call.arguments as Map)
+        : <String, dynamic>{};
+    final state = args['state']?.toString() ?? 'idle';
+    final text = args['text']?.toString();
+    setState(() {
+      voiceListening = const {
+        'starting',
+        'listening',
+        'speaking',
+        'processing',
+      }.contains(state);
+      if (text != null && text.trim().isNotEmpty) {
+        aiInputController.value = TextEditingValue(
+          text: text,
+          selection: TextSelection.collapsed(offset: text.length),
+        );
+      }
+    });
+    if (state == 'error' && text != null && text.isNotEmpty) {
+      _showVoiceMessage(text);
+    }
+  }
+
+  Future<void> _toggleVoiceInput() async {
+    try {
+      if (voiceListening) {
+        await voiceChannel.invokeMethod<void>('stopListening');
+      } else {
+        await voiceChannel.invokeMethod<void>('startListening');
+      }
+    } on PlatformException catch (error) {
+      if (mounted) _showVoiceMessage(error.message ?? '语音功能暂时不可用。');
+    }
+  }
+
+  Future<void> _speakAiReply(String text) async {
+    try {
+      await voiceChannel.invokeMethod<void>('speakChinese', text);
+    } on PlatformException catch (error) {
+      if (mounted) _showVoiceMessage(error.message ?? '语音播放暂时不可用。');
+    }
+  }
+
+  void _showVoiceMessage(String message) {
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(message)));
   }
 
   Future<void> _sendHomeAiMessage() async {
@@ -255,23 +317,6 @@ class _HomeScreenState extends State<HomeScreen> {
       context,
     ).showSnackBar(SnackBar(content: Text('$name 暂未开放，完善后再开启。')));
   }
-
-  String _progressText(Island island, int grade) {
-    final total = totalLevelsForIsland(island, grade);
-    final finished = island == Island.sudoku
-        ? [
-            'S-random-4',
-            'S-random-6',
-            'S-random-9',
-          ].where(widget.store.progress.completedLevels.contains).length
-        : levelsForIsland(island, grade)
-              .where(
-                (level) =>
-                    widget.store.progress.completedLevels.contains(level.id),
-              )
-              .length;
-    return '$finished/$total';
-  }
 }
 
 class _HomeAiMessage {
@@ -284,13 +329,11 @@ class _HomeAiMessage {
 class _HomeTopBar extends StatelessWidget {
   const _HomeTopBar({
     required this.progress,
-    required this.onFeed,
     required this.onShop,
     required this.onSettings,
   });
 
   final AppProgress progress;
-  final VoidCallback? onFeed;
   final VoidCallback onShop;
   final VoidCallback onSettings;
 
@@ -298,16 +341,19 @@ class _HomeTopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 76,
+      clipBehavior: Clip.antiAliasWithSaveLayer,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
-        color: const Color(0xFFFFF8E1),
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: const Color(0xFF8B5A2B), width: 1.4),
+        image: const DecorationImage(
+          image: AssetImage('assets/home/resources/home_top_toolbar.png'),
+          fit: BoxFit.cover,
+        ),
         boxShadow: const [
           BoxShadow(
-            color: Color(0x222D2A32),
-            offset: Offset(0, 4),
-            blurRadius: 10,
+            color: Color(0x1F2D2A32),
+            offset: Offset(0, 5),
+            blurRadius: 14,
           ),
         ],
       ),
@@ -351,13 +397,6 @@ class _HomeTopBar extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           _TopActionButton(
-            icon: Icons.restaurant,
-            label: '喂食',
-            color: const Color(0xFFE94B6B),
-            onPressed: onFeed,
-          ),
-          const SizedBox(width: 8),
-          _TopActionButton(
             icon: Icons.storefront,
             label: '魔法商店',
             color: const Color(0xFFFF8C42),
@@ -393,12 +432,11 @@ class _ResourceBadge extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.96),
         borderRadius: BorderRadius.circular(28),
-        border: Border.all(color: const Color(0xFFE6C8A2), width: 1.4),
         boxShadow: const [
           BoxShadow(
-            color: Color(0x142D2A32),
+            color: Color(0x162D2A32),
             offset: Offset(0, 3),
-            blurRadius: 7,
+            blurRadius: 9,
           ),
         ],
       ),
@@ -461,24 +499,57 @@ class _TopActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 48,
-      child: FilledButton.icon(
-        style: FilledButton.styleFrom(
-          backgroundColor: color,
-          disabledBackgroundColor: color.withValues(alpha: 0.42),
-          foregroundColor: Colors.white,
-          disabledForegroundColor: Colors.white.withValues(alpha: 0.86),
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
-            side: const BorderSide(color: Color(0xFF8B5A2B), width: 1.2),
+    final topColor = Color.lerp(color, Colors.white, 0.16)!;
+    final bottomColor = Color.lerp(color, Colors.black, 0.12)!;
+    return Material(
+      color: Colors.transparent,
+      elevation: onPressed == null ? 0 : 2,
+      shadowColor: color.withValues(alpha: 0.3),
+      borderRadius: BorderRadius.circular(19),
+      clipBehavior: Clip.antiAlias,
+      child: Ink(
+        height: 48,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: onPressed == null
+                ? [color.withValues(alpha: 0.38), color.withValues(alpha: 0.3)]
+                : [topColor, bottomColor],
           ),
-          textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900),
         ),
-        onPressed: onPressed,
-        icon: Icon(icon, size: 20),
-        label: Text(label),
+        child: InkWell(
+          onTap: onPressed,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Container(
+                  width: 27,
+                  height: 27,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withValues(alpha: 0.26),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(icon, size: 17, color: Colors.white),
+                ),
+                const SizedBox(width: 7),
+                Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white.withValues(
+                      alpha: onPressed == null ? 0.78 : 1,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -493,18 +564,29 @@ class _IconOnlyTopButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox.square(
-      dimension: 48,
-      child: IconButton.filledTonal(
-        style: IconButton.styleFrom(
-          backgroundColor: Colors.white,
-          foregroundColor: const Color(0xFF7C3F1D),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-            side: const BorderSide(color: Color(0xFFE6C8A2), width: 1.2),
+      dimension: 46,
+      child: Material(
+        color: Colors.transparent,
+        elevation: 2,
+        shadowColor: const Color(0x282D2A32),
+        shape: const CircleBorder(),
+        clipBehavior: Clip.antiAlias,
+        child: Tooltip(
+          message: '设置',
+          child: InkWell(
+            onTap: onPressed,
+            customBorder: const CircleBorder(),
+            child: Ink(
+              decoration: const BoxDecoration(
+                color: Color(0xFFFFF8EE),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Icon(icon, size: 23, color: Color(0xFF9A5428)),
+              ),
+            ),
           ),
         ),
-        onPressed: onPressed,
-        icon: Icon(icon),
       ),
     );
   }
@@ -516,7 +598,12 @@ class _HomeAiPanel extends StatelessWidget {
     required this.messages,
     required this.controller,
     required this.sending,
+    required this.voiceListening,
+    required this.expanded,
+    required this.onExpand,
     required this.onSend,
+    required this.onVoice,
+    required this.onSpeak,
     required this.onShortcut,
   });
 
@@ -524,26 +611,34 @@ class _HomeAiPanel extends StatelessWidget {
   final List<_HomeAiMessage> messages;
   final TextEditingController controller;
   final bool sending;
+  final bool voiceListening;
+  final bool expanded;
+  final VoidCallback onExpand;
   final VoidCallback onSend;
+  final VoidCallback onVoice;
+  final ValueChanged<String> onSpeak;
   final ValueChanged<String> onShortcut;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      clipBehavior: Clip.antiAliasWithSaveLayer,
       decoration: BoxDecoration(
-        color: const Color(0xFFFFFBEB),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: const Color(0xFF8B5A2B), width: 1.4),
+        image: const DecorationImage(
+          image: AssetImage('assets/home/resources/home_ai_panel.png'),
+          fit: BoxFit.cover,
+        ),
         boxShadow: const [
           BoxShadow(
-            color: Color(0x202D2A32),
+            color: Color(0x1F2D2A32),
             offset: Offset(0, 6),
-            blurRadius: 12,
+            blurRadius: 16,
           ),
         ],
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(20),
         child: Stack(
           children: [
             Column(
@@ -557,7 +652,14 @@ class _HomeAiPanel extends StatelessWidget {
                       separatorBuilder: (_, _) => const SizedBox(height: 10),
                       itemBuilder: (context, index) {
                         final message = messages[index];
-                        return _HomeChatBubble(message: message, petId: pet.id);
+                        return _HomeChatBubble(
+                          message: message,
+                          petId: pet.id,
+                          expanded: expanded,
+                          onSpeak: message.isUser
+                              ? null
+                              : () => onSpeak(message.text),
+                        );
                       },
                     ),
                   ),
@@ -565,7 +667,9 @@ class _HomeAiPanel extends StatelessWidget {
                 _HomeAiInputBar(
                   controller: controller,
                   sending: sending,
+                  voiceListening: voiceListening,
                   onSend: onSend,
+                  onVoice: onVoice,
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
@@ -595,7 +699,7 @@ class _HomeAiPanel extends StatelessWidget {
             ),
             if (sending)
               const Positioned(
-                right: 18,
+                right: 58,
                 top: 16,
                 child: SizedBox(
                   width: 20,
@@ -603,6 +707,26 @@ class _HomeAiPanel extends StatelessWidget {
                   child: CircularProgressIndicator(strokeWidth: 2.4),
                 ),
               ),
+            Positioned(
+              right: 10,
+              top: 8,
+              child: IconButton(
+                onPressed: onExpand,
+                tooltip: expanded ? '收起对话窗口' : '放大对话窗口',
+                visualDensity: VisualDensity.compact,
+                style: IconButton.styleFrom(
+                  backgroundColor: Colors.white.withValues(alpha: 0.82),
+                  foregroundColor: const Color(0xFF8A4A26),
+                  shape: const CircleBorder(),
+                ),
+                icon: Icon(
+                  expanded
+                      ? Icons.close_fullscreen_rounded
+                      : Icons.open_in_full_rounded,
+                  size: 19,
+                ),
+              ),
+            ),
           ],
         ),
       ),
@@ -611,16 +735,23 @@ class _HomeAiPanel extends StatelessWidget {
 }
 
 class _HomeChatBubble extends StatelessWidget {
-  const _HomeChatBubble({required this.message, required this.petId});
+  const _HomeChatBubble({
+    required this.message,
+    required this.petId,
+    required this.expanded,
+    required this.onSpeak,
+  });
 
   final _HomeAiMessage message;
   final String petId;
+  final bool expanded;
+  final VoidCallback? onSpeak;
 
   @override
   Widget build(BuildContext context) {
     final isUser = message.isUser;
     final bubble = ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 330),
+      constraints: BoxConstraints(maxWidth: expanded ? 760 : 330),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 11),
         decoration: BoxDecoration(
@@ -631,28 +762,60 @@ class _HomeChatBubble extends StatelessWidget {
             bottomLeft: Radius.circular(isUser ? 16 : 5),
             bottomRight: Radius.circular(isUser ? 5 : 16),
           ),
-          border: Border.all(
-            color: isUser ? const Color(0xFF6D28D9) : const Color(0xFFE6C8A2),
-          ),
           boxShadow: const [
             BoxShadow(
-              color: Color(0x142D2A32),
+              color: Color(0x122D2A32),
               offset: Offset(0, 3),
-              blurRadius: 8,
+              blurRadius: 10,
             ),
           ],
         ),
-        child: Text(
-          message.text,
-          maxLines: 6,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontSize: 15,
-            height: 1.35,
-            fontWeight: FontWeight.w800,
-            color: isUser ? Colors.white : const Color(0xFF3F2A18),
-          ),
-        ),
+        child: isUser
+            ? Text(
+                message.text,
+                maxLines: null,
+                overflow: TextOverflow.visible,
+                style: const TextStyle(
+                  fontSize: 15,
+                  height: 1.35,
+                  fontWeight: FontWeight.w800,
+                  color: Colors.white,
+                ),
+              )
+            : Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Text(
+                      message.text,
+                      maxLines: null,
+                      overflow: TextOverflow.visible,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        height: 1.35,
+                        fontWeight: FontWeight.w800,
+                        color: Color(0xFF3F2A18),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 4),
+                  IconButton(
+                    onPressed: onSpeak,
+                    tooltip: '播放果果的回答',
+                    visualDensity: VisualDensity.compact,
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints.tightFor(
+                      width: 28,
+                      height: 28,
+                    ),
+                    icon: const Icon(
+                      Icons.volume_up_rounded,
+                      size: 19,
+                      color: Color(0xFFE7863C),
+                    ),
+                  ),
+                ],
+              ),
       ),
     );
 
@@ -667,14 +830,27 @@ class _HomeChatBubble extends StatelessWidget {
             children: [
               bubble,
               const SizedBox(width: 8),
-              Container(
-                width: 34,
-                height: 34,
-                decoration: const BoxDecoration(
-                  color: Color(0xFF8B5CF6),
-                  shape: BoxShape.circle,
+              ClipOval(
+                child: Image.asset(
+                  'assets/home/resources/user_avatar_girl.png',
+                  width: 34,
+                  height: 34,
+                  fit: BoxFit.cover,
+                  errorBuilder: (_, _, _) => Container(
+                    width: 34,
+                    height: 34,
+                    alignment: Alignment.center,
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFFFD166),
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(
+                      Icons.face_rounded,
+                      color: Color(0xFF8A4A26),
+                      size: 22,
+                    ),
+                  ),
                 ),
-                child: const Icon(Icons.person, color: Colors.white, size: 22),
               ),
             ],
           ),
@@ -717,12 +893,16 @@ class _HomeAiInputBar extends StatelessWidget {
   const _HomeAiInputBar({
     required this.controller,
     required this.sending,
+    required this.voiceListening,
     required this.onSend,
+    required this.onVoice,
   });
 
   final TextEditingController controller;
   final bool sending;
+  final bool voiceListening;
   final VoidCallback onSend;
+  final VoidCallback onVoice;
 
   @override
   Widget build(BuildContext context) {
@@ -764,6 +944,29 @@ class _HomeAiInputBar extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(width: 8),
+          SizedBox.square(
+            dimension: 44,
+            child: Tooltip(
+              message: voiceListening ? '结束语音输入' : '语音输入',
+              child: IconButton.filledTonal(
+                onPressed: sending ? null : onVoice,
+                style: IconButton.styleFrom(
+                  backgroundColor: voiceListening
+                      ? const Color(0xFFE86A74)
+                      : const Color(0xFFFFE7C7),
+                  foregroundColor: voiceListening
+                      ? Colors.white
+                      : const Color(0xFF9A5428),
+                  shape: const CircleBorder(),
+                ),
+                icon: Icon(
+                  voiceListening ? Icons.stop_rounded : Icons.mic_rounded,
+                  size: 22,
+                ),
+              ),
+            ),
+          ),
           const SizedBox(width: 10),
           SizedBox.square(
             dimension: 46,
@@ -773,8 +976,9 @@ class _HomeAiInputBar extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(17),
-                  side: const BorderSide(color: Color(0xFF8B5A2B), width: 1.1),
                 ),
+                elevation: 2,
+                shadowColor: const Color(0x302D2A32),
               ),
               onPressed: sending ? null : onSend,
               child: const Icon(Icons.send, size: 25),
@@ -807,10 +1011,11 @@ class _AiShortcutChip extends StatelessWidget {
             backgroundColor: Colors.white,
             foregroundColor: const Color(0xFF7C3F1D),
             padding: const EdgeInsets.symmetric(horizontal: 8),
-            side: const BorderSide(color: Color(0xFFE6C8A2), width: 1.2),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
+            elevation: 1,
+            shadowColor: const Color(0x1E2D2A32),
             textStyle: const TextStyle(
               fontSize: 13,
               fontWeight: FontWeight.w900,
@@ -827,8 +1032,6 @@ class _AiShortcutChip extends StatelessWidget {
 
 class _HomeModuleGrid extends StatelessWidget {
   const _HomeModuleGrid({
-    required this.grade,
-    required this.progressText,
     required this.onOpenIsland,
     required this.onOpenSelfChallenge,
     required this.onOpenWorksheet,
@@ -837,8 +1040,6 @@ class _HomeModuleGrid extends StatelessWidget {
     required this.onLockedIsland,
   });
 
-  final int grade;
-  final String Function(Island island, int grade) progressText;
   final ValueChanged<Island> onOpenIsland;
   final VoidCallback onOpenSelfChallenge;
   final VoidCallback onOpenWorksheet;
@@ -856,8 +1057,6 @@ class _HomeModuleGrid extends StatelessWidget {
         subtitle: '探索数学的奥秘',
         color: const Color(0xFFFFD4A3),
         accent: const Color(0xFFFF8C42),
-        progressText:
-            '${gradeName(grade)} · ${progressText(Island.math, grade)}',
         onTap: () => onOpenIsland(Island.math),
       ),
       _ModuleCardData(
@@ -929,7 +1128,7 @@ class _HomeModuleGrid extends StatelessWidget {
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        final crossAxisCount = constraints.maxWidth >= 660 ? 4 : 2;
+        final crossAxisCount = constraints.maxWidth >= 600 ? 3 : 2;
         return GridView.builder(
           itemCount: cards.length,
           padding: EdgeInsets.zero,
@@ -937,7 +1136,7 @@ class _HomeModuleGrid extends StatelessWidget {
             crossAxisCount: crossAxisCount,
             mainAxisSpacing: 14,
             crossAxisSpacing: 14,
-            childAspectRatio: crossAxisCount == 4 ? 0.56 : 0.78,
+            childAspectRatio: crossAxisCount == 3 ? 1.12 : 0.78,
           ),
           itemBuilder: (context, index) => _ModuleCard(data: cards[index]),
         );
@@ -955,7 +1154,6 @@ class _ModuleCardData {
     required this.color,
     required this.accent,
     required this.onTap,
-    this.progressText,
     this.locked = false,
   });
 
@@ -966,7 +1164,6 @@ class _ModuleCardData {
   final Color color;
   final Color accent;
   final VoidCallback onTap;
-  final String? progressText;
   final bool locked;
 }
 
@@ -977,147 +1174,100 @@ class _ModuleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(22),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x1F2D2A32),
-            offset: Offset(0, 7),
-            blurRadius: 14,
-          ),
-        ],
-      ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(22),
-          onTap: data.onTap,
-          child: Ink(
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(22),
-              border: Border.all(
-                color: data.accent.withValues(alpha: 0.72),
-                width: 1.6,
+    final cardRadius = BorderRadius.circular(18);
+    return Material(
+      color: Colors.transparent,
+      elevation: 3,
+      shadowColor: const Color(0x2A2D2A32),
+      shape: RoundedRectangleBorder(borderRadius: cardRadius),
+      clipBehavior: Clip.antiAliasWithSaveLayer,
+      child: InkWell(
+        onTap: data.onTap,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Image.asset(
+              data.assetPath,
+              fit: BoxFit.cover,
+              errorBuilder: (_, _, _) => ColoredBox(
+                color: data.color,
+                child: Icon(data.icon, size: 64, color: data.accent),
               ),
             ),
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(17),
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            data.color.withValues(alpha: 0.2),
-                            const Color(0xFFFFF7E8),
-                          ],
-                        ),
-                      ),
+            const DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color(0xBFFFFFFF),
+                    Color(0x10FFFFFF),
+                    Color(0xEFFFF7E8),
+                  ],
+                  stops: [0, 0.42, 1],
+                ),
+              ),
+            ),
+            Positioned(
+              left: 10,
+              right: 10,
+              top: 9,
+              child: Text(
+                data.title,
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 19,
+                  height: 1.05,
+                  fontWeight: FontWeight.w900,
+                  color: data.accent,
+                  shadows: const [
+                    Shadow(
+                      color: Colors.white,
+                      blurRadius: 6,
+                      offset: Offset(0, 1),
                     ),
-                    Positioned.fill(
-                      top: 54,
-                      bottom: 54,
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8),
-                        child: Image.asset(
-                          data.assetPath,
-                          fit: BoxFit.contain,
-                          errorBuilder: (_, _, _) =>
-                              Icon(data.icon, size: 64, color: data.accent),
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      left: 8,
-                      right: 8,
-                      top: 13,
-                      child: Text(
-                        data.title,
-                        textAlign: TextAlign.center,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 22,
-                          height: 1.05,
-                          fontWeight: FontWeight.w900,
-                          color: data.accent,
-                          shadows: const [
-                            Shadow(
-                              color: Colors.white,
-                              blurRadius: 6,
-                              offset: Offset(0, 1),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      left: 10,
-                      right: 10,
-                      bottom: 14,
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            data.subtitle,
-                            textAlign: TextAlign.center,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w900,
-                              color: Color(0xFF6B4B2C),
-                            ),
-                          ),
-                          if (data.progressText != null) ...[
-                            const SizedBox(height: 5),
-                            Text(
-                              data.progressText!,
-                              textAlign: TextAlign.center,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 11.5,
-                                fontWeight: FontWeight.w900,
-                                color: data.accent.withValues(alpha: 0.82),
-                              ),
-                            ),
-                          ],
-                        ],
-                      ),
-                    ),
-                    if (data.locked)
-                      Positioned(
-                        right: 10,
-                        top: 10,
-                        child: Container(
-                          width: 32,
-                          height: 32,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.94),
-                            shape: BoxShape.circle,
-                            border: Border.all(color: const Color(0xFF9CA3AF)),
-                          ),
-                          child: const Icon(
-                            Icons.lock,
-                            size: 18,
-                            color: Color(0xFF6B7280),
-                          ),
-                        ),
-                      ),
                   ],
                 ),
               ),
             ),
-          ),
+            Positioned(
+              left: 10,
+              right: 10,
+              bottom: 8,
+              child: Text(
+                data.subtitle,
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w900,
+                  color: Color(0xFF6B4B2C),
+                ),
+              ),
+            ),
+            if (data.locked)
+              Positioned(
+                right: 9,
+                top: 8,
+                child: Container(
+                  width: 28,
+                  height: 28,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withValues(alpha: 0.88),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.lock,
+                    size: 16,
+                    color: Color(0xFF6B7280),
+                  ),
+                ),
+              ),
+          ],
         ),
       ),
     );

@@ -40,7 +40,8 @@ class DeepSeekClient:
                 json={
                     "model": self._settings.deepseek_model,
                     "messages": messages,
-                    "temperature": 0.4 if purpose == "wrong_item_explain" else 0.7,
+                    "temperature": 0.4 if purpose == "wrong_item_explain" else 0.6,
+                    "max_tokens": 900 if purpose == "wrong_item_explain" else 700,
                     "stream": False,
                 },
             )
